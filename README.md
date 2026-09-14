@@ -25,7 +25,9 @@ task determine from what the objectives determine. The network left 49 of 52 exc
 free, with a mean admissible width of 35 canonical units. The transcript-weighted cost then
 first fixed 90 to 92 percent of those coordinates, and it fixed them at positions that coincided
 across profiles: for a median target the profiles moved across about 4 parts in 10 billion of
-the width the network had allowed.
+the width the network had allowed. A uniform cost with no transcript information fixed 87.8
+percent of the same targets, so the optimality cap rather than the evidence carried in it
+accounts for nearly all of the restriction.
 
 The encodings were not agreeing because they agreed. Rescoring each saved flux vector under
 every other encoding's cost shows they select genuinely different interior solutions, differing
