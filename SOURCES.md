@@ -39,3 +39,10 @@ development pilot and the reserved cohort, the cross-encoding regret, distance a
 tables, the endpoint reconstruction ledgers, the independent-evaluation predictions and crossed
 control, and the reaction-evidence matrix. They are released under CC-BY-4.0 together with the
 result tables, and are covered by the same archived record as the code.
+
+## Archived record
+
+Release v1.0.0 is archived at https://doi.org/10.5281/zenodo.22745339. The version-independent
+record covering all releases is https://doi.org/10.5281/zenodo.22745338. The digital object
+identifiers were minted after the v1.0.0 snapshot was taken, so the archived copy of this file
+carries a placeholder where the identifiers now appear.

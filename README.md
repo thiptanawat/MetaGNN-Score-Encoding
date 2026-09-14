@@ -1,5 +1,7 @@
 # Where transcript evidence stops influencing predicted metabolic exchange
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22745338.svg)](https://doi.org/10.5281/zenodo.22745338)
+
 Code, protocol records and result tables for a controlled study of the interface between
 transcript-derived reaction scores and constraint-based metabolic prediction.
 
