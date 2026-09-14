@@ -1,0 +1,30 @@
+{
+ "started_at_utc": "2026-09-14T03:29:12.777754+00:00",
+ "jobs": 224,
+ "arms": [
+  "magnitude_g0.50",
+  "magnitude_g0.80",
+  "magnitude_g1.00",
+  "magnitude_g1.25",
+  "magnitude_g2.00",
+  "ordinal",
+  "uniform_pfba"
+ ],
+ "targets": [
+  "EX_glc__D_e",
+  "EX_lac__L_e"
+ ],
+ "condition_mean_growth_rate_per_hour": {
+  "21%|DMSO": 0.027172233116188327,
+  "21%|BAY": 0.021948251260647308,
+  "0.5%|DMSO": 0.01983084473213053,
+  "0.5%|BAY": 0.017940953683000735
+ },
+ "scale_constant_k": 43.18130634745273,
+ "plan_sha256": "0f4f7281478075966ff1361784f4abddd64273e7254d383e57c7a7b77cfbb1bb",
+ "medium_sha256": "b34e86f05388bf95baf4585333fd1efa8caad9546580d48059da2a373b19dc86",
+ "runner_sha256": "60f4c34314e2e76fca1be270ad821853277a3c3c0a072c007a760cb101715dcc",
+ "prepare_summary_sha256": "188fb88696b5f59d10a33706ea570bfce39c79e16a2742b9f676f7d54b5c595d",
+ "scores_sha256": "34afd28f8ee5d24f49f54ef3351b2631c961c0ec7db7fab9bc3a48e206e9bd1e",
+ "target_outcomes_read": false
+}

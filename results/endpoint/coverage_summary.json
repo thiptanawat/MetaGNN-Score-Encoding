@@ -1,0 +1,161 @@
+{
+  "executed_at_utc": "2026-09-13T18:43:40.153307+00:00",
+  "status": "Post-analysis reconstruction of the published concentration screen, not a physiological quality certificate",
+  "source_cultures": 120,
+  "source_profiles": 60,
+  "matched_profiles": 58,
+  "rule": "Any endpoint < 0.1 times mean of ten fresh concentrations; profile rule requires both cultures screen-negative",
+  "variants": {
+    "all_reported_assays": {
+      "source_assays_screened_per_culture": 140,
+      "source_cultures": {
+        "screen_positive": 119,
+        "screen_negative": 0,
+        "unresolved": 1
+      },
+      "source_profiles": {
+        "screen_positive": 60,
+        "screen_negative": 0,
+        "unresolved": 0
+      },
+      "matches_Nilsson_84_positive_36_negative": false,
+      "profiles_negative_not_Human1": [],
+      "Human1_not_profiles_negative": [
+        "786-O",
+        "HOP-62",
+        "HOP-92",
+        "HS 578T",
+        "HT29",
+        "MALME-3M",
+        "MDA-MB-231/ATCC",
+        "NCI-H226",
+        "RPMI 8226",
+        "SR",
+        "UO-31"
+      ],
+      "by_allocation": {
+        "development": {
+          "cultures": {
+            "screen_positive": 21,
+            "screen_negative": 0,
+            "unresolved": 1
+          },
+          "profiles": {
+            "screen_positive": 11,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        },
+        "excluded": {
+          "cultures": {
+            "screen_positive": 4,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "profiles": {
+            "screen_positive": 2,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        },
+        "test": {
+          "cultures": {
+            "screen_positive": 94,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "profiles": {
+            "screen_positive": 47,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        }
+      }
+    },
+    "calibrated_assays": {
+      "source_assays_screened_per_culture": 115,
+      "source_cultures": {
+        "screen_positive": 119,
+        "screen_negative": 0,
+        "unresolved": 1
+      },
+      "source_profiles": {
+        "screen_positive": 60,
+        "screen_negative": 0,
+        "unresolved": 0
+      },
+      "matches_Nilsson_84_positive_36_negative": false,
+      "profiles_negative_not_Human1": [],
+      "Human1_not_profiles_negative": [
+        "786-O",
+        "HOP-62",
+        "HOP-92",
+        "HS 578T",
+        "HT29",
+        "MALME-3M",
+        "MDA-MB-231/ATCC",
+        "NCI-H226",
+        "RPMI 8226",
+        "SR",
+        "UO-31"
+      ],
+      "by_allocation": {
+        "development": {
+          "cultures": {
+            "screen_positive": 21,
+            "screen_negative": 0,
+            "unresolved": 1
+          },
+          "profiles": {
+            "screen_positive": 11,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        },
+        "excluded": {
+          "cultures": {
+            "screen_positive": 4,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "profiles": {
+            "screen_positive": 2,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        },
+        "test": {
+          "cultures": {
+            "screen_positive": 94,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "profiles": {
+            "screen_positive": 47,
+            "screen_negative": 0,
+            "unresolved": 0
+          },
+          "screen_negative_origins": 0
+        }
+      }
+    }
+  },
+  "independent_count_check": "passed",
+  "input_hashes": {
+    "cpu_study_2026-09-13/data/raw/core/NIHMS419088-supplement-Database_S1.xls": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+    "cpu_study_2026-09-13/manifests/contexts.tsv": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+    "provenance/Source_Quality_Provenance.json": "6e743acfc9f90a7abcbb051935d7656df5bf7805cb8b8d132b6fd081b38bfab9",
+    "endpoint_audit/AUDIT_AMENDMENT.json": "f7b879fb4051b521a55bfda076b8fac822710f28e0c1fde449f2b5850632c044"
+  },
+  "limits": [
+    "Original Nilsson Supplemental Table S1 has not been retrieved; count/label comparisons do not verify its unpublished filtering details",
+    "No per-culture growth trajectories, exact duration or culture-size normalization correction recovered",
+    "A screen-negative result does not establish biological validity",
+    "No model outcome performance evaluated and no original results changed"
+  ]
+}

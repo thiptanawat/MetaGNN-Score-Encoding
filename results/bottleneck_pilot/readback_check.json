@@ -1,0 +1,38 @@
+{
+  "readback_status": "passed",
+  "complete_records": 23,
+  "new_full_extremum_vectors": 2392,
+  "max_extremum_coordinate_difference": 0.0,
+  "all_source_hashes_match": true,
+  "ledger_rows": 1144,
+  "nonmonotone_fixedness_threshold_cases": [],
+  "arm_aggregates": [
+    {
+      "arm": "magnitude_g1.00",
+      "profile_target_rows": 572,
+      "B0_fixed": 33,
+      "B1_fixed": 523,
+      "B2_fixed": 569,
+      "already_fixed_B0": 33,
+      "first_fixed_B1": 490,
+      "first_fixed_B2": 46,
+      "still_variable_B2": 3,
+      "B0_to_B1_width_contraction_above_threshold": 539,
+      "B1_to_B2_width_contraction_above_threshold": 44
+    },
+    {
+      "arm": "ordinal",
+      "profile_target_rows": 572,
+      "B0_fixed": 33,
+      "B1_fixed": 514,
+      "B2_fixed": 565,
+      "already_fixed_B0": 33,
+      "first_fixed_B1": 481,
+      "first_fixed_B2": 51,
+      "still_variable_B2": 7,
+      "B0_to_B1_width_contraction_above_threshold": 539,
+      "B1_to_B2_width_contraction_above_threshold": 52
+    }
+  ],
+  "B0_fixed_once": 3
+}

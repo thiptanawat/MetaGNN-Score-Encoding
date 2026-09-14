@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "written_at_local": "2026-09-14",
+  "status": "frozen_before_any_prediction_was_computed",
+  "purpose": "Independent condition-response evaluation of the encoding-uncertainty reporting rule on a dataset that played no part in the original study.",
+  "dataset": {
+    "article": "Copeland et al. 2023, eLife 12:e82597",
+    "doi": "10.7554/eLife.82597",
+    "compendium": "https://github.com/oldhamlab/Copeland.2023.hypoxia.flux",
+    "rnaseq_package": "https://github.com/wmoldham/rnaseq.lf.hypoxia.molidustat",
+    "experiment_code": "lf_05-bay",
+    "cells": "primary normal human lung fibroblasts, Lonza CC-2512",
+    "design": "2 oxygen levels (21 percent, 0.5 percent) x 2 treatments (DMSO vehicle, molidustat 10 uM), 4 biological replicates each",
+    "prior_exposure": "None. No part of this dataset was inspected during the original study, and no prediction from it had been computed when this plan was written."
+  },
+  "inputs": {
+    "transcripts": "16 RNA-seq libraries, raw counts, converted to counts per million within library. No gene-length normalization and the result is not called TPM. The original GCRMA-derived scale constant is not transferred.",
+    "scale_constant": "Refitted as the median of positive reaction evidence over all 16 samples of this dataset, which is the rule the original study used, applied to these data.",
+    "gpr_policy": "conservative; an AND with an unmeasured operand leaves the reaction unsupported",
+    "growth_rate": "Measured per-condition growth rate mu, per hour, from the compendium. Growth rate is a declared model input, not a predicted target.",
+    "medium": "MCDB 131 without glucose, glutamine or phenol red, plus 8 mM glucose, 1 mM L-glutamine and 2 percent dialyzed fetal bovine serum. Dialyzed serum is represented as contributing no free small molecules and only lipoprotein-bound lipids.",
+    "oxygen": "The same assumed oxygen capacity is used for both oxygen conditions. Atmospheric percentage is not a measured uptake bound. The primary contrasts are taken within an oxygen level so that this assumption cancels."
+  },
+  "targets": [
+    {"exchange_id": "EX_glc__D_e", "measured_name": "glucose", "measured_sign": "negative is uptake"},
+    {"exchange_id": "EX_lac__L_e", "measured_name": "lactate", "measured_sign": "positive is secretion"}
+  ],
+  "arms": ["magnitude_g0.50", "magnitude_g0.80", "magnitude_g1.00", "magnitude_g1.25",
+           "magnitude_g2.00", "ordinal", "uniform_pfba"],
+  "uncertainty_set": {
+    "primary": ["magnitude_g0.50", "magnitude_g0.80", "magnitude_g1.00", "magnitude_g1.25", "magnitude_g2.00"],
+    "sensitivity": ["magnitude_g0.50", "magnitude_g0.80", "magnitude_g1.00", "magnitude_g1.25", "magnitude_g2.00", "ordinal"],
+    "note": "Adding the ordinal encoding expands the uncertainty set and can only make unanimity harder to obtain."
+  },
+  "task_variants": {
+    "task_measured": {"role": "primary", "rule": "biomass reaction fixed at the condition-mean measured growth rate in per hour"},
+    "task_fraction": {"role": "sensitivity", "rule": "biomass reaction fixed at 0.9 times the scenario maximum, the rule used in the original locked study"}
+  },
+  "contrasts": {
+    "primary_drug_within_oxygen": [
+      {"id": "drug_21", "a": {"oxygen": "21%", "treatment": "BAY"}, "b": {"oxygen": "21%", "treatment": "DMSO"}},
+      {"id": "drug_05", "a": {"oxygen": "0.5%", "treatment": "BAY"}, "b": {"oxygen": "0.5%", "treatment": "DMSO"}}
+    ],
+    "secondary_oxygen_within_drug": [
+      {"id": "oxy_dmso", "a": {"oxygen": "21%", "treatment": "DMSO"}, "b": {"oxygen": "0.5%", "treatment": "DMSO"}},
+      {"id": "oxy_bay", "a": {"oxygen": "21%", "treatment": "BAY"}, "b": {"oxygen": "0.5%", "treatment": "BAY"}}
+    ],
+    "note": "Eight declared decisions: four contrasts times two metabolites. All eight are reported whatever the outcome."
+  },
+  "measured_eligibility": {
+    "rule": "A contrast is measurement-eligible when the four replicate values of one condition are completely separated from the four of the other, that is min of one group exceeds max of the other.",
+    "established": "from the measured values alone, before any prediction for this dataset existed",
+    "rationale": "This is the analogue of the assay-separability tolerance used in the original study: the measurement must resolve a direction before a prediction can be judged against it.",
+    "ineligible_contrasts_are_still_reported": true
+  },
+  "reporting_rule": {
+    "epsilon": 1e-05,
+    "units": "canonical model units; only the ordering is compared, so no conversion to fmol per cell per hour is attempted",
+    "shared_encoding_interval_support": "report a direction only when, for every encoding in the uncertainty set and every cross-replicate profile pair between the two conditions, the lower bound of one exceeds the upper bound of the other by epsilon",
+    "point_unanimity": "reported separately and is a weaker criterion than interval support",
+    "otherwise": "abstain",
+    "categories_kept_distinct": ["unanimous direction", "unanimous numerical tie", "mixed", "conflicting directions"]
+  },
+  "controls": {
+    "context_independent_baseline": "uniform_pfba under the identical environment and task. If the baseline reproduces a measured condition response as well as the transcript-weighted arms, the response follows from the environment and task assumptions rather than from the transcripts.",
+    "task_ablation": "comparing task_measured with task_fraction separates the contribution of the measured growth constraint from the contribution of the transcripts."
+  },
+  "resampling_unit": "biological replicate (experiment 1 to 4). Individual cross-replicate profile pairs are dependent and are never treated as independent samples.",
+  "what_this_cannot_establish": [
+    "It is not a replication of the 44-origin cancer-line ordering estimand.",
+    "Four conditions remain four condition contexts, and sixteen libraries are not sixteen independent contexts.",
+    "Feasible ranges are numerical model objects, not calibrated confidence intervals.",
+    "RNA and metabolite samples are matched by condition, not by dish; the two sets were collected in different years.",
+    "No claim of biological accuracy follows from agreement on two metabolites."
+  ],
+  "stop_rule": "If the rate reconstruction or the sample matching proves uninterpretable, the prediction comparison stops and the reason is reported instead of a weaker substitute analysis."
+}

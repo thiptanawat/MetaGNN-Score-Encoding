@@ -1,0 +1,5 @@
+path	sha256	bytes	source_url
+data/raw/Recon3D.json	aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5	7839114	http://bigg.ucsd.edu/static/models/Recon3D.json
+data/raw/cellminer.zip	334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e	12310528	https://discover.nci.nih.gov/cellminer/download/processeddataset/nci60_RNA__Affy_HG_U133%28A_B%29_GCRMA.zip
+data/raw/core/NIHMS419088-supplement-Database_S1.xls	9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4	1221120	https://pmc.ncbi.nlm.nih.gov/articles/PMC3526189/
+data/raw/core/NIHMS419088-supplement.pdf	1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187	1670501	https://pmc.ncbi.nlm.nih.gov/articles/PMC3526189/

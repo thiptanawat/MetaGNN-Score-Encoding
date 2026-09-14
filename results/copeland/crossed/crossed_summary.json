@@ -1,0 +1,94 @@
+{
+ "completed": 448,
+ "failed": 0,
+ "jobs": 448,
+ "seconds": 513.5,
+ "decomposition": {
+  "magnitude_g0.50|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.12698176592312385,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0032041669385570876,
+   "total_spread": 0.13059899165550176,
+   "ratio_transcript_to_task": 0.025233283812550893
+  },
+  "magnitude_g0.50|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24200061300684028,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.006930506346167237,
+   "total_spread": 0.2486943849053177,
+   "ratio_transcript_to_task": 0.02863838343240619
+  },
+  "magnitude_g0.80|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.12664635917561523,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0020000788003453895,
+   "total_spread": 0.1285533677158767,
+   "ratio_transcript_to_task": 0.015792627702561617
+  },
+  "magnitude_g0.80|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24178808064233198,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.003474901453293322,
+   "total_spread": 0.24529561781498016,
+   "ratio_transcript_to_task": 0.014371682194018543
+  },
+  "magnitude_g1.00|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.126494276762313,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0019900593751458265,
+   "total_spread": 0.1285433300421151,
+   "ratio_transcript_to_task": 0.015732406446223767
+  },
+  "magnitude_g1.00|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24162716394222306,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0034677974932649236,
+   "total_spread": 0.24528850158107046,
+   "ratio_transcript_to_task": 0.014351852816077128
+  },
+  "magnitude_g1.25|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.12630577245772262,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.001887326002731976,
+   "total_spread": 0.12815946803597617,
+   "ratio_transcript_to_task": 0.014942515817032088
+  },
+  "magnitude_g1.25|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24139392932479958,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.002956704852945524,
+   "total_spread": 0.2444689562402868,
+   "ratio_transcript_to_task": 0.012248463999139052
+  },
+  "magnitude_g2.00|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.12591662037481488,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0017260918970255085,
+   "total_spread": 0.12748734318255797,
+   "ratio_transcript_to_task": 0.013708213354896805
+  },
+  "magnitude_g2.00|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24077570169314735,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.002634230491128542,
+   "total_spread": 0.2431247004460801,
+   "ratio_transcript_to_task": 0.010940599373626554
+  },
+  "ordinal|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.12787567521236903,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.005915309054146584,
+   "total_spread": 0.13399084195108485,
+   "ratio_transcript_to_task": 0.04625828207219831
+  },
+  "ordinal|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.24431863523196437,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.012807398359438296,
+   "total_spread": 0.2577649566167669,
+   "ratio_transcript_to_task": 0.052420882047243426
+  },
+  "uniform_pfba|EX_glc__D_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.0031011221647603377,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0,
+   "total_spread": 0.0031011221647603377,
+   "ratio_transcript_to_task": 0.0
+  },
+  "uniform_pfba|EX_lac__L_e": {
+   "mean_spread_across_growth_rates_at_fixed_transcript": 0.0,
+   "mean_spread_across_transcripts_at_fixed_growth_rate": 0.0,
+   "total_spread": 0.0,
+   "ratio_transcript_to_task": null
+  }
+ },
+ "finished_at_utc": "2026-09-14T03:43:55.345682+00:00",
+ "correction": "The total_spread field was computed by a malformed expression and is corrected here from the saved predictions. The two reported spreads and their ratio were computed separately, are unaffected, and reproduce exactly. No optimization was repeated."
+}

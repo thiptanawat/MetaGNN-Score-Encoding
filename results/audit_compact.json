@@ -1,0 +1,17 @@
+{
+  "arms": 849,
+  "logical_lps": 247059,
+  "solver_attempts": 247059,
+  "recovered_lp_groups": 0,
+  "maximum_residuals": {
+    "max_cost_weight_difference": 0.0,
+    "max_mass_balance_residual": 2.563978345637659e-11,
+    "max_bound_violation": 2.5803735723420954e-10,
+    "fixed_task_violation": 0.0,
+    "primary_cap_violation": 1.3882868188375141e-09,
+    "secondary_cap_violation": 1.3102408047416247e-09,
+    "max_saved_point_difference": 0.0,
+    "max_point_range_violation": 7.14248660216299e-11,
+    "max_coordinate_fix_violation": 4.580670110731241e-15
+  }
+}

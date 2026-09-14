@@ -1,0 +1,117 @@
+{
+ "source": {
+  "compendium_commit": "354bd99459367f373c7b8a641bca4667bf96c779",
+  "rnaseq_commit": "1b6563bac8ba50019e90f7e6c6ed7d2f49a90ea5",
+  "compendium_url": "https://github.com/oldhamlab/Copeland.2023.hypoxia.flux",
+  "rnaseq_url": "https://github.com/wmoldham/rnaseq.lf.hypoxia.molidustat",
+  "article_doi": "10.7554/eLife.82597",
+  "sra_bioproject": "PRJNA721596",
+  "rnaseq_rda_sha256": "4088ad11271e5a6def001018b8911fec8e0d7868462a1f390b86f9a146e4901f",
+  "recon3d_sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5"
+ },
+ "expression": {
+  "genes_in_matrix": 28395,
+  "samples": 16,
+  "library_sizes_min": 21376948.0,
+  "library_sizes_max": 22880227.0,
+  "normalization": "counts per million within library; no gene-length normalization; not TPM",
+  "entrez_bases_measured": 28395,
+  "model_genes_total": 2248,
+  "model_genes_measured": 2241
+ },
+ "reactions": {
+  "internal_reactions": 8794,
+  "internal_with_gpr": 5938,
+  "supported_conservative": 5936,
+  "unsupported": 2858,
+  "policy": "conservative: an AND with an unmeasured operand leaves the reaction unsupported"
+ },
+ "scale_constant_k": 43.18130634745273,
+ "scale_constant_rule": "median of positive reaction evidence over all 16 samples of this dataset; the original GCRMA-derived constant is not transferred",
+ "samples": {
+  "S01": {
+   "experiment": "1",
+   "oxygen": "21%",
+   "treatment": "DMSO"
+  },
+  "S02": {
+   "experiment": "1",
+   "oxygen": "21%",
+   "treatment": "BAY"
+  },
+  "S03": {
+   "experiment": "1",
+   "oxygen": "0.5%",
+   "treatment": "DMSO"
+  },
+  "S04": {
+   "experiment": "1",
+   "oxygen": "0.5%",
+   "treatment": "BAY"
+  },
+  "S05": {
+   "experiment": "2",
+   "oxygen": "21%",
+   "treatment": "DMSO"
+  },
+  "S06": {
+   "experiment": "2",
+   "oxygen": "21%",
+   "treatment": "BAY"
+  },
+  "S07": {
+   "experiment": "2",
+   "oxygen": "0.5%",
+   "treatment": "DMSO"
+  },
+  "S08": {
+   "experiment": "2",
+   "oxygen": "0.5%",
+   "treatment": "BAY"
+  },
+  "S09": {
+   "experiment": "3",
+   "oxygen": "21%",
+   "treatment": "DMSO"
+  },
+  "S10": {
+   "experiment": "3",
+   "oxygen": "21%",
+   "treatment": "BAY"
+  },
+  "S11": {
+   "experiment": "3",
+   "oxygen": "0.5%",
+   "treatment": "DMSO"
+  },
+  "S12": {
+   "experiment": "3",
+   "oxygen": "0.5%",
+   "treatment": "BAY"
+  },
+  "S13": {
+   "experiment": "4",
+   "oxygen": "21%",
+   "treatment": "DMSO"
+  },
+  "S14": {
+   "experiment": "4",
+   "oxygen": "21%",
+   "treatment": "BAY"
+  },
+  "S15": {
+   "experiment": "4",
+   "oxygen": "0.5%",
+   "treatment": "DMSO"
+  },
+  "S16": {
+   "experiment": "4",
+   "oxygen": "0.5%",
+   "treatment": "BAY"
+  }
+ },
+ "growth_rate_records": 16,
+ "growth_rate_units": "per hour, as documented in the compendium R/data.R",
+ "no_target_outcome_read": true,
+ "note": "Measured growth rate is a declared model input. Measured glucose and lactate rates are the prediction targets and are not read by this script."
+}

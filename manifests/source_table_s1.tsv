@@ -1,0 +1,220 @@
+source_label	method	source_kegg	source_pdf_page	source_text
+glucose	BGA	C00031	22	glucose                           BGA         ko00010|Glycolysis / Gluconeogenesis                                C00031              1                  1
+lactate	BGA	C00186	22	lactate                           BGA         ko00010|Glycolysis / Gluconeogenesis                                C00186              1                  1
+1-methylhistamine	HILIC	C05127	22	1-methylhistamine                 HILIC       ko00340|Histidine metabolism                                        C05127
+2'-deoxyadenosine	HILIC	C00559	22	2'-deoxyadenosine                 HILIC       ko00230|Purine metabolism                                           C00559              1                  1
+2'-deoxycytidine	HILIC	C00881	22	2'-deoxycytidine                  HILIC       ko00240|Pyrimidine metabolism                                       C00881              1                  1
+2'-deoxyuridine	HILIC	C00526	22	2'-deoxyuridine                   HILIC       ko00240|Pyrimidine metabolism                                       C00526              1                  1
+3-chlorotyrosine	HILIC	NA	22	3-chlorotyrosine                  HILIC       NA                                                                   NA
+3-hydroxyanthranilate	HILIC	C00632	22	3-hydroxyanthranilate             HILIC       ko00380|Tryptophan metabolism                                       C00632              1                  1
+3-methoxytyramine	HILIC	C05587	22	3-methoxytyramine                 HILIC       ko00350|Tyrosine metabolism                                         C05587
+3-nitrotyrosine	HILIC	NA	22	3-nitrotyrosine                   HILIC       NA                                                                   NA
+5'-adenosylhomocysteine	HILIC	C00021	22	5'-adenosylhomocysteine           HILIC       ko00270|Cysteine and methionine metabolism                          C00021              1                  1
+5-HIAA	HILIC	C05635	22	5-HIAA                            HILIC       ko00380|Tryptophan metabolism                                       C05635
+5-hydroxytryptophan	HILIC	C01017	22	5-hydroxytryptophan               HILIC       NA                                                                  C01017
+acetylcholine	HILIC	C01996	22	acetylcholine                     HILIC       ko00564|Glycerophospholipid metabolism                              C01996
+adenosine	HILIC	C00212	22	adenosine                         HILIC       ko00230|Purine metabolism                                           C00212              1                  1
+alanine	HILIC	C00041	22	alanine                           HILIC       ko00250|Alanine, aspartate and glutamate metabolism                 C00041              1                  1
+allantoin	HILIC	C01551	22	allantoin                         HILIC       NA                                                                  C01551              1
+alpha-glycerophosphocholine	HILIC	C00670	22	alpha-glycerophosphocholine       HILIC       ko00564|Glycerophospholipid metabolism                              C00670              1                  1
+aminoisobutyrate	HILIC	C03284	22	aminoisobutyrate                  HILIC       ko00280|Valine, leucine and isoleucine degradation                  C03284              1
+anthranilate	HILIC	C00108	22	anthranilate                      HILIC       ko00380|Tryptophan metabolism                                       C00108              1                  1
+arginine	HILIC	C00062	22	arginine                          HILIC       ko00330|Arginine and proline metabolism                             C00062              1
+argininosuccinate	HILIC	C03406	22	argininosuccinate                 HILIC       ko00330|Arginine and proline metabolism                             C03406
+asparagine	HILIC	C00152	22	asparagine                        HILIC       ko00250|Alanine, aspartate and glutamate metabolism                 C00152              1                  1
+aspartate	HILIC	C00049	22	aspartate                         HILIC       ko00250|Alanine, aspartate and glutamate metabolism                 C00049              1                  1
+asymmetric dimethylarginine	HILIC	C03626	22	asymmetric dimethylarginine       HILIC       NA                                                                  C03626              1                  1
+betaine	HILIC	C00719	22	betaine                           HILIC       ko00260|Glycine, serine and threonine metabolism                    C00719              1                  1
+cAMP	HILIC	C00575	23	cAMP                                 HILIC   ko00230|Purine metabolism                                C00575
+carnitine	HILIC	C00318	23	carnitine                            HILIC   ko00071|Fatty acid metabolism                            C00318       1   1
+carnosine	HILIC	C00386	23	carnosine                            HILIC   ko00340|Histidine metabolism                             C00386       1
+cGMP	HILIC	C00942	23	cGMP                                 HILIC   ko00230|Purine metabolism                                C00942
+choline	HILIC	C00114	23	choline                              HILIC   ko00564|Glycerophospholipid metabolism                   C00114       1   1
+cis-hydroxyproline/trans-hydroxyproline	HILIC	C03441/C01157	23	cis-hydroxyproline/trans-hydroxyproline HILIC   ko00330|Arginine and proline metabolism               C03441/C01157   1
+citrulline	HILIC	C00327	23	citrulline                           HILIC   ko00330|Arginine and proline metabolism                  C00327       1   1
+cobalamin	HILIC	C00194	23	cobalamin                            HILIC   ko00860|Porphyrin and chlorophyll metabolism             C00194
+cotinine	HILIC	NA	23	cotinine                             HILIC   NA                                                         NA         1
+creatine	HILIC	C00300	23	creatine                             HILIC   ko00330|Arginine and proline metabolism                  C00300       1   1
+creatinine	HILIC	C00791	23	creatinine                           HILIC   ko00330|Arginine and proline metabolism                  C00791       1
+cystamine	HILIC	NA	23	cystamine                            HILIC   NA                                                         NA
+cysteamine	HILIC	C01678	23	cysteamine                           HILIC   ko00430|Taurine and hypotaurine metabolism               C01678
+cysteine	HILIC	C00097	23	cysteine                             HILIC   ko00270|Cysteine and methionine metabolism               C00097
+cytosine	HILIC	C00380	23	cytosine                             HILIC   ko00240|Pyrimidine metabolism                            C00380
+dimethylglycine	HILIC	C01026	23	dimethylglycine                      HILIC   ko00260|Glycine, serine and threonine metabolism         C01026       1
+dopa	HILIC	C00355	23	dopa                                 HILIC   ko00350|Tyrosine metabolism                              C00355
+dopamine	HILIC	C03758	23	dopamine                             HILIC   ko00350|Tyrosine metabolism                              C03758
+epinephrine	HILIC	C00547	23	epinephrine                          HILIC   ko00350|Tyrosine metabolism                              C00547
+GABA	HILIC	C00334	23	GABA                                 HILIC   ko00250|Alanine, aspartate and glutamate metabolism      C00334       1   1
+glutamate	HILIC	C00025	23	glutamate                            HILIC   ko00250|Alanine, aspartate and glutamate metabolism      C00025       1   1
+glutamine	HILIC	C00064	23	glutamine                            HILIC   ko00250|Alanine, aspartate and glutamate metabolism      C00064       1   1
+glycerol	HILIC	C00116	23	glycerol                             HILIC   ko00561|Glycerolipid metabolism                          C00116       1   1
+glycerol_early	HILIC	C00116	23	glycerol_early                       HILIC   ko00561|Glycerolipid metabolism                          C00116       1   1
+glycine	HILIC	C00037	23	glycine                              HILIC   ko00260|Glycine, serine and threonine metabolism         C00037       1   1
+guanidinoacetate	HILIC	C00581	23	guanidinoacetate                     HILIC   ko00260|Glycine, serine and threonine metabolism         C00581       1   1
+histamine	HILIC	C00388	23	histamine                            HILIC   ko00340|Histidine metabolism                             C00388
+histidine	HILIC	C00135	23	histidine                            HILIC   ko00340|Histidine metabolism                             C00135
+homocysteine	HILIC	C00155	23	homocysteine                         HILIC   ko00270|Cysteine and methionine metabolism               C00155       1   1
+homoserine	HILIC	C00263	23	homoserine                           HILIC   ko00260|Glycine, serine and threonine metabolism         C00263       1   1
+isoleucine	HILIC	C00407	23	isoleucine                           HILIC   ko00280|Valine, leucine and isoleucine degradation       C00407       1   1
+kynurenate	HILIC	C01717	23	kynurenate                           HILIC   ko00380|Tryptophan metabolism                            C01717       1
+leucine	HILIC	C00123	23	leucine                              HILIC   ko00280|Valine, leucine and isoleucine degradation       C00123       1   1
+lysine	HILIC	C00047	23	lysine                               HILIC   ko00310|Lysine degradation                               C00047       1   1
+metanephrine	HILIC	C05588	23	metanephrine                         HILIC   ko00350|Tyrosine metabolism                              C05588
+methionine	HILIC	C00073	23	methionine                           HILIC   ko00270|Cysteine and methionine metabolism               C00073       1   1
+methyl beta-hydroxyisobutyrate	HILIC	C00141	23	methyl beta-hydroxyisobutyrate       HILIC   ko00280|Valine, leucine and isoleucine degradation       C00141
+N-carbamoyl-beta-alanine	HILIC	C02642	23	N-carbamoyl-beta-alanine             HILIC   ko00240|Pyrimidine metabolism                            C02642       1   1
+niacinamide	HILIC	C00153	23	niacinamide                          HILIC   ko00760|Nicotinate and nicotinamide metabolism           C00153       1   1
+N-monomethylarginine	HILIC	C03884	23	N-monomethylarginine                 HILIC   NA                                                       C03884       1   1
+ornithine	HILIC	C00077	24	ornithine                    HILIC   ko00330|Arginine and proline metabolism              C00077   1   1
+phenylalanine	HILIC	C00079	24	phenylalanine                HILIC   ko00360|Phenylalanine metabolism                     C00079   1   1
+phosphocholine	HILIC	C00588	24	phosphocholine               HILIC   ko00564|Glycerophospholipid metabolism               C00588   1   1
+phosphoethanolamine	HILIC	C00346	24	phosphoethanolamine          HILIC   ko00564|Glycerophospholipid metabolism               C00346   1   1
+proline	HILIC	C00148	24	proline                      HILIC   ko00330|Arginine and proline metabolism              C00148   1   1
+pyridoxine	HILIC	C00314	24	pyridoxine                   HILIC   ko00750|Vitamin B6 metabolism                        C00314
+serine	HILIC	C00065	24	serine                       HILIC   ko00260|Glycine, serine and threonine metabolism     C00065   1   1
+serotonin	HILIC	C00780	24	serotonin                    HILIC   ko00380|Tryptophan metabolism                        C00780   1   1
+spermidine	HILIC	C00315	24	spermidine                   HILIC   ko00330|Arginine and proline metabolism              C00315   1   1
+spermine	HILIC	C00750	24	spermine                     HILIC   ko00330|Arginine and proline metabolism              C00750   1   1
+symmetric dimethylarginine	HILIC	NA	24	symmetric dimethylarginine   HILIC   NA                                                    NA
+taurine	HILIC	C00245	24	taurine                      HILIC   ko00120|Primary bile acid biosynthesis               C00245   1   1
+thiamine	HILIC	C00378	24	thiamine                     HILIC   ko00730|Thiamine metabolism                          C00378   1   1
+threonine	HILIC	C00188	24	threonine                    HILIC   ko00260|Glycine, serine and threonine metabolism     C00188   1   1
+thymidine	HILIC	C00214	24	thymidine                    HILIC   ko00240|Pyrimidine metabolism                        C00214   1   1
+thyroxine	HILIC	C01829	24	thyroxine                    HILIC   ko00350|Tyrosine metabolism                          C01829   1   1
+triiodothyronine	HILIC	C02465	24	triiodothyronine             HILIC   ko00350|Tyrosine metabolism                          C02465   1   1
+trimethylamine-N-oxide	HILIC	C01104	24	trimethylamine-N-oxide       HILIC   ko00680|Methane metabolism                           C01104   1
+tryptophan	HILIC	C00078	24	tryptophan                   HILIC   ko00380|Tryptophan metabolism                        C00078   1   1
+tyramine	HILIC	C00483	24	tyramine                     HILIC   ko00350|Tyrosine metabolism                          C00483
+tyrosine	HILIC	C00082	24	tyrosine                     HILIC   ko00350|Tyrosine metabolism                          C00082   1   1
+valine	HILIC	C00183	24	valine                       HILIC   ko00280|Valine, leucine and isoleucine degradation   C00183   1   1
+xanthosine	HILIC	C01762	24	xanthosine                   HILIC   ko00230|Purine metabolism                            C01762   1   1
+2-aminoadipate	IPR	C00956	24	2-aminoadipate                IPR    ko00310|Lysine degradation                           C00956   1   1
+2-phosphoglycerate	IPR	C00631	24	2-phosphoglycerate            IPR    ko00010|Glycolysis / Gluconeogenesis                 C00631   1   1
+3-OH-kynurenate	IPR	C03227	24	3-OH-kynurenate               IPR    ko00380|Tryptophan metabolism                        C03227   1   1
+3-phosphoglycerate	IPR	C00197	24	3-phosphoglycerate            IPR    ko00010|Glycolysis / Gluconeogenesis                 C00197   1   1
+4-hydroxybenzoate	IPR	C00156	24	4-hydroxybenzoate             IPR    ko00360|Phenylalanine metabolism                     C00156   1   1
+4-pyridoxate	IPR	C00847	24	4-pyridoxate                  IPR    ko00750|Vitamin B6 metabolism                        C00847   1   1
+5-Formyl-THF	IPR	C03479	24	5-Formyl-THF                  IPR    ko00670|One carbon pool by folate                    C03479
+5-HIAA	IPR	C05635	24	5-HIAA                        IPR    ko00380|Tryptophan metabolism                        C05635   1   1
+5-Methyl-THF	IPR	C00440	24	5-Methyl-THF                  IPR    ko00670|One carbon pool by folate                    C00440
+acetoacetate	IPR	C00164	24	acetoacetate                  IPR    ko00072|Synthesis and degradation of ketone bodies   C00164   1   1
+acetyl-CoA	IPR	C00024	24	acetyl-CoA                    IPR    ko00020|Citrate cycle (TCA cycle)                    C00024
+aconitate	IPR	C00417	24	aconitate                     IPR    ko00020|Citrate cycle (TCA cycle)                    C00417   1   1
+adenine	IPR	C00147	24	adenine                       IPR    ko00230|Purine metabolism                            C00147   1   1
+adenosine	IPR	C00212	24	adenosine                     IPR    ko00230|Purine metabolism                            C00212
+adenylosuccinate	IPR	C03794	24	adenylosuccinate              IPR    ko00230|Purine metabolism                            C03794
+adipate	IPR	C06104	24	adipate                       IPR    ko00930|Caprolactam degradation                      C06104   1   1
+ADP	IPR	C00008	24	ADP                           IPR    ko00190|Oxidative phosphorylation                    C00008
+alpha-glycerophosphate	IPR	C00093	25	alpha-glycerophosphate                  IPR      ko00561|Glycerolipid metabolism                         C00093        1   1
+alpha-ketoglutarate	IPR	C00026	25	alpha-ketoglutarate                     IPR      ko00020|Citrate cycle (TCA cycle)                       C00026        1
+AMP	IPR	C00020	25	AMP                                     IPR      ko00230|Purine metabolism                               C00020        1   1
+ascorbate	IPR	C00072	25	ascorbate                               IPR      ko00053|Ascorbate and aldarate metabolism               C00072        1   1
+aspirin	IPR	C01405	25	aspirin                                 IPR      NA                                                      C01405
+asymmetric dimethylarginine	IPR	C03626	25	asymmetric dimethylarginine             IPR      NA                                                      C03626
+ATP	IPR	C00002	25	ATP                                     IPR      ko00190|Oxidative phosphorylation                       C00002
+bilirubin	IPR	C00486	25	bilirubin                               IPR      ko00860|Porphyrin and chlorophyll metabolism            C00486        1   1
+biotin	IPR	C00120	25	biotin                                  IPR      ko00780|Biotin metabolism                               C00120        1
+cAMP	IPR	C00575	25	cAMP                                    IPR      ko00230|Purine metabolism                               C00575
+CDP	IPR	C00112	25	CDP                                     IPR      ko00240|Pyrimidine metabolism                           C00112
+cGMP	IPR	C00942	25	cGMP                                    IPR      ko00230|Purine metabolism                               C00942
+chenodeoxycholate/deoxycholate	IPR	C02528/C04483	25	chenodeoxycholate/deoxycholate          IPR      ko00120|Primary bile acid biosynthesis              C02528/C04483     1
+citrate	IPR	C00158	25	citrate                                 IPR      ko00020|Citrate cycle (TCA cycle)                       C00158        1   1
+citrate/isocitrate	IPR	C00158/C00311	25	citrate/isocitrate                      IPR      ko00020|Citrate cycle (TCA cycle)                   C00158/C00311     1   1
+citrulline	IPR	C00327	25	citrulline                              IPR      ko00330|Arginine and proline metabolism                 C00327
+CMP	IPR	C00055	25	CMP                                     IPR      ko00240|Pyrimidine metabolism                           C00055        1   1
+CTP	IPR	C00063	25	CTP                                     IPR      ko00240|Pyrimidine metabolism                           C00063
+cystathionine	IPR	C02291	25	cystathionine                           IPR      ko00270|Cysteine and methionine metabolism              C02291        1   1
+cytidine	IPR	C00475	25	cytidine                                IPR      ko00240|Pyrimidine metabolism                           C00475        1   1
+dCDP	IPR	C00705	25	dCDP                                    IPR      ko00240|Pyrimidine metabolism                           C00705
+dCMP	IPR	C00239	25	dCMP                                    IPR      ko00240|Pyrimidine metabolism                           C00239        1   1
+dCTP	IPR	C00458	25	dCTP                                    IPR      ko00240|Pyrimidine metabolism                           C00458
+dihydrofolate	IPR	C00415	25	dihydrofolate                           IPR      ko00790|Folate biosynthesis                             C00415
+dihydroxyacetone phosphate	IPR	C00111	25	dihydroxyacetone phosphate              IPR      ko00010|Glycolysis / Gluconeogenesis                    C00111        1   1
+dTMP	IPR	C00364	25	dTMP                                    IPR      ko00240|Pyrimidine metabolism                           C00364
+dTTP	IPR	C00459	25	dTTP                                    IPR      ko00240|Pyrimidine metabolism                           C00459
+dUMP	IPR	C00365	25	dUMP                                    IPR      ko00240|Pyrimidine metabolism                           C00365
+dUTP	IPR	C00460	25	dUTP                                    IPR      ko00240|Pyrimidine metabolism                           C00460
+erythrose-4-phosphate	IPR	C00279	25	erythrose-4-phosphate                   IPR      ko00030|Pentose phosphate pathway                       C00279
+folate	IPR	C00504	25	folate                                  IPR      ko00670|One carbon pool by folate                       C00504        1
+fructose-1,6-diphosphate/fructose-2,6-diphosphate/glucose-1,6-diphosphate	IPR	C00354/C00665/NA	25	fructose-1,6-diphosphate/fructose-2,6-diphosphate/glucose-1,6-diphosphate IPR      ko00010|Glycolysis / Gluconeogenesis               C00354/C00665/NA   1   1
+fumarate	IPR	C00122	25	fumarate                                IPR      ko00020|Citrate cycle (TCA cycle)                       C00122        1   1
+G1P	IPR	C00103	25	G1P                                     IPR      ko00500|Starch and sucrose metabolism                   C00103
+GDP	IPR	C00035	25	GDP                                     IPR      ko00230|Purine metabolism                               C00035
+geranyl pyrophosphate	IPR	C11356	25	geranyl pyrophosphate                   IPR      ko00900|Terpenoid backbone biosynthesis                 C11356
+glucuronate	IPR	C00191	25	glucuronate                             IPR      ko00040|Pentose and glucuronate interconversions        C00191        1   1
+glutathione oxidized	IPR	C00127	25	glutathione oxidized                    IPR      ko00480|Glutathione metabolism                          C00127        1   1
+glutathione reduced	IPR	C00051	25	glutathione reduced                     IPR      ko00480|Glutathione metabolism                          C00051
+glyceraldehyde	IPR	C00577	25	glyceraldehyde                          IPR      ko00010|Glycolysis / Gluconeogenesis                    C00577        1   1
+glycocholate	IPR	C01921	26	glycocholate                        IPR    ko00120|Primary bile acid biosynthesis                  C01921       1
+glycodeoxycholate/glycochenodeoxycholate	IPR	C05464/C05466	26	glycodeoxycholate/glycochenodeoxycholate IPR    ko00120|Primary bile acid biosynthesis               C05464/C05466   1
+GMP	IPR	C00144	26	GMP                                 IPR    ko00230|Purine metabolism                               C00144       1   1
+GTP	IPR	C00044	26	GTP                                 IPR    ko00230|Purine metabolism                               C00044
+guanine	IPR	C00242	26	guanine                             IPR    ko00230|Purine metabolism                               C00242
+guanosine	IPR	C00387	26	guanosine                           IPR    ko00230|Purine metabolism                               C00387
+hippurate	IPR	C01586	26	hippurate                           IPR    ko00360|Phenylalanine metabolism                        C01586       1
+homocystine	IPR	C00155	26	homocystine                         IPR    ko00270|Cysteine and methionine metabolism              C00155       1   1
+homogentisate	IPR	C00544	26	homogentisate                       IPR    ko00350|Tyrosine metabolism                             C00544
+homovanillate	IPR	C05582	26	homovanillate                       IPR    ko00350|Tyrosine metabolism                             C05582
+hyodeoxycholate/ursodeoxycholate	IPR	C15517/C07880	26	hyodeoxycholate/ursodeoxycholate    IPR    ko00120|Primary bile acid biosynthesis               C15517/C07880   1
+hypoxanthine	IPR	C00262	26	hypoxanthine                        IPR    ko00230|Purine metabolism                               C00262       1   1
+IMP	IPR	C00130	26	IMP                                 IPR    ko00230|Purine metabolism                               C00130       1   1
+inosine	IPR	C00294	26	inosine                             IPR    ko00230|Purine metabolism                               C00294       1   1
+inositol	IPR	C00137	26	inositol                            IPR    ko00052|Galactose metabolism                            C00137
+isocitrate	IPR	C00311	26	isocitrate                          IPR    ko00020|Citrate cycle (TCA cycle)                       C00311       1   1
+kynurenate	IPR	C01717	26	kynurenate                          IPR    ko00380|Tryptophan metabolism                           C01717
+kynurenine	IPR	C00328	26	kynurenine                          IPR    ko00380|Tryptophan metabolism                           C00328       1   1
+lactose	IPR	C00243	26	lactose                             IPR    ko00052|Galactose metabolism                            C00243       1   1
+lanosterol	IPR	C01724	26	lanosterol                          IPR    ko00100|Steroid biosynthesis                            C01724
+lithocholate	IPR	C03990	26	lithocholate                        IPR    ko00120|Primary bile acid biosynthesis                  C03990       1   1
+malate	IPR	C00149	26	malate                              IPR    ko00020|Citrate cycle (TCA cycle)                       C00149       1   1
+maleate	IPR	C01384	26	maleate                             IPR    ko00650|Butanoate metabolism                            C01384       1
+malonate	IPR	C00383	26	malonate                            IPR    ko00240|Pyrimidine metabolism                           C00383       1   1
+malonyl-coA	IPR	C00083	26	malonyl-coA                         IPR    ko00061|Fatty acid biosynthesis                         C00083
+methylmalonate	IPR	C02170	26	methylmalonate                      IPR    ko00280|Valine, leucine and isoleucine degradation      C02170       1   1
+mevalonolactone	IPR	NA	26	mevalonolactone                     IPR    NA                                                        NA
+3-methoxy-4-hydroxyphenylethyleneglycol	IPR	C05594	26	3-methoxy-4-hydroxyphenylethyleneglycol IPR    ko00350|Tyrosine metabolism                             C05594
+NAD	IPR	C00003	26	NAD                                 IPR    ko00760|Nicotinate and nicotinamide metabolism          C00003
+NADH	IPR	C00004	26	NADH                                IPR    ko00760|Nicotinate and nicotinamide metabolism          C00004
+NADP	IPR	C00006	26	NADP                                IPR    ko00760|Nicotinate and nicotinamide metabolism          C00006
+NADPH	IPR	C00005	26	NADPH                               IPR    ko00760|Nicotinate and nicotinamide metabolism          C00005
+neopterin	IPR	C05926	26	neopterin                           IPR    ko00790|Folate biosynthesis                             C05926
+niacin	IPR	C00253	26	niacin                              IPR    ko00760|Nicotinate and nicotinamide metabolism          C00253       1   1
+nicotinic acid mononucleotide	IPR	C01185	26	nicotinic acid mononucleotide       IPR    ko00760|Nicotinate and nicotinamide metabolism          C01185       1
+OH-phenylpyruvate	IPR	C01179	26	OH-phenylpyruvate                   IPR    ko00350|Tyrosine metabolism                             C01179       1   1
+OMP	IPR	C01103	26	OMP                                 IPR    ko00240|Pyrimidine metabolism                           C01103       1
+orotate	IPR	C00295	26	orotate                             IPR    ko00240|Pyrimidine metabolism                           C00295       1   1
+oxalate	IPR	C00209	26	oxalate                             IPR    ko00630|Glyoxylate and dicarboxylate metabolism         C00209       1
+oxaloacetate	IPR	C00036	26	oxaloacetate                        IPR    ko00020|Citrate cycle (TCA cycle)                       C00036
+pantothenate	IPR	C00864	27	pantothenate                        IPR    ko00770|Pantothenate and CoA biosynthesis             C00864        1    1
+phenylacetylglycine	IPR	C05598	27	phenylacetylglycine                 IPR    ko00360|Phenylalanine metabolism                      C05598        1
+phosphoenolpyruvate	IPR	C00074	27	phosphoenolpyruvate                 IPR    ko00010|Glycolysis / Gluconeogenesis                  C00074        1    1
+phosphotyrosine	IPR	C06501	27	phosphotyrosine                     IPR    NA                                                    C06501
+phenylpyruvic acid	IPR	C00166	27	phenylpyruvic acid                  IPR    ko00360|Phenylalanine metabolism                      C00166
+proprionate	IPR	C00163	27	proprionate                         IPR    ko00640|Propanoate metabolism                         C00163        1
+prostaglandin E2	IPR	C00584	27	prostaglandin E2                    IPR    ko00590|Arachidonic acid metabolism                   C00584
+pyridoxal-5-phosphate	IPR	C00018	27	pyridoxal-5-phosphate               IPR    ko00750|Vitamin B6 metabolism                         C00018
+pyruvate	IPR	C00022	27	pyruvate                            IPR    ko00010|Glycolysis / Gluconeogenesis                  C00022        1    1
+quinolinate	IPR	C03722	27	quinolinate                         IPR    ko00380|Tryptophan metabolism                         C03722        1
+ribose-5-phosphate	IPR	C00117	27	ribose-5-phosphate                  IPR    ko00030|Pentose phosphate pathway                     C00117
+ribulose-5-phosphate	IPR	C00199	27	ribulose-5-phosphate                IPR    ko00030|Pentose phosphate pathway                     C00199
+salicylurate	IPR	C07588	27	salicylurate                        IPR    NA                                                    C07588        1
+sorbitol	IPR	C00794	27	sorbitol                            IPR    ko00051|Fructose and mannose metabolism               C00794        1    1
+succinate	IPR	C00042	27	succinate                           IPR    ko00020|Citrate cycle (TCA cycle)                     C00042        1    1
+sucrose	IPR	C00089	27	sucrose                             IPR    ko00500|Starch and sucrose metabolism                 C00089        1    1
+symmetric dimethylarginine	IPR	NA	27	symmetric dimethylarginine          IPR    NA                                                      NA
+taurocholate	IPR	C05122	27	taurocholate                        IPR    ko00120|Primary bile acid biosynthesis                C05122        1
+taurodeoxycholate/taurochenodeoxycholate	IPR	C05463/C05465	27	taurodeoxycholate/taurochenodeoxycholate IPR    ko00120|Primary bile acid biosynthesis             C05463/C05465    1
+taurolithocholate	IPR	C02592	27	taurolithocholate                   IPR    ko00120|Primary bile acid biosynthesis                C02592        1
+thiamine pyrophosphate	IPR	C00068	27	thiamine pyrophosphate              IPR    ko00020|Citrate cycle (TCA cycle)                     C00068
+thymidine	IPR	C00214	27	thymidine                           IPR    ko00240|Pyrimidine metabolism                         C00214
+thymine	IPR	C00178	27	thymine                             IPR    ko00240|Pyrimidine metabolism                         C00178        1    1
+UDP-galactose/UDP-glucose	IPR	C00029	27	UDP-galactose/UDP-glucose           IPR    ko00052|Galactose metabolism                          C00029        1    1
+UDP-glucuronate	IPR	C00052/C00167	27	UDP-glucuronate                     IPR    ko00040|Pentose and glucuronate interconversions   C00052/C00167    1    1
+UMP	IPR	C00105	27	UMP                                 IPR    ko00240|Pyrimidine metabolism                         C00105        1    1
+uracil	IPR	C00106	27	uracil                              IPR    ko00240|Pyrimidine metabolism                         C00106        1    1
+urate	IPR	C00366	27	urate                               IPR    ko00230|Purine metabolism                             C00366        1    1
+uridine	IPR	C00299	27	uridine                             IPR    ko00240|Pyrimidine metabolism                         C00299        1    1
+UTP	IPR	C00075	27	UTP                                 IPR    ko00240|Pyrimidine metabolism                         C00075
+xanthine	IPR	C00385	27	xanthine                            IPR    ko00230|Purine metabolism                             C00385        1    1
+xanthurenate	IPR	C02470	27	xanthurenate                        IPR    ko00380|Tryptophan metabolism                         C02470
+XMP	IPR	C00655	27	XMP                                 IPR    ko00230|Purine metabolism                             C00655        1    1

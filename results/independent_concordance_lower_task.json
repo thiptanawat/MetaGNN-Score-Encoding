@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scenario": "lower_task",
+  "method": "Independent pair construction and origin adjacency-matrix quadratic forms; no imports from production evaluator.",
+  "observed_pairs": 46447,
+  "targets": 52,
+  "origins": 44,
+  "valid_draws": 2000,
+  "invalid_draws": 0,
+  "absolute_C": {
+    "magnitude_g0.50": 0.4980963454586572,
+    "magnitude_g0.80": 0.497684544906977,
+    "magnitude_g1.00": 0.49901075032605174,
+    "magnitude_g1.25": 0.5015717262763477,
+    "magnitude_g2.00": 0.5012911577195054,
+    "ordinal": 0.5028094853530978,
+    "uniform_pfba": 0.5
+  },
+  "delta_grid": 0.0032785804155899823,
+  "delta_identity": 0.0037987350270460296,
+  "delta_grid_interval": [
+    -0.004845367429443482,
+    0.010408935039623698
+  ],
+  "delta_identity_interval": [
+    -0.0062843868096227745,
+    0.012124723945994233
+  ],
+  "maximum_absolute_differences": {
+    "absolute_C": 0.0,
+    "contrasts": 0.0,
+    "contrast_intervals": 9.71445146547012e-17,
+    "absolute_intervals": 0.0
+  },
+  "official_evaluation_sha256": "a60230f506f5e6c03661e4f6bdb3f99d003f8b047510310dc6f3d11633b00e9b",
+  "prediction_sha256": "564d7a6798a1bb16a0e75587f2ed90d5dba7f7ac79c99b0b43cce13137cafa5a",
+  "validation_script_sha256": "b23475aa7fe52f4d0f59908a84fc8d1f4fe2c29c6997a8e6dcb6e96787aac8f2",
+  "scope": "Computational cross-check of the same frozen estimand and paired draws, not independent biological replication."
+}

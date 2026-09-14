@@ -1,0 +1,106 @@
+metabolite_id	source_label	source_kegg	kegg_name	kegg_formula	model_formula	nonhydrogen_formula_match	reference_url	access_date	primary_eligible
+core_001	2-phosphoglycerate	C00631	2-Phospho-D-glycerate	C3H7O7P	C3H4O7P	True	https://www.kegg.jp/entry/C00631	2026-09-13	True
+core_002	OH-phenylpyruvate	C01179	3-(4-Hydroxyphenyl)pyruvate	C9H8O4	C9H7O4	True	https://www.kegg.jp/entry/C01179	2026-09-13	True
+core_004	3-hydroxyanthranilate	C00632	3-Hydroxyanthranilate	C7H7NO3	C7H7NO3	True	https://www.kegg.jp/entry/C00632	2026-09-13	True
+core_005	3-phosphoglycerate	C00197	3-Phospho-D-glycerate	C3H7O7P	C3H4O7P	True	https://www.kegg.jp/entry/C00197	2026-09-13	True
+core_006	GABA	C00334	4-Aminobutanoate	C4H9NO2	C4H9NO2	True	https://www.kegg.jp/entry/C00334	2026-09-13	True
+core_007	4-hydroxybenzoate	C00156	4-Hydroxybenzoate	C7H6O3	C7H5O3	True	https://www.kegg.jp/entry/C00156	2026-09-13	True
+core_011	acetoacetate	C00164	Acetoacetate	C4H6O3	C4H5O3	True	https://www.kegg.jp/entry/C00164	2026-09-13	True
+core_012	adenine	C00147	Adenine	C5H5N5	C5H5N5	True	https://www.kegg.jp/entry/C00147	2026-09-13	True
+core_013	adenosine	C00212	Adenosine	C10H13N5O4	C10H13N5O4	True	https://www.kegg.jp/entry/C00212	2026-09-13	True
+core_014	5'-adenosylhomocysteine	C00021	S-Adenosyl-L-homocysteine	C14H20N6O5S	C14H20N6O5S	True	https://www.kegg.jp/entry/C00021	2026-09-13	True
+core_015	alpha-ketoglutarate	C00026	2-Oxoglutarate	C5H6O5	C5H4O5	True	https://www.kegg.jp/entry/C00026	2026-09-13	True
+core_016	alanine	C00041	L-Alanine	C3H7NO2	C3H7NO2	True	https://www.kegg.jp/entry/C00041	2026-09-13	True
+core_017	AMP	C00020	AMP	C10H14N5O7P	C10H12N5O7P	True	https://www.kegg.jp/entry/C00020	2026-09-13	True
+core_018	anthranilate	C00108	Anthranilate	C7H7NO2	C7H6NO2	True	https://www.kegg.jp/entry/C00108	2026-09-13	True
+core_019	arginine	C00062	L-Arginine	C6H14N4O2	C6H15N4O2	True	https://www.kegg.jp/entry/C00062	2026-09-13	True
+core_020	ascorbate	C00072	Ascorbate	C6H8O6	C6H7O6	True	https://www.kegg.jp/entry/C00072	2026-09-13	False
+core_021	asparagine	C00152	L-Asparagine	C4H8N2O3	C4H8N2O3	True	https://www.kegg.jp/entry/C00152	2026-09-13	True
+core_022	aspartate	C00049	L-Aspartate	C4H7NO4	C4H6NO4	True	https://www.kegg.jp/entry/C00049	2026-09-13	True
+core_023	bilirubin	C00486	Bilirubin	C33H36N4O6	C33H34N4O6	True	https://www.kegg.jp/entry/C00486	2026-09-13	True
+core_024	N-carbamoyl-beta-alanine	C02642	3-Ureidopropionate	C4H8N2O3	C4H7N2O3	True	https://www.kegg.jp/entry/C02642	2026-09-13	True
+core_026	choline	C00114	Choline	C5H14NO	C5H14NO	True	https://www.kegg.jp/entry/C00114	2026-09-13	True
+core_027	phosphocholine	C00588	Choline phosphate	C5H15NO4P	C5H13NO4P	True	https://www.kegg.jp/entry/C00588	2026-09-13	True
+core_028	citrate	C00158	Citrate	C6H8O7	C6H5O7	True	https://www.kegg.jp/entry/C00158	2026-09-13	True
+core_029	citrulline	C00327	L-Citrulline	C6H13N3O3	C6H13N3O3	True	https://www.kegg.jp/entry/C00327	2026-09-13	True
+core_030	CMP	C00055	CMP	C9H14N3O8P	C9H12N3O8P	True	https://www.kegg.jp/entry/C00055	2026-09-13	True
+core_032	carnitine	C00318	L-Carnitine	C7H15NO3	C7H15NO3	True	https://www.kegg.jp/entry/C00318	2026-09-13	True
+core_034	cystathionine	C02291	L-Cystathionine	C7H14N2O4S	C7H14N2O4S	True	https://www.kegg.jp/entry/C02291	2026-09-13	True
+core_035	cytidine	C00475	Cytidine	C9H13N3O5	C9H13N3O5	True	https://www.kegg.jp/entry/C00475	2026-09-13	True
+core_036	2'-deoxyadenosine	C00559	Deoxyadenosine	C10H13N5O3	C10H13N5O3	True	https://www.kegg.jp/entry/C00559	2026-09-13	True
+core_037	dCMP	C00239	dCMP	C9H14N3O7P	C9H12N3O7P	True	https://www.kegg.jp/entry/C00239	2026-09-13	True
+core_038	2'-deoxycytidine	C00881	Deoxycytidine	C9H13N3O4	C9H13N3O4	True	https://www.kegg.jp/entry/C00881	2026-09-13	True
+core_039	DHAP	C00111	Glycerone phosphate	C3H7O6P	C3H5O6P	True	https://www.kegg.jp/entry/C00111	2026-09-13	True
+core_040	dimethylglycine	C01026	N,N-Dimethylglycine	C4H9NO2	C4H9NO2	True	https://www.kegg.jp/entry/C01026	2026-09-13	True
+core_041	2'-deoxyuridine	C00526	Deoxyuridine	C9H12N2O5	C9H12N2O5	True	https://www.kegg.jp/entry/C00526	2026-09-13	True
+core_042	phosphoethanolamine	C00346	Ethanolamine phosphate	C2H8NO4P	C2H7NO4P	True	https://www.kegg.jp/entry/C00346	2026-09-13	True
+core_043	folate	C00504	Folate	C19H19N7O6	C19H18N7O6	True	https://www.kegg.jp/entry/C00504	2026-09-13	True
+core_044	fumarate	C00122	Fumarate	C4H4O4	C4H2O4	True	https://www.kegg.jp/entry/C00122	2026-09-13	True
+core_045	alpha-glycerophosphocholine	C00670	sn-Glycero-3-phosphocholine	C8H21NO6P	C8H20NO6P	True	https://www.kegg.jp/entry/C00670	2026-09-13	True
+core_048	glucose	C00031	D-Glucose	C6H12O6	C6H12O6	True	https://www.kegg.jp/entry/C00031	2026-09-13	True
+core_049	glucuronate	C00191	D-Glucuronate	C6H10O7	C6H9O7	True	https://www.kegg.jp/entry/C00191	2026-09-13	True
+core_050	glutamine	C00064	L-Glutamine	C5H10N2O3	C5H10N2O3	True	https://www.kegg.jp/entry/C00064	2026-09-13	True
+core_051	glutamate	C00025	L-Glutamate	C5H9NO4	C5H8NO4	True	https://www.kegg.jp/entry/C00025	2026-09-13	True
+core_052	glycine	C00037	Glycine	C2H5NO2	C2H5NO2	True	https://www.kegg.jp/entry/C00037	2026-09-13	True
+core_053	glyceraldehyde	C00577	D-Glyceraldehyde	C3H6O3	C3H6O3	True	https://www.kegg.jp/entry/C00577	2026-09-13	True
+core_054	betaine	C00719	Betaine	C5H11NO2	C5H11NO2	True	https://www.kegg.jp/entry/C00719	2026-09-13	True
+core_056	alpha-glycerophosphate	C00093	sn-Glycerol 3-phosphate	C3H9O6P	C3H7O6P	True	https://www.kegg.jp/entry/C00093	2026-09-13	True
+core_057	GMP	C00144	GMP	C10H14N5O8P	C10H12N5O8P	True	https://www.kegg.jp/entry/C00144	2026-09-13	True
+core_058	glutathione oxidized	C00127	Glutathione disulfide	C20H32N6O12S2	C20H30N6O12S2	True	https://www.kegg.jp/entry/C00127	2026-09-13	True
+core_060	homocysteine	C00155	L-Homocysteine	C4H9NO2S	C4H9NO2S	True	https://www.kegg.jp/entry/C00155	2026-09-13	True
+core_062	homoserine	C00263	L-Homoserine	C4H9NO3	C4H9NO3	True	https://www.kegg.jp/entry/C00263	2026-09-13	True
+core_063	hypoxanthine	C00262	Hypoxanthine	C5H4N4O	C5H4N4O	True	https://www.kegg.jp/entry/C00262	2026-09-13	True
+core_064	isocitrate	C00311	Isocitrate	C6H8O7	C6H5O7	True	https://www.kegg.jp/entry/C00311	2026-09-13	True
+core_065	isoleucine	C00407	L-Isoleucine	C6H13NO2	C6H13NO2	True	https://www.kegg.jp/entry/C00407	2026-09-13	True
+core_066	IMP	C00130	IMP	C10H13N4O8P	C10H11N4O8P	True	https://www.kegg.jp/entry/C00130	2026-09-13	True
+core_067	inosine	C00294	Inosine	C10H12N4O5	C10H12N4O5	True	https://www.kegg.jp/entry/C00294	2026-09-13	True
+core_069	2-aminodipate	C00956	L-2-Aminoadipate	C6H11NO4	C6H10NO4	True	https://www.kegg.jp/entry/C00956	2026-09-13	True
+core_070	lactate	C00186	(S)-Lactate	C3H6O3	C3H5O3	True	https://www.kegg.jp/entry/C00186	2026-09-13	True
+core_071	lactose	C00243	Lactose	C12H22O11	C12H22O11	True	https://www.kegg.jp/entry/C00243	2026-09-13	True
+core_072	leucine	C00123	L-Leucine	C6H13NO2	C6H13NO2	True	https://www.kegg.jp/entry/C00123	2026-09-13	True
+core_073	kynurenine	C00328	L-Kynurenine	C10H12N2O3	C10H12N2O3	True	https://www.kegg.jp/entry/C00328	2026-09-13	True
+core_074	lysine	C00047	L-Lysine	C6H14N2O2	C6H15N2O2	True	https://www.kegg.jp/entry/C00047	2026-09-13	True
+core_075	malate	C00149	(S)-Malate	C4H6O5	C4H4O5	True	https://www.kegg.jp/entry/C00149	2026-09-13	True
+core_076	methionine	C00073	L-Methionine	C5H11NO2S	C5H11NO2S	True	https://www.kegg.jp/entry/C00073	2026-09-13	True
+core_077	niacin	C00253	Nicotinate	C6H5NO2	C6H4NO2	True	https://www.kegg.jp/entry/C00253	2026-09-13	True
+core_078	niacinamide	C00153	Nicotinamide	C6H6N2O	C6H6N2O	True	https://www.kegg.jp/entry/C00153	2026-09-13	True
+core_079	nicotinic acid mononucleotide	C01185	Nicotinate D-ribonucleotide	C11H15NO9P	C11H12NO9P	True	https://www.kegg.jp/entry/C01185	2026-09-13	True
+core_080	ornithine	C00077	L-Ornithine	C5H12N2O2	C5H13N2O2	True	https://www.kegg.jp/entry/C00077	2026-09-13	True
+core_081	orotate	C00295	Orotate	C5H4N2O4	C5H3N2O4	True	https://www.kegg.jp/entry/C00295	2026-09-13	True
+core_082	OMP	C01103	Orotidine 5'-phosphate	C10H13N2O11P	C10H10N2O11P	True	https://www.kegg.jp/entry/C01103	2026-09-13	True
+core_083	oxalate	C00209	Oxalate	C2H2O4	C2O4	True	https://www.kegg.jp/entry/C00209	2026-09-13	True
+core_084	PEP	C00074	Phosphoenolpyruvate	C3H5O6P	C3H2O6P	True	https://www.kegg.jp/entry/C00074	2026-09-13	True
+core_085	phenylalanine	C00079	L-Phenylalanine	C9H11NO2	C9H11NO2	True	https://www.kegg.jp/entry/C00079	2026-09-13	True
+core_086	pantothenate	C00864	Pantothenate	C9H17NO5	C9H16NO5	True	https://www.kegg.jp/entry/C00864	2026-09-13	True
+core_088	proline	C00148	L-Proline	C5H9NO2	C5H9NO2	True	https://www.kegg.jp/entry/C00148	2026-09-13	True
+core_089	pyruvate	C00022	Pyruvate	C3H4O3	C3H3O3	True	https://www.kegg.jp/entry/C00022	2026-09-13	False
+core_090	quinolinate	C03722	Quinolinate	C7H5NO4	C7H3NO4	True	https://www.kegg.jp/entry/C03722	2026-09-13	True
+core_091	sorbitol	C00794	D-Sorbitol	C6H14O6	C6H14O6	True	https://www.kegg.jp/entry/C00794	2026-09-13	True
+core_092	serine	C00065	L-Serine	C3H7NO3	C3H7NO3	True	https://www.kegg.jp/entry/C00065	2026-09-13	True
+core_093	spermidine	C00315	Spermidine	C7H19N3	C7H22N3	True	https://www.kegg.jp/entry/C00315	2026-09-13	True
+core_094	spermine	C00750	Spermine	C10H26N4	C10H30N4	True	https://www.kegg.jp/entry/C00750	2026-09-13	True
+core_095	serotonin	C00780	Serotonin	C10H12N2O	C10H13N2O	True	https://www.kegg.jp/entry/C00780	2026-09-13	True
+core_096	succinate	C00042	Succinate	C4H6O4	C4H4O4	True	https://www.kegg.jp/entry/C00042	2026-09-13	True
+core_097	sucrose	C00089	Sucrose	C12H22O11	C12H22O11	True	https://www.kegg.jp/entry/C00089	2026-09-13	True
+core_098	taurine	C00245	Taurine	C2H7NO3S	C2H7NO3S	True	https://www.kegg.jp/entry/C00245	2026-09-13	True
+core_099	taurocholate	C05122	Taurocholate	C26H45NO7S	C26H45NO7S	True	https://www.kegg.jp/entry/C05122	2026-09-13	True
+core_102	threonine	C00188	L-Threonine	C4H9NO3	C4H9NO3	True	https://www.kegg.jp/entry/C00188	2026-09-13	True
+core_103	thymine	C00178	Thymine	C5H6N2O2	C5H6N2O2	True	https://www.kegg.jp/entry/C00178	2026-09-13	True
+core_104	thymidine	C00214	Thymidine	C10H14N2O5	C10H14N2O5	True	https://www.kegg.jp/entry/C00214	2026-09-13	True
+core_107	tryptophan	C00078	L-Tryptophan	C11H12N2O2	C11H12N2O2	True	https://www.kegg.jp/entry/C00078	2026-09-13	True
+core_108	tyrosine	C00082	L-Tyrosine	C9H11NO3	C9H11NO3	True	https://www.kegg.jp/entry/C00082	2026-09-13	True
+core_110	UMP	C00105	UMP	C9H13N2O9P	C9H11N2O9P	True	https://www.kegg.jp/entry/C00105	2026-09-13	True
+core_111	uracil	C00106	Uracil	C4H4N2O2	C4H4N2O2	True	https://www.kegg.jp/entry/C00106	2026-09-13	True
+core_112	urate	C00366	Urate	C5H4N4O3	C5H4N4O3	True	https://www.kegg.jp/entry/C00366	2026-09-13	True
+core_113	uridine	C00299	Uridine	C9H12N2O6	C9H12N2O6	True	https://www.kegg.jp/entry/C00299	2026-09-13	True
+core_114	valine	C00183	L-Valine	C5H11NO2	C5H11NO2	True	https://www.kegg.jp/entry/C00183	2026-09-13	True
+core_115	xanthine	C00385	Xanthine	C5H4N4O2	C5H4N4O2	True	https://www.kegg.jp/entry/C00385	2026-09-13	True
+core_116	XMP	C00655	Xanthosine 5'-phosphate	C10H13N4O9P	C10H11N4O9P	True	https://www.kegg.jp/entry/C00655	2026-09-13	True
+core_117	xanthosine	C01762	Xanthosine	C10H12N4O6	C10H12N4O6	True	https://www.kegg.jp/entry/C01762	2026-09-13	True
+core_120	allantoin	C01551	Allantoin	C4H6N4O3	C4H6N4O3	True	https://www.kegg.jp/entry/C01551	2026-09-13	False
+core_127	biotin	C00120	Biotin	C10H16N2O3S	C10H15N2O3S	True	https://www.kegg.jp/entry/C00120	2026-09-13	False
+core_131	hippurate	C01586	Hippurate	C9H9NO3	C9H8NO3	True	https://www.kegg.jp/entry/C01586	2026-09-13	False
+core_134	methylmalonate	C02170	Methylmalonate	C4H6O4	C4H4O4	True	https://www.kegg.jp/entry/C02170	2026-09-13	False
+core_138	lithocholate	C03990	Lithocholic acid	C24H40O3	C24H39O3	True	https://www.kegg.jp/entry/C03990	2026-09-13	False
+core_139	taurolithocholate	C02592	Taurolithocholate	C26H45NO5S	C26H44NO5S	True	https://www.kegg.jp/entry/C02592	2026-09-13	False
+core_140	phenylacetylglycine	C05598	Phenylacetylglycine	C10H11NO3	C10H10NO3	True	https://www.kegg.jp/entry/C05598	2026-09-13	False

@@ -1,0 +1,9 @@
+{
+ "completed": 224,
+ "failed": 0,
+ "jobs": 224,
+ "prediction_rows": 448,
+ "seconds": 252.8,
+ "failures": [],
+ "finished_at_utc": "2026-09-14T03:33:25.615598+00:00"
+}

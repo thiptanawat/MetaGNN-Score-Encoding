@@ -1,0 +1,36 @@
+# CPU study design decisions
+
+Decisions recorded during implementation, before any new development outcome comparison or reserved performance evaluation.
+
+- Primary source: conventional expression-derived evidence with complete required AND branches; supported alternative OR branches may contribute. Missing evidence is not zero evidence. No neural network training, GPU inference or H100 is required.
+- Main task: pinned Recon3D `BIOMASS_reaction`, the generic human biomass reaction, at 90% of the scenario-specific maximum. This is chosen because the source cultures are proliferating cell lines. It is a model demand convention, not an estimate of actual line-specific growth. It replaces the previous maintenance-task primary through an explicit development amendment.
+- Main constraints: the corrected source-informed medium and documented internal-boundary policy. Uptake capacities and serum composition remain assumptions. Main E1 costs and all-reaction parsimonious secondary are fixed before evaluation.
+- Sensitivities: half the assumed serum uptake capacity at the same fractional biomass task; and a lower fractional task (50% of maximum) under the primary medium. Scenarios are not selected by agreement with outcomes.
+- Point convention: sequential minimization/fixing of canonical reported exchange coordinates after the E1 and secondary caps. Return a jointly feasible final flux vector. This is a numerical selection rule, not new biological optimization theory.
+- Ambiguity: calculate exchange ranges before coordinate fixing, with both cost caps specified. Width after coordinate fixing is not used as evidence that the metabolic model identifies a unique flux.
+- Scale grid: 0.5, 0.8, 1, 1.25 and 2. Ordinal inputs are identical under the grid and are computed once per context. Their invariance is expected. Utility and information loss are empirical.
+- Chemical panel: source chemical identifiers and model annotations; exclude unresolved conflicts and duplicate assays by an outcome-independent rule. The full-cohort Variable flag is not a primary eligibility gate.
+- Primary statistical panel: exact development-observation-only resampling estimability criterion proposed by the statistics implementation, applied before new prediction comparisons. Keep the broader chemical panel as a descriptive sensitivity. Record all exclusions and the target population they imply.
+- Contexts: eleven exposed development lines. Reserved profiles form a newly specified reserved evaluation within a reanalysis of public historical data; prior pilot outcome exposure is disclosed, and these are not historically untouched profiles. Group documented common origins and exclude within-origin comparisons from the primary cross-origin ordering analysis (explicit amendment).
+- Primary contrast: ordinal macro concordance minus the average of the five magnitude arms. Identity contrast is supporting. Resample whole origin groups and preserve the fixed primary panel. Positive improvement is not a pass condition.
+
+The numerical settings are in `configs/study.json`. They are selected and checked using solver feasibility and representation controls, not CORE agreement. The present file is a design record, not the final protocol lock. `PROTOCOL_LOCK.json` may be created only after source, model, implementation, development estimability and reproducibility checks are satisfied.
+
+The old copied researcher amendments are historical and have been moved to provenance/researcher_revision1_inherited_sources/. They do not override this CPU implementation's current configuration.
+
+## Inference scope declared before new prediction comparisons
+
+This is an estimation study. Report both contrasts with paired origin-bootstrap intervals and their precision; there is no prespecified biologically justified equivalence or noninferiority margin. Therefore no equivalence, noninferiority, or practical interchangeability conclusion will be made merely because an interval spans zero. A small point difference can be described numerically but cannot establish irrelevance of expression magnitudes. Positive performance improvement is not a numerical-validation gate. Broad and scenario analyses are supporting/descriptive; they cannot replace the fixed primary contrast after outcomes are seen.
+
+## Numerical development amendment, before new outcome comparisons
+
+The initial 1e-8 sequential coordinate allowance produced eight failed development arms and one prolonged remaining case. Identical-LP basis retries recovered some stages but an independent HiGHS solve also found one accumulated fixed LP infeasible. Uniformly increasing only the coordinate band to 1e-7 completed all eight failed cases with maximum final constraint violation 4.24e-9; all primary/secondary caps remained unchanged. This is the smallest tested successful allowance, not a proof of the minimum required value. The then-selected v2 configuration used 1e-7 throughout (superseded by v3 below), a 60-second per-LP budget, and one recorded identical-LP advanced-basis retry. Failed runs remain failures; no cap is relaxed automatically. All new arms and controls are rerun with the final source/configuration before evaluation. The initial attempt is retained under results/development_primary/ solely as numerical-development evidence.
+
+## Full-scenario numerical amendment, before any new CORE performance comparison
+
+The v2 development batch completed 201 cases: 198 succeeded and three half-serum cases remained infeasible after the fixed numerical retry. All three succeeded with a uniform coordinate allowance of 1e-6, unchanged primary/secondary caps, unchanged 1e-9 LP tolerances, and worst final feasibility error below 1.14e-12. Tightening LP tolerances to 1e-10 recovered only two of the three; the limited 1e-11 comparison was slower and was not adopted. These diagnostics did not read CORE accuracy. The v3 production configuration uniformly uses a 1e-6 coordinate band. Point-tie and interval-resolution thresholds are set to 1e-5, ten times that band, to conservatively avoid treating tolerance-scale differences as resolved. This is a declared numerical convention, not a measured assay-noise threshold or proof that every smaller difference is inaccurate. Mass-balance/bound/cap validation remains at 1e-6. The primary target membership and biological observed-pair rule are unchanged. All development arms, representation controls and fresh-arm reproduction are rerun before locking. v2 remains historical numerical-development evidence.
+
+
+### Final pre-reserved descriptive reporting clarification
+
+After the completed v3 development runs and their first CORE performance comparisons, saved-prediction summaries were extended to report within-context range widths and the number of constant or all-zero targets across contexts, per arm. These descriptive counts use the already selected numerical thresholds (1e-5) and no new optimizations or outcome-dependent target selection. They distinguish lack of between-context ordering resolution from within-context solution ambiguity. The primary concordance estimand, two contrasts, panel, bootstrap, input weights and all predictions were unchanged. The frozen source hashes include this reporting addition.

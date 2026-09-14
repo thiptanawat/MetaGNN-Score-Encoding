@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "data/raw/Recon3D.json": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+    "data/raw/cellminer.zip": "334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e",
+    "data/raw/core/NIHMS419088-supplement-Database_S1.xls": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+    "data/raw/core/NIHMS419088-supplement.pdf": "1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187",
+    "environment.lock": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607",
+    "protocol/chemical_identity_reference.tsv": "6512193df6635edba02ec46d4ecc758a633b2650048c060aec7dc552f199e752",
+    "src/gpr.py": "7d70a0262a04ebf59211d7152cefa763c289e75149abb2472abfed93555b25f5",
+    "src/prepare_data.py": "a6de55ee8955ff21750d5e01de79925e2f86136c62d24eed10647471424e7c24"
+  },
+  "outputs": {
+    "data/assay_noise_development.tsv": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531",
+    "data/expression_summary.json": "f79c77e18ffdcfe1d73a5409859d1b1d0b6b17857e541154c31ce9d92faee13f",
+    "data/gene_expression.npz": "59f307ac1355adb78b529f55a363441dfa7e4a201eeb3021a9f54a91005ab299",
+    "data/outcomes_long.tsv": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+    "data/preparation_summary.json": "058518d8f0ca792c274cde35e1e0f278785714872edf9c2076278b9f32ede22a",
+    "data/scores_conservative.npz": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+    "data/source_supplement_layout.txt": "a515d62ee2b16473c20fc96c9d93fda94506f4c4ecccc635eb35c493a78c7f44",
+    "manifests/chemical_identity_review.tsv": "6b841e7f914a5f3803061536e8e7c4de2d0063387418e5480a083c5f6506ab23",
+    "manifests/chemical_reference_provenance.json": "229cfb48a33c2713012e2719fb6a7324554d0c74f4fcfe294ea12effd42aab66",
+    "manifests/contexts.tsv": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+    "manifests/expression_archive_members.tsv": "e5e5a3c76858366296c27f078ea101f2f1d4391547199d2e2373ac0011bdd09f",
+    "manifests/gpr_coverage.tsv": "c5459d81b1375af2d700e52c0d328d6408ca65a64fb35d0bc9299bf1b151b4b9",
+    "manifests/metabolite_map.tsv": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+    "manifests/model_gene_map.tsv": "aadf34a8d77d60105d38c209972d5064249303f0f542d0a6ca70f7a2e7d1a3d5",
+    "manifests/probe_gene_map.tsv": "39bf9ce3a6f6b6a8c4f41dbf50515efd79f8a0a82adacf2fa53330ffc54af68a",
+    "manifests/raw_sources.tsv": "4aba651d20b7637bb738adee9c2f29bf445cb67bc0b3c3fbde8155b4f83421be",
+    "manifests/source_table_s1.tsv": "bedccde6c02b67a374e6b97c9a971785d744737893385872814337c79399f638"
+  },
+  "schema_version": 1,
+  "scope": "Hash receipt of a completed prepare_data build; not biological validation or evaluation authorization"
+}

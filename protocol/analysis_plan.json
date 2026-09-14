@@ -1,0 +1,1096 @@
+{
+  "version": 1,
+  "status": "development_selection_unlocked",
+  "selection_inputs": "Development observed values and assay tolerance; no predictions or reserved performance",
+  "input_sha256": {
+    "manifests/contexts.tsv": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+    "manifests/metabolite_map.tsv": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+    "data/outcomes_long.tsv": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+    "data/assay_noise_development.tsv": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531"
+  },
+  "development_contexts": [
+    "BR:HS 578T",
+    "BR:MDA-MB-231",
+    "CO:HT29",
+    "LC:HOP-62",
+    "LC:HOP-92",
+    "LC:NCI-H226",
+    "LE:RPMI-8226",
+    "LE:SR",
+    "ME:MALME-3M",
+    "RE:786-0",
+    "RE:UO-31"
+  ],
+  "development_origins": [
+    "BR:HS 578T",
+    "BR:MDA-MB-231",
+    "CO:HT29",
+    "LC:HOP-62",
+    "LC:HOP-92",
+    "LC:NCI-H226",
+    "LE:RPMI-8226",
+    "LE:SR",
+    "ME:MALME-3M",
+    "RE:786-0",
+    "RE:UO-31"
+  ],
+  "chemistry_candidate_count": 96,
+  "chemistry_targets": [
+    {
+      "metabolite_id": "core_001",
+      "exchange_id": "EX_2pg_e",
+      "sign_factor": 1.0,
+      "source_label": "2-phosphoglycerate"
+    },
+    {
+      "metabolite_id": "core_002",
+      "exchange_id": "EX_34hpp_e",
+      "sign_factor": 1.0,
+      "source_label": "OH-phenylpyruvate"
+    },
+    {
+      "metabolite_id": "core_004",
+      "exchange_id": "EX_3hanthrn_e",
+      "sign_factor": 1.0,
+      "source_label": "3-hydroxyanthranilate"
+    },
+    {
+      "metabolite_id": "core_005",
+      "exchange_id": "EX_3pg_e",
+      "sign_factor": 1.0,
+      "source_label": "3-phosphoglycerate"
+    },
+    {
+      "metabolite_id": "core_006",
+      "exchange_id": "EX_4abut_e",
+      "sign_factor": 1.0,
+      "source_label": "GABA"
+    },
+    {
+      "metabolite_id": "core_007",
+      "exchange_id": "EX_4hbz_e",
+      "sign_factor": 1.0,
+      "source_label": "4-hydroxybenzoate"
+    },
+    {
+      "metabolite_id": "core_011",
+      "exchange_id": "EX_acac_e",
+      "sign_factor": 1.0,
+      "source_label": "acetoacetate"
+    },
+    {
+      "metabolite_id": "core_012",
+      "exchange_id": "EX_ade_e",
+      "sign_factor": 1.0,
+      "source_label": "adenine"
+    },
+    {
+      "metabolite_id": "core_013",
+      "exchange_id": "EX_adn_e",
+      "sign_factor": 1.0,
+      "source_label": "adenosine"
+    },
+    {
+      "metabolite_id": "core_014",
+      "exchange_id": "EX_ahcys_e",
+      "sign_factor": 1.0,
+      "source_label": "5'-adenosylhomocysteine"
+    },
+    {
+      "metabolite_id": "core_015",
+      "exchange_id": "EX_akg_e",
+      "sign_factor": 1.0,
+      "source_label": "alpha-ketoglutarate"
+    },
+    {
+      "metabolite_id": "core_016",
+      "exchange_id": "EX_ala__L_e",
+      "sign_factor": 1.0,
+      "source_label": "alanine"
+    },
+    {
+      "metabolite_id": "core_017",
+      "exchange_id": "EX_amp_e",
+      "sign_factor": 1.0,
+      "source_label": "AMP"
+    },
+    {
+      "metabolite_id": "core_018",
+      "exchange_id": "EX_anth_e",
+      "sign_factor": 1.0,
+      "source_label": "anthranilate"
+    },
+    {
+      "metabolite_id": "core_019",
+      "exchange_id": "EX_arg__L_e",
+      "sign_factor": 1.0,
+      "source_label": "arginine"
+    },
+    {
+      "metabolite_id": "core_021",
+      "exchange_id": "EX_asn__L_e",
+      "sign_factor": 1.0,
+      "source_label": "asparagine"
+    },
+    {
+      "metabolite_id": "core_022",
+      "exchange_id": "EX_asp__L_e",
+      "sign_factor": 1.0,
+      "source_label": "aspartate"
+    },
+    {
+      "metabolite_id": "core_023",
+      "exchange_id": "EX_bilirub_e",
+      "sign_factor": 1.0,
+      "source_label": "bilirubin"
+    },
+    {
+      "metabolite_id": "core_024",
+      "exchange_id": "EX_cala_e",
+      "sign_factor": 1.0,
+      "source_label": "N-carbamoyl-beta-alanine"
+    },
+    {
+      "metabolite_id": "core_026",
+      "exchange_id": "EX_chol_e",
+      "sign_factor": 1.0,
+      "source_label": "choline"
+    },
+    {
+      "metabolite_id": "core_027",
+      "exchange_id": "EX_cholp_e",
+      "sign_factor": 1.0,
+      "source_label": "phosphocholine"
+    },
+    {
+      "metabolite_id": "core_028",
+      "exchange_id": "EX_cit_e",
+      "sign_factor": 1.0,
+      "source_label": "citrate"
+    },
+    {
+      "metabolite_id": "core_029",
+      "exchange_id": "EX_citr__L_e",
+      "sign_factor": 1.0,
+      "source_label": "citrulline"
+    },
+    {
+      "metabolite_id": "core_030",
+      "exchange_id": "EX_cmp_e",
+      "sign_factor": 1.0,
+      "source_label": "CMP"
+    },
+    {
+      "metabolite_id": "core_032",
+      "exchange_id": "EX_crn_e",
+      "sign_factor": 1.0,
+      "source_label": "carnitine"
+    },
+    {
+      "metabolite_id": "core_034",
+      "exchange_id": "EX_cyst__L_e",
+      "sign_factor": 1.0,
+      "source_label": "cystathionine"
+    },
+    {
+      "metabolite_id": "core_035",
+      "exchange_id": "EX_cytd_e",
+      "sign_factor": 1.0,
+      "source_label": "cytidine"
+    },
+    {
+      "metabolite_id": "core_036",
+      "exchange_id": "EX_dad_2_e",
+      "sign_factor": 1.0,
+      "source_label": "2'-deoxyadenosine"
+    },
+    {
+      "metabolite_id": "core_037",
+      "exchange_id": "EX_dcmp_e",
+      "sign_factor": 1.0,
+      "source_label": "dCMP"
+    },
+    {
+      "metabolite_id": "core_038",
+      "exchange_id": "EX_dcyt_e",
+      "sign_factor": 1.0,
+      "source_label": "2'-deoxycytidine"
+    },
+    {
+      "metabolite_id": "core_039",
+      "exchange_id": "EX_dhap_e",
+      "sign_factor": 1.0,
+      "source_label": "DHAP"
+    },
+    {
+      "metabolite_id": "core_040",
+      "exchange_id": "EX_dmgly_e",
+      "sign_factor": 1.0,
+      "source_label": "dimethylglycine"
+    },
+    {
+      "metabolite_id": "core_041",
+      "exchange_id": "EX_duri_e",
+      "sign_factor": 1.0,
+      "source_label": "2'-deoxyuridine"
+    },
+    {
+      "metabolite_id": "core_042",
+      "exchange_id": "EX_ethamp_e",
+      "sign_factor": 1.0,
+      "source_label": "phosphoethanolamine"
+    },
+    {
+      "metabolite_id": "core_043",
+      "exchange_id": "EX_fol_e",
+      "sign_factor": 1.0,
+      "source_label": "folate"
+    },
+    {
+      "metabolite_id": "core_044",
+      "exchange_id": "EX_fum_e",
+      "sign_factor": 1.0,
+      "source_label": "fumarate"
+    },
+    {
+      "metabolite_id": "core_045",
+      "exchange_id": "EX_g3pc_e",
+      "sign_factor": 1.0,
+      "source_label": "alpha-glycerophosphocholine"
+    },
+    {
+      "metabolite_id": "core_048",
+      "exchange_id": "EX_glc__D_e",
+      "sign_factor": 1.0,
+      "source_label": "glucose"
+    },
+    {
+      "metabolite_id": "core_049",
+      "exchange_id": "EX_glcur_e",
+      "sign_factor": 1.0,
+      "source_label": "glucuronate"
+    },
+    {
+      "metabolite_id": "core_050",
+      "exchange_id": "EX_gln__L_e",
+      "sign_factor": 1.0,
+      "source_label": "glutamine"
+    },
+    {
+      "metabolite_id": "core_051",
+      "exchange_id": "EX_glu__L_e",
+      "sign_factor": 1.0,
+      "source_label": "glutamate"
+    },
+    {
+      "metabolite_id": "core_052",
+      "exchange_id": "EX_gly_e",
+      "sign_factor": 1.0,
+      "source_label": "glycine"
+    },
+    {
+      "metabolite_id": "core_053",
+      "exchange_id": "EX_glyald_e",
+      "sign_factor": 1.0,
+      "source_label": "glyceraldehyde"
+    },
+    {
+      "metabolite_id": "core_054",
+      "exchange_id": "EX_glyb_e",
+      "sign_factor": 1.0,
+      "source_label": "betaine"
+    },
+    {
+      "metabolite_id": "core_056",
+      "exchange_id": "EX_glyc3p_e",
+      "sign_factor": 1.0,
+      "source_label": "alpha-glycerophosphate"
+    },
+    {
+      "metabolite_id": "core_057",
+      "exchange_id": "EX_gmp_e",
+      "sign_factor": 1.0,
+      "source_label": "GMP"
+    },
+    {
+      "metabolite_id": "core_058",
+      "exchange_id": "EX_gthox_e",
+      "sign_factor": 1.0,
+      "source_label": "glutathione oxidized"
+    },
+    {
+      "metabolite_id": "core_060",
+      "exchange_id": "EX_hcys__L_e",
+      "sign_factor": 1.0,
+      "source_label": "homocysteine"
+    },
+    {
+      "metabolite_id": "core_062",
+      "exchange_id": "EX_hom__L_e",
+      "sign_factor": 1.0,
+      "source_label": "homoserine"
+    },
+    {
+      "metabolite_id": "core_063",
+      "exchange_id": "EX_hxan_e",
+      "sign_factor": 1.0,
+      "source_label": "hypoxanthine"
+    },
+    {
+      "metabolite_id": "core_064",
+      "exchange_id": "EX_icit_e",
+      "sign_factor": 1.0,
+      "source_label": "isocitrate"
+    },
+    {
+      "metabolite_id": "core_065",
+      "exchange_id": "EX_ile__L_e",
+      "sign_factor": 1.0,
+      "source_label": "isoleucine"
+    },
+    {
+      "metabolite_id": "core_066",
+      "exchange_id": "EX_imp_e",
+      "sign_factor": 1.0,
+      "source_label": "IMP"
+    },
+    {
+      "metabolite_id": "core_067",
+      "exchange_id": "EX_ins_e",
+      "sign_factor": 1.0,
+      "source_label": "inosine"
+    },
+    {
+      "metabolite_id": "core_069",
+      "exchange_id": "EX_L2aadp_e",
+      "sign_factor": 1.0,
+      "source_label": "2-aminodipate"
+    },
+    {
+      "metabolite_id": "core_070",
+      "exchange_id": "EX_lac__L_e",
+      "sign_factor": 1.0,
+      "source_label": "lactate"
+    },
+    {
+      "metabolite_id": "core_071",
+      "exchange_id": "EX_lcts_e",
+      "sign_factor": 1.0,
+      "source_label": "lactose"
+    },
+    {
+      "metabolite_id": "core_072",
+      "exchange_id": "EX_leu__L_e",
+      "sign_factor": 1.0,
+      "source_label": "leucine"
+    },
+    {
+      "metabolite_id": "core_073",
+      "exchange_id": "EX_Lkynr_e",
+      "sign_factor": 1.0,
+      "source_label": "kynurenine"
+    },
+    {
+      "metabolite_id": "core_074",
+      "exchange_id": "EX_lys__L_e",
+      "sign_factor": 1.0,
+      "source_label": "lysine"
+    },
+    {
+      "metabolite_id": "core_075",
+      "exchange_id": "EX_mal__L_e",
+      "sign_factor": 1.0,
+      "source_label": "malate"
+    },
+    {
+      "metabolite_id": "core_076",
+      "exchange_id": "EX_met__L_e",
+      "sign_factor": 1.0,
+      "source_label": "methionine"
+    },
+    {
+      "metabolite_id": "core_077",
+      "exchange_id": "EX_nac_e",
+      "sign_factor": 1.0,
+      "source_label": "niacin"
+    },
+    {
+      "metabolite_id": "core_078",
+      "exchange_id": "EX_ncam_e",
+      "sign_factor": 1.0,
+      "source_label": "niacinamide"
+    },
+    {
+      "metabolite_id": "core_079",
+      "exchange_id": "EX_nicrnt_e",
+      "sign_factor": 1.0,
+      "source_label": "nicotinic acid mononucleotide"
+    },
+    {
+      "metabolite_id": "core_080",
+      "exchange_id": "EX_orn_e",
+      "sign_factor": 1.0,
+      "source_label": "ornithine"
+    },
+    {
+      "metabolite_id": "core_081",
+      "exchange_id": "EX_orot_e",
+      "sign_factor": 1.0,
+      "source_label": "orotate"
+    },
+    {
+      "metabolite_id": "core_082",
+      "exchange_id": "EX_orot5p_e",
+      "sign_factor": 1.0,
+      "source_label": "OMP"
+    },
+    {
+      "metabolite_id": "core_083",
+      "exchange_id": "EX_oxa_e",
+      "sign_factor": 1.0,
+      "source_label": "oxalate"
+    },
+    {
+      "metabolite_id": "core_084",
+      "exchange_id": "EX_pep_e",
+      "sign_factor": 1.0,
+      "source_label": "PEP"
+    },
+    {
+      "metabolite_id": "core_085",
+      "exchange_id": "EX_phe__L_e",
+      "sign_factor": 1.0,
+      "source_label": "phenylalanine"
+    },
+    {
+      "metabolite_id": "core_086",
+      "exchange_id": "EX_pnto__R_e",
+      "sign_factor": 1.0,
+      "source_label": "pantothenate"
+    },
+    {
+      "metabolite_id": "core_088",
+      "exchange_id": "EX_pro__L_e",
+      "sign_factor": 1.0,
+      "source_label": "proline"
+    },
+    {
+      "metabolite_id": "core_090",
+      "exchange_id": "EX_quln_e",
+      "sign_factor": 1.0,
+      "source_label": "quinolinate"
+    },
+    {
+      "metabolite_id": "core_091",
+      "exchange_id": "EX_sbt__D_e",
+      "sign_factor": 1.0,
+      "source_label": "sorbitol"
+    },
+    {
+      "metabolite_id": "core_092",
+      "exchange_id": "EX_ser__L_e",
+      "sign_factor": 1.0,
+      "source_label": "serine"
+    },
+    {
+      "metabolite_id": "core_093",
+      "exchange_id": "EX_spmd_e",
+      "sign_factor": 1.0,
+      "source_label": "spermidine"
+    },
+    {
+      "metabolite_id": "core_094",
+      "exchange_id": "EX_sprm_e",
+      "sign_factor": 1.0,
+      "source_label": "spermine"
+    },
+    {
+      "metabolite_id": "core_095",
+      "exchange_id": "EX_srtn_e",
+      "sign_factor": 1.0,
+      "source_label": "serotonin"
+    },
+    {
+      "metabolite_id": "core_096",
+      "exchange_id": "EX_succ_e",
+      "sign_factor": 1.0,
+      "source_label": "succinate"
+    },
+    {
+      "metabolite_id": "core_097",
+      "exchange_id": "EX_sucr_e",
+      "sign_factor": 1.0,
+      "source_label": "sucrose"
+    },
+    {
+      "metabolite_id": "core_098",
+      "exchange_id": "EX_taur_e",
+      "sign_factor": 1.0,
+      "source_label": "taurine"
+    },
+    {
+      "metabolite_id": "core_099",
+      "exchange_id": "EX_tchola_e",
+      "sign_factor": 1.0,
+      "source_label": "taurocholate"
+    },
+    {
+      "metabolite_id": "core_102",
+      "exchange_id": "EX_thr__L_e",
+      "sign_factor": 1.0,
+      "source_label": "threonine"
+    },
+    {
+      "metabolite_id": "core_103",
+      "exchange_id": "EX_thym_e",
+      "sign_factor": 1.0,
+      "source_label": "thymine"
+    },
+    {
+      "metabolite_id": "core_104",
+      "exchange_id": "EX_thymd_e",
+      "sign_factor": 1.0,
+      "source_label": "thymidine"
+    },
+    {
+      "metabolite_id": "core_107",
+      "exchange_id": "EX_trp__L_e",
+      "sign_factor": 1.0,
+      "source_label": "tryptophan"
+    },
+    {
+      "metabolite_id": "core_108",
+      "exchange_id": "EX_tyr__L_e",
+      "sign_factor": 1.0,
+      "source_label": "tyrosine"
+    },
+    {
+      "metabolite_id": "core_110",
+      "exchange_id": "EX_ump_e",
+      "sign_factor": 1.0,
+      "source_label": "UMP"
+    },
+    {
+      "metabolite_id": "core_111",
+      "exchange_id": "EX_ura_e",
+      "sign_factor": 1.0,
+      "source_label": "uracil"
+    },
+    {
+      "metabolite_id": "core_112",
+      "exchange_id": "EX_urate_e",
+      "sign_factor": 1.0,
+      "source_label": "urate"
+    },
+    {
+      "metabolite_id": "core_113",
+      "exchange_id": "EX_uri_e",
+      "sign_factor": 1.0,
+      "source_label": "uridine"
+    },
+    {
+      "metabolite_id": "core_114",
+      "exchange_id": "EX_val__L_e",
+      "sign_factor": 1.0,
+      "source_label": "valine"
+    },
+    {
+      "metabolite_id": "core_115",
+      "exchange_id": "EX_xan_e",
+      "sign_factor": 1.0,
+      "source_label": "xanthine"
+    },
+    {
+      "metabolite_id": "core_116",
+      "exchange_id": "EX_xmp_e",
+      "sign_factor": 1.0,
+      "source_label": "XMP"
+    },
+    {
+      "metabolite_id": "core_117",
+      "exchange_id": "EX_xtsn_e",
+      "sign_factor": 1.0,
+      "source_label": "xanthosine"
+    }
+  ],
+  "chemistry_without_noise": [],
+  "primary_targets": [
+    {
+      "metabolite_id": "core_006",
+      "exchange_id": "EX_4abut_e",
+      "sign_factor": 1.0,
+      "source_label": "GABA"
+    },
+    {
+      "metabolite_id": "core_016",
+      "exchange_id": "EX_ala__L_e",
+      "sign_factor": 1.0,
+      "source_label": "alanine"
+    },
+    {
+      "metabolite_id": "core_018",
+      "exchange_id": "EX_anth_e",
+      "sign_factor": 1.0,
+      "source_label": "anthranilate"
+    },
+    {
+      "metabolite_id": "core_024",
+      "exchange_id": "EX_cala_e",
+      "sign_factor": 1.0,
+      "source_label": "N-carbamoyl-beta-alanine"
+    },
+    {
+      "metabolite_id": "core_026",
+      "exchange_id": "EX_chol_e",
+      "sign_factor": 1.0,
+      "source_label": "choline"
+    },
+    {
+      "metabolite_id": "core_027",
+      "exchange_id": "EX_cholp_e",
+      "sign_factor": 1.0,
+      "source_label": "phosphocholine"
+    },
+    {
+      "metabolite_id": "core_028",
+      "exchange_id": "EX_cit_e",
+      "sign_factor": 1.0,
+      "source_label": "citrate"
+    },
+    {
+      "metabolite_id": "core_030",
+      "exchange_id": "EX_cmp_e",
+      "sign_factor": 1.0,
+      "source_label": "CMP"
+    },
+    {
+      "metabolite_id": "core_032",
+      "exchange_id": "EX_crn_e",
+      "sign_factor": 1.0,
+      "source_label": "carnitine"
+    },
+    {
+      "metabolite_id": "core_035",
+      "exchange_id": "EX_cytd_e",
+      "sign_factor": 1.0,
+      "source_label": "cytidine"
+    },
+    {
+      "metabolite_id": "core_039",
+      "exchange_id": "EX_dhap_e",
+      "sign_factor": 1.0,
+      "source_label": "DHAP"
+    },
+    {
+      "metabolite_id": "core_041",
+      "exchange_id": "EX_duri_e",
+      "sign_factor": 1.0,
+      "source_label": "2'-deoxyuridine"
+    },
+    {
+      "metabolite_id": "core_044",
+      "exchange_id": "EX_fum_e",
+      "sign_factor": 1.0,
+      "source_label": "fumarate"
+    },
+    {
+      "metabolite_id": "core_049",
+      "exchange_id": "EX_glcur_e",
+      "sign_factor": 1.0,
+      "source_label": "glucuronate"
+    },
+    {
+      "metabolite_id": "core_050",
+      "exchange_id": "EX_gln__L_e",
+      "sign_factor": 1.0,
+      "source_label": "glutamine"
+    },
+    {
+      "metabolite_id": "core_051",
+      "exchange_id": "EX_glu__L_e",
+      "sign_factor": 1.0,
+      "source_label": "glutamate"
+    },
+    {
+      "metabolite_id": "core_052",
+      "exchange_id": "EX_gly_e",
+      "sign_factor": 1.0,
+      "source_label": "glycine"
+    },
+    {
+      "metabolite_id": "core_053",
+      "exchange_id": "EX_glyald_e",
+      "sign_factor": 1.0,
+      "source_label": "glyceraldehyde"
+    },
+    {
+      "metabolite_id": "core_056",
+      "exchange_id": "EX_glyc3p_e",
+      "sign_factor": 1.0,
+      "source_label": "alpha-glycerophosphate"
+    },
+    {
+      "metabolite_id": "core_062",
+      "exchange_id": "EX_hom__L_e",
+      "sign_factor": 1.0,
+      "source_label": "homoserine"
+    },
+    {
+      "metabolite_id": "core_063",
+      "exchange_id": "EX_hxan_e",
+      "sign_factor": 1.0,
+      "source_label": "hypoxanthine"
+    },
+    {
+      "metabolite_id": "core_064",
+      "exchange_id": "EX_icit_e",
+      "sign_factor": 1.0,
+      "source_label": "isocitrate"
+    },
+    {
+      "metabolite_id": "core_067",
+      "exchange_id": "EX_ins_e",
+      "sign_factor": 1.0,
+      "source_label": "inosine"
+    },
+    {
+      "metabolite_id": "core_069",
+      "exchange_id": "EX_L2aadp_e",
+      "sign_factor": 1.0,
+      "source_label": "2-aminodipate"
+    },
+    {
+      "metabolite_id": "core_070",
+      "exchange_id": "EX_lac__L_e",
+      "sign_factor": 1.0,
+      "source_label": "lactate"
+    },
+    {
+      "metabolite_id": "core_072",
+      "exchange_id": "EX_leu__L_e",
+      "sign_factor": 1.0,
+      "source_label": "leucine"
+    },
+    {
+      "metabolite_id": "core_073",
+      "exchange_id": "EX_Lkynr_e",
+      "sign_factor": 1.0,
+      "source_label": "kynurenine"
+    },
+    {
+      "metabolite_id": "core_074",
+      "exchange_id": "EX_lys__L_e",
+      "sign_factor": 1.0,
+      "source_label": "lysine"
+    },
+    {
+      "metabolite_id": "core_075",
+      "exchange_id": "EX_mal__L_e",
+      "sign_factor": 1.0,
+      "source_label": "malate"
+    },
+    {
+      "metabolite_id": "core_076",
+      "exchange_id": "EX_met__L_e",
+      "sign_factor": 1.0,
+      "source_label": "methionine"
+    },
+    {
+      "metabolite_id": "core_077",
+      "exchange_id": "EX_nac_e",
+      "sign_factor": 1.0,
+      "source_label": "niacin"
+    },
+    {
+      "metabolite_id": "core_078",
+      "exchange_id": "EX_ncam_e",
+      "sign_factor": 1.0,
+      "source_label": "niacinamide"
+    },
+    {
+      "metabolite_id": "core_080",
+      "exchange_id": "EX_orn_e",
+      "sign_factor": 1.0,
+      "source_label": "ornithine"
+    },
+    {
+      "metabolite_id": "core_081",
+      "exchange_id": "EX_orot_e",
+      "sign_factor": 1.0,
+      "source_label": "orotate"
+    },
+    {
+      "metabolite_id": "core_085",
+      "exchange_id": "EX_phe__L_e",
+      "sign_factor": 1.0,
+      "source_label": "phenylalanine"
+    },
+    {
+      "metabolite_id": "core_088",
+      "exchange_id": "EX_pro__L_e",
+      "sign_factor": 1.0,
+      "source_label": "proline"
+    },
+    {
+      "metabolite_id": "core_091",
+      "exchange_id": "EX_sbt__D_e",
+      "sign_factor": 1.0,
+      "source_label": "sorbitol"
+    },
+    {
+      "metabolite_id": "core_092",
+      "exchange_id": "EX_ser__L_e",
+      "sign_factor": 1.0,
+      "source_label": "serine"
+    },
+    {
+      "metabolite_id": "core_094",
+      "exchange_id": "EX_sprm_e",
+      "sign_factor": 1.0,
+      "source_label": "spermine"
+    },
+    {
+      "metabolite_id": "core_095",
+      "exchange_id": "EX_srtn_e",
+      "sign_factor": 1.0,
+      "source_label": "serotonin"
+    },
+    {
+      "metabolite_id": "core_096",
+      "exchange_id": "EX_succ_e",
+      "sign_factor": 1.0,
+      "source_label": "succinate"
+    },
+    {
+      "metabolite_id": "core_098",
+      "exchange_id": "EX_taur_e",
+      "sign_factor": 1.0,
+      "source_label": "taurine"
+    },
+    {
+      "metabolite_id": "core_099",
+      "exchange_id": "EX_tchola_e",
+      "sign_factor": 1.0,
+      "source_label": "taurocholate"
+    },
+    {
+      "metabolite_id": "core_102",
+      "exchange_id": "EX_thr__L_e",
+      "sign_factor": 1.0,
+      "source_label": "threonine"
+    },
+    {
+      "metabolite_id": "core_103",
+      "exchange_id": "EX_thym_e",
+      "sign_factor": 1.0,
+      "source_label": "thymine"
+    },
+    {
+      "metabolite_id": "core_104",
+      "exchange_id": "EX_thymd_e",
+      "sign_factor": 1.0,
+      "source_label": "thymidine"
+    },
+    {
+      "metabolite_id": "core_110",
+      "exchange_id": "EX_ump_e",
+      "sign_factor": 1.0,
+      "source_label": "UMP"
+    },
+    {
+      "metabolite_id": "core_111",
+      "exchange_id": "EX_ura_e",
+      "sign_factor": 1.0,
+      "source_label": "uracil"
+    },
+    {
+      "metabolite_id": "core_112",
+      "exchange_id": "EX_urate_e",
+      "sign_factor": 1.0,
+      "source_label": "urate"
+    },
+    {
+      "metabolite_id": "core_113",
+      "exchange_id": "EX_uri_e",
+      "sign_factor": 1.0,
+      "source_label": "uridine"
+    },
+    {
+      "metabolite_id": "core_114",
+      "exchange_id": "EX_val__L_e",
+      "sign_factor": 1.0,
+      "source_label": "valine"
+    },
+    {
+      "metabolite_id": "core_115",
+      "exchange_id": "EX_xan_e",
+      "sign_factor": 1.0,
+      "source_label": "xanthine"
+    }
+  ],
+  "assay_tolerances": {
+    "core_001": 0.003843028132766879,
+    "core_002": 0.00294511029887882,
+    "core_003": 0.004310322298248449,
+    "core_004": 0.0001141863701116819,
+    "core_005": 0.0071430285258654615,
+    "core_006": 0.0055015642459330105,
+    "core_007": 0.00028264721173185494,
+    "core_008": 0.5457603758812978,
+    "core_009": 0.00040138985232963595,
+    "core_010": 0.002980526051596842,
+    "core_011": 0.03795302492481831,
+    "core_012": 0.000294789158385387,
+    "core_013": 0.00206128971042324,
+    "core_014": 0.0005467921384013099,
+    "core_015": 0.003669231617696051,
+    "core_016": 1.500294435454201,
+    "core_017": 0.0014812963070810039,
+    "core_018": 0.0003612835608389302,
+    "core_019": 4.613972335225881,
+    "core_020": 1.4072119302989e-07,
+    "core_021": 1.834531642237767,
+    "core_022": 1.0599021150202201,
+    "core_023": 0.27854288981636705,
+    "core_024": 0.0037551493884089987,
+    "core_025": 0.006970294548206399,
+    "core_026": 0.09789533444253706,
+    "core_027": 0.03652267160435008,
+    "core_028": 0.15954262886397985,
+    "core_029": 0.045961035143480246,
+    "core_030": 0.000166273742034089,
+    "core_031": 0.189090940030051,
+    "core_032": 0.002216588860563,
+    "core_033": 0.08371713903835099,
+    "core_034": 0.001763138641965914,
+    "core_035": 0.00147116941854396,
+    "core_036": 0.0,
+    "core_037": 0.000167332280351319,
+    "core_038": 0.017914476711549998,
+    "core_039": 0.0009604291727467983,
+    "core_040": 0.00670552310916654,
+    "core_041": 0.0014631418799402,
+    "core_042": 0.0075897365667539005,
+    "core_043": 0.014909025002164109,
+    "core_044": 0.014563877354335092,
+    "core_045": 2.0945610962467,
+    "core_046": 0.000551618189599575,
+    "core_047": 0.001914427719913562,
+    "core_048": 111.70690208760504,
+    "core_049": 0.001657002453871851,
+    "core_050": 2.67646565889099,
+    "core_051": 2.5771877701272015,
+    "core_052": 1.0330824868023196,
+    "core_053": 0.4413608866997203,
+    "core_054": 0.05259115737666411,
+    "core_055": 0.39518895285962996,
+    "core_056": 0.007152164535735698,
+    "core_057": 0.00081239858288534,
+    "core_058": 0.0065144993067712004,
+    "core_059": 0.2737837868573698,
+    "core_060": 0.005796170142630301,
+    "core_061": 0.0007161758143987926,
+    "core_062": 0.12119653816944997,
+    "core_063": 0.002613856400040998,
+    "core_064": 0.00587004895509942,
+    "core_065": 1.55674416955303,
+    "core_066": 0.0002496706641477322,
+    "core_067": 0.0002966325807774294,
+    "core_068": 0.00587782297132782,
+    "core_069": 0.0012143955782012972,
+    "core_070": 64.99106061831901,
+    "core_071": 0.0045434304189092296,
+    "core_072": 1.1741940678871705,
+    "core_073": 0.0018735866320894298,
+    "core_074": 1.0294968410655496,
+    "core_075": 0.024110572492171023,
+    "core_076": 0.2980470748074602,
+    "core_077": 0.000250442401457782,
+    "core_078": 0.03297386786590201,
+    "core_079": 0.0001609857018140802,
+    "core_080": 0.4527728502964692,
+    "core_081": 0.0001989391873098295,
+    "core_082": 0.00044110890861070496,
+    "core_083": 0.07220683755628331,
+    "core_084": 0.0013647104435247706,
+    "core_085": 0.3319128202927297,
+    "core_086": 0.003491378153631311,
+    "core_087": 0.02065997138124264,
+    "core_088": 0.8275133278939197,
+    "core_089": 1.7963930564428022e-06,
+    "core_090": 0.0005282885488195955,
+    "core_091": 0.01798234289270769,
+    "core_092": 0.47775819933269936,
+    "core_093": 0.00168615160644582,
+    "core_094": 0.0006304730887291498,
+    "core_095": 0.0085974696376639,
+    "core_096": 0.016061214853808986,
+    "core_097": 0.00155326939326236,
+    "core_098": 0.027979298840837996,
+    "core_099": 0.00020180649840311512,
+    "core_100": 0.0008061557535472201,
+    "core_101": 0.00847034595369619,
+    "core_102": 0.5872097894627499,
+    "core_103": 0.0007408272260413899,
+    "core_104": 0.0012957963500448803,
+    "core_105": 8.6375725766137e-05,
+    "core_106": 8.54790782954203e-06,
+    "core_107": 0.19590147932898616,
+    "core_108": 0.9393477914672905,
+    "core_109": 1.0123780974187102e-05,
+    "core_110": 0.00038381063656344003,
+    "core_111": 0.0028420190864471007,
+    "core_112": 0.01565275128543769,
+    "core_113": 0.00261996244331405,
+    "core_114": 0.6683839417449402,
+    "core_115": 0.006283780968157401,
+    "core_116": 0.0023567773575734357,
+    "core_117": 0.002042964361370102,
+    "core_118": 6.641117035518299e-09,
+    "core_119": 1.1765832658307402e-05,
+    "core_120": 1.020560404259353e-05,
+    "core_121": 1.3292416415209e-06,
+    "core_122": 3.7208602503526397e-08,
+    "core_123": 8.396886525231205e-07,
+    "core_124": 1.5920171792467382e-07,
+    "core_125": 6.95446449996949e-07,
+    "core_126": 8.476720219903717e-07,
+    "core_127": 1.320055042841299e-07,
+    "core_128": 5.6572768326487e-06,
+    "core_129": 3.0492655333523504e-08,
+    "core_130": 1.9432090176622297e-06,
+    "core_131": 2.3427342361339802e-07,
+    "core_132": 3.2532180185539997e-06,
+    "core_133": 5.2693849094114e-08,
+    "core_134": 1.9936898831797017e-05,
+    "core_135": 1.475721820281e-08,
+    "core_136": 2.243060444064658e-07,
+    "core_137": 5.166877069621105e-08,
+    "core_138": 1.7994840523304698e-07,
+    "core_139": 1.711898589884682e-08,
+    "core_140": 1.817743611363512e-07
+  },
+  "maximum_invalid_fraction": 0.01,
+  "per_target_invalid_probability_cutoff": 0.00010416666666666667,
+  "development_exact_joint_invalid_probability": 0.00036324173062412515,
+  "development_union_bound_invalid_probability": 0.00041889262974787047,
+  "selection_rule": "Keep targets with exact empirical N-origin bootstrap P(no eligible distinct-origin pair) <= alpha / M_chemistry",
+  "risk_scope": "Exact conditional risk for the observed development graphs; not test-set invalidity or inferential coverage",
+  "pair_policy": "Equal weight per eligible distinct-context pair from different biological origins; within-origin pairs excluded. Origins with multiple distinct cell lines contribute more pair rows; bootstrap carries each origin whole.",
+  "point_tolerance": 1e-05,
+  "interval_tolerance": 1e-05,
+  "numerical_tolerance": 1e-06,
+  "comparison_arms": [
+    "magnitude_g0.50",
+    "magnitude_g0.80",
+    "magnitude_g1.00",
+    "magnitude_g1.25",
+    "magnitude_g2.00",
+    "ordinal"
+  ],
+  "bootstrap_resamples": 2000,
+  "development_seed": 11,
+  "test_seed": 20260913,
+  "interval_policy": "Fixed panel; invalid draws reported, never redraw/drop targets. Conditional interval suppressed when invalid fraction exceeds alpha.",
+  "within_origin_amendment": "Primary comparisons now exclude within-origin pairs; original protocol left that rule unspecified. This was chosen before new prediction evaluation."
+}

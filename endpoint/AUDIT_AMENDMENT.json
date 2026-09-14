@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-09-13T18:41:56.490934+00:00",
+  "status": "post-analysis source-quality audit; previously observed model results are acknowledged",
+  "authorization": "This record is the analysis plan for a reconstruction attempt. It is not author approval and not a preregistration.",
+  "sources": {
+    "rule": "Nilsson et al. 2018, Figure 1B: endpoint concentration below 10% of fresh concentration for at least one measured metabolite",
+    "input": "Frozen corrected original Jain 2012 Database S1.xls, Concentrations sheet",
+    "growth_data": "Source describes 4 or 5 days; no per-culture time-series cell counts have been recovered. No growth correction will be invented."
+  },
+  "planned_reconstructions": [
+    {
+      "name": "all_reported_assays",
+      "assays": "All 140 source rows; each evaluated only if fresh mean is positive and finite, and endpoint finite/nonnegative",
+      "reason": "Literal any-metabolite wording. Uncalibrated rows are retained only as relative signal screening, not absolute physical concentration."
+    },
+    {
+      "name": "calibrated_assays",
+      "assays": "Source calibrated flag equals 1, same arithmetic",
+      "reason": "Separately declared check limited to calibrated measurements; do not select one variant based on favorable results."
+    }
+  ],
+  "fresh_estimate": "Arithmetic mean of the ten named Baseline1-Baseline5 columns after published instrument-drift correction. This is a reconstruction assumption until exact 2018 supplement/code is obtained. No nearest-batch assignment invented.",
+  "flag_rule": "strict endpoint < 0.10 * fresh_mean; any flag marks that culture screen-positive; missing/nonpositive fresh rows are unresolved individually",
+  "paired_profile_rule": "Both original replicate cultures must have no observed screen-positive analyte before a profile is called screen-negative in this reconstruction. This is not a certificate of physiological validity.",
+  "allocation": "Use frozen contexts.tsv mapping; do not relabel development profiles; unmatched source lines retained as excluded/unmatched",
+  "coverage": "Report all 120 source cultures, all 60 source lines, and 58 matched model profiles separately; compare independently with 36 nondepleted/84 depleted cultures reported by Nilsson2018 and with the deposited Human1 11-line list; exact agreement is not assumed",
+  "outcome_use": "No predictions or performance statistics will be loaded. No quality-filtered accuracy score calculated in this phase. Only source measurements and allocation used.",
+  "deliverables": [
+    "culture_assay_ledger.tsv",
+    "culture_quality_ledger.tsv",
+    "profile_quality_ledger.tsv",
+    "coverage_summary.json"
+  ],
+  "nonclaims": [
+    "No correction of historical CORE rates",
+    "No claim that screen-negative cultures have valid growth curves",
+    "No new independent holdout",
+    "No retrospective choice of thresholds or assay list to reproduce desired counts"
+  ]
+}

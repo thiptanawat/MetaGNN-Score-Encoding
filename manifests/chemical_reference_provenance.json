@@ -1,0 +1,8 @@
+{
+  "entries": 107,
+  "mapped_assays_checked": 105,
+  "path": "protocol/chemical_identity_reference.tsv",
+  "scope": "Identifier/name/formula audit; not independent structural identification or proof of chromatographic separation",
+  "sha256": "6512193df6635edba02ec46d4ecc758a633b2650048c060aec7dc552f199e752",
+  "source": "KEGG COMPOUND entries; primary database factual curation accessed 2026-09-13"
+}
