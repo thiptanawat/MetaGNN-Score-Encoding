@@ -1,16 +1,18 @@
 cff-version: 1.2.0
 message: If you use this code or the analyses it implements, please cite it.
 title: >-
-  An optimality tolerance, not the spacing of transcript-derived scores, selects the
-  predicted metabolic exchanges in a weighted-parsimony model
+  Objective allowances and growth assumptions shape transcript-informed exchange predictions
+  in a human metabolic model
 abstract: >-
-  Code, protocol records and result tables for a controlled study of the interface between
-  transcript-derived reaction scores and constraint-based metabolic prediction. Measures how
-  often rank-preserving changes to score spacing alter predicted extracellular exchange,
-  locates the modeling stage at which the between-context variation is removed, sweeps the
-  optimality tolerance that stage depends on, compares a bound-based interface and a published
-  sampling workflow under the same evaluation, and tests the resulting reporting rule on an
-  independent condition-response dataset.
+  Code, protocol records, derived data and result tables for a controlled study of the interface
+  between transcript-derived reaction scores and constraint-based prediction of metabolic
+  exchange. Measures how often rank-preserving changes to score spacing alter predicted
+  extracellular exchange and its agreement with measurement, attributes the reported exchange
+  coordinates to the network, the objectives with their allowances and the transcript costs,
+  sweeps the objective allowances, compares a bound-based interface and a published sampling
+  workflow under the same evaluation, and tests a unanimity reporting rule on an independent
+  condition-response dataset. The repository is laid out as the study root named by its protocol
+  lock, so the locked pipeline and the post-lock analyses run from a checkout.
 type: software
 license: MIT
 authors:
@@ -29,8 +31,9 @@ keywords:
   - reaction scoring
   - metabolic exchange
   - flux variability
+  - objective allowance
   - reproducibility
-version: 1.1.0
+version: 1.2.0
 date-released: 2026-09-16
 identifiers:
   - type: doi
@@ -39,4 +42,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.22790149
     description: Release v1.1.0
+  - type: doi
+    value: 10.5281/zenodo.22745339
+    description: Release v1.0.0
 repository-code: https://github.com/thiptanawat/MetaGNN-Score-Encoding

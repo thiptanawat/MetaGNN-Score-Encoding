@@ -1,0 +1,40 @@
+second solver: hybrid
+selection list: chemistry (96 coordinates); comparison over the 96 coordinates of that list
+ 1/16 LE:K-562       ordinal          optimal 581s
+ 2/16 CO:SW-620      ordinal          optimal 592s
+ 3/16 CNS:SNB-19     magnitude_g1.00  optimal 596s
+ 4/16 LC:A549/ATCC   magnitude_g1.00  optimal 610s
+ 5/16 LE:K-562       magnitude_g1.00  optimal 614s
+ 6/16 LC:A549/ATCC   ordinal          optimal 623s
+ 7/16 CO:SW-620      magnitude_g1.00  optimal 635s
+ 8/16 CNS:SNB-19     ordinal          optimal 639s
+ 9/16 ME:MDA-MB-435  magnitude_g1.00  optimal 1201s
+10/16 ME:SK-MEL-28   magnitude_g1.00  optimal 1207s
+11/16 ME:UACC-257    magnitude_g1.00  optimal 1222s
+12/16 ME:UACC-257    ordinal          optimal 1253s
+13/16 ME:SK-MEL-28   ordinal          optimal 1258s
+14/16 RE:CAKI-1      ordinal          optimal 1275s
+15/16 RE:CAKI-1      magnitude_g1.00  optimal 1293s
+16/16 ME:MDA-MB-435  ordinal          optimal 1299s
+{
+ "second_solver": "hybrid",
+ "selection_list": "chemistry",
+ "selection_list_size": 96,
+ "arms_run": 16,
+ "arms_optimal": 16,
+ "coordinates": 1536,
+ "fixed_classification_agreement": 1.0,
+ "primary_52_subset": {
+  "coordinates": 832,
+  "fixed_classification_agreement": 1.0,
+  "point_abs_diff_max": 9.99987717520412e-07,
+  "points_within_1e-5": 1.0
+ },
+ "point_abs_diff_median": 0.0,
+ "point_abs_diff_max": 1e-06,
+ "points_within_1e-5": 1.0,
+ "between_profile_sign_agreement": 0.9998139880952381,
+ "sign_comparisons": 5376,
+ "seconds": 1299.2,
+ "failures": []
+}

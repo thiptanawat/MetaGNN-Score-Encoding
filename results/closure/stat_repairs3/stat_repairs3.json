@@ -1,0 +1,892 @@
+{
+ "reproduction": {
+  "eligible_pairs": 46447,
+  "targets": 52,
+  "max_abs_diff": 0.0
+ },
+ "primary_fixed_panel_accounting": {
+  "delta_grid_ci95": [
+   -0.008722826196542492,
+   0.006873422197342488
+  ],
+  "bootstrap_accounting": {
+   "invalid_draws": 0,
+   "draws": 2000,
+   "targets_with_zero_weight": {}
+  },
+  "note": "seed of stat_repairs.py; the locked evaluator's own draws are in results/reserved_v3"
+ },
+ "common_point_nontied_subset": {
+  "subset": "common point-nontied",
+  "pairs": 3113,
+  "targets": 6,
+  "pairs_per_target": {
+   "core_016": 366,
+   "core_044": 699,
+   "core_052": 92,
+   "core_070": 677,
+   "core_076": 757,
+   "core_096": 522
+  },
+  "macro_C": {
+   "magnitude_g0.50": 0.5677096248565789,
+   "magnitude_g0.80": 0.5524992492993556,
+   "magnitude_g1.00": 0.5510807558880374,
+   "magnitude_g1.25": 0.5329586228815132,
+   "magnitude_g2.00": 0.5107233667907637,
+   "ordinal": 0.5274793773598992
+  },
+  "delta_grid": -0.015514946583350508,
+  "delta_identity": -0.02360137852813815,
+  "delta_grid_ci95_fixed_panel_conditional": [
+   -0.07978904997901363,
+   0.04996856323393193
+  ],
+  "delta_grid_ci95_changing_panel_for_the_record": [
+   -0.08010856588769065,
+   0.05044315523491816
+  ],
+  "absolute_ci95_fixed_panel_conditional": {
+   "magnitude_g0.50": [
+    0.5019521567251557,
+    0.6295208297652458
+   ],
+   "magnitude_g0.80": [
+    0.47844220944361815,
+    0.6226409584416286
+   ],
+   "magnitude_g1.00": [
+    0.4823991596506374,
+    0.6182562540124437
+   ],
+   "magnitude_g1.25": [
+    0.4616678406023379,
+    0.6009569904761461
+   ],
+   "magnitude_g2.00": [
+    0.44590346470933917,
+    0.5780908985646811
+   ],
+   "ordinal": [
+    0.465223468908737,
+    0.6026968360993931
+   ]
+  },
+  "bootstrap_accounting": {
+   "invalid_draws": 10,
+   "draws": 2000,
+   "targets_with_zero_weight": {
+    "core_052": 10
+   }
+  },
+  "seed": 20260916,
+  "note": "pairs whose point predictions differ by more than the tie threshold in all six encodings; this is the 3,113-pair subset of stat_repairs.py under its correct name"
+ },
+ "common_interval_resolved_subset": {
+  "subset": "common interval-resolved",
+  "pairs": 3085,
+  "targets": 6,
+  "pairs_per_target": {
+   "core_016": 365,
+   "core_044": 695,
+   "core_052": 91,
+   "core_070": 665,
+   "core_076": 749,
+   "core_096": 520
+  },
+  "macro_C": {
+   "magnitude_g0.50": 0.5693023474988337,
+   "magnitude_g0.80": 0.5530104563193307,
+   "magnitude_g1.00": 0.5522979963727045,
+   "magnitude_g1.25": 0.5346207100279757,
+   "magnitude_g2.00": 0.5126379628582926,
+   "ordinal": 0.528649038820124
+  },
+  "delta_grid": -0.015724855795303472,
+  "delta_identity": -0.023648957552580452,
+  "delta_grid_ci95_fixed_panel_conditional": [
+   -0.08037692835038965,
+   0.05030143405446618
+  ],
+  "delta_grid_ci95_changing_panel_for_the_record": [
+   -0.08046380053227724,
+   0.050786607584692174
+  ],
+  "absolute_ci95_fixed_panel_conditional": {
+   "magnitude_g0.50": [
+    0.502201997442704,
+    0.6315856755406558
+   ],
+   "magnitude_g0.80": [
+    0.4775255653234279,
+    0.6224478592601363
+   ],
+   "magnitude_g1.00": [
+    0.4816113348949538,
+    0.6192097616415885
+   ],
+   "magnitude_g1.25": [
+    0.462887973710003,
+    0.6018486446324726
+   ],
+   "magnitude_g2.00": [
+    0.4462068041909455,
+    0.5811219521823477
+   ],
+   "ordinal": [
+    0.46596449065871465,
+    0.6027702361712088
+   ]
+  },
+  "bootstrap_accounting": {
+   "invalid_draws": 10,
+   "draws": 2000,
+   "targets_with_zero_weight": {
+    "core_052": 10
+   }
+  },
+  "seed": 20260916,
+  "note": "pairs whose feasible ranges are disjoint by the tie threshold in all six encodings"
+ },
+ "contrast_arithmetic": {
+  "targets": 52,
+  "constant_in_all_magnitude_arms": 43,
+  "constant_in_all_six_arms": 38,
+  "targets_where_contrast_can_be_nonzero": 14,
+  "targets_with_nonzero_contrast_contribution_observed": 14,
+  "sum_of_contributions": -0.001250776030412872,
+  "delta_grid_locked": -0.0012507760304129034,
+  "note": "a target constant across profiles in every arm scores 0.5 in every arm and contributes exactly 0 to any contrast; the midrank-minus-grid contrast can be nonzero only on the targets that vary in at least one of the six arms",
+  "per_target": {
+   "core_006": {
+    "pairs": 952,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_016": {
+    "pairs": 1000,
+    "C": {
+     "magnitude_g0.50": 0.4925,
+     "magnitude_g0.80": 0.523,
+     "magnitude_g1.00": 0.52,
+     "magnitude_g1.25": 0.5255,
+     "magnitude_g2.00": 0.4995,
+     "ordinal": 0.521
+    },
+    "delta_grid_contribution": 0.0001711538461538465,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_018": {
+    "pairs": 1023,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_024": {
+    "pairs": 923,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_026": {
+    "pairs": 957,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.4864158829676071
+    },
+    "delta_grid_contribution": -0.0002612330198537091,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": false
+   },
+   "core_027": {
+    "pairs": 971,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_028": {
+    "pairs": 960,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.4786458333333333
+    },
+    "delta_grid_contribution": -0.00041065705128205145,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": false
+   },
+   "core_030": {
+    "pairs": 957,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_032": {
+    "pairs": 950,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5221052631578947,
+     "magnitude_g1.00": 0.54,
+     "magnitude_g1.25": 0.5389473684210526,
+     "magnitude_g2.00": 0.5278947368421053,
+     "ordinal": 0.5294736842105263
+    },
+    "delta_grid_contribution": 7.085020242914873e-05,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_035": {
+    "pairs": 920,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_039": {
+    "pairs": 984,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_041": {
+    "pairs": 939,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_044": {
+    "pairs": 918,
+    "C": {
+     "magnitude_g0.50": 0.6127450980392157,
+     "magnitude_g0.80": 0.579520697167756,
+     "magnitude_g1.00": 0.5762527233115469,
+     "magnitude_g1.25": 0.5479302832244008,
+     "magnitude_g2.00": 0.5424836601307189,
+     "ordinal": 0.6149237472766884
+    },
+    "delta_grid_contribution": 0.0008295625942684758,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_049": {
+    "pairs": 748,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_050": {
+    "pairs": 1027,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.4878286270691334
+    },
+    "delta_grid_contribution": -0.0002340648640551273,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": false
+   },
+   "core_051": {
+    "pairs": 919,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_052": {
+    "pairs": 818,
+    "C": {
+     "magnitude_g0.50": 0.5812958435207825,
+     "magnitude_g0.80": 0.5947432762836186,
+     "magnitude_g1.00": 0.6002444987775061,
+     "magnitude_g1.25": 0.5922982885085575,
+     "magnitude_g2.00": 0.5916870415647921,
+     "ordinal": 0.47493887530562345
+    },
+    "delta_grid_contribution": -0.002252209892796691,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_053": {
+    "pairs": 898,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_056": {
+    "pairs": 797,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_062": {
+    "pairs": 940,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_063": {
+    "pairs": 1026,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_064": {
+    "pairs": 691,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_067": {
+    "pairs": 869,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_069": {
+    "pairs": 753,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_070": {
+    "pairs": 909,
+    "C": {
+     "magnitude_g0.50": 0.5907590759075908,
+     "magnitude_g0.80": 0.5561056105610561,
+     "magnitude_g1.00": 0.5379537953795379,
+     "magnitude_g1.25": 0.47744774477447743,
+     "magnitude_g2.00": 0.5011001100110011,
+     "ordinal": 0.5962596259625963
+    },
+    "delta_grid_contribution": 0.001222814589151225,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_072": {
+    "pairs": 847,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.4881936245572609
+    },
+    "delta_grid_contribution": -0.0002270456815911366,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": false
+   },
+   "core_073": {
+    "pairs": 924,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_074": {
+    "pairs": 849,
+    "C": {
+     "magnitude_g0.50": 0.5276796230859835,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.41048292108362777
+    },
+    "delta_grid_contribution": -0.0018279423756455576,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_075": {
+    "pairs": 1025,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_076": {
+    "pairs": 885,
+    "C": {
+     "magnitude_g0.50": 0.5655367231638418,
+     "magnitude_g0.80": 0.5632768361581921,
+     "magnitude_g1.00": 0.5711864406779661,
+     "magnitude_g1.25": 0.5418079096045197,
+     "magnitude_g2.00": 0.5231638418079096,
+     "ordinal": 0.4909604519774011
+    },
+    "delta_grid_contribution": -0.0011929595827900917,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_077": {
+    "pairs": 642,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_078": {
+    "pairs": 911,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_080": {
+    "pairs": 870,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_081": {
+    "pairs": 988,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_085": {
+    "pairs": 863,
+    "C": {
+     "magnitude_g0.50": 0.5144843568945539,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.6373117033603708
+    },
+    "delta_grid_contribution": 0.0025849006150280764,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_088": {
+    "pairs": 713,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5063113604488079
+    },
+    "delta_grid_contribution": 0.00012137231632322823,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": false
+   },
+   "core_091": {
+    "pairs": 779,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_092": {
+    "pairs": 1024,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_094": {
+    "pairs": 935,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_095": {
+    "pairs": 913,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_096": {
+    "pairs": 920,
+    "C": {
+     "magnitude_g0.50": 0.5565217391304348,
+     "magnitude_g0.80": 0.5527173913043478,
+     "magnitude_g1.00": 0.5576086956521739,
+     "magnitude_g1.25": 0.5396739130434782,
+     "magnitude_g2.00": 0.5494565217391304,
+     "ordinal": 0.5592391304347826
+    },
+    "delta_grid_contribution": 0.00015468227424749224,
+    "constant_in_all_magnitude_arms": false,
+    "constant_in_all_six_arms": false
+   },
+   "core_098": {
+    "pairs": 880,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_099": {
+    "pairs": 500,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_102": {
+    "pairs": 876,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_103": {
+    "pairs": 912,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_104": {
+    "pairs": 888,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_110": {
+    "pairs": 958,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_111": {
+    "pairs": 1004,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_112": {
+    "pairs": 731,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_113": {
+    "pairs": 977,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_114": {
+    "pairs": 869,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   },
+   "core_115": {
+    "pairs": 915,
+    "C": {
+     "magnitude_g0.50": 0.5,
+     "magnitude_g0.80": 0.5,
+     "magnitude_g1.00": 0.5,
+     "magnitude_g1.25": 0.5,
+     "magnitude_g2.00": 0.5,
+     "ordinal": 0.5
+    },
+    "delta_grid_contribution": 0.0,
+    "constant_in_all_magnitude_arms": true,
+    "constant_in_all_six_arms": true
+   }
+  }
+ },
+ "_seconds": 3.6
+}

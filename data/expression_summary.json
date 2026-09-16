@@ -1,0 +1,23 @@
+{
+  "aggregation": "per-context maximum of probes with the same positive Entrez ID",
+  "archive_member": "output/RNA__Affy_HG_U133(A_B)_GCRMA.xls",
+  "database_version": "2.15",
+  "dropped_all_missing_columns": [
+    "LC:NCI-H23"
+  ],
+  "expression_columns": 60,
+  "genome_version": "HG-19",
+  "gpr_policy": "AND minimum propagating unknown; OR maximum over supported alternatives; fixed fully finite reaction set",
+  "header_excel_row": 11,
+  "measured_model_base_entrez": 1470,
+  "model_base_entrez": 1883,
+  "negative_probe_values_retained_without_clipping": 59,
+  "positive_entrez_probe_rows": 19777,
+  "raw_probe_rows": 22214,
+  "retained_columns": 59,
+  "retained_gene_missing_cells": 0,
+  "source_date_literal": "09-11-2025",
+  "source_scale": "CellMiner GCRMA intensity, not TPM or measured protein",
+  "supported_reactions": 5468,
+  "unique_entrez": 12514
+}

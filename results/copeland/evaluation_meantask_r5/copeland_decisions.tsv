@@ -1,0 +1,25 @@
+task_mode	encoding_family	contrast	metabolite	exchange_id	a_oxygen	a_treatment	b_oxygen	b_treatment	measured_direction	a_measured_mean	b_measured_mean	interval_direction_shared	interval_direction_pooled	point_direction	point_category	interval_agrees_shared	interval_agrees_pooled	point_agrees	a_intervals	b_intervals	a_min_lo	a_max_hi	b_min_lo	b_max_hi
+mean_measured	primary_five_power	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	conflicting				20	20	-0.301097	-0.296625	-0.298243	-0.294923
+mean_measured	primary_five_power	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	conflicting				20	20	0.564824	0.5706	0.564368	0.57019
+mean_measured	primary_five_power	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	conflicting				20	20	-0.300231	-0.296625	-0.298625	-0.296089
+mean_measured	primary_five_power	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	conflicting				20	20	0.567002	0.571755	0.566582	0.570477
+mean_measured	primary_five_power	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	1	0	0	conflicting				20	20	-0.298243	-0.294923	-0.298625	-0.296089
+mean_measured	primary_five_power	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	conflicting				20	20	0.564368	0.57019	0.566582	0.570477
+mean_measured	primary_five_power	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	conflicting				20	20	-0.301097	-0.296625	-0.300231	-0.296625
+mean_measured	primary_five_power	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	conflicting				20	20	0.564824	0.5706	0.567002	0.571755
+mean_measured	sensitivity_six_with_ordinal	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	conflicting				24	24	-0.303235	-0.296625	-0.299301	-0.294923
+mean_measured	sensitivity_six_with_ordinal	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	conflicting				24	24	0.564824	0.574876	0.564368	0.572354
+mean_measured	sensitivity_six_with_ordinal	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	conflicting				24	24	-0.303808	-0.296625	-0.302926	-0.296089
+mean_measured	sensitivity_six_with_ordinal	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	conflicting				24	24	0.567002	0.581677	0.566582	0.579079
+mean_measured	sensitivity_six_with_ordinal	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	0	0	0	conflicting				24	24	-0.299301	-0.294923	-0.302926	-0.296089
+mean_measured	sensitivity_six_with_ordinal	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	conflicting				24	24	0.564368	0.572354	0.566582	0.579079
+mean_measured	sensitivity_six_with_ordinal	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	conflicting				24	24	-0.303235	-0.296625	-0.303808	-0.296625
+mean_measured	sensitivity_six_with_ordinal	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	conflicting				24	24	0.564824	0.574876	0.567002	0.581677
+mean_measured	context_independent_baseline	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	unanimous_tie				4	4	-0.007298	-0.007298	-0.007298	-0.007298
+mean_measured	context_independent_baseline	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	unanimous_tie				4	4	0.0	0.127311	0.0	0.127311
+mean_measured	context_independent_baseline	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	unanimous_tie				4	4	-0.007298	-0.007298	-0.007298	-0.007298
+mean_measured	context_independent_baseline	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	unanimous_tie				4	4	0.0	0.127311	0.0	0.127311
+mean_measured	context_independent_baseline	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	0	0	0	unanimous_tie				4	4	-0.007298	-0.007298	-0.007298	-0.007298
+mean_measured	context_independent_baseline	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	unanimous_tie				4	4	0.0	0.127311	0.0	0.127311
+mean_measured	context_independent_baseline	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	unanimous_tie				4	4	-0.007298	-0.007298	-0.007298	-0.007298
+mean_measured	context_independent_baseline	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	unanimous_tie				4	4	0.0	0.127311	0.0	0.127311

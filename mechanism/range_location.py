@@ -7,9 +7,10 @@ It does not say where the surviving interval sits, so it cannot by itself explai
 predictions barely differ between profiles. This script measures the location.
 
 Inputs, all frozen and hashed:
-  bottleneck_pilot/range_stage_ledger.tsv   B0/B1/B2 intervals, 11 development profiles,
-                                            identity and ordinal encodings, primary scenario
-  cpu_study/results/reserved_v3/predictions.tsv   saved B2 intervals for the reserved cohort
+  results/mechanism/bottleneck_pilot/range_stage_ledger.tsv   B0/B1/B2 intervals, 11 development
+                                            profiles, identity and ordinal encodings, primary scenario
+  results/mechanism/reserved_range/range_stage_ledger.tsv     the same ledger for the reserved cohort
+  results/reserved_v3/predictions.tsv       saved B2 intervals for the reserved cohort
 
 No CORE outcome is read and no optimization is run.
 """
@@ -19,12 +20,13 @@ import numpy as np
 from mechanism import WIDTH_TOL, width, location, is_fixed, spread, exploration
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = os.path.dirname(HERE)
-PILOT = os.path.join(BASE, "strengthening_reference_checked_2026-09-14", "bottleneck_pilot",
-                     "range_stage_ledger.tsv")
-RESERVED_LEDGER = os.path.join(HERE, "reserved_range", "range_stage_ledger.tsv")
-RESERVED = os.path.join(BASE, "cpu_study_2026-09-13", "results", "reserved_v3", "predictions.tsv")
-PANEL = os.path.join(BASE, "cpu_study_2026-09-13", "protocol", "analysis_plan.json")
+# The study root (the repository) can be overridden with STUDY_ROOT. Outputs are written into the
+# current working directory; reproduce_extensions.sh runs this script inside results/mechanism.
+BASE = os.environ.get("STUDY_ROOT", os.path.dirname(HERE))
+PILOT = os.environ.get("PILOT_LEDGER", os.path.join(BASE, "results", "mechanism", "bottleneck_pilot", "range_stage_ledger.tsv"))
+RESERVED_LEDGER = os.environ.get("RESERVED_LEDGER", os.path.join(BASE, "results", "mechanism", "reserved_range", "range_stage_ledger.tsv"))
+RESERVED = os.path.join(BASE, "results", "reserved_v3", "predictions.tsv")
+PANEL = os.path.join(BASE, "protocol", "analysis_plan.json")
 
 
 def sha256(path):

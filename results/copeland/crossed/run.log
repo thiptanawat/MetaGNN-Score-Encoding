@@ -1,0 +1,23 @@
+ 60/448 optimal 70s
+120/448 optimal 139s
+180/448 optimal 207s
+240/448 optimal 276s
+300/448 optimal 342s
+360/448 optimal 408s
+420/448 optimal 482s
+
+arm              target           spread by task spread by transcript      ratio
+magnitude_g0.50  EX_glc__D_e            0.126982         0.003204     0.0252
+magnitude_g0.50  EX_lac__L_e            0.242001         0.006931     0.0286
+magnitude_g0.80  EX_glc__D_e            0.126646         0.002000     0.0158
+magnitude_g0.80  EX_lac__L_e            0.241788         0.003475     0.0144
+magnitude_g1.00  EX_glc__D_e            0.126494         0.001990     0.0157
+magnitude_g1.00  EX_lac__L_e            0.241627         0.003468     0.0144
+magnitude_g1.25  EX_glc__D_e            0.126306         0.001887     0.0149
+magnitude_g1.25  EX_lac__L_e            0.241394         0.002957     0.0122
+magnitude_g2.00  EX_glc__D_e            0.125917         0.001726     0.0137
+magnitude_g2.00  EX_lac__L_e            0.240776         0.002634     0.0109
+ordinal          EX_glc__D_e            0.127876         0.005915     0.0463
+ordinal          EX_lac__L_e            0.244319         0.012807     0.0524
+uniform_pfba     EX_glc__D_e            0.003101         0.000000     0.0000
+uniform_pfba     EX_lac__L_e            0.000000         0.000000        n/a

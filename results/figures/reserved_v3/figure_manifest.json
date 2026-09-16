@@ -1,0 +1,515 @@
+{
+  "source_sha256": {
+    "src/make_figures.py": "4d11e49e1f920dee90cc0a57592bb780b6f48da106fdcf1b9b2598620025ea83"
+  },
+  "input_sha256": {
+    "protocol/analysis_plan.json": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+    "results/reserved_v3/evaluation_primary.json": "274158552f038d22b7811039c54b0ad93b953f5dc7ee213eb9bb9875a33b5876",
+    "results/reserved_v3/transform_primary.json": "7a0a37f163241a5d1c99948bee84d48ce361e4f2f9dadecb042187da9bb1f4d8",
+    "results/reserved_v3/evaluation_half_serum.json": "f908453b91e6d687d1efbb9ad21ff2f9d9af2d6d929bf09a9517afdcb5828e6b",
+    "results/reserved_v3/transform_half_serum.json": "0112dc3e02f9d43f40a9519e907043ddf1f40645c71aeb5a3aa65458b23f242c",
+    "results/reserved_v3/evaluation_lower_task.json": "a60230f506f5e6c03661e4f6bdb3f99d003f8b047510310dc6f3d11633b00e9b",
+    "results/reserved_v3/transform_lower_task.json": "a58b21ef57436ab445bbd50f1784ef2f88457b98e7a289599dff53aa90c439e1"
+  },
+  "output_sha256": {
+    "figure1_absolute_concordance.png": "59a34afbc011e4edec49471a99cf688ba33620745e045a9cc04cf2ead0e8a28a",
+    "figure1_absolute_concordance.pdf": "1d0278f1438983a4eb9100a3cc9171bdd23a24f28bb82dba53308dd86ceec6ed",
+    "figure2_paired_contrasts.png": "e6b34fcd0a22f86a86c2d28b885ae530c165dacdbfaa861d056512583e5a1fd3",
+    "figure2_paired_contrasts.pdf": "dc828d72d37494e9a50cc4aac2c64ec8b89969a2f0286f050f440067b392062b",
+    "figure3_descriptive_sensitivity.png": "783e513c05e50d03af688de3055177eb668076cb2e2a75e50c0f85954d0b28ea",
+    "figure3_descriptive_sensitivity.pdf": "9102414863a905dc0cc503ac894b080745e20c06bb26bd5b5f151f1406599834"
+  },
+  "partition": "test",
+  "scenarios": [
+    "primary",
+    "half_serum",
+    "lower_task"
+  ],
+  "analysis_plan_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+  "interpretation": "Plots saved summaries only; no statistical estimation or outcome construction.",
+  "display_data": [
+    {
+      "scenario": "primary",
+      "partition": "test",
+      "plan_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+      "absolute": [
+        {
+          "arm": "uniform_pfba",
+          "C": 0.5,
+          "lo": 0.5,
+          "hi": 0.5
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "C": 0.5084908165335077,
+          "lo": 0.5028946636304523,
+          "hi": 0.5140399916490859
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "C": 0.5075282514352474,
+          "lo": 0.5015175659700372,
+          "hi": 0.5132147400159481
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "C": 0.5077547337268987,
+          "lo": 0.5020598888134337,
+          "hi": 0.5131053983346304
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "C": 0.5050693366841632,
+          "lo": 0.4995200740015553,
+          "hi": 0.510514146966992
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "C": 0.5045247290787626,
+          "lo": 0.498234918446013,
+          "hi": 0.5106138590255287
+        },
+        {
+          "arm": "ordinal",
+          "C": 0.505422797461303,
+          "lo": 0.4993691295464394,
+          "hi": 0.51192951482618
+        }
+      ],
+      "contrasts": {
+        "delta_grid": {
+          "estimate": -0.0012507760304129034,
+          "lo": -0.008722826196542322,
+          "hi": 0.006873422197342525
+        },
+        "delta_identity": {
+          "estimate": -0.002331936265595691,
+          "lo": -0.009431638414333695,
+          "hi": 0.0056936515336984414
+        }
+      },
+      "coverage": [
+        {
+          "arm": "uniform_pfba",
+          "fraction": 0.0,
+          "resolved": 0,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "fraction": 0.0986716041940276,
+          "resolved": 4583,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "fraction": 0.10431244213835124,
+          "resolved": 4845,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "fraction": 0.10659461321506233,
+          "resolved": 4951,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "fraction": 0.10459233104398562,
+          "resolved": 4858,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "fraction": 0.10831700648050466,
+          "resolved": 5031,
+          "eligible": 46447
+        },
+        {
+          "arm": "ordinal",
+          "fraction": 0.13929855534264862,
+          "resolved": 6470,
+          "eligible": 46447
+        }
+      ],
+      "changed_fraction": 0.10065466448445172,
+      "reversal_fraction": 0.03360924789496218,
+      "tie_transition_fraction": 0.02704438418724133,
+      "all_prediction_pairs": 56056,
+      "context_target_cells": 2444,
+      "contexts": 47,
+      "origins": 44,
+      "targets": 52,
+      "point_tolerance": 1e-05,
+      "interval_tolerance": 1e-05,
+      "range_diagnostics": [
+        {
+          "arm": "uniform_pfba",
+          "wide_cells": 235,
+          "constant_targets": 52,
+          "zero_targets": 36
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "wide_cells": 3,
+          "constant_targets": 44,
+          "zero_targets": 36
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "wide_cells": 5,
+          "constant_targets": 45,
+          "zero_targets": 35
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "wide_cells": 9,
+          "constant_targets": 45,
+          "zero_targets": 35
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "wide_cells": 2,
+          "constant_targets": 45,
+          "zero_targets": 35
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "wide_cells": 11,
+          "constant_targets": 45,
+          "zero_targets": 35
+        },
+        {
+          "arm": "ordinal",
+          "wide_cells": 11,
+          "constant_targets": 38,
+          "zero_targets": 34
+        }
+      ],
+      "invalid_draws": 0,
+      "resamples": 2000
+    },
+    {
+      "scenario": "half_serum",
+      "partition": "test",
+      "plan_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+      "absolute": [
+        {
+          "arm": "uniform_pfba",
+          "C": 0.5,
+          "lo": 0.5,
+          "hi": 0.5
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "C": 0.4984793769552305,
+          "lo": 0.4930559174685536,
+          "hi": 0.5032196614507094
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "C": 0.4990878509876441,
+          "lo": 0.49394735231400055,
+          "hi": 0.504406204799632
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "C": 0.4999197078023236,
+          "lo": 0.4952350428289857,
+          "hi": 0.5050833843031531
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "C": 0.5015149194249612,
+          "lo": 0.49706000186882476,
+          "hi": 0.5061242450965261
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "C": 0.5018283128999931,
+          "lo": 0.4972170773335622,
+          "hi": 0.5061599318456581
+        },
+        {
+          "arm": "ordinal",
+          "C": 0.5035806803291387,
+          "lo": 0.4982977763210875,
+          "hi": 0.5083683526594601
+        }
+      ],
+      "contrasts": {
+        "delta_grid": {
+          "estimate": 0.0034146467151081605,
+          "lo": -0.0031704414119658603,
+          "hi": 0.009393378069111027
+        },
+        "delta_identity": {
+          "estimate": 0.0036609725268151316,
+          "lo": -0.004049915214076719,
+          "hi": 0.010277435132356691
+        }
+      },
+      "coverage": [
+        {
+          "arm": "uniform_pfba",
+          "fraction": 0.0,
+          "resolved": 0,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "fraction": 0.1387172476155618,
+          "resolved": 6443,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "fraction": 0.12446444334402652,
+          "resolved": 5781,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "fraction": 0.11512045987900188,
+          "resolved": 5347,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "fraction": 0.09141602256335178,
+          "resolved": 4246,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "fraction": 0.10076000602837643,
+          "resolved": 4680,
+          "eligible": 46447
+        },
+        {
+          "arm": "ordinal",
+          "fraction": 0.11791934893534567,
+          "resolved": 5477,
+          "eligible": 46447
+        }
+      ],
+      "changed_fraction": 0.13911620294599017,
+      "reversal_fraction": 0.044723134008848295,
+      "tie_transition_fraction": 0.08586056800342515,
+      "all_prediction_pairs": 56056,
+      "context_target_cells": 2444,
+      "contexts": 47,
+      "origins": 44,
+      "targets": 52,
+      "point_tolerance": 1e-05,
+      "interval_tolerance": 1e-05,
+      "range_diagnostics": [
+        {
+          "arm": "uniform_pfba",
+          "wide_cells": 141,
+          "constant_targets": 52,
+          "zero_targets": 36
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "wide_cells": 2,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "wide_cells": 4,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "wide_cells": 1,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "wide_cells": 1,
+          "constant_targets": 43,
+          "zero_targets": 35
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "wide_cells": 0,
+          "constant_targets": 45,
+          "zero_targets": 35
+        },
+        {
+          "arm": "ordinal",
+          "wide_cells": 0,
+          "constant_targets": 43,
+          "zero_targets": 36
+        }
+      ],
+      "invalid_draws": 0,
+      "resamples": 2000
+    },
+    {
+      "scenario": "lower_task",
+      "partition": "test",
+      "plan_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+      "absolute": [
+        {
+          "arm": "uniform_pfba",
+          "C": 0.5,
+          "lo": 0.5,
+          "hi": 0.5
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "C": 0.4980963454586572,
+          "lo": 0.4901562165921382,
+          "hi": 0.5061642250027655
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "C": 0.497684544906977,
+          "lo": 0.49056889495207096,
+          "hi": 0.5058903523641906
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "C": 0.49901075032605174,
+          "lo": 0.4920378718977104,
+          "hi": 0.5064578228145625
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "C": 0.5015717262763477,
+          "lo": 0.4965389751825799,
+          "hi": 0.5066216064747527
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "C": 0.5012911577195054,
+          "lo": 0.4962989472789564,
+          "hi": 0.5057738050854083
+        },
+        {
+          "arm": "ordinal",
+          "C": 0.5028094853530978,
+          "lo": 0.497532198179003,
+          "hi": 0.5076563513738239
+        }
+      ],
+      "contrasts": {
+        "delta_grid": {
+          "estimate": 0.0032785804155899823,
+          "lo": -0.004845367429443469,
+          "hi": 0.0104089350396236
+        },
+        "delta_identity": {
+          "estimate": 0.0037987350270460296,
+          "lo": -0.006284386809622706,
+          "hi": 0.012124723945994283
+        }
+      },
+      "coverage": [
+        {
+          "arm": "uniform_pfba",
+          "fraction": 0.0,
+          "resolved": 0,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "fraction": 0.1549508041423558,
+          "resolved": 7197,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "fraction": 0.14463797446551985,
+          "resolved": 6718,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "fraction": 0.13148319590070404,
+          "resolved": 6107,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "fraction": 0.11072835705212393,
+          "resolved": 5143,
+          "eligible": 46447
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "fraction": 0.10887678429177342,
+          "resolved": 5057,
+          "eligible": 46447
+        },
+        {
+          "arm": "ordinal",
+          "fraction": 0.12388313561693974,
+          "resolved": 5754,
+          "eligible": 46447
+        }
+      ],
+      "changed_fraction": 0.15671031096563012,
+      "reversal_fraction": 0.04593620665049236,
+      "tie_transition_fraction": 0.08648494362780076,
+      "all_prediction_pairs": 56056,
+      "context_target_cells": 2444,
+      "contexts": 47,
+      "origins": 44,
+      "targets": 52,
+      "point_tolerance": 1e-05,
+      "interval_tolerance": 1e-05,
+      "range_diagnostics": [
+        {
+          "arm": "uniform_pfba",
+          "wide_cells": 141,
+          "constant_targets": 52,
+          "zero_targets": 36
+        },
+        {
+          "arm": "magnitude_g0.50",
+          "wide_cells": 3,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g0.80",
+          "wide_cells": 2,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g1.00",
+          "wide_cells": 8,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g1.25",
+          "wide_cells": 4,
+          "constant_targets": 42,
+          "zero_targets": 34
+        },
+        {
+          "arm": "magnitude_g2.00",
+          "wide_cells": 7,
+          "constant_targets": 44,
+          "zero_targets": 34
+        },
+        {
+          "arm": "ordinal",
+          "wide_cells": 2,
+          "constant_targets": 43,
+          "zero_targets": 36
+        }
+      ],
+      "invalid_draws": 0,
+      "resamples": 2000
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+task_mode	encoding_family	contrast	metabolite	exchange_id	a_oxygen	a_treatment	b_oxygen	b_treatment	measured_direction	a_measured_mean	b_measured_mean	interval_direction_shared	interval_direction_pooled	point_direction	point_category	interval_agrees_shared	interval_agrees_pooled	point_agrees	a_intervals	b_intervals	a_min_lo	a_max_hi	b_min_lo	b_max_hi
+fraction	primary_five_power	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	unanimous_tie				20	20	-10.0	-10.0	-10.0	-10.0
+fraction	primary_five_power	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	conflicting				20	20	25.340327	45.74566	27.602942	43.93179
+fraction	primary_five_power	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	unanimous_tie				20	20	-10.0	-10.0	-10.0	-10.0
+fraction	primary_five_power	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	conflicting				20	20	32.602065	46.606432	26.578359	43.398888
+fraction	primary_five_power	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	0	0	0	unanimous_tie				20	20	-10.0	-10.0	-10.0	-10.0
+fraction	primary_five_power	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	conflicting				20	20	27.602942	43.93179	26.578359	43.398888
+fraction	primary_five_power	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	unanimous_tie				20	20	-10.0	-10.0	-10.0	-10.0
+fraction	primary_five_power	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	conflicting				20	20	25.340327	45.74566	32.602065	46.606432
+fraction	sensitivity_six_with_ordinal	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	unanimous_tie				24	24	-10.0	-10.0	-10.0	-10.0
+fraction	sensitivity_six_with_ordinal	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	conflicting				24	24	25.340327	48.090007	27.602942	48.829344
+fraction	sensitivity_six_with_ordinal	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	unanimous_tie				24	24	-10.0	-10.0	-10.0	-10.0
+fraction	sensitivity_six_with_ordinal	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	conflicting				24	24	32.602065	52.163391	26.578359	49.887046
+fraction	sensitivity_six_with_ordinal	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	0	0	0	unanimous_tie				24	24	-10.0	-10.0	-10.0	-10.0
+fraction	sensitivity_six_with_ordinal	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	conflicting				24	24	27.602942	48.829344	26.578359	49.887046
+fraction	sensitivity_six_with_ordinal	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	unanimous_tie				24	24	-10.0	-10.0	-10.0	-10.0
+fraction	sensitivity_six_with_ordinal	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	conflicting				24	24	25.340327	48.090007	32.602065	52.163391
+fraction	context_independent_baseline	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	0	0	0	unanimous_tie				4	4	-10.0	-10.0	-10.0	-10.0
+fraction	context_independent_baseline	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	unanimous_tie				4	4	0.0	3.351874	0.0	3.351874
+fraction	context_independent_baseline	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	0	0	0	unanimous_tie				4	4	-10.0	-10.0	-10.0	-10.0
+fraction	context_independent_baseline	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	unanimous_tie				4	4	0.0	3.351874	0.0	3.351874
+fraction	context_independent_baseline	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	0	0	0	unanimous_tie				4	4	-10.0	-10.0	-10.0	-10.0
+fraction	context_independent_baseline	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	unanimous_tie				4	4	0.0	3.351874	0.0	3.351874
+fraction	context_independent_baseline	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	0	0	0	unanimous_tie				4	4	-10.0	-10.0	-10.0	-10.0
+fraction	context_independent_baseline	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	unanimous_tie				4	4	0.0	3.351874	0.0	3.351874
+measured	primary_five_power	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	1	1	1	unanimous_positive				20	20	-0.304218	-0.2997	-0.373056	-0.368903
+measured	primary_five_power	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	-1	-1	-1	unanimous_negative	0	0	0	20	20	0.570679	0.576515	0.705938	0.713221
+measured	primary_five_power	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	1	1	1	unanimous_positive				20	20	-0.247959	-0.244981	-0.272613	-0.270297
+measured	primary_five_power	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	-1	-1	-1	unanimous_negative				20	20	0.468284	0.472208	0.517229	0.520784
+measured	primary_five_power	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	-1	-1	-1	unanimous_negative				20	20	-0.373056	-0.368903	-0.272613	-0.270297
+measured	primary_five_power	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	1	1	1	unanimous_positive				20	20	0.705938	0.713221	0.517229	0.520784
+measured	primary_five_power	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	-1	-1	-1	unanimous_negative				20	20	-0.304218	-0.2997	-0.247959	-0.244981
+measured	primary_five_power	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	1	1	1	unanimous_positive	1	1	1	20	20	0.570679	0.576515	0.468284	0.472208
+measured	sensitivity_six_with_ordinal	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	1	1	1	unanimous_positive				24	24	-0.306378	-0.2997	-0.37438	-0.368903
+measured	sensitivity_six_with_ordinal	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	-1	-1	-1	unanimous_negative	0	0	0	24	24	0.570679	0.580835	0.705938	0.715927
+measured	sensitivity_six_with_ordinal	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	1	1	1	unanimous_positive				24	24	-0.250913	-0.244981	-0.276539	-0.270297
+measured	sensitivity_six_with_ordinal	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	-1	-1	-1	unanimous_negative				24	24	0.468284	0.480402	0.517229	0.528637
+measured	sensitivity_six_with_ordinal	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	-1	-1	-1	unanimous_negative				24	24	-0.37438	-0.368903	-0.276539	-0.270297
+measured	sensitivity_six_with_ordinal	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	1	1	1	unanimous_positive				24	24	0.705938	0.715927	0.517229	0.528637
+measured	sensitivity_six_with_ordinal	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	-1	-1	-1	unanimous_negative				24	24	-0.306378	-0.2997	-0.250913	-0.244981
+measured	sensitivity_six_with_ordinal	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	1	1	1	unanimous_positive	1	1	1	24	24	0.570679	0.580835	0.468284	0.480402
+measured	context_independent_baseline	drug_21	glucose	EX_glc__D_e	21%	BAY	21%	DMSO	0	-595.116	-471.787	1	1	1	unanimous_positive				4	4	-0.007373	-0.007373	-0.009128	-0.009128
+measured	context_independent_baseline	drug_21	lactate	EX_lac__L_e	21%	BAY	21%	DMSO	1	1345.288	975.152	0	0	0	unanimous_tie				4	4	0.0	0.12863	0.0	0.159246
+measured	context_independent_baseline	drug_05	glucose	EX_glc__D_e	0.5%	BAY	0.5%	DMSO	0	-472.302	-502.173	1	1	1	unanimous_positive				4	4	-0.006027	-0.006027	-0.006662	-0.006662
+measured	context_independent_baseline	drug_05	lactate	EX_lac__L_e	0.5%	BAY	0.5%	DMSO	0	703.944	741.048	0	0	0	unanimous_tie				4	4	0.0	0.105145	0.0	0.116221
+measured	context_independent_baseline	oxy_dmso	glucose	EX_glc__D_e	21%	DMSO	0.5%	DMSO	0	-471.787	-502.173	-1	-1	-1	unanimous_negative				4	4	-0.009128	-0.009128	-0.006662	-0.006662
+measured	context_independent_baseline	oxy_dmso	lactate	EX_lac__L_e	21%	DMSO	0.5%	DMSO	0	975.152	741.048	0	0	0	unanimous_tie				4	4	0.0	0.159246	0.0	0.116221
+measured	context_independent_baseline	oxy_bay	glucose	EX_glc__D_e	21%	BAY	0.5%	BAY	0	-595.116	-472.302	-1	-1	-1	unanimous_negative				4	4	-0.007373	-0.007373	-0.006027	-0.006027
+measured	context_independent_baseline	oxy_bay	lactate	EX_lac__L_e	21%	BAY	0.5%	BAY	1	1345.288	703.944	0	0	0	unanimous_tie				4	4	0.0	0.12863	0.0	0.105145

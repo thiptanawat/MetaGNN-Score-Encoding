@@ -6,7 +6,7 @@ Figure 4  "Constraint-stage attribution and the position of restricted
            coordinates" (three panels: A stacked bar, B ECDF of widths,
            C exploration distribution).
 
-Figure 5  "Independent condition-response evaluation" (three panels:
+Figure 6  "Independent condition-response evaluation" (three panels:
            A measured replicates, B predicted lactate vs measured growth
            rate, C crossed profile x growth-rate control).
 
@@ -14,19 +14,21 @@ This script reads ONLY the following inputs (paths resolved relative to
 the paper3 base directory, which is taken to be the parent of the
 directory this script lives in):
 
-  mechanism_2026-09-14/reserved_range/range_stage_ledger.tsv
-  mechanism_2026-09-14/range_location_reserved_stages.tsv
-  copeland_2026-09-14/evaluation/copeland_evaluation.json
-  copeland_2026-09-14/run/predictions.tsv
-  copeland_2026-09-14/evaluation/copeland_decisions.tsv
-  copeland_2026-09-14/crossed/crossed_predictions.tsv
-  copeland_2026-09-14/crossed/crossed_summary.json
+  results/mechanism/reserved_range/range_stage_ledger.tsv
+  results/mechanism/range_location_reserved_stages.tsv
+  results/copeland/evaluation/copeland_evaluation.json
+  results/copeland/run/predictions.tsv
+  results/copeland/evaluation/copeland_decisions.tsv
+  results/copeland/crossed/crossed_predictions.tsv
+  results/copeland/crossed/crossed_summary.json
+  results/closure/cap_sweep*/ and results/closure/comparators/
 
 and writes:
 
-  figures/Figure_4_Constraint_Stage.png
-  figures/Figure_5_Independent_Evaluation.png
-  figures/SHA256SUMS.txt
+  results/figures/manuscript/Figure_4_Constraint_Stage.png
+  results/figures/manuscript/Figure_5_Comparator_Formulations.png
+  results/figures/manuscript/Figure_6_Independent_Evaluation.png
+  results/figures/manuscript/SHA256SUMS.txt
 
 All numbers shown on the figures (counts, medians, means, spreads) are
 computed from the data files at run time -- nothing is hard-coded.
@@ -39,6 +41,7 @@ import numpy as np
 import pandas as pd
 
 import matplotlib
+import matplotlib.ticker as mticker
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
@@ -49,11 +52,11 @@ from matplotlib.ticker import MaxNLocator
 # Paths
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE = os.path.dirname(SCRIPT_DIR)  # .../paper3
+BASE = os.environ.get("STUDY_ROOT", os.path.dirname(SCRIPT_DIR))  # the repository is the study root
 
-MECH = os.path.join(BASE, "mechanism_2026-09-14")
-COPE = os.path.join(BASE, "copeland_2026-09-14")
-OUTDIR = os.path.join(SCRIPT_DIR, "figures")
+MECH = os.path.join(BASE, "results", "mechanism")
+COPE = os.path.join(BASE, "results", "copeland")
+OUTDIR = os.environ.get("FIGURE_OUT", os.path.join(BASE, "results", "figures", "manuscript"))
 os.makedirs(OUTDIR, exist_ok=True)
 
 LEDGER_TSV = os.path.join(MECH, "reserved_range", "range_stage_ledger.tsv")
@@ -63,6 +66,19 @@ PRED_TSV = os.path.join(COPE, "run", "predictions.tsv")
 DECISIONS_TSV = os.path.join(COPE, "evaluation", "copeland_decisions.tsv")
 CROSSED_TSV = os.path.join(COPE, "crossed", "crossed_predictions.tsv")
 CROSSED_JSON = os.path.join(COPE, "crossed", "crossed_summary.json")
+CLOSURE = os.path.join(BASE, "results", "closure")
+CAP_SUMMARY_JSON = os.path.join(CLOSURE, "cap_sweep", "summary.json")
+CAP_CONCORDANCE_JSON = os.path.join(CLOSURE, "cap_sweep", "cap_concordance.json")
+CAP_FINE_SUMMARY_JSON = os.path.join(CLOSURE, "cap_sweep_fine", "summary.json")
+CAP_FINE_CONCORDANCE_JSON = os.path.join(CLOSURE, "cap_sweep_fine", "cap_concordance.json")
+COMPARATOR_JSONS = {
+    "bound_B10": os.path.join(CLOSURE, "comparators", "comparator_bound_B10.json"),
+    "bound_B3": os.path.join(CLOSURE, "comparators", "comparator_bound_B3.json"),
+    "riptide": os.path.join(CLOSURE, "comparators", "comparator_riptide.json"),
+    "bound_B10_fixed_identity": os.path.join(CLOSURE, "comparators", "comparator_bound_B10_fixed_identity.json"),
+    "bound_B10_fixed_ordinal": os.path.join(CLOSURE, "comparators", "comparator_bound_B10_fixed_ordinal.json"),
+}
+STAT_REPAIRS_JSON = os.path.join(CLOSURE, "stat_repairs", "stat_repairs.json")
 
 CLIP = 1e-12  # floor applied before log-transforming any width/exploration value
 
@@ -96,7 +112,7 @@ ARM_LABELS6 = {
     "ordinal": "Ordinal",
 }
 ARMS7 = ARMS6 + ["uniform_pfba"]
-ARM_LABELS7 = dict(ARM_LABELS6, uniform_pfba="Uniform pFBA")
+ARM_LABELS7 = dict(ARM_LABELS6, uniform_pfba="Uniform reference")
 
 # Distinct color + distinct marker shape per arm (redundant encoding so the
 # arm identity in Figure 5B survives grayscale printing).
@@ -139,7 +155,8 @@ def make_figure4(report):
     if len(ledger) != 14664:
         raise ValueError(f"range_stage_ledger.tsv: expected 14664 rows, got {len(ledger)}")
 
-    fig, (axA, axB, axC) = plt.subplots(1, 3, figsize=(14.2, 4.9))
+    fig, axes = plt.subplots(2, 2, figsize=(12.6, 10.2))
+    (axA, axB), (axSweep, axExplo) = axes   # C = tolerance sweep, D = exploration
 
     # ---------------- Panel A: stacked bar of first_fixed_stage counts ----
     cats = ["already_fixed_B0", "first_fixed_B1", "first_fixed_B2", "still_variable_B2"]
@@ -199,8 +216,8 @@ def make_figure4(report):
     axA.yaxis.grid(True, linewidth=0.5, color="0.85", zorder=0)
     handles = [Patch(facecolor=c, edgecolor="black", hatch=h, label=l)
                for c, h, l in zip(cat_colors, cat_hatches, cat_labels)]
-    fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False,
-               bbox_to_anchor=(0.5, -0.02), fontsize=9.6)
+    axA.legend(handles=handles, loc="upper center", ncol=2, frameon=False,
+               bbox_to_anchor=(0.5, -0.30), fontsize=9.0)
     panel_letter(axA, "A")
 
     # ---------------- Panel B: ECDF of widths at B0/B1/B2, arm = g1.00 -----
@@ -235,7 +252,87 @@ def make_figure4(report):
               fontsize=9, ha="left", va="top", style="italic", color="0.25")
     panel_letter(axB, "B")
 
-    # ---------------- Panel C: exploration distribution per arm -----------
+    # ---------------- Panel C: the cap-tolerance sweep, coarse and fine grid --
+    with open(CAP_SUMMARY_JSON) as f:
+        cap = json.load(f)
+    with open(CAP_CONCORDANCE_JSON) as f:
+        capc = json.load(f)
+    with open(CAP_FINE_SUMMARY_JSON) as f:
+        capf = json.load(f)
+    with open(CAP_FINE_CONCORDANCE_JSON) as f:
+        capfc = json.load(f)
+    # (cap key, summary source, concordance source, x position = relative tolerance, tick label)
+    # The study cap is 1e-7 absolute plus 1e-9 relative; it is drawn at its relative part.
+    grid = [("exact", cap, capc, 1e-9, "study\ncap"),
+            ("rel_1e-6", capf, capfc, 1e-6, "$10^{-6}$"),
+            ("rel_1e-5", capf, capfc, 1e-5, "$10^{-5}$"),
+            ("rel_1e-4", capf, capfc, 1e-4, "$10^{-4}$"),
+            ("rel_1e-3", capf, capfc, 1e-3, "$10^{-3}$"),
+            ("rel_1pct", cap, capc, 1e-2, "1%"),
+            ("rel_5pct", cap, capc, 5e-2, "5%"),
+            ("rel_20pct", cap, capc, 2e-1, "20%")]
+    for key, src, srcc, _, _ in grid:
+        for arm in ("magnitude_g1.00", "ordinal", "uniform_pfba"):
+            if key not in src[arm]:
+                raise ValueError(f"cap sweep: tolerance {key} missing for arm {arm}")
+            if key not in srcc[arm]:
+                raise ValueError(f"cap concordance: tolerance {key} missing for arm {arm}")
+    xs = np.array([g[3] for g in grid])
+    sweep_arms = [("magnitude_g1.00", "identity, γ=1.00", "#009E73", "^"),
+                  ("ordinal", "midrank", "#D55E00", "P"),
+                  ("uniform_pfba", "uniform cost", "#000000", "X")]
+    for arm, label, color, marker in sweep_arms:
+        fixed = [g[1][arm][g[0]]["mean_fixed_of_52"] for g in grid]
+        axSweep.plot(xs, fixed, marker=marker, color=color, linewidth=1.6, markersize=7,
+                     label=label, zorder=3)
+    axSweep.set_xscale("log")
+    axSweep.set_xlim(2.5e-10, 5e-1)
+    axSweep.set_xticks(xs)
+    axSweep.set_xticklabels([g[4] for g in grid], fontsize=9.5)
+    axSweep.xaxis.set_minor_locator(mticker.NullLocator())
+    axSweep.set_xlabel("relative objective allowance above the cost optimum (log axis)")
+    axSweep.set_ylabel("targets fixed per profile (of 52), solid")
+    axSweep.set_ylim(-2, 54)
+    axSweep.axhline(3, color="0.5", linewidth=0.9, linestyle=":", zorder=1)
+    axSweep2 = axSweep.twinx()
+    for arm, label, color, marker in sweep_arms:
+        width = [max(g[1][arm][g[0]]["mean_width"], CLIP) for g in grid]
+        axSweep2.plot(xs, width, marker=marker, color=color, linewidth=1.2, linestyle="--",
+                      markersize=5, markerfacecolor="white", zorder=2)
+    axSweep2.set_yscale("log")
+    axSweep2.set_ylim(1e-6, 1e3)
+    axSweep2.set_yticks([1e-6, 1e-4, 1e-2, 1e0, 1e2])
+    axSweep2.yaxis.set_minor_locator(mticker.NullLocator())
+    axSweep2.set_ylabel("mean width, units (dashed)")
+    cells = []
+    for key, src, srcc, x, lab in grid:
+        name = lab.replace("$", "").replace("^{", "^").replace("}", "").replace("\n", " ")
+        cells.append("%-9s %5s/%-5s" % (name, f"{srcc['magnitude_g1.00'][key]['resolved_pairs']:,}",
+                                        f"{srcc['ordinal'][key]['resolved_pairs']:,}"))
+    res_lines = ["resolved pairs of 46,447 (identity/midrank)"]
+    half = len(cells) // 2
+    for left, right in zip(cells[:half], cells[half:]):
+        res_lines.append(left + "   " + right)
+    axSweep.text(0.44, 0.44, "\n".join(res_lines), transform=axSweep.transAxes, fontsize=6.6,
+                 ha="left", va="top", family="monospace",
+                 bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="0.6", alpha=0.92))
+    handles, labels = axSweep.get_legend_handles_labels()
+    handles.append(Line2D([0], [0], color="0.5", linewidth=0.9, linestyle=":"))
+    labels.append("3 fixed by the network")
+    axSweep.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.17, 0.99), frameon=True,
+                   framealpha=0.9, fontsize=8.2)
+    axSweep.set_axisbelow(True)
+    axSweep.yaxis.grid(True, linewidth=0.5, color="0.88", zorder=0)
+    panel_letter(axSweep, "C")
+    report["figure4_panelC"] = {
+        "tolerances": [g[0] for g in grid],
+        "x_positions": [g[3] for g in grid],
+        "mean_fixed": {a: {g[0]: g[1][a][g[0]]["mean_fixed_of_52"] for g in grid} for a, *_ in sweep_arms},
+        "mean_width": {a: {g[0]: g[1][a][g[0]]["mean_width"] for g in grid} for a, *_ in sweep_arms},
+        "resolved": {a: {g[0]: g[2][a][g[0]]["resolved_pairs"] for g in grid}
+                     for a in ("magnitude_g1.00", "ordinal", "uniform_pfba")}}
+
+    # ---------------- Panel D: exploration distribution per arm -----------
     free = location[location.B0_width > 1e-5].copy()
     if len(free) != 6 * 49:
         raise ValueError(f"free-target subset: expected {6*49} rows, got {len(free)}")
@@ -244,7 +341,7 @@ def make_figure4(report):
 
     data_by_arm = [free.loc[free.arm == a, "explo_c"].values for a in ARMS6]
     positions = np.arange(1, len(ARMS6) + 1)
-    axC.boxplot(data_by_arm, positions=positions, vert=False, widths=0.55,
+    axExplo.boxplot(data_by_arm, positions=positions, vert=False, widths=0.55,
                 patch_artist=True, showfliers=False,
                 boxprops=dict(facecolor="#d9d9d9", edgecolor="black", linewidth=0.9),
                 medianprops=dict(color="black", linewidth=1.9),
@@ -253,38 +350,38 @@ def make_figure4(report):
     rng = np.random.default_rng(0)
     for pos, vals in zip(positions, data_by_arm):
         jitter = rng.uniform(-0.17, 0.17, size=len(vals))
-        axC.scatter(vals, pos + jitter, s=12, facecolor="black", edgecolor="none",
+        axExplo.scatter(vals, pos + jitter, s=12, facecolor="black", edgecolor="none",
                     alpha=0.45, zorder=3)
 
-    axC.set_xscale("log")
-    axC.set_xlim(1e-11, 2.2)
-    axC.axvline(1.0, color="black", linewidth=1.1, linestyle="--", zorder=1)
-    axC.text(1.0, len(ARMS6) + 0.55, "profiles span full\nadmissible range",
-              ha="center", va="bottom", fontsize=8.4)
+    axExplo.set_xscale("log")
+    axExplo.set_xlim(1e-11, 2.2)
+    axExplo.axvline(1.0, color="black", linewidth=1.1, linestyle="--", zorder=1)
+    axExplo.text(0.8, len(ARMS6) + 0.45, "profiles span full\nadmissible range",
+              ha="right", va="bottom", fontsize=8.4)
     n_reserved_profiles = int(free["profiles"].iloc[0])
     if not (free["profiles"] == n_reserved_profiles).all():
         raise ValueError("range_location_reserved_stages.tsv: 'profiles' column is not "
                           "constant across free targets; cannot state a single reserved-"
                           "profile count on the panel.")
-    axC.text(0.99, 0.90, f"{n_reserved_profiles} reserved profiles per arm", transform=axC.transAxes,
-              fontsize=7.6, ha="right", va="top", style="italic", color="0.3")
+    axExplo.text(0.99, 0.03, f"{n_reserved_profiles} reserved profiles per arm", transform=axExplo.transAxes,
+              fontsize=7.6, ha="right", va="bottom", style="italic", color="0.3")
     medians = free.groupby("arm")["explo_c"].median().reindex(ARMS6)
     med_text = "median B2 exploration\n" + "\n".join(
         f"{ARM_LABELS6[a]}: {medians[a]:.1e}" for a in ARMS6)
-    axC.text(0.02, 0.04, med_text, transform=axC.transAxes, fontsize=7.6,
+    axExplo.text(0.40, 0.22, med_text, transform=axExplo.transAxes, fontsize=7.6,
               ha="left", va="bottom", family="monospace",
               bbox=dict(boxstyle="round,pad=0.3", facecolor="white",
                         edgecolor="0.6", alpha=0.92))
-    axC.set_yticks(positions)
-    axC.set_yticklabels([ARM_LABELS6[a] for a in ARMS6])
-    axC.set_ylim(0.3, len(ARMS6) + 1.3)
-    axC.set_xlabel("B2 exploration (fraction of B0 width)\nzeros clipped to $10^{-12}$")
-    axC.set_ylabel("encoding arm")
-    axC.set_axisbelow(True)
-    axC.xaxis.grid(True, which="major", linewidth=0.5, color="0.85", zorder=0)
-    panel_letter(axC, "C")
+    axExplo.set_yticks(positions)
+    axExplo.set_yticklabels([ARM_LABELS6[a] for a in ARMS6])
+    axExplo.set_ylim(0.3, len(ARMS6) + 1.3)
+    axExplo.set_xlabel("B2 exploration of each of the 49 free targets, summarized over the 47 profiles\n(spread of interval midpoints / width admitted by B0); zeros clipped to $10^{-12}$")
+    axExplo.set_ylabel("encoding arm")
+    axExplo.set_axisbelow(True)
+    axExplo.xaxis.grid(True, which="major", linewidth=0.5, color="0.85", zorder=0)
+    panel_letter(axExplo, "D")
 
-    fig.tight_layout(rect=[0, 0.045, 1, 1], w_pad=2.6)
+    fig.tight_layout(h_pad=3.2, w_pad=2.6)
     out_path = os.path.join(OUTDIR, "Figure_4_Constraint_Stage.png")
     fig.savefig(out_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
@@ -303,7 +400,7 @@ def make_figure4(report):
 
 
 # ===========================================================================
-# FIGURE 5 -- independent condition-response evaluation
+# FIGURE 6 -- independent condition-response evaluation
 # ===========================================================================
 CONDITION_ORDER = [("0.5%", "DMSO"), ("0.5%", "BAY"), ("21%", "DMSO"), ("21%", "BAY")]
 # Within each oxygen level, DMSO (vehicle) always precedes BAY (treatment),
@@ -606,7 +703,7 @@ def make_figure5(report):
             f"Figure 5 Panel A: the legend box covers {int(covered.sum())} plotted "
             f"replicate point(s); increase `gap` or reposition the legend.")
 
-    out_path = os.path.join(OUTDIR, "Figure_5_Independent_Evaluation.png")
+    out_path = os.path.join(OUTDIR, "Figure_6_Independent_Evaluation.png")
     fig.savefig(out_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
 
@@ -633,14 +730,109 @@ def make_figure5(report):
 
 
 # ===========================================================================
+# FIGURE 5 -- two formulations that do not carry the evidence as a capped cost
+# ===========================================================================
+def make_figure6(report):
+    location = pd.read_csv(LOCATION_TSV, sep="\t")
+    free = location[location.B0_width > 1e-5].copy()
+    comp = {}
+    for key, path in COMPARATOR_JSONS.items():
+        with open(path) as f:
+            comp[key] = json.load(f)
+    with open(STAT_REPAIRS_JSON) as f:
+        stat = json.load(f)
+
+    rows = []
+    def study_row(arm, label):
+        sub = free[free.arm == arm]
+        expl = sub["B2_exploration"].values.astype(float)
+        ident = int(sub["B2_constant_across_profiles"].sum())
+        C = stat["reproduction"]["macro_C_saved"][arm]
+        ci = stat["multiplicity"]["absolute_unadjusted_ci95"][arm]
+        return dict(label=label, expl=expl, ident=ident, C=C, ci=ci, group="cost")
+    def comp_row(key, arm, label):
+        a = comp[key]["arms"][arm]
+        expl = np.array([v["exploration_vs_study_B0"] for v in a["per_target"].values() if "exploration_vs_study_B0" in v], float)
+        ident = int(a["free_targets_identical_across_profiles_of_49"])
+        return dict(label=label, expl=expl, ident=ident, C=a["point_macro_C"], ci=comp[key]["absolute_ci95"][arm],
+                    resolved=a["resolved_pairs"], scored=a["pairs_scored"], group=key)
+    rows.append(study_row("magnitude_g1.00", "cost, identity (study)"))
+    rows.append(study_row("ordinal", "cost, midrank (study)"))
+    rows.append(comp_row("bound_B10", "magnitude_g1.00", "bounds, scale 10, identity"))
+    rows.append(comp_row("bound_B10", "ordinal", "bounds, scale 10, midrank"))
+    rows.append(comp_row("bound_B10_fixed_identity", "magnitude_g1.00", "bounds, scale 10, fixed task, identity"))
+    rows.append(comp_row("bound_B10_fixed_ordinal", "ordinal", "bounds, scale 10, fixed task, midrank"))
+    rows.append(comp_row("bound_B3", "magnitude_g1.00", "bounds, scale 3, identity"))
+    rows.append(comp_row("bound_B3", "ordinal", "bounds, scale 3, midrank"))
+    rows.append(comp_row("riptide", "riptide", "RIPTiDe, native (46 of 47 profiles)"))
+    for r in rows:
+        if len(r["expl"]) != 49:
+            raise ValueError("%s: expected 49 free-target explorations, got %d" % (r["label"], len(r["expl"])))
+
+    fig, (axA, axB, axC) = plt.subplots(1, 3, figsize=(15.4, 5.8), gridspec_kw=dict(width_ratios=[1.35, 0.8, 1.0]))
+    positions = np.arange(1, len(rows) + 1)[::-1]
+    labels = [r["label"] for r in rows]
+    colors = {"cost": "#d9d9d9", "bound_B10": "#9ecae1", "bound_B10_fixed_identity": "#6baed6", "bound_B10_fixed_ordinal": "#6baed6", "bound_B3": "#c6dbef", "riptide": "#fdd0a2"}
+
+    data = [np.clip(r["expl"], CLIP, None) for r in rows]
+    bp = axA.boxplot(data, positions=positions, vert=False, widths=0.55, patch_artist=True, showfliers=False,
+                     medianprops=dict(color="black", linewidth=1.9), whiskerprops=dict(color="black", linewidth=0.9),
+                     capprops=dict(color="black", linewidth=0.9))
+    for patch, r in zip(bp["boxes"], rows):
+        patch.set_facecolor(colors[r["group"]]); patch.set_edgecolor("black"); patch.set_linewidth(0.9)
+    rng = np.random.default_rng(1)
+    for pos, vals in zip(positions, data):
+        axA.scatter(vals, pos + rng.uniform(-0.17, 0.17, size=len(vals)), s=12, facecolor="black", edgecolor="none", alpha=0.45, zorder=3)
+    axA.set_xscale("log"); axA.set_xlim(1e-11, 2.2)
+    axA.axvline(1.0, color="black", linewidth=1.1, linestyle="--", zorder=1)
+    axA.set_yticks(positions); axA.set_yticklabels(labels)
+    axA.set_ylim(0.3, len(rows) + 0.9)
+    axA.set_xlabel("exploration across the 47 profiles\n(spread of interval midpoints / width admitted by the network)\nzeros clipped to $10^{-12}$")
+    axA.set_axisbelow(True); axA.xaxis.grid(True, which="major", linewidth=0.5, color="0.85", zorder=0)
+    panel_letter(axA, "A")
+
+    ident = [r["ident"] for r in rows]
+    axB.barh(positions, ident, color=[colors[r["group"]] for r in rows], edgecolor="black", linewidth=0.8, height=0.62, zorder=3)
+    for pos, v in zip(positions, ident):
+        axB.text(v + 0.6, pos, str(v), va="center", ha="left", fontsize=9)
+    axB.set_xlim(0, 49 + 8); axB.axvline(49, color="0.4", linewidth=0.9, linestyle=":", zorder=1)
+    axB.set_yticks(positions); axB.set_yticklabels([""] * len(rows)); axB.set_ylim(0.3, len(rows) + 0.9)
+    axB.set_xlabel("free targets identical across\nall profiles (of 49)")
+    axB.set_axisbelow(True); axB.xaxis.grid(True, linewidth=0.5, color="0.88", zorder=0)
+    panel_letter(axB, "B")
+
+    for pos, r in zip(positions, rows):
+        lo, hi = r["ci"]
+        axC.plot([lo, hi], [pos, pos], color="black", linewidth=1.3, zorder=2)
+        axC.plot(r["C"], pos, marker="o", markersize=7, markerfacecolor=colors[r["group"]], markeredgecolor="black", zorder=3)
+        if "resolved" in r:
+            axC.text(0.527, pos, "%s of %s resolved" % (f"{r['resolved']:,}", f"{r['scored']:,}"), va="center", ha="left", fontsize=7.8, color="0.25")
+    axC.axvline(0.5, color="black", linewidth=1.0, linestyle="--", zorder=1)
+    axC.set_xlim(0.44, 0.60)
+    axC.set_yticks(positions); axC.set_yticklabels([""] * len(rows)); axC.set_ylim(0.3, len(rows) + 0.9)
+    axC.set_xlabel("macro point concordance\nwith measured ordering\n(95% origin-bootstrap interval)")
+    axC.set_axisbelow(True); axC.xaxis.grid(True, linewidth=0.5, color="0.88", zorder=0)
+    panel_letter(axC, "C")
+
+    fig.tight_layout(w_pad=1.2)
+    out_path = os.path.join(OUTDIR, "Figure_5_Comparator_Formulations.png")
+    fig.savefig(out_path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    report["figure6"] = {"path": out_path, "rows": [{"label": r["label"], "identical_free_targets": r["ident"],
+                          "median_exploration": float(np.median(r["expl"])), "mean_exploration": float(np.mean(r["expl"])),
+                          "macro_C": r["C"], "ci95": r["ci"], "resolved": r.get("resolved"), "scored": r.get("scored")} for r in rows]}
+
+
+# ===========================================================================
 def main():
     report = {}
     make_figure4(report)
     make_figure5(report)
+    make_figure6(report)
 
     sums_path = os.path.join(OUTDIR, "SHA256SUMS.txt")
     lines = []
-    for key in ("figure4", "figure5"):
+    for key in ("figure4", "figure5", "figure6"):
         p = report[key]["path"]
         digest = sha256_of(p)
         w, h = png_size(p)

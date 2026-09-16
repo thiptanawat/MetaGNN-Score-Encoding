@@ -1,0 +1,277 @@
+{
+  "contexts": [
+    "BR:HS 578T",
+    "BR:MDA-MB-231",
+    "CO:HT29",
+    "LC:HOP-62",
+    "LC:HOP-92",
+    "LC:NCI-H226",
+    "LE:RPMI-8226",
+    "LE:SR",
+    "ME:MALME-3M",
+    "RE:786-0",
+    "RE:UO-31"
+  ],
+  "created_at": "2026-09-13T16:37:23.042058+00:00",
+  "evaluations": {
+    "half_serum": {
+      "bootstrap": {
+        "absolute_C_intervals": {
+          "magnitude_g0.50": [
+            0.47328686839697787,
+            0.5082181472383688
+          ],
+          "magnitude_g0.80": [
+            0.48439408920335114,
+            0.5178318541497275
+          ],
+          "magnitude_g1.00": [
+            0.49132247705644627,
+            0.5229147599692737
+          ],
+          "magnitude_g1.25": [
+            0.48784265439715957,
+            0.5148094309053636
+          ],
+          "magnitude_g2.00": [
+            0.4931428732887408,
+            0.5190948537405832
+          ],
+          "ordinal": [
+            0.4814114705671332,
+            0.5120396931254096
+          ],
+          "uniform_pfba": [
+            0.5,
+            0.5
+          ]
+        },
+        "delta_grid_interval": [
+          -0.023624402409820045,
+          0.015223907596498646
+        ],
+        "delta_identity_interval": [
+          -0.03220247278606395,
+          0.011455616719002389
+        ],
+        "diagnostic_valid_draw_quantiles": [
+          [
+            -0.023624402409820045,
+            0.015223907596498646
+          ],
+          [
+            -0.03220247278606395,
+            0.011455616719002389
+          ]
+        ],
+        "fixed_panel_size": 52,
+        "interpretation": "Context-resampling uncertainty conditional on the frozen pipeline and fixed targets; not model-refitting or new-lineage uncertainty.",
+        "interval_status": "conditional_on_estimability",
+        "invalid_draws": 2,
+        "invalid_fraction": 0.001,
+        "maximum_invalid_fraction": 0.01,
+        "missing_target_counts": {
+          "core_053": 1,
+          "core_077": 1
+        },
+        "origin_groups": 11,
+        "resamples": 2000,
+        "seed": 11,
+        "valid_draws": 1998
+      },
+      "file": "evaluation_half_serum.json",
+      "primary": {
+        "absolute_macro_C": {
+          "magnitude_g0.50": 0.4908081170968952,
+          "magnitude_g0.80": 0.5008100864815197,
+          "magnitude_g1.00": 0.5061808827128776,
+          "magnitude_g1.25": 0.5012337245620415,
+          "magnitude_g2.00": 0.5059634898871734,
+          "ordinal": 0.4951972875228536
+        },
+        "delta_grid": -0.005801972625247898,
+        "delta_identity": -0.010983595190024065
+      },
+      "sha256": "5b669137b0ea30acad04284827f6fa41b997bfeebd0649fcc61890a45f37ec7d",
+      "status": "complete_predictions",
+      "transform_summary": {
+        "file": "transform_half_serum.json",
+        "sha256": "6664ca7a155004d696aebc0755eb5841baede60d4dc5f2d7b024c967290a898f"
+      }
+    },
+    "lower_task": {
+      "bootstrap": {
+        "absolute_C_intervals": {
+          "magnitude_g0.50": [
+            0.4826762785106535,
+            0.5142313691021556
+          ],
+          "magnitude_g0.80": [
+            0.4939197675627258,
+            0.5186641916718376
+          ],
+          "magnitude_g1.00": [
+            0.4910513695911772,
+            0.52092389285134
+          ],
+          "magnitude_g1.25": [
+            0.4918319643869216,
+            0.5173822346729798
+          ],
+          "magnitude_g2.00": [
+            0.4943943860566968,
+            0.5170821979461386
+          ],
+          "ordinal": [
+            0.47839317752531085,
+            0.5081178274215209
+          ],
+          "uniform_pfba": [
+            0.5,
+            0.5
+          ]
+        },
+        "delta_grid_interval": [
+          -0.02897928830141342,
+          0.009713969427381336
+        ],
+        "delta_identity_interval": [
+          -0.036203881997082986,
+          0.013036862292903777
+        ],
+        "diagnostic_valid_draw_quantiles": [
+          [
+            -0.02897928830141342,
+            0.009713969427381336
+          ],
+          [
+            -0.036203881997082986,
+            0.013036862292903777
+          ]
+        ],
+        "fixed_panel_size": 52,
+        "interpretation": "Context-resampling uncertainty conditional on the frozen pipeline and fixed targets; not model-refitting or new-lineage uncertainty.",
+        "interval_status": "conditional_on_estimability",
+        "invalid_draws": 2,
+        "invalid_fraction": 0.001,
+        "maximum_invalid_fraction": 0.01,
+        "missing_target_counts": {
+          "core_053": 1,
+          "core_077": 1
+        },
+        "origin_groups": 11,
+        "resamples": 2000,
+        "seed": 11,
+        "valid_draws": 1998
+      },
+      "file": "evaluation_lower_task.json",
+      "primary": {
+        "absolute_macro_C": {
+          "magnitude_g0.50": 0.4968631518325297,
+          "magnitude_g0.80": 0.5058260175039619,
+          "magnitude_g1.00": 0.5052644148192107,
+          "magnitude_g1.25": 0.5034015931733961,
+          "magnitude_g2.00": 0.504774622081096,
+          "ordinal": 0.49164480808296296
+        },
+        "delta_grid": -0.011581151799075928,
+        "delta_identity": -0.013619606736247736
+      },
+      "sha256": "3bdfb4fa2ea31a2d960bdf159eee8e412287222566a22f5dbdd961906b0142b7",
+      "status": "complete_predictions",
+      "transform_summary": {
+        "file": "transform_lower_task.json",
+        "sha256": "94167e078387e243329ea8ac2805cae89390dbabecc8a7fa147d5bd61c048b13"
+      }
+    },
+    "primary": {
+      "bootstrap": {
+        "absolute_C_intervals": {
+          "magnitude_g0.50": [
+            0.4986292652619322,
+            0.5250039073368044
+          ],
+          "magnitude_g0.80": [
+            0.49483842837074976,
+            0.5228241786096531
+          ],
+          "magnitude_g1.00": [
+            0.48959868358583297,
+            0.5186247332874108
+          ],
+          "magnitude_g1.25": [
+            0.4883746683103513,
+            0.5142564429907459
+          ],
+          "magnitude_g2.00": [
+            0.4918872662094008,
+            0.5183318987344931
+          ],
+          "ordinal": [
+            0.4834935131763022,
+            0.5158606878646684
+          ],
+          "uniform_pfba": [
+            0.5,
+            0.5
+          ]
+        },
+        "delta_grid_interval": [
+          -0.022944537752711682,
+          0.010613657828941771
+        ],
+        "delta_identity_interval": [
+          -0.023348937882902127,
+          0.014149247026568635
+        ],
+        "diagnostic_valid_draw_quantiles": [
+          [
+            -0.022944537752711682,
+            0.010613657828941771
+          ],
+          [
+            -0.023348937882902127,
+            0.014149247026568635
+          ]
+        ],
+        "fixed_panel_size": 52,
+        "interpretation": "Context-resampling uncertainty conditional on the frozen pipeline and fixed targets; not model-refitting or new-lineage uncertainty.",
+        "interval_status": "conditional_on_estimability",
+        "invalid_draws": 2,
+        "invalid_fraction": 0.001,
+        "maximum_invalid_fraction": 0.01,
+        "missing_target_counts": {
+          "core_053": 1,
+          "core_077": 1
+        },
+        "origin_groups": 11,
+        "resamples": 2000,
+        "seed": 11,
+        "valid_draws": 1998
+      },
+      "file": "evaluation_primary.json",
+      "primary": {
+        "absolute_macro_C": {
+          "magnitude_g0.50": 0.5118722896194396,
+          "magnitude_g0.80": 0.5092144377912934,
+          "magnitude_g1.00": 0.5040810282757758,
+          "magnitude_g1.25": 0.501823339246987,
+          "magnitude_g2.00": 0.5049409872941325,
+          "ordinal": 0.49918518750049834
+        },
+        "delta_grid": -0.007201228945027283,
+        "delta_identity": -0.0048958407752774935
+      },
+      "sha256": "3f8f84b1b05e154d10bef86d43e75a671947a7d2f596d96da4144086194c31d4",
+      "status": "complete_predictions",
+      "transform_summary": {
+        "file": "transform_primary.json",
+        "sha256": "9f0897a824de5fc5070da1a79bd89dc3dd5f91414e0e303b125aaace4da29aee"
+      }
+    }
+  },
+  "input_fingerprint": "5946f3143dcf8c526b5743c099a85a66066be22706c80b8e61378f1a85f3ca80",
+  "jobs": 201,
+  "partition": "development",
+  "smoke_only": false
+}

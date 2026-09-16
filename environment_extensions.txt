@@ -1,0 +1,17 @@
+# Packages beyond environment.lock that three of the post-lock stages need, with the versions used.
+# Each was installed on top of the locked environment (Python 3.12.14, cobra 0.32.1, optlang 1.9.1,
+# swiglpk 5.0.13) in a separate virtual environment; the stage that needs each is named.
+#
+# reproduce_extensions.sh independent   (reads the .rda files of the independent evaluation's inputs)
+rdata==1.1.0
+xarray==2026.7.0
+#
+# reproduce_extensions.sh closure, RIPTiDe run  (closure/riptide_run.py; the run manifest records the
+# same version). Installing riptide raised numpy to 2.5.3 and scipy to 1.18.1 in that environment;
+# the RIPTiDe results were produced there, everything else under environment.lock.
+riptide==3.4.81
+symengine==0.14.1
+#
+# reproduce_extensions.sh closure, second-solver check  (closure/solver_check.py --solver hybrid)
+highspy==1.15.1
+osqp==1.1.3

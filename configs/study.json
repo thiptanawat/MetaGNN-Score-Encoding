@@ -1,0 +1,43 @@
+{
+  "study_version": "cpu-2026-09-13-v3",
+  "score_source": "conservative_expression",
+  "objective": "BIOMASS_reaction",
+  "gammas": [
+    0.5,
+    0.8,
+    1.0,
+    1.25,
+    2.0
+  ],
+  "epsilon": 0.001,
+  "solver": "glpk",
+  "solver_feasibility_tolerance": 1e-09,
+  "solver_optimality_tolerance": 1e-09,
+  "cost_absolute_allowance": 1e-07,
+  "cost_relative_allowance": 1e-09,
+  "secondary_absolute_allowance": 1e-07,
+  "secondary_relative_allowance": 1e-09,
+  "coordinate_fix_allowance": 1e-06,
+  "validation_tolerance": 1e-06,
+  "prediction_tie_tolerance": 1e-05,
+  "interval_resolution_tolerance": 1e-05,
+  "scenarios": {
+    "primary": {
+      "task_fraction": 0.9,
+      "serum_uptake": 1.0
+    },
+    "half_serum": {
+      "task_fraction": 0.9,
+      "serum_uptake": 0.5
+    },
+    "lower_task": {
+      "task_fraction": 0.5,
+      "serum_uptake": 1.0
+    }
+  },
+  "point_convention": "E1 cap; all-reaction parsimonious cap; sequential canonical exchange-ID minimization and fixing; final jointly feasible vector",
+  "ambiguity_convention": "Exchange ranges with primary and secondary cost caps, before exchange-coordinate fixing",
+  "workers": 4,
+  "solver_timeout_seconds": 60,
+  "solver_retry_policy": "One advanced-basis retry with identical mathematical LP after a nonoptimal solve"
+}

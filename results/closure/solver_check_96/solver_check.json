@@ -1,0 +1,32 @@
+{
+ "second_solver": "hybrid",
+ "selection_list": "chemistry",
+ "selection_list_size": 96,
+ "profiles": [
+  "CNS:SNB-19",
+  "CO:SW-620",
+  "LC:A549/ATCC",
+  "LE:K-562",
+  "ME:MDA-MB-435",
+  "ME:SK-MEL-28",
+  "ME:UACC-257",
+  "RE:CAKI-1"
+ ],
+ "arms_run": 16,
+ "arms_optimal": 16,
+ "coordinates": 1536,
+ "fixed_classification_agreement": 1.0,
+ "primary_52_subset": {
+  "coordinates": 832,
+  "fixed_classification_agreement": 1.0,
+  "point_abs_diff_max": 9.99987717520412e-07,
+  "points_within_1e-5": 1.0
+ },
+ "point_abs_diff_median": 0.0,
+ "point_abs_diff_max": 1e-06,
+ "points_within_1e-5": 1.0,
+ "between_profile_sign_agreement": 0.9998139880952381,
+ "sign_comparisons": 5376,
+ "seconds": 1299.2,
+ "failures": []
+}

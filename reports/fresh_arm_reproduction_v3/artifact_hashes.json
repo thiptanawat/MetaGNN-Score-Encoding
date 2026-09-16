@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "47b78e9197f47305aaafe3ce5ce36609eed27de17aa4a75811a0d1c524a52665",
+      "bytes": 2070
+    },
+    {
+      "path": "compare_after_production.py",
+      "sha256": "7b7bd9d1d9bab44abee2aadc8be89cdac6c0f90039e3d9f514cc6e08e5c6c14d",
+      "bytes": 9018
+    },
+    {
+      "path": "comparison.json",
+      "sha256": "5ea6a747db4625493b86dd110b759c26cea911a4ff11fb4e5fef3f9e84835da2",
+      "bytes": 6151
+    },
+    {
+      "path": "copy_manifest.json",
+      "sha256": "0370ffa3dd5ef18da54681f8a3fdad2fc483c4ea7333525714e736e027a412ee",
+      "bytes": 3245
+    },
+    {
+      "path": "isolated/configs/study.json",
+      "sha256": "0c597b4a88854972386c510f97dd0ec4b9285f270d834340ee4e88bee6fa82fb",
+      "bytes": 1298
+    },
+    {
+      "path": "isolated/data/raw/Recon3D.json",
+      "sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "bytes": 7839114
+    },
+    {
+      "path": "isolated/data/scores_conservative.npz",
+      "sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "bytes": 406695
+    },
+    {
+      "path": "isolated/environment.lock",
+      "sha256": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607",
+      "bytes": 746
+    },
+    {
+      "path": "isolated/fresh_arm.json",
+      "sha256": "59ce1ad94cc8058f963c04b509f6dd8b8367113c989fcbcfcc822c16b9ce3d40",
+      "bytes": 312081
+    },
+    {
+      "path": "isolated/fresh_arm.npz",
+      "sha256": "012ed70c7886bb703d07b9db3ebac82136d55387baaf2eb25d468f655a8e8cad",
+      "bytes": 98109
+    },
+    {
+      "path": "isolated/fresh_driver.py",
+      "sha256": "d8a154042bfe5f3df602a7561dbd34f88bef5aa99b3c509905970956da84d6ac",
+      "bytes": 3559
+    },
+    {
+      "path": "isolated/fresh_execution.log",
+      "sha256": "0b39ebd91dc6b5b6f57c403bd4dd3bc340a8dfe24e38ee463cc648d4e57c4551",
+      "bytes": 351
+    },
+    {
+      "path": "isolated/manifests/contexts.tsv",
+      "sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "bytes": 7874
+    },
+    {
+      "path": "isolated/manifests/metabolite_map.tsv",
+      "sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "bytes": 28128
+    },
+    {
+      "path": "isolated/src/cpu_model.py",
+      "sha256": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+      "bytes": 4026
+    },
+    {
+      "path": "isolated/src/cpu_readout.py",
+      "sha256": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+      "bytes": 5204
+    },
+    {
+      "path": "isolated/src/medium_v2.py",
+      "sha256": "903676da2bc73daddc4b2d1dd702a764146fab0ddc54aca4cf975aa2f74440b0",
+      "bytes": 8653
+    }
+  ]
+}

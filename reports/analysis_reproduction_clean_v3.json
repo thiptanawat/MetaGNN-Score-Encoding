@@ -1,0 +1,435 @@
+{
+  "status": "PASS",
+  "study_version": "cpu-2026-09-13-v3",
+  "clean_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_analysis_v3",
+  "scope": "Fresh analysis-only directory using current source and its default settings, with observation inputs from the earlier verified raw-to-derived build. Shared installed Python environment. No raw-data regeneration, model optimization, prediction inspection or performance evaluation.",
+  "source_inputs": [
+    {
+      "path": "manifests/contexts.tsv",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd"
+    },
+    {
+      "path": "manifests/metabolite_map.tsv",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb"
+    },
+    {
+      "path": "data/outcomes_long.tsv",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "sha256": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b"
+    },
+    {
+      "path": "data/assay_noise_development.tsv",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "sha256": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531"
+    },
+    {
+      "path": "src/__init__.py",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/prepare_analysis.py",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13",
+      "sha256": "6a5250c73afbf48ab33db50e4d3e1d3a6cf5c506f9c11fec0d37e495a3e3cd1e"
+    },
+    {
+      "path": "src/evaluation.py",
+      "source_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13",
+      "sha256": "365bc6a08987ea1c3d0f8d042313fc10066d1f0d95de33d12f5373581e13ca11"
+    }
+  ],
+  "prior_clean_build_file_identity": [
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/assay_noise_development.tsv",
+      "original_sha256": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531",
+      "current_sha256": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/expression_summary.json",
+      "original_sha256": "f79c77e18ffdcfe1d73a5409859d1b1d0b6b17857e541154c31ce9d92faee13f",
+      "current_sha256": "f79c77e18ffdcfe1d73a5409859d1b1d0b6b17857e541154c31ce9d92faee13f",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/gene_expression.npz",
+      "original_sha256": "59f307ac1355adb78b529f55a363441dfa7e4a201eeb3021a9f54a91005ab299",
+      "current_sha256": "59f307ac1355adb78b529f55a363441dfa7e4a201eeb3021a9f54a91005ab299",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/outcomes_long.tsv",
+      "original_sha256": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+      "current_sha256": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/preparation_summary.json",
+      "original_sha256": "058518d8f0ca792c274cde35e1e0f278785714872edf9c2076278b9f32ede22a",
+      "current_sha256": "058518d8f0ca792c274cde35e1e0f278785714872edf9c2076278b9f32ede22a",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/scores_conservative.npz",
+      "original_sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "current_sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "data/source_supplement_layout.txt",
+      "original_sha256": "a515d62ee2b16473c20fc96c9d93fda94506f4c4ecccc635eb35c493a78c7f44",
+      "current_sha256": "a515d62ee2b16473c20fc96c9d93fda94506f4c4ecccc635eb35c493a78c7f44",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/analysis_panel.tsv",
+      "original_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "current_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/chemical_identity_review.tsv",
+      "original_sha256": "6b841e7f914a5f3803061536e8e7c4de2d0063387418e5480a083c5f6506ab23",
+      "current_sha256": "6b841e7f914a5f3803061536e8e7c4de2d0063387418e5480a083c5f6506ab23",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/chemical_reference_provenance.json",
+      "original_sha256": "229cfb48a33c2713012e2719fb6a7324554d0c74f4fcfe294ea12effd42aab66",
+      "current_sha256": "229cfb48a33c2713012e2719fb6a7324554d0c74f4fcfe294ea12effd42aab66",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/contexts.tsv",
+      "original_sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "current_sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/development_observed_pairs.tsv",
+      "original_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "current_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/expression_archive_members.tsv",
+      "original_sha256": "e5e5a3c76858366296c27f078ea101f2f1d4391547199d2e2373ac0011bdd09f",
+      "current_sha256": "e5e5a3c76858366296c27f078ea101f2f1d4391547199d2e2373ac0011bdd09f",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/gpr_coverage.tsv",
+      "original_sha256": "c5459d81b1375af2d700e52c0d328d6408ca65a64fb35d0bc9299bf1b151b4b9",
+      "current_sha256": "c5459d81b1375af2d700e52c0d328d6408ca65a64fb35d0bc9299bf1b151b4b9",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/metabolite_map.tsv",
+      "original_sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "current_sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/model_gene_map.tsv",
+      "original_sha256": "aadf34a8d77d60105d38c209972d5064249303f0f542d0a6ca70f7a2e7d1a3d5",
+      "current_sha256": "aadf34a8d77d60105d38c209972d5064249303f0f542d0a6ca70f7a2e7d1a3d5",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/probe_gene_map.tsv",
+      "original_sha256": "39bf9ce3a6f6b6a8c4f41dbf50515efd79f8a0a82adacf2fa53330ffc54af68a",
+      "current_sha256": "39bf9ce3a6f6b6a8c4f41dbf50515efd79f8a0a82adacf2fa53330ffc54af68a",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/raw_sources.tsv",
+      "original_sha256": "4aba651d20b7637bb738adee9c2f29bf445cb67bc0b3c3fbde8155b4f83421be",
+      "current_sha256": "4aba651d20b7637bb738adee9c2f29bf445cb67bc0b3c3fbde8155b4f83421be",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "path": "manifests/source_table_s1.tsv",
+      "original_sha256": "bedccde6c02b67a374e6b97c9a971785d744737893385872814337c79399f638",
+      "current_sha256": "bedccde6c02b67a374e6b97c9a971785d744737893385872814337c79399f638",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/assay_noise_development.tsv",
+      "original_sha256": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531",
+      "current_sha256": "85f160183bbf185fa2a1a3c321d19f5af9f4ce032ae12952da1701f9fa481531",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/expression_summary.json",
+      "original_sha256": "f79c77e18ffdcfe1d73a5409859d1b1d0b6b17857e541154c31ce9d92faee13f",
+      "current_sha256": "f79c77e18ffdcfe1d73a5409859d1b1d0b6b17857e541154c31ce9d92faee13f",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/gene_expression.npz",
+      "original_sha256": "59f307ac1355adb78b529f55a363441dfa7e4a201eeb3021a9f54a91005ab299",
+      "current_sha256": "59f307ac1355adb78b529f55a363441dfa7e4a201eeb3021a9f54a91005ab299",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/outcomes_long.tsv",
+      "original_sha256": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+      "current_sha256": "1de4e80262165b8c2bd868ebc948110aa47576fc9e6c72194ed1925f1b1dd49b",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/preparation_summary.json",
+      "original_sha256": "058518d8f0ca792c274cde35e1e0f278785714872edf9c2076278b9f32ede22a",
+      "current_sha256": "058518d8f0ca792c274cde35e1e0f278785714872edf9c2076278b9f32ede22a",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/scores_conservative.npz",
+      "original_sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "current_sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "data/source_supplement_layout.txt",
+      "original_sha256": "a515d62ee2b16473c20fc96c9d93fda94506f4c4ecccc635eb35c493a78c7f44",
+      "current_sha256": "a515d62ee2b16473c20fc96c9d93fda94506f4c4ecccc635eb35c493a78c7f44",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/analysis_panel.tsv",
+      "original_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "current_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/chemical_identity_review.tsv",
+      "original_sha256": "6b841e7f914a5f3803061536e8e7c4de2d0063387418e5480a083c5f6506ab23",
+      "current_sha256": "6b841e7f914a5f3803061536e8e7c4de2d0063387418e5480a083c5f6506ab23",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/chemical_reference_provenance.json",
+      "original_sha256": "229cfb48a33c2713012e2719fb6a7324554d0c74f4fcfe294ea12effd42aab66",
+      "current_sha256": "229cfb48a33c2713012e2719fb6a7324554d0c74f4fcfe294ea12effd42aab66",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/contexts.tsv",
+      "original_sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "current_sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/development_observed_pairs.tsv",
+      "original_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "current_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/expression_archive_members.tsv",
+      "original_sha256": "e5e5a3c76858366296c27f078ea101f2f1d4391547199d2e2373ac0011bdd09f",
+      "current_sha256": "e5e5a3c76858366296c27f078ea101f2f1d4391547199d2e2373ac0011bdd09f",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/gpr_coverage.tsv",
+      "original_sha256": "c5459d81b1375af2d700e52c0d328d6408ca65a64fb35d0bc9299bf1b151b4b9",
+      "current_sha256": "c5459d81b1375af2d700e52c0d328d6408ca65a64fb35d0bc9299bf1b151b4b9",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/metabolite_map.tsv",
+      "original_sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "current_sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/model_gene_map.tsv",
+      "original_sha256": "aadf34a8d77d60105d38c209972d5064249303f0f542d0a6ca70f7a2e7d1a3d5",
+      "current_sha256": "aadf34a8d77d60105d38c209972d5064249303f0f542d0a6ca70f7a2e7d1a3d5",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/probe_gene_map.tsv",
+      "original_sha256": "39bf9ce3a6f6b6a8c4f41dbf50515efd79f8a0a82adacf2fa53330ffc54af68a",
+      "current_sha256": "39bf9ce3a6f6b6a8c4f41dbf50515efd79f8a0a82adacf2fa53330ffc54af68a",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/raw_sources.tsv",
+      "original_sha256": "4aba651d20b7637bb738adee9c2f29bf445cb67bc0b3c3fbde8155b4f83421be",
+      "current_sha256": "4aba651d20b7637bb738adee9c2f29bf445cb67bc0b3c3fbde8155b4f83421be",
+      "byte_identical": true
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "path": "manifests/source_table_s1.tsv",
+      "original_sha256": "bedccde6c02b67a374e6b97c9a971785d744737893385872814337c79399f638",
+      "current_sha256": "bedccde6c02b67a374e6b97c9a971785d744737893385872814337c79399f638",
+      "byte_identical": true
+    }
+  ],
+  "all_prior_files_unchanged": true,
+  "analysis_output_comparisons": [
+    {
+      "path": "protocol/analysis_plan.json",
+      "main_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+      "clean_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+      "byte_identical": true
+    },
+    {
+      "path": "manifests/analysis_panel.tsv",
+      "main_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "clean_sha256": "f911b47a585d2cfe811dfb2064c5a9b4e040375bc07777bd896fea3b6d7a0399",
+      "byte_identical": true
+    },
+    {
+      "path": "manifests/development_observed_pairs.tsv",
+      "main_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "clean_sha256": "1b73b685590601060bf9ccac61dbbad02b844f610c2fc44d58f3ef6d14744246",
+      "byte_identical": true
+    }
+  ],
+  "plan_changes_against_prior_builds": [
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean",
+      "changes": {
+        "point_tolerance": {
+          "old": 1e-06,
+          "new": 1e-05
+        },
+        "interval_tolerance": {
+          "old": 1e-06,
+          "new": 1e-05
+        }
+      }
+    },
+    {
+      "original_root": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean_v2",
+      "changes": {
+        "point_tolerance": {
+          "old": 1e-06,
+          "new": 1e-05
+        },
+        "interval_tolerance": {
+          "old": 1e-06,
+          "new": 1e-05
+        }
+      }
+    }
+  ],
+  "primary_target_count": 52,
+  "point_tolerance": 1e-05,
+  "interval_tolerance": 1e-05,
+  "numerical_tolerance": 1e-06,
+  "execution": {
+    "command": [
+      "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/.venv/bin/python",
+      "-m",
+      "src.prepare_analysis",
+      "--root",
+      "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_analysis_v3"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"plan\": \"/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_analysis_v3/protocol/analysis_plan.json\",\n  \"sha256\": \"e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea\",\n  \"chemistry_candidates\": 96,\n  \"primary_targets\": 52,\n  \"exact_development_invalid_probability\": 0.00036324173062412515\n}\n",
+    "stderr": ""
+  },
+  "postrun_raw_input_identity_check": [
+    {
+      "path": "data/raw/Recon3D.json",
+      "prior_build": "work/reproduction_clean",
+      "current_sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "prior_sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/cellminer.zip",
+      "prior_build": "work/reproduction_clean",
+      "current_sha256": "334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e",
+      "prior_sha256": "334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/core/NIHMS419088-supplement-Database_S1.xls",
+      "prior_build": "work/reproduction_clean",
+      "current_sha256": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+      "prior_sha256": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/core/NIHMS419088-supplement.pdf",
+      "prior_build": "work/reproduction_clean",
+      "current_sha256": "1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187",
+      "prior_sha256": "1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/Recon3D.json",
+      "prior_build": "work/reproduction_clean_v2",
+      "current_sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "prior_sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/cellminer.zip",
+      "prior_build": "work/reproduction_clean_v2",
+      "current_sha256": "334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e",
+      "prior_sha256": "334dca10d425eaf9fa3c7fc386f8d413ef32d8408eb4fc5508ca75e6cf6b734e",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/core/NIHMS419088-supplement-Database_S1.xls",
+      "prior_build": "work/reproduction_clean_v2",
+      "current_sha256": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+      "prior_sha256": "9a089755b35e16fd17d61b50865ca695bbb33ec8bc8616b285cd5e1fdbfa2ce4",
+      "byte_identical": true
+    },
+    {
+      "path": "data/raw/core/NIHMS419088-supplement.pdf",
+      "prior_build": "work/reproduction_clean_v2",
+      "current_sha256": "1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187",
+      "prior_sha256": "1bf01aa2715af80924aa3dbc74c00507259f9517877f23e3157344966cc0f187",
+      "byte_identical": true
+    }
+  ],
+  "all_raw_inputs_unchanged": true
+}

@@ -1,0 +1,145 @@
+{
+ "epsilon": 1e-05,
+ "contrasts_declared": 8,
+ "rules": {
+  "interval_reported": "planned shared-encoding rule: within each encoding every cross-replicate profile pair clears epsilon, and every encoding reports the same direction",
+  "interval_reported_pooled": "stricter pooled rule applied by the first version of this evaluator: every interval of one condition clears every interval of the other, across encodings as well as profiles"
+ },
+ "summary": {
+  "fraction|primary_five_power": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 0,
+   "interval_reported_pooled": 0,
+   "point_reported": 0,
+   "interval_reported_on_eligible": 0,
+   "interval_reported_on_eligible_pooled": 0,
+   "point_reported_on_eligible": 0
+  },
+  "fraction|sensitivity_six_with_ordinal": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 0,
+   "interval_reported_pooled": 0,
+   "point_reported": 0,
+   "interval_reported_on_eligible": 0,
+   "interval_reported_on_eligible_pooled": 0,
+   "point_reported_on_eligible": 0
+  },
+  "fraction|context_independent_baseline": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 0,
+   "interval_reported_pooled": 0,
+   "point_reported": 0,
+   "interval_reported_on_eligible": 0,
+   "interval_reported_on_eligible_pooled": 0,
+   "point_reported_on_eligible": 0
+  },
+  "measured|primary_five_power": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 8,
+   "interval_reported_pooled": 8,
+   "point_reported": 8,
+   "interval_reported_on_eligible": 2,
+   "interval_reported_on_eligible_pooled": 2,
+   "point_reported_on_eligible": 2,
+   "interval_incorrect": 1,
+   "interval_incorrect_pooled": 1,
+   "point_incorrect": 1,
+   "interval_correct": 1,
+   "interval_correct_pooled": 1,
+   "point_correct": 1
+  },
+  "measured|sensitivity_six_with_ordinal": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 8,
+   "interval_reported_pooled": 8,
+   "point_reported": 8,
+   "interval_reported_on_eligible": 2,
+   "interval_reported_on_eligible_pooled": 2,
+   "point_reported_on_eligible": 2,
+   "interval_incorrect": 1,
+   "interval_incorrect_pooled": 1,
+   "point_incorrect": 1,
+   "interval_correct": 1,
+   "interval_correct_pooled": 1,
+   "point_correct": 1
+  },
+  "measured|context_independent_baseline": {
+   "contrasts": 8,
+   "measurement_eligible": 2,
+   "interval_reported": 4,
+   "interval_reported_pooled": 4,
+   "point_reported": 4,
+   "interval_reported_on_eligible": 0,
+   "interval_reported_on_eligible_pooled": 0,
+   "point_reported_on_eligible": 0
+  }
+ },
+ "measured_values": {
+  "glucose|0.5%|BAY": [
+   -673.0426099040357,
+   -561.6926537011324,
+   -457.2499929782987,
+   -197.2213390511782
+  ],
+  "glucose|0.5%|DMSO": [
+   -824.4012994580559,
+   -516.2922561058382,
+   -441.68036305534304,
+   -226.31946359435238
+  ],
+  "glucose|21%|BAY": [
+   -800.3259001236198,
+   -688.7194512521407,
+   -513.4867952800018,
+   -377.930188189239
+  ],
+  "glucose|21%|DMSO": [
+   -572.2056123902419,
+   -485.41736714513416,
+   -417.9999875943765,
+   -411.52486328515016
+  ],
+  "lactate|0.5%|BAY": [
+   619.5601097168446,
+   705.056824587803,
+   738.7003779311856,
+   752.4572291311395
+  ],
+  "lactate|0.5%|DMSO": [
+   588.8541760394717,
+   776.9546601366112,
+   792.5174973904442,
+   805.8642138907725
+  ],
+  "lactate|21%|BAY": [
+   1193.0323884430115,
+   1255.1527984701693,
+   1393.4427289399728,
+   1539.5247452119747
+  ],
+  "lactate|21%|DMSO": [
+   708.6321937460166,
+   950.1054486954425,
+   1114.5023203719336,
+   1127.3661390247398
+  ]
+ },
+ "inputs_sha256": {
+  "copeland_plan.json": "0f4f7281478075966ff1361784f4abddd64273e7254d383e57c7a7b77cfbb1bb",
+  "copeland_rule.py": "17672a301fc8319d04a76cc0d793d2ecb8977fd48fa1137bd016d8a112cfbca2",
+  "predictions.tsv": "b6b6e92aa34f24c359dd841196297647aef719be71dbf9143c3a7e703bc8356d",
+  "run_manifest.json": "f1beb3fbf45e14c7bb95895b301200838e0394a96fe4854d815351eac61827a8"
+ },
+ "interpretation_limits": [
+  "It is not a replication of the 44-origin cancer-line ordering estimand.",
+  "Four conditions remain four condition contexts, and sixteen libraries are not sixteen independent contexts.",
+  "Feasible ranges are numerical model objects, not calibrated confidence intervals.",
+  "RNA and metabolite samples are matched by condition, not by dish; the two sets were collected in different years.",
+  "No claim of biological accuracy follows from agreement on two metabolites."
+ ]
+}

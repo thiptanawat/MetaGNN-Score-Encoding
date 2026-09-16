@@ -1,0 +1,5 @@
+oxygen	treatment	growth_per_h	measured_lactate_mean	measured_lactate_min	measured_lactate_max	measured_glucose_mean	predicted_lactate_identity	predicted_lactate_midrank	predicted_lactate_uniform
+21%	vehicle	0.0272	975.2	708.6	1127.4	-471.8	0.709	0.715	0.0
+21%	molidustat	0.0219	1345.3	1193.0	1539.5	-595.1	0.573	0.578	0.0
+0.5%	vehicle	0.0198	741.0	588.9	805.9	-502.2	0.52	0.526	0.0
+0.5%	molidustat	0.0179	703.9	619.6	752.5	-472.3	0.471	0.479	0.0

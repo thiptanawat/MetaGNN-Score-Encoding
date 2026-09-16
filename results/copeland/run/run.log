@@ -1,0 +1,19 @@
+ 20/224 S02  magnitude_g0.80  measured  optimal 23s
+ 40/224 S03  ordinal          measured  optimal 46s
+ 60/224 S05  magnitude_g0.80  measured  optimal 68s
+ 80/224 S06  magnitude_g1.25  measured  optimal 90s
+100/224 S08  magnitude_g0.50  fraction  optimal 114s
+120/224 S09  magnitude_g1.25  measured  optimal 139s
+140/224 S11  magnitude_g0.50  measured  optimal 160s
+160/224 S12  magnitude_g1.25  measured  optimal 180s
+180/224 S13  ordinal          fraction  optimal 201s
+200/224 S15  magnitude_g1.00  measured  optimal 224s
+220/224 S16  ordinal          fraction  optimal 245s
+{
+ "completed": 224,
+ "failed": 0,
+ "jobs": 224,
+ "prediction_rows": 448,
+ "seconds": 252.8,
+ "finished_at_utc": "2026-09-14T03:33:25.615598+00:00"
+}

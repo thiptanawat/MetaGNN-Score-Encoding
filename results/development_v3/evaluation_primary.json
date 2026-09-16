@@ -1,0 +1,7565 @@
+{
+  "partition": "development",
+  "scenario": "primary",
+  "analysis_plan_sha256": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+  "prediction_sha256": "284e3b777c01545142b96270e27bb856743acfd637a4b442effcdc262a00a696",
+  "interpretation": "Development feasibility only",
+  "primary_fixed_panel": {
+    "status": "complete_predictions",
+    "candidate_targets": 52,
+    "contributing_target_panel": [
+      "core_006",
+      "core_016",
+      "core_018",
+      "core_024",
+      "core_026",
+      "core_027",
+      "core_028",
+      "core_030",
+      "core_032",
+      "core_035",
+      "core_039",
+      "core_041",
+      "core_044",
+      "core_049",
+      "core_050",
+      "core_051",
+      "core_052",
+      "core_053",
+      "core_056",
+      "core_062",
+      "core_063",
+      "core_064",
+      "core_067",
+      "core_069",
+      "core_070",
+      "core_072",
+      "core_073",
+      "core_074",
+      "core_075",
+      "core_076",
+      "core_077",
+      "core_078",
+      "core_080",
+      "core_081",
+      "core_085",
+      "core_088",
+      "core_091",
+      "core_092",
+      "core_094",
+      "core_095",
+      "core_096",
+      "core_098",
+      "core_099",
+      "core_102",
+      "core_103",
+      "core_104",
+      "core_110",
+      "core_111",
+      "core_112",
+      "core_113",
+      "core_114",
+      "core_115"
+    ],
+    "zero_observed_pair_targets": [],
+    "observed_eligible_pairs": 2438,
+    "contexts": 11,
+    "origins": 11,
+    "primary": {
+      "delta_grid": -0.007201228945027283,
+      "delta_identity": -0.0048958407752774935,
+      "absolute_macro_C": {
+        "magnitude_g0.50": 0.5118722896194396,
+        "magnitude_g0.80": 0.5092144377912934,
+        "magnitude_g1.00": 0.5040810282757758,
+        "magnitude_g1.25": 0.501823339246987,
+        "magnitude_g2.00": 0.5049409872941325,
+        "ordinal": 0.49918518750049834
+      }
+    },
+    "bootstrap": {
+      "seed": 11,
+      "resamples": 2000,
+      "origin_groups": 11,
+      "valid_draws": 1998,
+      "invalid_draws": 2,
+      "invalid_fraction": 0.001,
+      "missing_target_counts": {
+        "core_053": 1,
+        "core_077": 1
+      },
+      "fixed_panel_size": 52,
+      "maximum_invalid_fraction": 0.01,
+      "interval_status": "conditional_on_estimability",
+      "delta_grid_interval": [
+        -0.022944537752711682,
+        0.010613657828941771
+      ],
+      "delta_identity_interval": [
+        -0.023348937882902127,
+        0.014149247026568635
+      ],
+      "diagnostic_valid_draw_quantiles": [
+        [
+          -0.022944537752711682,
+          0.010613657828941771
+        ],
+        [
+          -0.023348937882902127,
+          0.014149247026568635
+        ]
+      ],
+      "absolute_C_intervals": {
+        "magnitude_g0.50": [
+          0.4986292652619322,
+          0.5250039073368044
+        ],
+        "magnitude_g0.80": [
+          0.49483842837074976,
+          0.5228241786096531
+        ],
+        "magnitude_g1.00": [
+          0.48959868358583297,
+          0.5186247332874108
+        ],
+        "magnitude_g1.25": [
+          0.4883746683103513,
+          0.5142564429907459
+        ],
+        "magnitude_g2.00": [
+          0.4918872662094008,
+          0.5183318987344931
+        ],
+        "ordinal": [
+          0.4834935131763022,
+          0.5158606878646684
+        ],
+        "uniform_pfba": [
+          0.5,
+          0.5
+        ]
+      },
+      "interpretation": "Context-resampling uncertainty conditional on the frozen pipeline and fixed targets; not model-refitting or new-lineage uncertainty."
+    },
+    "arms": [
+      {
+        "arm": "magnitude_g0.50",
+        "macro_point_operational": 0.5118722896194396,
+        "macro_interval_operational": 0.5118722896194396,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 205,
+        "resolved_accuracy_pooled": 0.6292682926829268,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "macro_point_operational": 0.5092144377912934,
+        "macro_interval_operational": 0.5092144377912934,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 233,
+        "resolved_accuracy_pooled": 0.5879828326180258,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "macro_point_operational": 0.5040810282757758,
+        "macro_interval_operational": 0.5040810282757758,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 248,
+        "resolved_accuracy_pooled": 0.5282258064516129,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "macro_point_operational": 0.501823339246987,
+        "macro_interval_operational": 0.501823339246987,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 263,
+        "resolved_accuracy_pooled": 0.5095057034220533,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "macro_point_operational": 0.5049409872941325,
+        "macro_interval_operational": 0.5049409872941325,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 250,
+        "resolved_accuracy_pooled": 0.54,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "ordinal",
+        "macro_point_operational": 0.49918518750049834,
+        "macro_interval_operational": 0.5000398883551992,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 329,
+        "resolved_accuracy_pooled": 0.49848024316109424,
+        "fixed_target_count": 52
+      },
+      {
+        "arm": "uniform_pfba",
+        "macro_point_operational": 0.5,
+        "macro_interval_operational": 0.5,
+        "eligible_pairs": 2438,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 0,
+        "resolved_accuracy_pooled": null,
+        "fixed_target_count": 52
+      }
+    ],
+    "per_target": [
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.25,
+        "interval_C": 0.25
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.7391304347826086,
+        "interval_C": 0.7391304347826086
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5444444444444444,
+        "interval_C": 0.5444444444444444
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.6862745098039216,
+        "interval_C": 0.6862745098039216
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7875,
+        "interval_C": 0.7875
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5568181818181818,
+        "interval_C": 0.5568181818181818
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.5531914893617021,
+        "interval_C": 0.5531914893617021
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.29,
+        "interval_C": 0.29
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6630434782608695,
+        "interval_C": 0.6630434782608695
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4888888888888889,
+        "interval_C": 0.4888888888888889
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.6470588235294118,
+        "interval_C": 0.6470588235294118
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7625,
+        "interval_C": 0.7625
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6276595744680851,
+        "interval_C": 0.6276595744680851
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.29,
+        "interval_C": 0.29
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.58,
+        "interval_C": 0.58
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6413043478260869,
+        "interval_C": 0.6413043478260869
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4888888888888889,
+        "interval_C": 0.4888888888888889
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.3431372549019608,
+        "interval_C": 0.3431372549019608
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7625,
+        "interval_C": 0.7625
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6063829787234043,
+        "interval_C": 0.6063829787234043
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.32,
+        "interval_C": 0.32
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.58,
+        "interval_C": 0.58
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5978260869565217,
+        "interval_C": 0.5978260869565217
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.45555555555555555,
+        "interval_C": 0.45555555555555555
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.37254901960784315,
+        "interval_C": 0.37254901960784315
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.6625,
+        "interval_C": 0.6625
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6063829787234043,
+        "interval_C": 0.6063829787234043
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.34,
+        "interval_C": 0.34
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5652173913043478,
+        "interval_C": 0.5652173913043478
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4777777777777778,
+        "interval_C": 0.4777777777777778
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.725,
+        "interval_C": 0.725
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.648936170212766,
+        "interval_C": 0.648936170212766
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.41,
+        "interval_C": 0.41
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.6382978723404256,
+        "interval_C": 0.6382978723404256
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.41836734693877553,
+        "interval_C": 0.41836734693877553
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6521739130434783,
+        "interval_C": 0.6521739130434783
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.49056603773584906,
+        "interval_C": 0.49056603773584906
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.43137254901960786,
+        "interval_C": 0.43137254901960786
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5444444444444444
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.4125,
+        "interval_C": 0.4125
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5681818181818182,
+        "interval_C": 0.5681818181818182
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.43617021276595747,
+        "interval_C": 0.43617021276595747
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      }
+    ],
+    "prediction_diagnostics": {
+      "tolerance_level_range_inversion": 2
+    },
+    "common_success_sensitivity": {
+      "pairs": 2438,
+      "fixed_panel_estimable": true,
+      "absolute_macro_C": {
+        "magnitude_g0.50": 0.5118722896194396,
+        "magnitude_g0.80": 0.5092144377912934,
+        "magnitude_g1.00": 0.5040810282757758,
+        "magnitude_g1.25": 0.501823339246987,
+        "magnitude_g2.00": 0.5049409872941325,
+        "ordinal": 0.49918518750049834,
+        "uniform_pfba": 0.5
+      }
+    }
+  },
+  "broader_chemistry_descriptive_sensitivity": {
+    "status": "complete_predictions",
+    "candidate_targets": 96,
+    "contributing_target_panel": [
+      "core_001",
+      "core_002",
+      "core_004",
+      "core_005",
+      "core_006",
+      "core_007",
+      "core_011",
+      "core_012",
+      "core_013",
+      "core_014",
+      "core_015",
+      "core_016",
+      "core_017",
+      "core_018",
+      "core_019",
+      "core_021",
+      "core_022",
+      "core_023",
+      "core_024",
+      "core_026",
+      "core_027",
+      "core_028",
+      "core_029",
+      "core_030",
+      "core_032",
+      "core_034",
+      "core_035",
+      "core_037",
+      "core_038",
+      "core_039",
+      "core_040",
+      "core_041",
+      "core_042",
+      "core_043",
+      "core_044",
+      "core_045",
+      "core_048",
+      "core_049",
+      "core_050",
+      "core_051",
+      "core_052",
+      "core_053",
+      "core_054",
+      "core_056",
+      "core_057",
+      "core_058",
+      "core_060",
+      "core_062",
+      "core_063",
+      "core_064",
+      "core_065",
+      "core_066",
+      "core_067",
+      "core_069",
+      "core_070",
+      "core_071",
+      "core_072",
+      "core_073",
+      "core_074",
+      "core_075",
+      "core_076",
+      "core_077",
+      "core_078",
+      "core_080",
+      "core_081",
+      "core_083",
+      "core_084",
+      "core_085",
+      "core_086",
+      "core_088",
+      "core_090",
+      "core_091",
+      "core_092",
+      "core_093",
+      "core_094",
+      "core_095",
+      "core_096",
+      "core_097",
+      "core_098",
+      "core_099",
+      "core_102",
+      "core_103",
+      "core_104",
+      "core_107",
+      "core_108",
+      "core_110",
+      "core_111",
+      "core_112",
+      "core_113",
+      "core_114",
+      "core_115",
+      "core_116",
+      "core_117"
+    ],
+    "zero_observed_pair_targets": [
+      "core_036",
+      "core_079",
+      "core_082"
+    ],
+    "observed_eligible_pairs": 3520,
+    "contexts": 11,
+    "origins": 11,
+    "primary": {
+      "delta_grid": -0.002180952197384789,
+      "delta_identity": -0.00019040567546846354,
+      "absolute_macro_C": {
+        "magnitude_g0.50": 0.5043957302201961,
+        "magnitude_g0.80": 0.5029096195205875,
+        "magnitude_g1.00": 0.50003932602804,
+        "magnitude_g1.25": 0.5005307429611697,
+        "magnitude_g2.00": 0.5022739440197886,
+        "ordinal": 0.49984892035257156
+      }
+    },
+    "bootstrap": null,
+    "arms": [
+      {
+        "arm": "magnitude_g0.50",
+        "macro_point_operational": 0.5043957302201961,
+        "macro_interval_operational": 0.5043957302201961,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 215,
+        "resolved_accuracy_pooled": 0.6,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "macro_point_operational": 0.5029096195205875,
+        "macro_interval_operational": 0.5029096195205875,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 243,
+        "resolved_accuracy_pooled": 0.5637860082304527,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "macro_point_operational": 0.50003932602804,
+        "macro_interval_operational": 0.50003932602804,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 258,
+        "resolved_accuracy_pooled": 0.5077519379844961,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "macro_point_operational": 0.5005307429611697,
+        "macro_interval_operational": 0.5005307429611697,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 266,
+        "resolved_accuracy_pooled": 0.5075187969924813,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "macro_point_operational": 0.5022739440197886,
+        "macro_interval_operational": 0.5022739440197886,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 253,
+        "resolved_accuracy_pooled": 0.5375494071146245,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "ordinal",
+        "macro_point_operational": 0.49984892035257156,
+        "macro_interval_operational": 0.5005336000695093,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 395,
+        "resolved_accuracy_pooled": 0.4835443037974684,
+        "fixed_target_count": 93
+      },
+      {
+        "arm": "uniform_pfba",
+        "macro_point_operational": 0.5,
+        "macro_interval_operational": 0.5,
+        "eligible_pairs": 3520,
+        "failed_point_pairs": 0,
+        "failed_range_pairs": 0,
+        "resolved_interval_pairs": 0,
+        "resolved_accuracy_pooled": null,
+        "fixed_target_count": 93
+      }
+    ],
+    "per_target": [
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.38235294117647056,
+        "interval_C": 0.38235294117647056
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.25,
+        "interval_C": 0.25
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.4090909090909091,
+        "interval_C": 0.4090909090909091
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.7391304347826086,
+        "interval_C": 0.7391304347826086
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5444444444444444,
+        "interval_C": 0.5444444444444444
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.6862745098039216,
+        "interval_C": 0.6862745098039216
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7875,
+        "interval_C": 0.7875
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5568181818181818,
+        "interval_C": 0.5568181818181818
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.5531914893617021,
+        "interval_C": 0.5531914893617021
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.50",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.38235294117647056,
+        "interval_C": 0.38235294117647056
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.29,
+        "interval_C": 0.29
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.4090909090909091,
+        "interval_C": 0.4090909090909091
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6630434782608695,
+        "interval_C": 0.6630434782608695
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4888888888888889,
+        "interval_C": 0.4888888888888889
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.6470588235294118,
+        "interval_C": 0.6470588235294118
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7625,
+        "interval_C": 0.7625
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6276595744680851,
+        "interval_C": 0.6276595744680851
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g0.80",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.38235294117647056,
+        "interval_C": 0.38235294117647056
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.29,
+        "interval_C": 0.29
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.4090909090909091,
+        "interval_C": 0.4090909090909091
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.58,
+        "interval_C": 0.58
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6413043478260869,
+        "interval_C": 0.6413043478260869
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4888888888888889,
+        "interval_C": 0.4888888888888889
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.3431372549019608,
+        "interval_C": 0.3431372549019608
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.7625,
+        "interval_C": 0.7625
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6063829787234043,
+        "interval_C": 0.6063829787234043
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.00",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.32,
+        "interval_C": 0.32
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.45454545454545453,
+        "interval_C": 0.45454545454545453
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.58,
+        "interval_C": 0.58
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5978260869565217,
+        "interval_C": 0.5978260869565217
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.45555555555555555,
+        "interval_C": 0.45555555555555555
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.37254901960784315,
+        "interval_C": 0.37254901960784315
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.6625,
+        "interval_C": 0.6625
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.6063829787234043,
+        "interval_C": 0.6063829787234043
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g1.25",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.34,
+        "interval_C": 0.34
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.45454545454545453,
+        "interval_C": 0.45454545454545453
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5652173913043478,
+        "interval_C": 0.5652173913043478
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.4777777777777778,
+        "interval_C": 0.4777777777777778
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.725,
+        "interval_C": 0.725
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.648936170212766,
+        "interval_C": 0.648936170212766
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "magnitude_g2.00",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.41304347826086957,
+        "interval_C": 0.41304347826086957
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.5882352941176471,
+        "interval_C": 0.5882352941176471
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.41,
+        "interval_C": 0.41
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5192307692307693,
+        "interval_C": 0.5384615384615384
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.8181818181818182,
+        "interval_C": 0.8181818181818182
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.2631578947368421,
+        "interval_C": 0.2631578947368421
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.6382978723404256,
+        "interval_C": 0.6382978723404256
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.41836734693877553,
+        "interval_C": 0.41836734693877553
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.6521739130434783,
+        "interval_C": 0.6521739130434783
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.49056603773584906,
+        "interval_C": 0.49056603773584906
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.43137254901960786,
+        "interval_C": 0.43137254901960786
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5444444444444444
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.4125,
+        "interval_C": 0.4125
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5681818181818182,
+        "interval_C": 0.5681818181818182
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.43617021276595747,
+        "interval_C": 0.43617021276595747
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.4264705882352941,
+        "interval_C": 0.4264705882352941
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "ordinal",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_001",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_002",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_004",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_005",
+        "eligible_pairs": 7,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_006",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_007",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_011",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_012",
+        "eligible_pairs": 29,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_013",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_014",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_015",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_016",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_017",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_018",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_019",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_021",
+        "eligible_pairs": 11,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_022",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_023",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_024",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_026",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_027",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_028",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_029",
+        "eligible_pairs": 26,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_030",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_032",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_034",
+        "eligible_pairs": 30,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_035",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_037",
+        "eligible_pairs": 24,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_038",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_039",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_040",
+        "eligible_pairs": 6,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_041",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_042",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_043",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_044",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_045",
+        "eligible_pairs": 43,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_048",
+        "eligible_pairs": 32,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_049",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_050",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_051",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_052",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_053",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_054",
+        "eligible_pairs": 13,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_056",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_057",
+        "eligible_pairs": 12,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_058",
+        "eligible_pairs": 19,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_060",
+        "eligible_pairs": 20,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_062",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_063",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_064",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_065",
+        "eligible_pairs": 39,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_066",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_067",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_069",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_070",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_071",
+        "eligible_pairs": 33,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_072",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_073",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_074",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_075",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_076",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_077",
+        "eligible_pairs": 40,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_078",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_080",
+        "eligible_pairs": 51,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_081",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_083",
+        "eligible_pairs": 23,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_084",
+        "eligible_pairs": 35,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_085",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_086",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_088",
+        "eligible_pairs": 36,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_090",
+        "eligible_pairs": 27,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_091",
+        "eligible_pairs": 41,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_092",
+        "eligible_pairs": 53,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_093",
+        "eligible_pairs": 38,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_094",
+        "eligible_pairs": 45,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_095",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_096",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_097",
+        "eligible_pairs": 31,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_098",
+        "eligible_pairs": 48,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_099",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_102",
+        "eligible_pairs": 49,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_103",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_104",
+        "eligible_pairs": 50,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_107",
+        "eligible_pairs": 18,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_108",
+        "eligible_pairs": 34,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_110",
+        "eligible_pairs": 46,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_111",
+        "eligible_pairs": 54,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_112",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_113",
+        "eligible_pairs": 52,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_114",
+        "eligible_pairs": 44,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_115",
+        "eligible_pairs": 47,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_116",
+        "eligible_pairs": 14,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      },
+      {
+        "arm": "uniform_pfba",
+        "metabolite_id": "core_117",
+        "eligible_pairs": 37,
+        "point_C": 0.5,
+        "interval_C": 0.5
+      }
+    ],
+    "prediction_diagnostics": {
+      "tolerance_level_range_inversion": 2
+    },
+    "common_success_sensitivity": {
+      "pairs": 3520,
+      "fixed_panel_estimable": true,
+      "absolute_macro_C": {
+        "magnitude_g0.50": 0.5043957302201961,
+        "magnitude_g0.80": 0.5029096195205875,
+        "magnitude_g1.00": 0.50003932602804,
+        "magnitude_g1.25": 0.5005307429611697,
+        "magnitude_g2.00": 0.5022739440197886,
+        "ordinal": 0.49984892035257156,
+        "uniform_pfba": 0.5
+      }
+    }
+  },
+  "pair_policy": "Equal weight per eligible distinct-context pair from different biological origins; within-origin pairs excluded. Origins with multiple distinct cell lines contribute more pair rows; bootstrap carries each origin whole."
+}

@@ -1,0 +1,114 @@
+{
+  "context": "CO:HT29",
+  "scale_k": 5.366,
+  "panel_size": 96,
+  "config": {
+    "study_version": "cpu-2026-09-13-v3",
+    "score_source": "conservative_expression",
+    "objective": "BIOMASS_reaction",
+    "gammas": [
+      0.5,
+      0.8,
+      1.0,
+      1.25,
+      2.0
+    ],
+    "epsilon": 0.001,
+    "solver": "glpk",
+    "solver_feasibility_tolerance": 1e-09,
+    "solver_optimality_tolerance": 1e-09,
+    "cost_absolute_allowance": 1e-07,
+    "cost_relative_allowance": 1e-09,
+    "secondary_absolute_allowance": 1e-07,
+    "secondary_relative_allowance": 1e-09,
+    "coordinate_fix_allowance": 1e-06,
+    "validation_tolerance": 1e-06,
+    "prediction_tie_tolerance": 1e-05,
+    "interval_resolution_tolerance": 1e-05,
+    "scenarios": {
+      "primary": {
+        "task_fraction": 0.9,
+        "serum_uptake": 1.0
+      },
+      "half_serum": {
+        "task_fraction": 0.9,
+        "serum_uptake": 0.5
+      },
+      "lower_task": {
+        "task_fraction": 0.5,
+        "serum_uptake": 1.0
+      }
+    },
+    "point_convention": "E1 cap; all-reaction parsimonious cap; sequential canonical exchange-ID minimization and fixing; final jointly feasible vector",
+    "ambiguity_convention": "Exchange ranges with primary and secondary cost caps, before exchange-coordinate fixing",
+    "workers": 4,
+    "solver_timeout_seconds": 60,
+    "solver_retry_policy": "One advanced-basis retry with identical mathematical LP after a nonoptimal solve"
+  },
+  "inputs": {
+    "configs/study.json": "0c597b4a88854972386c510f97dd0ec4b9285f270d834340ee4e88bee6fa82fb",
+    "data/scores_conservative.npz": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+    "manifests/metabolite_map.tsv": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+    "src/cpu_model.py": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+    "src/cpu_readout.py": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+    "src/production_controls.py": "a56552e606721e2b2bcef563e02615702fd0bbd264efc9842f81dd961ff7373f",
+    "src/medium_v2.py": "903676da2bc73daddc4b2d1dd702a764146fab0ddc54aca4cf975aa2f74440b0",
+    "manifests/contexts.tsv": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+    "data/raw/Recon3D.json": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+    "environment.lock": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607"
+  },
+  "checks": {
+    "fresh_model_repeatability": {
+      "max_point_change": 0.0,
+      "pass": true
+    },
+    "inverse_gamma_0.5": {
+      "max_input_change": 1.1102230246251565e-16,
+      "max_point_change": 1.503330793184432e-11,
+      "pass": true
+    },
+    "inverse_gamma_2.0": {
+      "max_input_change": 0.0,
+      "max_point_change": 2.8315128020039992e-12,
+      "pass": true
+    },
+    "orientation_3DSPHR": {
+      "max_point_change": 8.445688592928491e-12,
+      "pass": true
+    },
+    "orientation_EX_ala__L_e": {
+      "max_point_change": 0.0,
+      "pass": true
+    },
+    "flux_unit_3DSPHR": {
+      "factor": 10.0,
+      "max_point_change": 2.014388655879884e-12,
+      "pass": true
+    },
+    "flux_unit_EX_ala__L_e": {
+      "factor": 10.0,
+      "max_point_change": 1.680788841440517e-11,
+      "pass": true
+    },
+    "closed_medium": {
+      "max_task": 0.0,
+      "max_ATP_demand": 0.0,
+      "status_task": "optimal",
+      "status_ATP": "optimal",
+      "pass": true
+    }
+  },
+  "baseline_audit": {
+    "finite": true,
+    "max_mass_balance_residual": 4.085620730620576e-14,
+    "max_bound_violation": 2.731495138131944e-15,
+    "net_primary_cost": 1000.2813471548923,
+    "primary_cap_violation": 1.2505552149377763e-12,
+    "net_secondary_cost": 1419.3971375162823,
+    "secondary_cap_violation": 0.0,
+    "max_coordinate_fix_violation": 0,
+    "max_point_range_violation": 5.052438260962238e-15
+  },
+  "seconds": 277.71592874999624,
+  "all_pass": true
+}

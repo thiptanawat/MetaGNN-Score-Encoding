@@ -1,0 +1,141 @@
+metabolite_id	source_excel_row	source_label	method	calibrated	historical_variable	historical_sd_ratio	table_s1_label	source_pdf_page	source_kegg	exchange_id	model_metabolite_id	model_metabolite_name	model_kegg	model_formula	sign_factor	candidate_exchanges	status	primary_eligible	reason
+core_001	2	2-phosphoglycerate	IPR	True	True	7.29046	2-phosphoglycerate	24	C00631	EX_2pg_e	2pg_e	D-Glycerate 2-phosphate	C00631	C3H4O7P	1.0	EX_2pg_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_002	3	OH-phenylpyruvate	IPR	True	True	14.1512	OH-phenylpyruvate	26	C01179	EX_34hpp_e	34hpp_e	3-(4-Hydroxyphenyl)pyruvate	C01179	C9H7O4	1.0	EX_34hpp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_003	4	aminoisobutyrate	HILIC	True	False	1.75158	aminoisobutyrate	22	C03284								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_004	5	3-hydroxyanthranilate	HILIC	True	True	36.3209	3-hydroxyanthranilate	22	C00632	EX_3hanthrn_e	3hanthrn_e	3 Hydroxyanthranilate C7H7NO3	C00632	C7H7NO3	1.0	EX_3hanthrn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_005	6	3-phosphoglycerate	IPR	True	True	6.48035	3-phosphoglycerate	24	C00197	EX_3pg_e	3pg_e	3-Phospho-D-glycerate	C00197	C3H4O7P	1.0	EX_3pg_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_006	7	GABA	HILIC	True	True	24.9968	GABA	23	C00334	EX_4abut_e	4abut_e	4-Aminobutanoate	C00334	C4H9NO2	1.0	EX_4abut_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_007	8	4-hydroxybenzoate	IPR	True	True	24.5276	4-hydroxybenzoate	24	C00156	EX_4hbz_e	4hbz_e	4-Hydroxybenzoate	C00156	C7H5O3	1.0	EX_4hbz_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_008	9	cis-hydroxyproline/trans-hydroxyproline	HILIC	True	False	2.35903	cis-hydroxyproline/trans-hydroxyproline	23	C03441/C01157								excluded	False	source assay aggregates unresolved analytes
+core_009	10	4-pyridoxate	IPR	True	True	6.67788	4-pyridoxate	24	C00847								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_010	11	5-HIAA	IPR	True	True	5.27711	5-HIAA	24	C05635								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_011	12	acetoacetate	IPR	True	True	11.8045	acetoacetate	24	C00164	EX_acac_e	acac_e	Acetoacetate	C00164	C4H5O3	1.0	EX_acac_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_012	13	adenine	IPR	True	True	26.6679	adenine	24	C00147	EX_ade_e	ade_e	Adenine	C00147	C5H5N5	1.0	EX_ade_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_013	14	adenosine	HILIC	True	True	15.4842	adenosine	22	C00212	EX_adn_e	adn_e	Adenosine	C00212	C10H13N5O4	1.0	EX_adn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_014	15	5'-adenosylhomocysteine	HILIC	True	True	8.15526	5'-adenosylhomocysteine	22	C00021	EX_ahcys_e	ahcys_e	S-Adenosyl-L-homocysteine	C00021	C14H20N6O5S	1.0	EX_ahcys_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_015	16	alpha-ketoglutarate	IPR	True	False	2.67089	alpha-ketoglutarate	25	C00026	EX_akg_e	akg_e	2-Oxoglutarate	C00026	C5H4O5	1.0	EX_akg_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_016	17	alanine	HILIC	True	True	18.6863	alanine	22	C00041	EX_ala__L_e	ala__L_e	L-Alanine	C01401;C00041	C3H7NO2	1.0	EX_ala__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_017	18	AMP	IPR	True	True	16.533	AMP	25	C00020	EX_amp_e	amp_e	AMP C10H12N5O7P	C00020	C10H12N5O7P	1.0	EX_amp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_018	19	anthranilate	HILIC	True	True	50.9468	anthranilate	22	C00108	EX_anth_e	anth_e	Anthranilate	C00108	C7H6NO2	1.0	EX_anth_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_019	20	arginine	HILIC	True	False	2.35257	arginine	22	C00062	EX_arg__L_e	arg__L_e	L-Arginine	C02385;C00062	C6H15N4O2	1.0	EX_arg__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_020	21	ascorbate	IPR	False	True	4.04464	ascorbate	25	C00072	EX_ascb__L_e	ascb__L_e	L-Ascorbate	C20364;C00072	C6H7O6	1.0	EX_ascb__L_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_021	22	asparagine	HILIC	True	True	3.97133	asparagine	22	C00152	EX_asn__L_e	asn__L_e	L-Asparagine	C16438;C00152	C4H8N2O3	1.0	EX_asn__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_022	23	aspartate	HILIC	True	True	10.8038	aspartate	22	C00049	EX_asp__L_e	asp__L_e	L-Aspartate	C00049;C16433	C4H6NO4	1.0	EX_asp__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_023	24	bilirubin	IPR	True	True	8.22348	bilirubin	25	C00486	EX_bilirub_e	bilirub_e	Bilirubin cytosol	C00486	C33H34N4O6	1.0	EX_bilirub_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_024	25	N-carbamoyl-beta-alanine	HILIC	True	True	22.3039	N-carbamoyl-beta-alanine	23	C02642	EX_cala_e	cala_e	N-Carbamoyl-beta-alanine	C02642	C4H7N2O3	1.0	EX_cala_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_025	26	carnosine	HILIC	True	False	2.08094	carnosine	23	C00386								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_026	27	choline	HILIC	True	True	25.0549	choline	23	C00114	EX_chol_e	chol_e	Choline C5H14NO	C00114	C5H14NO	1.0	EX_chol_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_027	28	phosphocholine	HILIC	True	True	26.0123	phosphocholine	24	C00588	EX_cholp_e	cholp_e	Choline phosphate C5H13NO4P	C00588	C5H13NO4P	1.0	EX_cholp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_028	29	citrate	IPR	True	True	28.4792	citrate	25	C00158	EX_cit_e	cit_e	Citrate	C00158	C6H5O7	1.0	EX_cit_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_029	30	citrulline	HILIC	True	True	6.70799	citrulline	23	C00327	EX_citr__L_e	citr__L_e	L-Citrulline	C00327	C6H13N3O3	1.0	EX_citr__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_030	31	CMP	IPR	True	True	25.0845	CMP	25	C00055	EX_cmp_e	cmp_e	CMP C9H12N3O8P	C00055	C9H12N3O8P	1.0	EX_cmp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_031	32	creatine	HILIC	True	True	9.96339	creatine	23	C00300								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_032	33	carnitine	HILIC	True	True	10.6822	carnitine	23	C00318	EX_crn_e	crn_e	L-Carnitine	C00487;C00318	C7H15NO3	1.0	EX_crn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_033	34	creatinine	HILIC	True	False	2.82689	creatinine	23	C00791							EX_creat_e	excluded	False	model annotation conflict: creat_e has creatinine KEGG C00791 but creatine name/formula C4H9N3O2; no ad hoc remapping
+core_034	35	cystathionine	IPR	True	True	20.2891	cystathionine	25	C02291	EX_cyst__L_e	cyst__L_e	L-Cystathionine	C02291	C7H14N2O4S	1.0	EX_cyst__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_035	36	cytidine	IPR	True	True	12.4723	cytidine	25	C00475	EX_cytd_e	cytd_e	Cytidine	C00475	C9H13N3O5	1.0	EX_cytd_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_036	37	2'-deoxyadenosine	HILIC	True	True	3.84036	2'-deoxyadenosine	22	C00559	EX_dad_2_e	dad_2_e	Deoxyadenosine	C00559	C10H13N5O3	1.0	EX_dad_2_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_037	38	dCMP	IPR	True	True	4.87432	dCMP	25	C00239	EX_dcmp_e	dcmp_e	DCMP C9H12N3O7P	C00239	C9H12N3O7P	1.0	EX_dcmp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_038	39	2'-deoxycytidine	HILIC	True	True	14.8525	2'-deoxycytidine	22	C00881	EX_dcyt_e	dcyt_e	Deoxycytidine	C00881	C9H13N3O4	1.0	EX_dcyt_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_039	40	DHAP	IPR	True	True	8.58382	dihydroxyacetone phosphate	25	C00111	EX_dhap_e	dhap_e	Dihydroxyacetone phosphate	C00111	C3H5O6P	1.0	EX_dhap_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_040	41	dimethylglycine	HILIC	True	False	2.7185	dimethylglycine	23	C01026	EX_dmgly_e	dmgly_e	N,N-Dimethylglycine	C01026	C4H9NO2	1.0	EX_dmgly_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_041	42	2'-deoxyuridine	HILIC	True	True	16.869	2'-deoxyuridine	22	C00526	EX_duri_e	duri_e	Deoxyuridine	C00526	C9H12N2O5	1.0	EX_duri_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_042	43	phosphoethanolamine	HILIC	True	True	10.759	phosphoethanolamine	24	C00346	EX_ethamp_e	ethamp_e	Ethanolamine phosphate C2H7NO4P	C00346	C2H7NO4P	1.0	EX_ethamp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_043	44	folate	IPR	True	False	1.77099	folate	25	C00504	EX_fol_e	fol_e	Folate	C00504	C19H18N7O6	1.0	EX_fol_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_044	45	fumarate	IPR	True	True	7.88208	fumarate	25	C00122	EX_fum_e	fum_e	Fumarate	C00122	C4H2O4	1.0	EX_fum_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_045	46	alpha-glycerophosphocholine	HILIC	True	True	14.4067	alpha-glycerophosphocholine	22	C00670	EX_g3pc_e	g3pc_e	Sn-Glycero-3-phosphocholine	C00670	C8H20NO6P	1.0	EX_g3pc_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_046	47	glycocholate	IPR	True	False	1.56078	glycocholate	26	C01921								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_047	48	glycodeoxycholate/glycochenodeoxycholate	IPR	True	False	1.74445	glycodeoxycholate/glycochenodeoxycholate	26	C05464/C05466								excluded	False	source assay aggregates unresolved analytes
+core_048	49	glucose	BGA	True	True	24.0823	glucose	22	C00031	EX_glc__D_e	glc__D_e	D-Glucose	C00031	C6H12O6	1.0	EX_glc__D_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_049	50	glucuronate	IPR	True	True	8.94724	glucuronate	25	C00191	EX_glcur_e	glcur_e	D-Glucuronate	C00191	C6H9O7	1.0	EX_glcur_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_050	51	glutamine	HILIC	True	True	32.7585	glutamine	23	C00064	EX_gln__L_e	gln__L_e	L-Glutamine	C00064;C00303	C5H10N2O3	1.0	EX_gln__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_051	52	glutamate	HILIC	True	True	18.6461	glutamate	23	C00025	EX_glu__L_e	glu__L_e	L-Glutamate	C00025;C00302	C5H8NO4	1.0	EX_glu__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_052	53	glycine	HILIC	True	True	7.25159	glycine	23	C00037	EX_gly_e	gly_e	Glycine	C00037	C2H5NO2	1.0	EX_gly_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_053	54	glyceraldehyde	IPR	True	True	10.2878	glyceraldehyde	25	C00577	EX_glyald_e	glyald_e	D-Glyceraldehyde	C00577	C3H6O3	1.0	EX_glyald_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_054	55	betaine	HILIC	True	True	3.08617	betaine	22	C00719	EX_glyb_e	glyb_e	Glycine betaine	C00719	C5H11NO2	1.0	EX_glyb_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_055	56	glycerol_1	HILIC	True	True	7.55813	glycerol / glycerol_early (assay correspondence unresolved)	23	C00116							EX_glyc_e	excluded	False	two glycerol assay labels share one chemical identifier; source assay correspondence unresolved; both excluded
+core_056	57	alpha-glycerophosphate	IPR	True	True	15.4841	alpha-glycerophosphate	25	C00093	EX_glyc3p_e	glyc3p_e	Glycerol 3-phosphate	C00093	C3H7O6P	1.0	EX_glyc3p_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_057	58	GMP	IPR	True	True	29.8154	GMP	26	C00144	EX_gmp_e	gmp_e	GMP C10H12N5O8P	C00144	C10H12N5O8P	1.0	EX_gmp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_058	59	glutathione oxidized	IPR	True	True	53.6642	glutathione oxidized	25	C00127	EX_gthox_e	gthox_e	Oxidized glutathione	C00127	C20H30N6O12S2	1.0	EX_gthox_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_059	60	guanidinoacetate	HILIC	True	True	22.526	guanidinoacetate	23	C00581								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_060	61	homocysteine	HILIC	True	True	17.5015	homocysteine	23	C00155	EX_hcys__L_e	hcys__L_e	L-Homocysteine	C05330;C00155	C4H9NO2S	1.0	EX_hcys__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_061	62	3-OH-kynurenate	IPR	True	True	8.59758	3-OH-kynurenate	24	C03227							EX_hLkynr_e	excluded	False	source label/KEGG conflict: 3-OH-kynurenate labeled C03227, the 3-hydroxy-L-kynurenine identifier
+core_062	63	homoserine	HILIC	True	True	7.38175	homoserine	23	C00263	EX_hom__L_e	hom__L_e	L-Homoserine	C00263	C4H9NO3	1.0	EX_hom__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_063	64	hypoxanthine	IPR	True	True	20.3428	hypoxanthine	26	C00262	EX_hxan_e	hxan_e	Hypoxanthine	C00262	C5H4N4O	1.0	EX_hxan_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_064	65	isocitrate	IPR	True	True	8.83341	isocitrate	26	C00311	EX_icit_e	icit_e	Isocitrate	C00311	C6H5O7	1.0	EX_icit_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_065	66	isoleucine	HILIC	True	True	11.4076	isoleucine	23	C00407	EX_ile__L_e	ile__L_e	L-Isoleucine	C00407	C6H13NO2	1.0	EX_ile__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_066	67	IMP	IPR	True	True	7.66681	IMP	26	C00130	EX_imp_e	imp_e	IMP C10H11N4O8P	C00130	C10H11N4O8P	1.0	EX_imp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_067	68	inosine	IPR	True	True	20.9809	inosine	26	C00294	EX_ins_e	ins_e	Inosine	C00294	C10H12N4O5	1.0	EX_ins_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_068	69	kynurenate	HILIC	True	False	2.32733	kynurenate	23	C01717								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_069	70	2-aminodipate	IPR	True	True	5.88379	2-aminoadipate	24	C00956	EX_L2aadp_e	L2aadp_e	L 2 Aminoadipate C6H10NO4	C00956	C6H10NO4	1.0	EX_L2aadp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_070	71	lactate	BGA	True	True	28.6633	lactate	22	C00186	EX_lac__L_e	lac__L_e	L-Lactate	C00186	C3H5O3	1.0	EX_lac__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_071	72	lactose	IPR	True	True	7.11754	lactose	26	C00243	EX_lcts_e	lcts_e	Lactose C12H22O11	C00243;C01970	C12H22O11	1.0	EX_lcts_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_072	73	leucine	HILIC	True	True	10.463	leucine	23	C00123	EX_leu__L_e	leu__L_e	L-Leucine	C16439;C00123	C6H13NO2	1.0	EX_leu__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_073	74	kynurenine	IPR	True	True	58.2839	kynurenine	26	C00328	EX_Lkynr_e	Lkynr_e	L Kynurenine C10H12N2O3	C00328	C10H12N2O3	1.0	EX_Lkynr_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_074	75	lysine	HILIC	True	True	10.5562	lysine	23	C00047	EX_lys__L_e	lys__L_e	L-Lysine	C00047;C16440	C6H15N2O2	1.0	EX_lys__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_075	76	malate	IPR	True	True	29.8271	malate	26	C00149	EX_mal__L_e	mal__L_e	L-Malate	C00149	C4H4O5	1.0	EX_mal__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_076	77	methionine	HILIC	True	True	15.1913	methionine	23	C00073	EX_met__L_e	met__L_e	L-Methionine	C01733;C00073	C5H11NO2S	1.0	EX_met__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_077	78	niacin	IPR	True	True	3.8625	niacin	26	C00253	EX_nac_e	nac_e	Nicotinate	C00253	C6H4NO2	1.0	EX_nac_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_078	79	niacinamide	HILIC	True	True	19.1489	niacinamide	23	C00153	EX_ncam_e	ncam_e	Nicotinamide	C00153	C6H6N2O	1.0	EX_ncam_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_079	80	nicotinic acid mononucleotide	IPR	True	False	1.89651	nicotinic acid mononucleotide	26	C01185	EX_nicrnt_e	nicrnt_e	Nicotinate D-ribonucleotide	C01185	C11H12NO9P	1.0	EX_nicrnt_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_080	81	ornithine	HILIC	True	True	13.3864	ornithine	24	C00077	EX_orn_e	orn_e	Ornithine	C00077;C01602	C5H13N2O2	1.0	EX_orn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_081	82	orotate	IPR	True	True	23.936	orotate	26	C00295	EX_orot_e	orot_e	Orotate C5H3N2O4	C00295	C5H3N2O4	1.0	EX_orot_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_082	83	OMP	IPR	True	False	1.66316	OMP	26	C01103	EX_orot5p_e	orot5p_e	Orotidine 5'-phosphate	C01103	C10H10N2O11P	1.0	EX_orot5p_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_083	84	oxalate	IPR	True	False	2.00205	oxalate	26	C00209	EX_oxa_e	oxa_e	Oxalate	C00209	C2O4	1.0	EX_oxa_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_084	85	PEP	IPR	True	True	8.50322	phosphoenolpyruvate	27	C00074	EX_pep_e	pep_e	Phosphoenolpyruvate	C00074	C3H2O6P	1.0	EX_pep_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_085	86	phenylalanine	HILIC	True	True	13.9038	phenylalanine	24	C00079	EX_phe__L_e	phe__L_e	L-Phenylalanine	C00079;C02057	C9H11NO2	1.0	EX_phe__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_086	87	pantothenate	IPR	True	True	4.13255	pantothenate	27	C00864	EX_pnto__R_e	pnto__R_e	(R)-Pantothenate	C00864	C9H16NO5	1.0	EX_pnto__R_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_087	88	proprionate	IPR	True	False	1.26187	proprionate	27	C00163								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_088	89	proline	HILIC	True	True	8.84399	proline	24	C00148	EX_pro__L_e	pro__L_e	L-Proline	C00148;C16435	C5H9NO2	1.0	EX_pro__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_089	90	pyruvate	IPR	False	True	19.373	pyruvate	27	C00022	EX_pyr_e	pyr_e	Pyruvate	C00022	C3H3O3	1.0	EX_pyr_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_090	91	quinolinate	IPR	True	False	1.57221	quinolinate	27	C03722	EX_quln_e	quln_e	Quinolinate	C03722	C7H3NO4	1.0	EX_quln_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_091	92	sorbitol	IPR	True	True	14.5656	sorbitol	27	C00794	EX_sbt__D_e	sbt__D_e	D-Sorbitol	C00794	C6H14O6	1.0	EX_sbt__D_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_092	93	serine	HILIC	True	True	25.222	serine	24	C00065	EX_ser__L_e	ser__L_e	L-Serine	C00716;C00065	C3H7NO3	1.0	EX_ser__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_093	94	spermidine	HILIC	True	True	6.35114	spermidine	24	C00315	EX_spmd_e	spmd_e	Spermidine	C00315	C7H22N3	1.0	EX_spmd_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_094	95	spermine	HILIC	True	True	11.9943	spermine	24	C00750	EX_sprm_e	sprm_e	Spermine C10H30N4	C00750	C10H30N4	1.0	EX_sprm_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_095	96	serotonin	HILIC	True	True	7.86983	serotonin	24	C00780	EX_srtn_e	srtn_e	Serotonin	C00780	C10H13N2O	1.0	EX_srtn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_096	97	succinate	IPR	True	True	17.1715	succinate	27	C00042	EX_succ_e	succ_e	Succinate	C00042	C4H4O4	1.0	EX_succ_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_097	98	sucrose	IPR	True	True	3.103	sucrose	27	C00089	EX_sucr_e	sucr_e	Sucrose C12H22O11	C00089	C12H22O11	1.0	EX_sucr_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_098	99	taurine	HILIC	True	True	14.6834	taurine	24	C00245	EX_taur_e	taur_e	Taurine C2H7NO3S	C00245	C2H7NO3S	1.0	EX_taur_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_099	100	taurocholate	IPR	True	False	1.78901	taurocholate	27	C05122	EX_tchola_e	tchola_e	Taurocholic acid C26H45NO7S	C05122	C26H45NO7S	1.0	EX_tchola_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_100	101	taurodeoxycholate/taurochenodeoxycholate	IPR	True	False	2.09632	taurodeoxycholate/taurochenodeoxycholate	27	C05463/C05465								excluded	False	source assay aggregates unresolved analytes
+core_101	102	thiamine	HILIC	True	True	4.39854	thiamine	24	C00378								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_102	103	threonine	HILIC	True	True	11.5527	threonine	24	C00188	EX_thr__L_e	thr__L_e	L-Threonine	C00188	C4H9NO3	1.0	EX_thr__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_103	104	thymine	IPR	True	True	27.2075	thymine	27	C00178	EX_thym_e	thym_e	Thymine C5H6N2O2	C00178	C5H6N2O2	1.0	EX_thym_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_104	105	thymidine	HILIC	True	True	15.2491	thymidine	24	C00214	EX_thymd_e	thymd_e	Thymidine C10H14N2O5	C00214	C10H14N2O5	1.0	EX_thymd_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_105	106	thyroxine	HILIC	True	True	3.23804	thyroxine	24	C01829								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_106	107	triiodothyronine	HILIC	True	True	7.78189	triiodothyronine	24	C02465								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_107	108	tryptophan	HILIC	True	True	13.5302	tryptophan	24	C00078	EX_trp__L_e	trp__L_e	L-Tryptophan	C00806;C00078	C11H12N2O2	1.0	EX_trp__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_108	109	tyrosine	HILIC	True	True	8.33252	tyrosine	24	C00082	EX_tyr__L_e	tyr__L_e	L-Tyrosine	C00082;C01536	C9H11NO3	1.0	EX_tyr__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_109	110	UDP-glucuronate	IPR	True	True	7.95181	UDP-glucuronate	27	C00052/C00167								excluded	False	source assay aggregates unresolved analytes
+core_110	111	UMP	IPR	True	True	34.9743	UMP	27	C00105	EX_ump_e	ump_e	UMP C9H11N2O9P	C00105	C9H11N2O9P	1.0	EX_ump_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_111	112	uracil	IPR	True	True	25.8687	uracil	27	C00106	EX_ura_e	ura_e	Uracil	C00106	C4H4N2O2	1.0	EX_ura_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_112	113	urate	IPR	True	True	9.07504	urate	27	C00366	EX_urate_e	urate_e	Urate C5H4N4O3	C00366	C5H4N4O3	1.0	EX_urate_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_113	114	uridine	IPR	True	True	65.9947	uridine	27	C00299	EX_uri_e	uri_e	Uridine	C00299	C9H12N2O6	1.0	EX_uri_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_114	115	valine	HILIC	True	True	18.9976	valine	24	C00183	EX_val__L_e	val__L_e	L-Valine	C16436;C00183	C5H11NO2	1.0	EX_val__L_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_115	116	xanthine	IPR	True	True	17.7613	xanthine	27	C00385	EX_xan_e	xan_e	Xanthine	C00385	C5H4N4O2	1.0	EX_xan_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_116	117	XMP	IPR	True	True	11.8811	XMP	27	C00655	EX_xmp_e	xmp_e	Xanthosine 5'-phosphate	C00655	C10H11N4O9P	1.0	EX_xmp_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_117	118	xanthosine	HILIC	True	True	4.32642	xanthosine	24	C01762	EX_xtsn_e	xtsn_e	Xanthosine	C01762	C10H12N4O6	1.0	EX_xtsn_e	mapped	True	single source/model KEGG-concordant extracellular exchange
+core_118	119	homocystine	IPR	False	True	19.9637	homocystine	26	C00155							EX_hcys__L_e	excluded	False	source label/KEGG conflict: homocystine disulfide labeled C00155, the homocysteine identifier
+core_119	120	ADMA	HILIC	False	True	7.70212	asymmetric dimethylarginine	22	C03626								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_120	121	allantoin	HILIC	False	False	2.65396	allantoin	22	C01551	EX_alltn_e	alltn_e	Allantoin	C01551	C4H6N4O3	1.0	EX_alltn_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_121	122	cotinine	HILIC	False	False	2.19279	cotinine	23	NA								excluded	False	no source KEGG identifier for auditable exact mapping
+core_122	123	glycerol_2	HILIC	False	True	9.53121	glycerol / glycerol_early (assay correspondence unresolved)	23	C00116							EX_glyc_e	excluded	False	two glycerol assay labels share one chemical identifier; source assay correspondence unresolved; both excluded
+core_123	124	NMMA	HILIC	False	True	9.88622	N-monomethylarginine	23	C03884								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_124	125	trimethylamine-N-oxide	HILIC	False	False	2.42242	trimethylamine-N-oxide	24	C01104								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_125	126	aconitate	IPR	False	True	22.7901	aconitate	24	C00417								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_126	127	adipate	IPR	False	True	26.6254	adipate	24	C06104								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_127	128	biotin	IPR	False	False	1.65785	biotin	25	C00120	EX_btn_e	btn_e	Biotin	C00120	C10H15N2O3S	1.0	EX_btn_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_128	129	citrate/isocitrate	IPR	False	True	30.5908	citrate/isocitrate	25	C00158/C00311								excluded	False	source assay aggregates unresolved analytes
+core_129	130	fru-1,6-DP/fru-2,6-DP/glc-1,6-DP	IPR	False	True	6.47996	fructose-1,6-diphosphate/fructose-2,6-diphosphate/glucose-1,6-diphosphate	25	C00354/C00665/NA								excluded	False	source assay aggregates unresolved analytes
+core_130	131	maleate	IPR	False	False	1.65571	maleate	26	C01384								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_131	132	hippurate	IPR	False	False	1.84269	hippurate	26	C01586	EX_bgly_e	bgly_e	N-Benzoylglycine	C01586	C9H8NO3	1.0	EX_bgly_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_132	133	malonate	IPR	False	True	3.58995	malonate	26	C00383								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_133	134	salicylurate	IPR	False	False	1.44599	salicylurate	27	C07588								excluded	False	no extracellular EX reaction with the exact source KEGG identifier
+core_134	135	methylmalonate	IPR	False	True	14.6013	methylmalonate	26	C02170	EX_HC00900_e	HC00900_e	Methylmalonate	C02170	C4H4O4	1.0	EX_HC00900_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_135	136	UDP-galactose/UDP-glucose	IPR	False	True	8.84611	UDP-galactose/UDP-glucose	27	C00029							EX_udpg_e	excluded	False	source assay aggregates unresolved analytes
+core_136	137	hyodeoxycholate/ursodeoxycholate	IPR	False	False	1.27969	hyodeoxycholate/ursodeoxycholate	26	C15517/C07880								excluded	False	source assay aggregates unresolved analytes
+core_137	138	chenodeoxycholate/deoxycholate	IPR	False	False	1.95611	chenodeoxycholate/deoxycholate	25	C02528/C04483								excluded	False	source assay aggregates unresolved analytes
+core_138	139	lithocholate	IPR	False	True	3.26878	lithocholate	26	C03990	EX_HC02191_e	HC02191_e	Lithocholate	C03990	C24H39O3	1.0	EX_HC02191_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_139	140	taurolithocholate	IPR	False	False	1.50388	taurolithocholate	27	C02592	EX_HC02192_e	HC02192_e	Taurolithocholate	C02592	C26H44NO5S	1.0	EX_HC02192_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel
+core_140	141	phenylacetylglycine	IPR	False	False	1.68265	phenylacetylglycine	27	C05598	EX_pheacgly_e	pheacgly_e	Phenylacetylglycine	C05598	C10H10NO3	1.0	EX_pheacgly_e	mapped	False	chemical mapping retained; uncalibrated assay excluded from primary QC panel

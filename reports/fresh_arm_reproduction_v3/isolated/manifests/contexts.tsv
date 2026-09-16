@@ -1,0 +1,62 @@
+context_id	origin_group	partition	lineage	source_metadata_tissue	normalized_id	expression_column	core_label	has_expression	has_core	reason
+RE:786-0	RE:786-0	development	renal	Renal	7860	RE:786-0	786-O	True	True	previous source-label exposure; development only
+RE:A498	RE:A498	test	renal	Renal	A498	RE:A498	A498	True	True	matched profile, not in 11-line exposure list
+LC:A549/ATCC	LC:A549/ATCC	test	lung	Non-Small Cell Lung	A549	LC:A549/ATCC	A549/ATCC	True	True	matched profile, not in 11-line exposure list
+RE:ACHN	RE:ACHN	test	renal	Renal	ACHN	RE:ACHN	ACHN	True	True	matched profile, not in 11-line exposure list
+BR:BT-549	BR:BT-549	test	breast	Breast	BT549	BR:BT-549	BT-549	True	True	matched profile, not in 11-line exposure list
+RE:CAKI-1	RE:CAKI-1	test	renal	Renal	CAKI1	RE:CAKI-1	CAKI-1	True	True	matched profile, not in 11-line exposure list
+LE:CCRF-CEM	LE:CCRF-CEM	test	leukemia	Leukemia	CCRFCEM	LE:CCRF-CEM	CCRF-CEM	True	True	matched profile, not in 11-line exposure list
+CO:COLO 205	CO:COLO 205	test	colon	Colon	COLO205	CO:COLO 205	COLO 205	True	True	matched profile, not in 11-line exposure list
+PR:DU-145	PR:DU-145	test	prostate	Prostate	DU145	PR:DU-145	DU-145	True	True	matched profile, not in 11-line exposure list
+LC:EKVX	LC:EKVX	test	lung	Non-Small Cell Lung	EKVX	LC:EKVX	EKVX	True	True	matched profile, not in 11-line exposure list
+CO:HCC-2998	CO:HCC-2998	test	colon	Colon	HCC2998	CO:HCC-2998	HCC-2998	True	True	matched profile, not in 11-line exposure list
+CO:HCT-116	CO:HCT-116	test	colon	Colon	HCT116	CO:HCT-116	HCT-116	True	True	matched profile, not in 11-line exposure list
+CO:HCT-15	CO:HCT-15	test	colon	Colon	HCT15	CO:HCT-15	HCT-15	True	True	matched profile, not in 11-line exposure list
+LE:HL-60(TB)	LE:HL-60(TB)	test	leukemia	Leukemia	HL60	LE:HL-60(TB)	HL-60(TB)	True	True	matched profile, not in 11-line exposure list
+LC:HOP-62	LC:HOP-62	development	lung	Non-Small Cell Lung	HOP62	LC:HOP-62	HOP-62	True	True	previous source-label exposure; development only
+LC:HOP-92	LC:HOP-92	development	lung	Non-Small Cell Lung	HOP92	LC:HOP-92	HOP-92	True	True	previous source-label exposure; development only
+BR:HS 578T	BR:HS 578T	development	breast	Breast	HS578T	BR:HS 578T	HS 578T	True	True	previous source-label exposure; development only
+CO:HT29	CO:HT29	development	colon	Colon	HT29	CO:HT29	HT29	True	True	previous source-label exposure; development only
+OV:IGROV1	OV:IGROV1	test	ovary	Ovarian	IGROV1	OV:IGROV1	IGROV1	True	True	matched profile, not in 11-line exposure list
+LE:K-562	LE:K-562	test	leukemia	Leukemia	K562	LE:K-562	K562	True	True	matched profile, not in 11-line exposure list
+CO:KM12	CO:KM12	test	colon	Colon	KM12	CO:KM12	KM12	True	True	matched profile, not in 11-line exposure list
+ME:LOX IMVI	ME:LOX IMVI	test	melanoma		LOXIMVI	ME:LOX IMVI	LOX IMVI	True	True	matched profile, not in 11-line exposure list
+ME:M14	M14_MDA-MB-435	test	melanoma	Melanoma	M14	ME:M14	M14	True	True	matched profile, not in 11-line exposure list
+ME:MALME-3M	ME:MALME-3M	development	melanoma	Melanoma	MALME3M	ME:MALME-3M	MALME-3M	True	True	previous source-label exposure; development only
+BR:MCF7	BR:MCF7	test	breast	Breast	MCF7	BR:MCF7	MCF7	True	True	matched profile, not in 11-line exposure list
+BR:MDA-MB-231	BR:MDA-MB-231	development	breast	Breast	MDAMB231	BR:MDA-MB-231	MDA-MB-231/ATCC	True	True	previous source-label exposure; development only
+ME:MDA-MB-435	M14_MDA-MB-435	test	melanoma		MDAMB435	ME:MDA-MB-435	MDA-MB-435	True	True	matched profile, not in 11-line exposure list
+BR:MDA-MB-468	BR:MDA-MB-468	excluded	breast		MDAMB468		MDA-MB-468	False	True	no expression profile
+ME:MDA-N	M14_MDA-MB-435	excluded	melanoma		MDAN	ME:MDA-N		True	False	no CORE outcome
+LE:MOLT-4	LE:MOLT-4	test	leukemia	Leukemia	MOLT4	LE:MOLT-4	MOLT-4	True	True	matched profile, not in 11-line exposure list
+OV:NCI/ADR-RES	OVCAR-8_ADR-RES	test	ovary		NCIADRRES	OV:NCI/ADR-RES	NCI/ADR-RES	True	True	matched profile, not in 11-line exposure list
+LC:NCI-H226	LC:NCI-H226	development	lung	Non-Small Cell Lung	NCIH226	LC:NCI-H226	NCI-H226	True	True	previous source-label exposure; development only
+LC:NCI-H23	LC:NCI-H23	excluded	lung	Non-Small Cell Lung	NCIH23	LC:NCI-H23	NCI-H23	False	True	all-missing expression
+LC:NCI-H322M	LC:NCI-H322M	test	lung	Non-Small Cell Lung	NCIH322M	LC:NCI-H322M	NCI-H322M	True	True	matched profile, not in 11-line exposure list
+LC:NCI-H460	LC:NCI-H460	test	lung	Non-Small Cell Lung	NCIH460	LC:NCI-H460	NCI-H460	True	True	matched profile, not in 11-line exposure list
+LC:NCI-H522	LC:NCI-H522	test	lung	Non-Small Cell Lung	NCIH522	LC:NCI-H522	NCI-H522	True	True	matched profile, not in 11-line exposure list
+OV:OVCAR-3	OV:OVCAR-3	test	ovary	Ovarian	OVCAR3	OV:OVCAR-3	OVCAR-3	True	True	matched profile, not in 11-line exposure list
+OV:OVCAR-4	OV:OVCAR-4	test	ovary	Ovarian	OVCAR4	OV:OVCAR-4	OVCAR-4	True	True	matched profile, not in 11-line exposure list
+OV:OVCAR-5	OV:OVCAR-5	test	ovary	Ovarian	OVCAR5	OV:OVCAR-5	OVCAR-5	True	True	matched profile, not in 11-line exposure list
+OV:OVCAR-8	OVCAR-8_ADR-RES	test	ovary	Ovarian	OVCAR8	OV:OVCAR-8	OVCAR-8	True	True	matched profile, not in 11-line exposure list
+PR:PC-3	PR:PC-3	test	prostate	Prostate	PC3	PR:PC-3	PC-3	True	True	matched profile, not in 11-line exposure list
+LE:RPMI-8226	LE:RPMI-8226	development	leukemia	Leukemia	RPMI8226	LE:RPMI-8226	RPMI 8226	True	True	previous source-label exposure; development only
+RE:RXF 393	RE:RXF 393	test	renal	Renal	RXF393	RE:RXF 393	RXF 393	True	True	matched profile, not in 11-line exposure list
+CNS:SF-268	CNS:SF-268	test	central nervous system	Central nervous system	SF268	CNS:SF-268	SF-268	True	True	matched profile, not in 11-line exposure list
+CNS:SF-295	CNS:SF-295	test	central nervous system	Central nervous system	SF295	CNS:SF-295	SF-295	True	True	matched profile, not in 11-line exposure list
+CNS:SF-539	CNS:SF-539	test	central nervous system	Central nervous system	SF539	CNS:SF-539	SF-539	True	True	matched profile, not in 11-line exposure list
+ME:SK-MEL-2	ME:SK-MEL-2	test	melanoma	Melanoma	SKMEL2	ME:SK-MEL-2	SK-MEL-2	True	True	matched profile, not in 11-line exposure list
+ME:SK-MEL-28	ME:SK-MEL-28	test	melanoma	Melanoma	SKMEL28	ME:SK-MEL-28	SK-MEL-28	True	True	matched profile, not in 11-line exposure list
+ME:SK-MEL-5	ME:SK-MEL-5	test	melanoma	Melanoma	SKMEL5	ME:SK-MEL-5	SK-MEL-5	True	True	matched profile, not in 11-line exposure list
+OV:SK-OV-3	OV:SK-OV-3	test	ovary	Ovarian	SKOV3	OV:SK-OV-3	SK-OV-3	True	True	matched profile, not in 11-line exposure list
+RE:SN12C	RE:SN12C	test	renal	Renal	SN12C	RE:SN12C	SN12C	True	True	matched profile, not in 11-line exposure list
+CNS:SNB-19	SNB-19_U251	test	central nervous system	Central nervous system	SNB19	CNS:SNB-19	SNB-19	True	True	matched profile, not in 11-line exposure list
+CNS:SNB-75	CNS:SNB-75	test	central nervous system	Central nervous system	SNB75	CNS:SNB-75	SNB-75	True	True	matched profile, not in 11-line exposure list
+LE:SR	LE:SR	development	leukemia	Leukemia	SR	LE:SR	SR	True	True	previous source-label exposure; development only
+CO:SW-620	CO:SW-620	test	colon	Colon	SW620	CO:SW-620	SW620	True	True	matched profile, not in 11-line exposure list
+BR:T-47D	BR:T-47D	test	breast	Breast	T47D	BR:T-47D	T-47D	True	True	matched profile, not in 11-line exposure list
+RE:TK-10	RE:TK-10	test	renal	Renal	TK10	RE:TK-10	TK-10	True	True	matched profile, not in 11-line exposure list
+CNS:U251	SNB-19_U251	test	central nervous system	Central nervous system	U251	CNS:U251	U251	True	True	matched profile, not in 11-line exposure list
+ME:UACC-257	ME:UACC-257	test	melanoma	Melanoma	UACC257	ME:UACC-257	UACC-257	True	True	matched profile, not in 11-line exposure list
+ME:UACC-62	ME:UACC-62	test	melanoma	Melanoma	UACC62	ME:UACC-62	UACC-62	True	True	matched profile, not in 11-line exposure list
+RE:UO-31	RE:UO-31	development	renal	Renal	UO31	RE:UO-31	UO-31	True	True	previous source-label exposure; development only

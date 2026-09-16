@@ -1,0 +1,72 @@
+{
+  "verified_on": "2026-09-14",
+  "source_article": "https://doi.org/10.1126/scisignal.aaz1482",
+  "source_location": "Printed article page7, exchange-benchmark paragraph; original deposited table column labels",
+  "record_url": "https://zenodo.org/records/3583004",
+  "archive_url": "https://zenodo.org/api/records/3583004/files/Human1_Publication_Data_Scripts.zip/content",
+  "archive_member": "Human1_Publication_Data_Scripts/ec_GEMs/DataFiles/exchangeFluxes_NCI60.txt",
+  "member_sha256": "42417758da78723a60d466224933919bbac08cb6aa28dc3a7ab09490fbbe900d",
+  "zip_crc32_verified": true,
+  "source_cell_lines": [
+    "HT29",
+    "HOP-62",
+    "786-O",
+    "MALME-3M",
+    "UO-31",
+    "HS 578T",
+    "HOP-92",
+    "NCI-H226",
+    "MDA-MB-231/ATCC",
+    "RPMI 8226",
+    "SR"
+  ],
+  "matched_development_profiles": [
+    {
+      "context_id": "RE:786-0",
+      "core_label": "786-O"
+    },
+    {
+      "context_id": "LC:HOP-62",
+      "core_label": "HOP-62"
+    },
+    {
+      "context_id": "LC:HOP-92",
+      "core_label": "HOP-92"
+    },
+    {
+      "context_id": "BR:HS 578T",
+      "core_label": "HS 578T"
+    },
+    {
+      "context_id": "CO:HT29",
+      "core_label": "HT29"
+    },
+    {
+      "context_id": "ME:MALME-3M",
+      "core_label": "MALME-3M"
+    },
+    {
+      "context_id": "BR:MDA-MB-231",
+      "core_label": "MDA-MB-231/ATCC"
+    },
+    {
+      "context_id": "LC:NCI-H226",
+      "core_label": "NCI-H226"
+    },
+    {
+      "context_id": "LE:RPMI-8226",
+      "core_label": "RPMI 8226"
+    },
+    {
+      "context_id": "LE:SR",
+      "core_label": "SR"
+    },
+    {
+      "context_id": "RE:UO-31",
+      "core_label": "UO-31"
+    }
+  ],
+  "development_match_exact": true,
+  "reserved_profiles_outside_subset": 47,
+  "scope": "Membership reconciliation only. Does not assign validity or quantify bias to individual culture, assay or comparison. Original predictions and endpoints unchanged."
+}

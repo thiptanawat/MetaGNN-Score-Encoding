@@ -1,35 +1,50 @@
 #!/usr/bin/env python3
-"""Check every numeric claim in the manuscript against the saved analysis outputs.
+"""Trace every numeric claim in the manuscript back to the artefact in this repository that produced it.
 
-Each check states the claim, recomputes or re-reads the value from the artefact that produced
-it, and compares. A claim that cannot be traced to an artefact is reported as UNCOVERED rather
-than passed, so the gap is visible instead of implied.
+Each check names the claim, re-reads or recomputes the value from the deposited artefact, and
+compares. When the manuscript and supplement text files are supplied, the check also confirms
+that the quoted claim string appears in one of them; without them the checker runs in
+values-only mode and reports the text test as not applicable. A claim that cannot be traced to
+an artefact is listed as UNCOVERED at the end rather than passed, so the gap is visible.
 
-The paths are those of the study working tree in which the analyses ran, with the manuscript
-and supplement placed next to this script. The same files are deposited here under results/,
-data/, mechanism/ and copeland/: cpu_study_2026-09-13/results/reserved_v3 -> results/ and
-data/reserved_v3, mechanism_2026-09-14 -> results/reserved_range, results/uniform_control and
-data/mechanism, closure_2026-09-16/results -> results/closure and data/closure,
-copeland_2026-09-14 -> results/copeland and data/copeland, strengthening_reference_checked_2026-09-14
--> results/coverage, results/endpoint and results/bottleneck_pilot.
+Usage, from the repository root:
+
+    python verify/verify_manuscript_numbers.py                      # values only
+    python verify/verify_manuscript_numbers.py --manuscript M.md --supplement S.md
+
+The manuscript sources are not part of this repository; they accompany the article.
 """
-import csv, json, re, sys
+import argparse, csv, json, re, sys
 from collections import defaultdict
 from pathlib import Path
 import numpy as np
 
-HERE = Path(__file__).resolve().parent
-BASE = HERE.parent
-TEXT = (HERE / "Paper3_PeerJ_Manuscript.md").read_text()
-SUPP = (HERE / "Supplemental_Article_S1.md").read_text()
-CLOS = BASE / "closure_2026-09-16" / "results"
+ap = argparse.ArgumentParser()
+ap.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1], help="repository root")
+ap.add_argument("--manuscript", type=Path, default=None, help="main text, Markdown")
+ap.add_argument("--supplement", type=Path, default=None, help="supplementary article, Markdown")
+args = ap.parse_args()
+ROOT = args.root.resolve()
+TEXT = args.manuscript.read_text() if args.manuscript else None
+SUPP = args.supplement.read_text() if args.supplement else ""
+VALUES_ONLY = TEXT is None
+
+# The analyses were run in dated workstation folders; the deposited copies live under results/.
+PATH_MAP = [
+    ("cpu_study_2026-09-13/", ""),
+    ("closure_2026-09-16/results/", "results/closure/"),
+    ("copeland_2026-09-14/", "results/copeland/"),
+    ("mechanism_2026-09-14/", "results/mechanism/"),
+    ("strengthening_reference_checked_2026-09-14/computation/", "results/coverage/"),
+    ("strengthening_reference_checked_2026-09-14/endpoint_audit/", "results/endpoint/"),
+]
 
 results = []
 
 
 def check(label, claim_in_text, expected, actual, tol=0.0):
-    """Confirm the string appears in the manuscript and that the artefact value matches."""
-    present = claim_in_text in TEXT or claim_in_text in SUPP
+    """Confirm the artefact value matches and, when texts are supplied, that the claim string appears."""
+    present = None if VALUES_ONLY else (claim_in_text in TEXT or claim_in_text in SUPP)
     if isinstance(expected, str):
         ok_value = str(actual) == expected
     else:
@@ -37,12 +52,19 @@ def check(label, claim_in_text, expected, actual, tol=0.0):
     results.append((label, present, ok_value, claim_in_text, expected, actual))
 
 
+def repo_path(rel):
+    for old, new in PATH_MAP:
+        if rel.startswith(old):
+            return ROOT / (new + rel[len(old):])
+    return ROOT / rel
+
+
 def load_json(rel):
-    return json.load(open(BASE / rel))
+    return json.load(open(repo_path(rel)))
 
 
 def load_tsv(rel):
-    return list(csv.DictReader(open(BASE / rel), delimiter="\t"))
+    return list(csv.DictReader(open(repo_path(rel)), delimiter="\t"))
 
 
 # ---------------------------------------------------------------- encoding sensitivity
@@ -94,7 +116,7 @@ res = loc["reserved_primary_stage_resolved"]
 check("targets fixed by the network alone", "only 3 of the 52 exchange targets", 3, res["magnitude_g1.00"]["targets_fixed_by_B0_alone"])
 check("free targets", "The other 49 retained feasible width", 49, res["magnitude_g1.00"]["targets_with_admissible_width_at_B0"])
 consts = [v["of_those_constant_across_profiles_at_B2"] for a, v in res.items() if a.startswith("magnitude")]
-check("constant across profiles, magnitude arms", "41 or 42 were numerically identical", True, set(consts) <= {41, 42})
+check("constant across profiles, magnitude arms", "41 or 42 had identical midpoints across all 47 profiles", True, set(consts) <= {41, 42})
 check("constant across profiles, midrank", "35 under the midrank encoding", 35, res["ordinal"]["of_those_constant_across_profiles_at_B2"])
 meds = [v["B2_exploration_median"] for a, v in res.items()]
 check("median exploration order of magnitude", "3.0 to 4.3 parts in 10 billion", True, 2.9e-10 <= min(meds) and max(meds) <= 4.4e-10)
@@ -110,7 +132,7 @@ uc_counts = uc["counts"]
 check("uniform control already_fixed_B0", "| Uniform cost, no transcript information | 3 | 43 | 1 | 5 |", 3, uc_counts["already_fixed_B0"])
 check("uniform control first_fixed_B1", "fixed 43 of the same 49 free targets", 43, uc_counts["first_fixed_B1"])
 check("uniform control share", "87.8 percent", 43 / 49, round(uc["share_of_free_first_fixed_by_B1"], 9), tol=1e-9)
-check("weighting accounts for", "between 2.4 and 3.9 percentage points", True,
+check("count difference weighted minus uniform", "2.4 to 3.9 percentage points", True,
       round(min(free_share.values()) - 100 * 43 / 49, 1) == 2.4 and round(max(free_share.values()) - 100 * 43 / 49, 1) == 3.9)
 
 # ---------------------------------------------------------------- cap-tolerance sweep
@@ -147,7 +169,7 @@ check("uniform 1e-6 fixed", "| Uniform | \\(10^{-6}\\) | 10.0 |", 10.0, round(cf
 check("identity median width at 1e-6", "\\(6\\times10^{-5}\\) units per \\(10^{-6}\\)", 6e-5, cf["magnitude_g1.00"]["rel_1e-6"]["median_width"], tol=0.2e-5)
 wr = [cf["magnitude_g1.00"][b]["median_width"] / cf["magnitude_g1.00"][a]["median_width"]
       for a, b in (("rel_1e-6", "rel_1e-5"), ("rel_1e-5", "rel_1e-4"), ("rel_1e-4", "rel_1e-3"))]
-check("proportional widening, tenfold per decade", "in proportion to the tolerance", True, all(abs(r - 10) < 0.05 for r in wr))
+check("proportional widening, tenfold per decade", "in proportion to the allowance over the tested grid", True, all(abs(r - 10) < 0.05 for r in wr))
 for arm, key in (("magnitude_g1.00", "Identity"), ("ordinal", "Midrank"), ("uniform_pfba", "Uniform")):
     for cap, lab in (("rel_1e-6", "\\(10^{-6}\\)"), ("rel_1e-5", "\\(10^{-5}\\)"), ("rel_1e-4", "\\(10^{-4}\\)"), ("rel_1e-3", "\\(10^{-3}\\)")):
         fx = cf[arm][cap]["mean_fixed_of_52"]; w = cf[arm][cap]["mean_width"]; rp = cfc[arm][cap]["resolved_pairs"]
@@ -161,8 +183,8 @@ check("resolved at 1e-3", "none and 652", True, (cfc["magnitude_g1.00"]["rel_1e-
 fine_acc = [cfc[a][c]["accuracy_among_resolved"] for a in ("magnitude_g1.00", "ordinal") for c in ("rel_1e-6", "rel_1e-5", "rel_1e-4", "rel_1e-3")
             if cfc[a][c]["accuracy_among_resolved"] is not None]
 check("accuracy along the sweep", "stayed between 0.52 and 0.66", True, 0.52 <= min(fine_acc) and max(fine_acc) <= 0.66)
-check("uniform resolves nothing on the fine grid", "The uniform cost resolved no pair at any tolerance", 0, sum(cfc["uniform_pfba"][c]["resolved_pairs"] for c in ("rel_1e-6", "rel_1e-5", "rel_1e-4", "rel_1e-3")))
-check("coverage at the study cap", "from 10 to 14 percent of pairs to zero at 1 percent", True,
+check("uniform resolves nothing on the fine grid", "The uniform cost resolved no pair at any allowance", 0, sum(cfc["uniform_pfba"][c]["resolved_pairs"] for c in ("rel_1e-6", "rel_1e-5", "rel_1e-4", "rel_1e-3")))
+check("coverage at the study cap", "from 10 to 14 percent of pairs to none at 1 percent", True,
       round(100 * cc["magnitude_g1.00"]["exact"]["resolved_pairs"] / 46447) == 10 and round(100 * cc["ordinal"]["exact"]["resolved_pairs"] / 46447) == 14)
 
 # ---------------------------------------------------------------- supporting statistics
@@ -170,19 +192,31 @@ st = load_json("closure_2026-09-16/results/stat_repairs/stat_repairs.json")
 check("evaluator reproduction", "reproduced the locked pair count, target count and every arm's macro concordance exactly", 0.0, st["reproduction"]["max_abs_diff"])
 m = st["minimum_detectable_effect"]
 check("constant targets in every magnitude arm", "43 of the 52 targets were constant across all 47 profiles in all five magnitude arms", 43, m["constant_targets_all_magnitude_arms"])
-check("informative targets", "9 informative magnitude-arm targets", 9, m["informative_targets"])
+check("informative targets", "the 9 targets that vary within the magnitude family", 9, m["informative_targets"])
 check("contrast half-width", "0.0078 on the macro scale", 0.0078, round(m["delta_grid_halfwidth_macro"], 4))
-check("MDE", "0.045 concordance points on those 9 targets", 0.045, round(m["mde_on_informative_targets"], 3))
+check("MDE", "to the 9 magnitude-varying targets 0.045", 0.045, round(m["mde_on_informative_targets"], 3))
 need = m["informative_mean_C_needed_for_observed"]
-check("informative mean needed", "must therefore have averaged 0.53 to 0.55", True, 0.525 <= min(need[a] for a in need if a.startswith("magnitude")) and max(need.values()) <= 0.55)
-c = st["common_resolved_subset"]
-check("common subset pairs", "3,113 pairs over 6 targets", 3113, c["pairs"])
-check("common subset targets", "3,113 pairs over 6 targets", 6, c["targets"])
-check("common subset contrast", "grid contrast of -0.016", -0.016, round(c["delta_grid"], 3))
-check("common subset interval low", "-0.080 to 0.050", -0.080, round(c["delta_grid_ci95"][0], 3))
-check("common subset interval high", "-0.080 to 0.050", 0.050, round(c["delta_grid_ci95"][1], 3))
-check("common subset magnitude range", "0.511 to 0.568", True, round(min(c["macro_C"][a] for a in c["macro_C"] if a.startswith("magnitude")), 3) == 0.511 and round(max(c["macro_C"][a] for a in c["macro_C"] if a.startswith("magnitude")), 3) == 0.568)
-check("common subset midrank", "0.527 for the midrank", 0.527, round(c["macro_C"]["ordinal"], 3))
+check("informative mean needed", "must have averaged 0.53 to 0.55", True, 0.525 <= min(need[a] for a in need if a.startswith("magnitude")) and max(need.values()) <= 0.55)
+s3 = load_json("closure_2026-09-16/results/stat_repairs3/stat_repairs3.json")
+c = s3["common_point_nontied_subset"]
+check("common point-nontied pairs", "3,113 pairs over 6 targets", 3113, c["pairs"])
+check("common point-nontied targets", "3,113 pairs over 6 targets", 6, c["targets"])
+check("common point-nontied contrast", "grid contrast of -0.016", -0.016, round(c["delta_grid"], 3))
+check("common point-nontied interval low", "-0.080 to 0.050", -0.080, round(c["delta_grid_ci95_fixed_panel_conditional"][0], 3))
+check("common point-nontied interval high", "-0.080 to 0.050", 0.050, round(c["delta_grid_ci95_fixed_panel_conditional"][1], 3))
+check("common point-nontied invalid draws", "1,990 of 2,000 draws", 10, c["bootstrap_accounting"]["invalid_draws"])
+check("common point-nontied magnitude range", "0.511 to 0.568", True, round(min(c["macro_C"][a] for a in c["macro_C"] if a.startswith("magnitude")), 3) == 0.511 and round(max(c["macro_C"][a] for a in c["macro_C"] if a.startswith("magnitude")), 3) == 0.568)
+check("common point-nontied midrank", "0.527 for the midrank", 0.527, round(c["macro_C"]["ordinal"], 3))
+ci_ = s3["common_interval_resolved_subset"]
+check("common interval-resolved pairs", "3,085 pairs", 3085, ci_["pairs"])
+check("common interval-resolved contrast", "(-0.016; -0.080 to 0.050)", -0.016, round(ci_["delta_grid"], 3))
+check("common interval-resolved interval", "(-0.016; -0.080 to 0.050)", True, [round(x, 3) for x in ci_["delta_grid_ci95_fixed_panel_conditional"]] == [-0.080, 0.050])
+check("common interval-resolved invalid draws", "1,990 of 2,000 for both subsets", 10, ci_["bootstrap_accounting"]["invalid_draws"])
+check("primary fixed-panel invalid draws", "All 2,000 origin-bootstrap draws were estimable", 0, s3["primary_fixed_panel_accounting"]["bootstrap_accounting"]["invalid_draws"])
+ca_ = s3["contrast_arithmetic"]
+check("contrast can be nonzero on 14", "the 14 targets that vary in at least one of the six arms", 14, ca_["targets_where_contrast_can_be_nonzero"])
+check("contrast contributions sum to locked", "sum to the locked -0.0013", True, abs(ca_["sum_of_contributions"] - ca_["delta_grid_locked"]) < 1e-9 and round(ca_["delta_grid_locked"], 4) == -0.0013)
+check("constant in all six arms", "38 in all six arms", 38, ca_["constant_in_all_six_arms"])
 rt = st["reserved_tolerance"]
 check("tolerance ratio", "median 1.32 times larger", 1.32, round(rt["median_ratio"], 2))
 check("pairs removed by reserved tolerance", "removed 3,190 pairs", 3190, rt["eligible_pairs_development_tolerance"] - rt["eligible_pairs"])
@@ -226,12 +260,13 @@ check("panel distance", "the median relative L1 distance was 0.016", 0.016, roun
 check("panel exchanges differing", "median of 6 of the 96 exchanges", 6, pr["panel_exchanges_differing_median"])
 
 # ---------------------------------------------------------------- independent evaluation
-ce = load_json("copeland_2026-09-14/evaluation/copeland_evaluation.json")
+ce = load_json("copeland_2026-09-14/evaluation_r5/copeland_evaluation.json")
 s = ce["summary"]
 check("declared contrasts", "Of the 8 declared contrasts", 8, s["measured|primary_five_power"]["contrasts"])
 check("measurement-eligible", "the measurements resolved 2", 2, s["measured|primary_five_power"]["measurement_eligible"])
-check("reported under the original task", "reported a direction for none of the 8", 0, s["fraction|primary_five_power"]["interval_reported"])
-check("reported under measured growth", "reported a direction for all 8 contrasts", 8, s["measured|primary_five_power"]["interval_reported"])
+check("reported under the original task", "reported a direction for none of the 8 contrasts under either version of the rule", 0, s["fraction|primary_five_power"]["interval_reported"] + s["fraction|primary_five_power"]["interval_reported_pooled"])
+check("reported under measured growth", "reported a direction for all 8 contrasts under both versions", 8, s["measured|primary_five_power"]["interval_reported"])
+check("reported under measured growth, pooled", "reported a direction for all 8 contrasts under both versions", 8, s["measured|primary_five_power"]["interval_reported_pooled"])
 check("uniform reference coverage", "reported a direction for 4 of the 8", 4, s["measured|context_independent_baseline"]["interval_reported"])
 mv = ce["measured_values"]
 check("lactate 21 percent vehicle mean", "975.2 to 1,345.3", 975.2, round(float(np.mean(mv["lactate|21%|DMSO"])), 1))
@@ -252,7 +287,7 @@ ratios = [v["ratio_transcript_to_task"] for k, v in d.items() if k.startswith("m
 check("magnitude ratio range", "1.1 to 2.9 percent", True, 1.0 <= 100 * min(ratios) and 100 * max(ratios) <= 3.0)
 ratios_o = [v["ratio_transcript_to_task"] for k, v in d.items() if k.startswith("ordinal") and v["ratio_transcript_to_task"]]
 check("midrank ratio range", "4.6 to 5.2 percent", True, 4.5 <= 100 * min(ratios_o) and 100 * max(ratios_o) <= 5.3)
-ct = load_tsv("copeland_2026-09-14/evaluation/condition_table.tsv")
+ct = load_tsv("copeland_2026-09-14/evaluation_r5/condition_table.tsv")
 for r in ct:
     check("condition table predicted lactate identity %s %s" % (r["oxygen"], r["treatment"]), "| %s | %s (" % (r["growth_per_h"], "{:,.1f}".format(float(r["measured_lactate_mean"]))), float(r["predicted_lactate_identity"]), float(r["predicted_lactate_identity"]))
 
@@ -318,8 +353,8 @@ check("two-stage 1pct identity identical", "44 of 52 targets were constant acros
 check("two-stage 1pct identity resolved", "resolved 3,958 pairs at 0.558", 3958, t1["resolved_pairs"])
 check("two-stage 1pct identity C", "0.5050 (0.5005 to 0.5096)", 0.5050, round(t1["point_macro_C"], 4))
 tb = ts["both_0.01"]["arms"]
-check("two-stage both 1pct identity resolved", "resolved no pair under the identity encoding and 36 under the midrank", 0, tb["magnitude_g1.00"]["resolved_pairs"])
-check("two-stage both 1pct midrank resolved", "resolved no pair under the identity encoding and 36 under the midrank", 36, tb["ordinal"]["resolved_pairs"])
+check("two-stage both 1pct identity resolved", "resolved no pair under the identity encoding but 36 under the midrank", 0, tb["magnitude_g1.00"]["resolved_pairs"])
+check("two-stage both 1pct midrank resolved", "resolved no pair under the identity encoding but 36 under the midrank", 36, tb["ordinal"]["resolved_pairs"])
 check("two-stage both 1pct points", "scored 0.5023 and 0.5034", True, round(tb["magnitude_g1.00"]["point_macro_C"], 4) == 0.5023 and round(tb["ordinal"]["point_macro_C"], 4) == 0.5034)
 t20 = ts["cost_0.2_parsimony_exact"]["arms"]["magnitude_g1.00"]
 check("two-stage 20pct identity all constant", "all 52 targets were constant across profiles, 49 of 49 free targets were identical", 52, t20["targets_constant_across_profiles_of_52"])
@@ -340,11 +375,11 @@ check("targets differing from uniform, median range", "only 5 to 8 of the 52 rep
 rng_ = [x for v in uv.values() for x in v["targets_of_52_differing_from_uniform_min_max"]]
 check("targets differing from uniform, min max", "range 3 to 10", True, min(rng_) == 3 and max(rng_) == 10)
 mde = s2["mde"]
-check("informative any arm", "0.029 on the 14 targets that vary in any arm", 14, mde["informative_targets_any_arm"])
+check("informative any arm", "to those 14 targets gives 0.029 concordance points", 14, mde["informative_targets_any_arm"])
 hw_locked = m["delta_grid_halfwidth_macro"]; zf = (1.959964 + 0.841621) / 1.959964
-check("mde union halfwidth", "0.029 on the 14 targets", 0.029, round(hw_locked * 52 / 14, 3))
-check("mde 80 on 9", "0.064 and 0.041 respectively", 0.064, round(hw_locked * 52 / 9 * zf, 3))
-check("mde 80 on union", "0.064 and 0.041 respectively", 0.041, round(hw_locked * 52 / 14 * zf, 3))
+check("mde union halfwidth", "to those 14 targets gives 0.029 concordance points", 0.029, round(hw_locked * 52 / 14, 3))
+check("mde 80 on 9", "80 percent power at 0.041 and 0.064", 0.064, round(hw_locked * 52 / 9 * zf, 3))
+check("mde 80 on union", "80 percent power at 0.041 and 0.064", 0.041, round(hw_locked * 52 / 14 * zf, 3))
 pc_ = s2["power_curve"]["curve"]
 check("power curve values", "0.52, 0.78, 0.89, 0.96, 0.98", True, [round(x["power"], 2) for x in pc_] == [0.52, 0.78, 0.89, 0.96, 0.98])
 check("power curve realized macro", "0.0077", True, [round(x["realized_true_contrast_macro"], 4) for x in pc_] == [0.0077, 0.0138, 0.0185, 0.0232, 0.0300])
@@ -367,12 +402,18 @@ check("inversions magnitude", "by at most \\(1.3\\times10^{-15}\\) units", True,
 check("inversions in resolved pairs", "none entered a resolved pair", 0, inv_["primary"]["inverted_coordinates_entering_a_resolved_primary_pair"])
 
 # ---------------------------------------------------------------- solver and ladders
-sc = load_json("closure_2026-09-16/results/solver_check/solver_check.json")
-check("solver arms", "16 arms and 832 reported coordinates", 832, sc["coordinates"])
-check("solver fixed agreement", "832 of 832", 1.0, sc["fixed_classification_agreement"])
-check("solver points within", "831 of 832", 831, round(sc["points_within_1e-5"] * 832))
-check("solver sign agreement", "2,911 of 2,912", 2911, round(sc["between_profile_sign_agreement"] * sc["sign_comparisons"]))
-check("solver max diff", "maximum \\(2.1\\times10^{-4}\\)", 2.1e-4, round(sc["point_abs_diff_max"], 5), tol=1e-5)
+sc = load_json("closure_2026-09-16/results/solver_check_96/solver_check.json")
+check("solver selection list", "production list of 96 exchanges", 96, sc["selection_list_size"])
+check("solver arms", "16 arms and 1,536 reported coordinates", 1536, sc["coordinates"])
+check("solver fixed agreement", "1,536 of 1,536", 1.0, sc["fixed_classification_agreement"])
+check("solver points within", "every point value within \\(10^{-5}\\)", 1.0, sc["points_within_1e-5"])
+check("solver sign agreement", "5,375 of 5,376", 5375, round(sc["between_profile_sign_agreement"] * sc["sign_comparisons"]))
+check("solver max diff", "maximum \\(1.0\\times10^{-6}\\)", 1.0e-6, sc["point_abs_diff_max"], tol=1e-7)
+check("solver 52-target subset all within", "all 832 points agreed within", 1.0, sc["primary_52_subset"]["points_within_1e-5"])
+sc0 = load_json("closure_2026-09-16/results/solver_check/solver_check.json")
+check("first solver run fixed", "832 of 832 fixed classifications", 1.0, sc0["fixed_classification_agreement"])
+check("first solver run points", "831 of 832 points within", 831, round(sc0["points_within_1e-5"] * 832))
+check("first solver run signs", "2,911 of 2,912 signs", 2911, round(sc0["between_profile_sign_agreement"] * sc0["sign_comparisons"]))
 for scen, rng_b1, rng_id in (("half_serum", (2117, 2222), (39, 42)), ("lower_task", (2094, 2211), (39, 41))):
     ls = load_json("closure_2026-09-16/results/ladders/ladder_summary_%s.json" % scen)
     b1 = [v["first_fixed"]["first_fixed_B1"] for v in ls["arms"].values()]; idn = [v["identical_across_profiles"] for v in ls["arms"].values()]
@@ -385,8 +426,16 @@ for scen, rng_b1, rng_id in (("half_serum", (2117, 2222), (39, 42)), ("lower_tas
 mt = load_json("copeland_2026-09-14/run_meantask/run_summary.json")
 check("mean task completed", "112 under the third task", 112, mt["completed"])
 check("mean task grand mean", "0.0217 per hour", 0.0217, round(mt["grand_mean_growth_rate_per_hour"], 4))
-me = load_json("copeland_2026-09-14/evaluation_meantask/copeland_evaluation.json")["summary"]
-check("mean task reported", "the rule again reported a direction for none of the 8 contrasts", 0, me["mean_measured|primary_five_power"]["interval_reported"])
+me = load_json("copeland_2026-09-14/evaluation_meantask_r5/copeland_evaluation.json")["summary"]
+check("mean task reported, planned rule, five powers", "reported a direction for 1 of the 8 contrasts under the five power encodings", 1, me["mean_measured|primary_five_power"]["interval_reported"])
+check("mean task reported, pooled rule", "the stricter pooled rule reported none under any set", 0, sum(v["interval_reported_pooled"] for v in me.values()))
+check("mean task reported, six encodings", "for none under the six-encoding set or the uniform cost", 0, me["mean_measured|sensitivity_six_with_ordinal"]["interval_reported"] + me["mean_measured|context_independent_baseline"]["interval_reported"])
+md_rows = load_tsv("copeland_2026-09-14/evaluation_meantask_r5/copeland_decisions.tsv")
+gl = [r for r in md_rows if r["encoding_family"] == "primary_five_power" and r["contrast"] == "oxy_dmso" and r["exchange_id"] == "EX_glc__D_e"][0]
+check("mean task reported contrast is glucose oxygen vehicle", "glucose uptake in the vehicle-treated cells between the two oxygen levels", "1", gl["interval_direction_shared"])
+check("mean task reported contrast not eligible", "The one reported contrast is not measurement-eligible", "0", gl["measured_direction"])
+check("mean task reported contrast separation", "its predicted separation was at most 0.004 units", True, 0 < float(gl["a_max_hi"]) - float(gl["b_min_lo"]) <= 0.004)
+check("mean task rule disagreement", "| Mean measured growth rate, condition independent | Five powers | 8 | 2 | 1 | 0 |", 1, me["mean_measured|primary_five_power"].get("rule_disagreements", 0))
 mp = load_tsv("copeland_2026-09-14/run_meantask/predictions.tsv")
 lac = defaultdict(list)
 for r in mp:
@@ -406,16 +455,17 @@ print("-" * 74)
 bad = 0
 for label, present, ok, claim, exp, act in results:
     flag = "ok" if ok else "MISMATCH"
-    tflag = "yes" if present else "NOT FOUND"
-    if not ok or not present:
+    tflag = "n/a" if present is None else ("yes" if present else "NOT FOUND")
+    if not ok or present is False:
         bad += 1
     print("%-52s %-10s %-8s" % (label[:52], tflag, flag))
     if not ok:
         print("      claim %r expected %r got %r" % (claim, exp, act))
-    elif not present:
+    elif present is False:
         print("      expected string not located: %r" % claim)
 print("-" * 74)
-print("%d checks, %d problems" % (len(results), bad))
+mode = "values only; pass --manuscript and --supplement to also locate each claim in the text" if VALUES_ONLY else "values and text"
+print("%d checks, %d problems (%s)" % (len(results), bad, mode))
 
 uncovered = [
     "Table 4 per-scenario sensitivity counts (340 and 383 of 2,444; 2,507 and 2,575 reversals)",

@@ -1,0 +1,17 @@
+ 14/112 S02  ordinal          optimal 37s
+ 28/112 S05  uniform_pfba     optimal 56s
+ 42/112 S07  magnitude_g2.00  optimal 74s
+ 56/112 S08  magnitude_g2.00  optimal 91s
+ 70/112 S11  magnitude_g0.80  optimal 110s
+ 84/112 S12  uniform_pfba     optimal 128s
+ 98/112 S14  ordinal          optimal 159s
+112/112 S16  uniform_pfba     optimal 175s
+{
+ "completed": 112,
+ "failed": 0,
+ "jobs": 112,
+ "seconds": 182.0,
+ "grand_mean_growth_rate_per_hour": 0.021723070697991727,
+ "failures": []
+}
+FINISHED

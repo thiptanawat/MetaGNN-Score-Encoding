@@ -42,6 +42,27 @@ def interval_direction(intervals_a, intervals_b, eps=EPS):
     return 0
 
 
+def shared_encoding_direction(intervals_by_arm_a, intervals_by_arm_b, eps=EPS):
+    """The planned rule: every encoding must support the same direction on its own intervals.
+
+    intervals_by_arm_* map an encoding name to the list of (lo, hi) over the replicate profiles
+    of one condition. Within each encoding every cross-replicate pair must clear eps; a
+    direction is reported only when every encoding in the set reports that same direction.
+    Intervals of different encodings are never compared with each other, which is what
+    distinguishes this rule from interval_direction applied to the pooled lists.
+    """
+    arms = sorted(set(intervals_by_arm_a) | set(intervals_by_arm_b))
+    if not arms:
+        return 0
+    dirs = [interval_direction(intervals_by_arm_a.get(arm, []), intervals_by_arm_b.get(arm, []), eps)
+            for arm in arms]
+    if all(d == 1 for d in dirs):
+        return 1
+    if all(d == -1 for d in dirs):
+        return -1
+    return 0
+
+
 def point_category(points_a, points_b, eps=EPS):
     """Classify the point comparison without collapsing ties into disagreement."""
     diffs = [a - b for a in points_a for b in points_b]

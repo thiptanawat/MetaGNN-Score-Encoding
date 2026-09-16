@@ -1,0 +1,8 @@
+{
+  "python": "3.12.6 (v3.12.6:a4a2d2b0d85, Sep  6 2024, 16:08:03) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "dependencies": "Python standard library only",
+  "new_lp_solves": 0,
+  "source_programs_from_original_study_executed": false
+}

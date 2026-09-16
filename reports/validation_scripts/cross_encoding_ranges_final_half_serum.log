@@ -1,0 +1,18 @@
+{
+  "output": "results/reserved_v3/postlock_range_sensitivity_half_serum.json",
+  "created_at_utc": "2026-09-13T17:22:49.484828+00:00",
+  "primary": {
+    "contexts": 47,
+    "origins": 44,
+    "targets": 52,
+    "context_target_cells": 2444,
+    "distinct_origin_context_pairs": 1078,
+    "distinct_origin_context_target_pairs": 56056,
+    "point_changed_cells": 340,
+    "disjoint_interval_cells": 339,
+    "disjoint_cells_without_point_change": 0,
+    "point_strict_reversal_pairs": 2507,
+    "robust_interval_reversal_pairs": 2501,
+    "robust_reversals_without_point_reversal": 0
+  }
+}

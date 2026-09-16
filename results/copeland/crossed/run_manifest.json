@@ -1,0 +1,13 @@
+{
+ "started_at_utc": "2026-09-14T03:35:21.883195+00:00",
+ "jobs": 448,
+ "design": "16 transcript profiles crossed with 4 condition growth rates, all arms",
+ "condition_mean_growth_rate_per_hour": {
+  "0.5%|BAY": 0.017940953683000735,
+  "0.5%|DMSO": 0.01983084473213053,
+  "21%|BAY": 0.021948251260647308,
+  "21%|DMSO": 0.027172233116188327
+ },
+ "target_outcomes_read": false,
+ "crossed_runner_sha256": "60d7ec6db7cad8020dcfe641bc488df77e1bdd09fbb21cdf9a152206bf1ea01d"
+}

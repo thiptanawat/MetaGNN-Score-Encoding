@@ -1,0 +1,27 @@
+{
+ "amendment": "A1",
+ "recorded_at_local": "2026-09-16",
+ "subject": "interval reporting rule: plan versus first implementation",
+ "plan_text": "copeland_plan.json, reporting_rule.shared_encoding_interval_support: report a direction only when, for every encoding in the uncertainty set and every cross-replicate profile pair between the two conditions, the lower bound of one exceeds the upper bound of the other by epsilon",
+ "first_implementation": "copeland_evaluate.py (14 September 2026) pooled the intervals of all encodings of a condition and required every interval of one condition to clear every interval of the other; this compares encodings with each other as well as profiles and is stricter than the planned rule",
+ "found_by": "external methods review of 16 September 2026, by recalculation from the saved intervals",
+ "repair": "copeland_rule.shared_encoding_direction implements the planned rule; copeland_evaluate.py now reports both rules side by side (columns interval_direction_shared and interval_direction_pooled; summary keys without suffix follow the planned rule, keys with _pooled the stricter rule); five known-answer tests were added for the planned rule",
+ "effect_on_results": {
+  "fixed_fraction_task": "unchanged: 0 of 8 reported under both rules for every encoding family",
+  "measured_growth_task": "unchanged: 8 of 8 reported under both rules for the five-power and six-encoding families, 4 of 8 for the uniform reference",
+  "condition_independent_mean_task": "five-power family: 1 of 8 under the planned rule (glucose, oxygen contrast under vehicle, 21 percent numerically above 0.5 percent, separation at most 0.004 units) against 0 of 8 under the pooled rule; this contrast is not measurement-eligible; six-encoding family and uniform reference unchanged at 0 of 8"
+ },
+ "no_new_optimization": true,
+ "outputs": {
+  "evaluation_r5": "run/ rescored with both rules",
+  "evaluation_meantask_r5": "run_meantask/ rescored with both rules",
+  "evaluation and evaluation_meantask": "the 14 September outputs, kept unchanged for the record"
+ },
+ "hashes": {
+  "copeland_plan.json": "0f4f7281478075966ff1361784f4abddd64273e7254d383e57c7a7b77cfbb1bb",
+  "copeland_rule.py": "17672a301fc8319d04a76cc0d793d2ecb8977fd48fa1137bd016d8a112cfbca2",
+  "copeland_evaluate.py": "6fcee8ecd248b6e47e65425974fdc037b89707b895571d572bee1dbe3083ea35",
+  "copeland_rule.py.pre_r5": "11b4266dcf6f5320c66f970224f32fafb907d9e8d117eefa4337b39263aee279",
+  "copeland_evaluate.py.pre_r5": "53c59d48ee94f4188d272de9b3b2c792ee4d8ab7b88307f068a7550f52e5e837"
+ }
+}

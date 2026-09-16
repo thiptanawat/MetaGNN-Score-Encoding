@@ -1,0 +1,69 @@
+{
+  "shared_python_environment": ".venv/bin/python",
+  "main_result_read_before_isolated_prediction": false,
+  "files": [
+    {
+      "relative_path": "src/cpu_model.py",
+      "source": "src/cpu_model.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+      "bytes": 4026
+    },
+    {
+      "relative_path": "src/cpu_readout.py",
+      "source": "src/cpu_readout.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+      "bytes": 5204
+    },
+    {
+      "relative_path": "src/medium_v2.py",
+      "source": "src/medium_v2.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "903676da2bc73daddc4b2d1dd702a764146fab0ddc54aca4cf975aa2f74440b0",
+      "bytes": 8653
+    },
+    {
+      "relative_path": "configs/study.json",
+      "source": "configs/study.json",
+      "role": "final v3 production source/config/environment",
+      "sha256": "0c597b4a88854972386c510f97dd0ec4b9285f270d834340ee4e88bee6fa82fb",
+      "bytes": 1298
+    },
+    {
+      "relative_path": "environment.lock",
+      "source": "environment.lock",
+      "role": "final v3 production source/config/environment",
+      "sha256": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607",
+      "bytes": 746
+    },
+    {
+      "relative_path": "data/raw/Recon3D.json",
+      "source": "work/reproduction_clean/data/raw/Recon3D.json",
+      "role": "fresh data build input",
+      "sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "bytes": 7839114
+    },
+    {
+      "relative_path": "data/scores_conservative.npz",
+      "source": "work/reproduction_clean/data/scores_conservative.npz",
+      "role": "fresh data build input",
+      "sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "bytes": 406695
+    },
+    {
+      "relative_path": "manifests/contexts.tsv",
+      "source": "work/reproduction_clean/manifests/contexts.tsv",
+      "role": "fresh data build input",
+      "sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "bytes": 7874
+    },
+    {
+      "relative_path": "manifests/metabolite_map.tsv",
+      "source": "work/reproduction_clean/manifests/metabolite_map.tsv",
+      "role": "fresh data build input",
+      "sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "bytes": 28128
+    }
+  ]
+}

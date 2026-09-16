@@ -1,6 +1,7 @@
 """Known-answer checks for the Copeland reporting rule, written before any prediction was read."""
 import unittest
-from copeland_rule import (EPS, measured_direction, interval_direction, point_category, agreement)
+from copeland_rule import (EPS, measured_direction, interval_direction, shared_encoding_direction,
+                           point_category, agreement)
 
 
 class Measured(unittest.TestCase):
@@ -51,6 +52,38 @@ class Intervals(unittest.TestCase):
 
     def test_empty_input_abstains(self):
         self.assertEqual(interval_direction([], [(1.0, 2.0)]), 0)
+
+
+class SharedEncodingRule(unittest.TestCase):
+    """The planned rule compares intervals within an encoding and then asks every encoding to agree."""
+
+    def test_every_encoding_supports_the_same_direction(self):
+        a = {"g1": [(10.0, 11.0), (10.5, 12.0)], "g2": [(5.0, 6.0)]}
+        b = {"g1": [(1.0, 2.0)], "g2": [(1.0, 2.0), (0.5, 1.5)]}
+        self.assertEqual(shared_encoding_direction(a, b), 1)
+        self.assertEqual(shared_encoding_direction(b, a), -1)
+
+    def test_one_encoding_overlapping_forces_abstention(self):
+        a = {"g1": [(10.0, 11.0)], "g2": [(1.5, 2.5)]}
+        b = {"g1": [(1.0, 2.0)], "g2": [(1.0, 2.0)]}
+        self.assertEqual(shared_encoding_direction(a, b), 0)
+
+    def test_encodings_disagreeing_in_direction_abstain(self):
+        a = {"g1": [(10.0, 11.0)], "g2": [(0.0, 0.5)]}
+        b = {"g1": [(1.0, 2.0)], "g2": [(1.0, 2.0)]}
+        self.assertEqual(shared_encoding_direction(a, b), 0)
+
+    def test_encodings_are_not_compared_with_each_other(self):
+        # each encoding clears within itself, but encoding g2 of A sits below encoding g1 of B;
+        # the pooled rule abstains, the shared rule reports
+        a = {"g1": [(10.0, 11.0)], "g2": [(3.0, 3.5)]}
+        b = {"g1": [(4.0, 5.0)], "g2": [(1.0, 2.0)]}
+        self.assertEqual(shared_encoding_direction(a, b), 1)
+        pooled_a = a["g1"] + a["g2"]; pooled_b = b["g1"] + b["g2"]
+        self.assertEqual(interval_direction(pooled_a, pooled_b), 0)
+
+    def test_missing_encoding_on_one_side_abstains(self):
+        self.assertEqual(shared_encoding_direction({"g1": [(10.0, 11.0)]}, {"g1": [(1.0, 2.0)], "g2": [(0.0, 1.0)]}), 0)
 
 
 class Points(unittest.TestCase):

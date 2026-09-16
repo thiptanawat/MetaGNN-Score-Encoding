@@ -25,9 +25,12 @@ import numpy as np
 from mechanism import linear_cost, regret, relative_l1
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = os.path.dirname(HERE)
-ARMS = os.path.join(BASE, "cpu_study_2026-09-13", "results", "reserved_v3", "arms")
-PANEL = os.path.join(BASE, "cpu_study_2026-09-13", "protocol", "analysis_plan.json")
+# The study root (the repository) can be overridden with STUDY_ROOT. The per-arm records under
+# results/reserved_v3/arms are a release asset; see verify/fetch_release_assets.sh. Outputs are
+# written into the current working directory.
+BASE = os.environ.get("STUDY_ROOT", os.path.dirname(HERE))
+ARMS = os.path.join(BASE, "results", "reserved_v3", "arms")
+PANEL = os.path.join(BASE, "protocol", "analysis_plan.json")
 SELF_TOL = 1e-6            # relative agreement required of the self-cost reconstruction
 ACTIVE_TOL = 1e-6          # a reaction counts as differing above this absolute flux difference
 

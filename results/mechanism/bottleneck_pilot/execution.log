@@ -1,0 +1,40 @@
+B0 complete 64.84
+1 BR:HS 578T ordinal complete 68.36
+2 BR:MDA-MB-231 magnitude_g1.00 complete 68.39
+3 BR:HS 578T magnitude_g1.00 complete 68.4
+4 BR:MDA-MB-231 ordinal complete 68.82
+5 LC:HOP-62 magnitude_g1.00 complete 68.25
+6 CO:HT29 ordinal complete 68.4
+7 LC:HOP-62 ordinal complete 68.27
+8 CO:HT29 magnitude_g1.00 complete 68.76
+9 LC:HOP-92 ordinal complete 68.47
+10 LC:HOP-92 magnitude_g1.00 complete 68.93
+11 LC:NCI-H226 magnitude_g1.00 complete 68.74
+12 LC:NCI-H226 ordinal complete 68.77
+13 LE:SR ordinal complete 67.68
+14 LE:RPMI-8226 magnitude_g1.00 complete 68.4
+15 LE:SR magnitude_g1.00 complete 68.27
+16 LE:RPMI-8226 ordinal complete 70.23
+17 ME:MALME-3M ordinal complete 68.35
+18 ME:MALME-3M magnitude_g1.00 complete 68.55
+19 RE:786-0 magnitude_g1.00 complete 68.61
+20 RE:786-0 ordinal complete 67.98
+21 RE:UO-31 ordinal complete 65.89
+22 RE:UO-31 magnitude_g1.00 complete 66.58
+{
+  "status": "complete_verified",
+  "completed_at_utc": "2026-09-13T19:02:03.524894+00:00",
+  "seconds": 475.39016491593793,
+  "B0_status": "complete",
+  "B1_completed": 22,
+  "B1_failed_or_incomplete": 0,
+  "B1_unstarted": 0,
+  "reused_B2_records": 22,
+  "target_context_arm_rows": 1144,
+  "validation_issues": [],
+  "all_input_hashes_unchanged": true,
+  "outcomes_read": false,
+  "point_tolerance": 1e-05,
+  "nesting_tolerance": 1e-06,
+  "interpretation": "Conditional within-profile coordinate restriction, not between-profile constancy or a biological bottleneck."
+}

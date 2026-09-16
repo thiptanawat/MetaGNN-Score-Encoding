@@ -1,4 +1,13 @@
 __pycache__/
 *.pyc
 .DS_Store
+.venv/
 work/
+logs/
+data/raw/*
+!data/raw/README.md
+results/reserved_v3/arms
+results/development_v3/arms
+results/reserved_v3/run_summary.json
+results/development_v3/run_summary.json
+results/*/wrapper_*_console.log

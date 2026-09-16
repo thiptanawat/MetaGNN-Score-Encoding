@@ -1,0 +1,8 @@
+test_midpoint_is_only_numerical (test_nested_logic.NestedLogic.test_midpoint_is_only_numerical) ... ok
+test_nested_stage_attribution (test_nested_logic.NestedLogic.test_nested_stage_attribution) ... ok
+test_nesting_catches_outside_endpoints (test_nested_logic.NestedLogic.test_nesting_catches_outside_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

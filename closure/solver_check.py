@@ -3,10 +3,14 @@
 
 The study used GLPK throughout, and its mechanism claims rest on distinctions at the 1e-7 to
 1e-10 scale on degenerate LPs with near-exact caps, where solvers can land on different optimal
-faces. This reruns the complete readout (primary optimum, caps, ranges, coordinate fixing) for a
-representative subset of reserved arms with a second solver and compares, per coordinate: the
-point value, the range width, the fixed classification at 1e-5, and the between-profile
-ordering signs among the subset. GLPK's exact rational-arithmetic variant is preferred when the
+faces. This reruns the complete readout (primary optimum, caps, ranges, coordinate fixing and the
+lexicographic point selection over the production list of 96 chemistry exchanges, in the same
+order as src/run_study.py) for a representative subset of reserved arms with a second solver
+and compares, per coordinate: the point value, the range width, the fixed classification at
+1e-5, and the between-profile ordering signs among the subset. The first version of this script
+(16 September 2026, before the external review) passed only the 52 primary targets to the
+selection routine, which changes the lexicographic sequence; --panel primary reproduces that
+variant and the default --panel chemistry is the production procedure. GLPK's exact rational-arithmetic variant is preferred when the
 installed optlang exposes it, because it removes floating-point tolerance from the comparison;
 otherwise the SciPy interface, which uses HiGHS, is used.
 
@@ -64,10 +68,14 @@ def worker(job):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--root", type=Path, required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--profiles", type=int, default=8); ap.add_argument("--workers", type=int, default=8); ap.add_argument("--solver", default=None)
+    ap.add_argument("--panel", choices=["chemistry", "primary"], default="chemistry",
+                    help="coordinate list handed to the selection routine: chemistry = the production list of 96 exchanges; primary = the 52-target variant of the first run")
     a = ap.parse_args(); a.out.mkdir(parents=True, exist_ok=True)
     solver = a.solver or pick_solver(); print("second solver:", solver, flush=True)
     plan = json.loads((a.root / "protocol/analysis_plan.json").read_text())
-    panel = sorted(t["exchange_id"] for t in plan["primary_targets"])
+    primary = sorted(t["exchange_id"] for t in plan["primary_targets"])
+    panel = sorted(t["exchange_id"] for t in plan["chemistry_targets"]) if a.panel == "chemistry" else primary
+    print("selection list: %s (%d coordinates); comparison over the %d coordinates of that list" % (a.panel, len(panel), len(panel)), flush=True)
     ctxs = sorted(r["context_id"] for r in csv.DictReader(open(a.root / "manifests/contexts.tsv"), delimiter="\t") if r["partition"] == "test")
     rng = np.random.default_rng(20260916); sub = sorted(rng.choice(ctxs, a.profiles, replace=False).tolist())
     k = float(json.loads((a.root / "results/development_v3/run_summary_scalars.json").read_text())["k"])
@@ -100,8 +108,13 @@ def main():
                     agree_sign += (s1 == s2); total_sign += 1
     with open(a.out / "solver_check_rows.tsv", "w", newline="") as f:
         w = csv.writer(f, delimiter="\t"); w.writerow(["context", "arm", "exchange_id", "point_glpk", "point_second", "abs_diff", "width_glpk", "width_second", "fixed_glpk", "fixed_second", "rel_diff_primary_optimum"]); w.writerows(rows)
-    summ = {"second_solver": solver, "profiles": sub, "arms_run": len(jobs), "arms_optimal": sum(r["status"] == "optimal" for r in res),
+    # the same summary restricted to the 52 primary targets, for comparison with the first run
+    prim_rows = [row for row in rows if row[2] in set(primary)]
+    prim = {"coordinates": len(prim_rows), "fixed_classification_agreement": (sum(row[8] == row[9] for row in prim_rows) / len(prim_rows)) if prim_rows else None,
+            "point_abs_diff_max": max((row[5] for row in prim_rows), default=None), "points_within_1e-5": (sum(row[5] <= 1e-5 for row in prim_rows) / len(prim_rows)) if prim_rows else None}
+    summ = {"second_solver": solver, "selection_list": a.panel, "selection_list_size": len(panel), "profiles": sub, "arms_run": len(jobs), "arms_optimal": sum(r["status"] == "optimal" for r in res),
             "coordinates": total_fixed, "fixed_classification_agreement": agree_fixed / max(total_fixed, 1),
+            "primary_52_subset": prim,
             "point_abs_diff_median": float(np.median(pt_diffs)) if pt_diffs else None, "point_abs_diff_max": float(np.max(pt_diffs)) if pt_diffs else None,
             "points_within_1e-5": float(np.mean([d <= 1e-5 for d in pt_diffs])) if pt_diffs else None,
             "between_profile_sign_agreement": agree_sign / max(total_sign, 1), "sign_comparisons": total_sign,

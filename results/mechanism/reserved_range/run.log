@@ -1,0 +1,302 @@
+B0 complete 66.43
+1 BR:BT-549 magnitude_g0.80 complete 136.6
+2 CNS:SF-268 magnitude_g0.50 complete 140.58
+3 BR:BT-549 magnitude_g0.50 complete 142.27
+4 BR:MCF7 magnitude_g0.80 complete 142.49
+5 BR:T-47D magnitude_g1.00 complete 144.08
+6 BR:BT-549 magnitude_g1.00 complete 144.35
+7 BR:MCF7 ordinal complete 145.03
+8 BR:BT-549 ordinal complete 145.07
+9 BR:BT-549 magnitude_g2.00 complete 145.97
+10 BR:T-47D magnitude_g1.25 complete 146.09
+11 BR:MCF7 magnitude_g2.00 complete 146.11
+12 BR:MCF7 magnitude_g1.25 complete 146.72
+13 BR:T-47D magnitude_g0.80 complete 147.9
+14 CNS:SF-268 magnitude_g0.80 complete 149.0
+15 BR:MCF7 magnitude_g1.00 complete 149.5
+16 BR:T-47D magnitude_g0.50 complete 150.08
+17 BR:T-47D magnitude_g2.00 complete 151.31
+18 BR:MCF7 magnitude_g0.50 complete 152.27
+19 BR:T-47D ordinal complete 153.34
+20 BR:BT-549 magnitude_g1.25 complete 155.08
+21 CNS:SF-268 magnitude_g1.00 complete 146.28
+22 CNS:SF-268 magnitude_g1.25 complete 143.11
+23 CNS:SF-295 magnitude_g1.25 complete 140.33
+24 CNS:SF-539 magnitude_g1.00 complete 138.26
+25 CNS:SF-268 magnitude_g2.00 complete 144.05
+26 CNS:SF-268 ordinal complete 146.05
+27 CNS:SF-295 magnitude_g1.00 complete 144.18
+28 CNS:SF-539 magnitude_g2.00 complete 140.8
+29 CNS:SNB-19 magnitude_g0.50 complete 140.42
+30 CNS:SF-295 ordinal complete 145.77
+31 CNS:SF-295 magnitude_g2.00 complete 148.57
+32 CNS:SF-295 magnitude_g0.80 complete 150.59
+33 CNS:SF-539 magnitude_g0.50 complete 149.73
+34 CNS:SF-295 magnitude_g0.50 complete 152.06
+35 CNS:SF-539 magnitude_g0.80 complete 151.03
+36 CNS:SF-539 ordinal complete 149.28
+37 CNS:SF-539 magnitude_g1.25 complete 152.02
+38 CNS:SNB-19 magnitude_g1.00 complete 148.92
+39 CNS:SNB-19 magnitude_g1.25 complete 148.09
+40 CNS:SNB-19 magnitude_g0.80 complete 153.94
+41 CNS:SNB-19 magnitude_g2.00 complete 145.09
+42 CNS:SNB-75 magnitude_g0.80 complete 143.03
+43 CNS:SNB-75 ordinal complete 143.37
+44 CNS:SNB-19 ordinal complete 150.46
+45 CNS:SNB-75 magnitude_g1.00 complete 147.83
+46 CNS:U251 magnitude_g1.25 complete 140.02
+47 CNS:U251 magnitude_g0.80 complete 143.78
+48 CNS:SNB-75 magnitude_g1.25 complete 148.39
+49 CNS:U251 magnitude_g1.00 complete 142.95
+50 CNS:SNB-75 magnitude_g2.00 complete 149.8
+51 CNS:U251 magnitude_g0.50 complete 147.25
+52 CNS:SNB-75 magnitude_g0.50 complete 154.08
+53 CNS:U251 ordinal complete 147.81
+54 CNS:U251 magnitude_g2.00 complete 148.26
+55 CO:COLO 205 magnitude_g1.00 complete 145.81
+56 CO:COLO 205 magnitude_g1.25 complete 145.63
+57 CO:COLO 205 magnitude_g0.50 complete 150.86
+58 CO:COLO 205 magnitude_g2.00 complete 149.16
+59 CO:COLO 205 magnitude_g0.80 complete 153.93
+60 CO:COLO 205 ordinal complete 147.41
+61 CO:HCC-2998 magnitude_g0.50 complete 146.38
+62 CO:HCT-116 magnitude_g0.50 complete 143.91
+63 CO:HCC-2998 magnitude_g1.00 complete 146.56
+64 CO:HCC-2998 magnitude_g1.25 complete 147.76
+65 CO:HCC-2998 magnitude_g0.80 complete 153.46
+66 CO:HCC-2998 magnitude_g2.00 complete 149.46
+67 CO:HCC-2998 ordinal complete 149.67
+68 CO:HCT-116 ordinal complete 150.24
+69 CO:HCT-116 magnitude_g1.25 complete 152.4
+70 CO:HCT-116 magnitude_g0.80 complete 156.91
+71 CO:HCT-116 magnitude_g1.00 complete 157.66
+72 CO:HCT-15 magnitude_g2.00 complete 148.0
+73 CO:HCT-15 magnitude_g0.50 complete 153.97
+74 CO:HCT-116 magnitude_g2.00 complete 158.89
+75 CO:HCT-15 magnitude_g1.25 complete 150.28
+76 CO:HCT-15 magnitude_g0.80 complete 154.51
+77 CO:HCT-15 ordinal complete 146.39
+78 CO:HCT-15 magnitude_g1.00 complete 153.97
+79 CO:KM12 magnitude_g0.50 complete 152.42
+80 CO:KM12 magnitude_g0.80 complete 152.82
+81 CO:KM12 magnitude_g1.00 complete 158.9
+82 CO:SW-620 magnitude_g0.50 complete 151.18
+83 CO:KM12 magnitude_g1.25 complete 154.29
+84 CO:SW-620 magnitude_g1.00 complete 149.95
+85 CO:KM12 magnitude_g2.00 complete 155.59
+86 CO:SW-620 magnitude_g0.80 complete 154.41
+87 CO:SW-620 magnitude_g2.00 complete 148.12
+88 LC:A549/ATCC magnitude_g0.50 complete 145.11
+89 CO:SW-620 magnitude_g1.25 complete 151.2
+90 CO:KM12 ordinal complete 159.56
+91 CO:SW-620 ordinal complete 150.63
+92 LC:EKVX magnitude_g0.50 complete 148.13
+93 LC:A549/ATCC magnitude_g1.25 complete 154.95
+94 LC:A549/ATCC ordinal complete 154.43
+95 LC:EKVX magnitude_g0.80 complete 154.7
+96 LC:A549/ATCC magnitude_g2.00 complete 157.79
+97 LC:A549/ATCC magnitude_g0.80 complete 159.71
+98 LC:A549/ATCC magnitude_g1.00 complete 158.78
+99 LC:EKVX magnitude_g1.00 complete 151.56
+100 LC:EKVX magnitude_g1.25 complete 155.63
+101 LC:NCI-H322M magnitude_g1.00 complete 145.78
+102 LC:EKVX magnitude_g2.00 complete 148.92
+103 LC:NCI-H322M magnitude_g1.25 complete 149.09
+104 LC:NCI-H322M magnitude_g0.80 complete 156.4
+105 LC:NCI-H322M magnitude_g2.00 complete 153.12
+106 LC:NCI-H322M magnitude_g0.50 complete 159.9
+107 LC:EKVX ordinal complete 160.19
+108 LC:NCI-H460 magnitude_g0.80 complete 152.68
+109 LC:NCI-H460 magnitude_g0.50 complete 154.58
+110 LC:NCI-H460 magnitude_g1.25 complete 149.36
+111 LC:NCI-H460 magnitude_g1.00 complete 153.36
+112 LC:NCI-H522 magnitude_g1.25 complete 143.71
+113 LC:NCI-H322M ordinal complete 160.3
+114 LC:NCI-H460 ordinal complete 148.4
+115 LC:NCI-H460 magnitude_g2.00 complete 151.59
+116 LC:NCI-H522 magnitude_g0.50 complete 149.27
+117 LC:NCI-H522 magnitude_g2.00 complete 148.44
+118 LC:NCI-H522 magnitude_g1.00 complete 149.81
+119 LC:NCI-H522 magnitude_g0.80 complete 153.79
+120 LC:NCI-H522 ordinal complete 155.89
+121 LE:CCRF-CEM magnitude_g0.80 complete 150.35
+122 LE:CCRF-CEM magnitude_g0.50 complete 157.26
+123 LE:HL-60(TB) magnitude_g0.50 complete 145.04
+124 LE:CCRF-CEM magnitude_g1.00 complete 152.74
+125 LE:CCRF-CEM magnitude_g2.00 complete 147.28
+126 LE:HL-60(TB) magnitude_g1.00 complete 144.63
+127 LE:CCRF-CEM magnitude_g1.25 complete 150.92
+128 LE:CCRF-CEM ordinal complete 149.27
+129 LE:HL-60(TB) magnitude_g0.80 complete 149.79
+130 LE:HL-60(TB) magnitude_g1.25 complete 149.43
+131 LE:HL-60(TB) magnitude_g2.00 complete 151.74
+132 LE:HL-60(TB) ordinal complete 150.68
+133 LE:K-562 magnitude_g0.80 complete 150.75
+134 LE:K-562 magnitude_g1.25 complete 150.1
+135 LE:K-562 magnitude_g0.50 complete 155.28
+136 LE:K-562 magnitude_g1.00 complete 151.44
+137 LE:K-562 ordinal complete 151.18
+138 LE:MOLT-4 magnitude_g0.50 complete 148.11
+139 LE:K-562 magnitude_g2.00 complete 154.53
+140 LE:MOLT-4 magnitude_g0.80 complete 154.85
+141 LE:MOLT-4 magnitude_g1.00 complete 148.84
+142 LE:MOLT-4 magnitude_g2.00 complete 149.76
+143 ME:LOX IMVI magnitude_g1.25 complete 146.95
+144 LE:MOLT-4 magnitude_g1.25 complete 154.75
+145 ME:LOX IMVI magnitude_g0.80 complete 153.88
+146 ME:LOX IMVI magnitude_g0.50 complete 154.6
+147 ME:LOX IMVI magnitude_g1.00 complete 153.67
+148 LE:MOLT-4 ordinal complete 155.94
+149 ME:LOX IMVI ordinal complete 150.68
+150 ME:LOX IMVI magnitude_g2.00 complete 152.85
+151 ME:M14 magnitude_g0.80 complete 147.99
+152 ME:M14 magnitude_g1.00 complete 147.97
+153 ME:M14 ordinal complete 145.34
+154 ME:M14 magnitude_g2.00 complete 146.15
+155 ME:MDA-MB-435 magnitude_g0.80 complete 145.69
+156 ME:M14 magnitude_g0.50 complete 154.48
+157 ME:M14 magnitude_g1.25 complete 150.18
+158 ME:MDA-MB-435 magnitude_g0.50 complete 148.2
+159 ME:MDA-MB-435 magnitude_g1.00 complete 149.57
+160 ME:MDA-MB-435 magnitude_g1.25 complete 148.7
+161 ME:MDA-MB-435 magnitude_g2.00 complete 150.72
+162 ME:SK-MEL-2 magnitude_g0.80 complete 147.74
+163 ME:SK-MEL-2 magnitude_g1.00 complete 148.39
+164 ME:SK-MEL-2 magnitude_g2.00 complete 148.35
+165 ME:SK-MEL-2 magnitude_g0.50 complete 154.45
+166 ME:SK-MEL-2 ordinal complete 148.6
+167 ME:MDA-MB-435 ordinal complete 155.9
+168 ME:SK-MEL-2 magnitude_g1.25 complete 151.54
+169 ME:SK-MEL-28 magnitude_g1.25 complete 146.91
+170 ME:SK-MEL-28 magnitude_g1.00 complete 150.31
+171 ME:SK-MEL-28 magnitude_g2.00 complete 148.62
+172 ME:SK-MEL-28 magnitude_g0.50 complete 154.54
+173 ME:SK-MEL-28 magnitude_g0.80 complete 154.84
+174 ME:SK-MEL-5 magnitude_g0.80 complete 149.35
+175 ME:SK-MEL-5 magnitude_g1.25 complete 148.23
+176 ME:SK-MEL-28 ordinal complete 155.19
+177 ME:SK-MEL-5 magnitude_g0.50 complete 154.63
+178 ME:SK-MEL-5 magnitude_g1.00 complete 153.84
+179 ME:SK-MEL-5 magnitude_g2.00 complete 150.92
+180 ME:SK-MEL-5 ordinal complete 147.04
+181 ME:UACC-257 ordinal complete 143.7
+182 ME:UACC-257 magnitude_g0.50 complete 156.35
+183 ME:UACC-257 magnitude_g1.00 complete 147.21
+184 ME:UACC-62 magnitude_g1.00 complete 142.54
+185 ME:UACC-257 magnitude_g2.00 complete 146.48
+186 ME:UACC-62 magnitude_g2.00 complete 143.39
+187 ME:UACC-62 magnitude_g1.25 complete 146.03
+188 ME:UACC-257 magnitude_g1.25 complete 153.03
+189 ME:UACC-257 magnitude_g0.80 complete 158.09
+190 ME:UACC-62 magnitude_g0.50 complete 154.95
+191 ME:UACC-62 magnitude_g0.80 complete 156.05
+192 OV:IGROV1 magnitude_g0.80 complete 150.43
+193 OV:IGROV1 magnitude_g1.00 complete 150.11
+194 ME:UACC-62 ordinal complete 153.49
+195 OV:IGROV1 magnitude_g0.50 complete 153.47
+196 OV:IGROV1 ordinal complete 146.35
+197 OV:IGROV1 magnitude_g2.00 complete 148.51
+198 OV:IGROV1 magnitude_g1.25 complete 150.01
+199 OV:NCI/ADR-RES magnitude_g0.50 complete 152.18
+200 OV:NCI/ADR-RES magnitude_g0.80 complete 152.85
+201 OV:NCI/ADR-RES magnitude_g1.25 complete 142.65
+202 OV:OVCAR-3 magnitude_g0.50 complete 145.72
+203 OV:NCI/ADR-RES magnitude_g1.00 complete 151.12
+204 OV:NCI/ADR-RES ordinal complete 150.03
+205 OV:OVCAR-3 magnitude_g1.00 complete 144.98
+206 OV:NCI/ADR-RES magnitude_g2.00 complete 153.13
+207 OV:OVCAR-3 magnitude_g2.00 complete 145.7
+208 OV:OVCAR-3 magnitude_g0.80 complete 152.09
+209 OV:OVCAR-3 ordinal complete 147.85
+210 OV:OVCAR-3 magnitude_g1.25 complete 150.64
+211 OV:OVCAR-4 magnitude_g2.00 complete 146.34
+212 OV:OVCAR-4 ordinal complete 146.93
+213 OV:OVCAR-4 magnitude_g0.50 complete 153.31
+214 OV:OVCAR-4 magnitude_g1.00 complete 152.16
+215 OV:OVCAR-4 magnitude_g1.25 complete 152.21
+216 OV:OVCAR-4 magnitude_g0.80 complete 153.96
+217 OV:OVCAR-5 magnitude_g1.00 complete 150.7
+218 OV:OVCAR-5 magnitude_g0.80 complete 156.42
+219 OV:OVCAR-5 magnitude_g0.50 complete 158.91
+220 OV:OVCAR-5 magnitude_g1.25 complete 146.18
+221 OV:OVCAR-5 magnitude_g2.00 complete 146.93
+222 OV:OVCAR-8 magnitude_g1.00 complete 150.17
+223 OV:OVCAR-8 magnitude_g1.25 complete 148.11
+224 OV:OVCAR-8 magnitude_g0.50 complete 152.0
+225 OV:OVCAR-5 ordinal complete 157.02
+226 OV:OVCAR-8 magnitude_g2.00 complete 149.63
+227 OV:OVCAR-8 magnitude_g0.80 complete 155.96
+228 OV:SK-OV-3 magnitude_g0.50 complete 151.56
+229 OV:SK-OV-3 magnitude_g0.80 complete 153.57
+230 OV:SK-OV-3 magnitude_g1.00 complete 151.32
+231 OV:OVCAR-8 ordinal complete 157.78
+232 OV:SK-OV-3 magnitude_g1.25 complete 152.49
+233 OV:SK-OV-3 magnitude_g2.00 complete 149.56
+234 PR:DU-145 magnitude_g0.50 complete 154.61
+235 PR:DU-145 magnitude_g0.80 complete 153.95
+236 PR:DU-145 magnitude_g1.00 complete 150.99
+237 OV:SK-OV-3 ordinal complete 159.04
+238 PR:DU-145 magnitude_g1.25 complete 153.39
+239 PR:DU-145 ordinal complete 149.84
+240 PR:DU-145 magnitude_g2.00 complete 156.05
+241 PR:PC-3 magnitude_g0.50 complete 153.81
+242 PR:PC-3 magnitude_g1.00 complete 150.54
+243 PR:PC-3 ordinal complete 147.25
+244 RE:A498 magnitude_g0.50 complete 146.67
+245 PR:PC-3 magnitude_g0.80 complete 153.57
+246 PR:PC-3 magnitude_g1.25 complete 154.4
+247 PR:PC-3 magnitude_g2.00 complete 155.73
+248 RE:A498 magnitude_g0.80 complete 152.46
+249 RE:ACHN magnitude_g0.50 complete 147.38
+250 RE:A498 magnitude_g1.00 complete 153.2
+251 RE:A498 magnitude_g2.00 complete 151.64
+252 RE:A498 magnitude_g1.25 complete 152.93
+253 RE:A498 ordinal complete 151.74
+254 RE:ACHN magnitude_g0.80 complete 153.76
+255 RE:ACHN magnitude_g1.00 complete 153.42
+256 RE:CAKI-1 magnitude_g0.50 complete 152.09
+257 RE:ACHN magnitude_g2.00 complete 155.23
+258 RE:ACHN ordinal complete 158.8
+259 RE:ACHN magnitude_g1.25 complete 164.37
+260 RE:CAKI-1 magnitude_g0.80 complete 177.2
+261 RE:CAKI-1 ordinal complete 149.27
+262 RE:RXF 393 magnitude_g0.50 complete 151.8
+263 RE:CAKI-1 magnitude_g2.00 complete 155.67
+264 RE:CAKI-1 magnitude_g1.00 complete 165.97
+265 RE:RXF 393 magnitude_g1.25 complete 152.46
+266 RE:SN12C magnitude_g0.50 complete 151.38
+267 RE:RXF 393 magnitude_g2.00 complete 155.35
+268 RE:RXF 393 ordinal complete 154.93
+269 RE:SN12C magnitude_g0.80 complete 155.58
+270 RE:CAKI-1 magnitude_g1.25 complete 171.45
+271 RE:RXF 393 magnitude_g1.00 complete 165.04
+272 RE:SN12C magnitude_g2.00 complete 153.61
+273 RE:SN12C magnitude_g1.25 complete 155.13
+274 RE:SN12C magnitude_g1.00 complete 163.9
+275 RE:TK-10 magnitude_g0.50 complete 152.59
+276 RE:SN12C ordinal complete 156.23
+277 RE:TK-10 magnitude_g0.80 complete 151.54
+278 RE:TK-10 magnitude_g1.00 complete 148.45
+279 RE:RXF 393 magnitude_g0.80 complete 189.44
+280 RE:TK-10 magnitude_g1.25 complete 146.4
+281 RE:TK-10 magnitude_g2.00 complete 89.31
+282 RE:TK-10 ordinal complete 89.01
+{
+  "status": "complete_verified",
+  "completed_at_utc": "2026-09-14T03:18:30.276291+00:00",
+  "seconds": 2252.1413050265983,
+  "scenario": "primary",
+  "partition": "test",
+  "B0_status": "complete",
+  "B1_completed": 282,
+  "B1_failed_or_incomplete": 0,
+  "B1_unstarted": 0,
+  "reused_B2_records": 282,
+  "target_context_arm_rows": 14664,
+  "validation_issues": [],
+  "all_input_hashes_unchanged": true,
+  "outcomes_read": false,
+  "point_tolerance": 1e-05,
+  "nesting_tolerance": 1e-06,
+  "interpretation": "Conditional within-profile coordinate restriction on the reserved cohort. Location analysis is reported separately."
+}

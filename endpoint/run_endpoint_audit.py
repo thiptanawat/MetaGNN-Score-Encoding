@@ -1,8 +1,10 @@
 from pathlib import Path
 from datetime import datetime,timezone
 import csv,json,hashlib,math,statistics,xlrd
+import os
 B=Path(__file__).resolve().parent
-S=B.parents[1]/'cpu_study_2026-09-13'
+S=B.parent  # the repository is the study root
+OUT=Path(os.environ.get('ENDPOINT_OUT',S/'results/endpoint'));OUT.mkdir(parents=True,exist_ok=True)
 RAW=S/'data/raw/core/NIHMS419088-supplement-Database_S1.xls'
 assert hashlib.sha256((B/'AUDIT_AMENDMENT.json').read_bytes()).hexdigest()==(B/'AUDIT_AMENDMENT.sha256').read_text().split()[0]
 b=xlrd.open_workbook(RAW);s=b.sheet_by_name('Concentrations');hdr=s.row_values(0)
@@ -11,7 +13,7 @@ assert len(bases)==10 and len(cultures)==120
 contexts=list(csv.DictReader((S/'manifests/contexts.tsv').open(),delimiter='\t'))
 bylabel={r['core_label']:r for r in contexts if r['has_core']=='True'}
 assert len(bylabel)==60
-human_path=B.parents[1]/'provenance/Source_Quality_Provenance.json'
+human_path=B/'Source_Quality_Provenance.json'
 human=set(json.loads(human_path.read_text())['source_cell_lines'])
 counts={};assay=[];cult=[];seen={};profiles=[]
 for col in cultures:
@@ -39,7 +41,7 @@ for name in ['all_reported_assays','calibrated_assays']:
  all_c=[x for x in cult if x['variant']==name];all_p=[x for x in profiles if x['variant']==name];negative=set(x['core_label'] for x in all_p if x['status']=='screen_negative')
  counts[name]={'source_assays_screened_per_culture':all_c[0]['assays_screened'],'source_cultures':count(all_c),'source_profiles':count(all_p),'matches_Nilsson_84_positive_36_negative':count(all_c)=={'screen_positive':84,'screen_negative':36,'unresolved':0},'profiles_negative_not_Human1':sorted(negative-human),'Human1_not_profiles_negative':sorted(human-negative),'by_allocation':{part:{'cultures':count([x for x in all_c if x['partition']==part]),'profiles':count([x for x in all_p if x['partition']==part]),'screen_negative_origins':len(set(x['origin_group'] for x in all_p if x['partition']==part and x['status']=='screen_negative'))} for part in sorted(set(x['partition'] for x in all_p))}}
 for fn,rows in [('culture_assay_ledger.tsv',assay),('culture_quality_ledger.tsv',cult),('profile_quality_ledger.tsv',profiles)]:
- with (B/fn).open('w') as f:
+ with (OUT/fn).open('w') as f:
   wr=csv.DictWriter(f,fieldnames=list(rows[0]),delimiter='\t');wr.writeheader();wr.writerows(rows)
 # Independently recompute the screening counts by metabolite-first loops.
 for name in counts:
@@ -56,5 +58,5 @@ for name in counts:
  assert check==counts[name]['source_cultures']
 assert len(assay)==16800 and len(cult)==240 and len(profiles)==120
 report={'executed_at_utc':datetime.now(timezone.utc).isoformat(),'status':'Post-analysis reconstruction of the published concentration screen, not a physiological quality certificate','source_cultures':120,'source_profiles':60,'matched_profiles':sum(c['partition'] in ['development','test'] for c in contexts),'rule':'Any endpoint < 0.1 times mean of ten fresh concentrations; profile rule requires both cultures screen-negative','variants':counts,'independent_count_check':'passed','input_hashes':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [RAW,S/'manifests/contexts.tsv',human_path,B/'AUDIT_AMENDMENT.json']},'limits':['Original Nilsson Supplemental Table S1 has not been retrieved; count/label comparisons do not verify its unpublished filtering details','No per-culture growth trajectories, exact duration or culture-size normalization correction recovered','A screen-negative result does not establish biological validity','No model outcome performance evaluated and no original results changed']}
-(B/'coverage_summary.json').write_text(json.dumps(report,indent=2)+'\n')
+(OUT/'coverage_summary.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:report[k] for k in ['executed_at_utc','matched_profiles','variants','independent_count_check']},indent=2))

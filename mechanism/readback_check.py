@@ -1,10 +1,11 @@
 """Read back completed pilot artifacts; no source-model or solver execution."""
 from pathlib import Path
-import csv,hashlib,json
+import csv,hashlib,json,sys
 import numpy as np
 
 def main():
-    root=Path(__file__).resolve().parent
+    # the pilot directory to read back; defaults to the deposited pilot under results/mechanism
+    root=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path(__file__).resolve().parents[1]/'results/mechanism/bottleneck_pilot'
     result=json.loads((root/'summary.json').read_text());manifest=json.loads((root/'run_manifest.json').read_text())
     records=[];worst=0.;full_vectors=0
     for p in sorted(root.glob('*.json')):

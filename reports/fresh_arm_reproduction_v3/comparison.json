@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "pass": true,
+  "context_id": "CO:HT29",
+  "arm": "magnitude_g1.00",
+  "scenario": "primary",
+  "reported_exchanges": 96,
+  "full_vector_reactions": 10600,
+  "fresh_completed_at": "2026-09-13T16:23:20.973089+00:00",
+  "comparison_started_at": "2026-09-13T16:23:36.627055+00:00",
+  "fresh_elapsed_seconds": 33.6251593750203,
+  "main_result_path": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/results/development_v3/arms/14b0703f2b4fbb1e.json",
+  "fresh_json_sha256": "59ce1ad94cc8058f963c04b509f6dd8b8367113c989fcbcfcc822c16b9ce3d40",
+  "main_json_sha256": "f60ad951cc21ecd7865276ea8e8d2c5acc33ee172cd9f8a4d2de8253709c692d",
+  "fresh_npz_sha256": "012ed70c7886bb703d07b9db3ebac82136d55387baaf2eb25d468f655a8e8cad",
+  "main_npz_sha256": "012ed70c7886bb703d07b9db3ebac82136d55387baaf2eb25d468f655a8e8cad",
+  "npz_byte_identical": true,
+  "max_abs_full_flux_difference": 0.0,
+  "max_abs_cost_weight_difference": 0.0,
+  "max_abs_exchange_point_difference": 0.0,
+  "max_abs_exchange_range_difference": 0.0,
+  "objective_differences": {
+    "primary_optimum": 0.0,
+    "primary_cap": 0.0,
+    "secondary_optimum": 0.0,
+    "secondary_cap": 0.0
+  },
+  "model_metadata_differences": {
+    "g_max": 0.0,
+    "task_flux": 0.0
+  },
+  "comparison_tolerance": 1e-06,
+  "main_source_fingerprint_current": true,
+  "copied_files": [
+    {
+      "relative_path": "src/cpu_model.py",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/src/cpu_model.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+      "bytes": 4026,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "src/cpu_readout.py",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/src/cpu_readout.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+      "bytes": 5204,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "src/medium_v2.py",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/src/medium_v2.py",
+      "role": "final v3 production source/config/environment",
+      "sha256": "903676da2bc73daddc4b2d1dd702a764146fab0ddc54aca4cf975aa2f74440b0",
+      "bytes": 8653,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "configs/study.json",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/configs/study.json",
+      "role": "final v3 production source/config/environment",
+      "sha256": "0c597b4a88854972386c510f97dd0ec4b9285f270d834340ee4e88bee6fa82fb",
+      "bytes": 1298,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "environment.lock",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/environment.lock",
+      "role": "final v3 production source/config/environment",
+      "sha256": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607",
+      "bytes": 746,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "data/raw/Recon3D.json",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean/data/raw/Recon3D.json",
+      "role": "fresh data build input",
+      "sha256": "aba925f17547a42f9fdb4c1f685d89364cbf4979bbe7862e9f793af7169b26d5",
+      "bytes": 7839114,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "data/scores_conservative.npz",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean/data/scores_conservative.npz",
+      "role": "fresh data build input",
+      "sha256": "d97953730c478a69e96df28368a7b8cf09a7db5e0616a66d99e2bfbb19a4b6e6",
+      "bytes": 406695,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "manifests/contexts.tsv",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean/manifests/contexts.tsv",
+      "role": "fresh data build input",
+      "sha256": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+      "bytes": 7874,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    },
+    {
+      "relative_path": "manifests/metabolite_map.tsv",
+      "source": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/work/reproduction_clean/manifests/metabolite_map.tsv",
+      "role": "fresh data build input",
+      "sha256": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+      "bytes": 28128,
+      "isolated_unchanged": true,
+      "matches_current_main_file": true
+    }
+  ],
+  "independent_fresh_vector_audit": {
+    "pass": true,
+    "failures": [],
+    "metrics": {
+      "max_cost_weight_difference": 0.0,
+      "max_mass_balance_residual": 4.085620730620576e-14,
+      "max_bound_violation": 2.731495138131944e-15,
+      "fixed_task_violation": 0.0,
+      "net_primary_cost": 1000.2813471548925,
+      "primary_cap_violation": 1.4779288903810084e-12,
+      "net_secondary_cost": 1419.3971375162841,
+      "secondary_cap_violation": 0,
+      "logical_LPs": 291,
+      "saved_solver_attempts": 291,
+      "recovered_LP_groups": 0,
+      "max_saved_point_difference": 0.0,
+      "max_point_range_violation": 5.052438260962238e-15,
+      "max_coordinate_fix_violation": 0
+    }
+  },
+  "shared_python_environment": "/Users/thiptanawat/Documents/PhD/Journals/paper3/cpu_study_2026-09-13/.venv/bin/python",
+  "scope": "One actual fresh-directory arm using independently rebuilt data and copied final model sources. Shared Python environment; not a new-environment install or whole-study clean rerun. No CORE performance evaluated."
+}

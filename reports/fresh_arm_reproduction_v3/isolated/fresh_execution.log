@@ -1,0 +1,2 @@
+{"started_at": "2026-09-13T16:22:47.347688+00:00", "context": "CO:HT29", "arm": "magnitude_g1.00", "scenario": "primary", "exchanges": 96, "scale_k": 5.366}
+{"status": "optimal", "elapsed_seconds": 33.6251593750203, "flux_sha256": "012ed70c7886bb703d07b9db3ebac82136d55387baaf2eb25d468f655a8e8cad", "completed_at": "2026-09-13T16:23:20.973089+00:00"}
