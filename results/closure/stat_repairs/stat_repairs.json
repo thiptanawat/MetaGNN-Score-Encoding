@@ -1,0 +1,294 @@
+{
+ "reproduction": {
+  "eligible_pairs_mine": 46447,
+  "eligible_pairs_saved": 46447,
+  "targets_mine": 52,
+  "targets_saved": 52,
+  "macro_C_mine": {
+   "magnitude_g0.50": 0.5084908165335077,
+   "magnitude_g0.80": 0.5075282514352474,
+   "magnitude_g1.00": 0.5077547337268987,
+   "magnitude_g1.25": 0.5050693366841632,
+   "magnitude_g2.00": 0.5045247290787626,
+   "ordinal": 0.505422797461303,
+   "uniform_pfba": 0.5
+  },
+  "macro_C_saved": {
+   "magnitude_g0.50": 0.5084908165335077,
+   "magnitude_g0.80": 0.5075282514352474,
+   "magnitude_g1.00": 0.5077547337268987,
+   "magnitude_g1.25": 0.5050693366841632,
+   "magnitude_g2.00": 0.5045247290787626,
+   "ordinal": 0.505422797461303,
+   "uniform_pfba": 0.5
+  },
+  "max_abs_diff": 0.0
+ },
+ "common_resolved_subset": {
+  "pairs": 3113,
+  "targets": 6,
+  "macro_C": {
+   "magnitude_g0.50": 0.5677096248565789,
+   "magnitude_g0.80": 0.5524992492993556,
+   "magnitude_g1.00": 0.5510807558880374,
+   "magnitude_g1.25": 0.5329586228815132,
+   "magnitude_g2.00": 0.5107233667907637,
+   "ordinal": 0.5274793773598992
+  },
+  "delta_grid": -0.015514946583350508,
+  "delta_grid_ci95": [
+   -0.08010856588769065,
+   0.05044315523491816
+  ],
+  "delta_identity": -0.02360137852813815,
+  "absolute_ci95": {
+   "magnitude_g0.50": [
+    0.5020842224831374,
+    0.629490870684641
+   ],
+   "magnitude_g0.80": [
+    0.47845991550127426,
+    0.622516010080802
+   ],
+   "magnitude_g1.00": [
+    0.48264940391189953,
+    0.6181552270262533
+   ],
+   "magnitude_g1.25": [
+    0.4616750722091441,
+    0.600949736305705
+   ],
+   "magnitude_g2.00": [
+    0.44591126885302584,
+    0.5793831885755679
+   ],
+   "ordinal": [
+    0.4651743657970984,
+    0.6030383349440278
+   ]
+  },
+  "note": "pairs resolved by all six encodings; subset chosen by predictions, not outcomes, but the resolution sets are encoding dependent so this is a supporting analysis"
+ },
+ "reserved_tolerance": {
+  "tolerance_ratio_reserved_over_development": {
+   "core_006": 1.1810909240894727,
+   "core_016": 1.3198093323417677,
+   "core_018": 1.7143895831130564,
+   "core_024": 1.3092834253233026,
+   "core_026": 0.6357948639821357,
+   "core_027": 1.4005978954464346,
+   "core_028": 1.0770675481711096,
+   "core_030": 4.828434893111274,
+   "core_032": 1.4117467231226324,
+   "core_035": 1.9269888624633145,
+   "core_039": 4.22549415889122,
+   "core_041": 1.1937089056520016,
+   "core_044": 1.7911264949259618,
+   "core_049": 1.77846529344439,
+   "core_050": 1.7274151839782088,
+   "core_051": 0.6350724657699569,
+   "core_052": 1.4737774925000062,
+   "core_053": 0.8039716604782347,
+   "core_056": 1.0691125438710998,
+   "core_062": 1.5527204520872004,
+   "core_063": 1.1148986470544484,
+   "core_064": 1.3291413402154184,
+   "core_067": 1.7871572505915685,
+   "core_069": 1.7133740996539797,
+   "core_070": 0.8860009113095049,
+   "core_072": 1.2433706043363977,
+   "core_073": 3.977573541970044,
+   "core_074": 0.8636065087157256,
+   "core_075": 1.3100844286981166,
+   "core_076": 1.1745270590343053,
+   "core_077": 1.0548852272721265,
+   "core_078": 0.6833053014332687,
+   "core_080": 1.2739221145364743,
+   "core_081": 1.5240676703756644,
+   "core_085": 0.9448884991982686,
+   "core_088": 0.7451769129663968,
+   "core_091": 0.4094857625743604,
+   "core_092": 1.0318915865780267,
+   "core_094": 3.1256610370585913,
+   "core_095": 1.5246990708701604,
+   "core_096": 1.5597468550135694,
+   "core_098": 1.3726516002096394,
+   "core_099": 1.6678937710145583,
+   "core_102": 0.5520031649919585,
+   "core_103": 1.428963875717347,
+   "core_104": 5.441454173198947,
+   "core_110": 4.47034886417065,
+   "core_111": 2.7975390392449446,
+   "core_112": 0.607634063798519,
+   "core_113": 1.3661735921177023,
+   "core_114": 0.7640927590171088,
+   "core_115": 1.0867331740755908
+  },
+  "median_ratio": 1.324475336278593,
+  "eligible_pairs": 43257,
+  "eligible_pairs_development_tolerance": 46447,
+  "targets": 52,
+  "macro_C": {
+   "magnitude_g0.50": 0.5089564530305871,
+   "magnitude_g0.80": 0.5076451854112943,
+   "magnitude_g1.00": 0.5082081421805829,
+   "magnitude_g1.25": 0.5055170073489931,
+   "magnitude_g2.00": 0.5049096815258557,
+   "ordinal": 0.5055670984917113,
+   "uniform_pfba": 0.5
+  },
+  "delta_grid": -0.0014801954077513502,
+  "delta_grid_ci95": [
+   -0.008982640664700508,
+   0.006399412650804816
+  ],
+  "absolute_ci95": {
+   "magnitude_g0.50": [
+    0.502568989810016,
+    0.514763878063912
+   ],
+   "magnitude_g0.80": [
+    0.5010400493736038,
+    0.5137243762144038
+   ],
+   "magnitude_g1.00": [
+    0.5021373160392816,
+    0.514015591655673
+   ],
+   "magnitude_g1.25": [
+    0.49947198168605517,
+    0.5111471332333616
+   ],
+   "magnitude_g2.00": [
+    0.49832368931995047,
+    0.5110046504733845
+   ],
+   "ordinal": [
+    0.499526373309343,
+    0.5120880396063807
+   ]
+  }
+ },
+ "multiplicity": {
+  "absolute_unadjusted_ci95": {
+   "magnitude_g0.50": [
+    0.5028946636304523,
+    0.5140399916490859
+   ],
+   "magnitude_g0.80": [
+    0.5015175659700372,
+    0.5132147400159481
+   ],
+   "magnitude_g1.00": [
+    0.5020598888134337,
+    0.5131053983346304
+   ],
+   "magnitude_g1.25": [
+    0.4995200740015553,
+    0.510514146966992
+   ],
+   "magnitude_g2.00": [
+    0.498234918446013,
+    0.5106138590255287
+   ],
+   "ordinal": [
+    0.4993691295464394,
+    0.51192951482618
+   ]
+  },
+  "absolute_bonferroni_over_18": {
+   "magnitude_g0.50": [
+    0.49983625581970437,
+    0.5172792606820744
+   ],
+   "magnitude_g0.80": [
+    0.4978958113596636,
+    0.5168567354290923
+   ],
+   "magnitude_g1.00": [
+    0.49943994750534537,
+    0.5162689226018093
+   ],
+   "magnitude_g1.25": [
+    0.49665484815843197,
+    0.5137230516074675
+   ],
+   "magnitude_g2.00": [
+    0.4949934344151698,
+    0.514662813937011
+   ],
+   "ordinal": [
+    0.4965617246880844,
+    0.5155222417842185
+   ]
+  },
+  "above_0.5_unadjusted": [
+   "magnitude_g0.50",
+   "magnitude_g0.80",
+   "magnitude_g1.00"
+  ],
+  "above_0.5_bonferroni": [],
+  "delta_grid_unadjusted": [
+   -0.008722826196542492,
+   0.006873422197342488
+  ],
+  "delta_grid_bonferroni_over_6": [
+   -0.011882371555630435,
+   0.009895305676316172
+  ],
+  "note": "my bootstrap uses its own RNG, so unadjusted intervals are close to but not identical with the locked ones; the comparison of adjusted and unadjusted is within one bootstrap"
+ },
+ "target_resampling": {
+  "jackknife_delta_grid_range": [
+   -0.003910885991429969,
+   0.0010210698204697888
+  ],
+  "jackknife_n": 52,
+  "two_way_origin_target_delta_grid_ci95": [
+   -0.01526767153010882,
+   0.01318409232552939
+  ],
+  "one_way_origin_delta_grid_ci95": [
+   -0.008722826196542492,
+   0.006873422197342488
+  ]
+ },
+ "calibration_null": {
+  "datasets": 100,
+  "resamples": 500,
+  "coverage_delta_grid": 0.97,
+  "coverage_absolute_ordinal": 0.97,
+  "mean_interval_width": 0.013368102582598497
+ },
+ "calibration_alternative": {
+  "datasets": 100,
+  "resamples": 500,
+  "coverage_delta_grid": 1.0,
+  "coverage_absolute_ordinal": 1.0,
+  "mean_interval_width": 0.05237676305776409,
+  "true_delta_grid": 0.23641359338622203,
+  "true_ordinal_C": 0.7365217845737735
+ },
+ "exploration_positive_control": {
+  "pinned_profiles_median_exploration": 1.266400151411773e-10,
+  "uniformly_placed_profiles_median_exploration": 0.9560705030109521,
+  "expected_for_47_uniform_placements": 0.9583333333333334,
+  "note": "synthetic intervals; the measure returns ~0 for pinned and ~0.96 for uniformly placed midpoints"
+ },
+ "minimum_detectable_effect": {
+  "targets": 52,
+  "constant_targets_all_magnitude_arms": 43,
+  "informative_targets": 9,
+  "delta_grid_halfwidth_macro": 0.00779812419694249,
+  "mde_on_informative_targets": 0.0450558286934455,
+  "informative_mean_C_needed_for_observed": {
+   "magnitude_g0.50": 0.5490580510824891,
+   "magnitude_g0.80": 0.5434965638480959,
+   "magnitude_g1.00": 0.5448051281998593,
+   "magnitude_g1.25": 0.5292895008418318,
+   "magnitude_g2.00": 0.5261428791217391,
+   "ordinal": 0.5313317186653066
+  }
+ },
+ "_seconds": 253.3
+}

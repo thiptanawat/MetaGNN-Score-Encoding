@@ -1,0 +1,106 @@
+{
+ "magnitude_g1.00": {
+  "rel_1e-6": {
+   "macro_interval_C": 0.5063460691113448,
+   "targets": 52,
+   "resolved_pairs": 4378,
+   "resolved_share": 0.09425797145133162,
+   "accuracy_among_resolved": 0.566925536774783
+  },
+  "rel_1e-5": {
+   "macro_interval_C": 0.5058052022752901,
+   "targets": 52,
+   "resolved_pairs": 3576,
+   "resolved_share": 0.07699097896527225,
+   "accuracy_among_resolved": 0.5746644295302014
+  },
+  "rel_1e-4": {
+   "macro_interval_C": 0.5031000117482767,
+   "targets": 52,
+   "resolved_pairs": 896,
+   "resolved_share": 0.01929080457295412,
+   "accuracy_among_resolved": 0.6595982142857143
+  },
+  "rel_1e-3": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "ordinal": {
+  "rel_1e-6": {
+   "macro_interval_C": 0.5057354537689893,
+   "targets": 52,
+   "resolved_pairs": 6343,
+   "resolved_share": 0.1365642560337589,
+   "accuracy_among_resolved": 0.543118398234274
+  },
+  "rel_1e-5": {
+   "macro_interval_C": 0.5053051684524198,
+   "targets": 52,
+   "resolved_pairs": 5940,
+   "resolved_share": 0.12788769995909316,
+   "accuracy_among_resolved": 0.5420875420875421
+  },
+  "rel_1e-4": {
+   "macro_interval_C": 0.5019875304931024,
+   "targets": 52,
+   "resolved_pairs": 4260,
+   "resolved_share": 0.09171744138480419,
+   "accuracy_among_resolved": 0.5218309859154929
+  },
+  "rel_1e-3": {
+   "macro_interval_C": 0.5007536068355996,
+   "targets": 52,
+   "resolved_pairs": 652,
+   "resolved_share": 0.014037505113355006,
+   "accuracy_among_resolved": 0.5521472392638037
+  }
+ },
+ "uniform_pfba": {
+  "rel_1e-6": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_1e-5": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_1e-4": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_1e-3": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "_contrast": {
+  "rel_1e-6": {
+   "delta_grid_interval": -0.0006106153423555138
+  },
+  "rel_1e-5": {
+   "delta_grid_interval": -0.0005000338228703383
+  },
+  "rel_1e-4": {
+   "delta_grid_interval": -0.001112481255174269
+  },
+  "rel_1e-3": {
+   "delta_grid_interval": 0.0007536068355995518
+  }
+ }
+}

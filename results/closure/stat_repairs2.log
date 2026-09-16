@@ -1,0 +1,15 @@
+1. uniform value comparison: {'magnitude_g0.50': (5.0, 44, 44), 'magnitude_g0.80': (6.0, 45, 45), 'magnitude_g1.00': (6.0, 45, 45), 'magnitude_g1.25': (6.0, 45, 45), 'magnitude_g2.00': (6.0, 45, 45), 'ordinal': (8.0, 38, 38)}
+2. MDE: {'halfwidth_macro': 0.0076, 'informative_targets_magnitude_arms': 9, 'informative_targets_any_arm': 14, 'constant_in_all_six_arms': 38, 'constant_in_all_magnitude_arms': 43, 'mde_halfwidth_on_9': 0.0438, 'mde_halfwidth_on_union': 0.0282, 'mde_80pct_power_on_9': 0.0627, 'mde_80pct_power_on_union': 0.0403}
+3. power at informative contrast 0.02 (macro 0.0054, realized 0.0077): 0.52
+3. power at informative contrast 0.04 (macro 0.0108, realized 0.0138): 0.78
+3. power at informative contrast 0.06 (macro 0.0162, realized 0.0185): 0.89
+3. power at informative contrast 0.08 (macro 0.0215, realized 0.0232): 0.96
+3. power at informative contrast 0.10 (macro 0.0269, realized 0.0300): 0.98
+4. threshold 1e-06: const [44, 45, 45, 45, 45, 38] | C ordinal 0.5051 | resolved ordinal 6505 | share B1 identity 0.649
+4. threshold 1e-05: const [44, 45, 45, 45, 45, 38] | C ordinal 0.5054 | resolved ordinal 6470 | share B1 identity 0.916
+4. threshold 1e-04: const [44, 45, 45, 45, 45, 38] | C ordinal 0.5057 | resolved ordinal 6395 | share B1 identity 0.993
+5. accuracy among resolved: {'magnitude_g0.50': (4583, 0.5856, [0.5268, 0.6407]), 'magnitude_g0.80': (4845, 0.5721, [0.5157, 0.6287]), 'magnitude_g1.00': (4951, 0.573, [0.5208, 0.6239]), 'magnitude_g1.25': (4858, 0.5484, [0.4986, 0.6]), 'magnitude_g2.00': (5031, 0.5416, [0.4841, 0.5963]), 'ordinal': (6470, 0.5397, [0.4958, 0.5873])}
+6. informative-subset C: {'study': {'magnitude_g0.50': (8, 0.5552), 'magnitude_g0.80': (7, 0.5559), 'magnitude_g1.00': (7, 0.5576), 'magnitude_g1.25': (7, 0.5377), 'magnitude_g2.00': (7, 0.5336), 'ordinal': (14, 0.5201)}, 'riptide': {'riptide': (18, 0.4829)}}
+7. k0 locked 5.366, development recomputed 5.33, reserved 5.256
+8. inversions: {'primary': {'inverted_intervals_over_all_arms_and_96_exchanges': 8, 'max_inversion_magnitude': 6.70642827068586e-26, 'inverted_coordinates_entering_a_resolved_primary_pair': 0}, 'half_serum': {'inverted_intervals_over_all_arms_and_96_exchanges': 4, 'max_inversion_magnitude': 1.329265739437113e-15, 'inverted_coordinates_entering_a_resolved_primary_pair': None}, 'lower_task': {'inverted_intervals_over_all_arms_and_96_exchanges': 16, 'max_inversion_magnitude': 3.2400400563068682e-18, 'inverted_coordinates_entering_a_resolved_primary_pair': None}}
+FINISHED 265s

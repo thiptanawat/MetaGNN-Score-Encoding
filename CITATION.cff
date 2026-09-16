@@ -1,14 +1,16 @@
 cff-version: 1.2.0
 message: If you use this code or the analyses it implements, please cite it.
 title: >-
-  Constraint-stage diagnosis of transcript-derived reaction scoring in
-  constraint-based metabolic prediction
+  An optimality tolerance, not the spacing of transcript-derived scores, selects the
+  predicted metabolic exchanges in a weighted-parsimony model
 abstract: >-
   Code, protocol records and result tables for a controlled study of the interface between
   transcript-derived reaction scores and constraint-based metabolic prediction. Measures how
   often rank-preserving changes to score spacing alter predicted extracellular exchange,
-  locates the modeling stage at which the between-context variation is removed, and tests the
-  resulting reporting rule on an independent condition-response dataset.
+  locates the modeling stage at which the between-context variation is removed, sweeps the
+  optimality tolerance that stage depends on, compares a bound-based interface and a published
+  sampling workflow under the same evaluation, and tests the resulting reporting rule on an
+  independent condition-response dataset.
 type: software
 license: MIT
 authors:

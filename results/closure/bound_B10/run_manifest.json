@@ -1,0 +1,19 @@
+{
+ "run_id": "bound-20260916T043019Z",
+ "started_at_utc": "2026-09-16T04:30:19.364686+00:00",
+ "jobs": 282,
+ "arms": [
+  "magnitude_g0.50",
+  "magnitude_g0.80",
+  "magnitude_g1.00",
+  "magnitude_g1.25",
+  "magnitude_g2.00",
+  "ordinal"
+ ],
+ "bound_magnitude": 10.0,
+ "floor_fraction": 0.001,
+ "task_rule": "0.9 x profile maximum under its bounds",
+ "objective": "uniform parsimony; transcript information enters through bounds only",
+ "k": 5.366,
+ "outcomes_read": false
+}

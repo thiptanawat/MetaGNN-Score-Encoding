@@ -1,0 +1,9 @@
+{
+ "completed": 95,
+ "failed": 0,
+ "arms": [
+  "magnitude_g1.00",
+  "ordinal",
+  "uniform_pfba"
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "completed": 47,
+ "failed": 0,
+ "seconds": 563.7,
+ "arms": {
+  "ordinal": {
+   "profiles": 47,
+   "free_targets_mean_B0": 49,
+   "constant_across_profiles": 38,
+   "exploration_median": 1.3332232300384492e-09,
+   "exploration_mean": 0.026487737717662163,
+   "exploration_p90": 0.05410118595354123,
+   "profile_target_fixed_under_parsimony_cap": 2350,
+   "of": 2444,
+   "g_max_range": [
+    0.7265458598089934,
+    1.4800018059697853
+   ],
+   "binding_bounds_mean": 13.446808510638299,
+   "bounded_reactions": 5468
+  }
+ }
+}

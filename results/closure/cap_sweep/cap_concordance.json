@@ -1,0 +1,106 @@
+{
+ "magnitude_g1.00": {
+  "exact": {
+   "macro_interval_C": 0.5071781694617052,
+   "targets": 52,
+   "resolved_pairs": 4725,
+   "resolved_share": 0.10172885224018774,
+   "accuracy_among_resolved": 0.5701587301587302
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "ordinal": {
+  "exact": {
+   "macro_interval_C": 0.5056534351966453,
+   "targets": 52,
+   "resolved_pairs": 6395,
+   "resolved_share": 0.13768381165629642,
+   "accuracy_among_resolved": 0.5421422986708366
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "uniform_pfba": {
+  "exact": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "_contrast": {
+  "exact": {
+   "delta_grid_interval": -0.001524734265059946
+  },
+  "rel_1pct": {
+   "delta_grid_interval": 0.0
+  },
+  "rel_5pct": {
+   "delta_grid_interval": 0.0
+  },
+  "rel_20pct": {
+   "delta_grid_interval": 0.0
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "run_id": "twostage-20260916T061947Z",
+ "jobs": 380,
+ "started_at_utc": "2026-09-16T06:19:47.990990+00:00",
+ "configs": [
+  "both_0.01",
+  "both_0.2",
+  "cost_0.01_parsimony_exact",
+  "cost_0.2_parsimony_exact"
+ ],
+ "outcomes_read": false,
+ "readout": "src.cpu_readout.select_flux unchanged; only the two relative cap allowances differ"
+}

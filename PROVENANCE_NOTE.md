@@ -19,3 +19,7 @@ The plan, the rules and the results in that record are unchanged.
 The files affected were `endpoint/README.md`, `endpoint/run_endpoint_audit.py`,
 `endpoint/AUDIT_AMENDMENT.json`, `results/coverage/agreement_summary.json`,
 `results/endpoint/coverage_summary.json` and `results/reserved_range/run_manifest.json`.
+
+**Version 1.1.0.** The two scenario-ladder run manifests under `results/closure/ladders/` recorded
+the absolute path of the Python interpreter that ran them; the prefix was removed so that the
+field names the interpreter by a relative path. Nothing else in those records changed.

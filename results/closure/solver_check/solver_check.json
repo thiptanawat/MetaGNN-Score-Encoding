@@ -1,0 +1,24 @@
+{
+ "second_solver": "hybrid",
+ "profiles": [
+  "CNS:SNB-19",
+  "CO:SW-620",
+  "LC:A549/ATCC",
+  "LE:K-562",
+  "ME:MDA-MB-435",
+  "ME:SK-MEL-28",
+  "ME:UACC-257",
+  "RE:CAKI-1"
+ ],
+ "arms_run": 16,
+ "arms_optimal": 16,
+ "coordinates": 832,
+ "fixed_classification_agreement": 1.0,
+ "point_abs_diff_median": 0.0,
+ "point_abs_diff_max": 0.0002149774320372444,
+ "points_within_1e-5": 0.9987980769230769,
+ "between_profile_sign_agreement": 0.9996565934065934,
+ "sign_comparisons": 2912,
+ "seconds": 1304.8,
+ "failures": []
+}

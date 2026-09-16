@@ -1,0 +1,14 @@
+{
+ "started_at_utc": "2026-09-16T06:13:42.435769+00:00",
+ "jobs": 112,
+ "task": "biomass fixed at the grand mean of the four condition-mean measured growth rates, identical across conditions",
+ "grand_mean_growth_rate_per_hour": 0.021723070697991727,
+ "condition_mean_growth_rate_per_hour": {
+  "21%|DMSO": 0.027172233116188327,
+  "21%|BAY": 0.021948251260647308,
+  "0.5%|DMSO": 0.01983084473213053,
+  "0.5%|BAY": 0.017940953683000735
+ },
+ "runner_sha256": "60f4c34314e2e76fca1be270ad821853277a3c3c0a072c007a760cb101715dcc",
+ "target_outcomes_read": false
+}
