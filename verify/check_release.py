@@ -56,7 +56,7 @@ def main():
     for rel in absent:
         print(f"  absent: {rel}")
     untracked = []
-    ignore = re.compile(r"^(\.git/|\.venv/|work/|logs/|results_repeat/|data/raw/|results/(reserved|development)_v3/arms(/|$)|"
+    ignore = re.compile(r"^(\.git/|\.venv/|\.pytest_cache/|work/|logs/|results_repeat/|data/raw/|results/(reserved|development)_v3/arms(/|$)|"
                         r"results/(reserved|development)_v3/run_summary\.json$|.*__pycache__/|.*\.pyc$|(.*/)?\.DS_Store$|CHECKSUMS\.sha256$)")
     listed_set = {line.split("  ", 1)[1] for line in (root / "CHECKSUMS.sha256").read_text().splitlines() if line.strip()}
     for p in root.rglob("*"):
