@@ -40,6 +40,9 @@ identifiers:
     value: 10.5281/zenodo.22745338
     description: Version-independent record covering all releases
   - type: doi
+    value: 10.5281/zenodo.22796608
+    description: Release v1.2.0
+  - type: doi
     value: 10.5281/zenodo.22790149
     description: Release v1.1.0
   - type: doi
