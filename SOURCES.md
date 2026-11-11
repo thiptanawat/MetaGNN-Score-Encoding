@@ -54,10 +54,11 @@ the code. The per-arm records of the two study runs are release assets whose dig
 
 ## Archived record
 
-Release v1.2.0 is archived at https://doi.org/10.5281/zenodo.22796608 (the Zenodo copy of the
-tagged tree, `thiptanawat/MetaGNN-Score-Encoding-v1.2.0.zip`, 29,372,581 bytes, MD5
-`49302287a4ee49e71f4aa8da9a7234d6`, holds the same 357 files as the tag). Release v1.1.0 is
-archived at https://doi.org/10.5281/zenodo.22790149 and release v1.0.0 at
+Release v1.2.1 is archived at https://doi.org/10.5281/zenodo.24136182 (the Zenodo copy of the
+tagged tree, `thiptanawat/MetaGNN-Score-Encoding-v1.2.1.zip`, 29,375,533 bytes, MD5
+`d0a34db836efd2462a42b89a31e3b4aa`, holds the same 357 files as the tag). Release v1.2.0 is
+archived at https://doi.org/10.5281/zenodo.22796608, release v1.1.0 at
+https://doi.org/10.5281/zenodo.22790149 and release v1.0.0 at
 https://doi.org/10.5281/zenodo.22745339. The version-independent record covering all releases is
 https://doi.org/10.5281/zenodo.22745338. Each identifier is minted when its release is archived,
 so the archived copy of this file names the identifiers of the releases before it; the repository's

@@ -1,7 +1,7 @@
 # Release manifest
 
 Release tag: `v1.2.1`
-Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
+Archived record: https://doi.org/10.5281/zenodo.24136182 (release v1.2.1, tag object `991af7f2`, commit `46675ed8c5a0733c33a0084858de8b97a9415843`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
 
 Release v1.2.1 is release v1.2.0 with the figure script for figures 4 to 6 and two rendered figures
 replaced (section 8); every other file, and both release assets, are those of v1.2.0.
