@@ -35,3 +35,6 @@ every script expect (`RELEASE_MANIFEST.md`, sections 1 and 3). Seven further pro
 were normalized in the same way as above (section 5 of the manifest), and the path constants of
 four scripts that still named workstation folders were changed to name the repository (section 4).
 No result file, protocol record, locked source or locked input was modified.
+
+**Version 1.2.1.** No provenance record changed. The release replaces the figure script for
+figures 4 to 6 and two rendered figures (`RELEASE_MANIFEST.md`, section 8).

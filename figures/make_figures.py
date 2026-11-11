@@ -109,7 +109,7 @@ ARM_LABELS6 = {
     "magnitude_g1.00": "γ=1.00",
     "magnitude_g1.25": "γ=1.25",
     "magnitude_g2.00": "γ=2.00",
-    "ordinal": "Ordinal",
+    "ordinal": "Midrank",
 }
 ARMS7 = ARMS6 + ["uniform_pfba"]
 ARM_LABELS7 = dict(ARM_LABELS6, uniform_pfba="Uniform reference")
@@ -313,7 +313,7 @@ def make_figure4(report):
     half = len(cells) // 2
     for left, right in zip(cells[:half], cells[half:]):
         res_lines.append(left + "   " + right)
-    axSweep.text(0.44, 0.44, "\n".join(res_lines), transform=axSweep.transAxes, fontsize=6.6,
+    axSweep.text(0.455, 0.385, "\n".join(res_lines), transform=axSweep.transAxes, fontsize=6.6,
                  ha="left", va="top", family="monospace",
                  bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="0.6", alpha=0.92))
     handles, labels = axSweep.get_legend_handles_labels()
@@ -363,7 +363,7 @@ def make_figure4(report):
         raise ValueError("range_location_reserved_stages.tsv: 'profiles' column is not "
                           "constant across free targets; cannot state a single reserved-"
                           "profile count on the panel.")
-    axExplo.text(0.99, 0.03, f"{n_reserved_profiles} reserved profiles per arm", transform=axExplo.transAxes,
+    axExplo.text(0.945, 0.03, f"{n_reserved_profiles} reserved profiles per arm", transform=axExplo.transAxes,
               fontsize=7.6, ha="right", va="bottom", style="italic", color="0.3")
     medians = free.groupby("arm")["explo_c"].median().reindex(ARMS6)
     med_text = "median B2 exploration\n" + "\n".join(
@@ -375,7 +375,7 @@ def make_figure4(report):
     axExplo.set_yticks(positions)
     axExplo.set_yticklabels([ARM_LABELS6[a] for a in ARMS6])
     axExplo.set_ylim(0.3, len(ARMS6) + 1.3)
-    axExplo.set_xlabel("B2 exploration of each of the 49 free targets, summarized over the 47 profiles\n(spread of interval midpoints / width admitted by B0); zeros clipped to $10^{-12}$")
+    axExplo.set_xlabel("B2 exploration across profiles")
     axExplo.set_ylabel("encoding arm")
     axExplo.set_axisbelow(True)
     axExplo.xaxis.grid(True, which="major", linewidth=0.5, color="0.85", zorder=0)
@@ -415,11 +415,15 @@ TREAT_MARKER = {"DMSO": "o", "BAY": "^"}
 TREAT_COLOR = {"DMSO": "#4477AA", "BAY": "#CC6677"}
 
 
-def _bracket(ax, x1, x2, y, h, text, fontsize=8.6):
+def _bracket(ax, x1, x2, y, h, text, fontsize=8.6, align="center"):
     ax.plot([x1, x1, x2, x2], [y, y + h, y + h, y], color="black",
             linewidth=1.0, clip_on=False, zorder=5)
-    ax.text((x1 + x2) / 2.0, y + h * 1.08, text, ha="center", va="bottom",
-              fontsize=fontsize, zorder=5)
+    if align == "right":
+        ax.text(x2 + 0.3, y + h * 1.08, text, ha="right", va="bottom",
+                  fontsize=fontsize, zorder=5)
+    else:
+        ax.text((x1 + x2) / 2.0, y + h * 1.08, text, ha="center", va="bottom",
+                  fontsize=fontsize, zorder=5)
 
 
 def make_figure5(report):
@@ -495,13 +499,13 @@ def make_figure5(report):
         met = row["metabolite"]
         x1 = xpos[(met, row["a_oxygen"], row["a_treatment"])]
         x2 = xpos[(met, row["b_oxygen"], row["b_treatment"])]
-        y = base_y + i * base_h * 2.6
+        y = base_y + i * base_h * 3.4
         label = (f"{row['a_oxygen']} {row['a_treatment']} vs "
                  f"{row['b_oxygen']} {row['b_treatment']}: "
                  f"{row['a_measured_mean']:.0f} vs {row['b_measured_mean']:.0f}, "
                  f"fully separated")
-        _bracket(axA, min(x1, x2), max(x1, x2), y, base_h, label)
-    top_of_brackets = base_y + len(separated) * base_h * 2.6 + base_h * 2.2
+        _bracket(axA, min(x1, x2), max(x1, x2), y, base_h, label, align="right")
+    top_of_brackets = base_y + len(separated) * base_h * 3.4 + base_h * 1.4
 
     glc_vals = np.concatenate([np.asarray(measured[f"glucose|{ox}|{tr}"]) for ox, tr in CONDITION_ORDER])
     glc_center = float(np.mean([xpos[("glucose", ox, tr)] for ox, tr in CONDITION_ORDER]))
@@ -512,7 +516,7 @@ def make_figure5(report):
               ha="center", va="bottom", fontsize=10.5, fontweight="bold")
 
     y_bottom = glc_vals.min() * 1.12
-    y_top = top_of_brackets + abs(glc_vals.min()) * 0.10 + 40
+    y_top = top_of_brackets + 0.075 * (top_of_brackets - y_bottom)
     axA.set_ylim(y_bottom, y_top)
     axA.set_xticks(tick_pos)
     axA.set_xticklabels(tick_lab, fontsize=9.3)
@@ -619,18 +623,18 @@ def make_figure5(report):
     # its lowest, so low x / high y is empty.
     c_ymin, c_ymax = cx["point"].min(), cx["point"].max()
     c_span = c_ymax - c_ymin
-    axC.set_ylim(c_ymin - 0.06 * c_span, c_ymax + 0.55 * c_span)
+    axC.set_ylim(c_ymin - 0.06 * c_span, c_ymax + 0.30 * c_span)
 
     spread_growth = decomp["mean_spread_across_growth_rates_at_fixed_transcript"]
     spread_profile = decomp["mean_spread_across_transcripts_at_fixed_growth_rate"]
     ratio = decomp["ratio_transcript_to_task"]
-    note = (f"crossed design: {n_profiles} transcript profiles × {n_growth_rates} growth rates\n"
-            f"arm γ=1.00, EX_lac__L_e\n"
+    note = (f"{n_profiles} transcript profiles × {n_growth_rates} growth rates\n"
+            f"identity encoding, lactate exchange\n"
             f"mean spread across growth rates: {spread_growth:.3f}\n"
             f"mean spread across profiles: {spread_profile:.4f}\n"
-            f"ratio (profile / growth-rate): {ratio*100:.1f}%")
-    axC.text(0.03, 0.97, note, transform=axC.transAxes, fontsize=8.3,
-              ha="left", va="top",
+            f"ratio (profiles / growth rates): {ratio*100:.1f}%")
+    note_artist = axC.text(0.97, 0.035, note, transform=axC.transAxes, fontsize=7.6,
+              ha="right", va="bottom",
               bbox=dict(boxstyle="round,pad=0.35", facecolor="white",
                         edgecolor="0.5", alpha=0.92), zorder=6)
 
@@ -652,7 +656,7 @@ def make_figure5(report):
                       linestyle="--", zorder=4)
     axC.add_patch(rect)
 
-    axins = axC.inset_axes([0.55, 0.08, 0.41, 0.40])
+    axins = axC.inset_axes([0.14, 0.50, 0.38, 0.36])
     for ctx, g in cx.groupby("context_id"):
         g = g.sort_values("task_flux")
         axins.plot(g.task_flux, g.point, color="#4477AA", alpha=0.6, linewidth=1.3,
@@ -702,6 +706,25 @@ def make_figure5(report):
         raise ValueError(
             f"Figure 5 Panel A: the legend box covers {int(covered.sum())} plotted "
             f"replicate point(s); increase `gap` or reposition the legend.")
+
+    # Panel C: the note box and the inset must not cover any plotted line (checked in pixel space).
+    seg = []
+    for ctx, g in cx.groupby("context_id"):
+        g = g.sort_values("task_flux")
+        xs_ = np.interp(np.linspace(0, len(g) - 1, 400), np.arange(len(g)), g.task_flux.values)
+        ys_ = np.interp(np.linspace(0, len(g) - 1, 400), np.arange(len(g)), g.point.values)
+        seg.append(axC.transData.transform(np.column_stack([xs_, ys_])))
+    seg = np.vstack(seg)
+    for name_, box_ in (("note box", note_artist.get_window_extent(renderer)),
+                        ("inset", axins.get_window_extent(renderer))):
+        hit = ((seg[:, 0] >= box_.x0 - 4) & (seg[:, 0] <= box_.x1 + 4) &
+               (seg[:, 1] >= box_.y0 - 4) & (seg[:, 1] <= box_.y1 + 4))
+        if hit.any():
+            raise ValueError(f"Figure 6 Panel C: the {name_} covers part of a plotted line; reposition it.")
+    frame = axC.get_window_extent(renderer)
+    nb = note_artist.get_window_extent(renderer)
+    if nb.x0 < frame.x0 or nb.x1 > frame.x1 or nb.y0 < frame.y0 or nb.y1 > frame.y1:
+        raise ValueError("Figure 6 Panel C: the note box leaves the axes frame; shorten it.")
 
     out_path = os.path.join(OUTDIR, "Figure_6_Independent_Evaluation.png")
     fig.savefig(out_path, dpi=300, bbox_inches="tight")

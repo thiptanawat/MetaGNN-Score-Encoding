@@ -1,7 +1,10 @@
 # Release manifest
 
-Release tag: `v1.2.0`
-Archived record: https://doi.org/10.5281/zenodo.22796608 (release v1.2.0, tag object `980fde2f`, commit `ac2cdd1e74f715ce97ae8314eee13226cc3f3dcf`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
+Release tag: `v1.2.1`
+Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
+
+Release v1.2.1 is release v1.2.0 with the figure script for figures 4 to 6 and two rendered figures
+replaced (section 8); every other file, and both release assets, are those of v1.2.0.
 
 This file states what the release carries, how it relates to the locked study directory the
 analyses ran in, what regenerates from what, and what was changed when the working tree was
@@ -50,7 +53,8 @@ analyses; those analyses record their own input digests in their run manifests.
 | `development_v3_arms.tar.gz` | 25567045 | `94709ee80f65a81fed390845c7626622a080ac4c1d3a3634e2ac31dfbc17f351` | `arms/` (201 JSON records and 201 NPZ arrays of the development run) and `run_summary.json`; unpack into `results/development_v3/` |
 
 `bash verify/fetch_release_assets.sh` downloads both from the release that matches this checkout,
-verifies these digests and unpacks them.
+verifies these digests and unpacks them. The two archives attached to release v1.2.1 are the
+archives of release v1.2.0, unchanged.
 
 ## 3. Path map from release v1.1.0
 
@@ -158,5 +162,30 @@ written while the study was assembled are not deposited; the machine records the
 
 ## 7. Clean-checkout verification
 
-The record of the clean-checkout verification performed on this release is
-`verify/clean_checkout_log_v1.2.0.md`.
+The record of the clean-checkout verification is `verify/clean_checkout_log_v1.2.0.md`. It was
+performed on release v1.2.0. Release v1.2.1 differs from it only in the four files of section 8,
+none of which is an input to an analysis or to the number checker; the checks repeated on a fresh
+clone of v1.2.1 are listed in that section.
+
+## 8. Changes in v1.2.1
+
+Release v1.2.1 replaces four files of v1.2.0. No analysis was rerun, and no result table,
+protocol record, locked source or locked input was modified.
+
+| File | Digest in v1.2.0 | Digest in v1.2.1 | Change |
+|---|---|---|---|
+| `figures/make_figures.py` | `0eb6712b02f0c2215b8172e4c3109a3e72a1991a70c3c5d55e969f67c5090cca` | `ea2429f41fc7033f85a8efa97d27bf9e65e805cdb032dfe73cd83ec91fe6a027` | The midrank encoding is labeled "Midrank" in figures 4 and 6 (it was "Ordinal"; its identifier in the code and in the result files stays `ordinal`). The resolved-pair table of figure 4C, the bracket labels and the lactate title of figure 6A, and the note and the inset of figure 6C are placed so that they stay inside the frame and cover no plotted line, and the script now stops if the note or the inset of figure 6C would cover one. The files read and the values drawn are the same |
+| `results/figures/manuscript/Figure_4_Constraint_Stage.png` | `91531b4ab33a597dfc3c4da7e709b9fa6de5b7744b6eefbccf0a84ccbc4ec681` | `8bc209380775b6d54f236810c2a6d0dcce8c700d3b305029bdadd37d762de9ae` | rendered with the script above |
+| `results/figures/manuscript/Figure_6_Independent_Evaluation.png` | `267030b0ad07f505667368c0da52c17ef11539d27a23ca54ce7d86eec144ba87` | `9a6f0db33dde7104ccbac57e8ad4f32c94b5d40239de6bf00fa0f43ae1361937` | rendered with the script above |
+| `results/figures/manuscript/SHA256SUMS.txt` | `bb3965cd310f0b6685f336ca52f295da1a887e32fd8815239f367aa1e75815ba` | `1fc66779a6ef6e30747442efd82b4be82a7f016ef251132761fab45c9a115da8` | names the three figures as the script writes them, so that `sha256sum -c` runs in that directory |
+
+`results/figures/manuscript/Figure_5_Comparator_Formulations.png` is byte-identical to v1.2.0.
+The script prints the values it draws; run from v1.2.0 and from v1.2.1 on the same checkout, the
+two reports agree on all 260 values. The digest of `figures/make_figures.py` in section 4 is that
+of v1.2.0.
+
+Checks repeated on a fresh clone of v1.2.1 before the tag was pushed: `python verify/check_release.py`
+(every file listed in `CHECKSUMS.sha256` matches, and the lock reconciliation is that of section
+1), `FIGURE_OUT=<new directory> python figures/make_figures.py` (figures 4 to 6 render from the
+deposited outputs), and `python verify/verify_manuscript_numbers.py` against the manuscript and
+its supplementary article (284 checks, 0 problems).
