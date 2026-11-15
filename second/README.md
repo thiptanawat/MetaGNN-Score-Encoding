@@ -27,6 +27,8 @@ are not changed by anything in this directory.
 | `build_report.json`, `exchange_map.tsv`, `target_map.tsv`, `medium_additions.tsv` | The build records: model size, the SHA-256 of the five Human-GEM files read, the exchange and target identifier maps, and the six growth-task inputs added to the medium |
 | `environment_second.txt` | The package list of the environment the runs were made in |
 | `tests/test_second_summarize.py` | Five known-answer tests of `summarize.py` on a synthetic root. They are kept here so that `tests/` stays the locked study's 74 tests; `bash reproduce_extensions.sh tests` runs them |
+| `WITHOUT_SECOND_SOLVER_PLAN_2026-11-15.md`, `without_second_solver.py` | Added in release v1.3.1: the plan and the script of the recomputation without the 4 profiles in which the second solver completed an arm. Both were committed to `main` before the script was run without `--check-only` |
+| `tests/test_without_second_solver.py` | Eight checks of `results/second/without_second_solver.json` against the deposited records. They need a checkout only and run with the tests above |
 | `audit/` | The comparison of the Human-GEM identifiers with those of Recon3D by formula, charge and InChIKey, made after the runs (`audit/README.md`). It was not part of the plan and changed nothing in the analysis. The classes are 88 of 96 target exchanges in full agreement, 3 differing in protonation only, 3 with no stereochemistry on one side, 2 with a different stereochemical block and none a different compound. The scripts need RDKit, which no other part of the repository uses; run from this checkout with RDKit 2026.09.2, they wrote the six tables and the report byte for byte |
 
 ## What is in `results/second/`
@@ -37,6 +39,7 @@ are not changed by anything in this directory.
 | `reserved_v3/` | Predictions of the 47 reserved profiles, the evaluation (`evaluation_primary.json`, `evaluation_primary_summary.tsv`, `evaluation_primary_per_metabolite.tsv`), the transform sensitivity (`transform_primary.json`), the record of the second-solver pass (`second_solver_arms.json`) and the run scalars |
 | `development_v3/` | Predictions of the 11 development profiles, the record of the second-solver pass and the run scalars |
 | `second_summary.json` | Targets constant across profiles and their relation to the uniform solution |
+| `without_second_solver.json` | Release v1.3.1: every reported quantity for all 47 reserved profiles and without the 4 profiles in which the second solver completed an arm, with the three readings of the plan |
 | `mechanism/` | The range stages: the reserved cohort (`reserved_range/`: ledger, summary, run manifest), the uniform-cost control (`uniform_control/`), the interval-position analysis (`range_location*`) and the partial development pilot that the plan describes (`bottleneck_pilot/`: ledger, summary, run manifest and the network-only record of the 8 calculations that fit the script's time budget) |
 | `closure/cap_sweep/` | The cap sweep (`summary.json`, `cap_concordance.json`, `run_manifest.json`, one job record per profile and arm in `jobs/`) |
 | `closure/solver_check_96/` | The check of GLPK against HiGHS over the production list of 96 exchanges |
@@ -108,6 +111,13 @@ python closure/cap_concordance.py --root SECOND_ROOT --sweep SECOND_ROOT/results
 The `build` stage compares its four build records with the copies in this directory and prints
 `identical` or `DIFFERS` for each. The deposited numbers are checked against the files of
 `results/second/` by `python verify/verify_manuscript_numbers.py`.
+
+The recomputation without the profiles that the second solver completed is not a stage of the
+driver. After `evaluate`, `python second/without_second_solver.py --root SECOND_ROOT --check-only`
+computes every reported quantity for all 47 profiles, compares it with the outputs of `evaluate`
+and writes nothing. The same command without `--check-only` then removes the 4 profiles and writes
+`SECOND_ROOT/results/without_second_solver.json`, which is deposited as
+`results/second/without_second_solver.json`.
 
 ## What is held and what differs
 
@@ -203,6 +213,21 @@ arm whose saved point is itself from HiGHS: the fixed classification agreed on 1
 coordinates (15 arms), the largest absolute difference between points was 1.0e-6, and the
 between-profile signs agreed in 4,704 of 4,704 comparisons. `verify/verify_manuscript_numbers.py`
 recomputes these three figures from the rows file.
+
+**Without the profiles that the second solver completed (release v1.3.1).** The 4 arms that only
+HiGHS solved belong to 4 profiles (OV:OVCAR-4, CO:HCT-15, ME:MDA-MB-435, OV:IGROV1). Under a plan
+committed before the computation (`WITHOUT_SECOND_SOLVER_PLAN_2026-11-15.md`), those profiles were
+removed under every encoding, and the quantities above were computed again for the remaining 43
+profiles (41 origins, 38,971 eligible pairs) from the saved records
+(`without_second_solver.json`); no linear program was solved. Midrank minus the mean of the power
+encodings was 0.0011 (-0.0041 to 0.0063), against 0.0017 (-0.0031 to 0.0063) for all
+profiles, and midrank minus identity -0.0002 (-0.0063 to 0.0059), against 0.0005 (-0.0054 to 0.0059).
+The cost cap first fixed 1,973 to 2,032 of the 2,150 open cells per encoding
+(91.8 to 94.5 percent). 46 of the 52 targets were constant across the profiles and all
+46 lay at the uniform value. The near-exact cap fixed 48.26 and 49.26 coordinates and certified
+3,308 and 2,974 of the 38,971 orderings (8.49 and 7.63 percent), and the looser caps
+none. By the three rules of the plan each statement holds without these profiles. The intervals are
+those of a bootstrap over 41 origins in place of 44.
 
 ## Limits and what was not repeated
 

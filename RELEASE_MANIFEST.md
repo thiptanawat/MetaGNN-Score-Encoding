@@ -1,14 +1,14 @@
 # Release manifest
 
-Release tag: `v1.3.0`
-Archived record: https://doi.org/10.5281/zenodo.24238529 (release v1.3.0, tag object `4f279dd7`, commit `adf4fba9d1a90167aef2e1f000a78ac6f45c3b04`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
+Release tag: `v1.3.1`
+Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
 
-Release v1.3.0 is release v1.2.1 with the second reconstruction added (section 9): the directory
-`second/` (the locked plan, the code and driver of the analysis, the build records, the identifier
-audit and five tests) and the directory `results/second/` (the lock of the second root and its
-outputs), one new release asset, and edits to eleven existing files. Section 9 lists them. No
-locked file, lock, result or output of the main analysis changed, and the two release assets of
-v1.2.1 are those of v1.2.0.
+Release v1.3.1 is release v1.3.0 with one recomputation added (section 10): the reported
+quantities of the second reconstruction without the four profiles in which a second solver
+completed an arm. It adds the plan of that recomputation, its script, its output and eight tests,
+and edits six existing files. Section 10 lists them. No locked file, lock, result or output of the
+main analysis or of the second reconstruction changed, and the three release assets are those of
+v1.3.0. Release v1.3.0 was release v1.2.1 with the second reconstruction added (section 9).
 
 Release v1.2.1 was release v1.2.0 with the figure script for figures 4 to 6 and two rendered
 figures replaced (section 8).
@@ -180,7 +180,8 @@ The record of the clean-checkout verification is `verify/clean_checkout_log_v1.2
 performed on release v1.2.0. Release v1.2.1 differs from it only in the four files of section 8,
 none of which is an input to an analysis or to the number checker; the checks repeated on a fresh
 clone of v1.2.1 are listed in that section. Release v1.3.0 adds files and edits the files listed in
-section 9, which also lists the checks repeated on a fresh clone of v1.3.0.
+section 9, which also lists the checks repeated on a fresh clone of v1.3.0. Release v1.3.1 adds the
+files of section 10 and edits those it lists, with the checks repeated on a fresh clone of v1.3.1.
 
 ## 8. Changes in v1.2.1
 
@@ -275,3 +276,47 @@ predictions, ledgers and cap-sweep records were placed in it (the lock accepts t
 and the ten files the stage writes are identical to the deposited copies), and the scripts of
 `second/audit/scripts/` (the six tables and the report they write are identical to the deposited
 copies). The arm runs and the range stages were not repeated for this check.
+
+## 10. Changes in v1.3.1
+
+Release v1.3.1 adds one recomputation to the second reconstruction and edits six existing files. No
+analysis was rerun and no linear program was solved. No locked file, no lock, no result and no
+output of the main analysis or of the second reconstruction changed, and the three release assets
+are those of v1.3.0, with the digests of section 2.
+
+In the reserved run on Human-GEM the second solver completed 4 of the 283 arms (section 9;
+`results/second/reserved_v3/second_solver_arms.json`). The recomputation removes the 4 profiles that
+own such an arm, under every encoding, and computes the reported quantities again for the remaining
+43 profiles from the saved records. Its plan and its script were committed to `main` on 15 November
+2026 (commit `18b7168ef8f197877cad0934e3139946e7bdf0b1`), when the script had been run only with
+`--check-only`, which reproduces the deposited values for all 47 profiles and removes nothing. The
+output was computed after that commit was public.
+
+Files added (4):
+
+| File | Contents |
+|---|---|
+| `second/WITHOUT_SECOND_SOLVER_PLAN_2026-11-15.md` | the plan of the recomputation; in `main` since commit `18b7168e` (SHA-256 `abcca74bc22efd402ddf2440ce24788e4f6e652fa63ea4f0554ef522484caee1`) |
+| `second/without_second_solver.py` | the script; in `main` since commit `18b7168e` (SHA-256 `48e93d62c2bc87e29a96cd953915954d639ee690037b300066ed5c2f724067d2`) |
+| `results/second/without_second_solver.json` | its output: every reported quantity for all 47 reserved profiles and for the 43 that remain, with the three readings of the plan of the second reconstruction (SHA-256 `ed674cedc836179c4146207fd31ae319a13718bdb3758cb5272e343e6ccdb740`) |
+| `second/tests/test_without_second_solver.py` | 8 checks of that output against the deposited records; `second/tests/` now holds 13 tests |
+
+Files changed (6). The digests before are those of the main branch at commit `7cf0b92`, that is,
+release v1.3.0 followed by the commit that recorded its archived identifier.
+
+| File | Digest before | Digest in v1.3.1 | Change |
+|---|---|---|---|
+| `README.md` | `d928d9e0a209e996de07a3c28e9f99663a8d6958152f3162e7ac0e899b2a14d3` | `da98b88654170b8cdeb2d35ce968a10157a3c5ab78cd93c436a3116e0bacf5c4` | one sentence in the section on the second reconstruction and the two Layout rows of `second/` and `results/second/` |
+| `second/README.md` | `bbff286dd97258914db89f409d0aaf7d25ac9a519e62e14469026aa4b3bd1b1a` | `3f82e4f29e2acbbadd4831a74d1c330ff9670f6c0834acc5166814f8dd1227d8` | two rows in the file table, one row in the results table, one paragraph under the commands and one under Results |
+| `RELEASE_MANIFEST.md` | `ee850361eb7dc81b1537b445aa9d0e63bd88811d1e55fa8ae665d00b1896bde5` | see `CHECKSUMS.sha256` | this file: tag, archived-record line, opening paragraph, section 7 and this section |
+| `CITATION.cff` | `4779a4d161edbe92f7b09dad8e410d598126460f542e954a5313b269138efaf8` | `bad98372bef9deaea474c878639fb10b573827f25d1f182fbe5f0d41ad2ad1c5` | `version` 1.3.1; no new identifier, because the identifier of this release does not exist before it is archived |
+| `PROVENANCE_NOTE.md` | `b68687ed539cd08df5eb8b776f4bfb3ff3f1b220cb8ad6e7a3e3e1639ecdb53a` | `fee0bd4a1195af0697c91caae258fc4ce7c97bd1de6c17fabb2f1c7c1b6aa827` | a "Version 1.3.1" paragraph |
+| `verify/verify_manuscript_numbers.py` | `0259da88311cda53e2f48256fe950e04b58e69b42f37a20185d62d55e8a862d3` | `20a6076644e8225ed874d50a9e9c80ba431b4288d306dc6367adc5d391ff3cfb` | 20 checks added, 349 in all: 17 for the recomputation and 3 for sentences of the article on the second reconstruction; the claim string of one check follows the article's abstract |
+
+Checks repeated on a fresh clone of the commit to be tagged, before the tag was pushed:
+`verify/check_release.py` (every listed file matches; the lock reconciliation as in section 1); the
+third asset through `verify/fetch_release_assets.sh second`; the number checker with the article's
+text (349 checks, 0 problems); `pytest second/tests` (13 passed); the `build` and `evaluate` stages
+of `second/reproduce_second.sh` in a rebuilt second root (the build records and the ten outputs
+byte-identical to the deposited files); `second/without_second_solver.py` in that rebuilt root (its
+output byte-identical to `results/second/without_second_solver.json`); and the identifier audit.

@@ -63,3 +63,10 @@ The plan (`second/SECOND_RECONSTRUCTION_PLAN_2026-11-14.md`), the four Python sc
 `run_ranges.sh` of the second analysis, the four build records and the six result tables of the
 identifier audit are deposited byte for byte, and the copy of the plan under `results/second/protocol/` has the same
 digest as the plan.
+
+**Version 1.3.1.** No provenance record changed. The release adds the recomputation of the
+second reconstruction without the profiles that the second solver completed (`RELEASE_MANIFEST.md`,
+section 10). Its output, `results/second/without_second_solver.json`, is deposited byte for byte as
+the script wrote it; it holds no path, account name or address. It was computed on 15 November 2026
+in the second root of the recorded runs, after the plan and the script were public in `main`, and
+again in a second root rebuilt from a checkout, with the same bytes.

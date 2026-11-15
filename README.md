@@ -69,7 +69,10 @@ percent of the open coordinates under every encoding, and all 46 targets that we
 profiles took the uniform solution's value. At the near-exact cap 48.23 and 49.30 of 52
 coordinates were fixed under the identity and midrank encodings and 3,906 and 3,506 orderings were
 certified; at a cap of 1 percent only the 2 network-fixed coordinates stayed fixed and no ordering
-was certified. The three statements held under the rules fixed in the plan. An interval that
+was certified. The three statements held under the rules fixed in the plan. They also held when the
+4 profiles in which a second solver had completed an arm were removed under every encoding, in a
+recomputation whose plan was committed before it was run (release v1.3.1): on the remaining 43
+profiles the two contrasts were 0.0011 (-0.0041 to 0.0063) and -0.0002 (-0.0063 to 0.0059). An interval that
 includes zero is not evidence of equivalence. The bound-based interface, the sampling workflow, the
 sensitivity scenarios and the independent evaluation were not repeated. Human-GEM is not
 redistributed; `second/README.md` gives the inputs, the commands, the run times and the files
@@ -99,8 +102,8 @@ reconciliation). The directories added after the lock sit beside them.
 | `closure/`, `results/closure/` | The objective-allowance sweeps (single cap, fine grid, complete two-cap readout) and their interval scoring, the supporting statistical analyses, the bound-based interface with its common-task controls, the RIPTiDe run, the second-solver checks and the sensitivity-scenario ladders |
 | `copeland/`, `results/copeland/` | The independent condition-response evaluation: the frozen plan and its amendment record, the input acquisition script, the culture medium, the preprocessing interface, the runner, the crossed control, the condition-independent mean task and the reporting rule under both of its versions, with tests |
 | `endpoint/`, `results/endpoint/` | A reconstruction attempt of a published depletion screen, reported as unresolved |
-| `second/` | The second reconstruction (Human-GEM 2.1.1): the locked plan, the build, run and summary code, the driver `reproduce_second.sh`, the build records, the identifier audit (`audit/`) and five known-answer tests (`tests/`) |
-| `results/second/` | The outputs of the second reconstruction: the lock of the second root and its plan copy, predictions, evaluations, range stages, the cap sweep and the solver check (the per-arm records are a release asset) |
+| `second/` | The second reconstruction (Human-GEM 2.1.1): the locked plan, the build, run and summary code, the driver `reproduce_second.sh`, the build records, the identifier audit (`audit/`), the plan and the script of the recomputation without the profiles that the second solver completed, and thirteen tests (`tests/`) |
+| `results/second/` | The outputs of the second reconstruction: the lock of the second root and its plan copy, predictions, evaluations, range stages, the cap sweep, the solver check and the recomputation without the profiles that the second solver completed (the per-arm records are a release asset) |
 | `figures/`, `results/figures/` | The figure script for figures 4 to 6 and the rendered figures 1 to 6 |
 | `verify/` | The release checker, the release-asset fetcher and the checker that traces every reported number to its artefact |
 | `RELEASE_MANIFEST.md` | What this release carries, what regenerates, what was normalized, and the digests of the release assets |

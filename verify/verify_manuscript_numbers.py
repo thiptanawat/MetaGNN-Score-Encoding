@@ -538,12 +538,59 @@ check("second, growth", "the maximum of the biomass reaction is 2.1713 and the p
 check("second, evidence", "Of 2,870 genes, 2,187 are measured, and 7,107 of the 7,746 internal reactions with a rule are supported", "2187 7107 7746",
       "%d %d %d" % (h_build["evidence"]["genes_measured"], h_build["evidence"]["supported_reactions"], h_build["evidence"]["internal_reactions_with_rule"]))
 check("second, scale constant", "is 5.712 on this reconstruction", 5.712, load_json(R2 + "reserved_v3/run_summary_scalars.json")["k"])
-check("second, abstract statement", "On Human-GEM the encoding, attribution and allowance findings held under rules fixed in advance.", True,
+_hw = (_hb["delta_grid_interval"][1] - _hb["delta_grid_interval"][0]) / 2.0
+check("second, grid contrast half-width", "the half-width of the first interval, 0.0047", 0.0047, round(_hw, 4))
+check("second, targets on which a contrast can be nonzero", "so a contrast can be nonzero on 6 targets, against 14", 6, 52 - h_sum["constant_under_every_encoding"])
+check("second, half-width on the varying targets", "rescales to 0.040 on those targets, against 0.029 on Recon3D", 0.040,
+      round(_hw * 52.0 / (52 - h_sum["constant_under_every_encoding"]), 3))
+check("second, abstract statement", "Repeated later on Human-GEM under rules fixed before those runs, the encoding, attribution and allowance findings held.", True,
       _hb["delta_grid_interval"][0] < 0 < _hb["delta_grid_interval"][1] and _hb["delta_identity_interval"][0] < 0 < _hb["delta_identity_interval"][1]
       and all(_arm[a][1] > 0.5 * _arm[a][0] for a in _enc) and h_sum["constant_under_every_encoding_and_at_uniform_value"] > 0.5 * h_sum["constant_under_every_encoding"]
       and all(h_cc[a]["rel_1pct"]["resolved_share"] < h_cc[a]["exact"]["resolved_share"] and h_cs[a]["rel_1pct"]["mean_fixed_of_52"] < h_cs[a]["exact"]["mean_fixed_of_52"]
               for a in ("magnitude_g1.00", "ordinal")))
 
+
+# the recomputation without the profiles that the second solver completed (second/WITHOUT_SECOND_SOLVER_PLAN_2026-11-15.md)
+h_ws = load_json(R2 + "without_second_solver.json"); _wa, _wl = h_ws["all_profiles"], h_ws["without_removed_profiles"]
+_we, _wt, _wr, _wct, _wk = _wl["evaluation"], _wl["transform"], _wl["range_stages"], _wl["constant_targets"], _wl["cap_sweep"]
+_wown = []
+for _x in h_pass["solved_in_pass2"]:
+    if _x["context_id"] not in _wown: _wown.append(_x["context_id"])
+check("second without, all-profile values equal the deposit", "the script reproduced every value above for all 47 profiles", True,
+      all(h_ws["all_profiles_reproduce_the_deposited_values"].values()) and _wa["profiles"] == 47)
+check("second without, profiles removed", "the 4 profiles that own such an arm (%s)" % ", ".join(_wown), True, sorted(_wown) == h_ws["profiles_removed"] and len(_wown) == 4)
+check("second without, profiles, origins, pairs", "The 43 profiles come from 41 origins and give 38,971 eligible pairs", "43 41 38971",
+      "%d %d %d" % (_wl["profiles"], _wl["origins"], _we["eligible_pairs"]))
+check("second without, changed predictions", "changed 227 of 2,236 predictions (10.15 percent)", "227 2236 10.15",
+      "%d %d %.2f" % (_wt["changed_cells"], _wt["context_target_cells"], 100 * _wt["changed_fraction"]))
+check("second without, reversals", "1,670 of 46,852 between-origin orderings (3.56 percent)", "1670 46852 3.56",
+      "%d %d %.2f" % (_wt["strict_order_reversals_across_grid"], _wt["all_distinct_origin_context_target_pairs"], 100 * _wt["strict_order_reversal_fraction"]))
+_wC = _we["primary"]["absolute_macro_C"]; _wpow = [_wC[k] for k in _wC if k.startswith("magnitude")]
+check("second without, concordance", "Concordance was 0.4969 to 0.5018 under the power encodings and 0.5011 under the midrank encoding", "0.4969 0.5018 0.5011",
+      "%.4f %.4f %.4f" % (min(_wpow), max(_wpow), _wC["ordinal"]))
+check("second without, grid contrast", "0.0011 (-0.0041 to 0.0063)", "0.0011 -0.0041 0.0063",
+      "%.4f %.4f %.4f" % (_we["primary"]["delta_grid"], _we["delta_grid_interval"][0], _we["delta_grid_interval"][1]))
+check("second without, identity contrast", "-0.0002 (-0.0063 to 0.0059)", "-0.0002 -0.0063 0.0059",
+      "%.4f %.4f %.4f" % (_we["primary"]["delta_identity"], _we["delta_identity_interval"][0], _we["delta_identity_interval"][1]))
+check("second without, the contrasts in the main text", "on the remaining 43 profiles the two concordance contrasts were 0.0011 (95 percent interval -0.0041 to 0.0063) and -0.0002 (-0.0063 to 0.0059)",
+      "43 0.0011 -0.0041 0.0063 -0.0002 -0.0063 0.0059",
+      "%d %.4f %.4f %.4f %.4f %.4f %.4f" % (_wl["profiles"], _we["primary"]["delta_grid"], _we["delta_grid_interval"][0], _we["delta_grid_interval"][1],
+                                            _we["primary"]["delta_identity"], _we["delta_identity_interval"][0], _we["delta_identity_interval"][1]))
+check("second without, valid resamples", "with 2,000 of 2,000 origin resamples valid", "2000 2000 0", "%d %d %d" % (_we["valid_draws"], _we["resamples"], _we["invalid_draws"]))
+_wfirst = [a["first_fixed_by_cost_cap"] for a in _wr.values()]; _wopen = sorted({a["open"] for a in _wr.values()})
+check("second without, cells first fixed by the cap", "Of the 2,150 coordinate cells per encoding that the network left open, the cost cap first fixed 1,973 to 2,032 (91.8 to 94.5 percent)",
+      "2150 1973 2032 91.8 94.5", "%s %d %d %.1f %.1f" % (" ".join(map(str, _wopen)), min(_wfirst), max(_wfirst), 100 * min(_wfirst) / _wopen[0], 100 * max(_wfirst) / _wopen[0]))
+check("second without, constant targets", "46 of the 52 targets were constant across the 43 profiles, and all 46 took the value of the uniform solution", "46 46",
+      "%d %d" % (_wct["constant_under_every_encoding"], _wct["constant_under_every_encoding_and_at_uniform_value"]))
+check("second without, fixed at the near-exact cap", "48.26 of the 52 coordinates was fixed under the identity encoding and 49.26 under the midrank", "48.26 49.26",
+      "%.2f %.2f" % (_wk["magnitude_g1.00"]["exact"]["mean_fixed_of_52"], _wk["ordinal"]["exact"]["mean_fixed_of_52"]))
+check("second without, certified orderings", "3,308 and 2,974 of the 38,971 orderings (8.49 and 7.63 percent)", "3308 2974 8.49 7.63",
+      "%d %d %.2f %.2f" % (_wk["magnitude_g1.00"]["exact"]["resolved_pairs"], _wk["ordinal"]["exact"]["resolved_pairs"],
+                           100 * _wk["magnitude_g1.00"]["exact"]["resolved_share"], 100 * _wk["ordinal"]["exact"]["resolved_share"]))
+check("second without, looser caps", "at caps of 1, 5 and 20 percent only the 2 coordinates that the network fixes stayed fixed and no ordering was certified", True,
+      all(_wk[a][k]["mean_fixed_of_52"] == 2.0 and _wk[a][k]["resolved_pairs"] == 0 for a in ("magnitude_g1.00", "ordinal") for k in ("rel_1pct", "rel_5pct", "rel_20pct")))
+check("second without, the three readings", "By the three rules of the plan each statement holds without these profiles", True, all(_wl["readings"].values()) and len(_wl["readings"]) == 3)
+check("second without, origins of the bootstrap", "a bootstrap over 41 origins in place of 44", "41 44", "%d %d" % (_we["origin_groups"], _wa["evaluation"]["origin_groups"]))
 
 # what was looked at before the plan was fixed: the development arms and the partial pilot of the range stages
 h_dpass = load_json(R2 + "development_v3/second_solver_arms.json")
