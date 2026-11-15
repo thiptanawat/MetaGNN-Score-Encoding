@@ -1,7 +1,7 @@
 # Release manifest
 
 Release tag: `v1.3.0`
-Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
+Archived record: https://doi.org/10.5281/zenodo.24238529 (release v1.3.0, tag object `4f279dd7`, commit `adf4fba9d1a90167aef2e1f000a78ac6f45c3b04`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
 
 Release v1.3.0 is release v1.2.1 with the second reconstruction added (section 9): the directory
 `second/` (the locked plan, the code and driver of the analysis, the build records, the identifier
