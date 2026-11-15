@@ -3,14 +3,15 @@
 
 Excluded, because they are not part of the deposited tree: the git metadata, virtual environments,
 working directories (work/, logs/, results_repeat/), the third-party raw inputs under data/raw/
-(except its README), the per-arm records and run summaries that are release assets, byte-compiled
-files and the checksum file itself. verify/check_release.py reads the file this script writes.
+(except its README), the per-arm records and run summaries that are release assets (those of the
+main runs and those of the second reconstruction under results/second/), byte-compiled files and
+the checksum file itself. verify/check_release.py reads the file this script writes.
 """
 import hashlib, re, sys
 from pathlib import Path
 
 IGNORE = re.compile(r"^(\.git/|\.venv/|\.pytest_cache/|work/|logs/|results_repeat/|data/raw/(?!README\.md)|"
-                    r"results/(reserved|development)_v3/arms(/|$)|results/(reserved|development)_v3/run_summary\.json$|"
+                    r"results/(second/)?(reserved|development)_v3/arms(/|$)|results/(second/)?(reserved|development)_v3/run_summary\.json$|"
                     r".*__pycache__/|.*\.pyc$|(.*/)?\.DS_Store$|CHECKSUMS\.sha256$)")
 
 

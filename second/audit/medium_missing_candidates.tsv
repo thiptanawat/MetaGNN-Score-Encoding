@@ -1,0 +1,17 @@
+stem	hg_metabolite	compartment	name	formula	charge	kegg	chebi	metBiGGID	hit_by	exchange_in_second_root	humangem_reaction	rule_basis	main_model_has_metabolite	main_model_has_exchange
+adocbl	MAM01361c	c	aquacob(III)alamin	C62H90CoN13O15P	1	C00992	CHEBI:15852	aqcobal	metBiGGID				False	False
+adocbl	MAM01361e	e	aquacob(III)alamin	C62H90CoN13O15P	1	C00992	CHEBI:15852	aqcobal	metBiGGID	EX_aqcobal_e	MAR09269	metBiGGID	False	False
+adocbl	MAM01598m	m	cob(I)alamin	C62H88CoN13O14P	-1	C00853	CHEBI:15982	cbl1	metBiGGID				False	False
+adocbl	MAM01599c	c	cob(II)alamin	C62H88CoN13O14P	0	C00541	CHEBI:16304	cbl2	metBiGGID				False	False
+adocbl	MAM01599m	m	cob(II)alamin	C62H88CoN13O14P	0	C00541	CHEBI:16304	cbl2	metBiGGID				False	False
+adocbl	MAM01600m	m	cobamide-coenzyme	C72H100CoN18O17P	0	C00194	CHEBI:8408	adocbl	kegg,name,metBiGGID				False	False
+adocbl	MAM01600c	c	cobamide-coenzyme	C72H100CoN18O17P	0	C00194	CHEBI:8408	adocbl	kegg,name,metBiGGID				False	False
+adocbl	MAM01600e	e	cobamide-coenzyme	C72H100CoN18O17P	0	C00194	CHEBI:8408	adocbl	kegg,name,metBiGGID	EX_MAR08400	MAR08400	kept: the main medium treats vitamin B12 as unrepresented	False	False
+no3	MAM02714c	c	peroxynitrite	NO3	-1	C16845	CHEBI:25941	CE5643	formula				False	False
+no3	MAM02714e	e	peroxynitrite	NO3	-1	C16845	CHEBI:25941	CE5643	formula	EX_CE5643_e	MAR11906	metBiGGID	False	False
+zn2	MAM03157c	c	zinc	Zn	2	C00038	CHEBI:29105	HC02172	kegg,formula,name				True	False
+zn2	MAM03157g	g	zinc	Zn	2	C00038	CHEBI:29105	HC02172	kegg,formula,name				True	False
+zn2	MAM03157r	r	zinc	Zn	2	C00038	CHEBI:29105	HC02172	kegg,formula,name				True	False
+zn2	MAM03157e	e	zinc	Zn	2	C00038	CHEBI:29105	HC02172	kegg,formula,name	EX_HC02172_e	MAR09080	metBiGGID	True	False
+mn2	MAM01382l	l	beta-1,4-mannose-N-acetylglucosamine	C14H25NO11	0		CHEBI:150430	mn	metBiGGID				False	False
+mn2	MAM01382c	c	beta-1,4-mannose-N-acetylglucosamine	C14H25NO11	0		CHEBI:150430	mn	metBiGGID				False	False

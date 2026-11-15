@@ -1,0 +1,23 @@
+{
+ "k": 5.712,
+ "input_fingerprint": "1306b4f5901913b78ee7f078ada92e278c9b08cffe1094ec9e939dd77e308ce3",
+ "run_id": "cpu-20261114T154614Z",
+ "partition": "development",
+ "contexts": [
+  "BR:HS 578T",
+  "BR:MDA-MB-231",
+  "CO:HT29",
+  "LC:HOP-62",
+  "LC:HOP-92",
+  "LC:NCI-H226",
+  "LE:RPMI-8226",
+  "LE:SR",
+  "ME:MALME-3M",
+  "RE:786-0",
+  "RE:UO-31"
+ ],
+ "completed": 67,
+ "failed": 0,
+ "seconds": 651.5344755150145,
+ "note": "Scalar extract of run_summary.json. The scale constant k is taken from development and is not recomputed on reserved data."
+}

@@ -1,0 +1,331 @@
+metabolite_id	source_label	mapped_exchange	mapped_hg_metabolite	mapped_hg_name	alt_hg_metabolite	alt_name	alt_formula	alt_charge	alt_exchange	alt_exchange_bounds	alt_kegg	alt_chebi	alt_inchikey	strong_tags	weak_tags
+core_001	2-phosphoglycerate	EX_2pg_e	MAM00674e	2-phospho-D-glycerate	MAM01982e	glycerate	C3H5O4	-1	EX_glyc__R_e	-1000.0,1000.0	C00258	CHEBI:32398	RBNPOMFGQQGHHO-UWTATZPHSA-M		name_token_overlap
+core_005	3-phosphoglycerate	EX_3pg_e	MAM00913e	3-phospho-D-glycerate	MAM01982e	glycerate	C3H5O4	-1	EX_glyc__R_e	-1000.0,1000.0	C00258	CHEBI:32398	RBNPOMFGQQGHHO-UWTATZPHSA-M		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03164e	D-alanyl-D-alanine	C6H12N2O3	0	EX_alaala_e	-1000.0,1000.0	C00993	CHEBI:16576	DEFJQIDDEAULHB-QWWZWVQMSA-N		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM01638e	D-alanine	C3H7NO2	0	EX_ala__D_e	-1000.0,1000.0	C00133	CHEBI:15570	QNAYBMKLOCPYGJ-UWTATZPHSA-N	inchikey_skeleton;name_normalized;bigg_stem	
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM01383e	beta-alanine	C3H7NO2	0	EX_ala_B_e	-1000.0,1000.0	C00099	CHEBI:16958	UCMIRNVEIXFBKS-UHFFFAOYSA-N	name_normalized	
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM02530e	N-acetyl-L-alanine	C5H8NO3	-1	EX_MAR10222	-1000.0,1000.0			KTHDTJVBEPMMGL-GSVOUGTGSA-M		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03415e	Alanyl-Histidyl-Alanine	C12H19N5O4	0	EX_alahisala_e	-1000.0,1000.0		CHEBI:158202	JDIQCVUDDFENPU-ZKWXMUAHSA-N		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03435e	Arginyl-Alanyl-Alanine	C12H25N6O4	1	EX_argalaala_e	-1000.0,1000.0		CHEBI:158681	OOBVTWHLKYJFJH-FXQIFTODSA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03436e	Arginyl-Alanine-Phenylalanine	C18H29N6O4	1	EX_argalaphe_e	-1000.0,1000.0			SBVJJNJLFWSJOV-UBHSHLNASA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03618e	Glutamyl-Tryptophanyl-Alanine	C19H23N4O6	-1	EX_glutrpala_e	-1000.0,1000.0		CHEBI:163291	ZQNCUVODKOBSSO-XEGUGMAKSA-M		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03666e	Histidyl-Glutaminyl-Alanine	C14H22N6O5	0	EX_hisglnala_e	-1000.0,1000.0			UPGJWSUYENXOPV-HGNGGELXSA-N		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03671e	Histidyl-Lysyl-Alanine	C15H27N6O4	1	EX_hislysala_e	-1000.0,1000.0			PGRPSOUCWRBWKZ-DLOVCJGASA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03870e	Phenylalanyl-Lysyl-Alanine	C18H29N4O4	1	EX_phelysala_e	-1000.0,1000.0			DNAXXTQSTKOHFO-QEJZJMRPSA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM03925e	Seryl-Arginyl-Alanine	C12H25N6O5	1	EX_serargala_e	-1000.0,1000.0			GXXTUIUYTWGPMV-FXQIFTODSA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM04009e	Tryptophanyl-Arginyl-Alanine	C20H30N7O4	1	EX_trpargala_e	-1000.0,1000.0			HOJPPPKZWFRTHJ-PJODQICGSA-O		name_token_overlap
+core_016	alanine	EX_ala__L_e	MAM01307e	alanine	MAM04043e	Tyrosyl-Alanine	C12H16N2O4	0	EX_tyrala_e	-1000.0,1000.0			NLKUJNGEGZDXGO-XVKPBYJWSA-N		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM01640e	D-arginine	C6H15N4O2	1	EX_arg__D_e	-1000.0,1000.0	C00792	CHEBI:15816	ODKSFYDXXFIFQN-SCSAIBSYSA-O	inchikey_skeleton;name_normalized;bigg_stem	
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03438e	Arginyl-Arginine	C12H28N8O3	2	EX_argarg_e	-1000.0,1000.0			OMLWNBVRVJYMBQ-YUMQZZPRSA-P		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03449e	Arginyl-Phenylalanine-Arginine	C21H37N9O4	2	EX_argphearg_e	-1000.0,1000.0			INXWADWANGLMPJ-JYJNAYRXSA-P		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03456e	Asparaginyl-Asparaginyl-Arginine	C14H27N8O6	1	EX_asnasnarg_e	-1000.0,1000.0			HAJWYALLJIATCX-FXQIFTODSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03464e	Aspartyl-Alanyl-Arginine	C13H24N6O6	0	EX_aspalaarg_e	-1000.0,1000.0			UWMIZBCTVWVMFI-FXQIFTODSA-N		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03678e	Histidyl-Phenylalanyl-Arginine	C21H31N8O4	1	EX_hisphearg_e	-1000.0,1000.0			AYUOWUNWZGTNKB-ULQDDVLXSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03697e	Isolecyl-Glycyl-Arginine	C14H29N6O4	1	EX_ileglyarg_e	-1000.0,1000.0			NHJKZMDIMMTVCK-QXEWZRGKSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03699e	Isolecyl-Seryl-Arginine	C15H31N6O5	1	EX_ileserarg_e	-1000.0,1000.0			JHNJNTMTZHEDLJ-NAKRPEOUSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03711e	Leucyl-Alanyl-Arginine	C15H31N6O4	1	EX_leualaarg_e	-1000.0,1000.0			LJHGALIOHLRRQN-DCAQKATOSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03718e	Leucyl-Prolyl-Arginine	C17H33N6O4	1	EX_leuproarg_e	-1000.0,1000.0			QMKFDEUJGYNFMC-AVGNSLFASA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03721e	Leucyl-Tryptophanyl-Arginine	C23H36N7O4	1	EX_leutrparg_e	-1000.0,1000.0			IDGRADDMTTWOQC-WDSOQIARSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03744e	Lysyl-Tryptophanyl-Arginine	C23H38N8O4	2	EX_lystrparg_e	-1000.0,1000.0		CHEBI:160336	RYOLKFYZBHMYFW-WDSOQIARSA-P		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03763e	Methionyl-Glycyl-Arginine	C13H27N6O4S	1	EX_metglyarg_e	-1000.0,1000.0			FYRUJIJAUPHUNB-IUCAKERBSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03768e	Methionyl-Phenylalanyl-Arginine	C20H33N6O4S	1	EX_metphearg_e	-1000.0,1000.0			LNXGEYIEEUZGGH-JYJNAYRXSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03875e	Phenylalanyl-Prolyl-Arginine	C20H31N6O4	1	EX_pheproarg_e	-1000.0,1000.0			NTUPOKHATNSWCY-JYJNAYRXSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03899e	Prolyl-Leucyl-Arginine	C17H33N6O4	1	EX_proleuarg_e	-1000.0,1000.0			YXHYJEPDKSYPSQ-AVGNSLFASA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03902e	Prolyl-Prolyl-Arginine	C16H29N6O4	1	EX_proproarg_e	-1000.0,1000.0			JLMZKEQFMVORMA-SRVKXCTJSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03927e	Seryl-Cysteinyl-Arginine	C12H25N6O5S	1	EX_sercysarg_e	-1000.0,1000.0			BLPYXIXXCFVIIF-FXQIFTODSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03989e	Threonyl-Isoleucyl-Arginine	C16H33N6O5	1	EX_thrilearg_e	-1000.0,1000.0			WPAKPLPGQNUXGN-OSUNSFLBSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03990e	Threonyl-Methionyl-Arginine	C15H31N6O5S	1	EX_thrmetarg_e	-1000.0,1000.0			OHDXOXIZXSFCDN-RCWTZXSCSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03991e	Threonyl-Phenylalanyl-Arginine	C19H31N6O5	1	EX_thrphearg_e	-1000.0,1000.0			WRQLCVIALDUQEQ-UNQGMJICSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03992e	Threonyl-Seryl-Arginine	C13H27N6O6	1	EX_thrserarg_e	-1000.0,1000.0			PRTHQBSMXILLPC-XGEHTFHBSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM03993e	Threonyl-Threonyl-Arginine	C14H29N6O6	1	EX_thrthrarg_e	-1000.0,1000.0			QYDKSNXSBXZPFK-ZJDVBMNYSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM04025e	Tryptophanyl-Methionyl-Arginine	C22H34N7O4S	1	EX_trpmetarg_e	-1000.0,1000.0		CHEBI:164773	SNWIAPVRCNYFNI-SZMVWBNQSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM04047e	Tyrosyl-Aspartyl-Arginine	C19H28N6O7	0	EX_tyrasparg_e	-1000.0,1000.0			BARBHMSSVWPKPZ-IHRRRGAJSA-N		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM04051e	Tyrosyl-Leucyl-Arginine	C21H35N6O5	1	EX_tyrleuarg_e	-1000.0,1000.0			QSFJHIRIHOJRKS-ULQDDVLXSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM04066e	Valyl-Phenylalanyl-Arginine	C20H33N6O4	1	EX_valphearg_e	-1000.0,1000.0			VNGKMNPAENRGDC-JYJNAYRXSA-O		name_token_overlap
+core_019	arginine	EX_arg__L_e	MAM01365e	arginine	MAM04068e	Valyl-Seryl-Arginine	C14H29N6O5	1	EX_valserarg_e	-1000.0,1000.0			AJNUKMZFHXUBMK-GUBZILKMSA-O		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM02531e	N-acetyl-L-asparagine	C6H9N2O4	-1	EX_CE1556_e	-1000.0,1000.0		CHEBI:139582	HXFOXFJUNFFYMO-BYPYZUCNSA-M		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM03475e	Aspartyl-Valyl-Asparagine	C13H21N4O7	-1	EX_aspvalasn_e	-1000.0,1000.0			PLOKOIJSGCISHE-BYULHYEWSA-M		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM03535e	Cystyl-Tyrosyl-Asparagine	C16H22N4O6S	0	EX_cystyrasn_e	-1000.0,1000.0			IWVNIQXKTIQXCT-SRVKXCTJSA-N		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM03624e	Glycyl-Histidyl-Asparagine	C12H18N6O5	0	EX_glyhisasn_e	-1000.0,1000.0			AYBKPDHHVADEDA-YUMQZZPRSA-N		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM03873e	Phenylalanyl-Phenylalaninyl-Asparagine	C22H26N4O5	0	EX_phepheasn_e	-1000.0,1000.0			OWSLLRKCHLTUND-BZSNNMDCSA-N		name_token_overlap
+core_021	asparagine	EX_asn__L_e	MAM01369e	asparagine	MAM04063e	Valyl-Histidyl-Asparagine	C15H24N6O5	0	EX_valhisasn_e	-1000.0,1000.0			OACSGBOREVRSME-NHCYSSNCSA-N		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM02550e	N-acetyl-seryl-aspartate	C9H12N2O7	-2	EX_CE5868_e	-1000.0,1000.0			GFPWFSOXDSNMDC-WDSKDSINSA-L		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM02559e	N-carbamoyl-L-aspartate	C5H6N2O5	-2	EX_cbasp_e	-1000.0,1000.0	C00438	CHEBI:15859	HLKXYZVTANABHZ-REOHCLBHSA-L		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM01641e	D-aspartate	C4H6NO4	-1	EX_asp__D_e	-1000.0,1000.0	C00402	CHEBI:17364	CKLJMWTZIZZHCS-UWTATZPHSA-M	inchikey_skeleton;name_normalized;bigg_stem	
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM02532e	N-acetyl-L-aspartate	C6H7NO5	-2	EX_Nacasp_e	-1000.0,1000.0	C01042	CHEBI:21547	OTCCIMWXFLJLIA-BYPYZUCNSA-L		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03448e	Arginyl-Lysyl-Aspartate	C16H32N7O6	1	EX_arglysasp_e	-1000.0,1000.0			MJINRRBEMOLJAK-DCAQKATOSA-O		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03459e	Asparaginyl-Phenylalanyl-Aspartate	C17H21N4O7	-1	EX_asnpheasp_e	-1000.0,1000.0			LSJQOMAZIKQMTJ-SRVKXCTJSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03473e	Aspartyl-Methionyl-Aspartate	C13H19N3O8S	-2	EX_aspmetasp_e	-1000.0,1000.0			WWOYXVBGHAHQBG-FXQIFTODSA-L		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03664e	Histidyl-Aspartate	C10H13N4O5	-1	EX_hisasp_e	-1000.0,1000.0			MDCTVRUPVLZSPG-BQBZGAKWSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03695e	Isolecyl-Aspartate	C10H17N2O5	-1	EX_ileasp_e	-1000.0,1000.0			WKXVAXOSIPTXEC-HAFWLYHUSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03712e	Leucyl-Asparaginyl-Aspartate	C14H23N4O7	-1	EX_leuasnasp_e	-1000.0,1000.0			VCSBGUACOYUIGD-CIUDSAMLSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03865e	Phenylalanyl-Aspartate	C13H15N2O5	-1	EX_pheasp_e	-1000.0,1000.0			HWMGTNOVUDIKRE-UWVGGRQHSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03868e	Phenylalanyl-Leucyl-Aspartate	C19H26N3O6	-1	EX_pheleuasp_e	-1000.0,1000.0			YKUGPVXSDOOANW-KKUMJFAQSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM03888e	Prolyl-Arginyl-Aspartate	C15H26N6O6	0	EX_proargasp_e	-1000.0,1000.0			SSSFPISOZOLQNP-GUBZILKMSA-N		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM04010e	Tryptophanyl-Aspartyl-Aspartate	C19H20N4O8	-2	EX_trpaspasp_e	-1000.0,1000.0			VEYXZZGMIBKXCN-UBHSHLNASA-L		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM04037e	Tryptophanyl-Valyl-Aspartate	C20H25N4O6	-1	EX_trpvalasp_e	-1000.0,1000.0			RKISDJMICOREEL-QRTARXTBSA-M		name_token_overlap
+core_022	aspartate	EX_asp__L_e	MAM01370e	aspartate	MAM04016e	Tryptophanyl-Glycyl-Aspartate	C17H19N4O6	-1	EX_trpglyasp_e	-1000.0,1000.0			BEWOXKJJMBKRQL-AAEUAGOBSA-M		name_token_overlap
+core_023	bilirubin	EX_bilirub_e	MAM01396e	bilirubin	MAM01397e	bilirubin-bisglucuronoside	C45H50N4O18	-2	EX_bildglcur_e	-1000.0,1000.0	C05787	CHEBI:18392	SCJLWMXOOYZBTH-SDXZDYKGSA-L		name_token_overlap
+core_023	bilirubin	EX_bilirub_e	MAM01396e	bilirubin	MAM01398e	bilirubin-monoglucuronoside	C39H42N4O12	-2	EX_bilglcur_e	-1000.0,1000.0	C03374	CHEBI:16427	ARBDURHEPGRPSR-GEADQAOESA-L		name_token_overlap
+core_027	phosphocholine	EX_cholp_e	MAM02738e	phosphocholine	MAM00626e	2-acetyl-1-alkyl-sn-glycero-3-phosphocholine	C10H21NO7PR	0	EX_paf_hs_e	-1000.0,1000.0	C04598	CHEBI:36707			name_token_overlap
+core_027	phosphocholine	EX_cholp_e	MAM02738e	phosphocholine	MAM00549e	1-organyl-2-lyso-sn-glycero-3-phosphocholine	C8H19NO6PR	0	EX_MAR09172	-1000.0,1000.0	C04317				name_token_overlap
+core_027	phosphocholine	EX_cholp_e	MAM02738e	phosphocholine	MAM00516e	1-alkyl-2-lysoglycerol-3-phosphocholine	C8H19NO6PR	0	EX_ak2lgchol_hs_e	-1000.0,1000.0	C04317				name_token_overlap
+core_027	phosphocholine	EX_cholp_e	MAM02738e	phosphocholine	MAM03809e	1-Arachidonoyl-Glycero-3-Phosphocholine	C28H50NO7P	0	EX_pcholar_hs_e	-1000.0,1000.0		CHEBI:74344	LAXQYRRMGGEGOH-JXRLJXCWSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03201e	3-Hydroxy Butyryl Carnitine	C11H21NO5	0	EX_3bcrn_e	-1000.0,1000.0		CHEBI:72995	UEFRDQSMQXDWTO-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03243e	3-Hydroxy-Isovaleryl Carnitine	C12H23NO5	0	EX_3ivcrn_e	-1000.0,1000.0		CHEBI:73027	IGLHHSKNBDXCEY-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03251e	3-Hydroxyoctadecanoyl Carnitine	C25H49NO5	0	EX_3octdeccrn_e	-1000.0,1000.0		CHEBI:73077	PWZJXSPDNGIODC-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03253e	3-Hydroxy-Octadecenoyl Carnitine	C25H47NO5	0	EX_3octdece1crn_e	-1000.0,1000.0			DGNPJQDFCXFOEZ-OEPBMOORSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03262e	3-Hydroxy-Tetradecanoyl Carnitine	C21H41NO5	0	EX_3tdcrn_e	-1000.0,1000.0		CHEBI:73063	GFAZJTUXMHGTOC-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03264e	3-Hydroxy Tetradecenoyl-7-Carnitine	C21H39NO5	0	EX_3tetd7ecoacrn_e	-1000.0,1000.0					name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03266e	3-Hydroxy Trans7,10-Hexadecadienoyl Carnitine	C23H41NO5	0	EX_3thexddcoacrn_e	-1000.0,1000.0					name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03268e	3-Hydroxy Trans5,8Tetradecadienoyl Carnitine	C21H37NO5	0	EX_3ttetddcoacrn_e	-1000.0,1000.0					name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03487e	Decenoyl Carnitine	C17H31NO4	0	EX_c101crn_e	-1000.0,1000.0		CHEBI:88543	GOOOCIIXFLVRAG-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03488e	Decanoyl Carnitine	C17H33NO4	0	EX_c10crn_e	-1000.0,1000.0			LZOSYCMHQXPBFU-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03489e	Sebacoyl Carnitine	C17H30NO6	-1	EX_c10dc_e	-1000.0,1000.0		CHEBI:73057	GBFPILOKXGQZKW-UHFFFAOYSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03490e	Dodecanedioyl Carnitine	C19H34NO6	-1	EX_c12dc_e	-1000.0,1000.0		CHEBI:177729	VJPIDPQNAYWULC-INIZCTEOSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03493e	hexadecanedioic acid mono-L-carnitine ester	C23H42NO6	-1	EX_c16dc_e	-1000.0,1000.0		CHEBI:73081	UNHCPLSWMNPZTD-UHFFFAOYSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM02443e	malonyl-carnitine	C10H16NO6	-1	EX_c3dc_e	-1000.0,1000.0		CHEBI:86047	ZGNBLKBZJBJFDG-ZETCQYMHSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03495e	Succinyl Carnitine	C11H18NO6	-1	EX_c4dc_e	-1000.0,1000.0		CHEBI:73034	HAEVNYBCYZZDFL-UHFFFAOYSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03496e	Tiglyl Carnitine	C12H21NO4	0	EX_c51crn_e	-1000.0,1000.0		CHEBI:71179	WURBQCVBQNMUQT-RMKNXTFCSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03497e	Glutaryl Carnitine	C12H21NO6	0	EX_c5dc_e	-1000.0,1000.0		CHEBI:165628	NXJAXUYOQLTISD-VIFPVBQESA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03498e	Hexanoyl Carnitine	C13H25NO4	0	EX_c6crn_e	-1000.0,1000.0			VVPRQWTYSNDTEA-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03499e	Adipoyl Carnitine	C13H22NO6	-1	EX_c6dc_e	-1000.0,1000.0		CHEBI:68568	BSVHAXJKBCWVDA-UHFFFAOYSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03501e	Octenoyl Carnitine	C15H27NO4	0	EX_c81crn_e	-1000.0,1000.0		CHEBI:176711	YMIVWYONPRZBEJ-LXKVQUBZSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03502e	Suberyl Carnitine	C15H26NO6	-1	EX_c8dc_e	-1000.0,1000.0		CHEBI:73052	OMXXOMUNJWASGK-UHFFFAOYSA-M		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03541e	Dodecenoyl Carnitine	C19H35NO4	0	EX_ddece1crn_e	-1000.0,1000.0		CHEBI:73053	ZBZBZKZOFHGNRD-KHPPLWFESA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03544e	Decadienoyl Carnitine	C17H29NO4	0	EX_decdicrn_e	-1000.0,1000.0		CHEBI:177713	GDMITEPIMYKPHX-USKNYQQNSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03706e	Isovaleryl Carnitine	C12H23NO4	0	EX_ivcrn_e	-1000.0,1000.0			IGQBPDJNUXPEMT-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03975e	Tetradecadienoyl Carnitine	C21H37NO4	0	EX_tetdec2crn_e	-1000.0,1000.0			IXOHTRSFILEKHO-FSALDASDSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM03980e	Tetradecenoyl Carnitine	C21H39NO4	0	EX_tetdece1crn_e	-1000.0,1000.0		CHEBI:73060	NNCBVXBBLABOCB-SEYXRHQNSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM00577e	2,6-dimethylheptanoyl-carnitine	C16H31NO4	0	EX_dmhptcrn_e	-1000.0,1000.0			QBYXBONNCVATNQ-UHFFFAOYSA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM02676e	palmitoleoyl-carnitine	C23H43NO4	0	EX_hdcecrn_e	-1000.0,1000.0			JFAGPSOZZSTLRF-KUFMOJEASA-N		name_token_overlap
+core_032	carnitine	EX_crn_e	MAM02348e	L-carnitine	MAM02388e	linoleic-carnitine	C25H45NO4	0	EX_lnlccrn_e	-1000.0,1000.0		CHEBI:84098	MJLXQSQYKZWZCB-DQFWFXSYSA-N		name_token_overlap
+core_036	2'-deoxyadenosine	EX_dad_2_e	MAM01666e	deoxyadenosine	MAM01098e	5-deoxyadenosine	C10H13N5O3	0	EX_dad_5_e	-1000.0,1000.0	C05198	CHEBI:17319	XGYIMTFOTBMPFP-KQYNXXCUSA-N		name_token_overlap
+core_042	phosphoethanolamine	EX_ethamp_e	MAM01798e	ethanolamine-phosphate	MAM01797e	ethanolamine	C2H8NO	1	EX_etha_e	-1000.0,1000.0	C00189	CHEBI:16000	HZAXFHJVJLSVMW-UHFFFAOYSA-O		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02691e	pentaglutamyl-folate(DHF)	C39H43N11O18	-6	EX_5dhf_e	-1000.0,1000.0			LCJSUFBHYPXRBL-LSBAASHUSA-H		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02692e	pentaglutamyl-folate(THF)	C39H45N11O18	-6	EX_5thf_e	-1000.0,1000.0			MEFNETHLDFHDHW-BTNSXGMBSA-H		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02118e	hexaglutamyl-folate(DHF)	C44H49N12O21	-7	EX_6dhf_e	-1000.0,1000.0			VAFWKCXKYMXFRJ-QCOJBMJGSA-G		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02119e	hexaglutamyl-folate(THF)	C44H51N12O21	-7	EX_6thf_e	-1000.0,1000.0			CSMSDHCIDKPAHS-DUJSLOSMSA-G		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02104e	heptaglutamyl-folate(DHF)	C49H55N13O24	-8	EX_7dhf_e	-1000.0,1000.0			HOKMDWRNXIJWTF-FLMSMKGQSA-F		name_token_overlap
+core_043	folate	EX_fol_e	MAM01830e	folate	MAM02105e	heptaglutamyl-folate(THF)	C49H57N13O24	-8	EX_7thf_e	-1000.0,1000.0			MXHOICSYPCFFJG-JEDGRRCBSA-F		name_token_overlap
+core_045	alpha-glycerophosphocholine	EX_g3pc_e	MAM02912e	sn-glycerol-3-PC	MAM01983e	glycerol	C3H8O3	0	EX_glyc_e	-1000.0,1000.0	C00116	CHEBI:17522	PEDCQBHIVMGVHV-UHFFFAOYSA-N		name_token_overlap
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM01967e	glucose-1-phosphate	C6H11O9P	-2	EX_g1p_e	-1000.0,1000.0	C00103	CHEBI:16077	HXXFSFRBOHSIMQ-GASJEMHNSA-L		name_token_overlap
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM03108e	UDP-glucose	C15H22N2O17P2	-2	EX_udpg_e	-1000.0,1000.0	C00029	CHEBI:18066	HSCJRCZFDFQWRP-RDKQLNKOSA-L		name_token_overlap
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM02453e	mannose	C6H12O6	0	EX_man_e	-1000.0,1000.0	C00159	CHEBI:4208	WQZGKKKJIJFFOK-QTVWNMPRSA-N	inchikey_skeleton	
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM01910e	galactose	C6H12O6	0	EX_gal_e	-1000.0,1000.0	C00984	CHEBI:28061	WQZGKKKJIJFFOK-PHYPRBDBSA-N	inchikey_skeleton	
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM01286e	ADP-glucose	C16H23N5O15P2	-2	EX_adpglc_e	-1000.0,1000.0	C00498	CHEBI:15751	WFPZSXYXPSUOPY-ROYWQJLOSA-L		name_token_overlap
+core_048	glucose	EX_glc__D_e	MAM01965e	glucose	MAM01966e	glucose-1,6-bisphosphate	C6H11O12P2	-3	EX_M01966_e	-1000.0,1000.0	C01231	CHEBI:18148	RWHOZGRAXYWRNX-VFUOTHLCSA-N		name_token_overlap
+core_049	glucuronate	EX_glcur_e	MAM01973e	glucuronate	MAM02384e	L-iduronic acid	C6H9O7	-1	EX_idour_e	-1000.0,1000.0	C06472	CHEBI:47903	AEMOLEFTQBMNLQ-HNFCZKTMSA-M	inchikey_skeleton	
+core_049	glucuronate	EX_glcur_e	MAM01973e	glucuronate	MAM03109e	UDP-glucuronate	C15H19N2O18P2	-3	EX_udpglcur_e	-1000.0,1000.0	C00167	CHEBI:17200	HDYANYHVCAPMJV-LXQIFKJMSA-K		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM03596e	Glutaminyl-Asparaginyl-Glutamine	C14H24N6O7	0	EX_glnasngln_e	-1000.0,1000.0			TWHDOEYLXXQYOZ-FXQIFTODSA-N		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM03668e	Histidyl-Glutamyl-Glutamine	C16H23N6O7	-1	EX_hisglugln_e	-1000.0,1000.0			BQFGKVYHKCNEMF-DCAQKATOSA-M		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM03677e	Histidyl-Methionyl-Glutamine	C16H26N6O5S	0	EX_hismetgln_e	-1000.0,1000.0			NKRWVZQTPXPNRZ-SRVKXCTJSA-N		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM03880e	Phenylalanyl-Tyrosinyl-Glutamine	C23H28N4O6	0	EX_phetyrgln_e	-1000.0,1000.0			QUUCAHIYARMNBL-FHWLQOOXSA-N		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM03906e	Prolyl-Valyl-Glutamine	C15H26N4O5	0	EX_provalgln_e	-1000.0,1000.0			JXVXYRZQIUPYSA-NHCYSSNCSA-N		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM04011e	Tryptophanyl-Glutaminyl-Glutamine	C21H28N6O6	0	EX_trpglngln_e	-1000.0,1000.0			DQDXHYIEITXNJY-BPUTZDHNSA-N		name_token_overlap
+core_050	glutamine	EX_gln__L_e	MAM01975e	glutamine	MAM04035e	Tryptophanyl-Tyrosyl-Glutamine	C25H29N5O6	0	EX_trptyrgln_e	-1000.0,1000.0		CHEBI:164897	PKZIWSHDJYIPRH-JBACZVJFSA-N		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM10011e	N-formyl-L-glutamate	C6H7NO5	-2	EX_Nforglu_e	-1000.0,1000.0	C01045	CHEBI:21710	ADZLWSMFHHHOBV-BYPYZUCNSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM02574e	N-formimino-L-glutamate	C6H8N2O4	-2	EX_forglu_e	-1000.0,1000.0	C00439	CHEBI:7274	NRXIKWMTVXPVEF-BYPYZUCNSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM02536e	N-acetyl-L-glutamate	C7H9NO5	-2	EX_acglu_e	-1000.0,1000.0	C00624	CHEBI:12575	RFMMMVDNIPUKGG-YFKPBYRVSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03443e	Arginyl-Glutamyl-Glutamate	C16H27N6O8	-1	EX_arggluglu_e	-1000.0,1000.0			PNQWAUXQDBIJDY-GUBZILKMSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03465e	Aspartyl-Asparaginyl-Glutamate	C13H18N4O9	-2	EX_aspasnglu_e	-1000.0,1000.0			ZELQAFZSJOBEQS-ACZMJKKPSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03466e	Aspartyl-Glutamate	C9H12N2O7	-2	EX_aspglu_e	-1000.0,1000.0			CKAJHWFHHFSCDT-WHFBIAKZSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03471e	Aspartyl-Lysyl-Glutamate	C15H25N4O8	-1	EX_asplysglu_e	-1000.0,1000.0			VSMYBNPOHYAXSD-GUBZILKMSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03601e	Glutaminyl-Prolyl-Glutamate	C15H23N4O7	-1	EX_glnproglu_e	-1000.0,1000.0			HMIXCETWRYDVMO-GUBZILKMSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03602e	Glutaminyl-Tryptophanyl-Glutamate	C21H26N5O7	-1	EX_glntrpglu_e	-1000.0,1000.0			DITJVHONFRJKJW-BPUTZDHNSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03608e	Glutamyl-Glutamate	C10H14N2O7	-2	EX_gluglu_e	-1000.0,1000.0			KOSRFJWDECSPRO-WDSKDSINSA-L		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03667e	Histidyl-Glutamate	C11H15N4O5	-1	EX_hisglu_e	-1000.0,1000.0			VHOLZZKNEBBHTH-YUMQZZPRSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03672e	Histidyl-Lysyl-Glutamate	C17H28N6O6	0	EX_hislysglu_e	-1000.0,1000.0			JUIOPCXACJLRJK-AVGNSLFASA-N		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03696e	Isolecyl-Glutaminyl-Glutamate	C16H27N4O7	-1	EX_ileglnglu_e	-1000.0,1000.0			HOLOYAZCIHDQNS-YVNDNENWSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03741e	Lysyl-Glutamyl-Glutamate	C16H27N4O8	-1	EX_lysgluglu_e	-1000.0,1000.0		CHEBI:144461	PBIPLDMFHAICIP-DCAQKATOSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03928e	Seryl-Glycyl-Glutamate	C10H16N3O7	-1	EX_serglyglu_e	-1000.0,1000.0			MIJWOJAXARLEHA-WDSKDSINSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM03986e	Threonyl-Glutaminyl-Glutamate	C14H23N4O8	-1	EX_thrglnglu_e	-1000.0,1000.0			VUVCRYXYUUPGSB-GLLZPBPUSA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM04032e	Tryptophanyl-Threonyl-Glutamate	C20H25N4O7	-1	EX_trpthrglu_e	-1000.0,1000.0			DTPWXZXGFAHEKL-NWLDYVSISA-M		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM04045e	Tyrosyl-Arginyl-Glutamate	C20H30N6O7	0	EX_tyrargglu_e	-1000.0,1000.0			HTHCZRWCFXMENJ-KKUMJFAQSA-N		name_token_overlap
+core_051	glutamate	EX_glu__L_e	MAM01974e	glutamate	MAM04050e	Tyrosyl-Glutamate	C14H17N2O6	-1	EX_tyrglu_e	-1000.0,1000.0			PDSLRCZINIDLMU-QWRGUYRKSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03621e	Glycyl-Glycine	C4H8N2O3	0	EX_glygly_e	-1000.0,1000.0	C02037	CHEBI:17201	YMAWOPBAYDPSLA-UHFFFAOYSA-N		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03714e	Leucyl-Glycine	C8H16N2O3	0	EX_leugly_e	-1000.0,1000.0		CHEBI:74534	LESXFEZIFXFIQR-LURJTMIESA-N		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03397e	Acetyl-Glycine	C4H6NO3	-1	EX_acgly_e	-1000.0,1000.0		CHEBI:40410	OKJIRPAQVSHGFK-UHFFFAOYSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03412e	Alanyl-Arginyl-Glycine	C11H23N6O4	1	EX_alaarggly_e	-1000.0,1000.0			JBGSZRYCXBPWGX-BQBZGAKWSA-O		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03441e	Arginyl-Cystinyl-Glycine	C11H23N6O4S	1	EX_argcysgly_e	-1000.0,1000.0			YUGFLWBWAJFGKY-BQBZGAKWSA-O		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03445e	Arginyl-Glycyl-Glycine	C10H21N6O4	1	EX_argglygly_e	-1000.0,1000.0			CYXCAHZVPFREJD-LURJTMIESA-O		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03461e	Asparaginyl-Tyrosyl-Glycine	C15H20N4O6	0	EX_asntyrgly_e	-1000.0,1000.0			YSYTWUMRHSFODC-QWRGUYRKSA-N		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM04012e	Tryptophanyl-Glutamyl-Glycine	C18H21N4O6	-1	EX_trpglugly_e	-1000.0,1000.0			VMBBTANKMSRJSS-JSGCOSHPSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM04028e	Tryptophanyl-Prolyl-Glycine	C18H22N4O4	0	EX_trpprogly_e	-1000.0,1000.0		CHEBI:164820	WMIUTJPFHMMUGY-ZFWWWQNUSA-N		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM04048e	Tyrosyl-Cysteinyl-Glycine	C14H19N3O5S	0	EX_tyrcysgly_e	-1000.0,1000.0			FQNUWOHNGJWNLM-QWRGUYRKSA-N		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM04062e	Valyl-Arginyl-Glycine	C13H27N6O4	1	EX_valarggly_e	-1000.0,1000.0			COYSIHFOCOMGCF-WPRPVWTQSA-O		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03886e	Propionyl-Glycine	C5H8NO3	-1	EX_ppiogly_e	-1000.0,1000.0		CHEBI:132936	WOMAZEJKVZLLFE-UHFFFAOYSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03997e	Tiglyl Glycine	C7H10NO3	-1	EX_tiggly_e	-1000.0,1000.0		CHEBI:73018	WRUSVQOKJIDBLP-HWKANZROSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03660e	Hexanoyl-Glycine	C8H14NO3	-1	EX_hexgly_e	-1000.0,1000.0		CHEBI:133580	UPCKIPHSXMXJOX-UHFFFAOYSA-M		name_token_overlap
+core_052	glycine	EX_gly_e	MAM01986e	glycine	MAM03955e	Suberyl-Glycine	C10H15NO5	-2	EX_subgly_e	-1000.0,1000.0		CHEBI:88811	HXATVKDSYDWTCX-UHFFFAOYSA-L		name_token_overlap
+core_056	alpha-glycerophosphate	EX_glyc3p_e	MAM02914e	sn-glycerol-3-phosphate	MAM01983e	glycerol	C3H8O3	0	EX_glyc_e	-1000.0,1000.0	C00116	CHEBI:17522	PEDCQBHIVMGVHV-UHFFFAOYSA-N		name_token_overlap
+core_060	homocysteine	EX_hcys__L_e	MAM02133e	homocysteine	MAM02134e	homocysteine-thiolactone	C4H8NOS	1	EX_CE1401_e	-1000.0,1000.0		CHEBI:233452	KIWQWJKWBHZMDT-VKHMYHEASA-O		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03399e	Acetyl Isoleucine (Chemspider Id: 9964364)	C8H14NO3	-1	EX_acile__L_e	-1000.0,1000.0			JDTWZSUNGHMMJM-DSEUIKHZSA-M		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03673e	Histidyl-Lysyl-Isoleucine	C18H33N6O4	1	EX_hislysile_e	-1000.0,1000.0		CHEBI:164647	LDFWDDVELNOGII-MXAVVETBSA-O		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03693e	Isoleucyl-Arginyl-Isoleucine	C18H37N6O4	1	EX_ileargile_e	-1000.0,1000.0			ATXGFMOBVKSOMK-PEDHHIEDSA-O		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03743e	Lysyl-Phenylalanyl-Isoleucine	C21H35N4O4	1	EX_lyspheile_e	-1000.0,1000.0			LMGNWHDWJDIOPK-DKIMLUQUSA-O		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03745e	Lysyl-Tyrosyl-Isoleucine	C21H35N4O5	1	EX_lystyrile_e	-1000.0,1000.0			IMDJSVBFQKDDEQ-MGHWNKPDSA-O		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM03767e	Methionyl-Methionyl-Isoleucine	C16H31N3O4S2	0	EX_metmetile_e	-1000.0,1000.0			LLKWSEXLNFBKIF-CYDGBPFRSA-N		name_token_overlap
+core_065	isoleucine	EX_ile__L_e	MAM02184e	isoleucine	MAM04033e	Tryptophanyl-Threonyl-Isoleucine	C21H30N4O5	0	EX_trpthrile_e	-1000.0,1000.0			WBZOZLNLXVBCNW-LTHWPDAASA-N		name_token_overlap
+core_070	lactate	EX_lac__L_e	MAM02403e	L-lactate	MAM01716e	D-lactate	C3H5O3	-1	EX_lac__D_e	-1000.0,1000.0	C00256	CHEBI:42111	JVTAAEKCZFNVCJ-UWTATZPHSA-M	inchikey_skeleton;name_normalized;bigg_stem	
+core_070	lactate	EX_lac__L_e	MAM02403e	L-lactate	MAM04072e	Vanil-Lactate	C10H11O5	-1	EX_vanillac_e	-1000.0,1000.0		CHEBI:88526	SVYIZYRTOYHQRE-UHFFFAOYSA-M		name_token_overlap
+core_071	lactose	EX_lcts_e	MAM02332e	lactose	MAM02333e	lactose-6-phosphate	C12H21O14P	-2	EX_HC01441_e	-1000.0,1000.0	C05396	CHEBI:28339	ITPHOIFCAFNCLL-QKKXKWKRSA-L		name_token_overlap
+core_071	lactose	EX_lcts_e	MAM02332e	lactose	MAM02450e	maltose	C12H22O11	0	EX_malt_e	-1000.0,1000.0	C00208	CHEBI:47937	GUBGYTABKSRVRQ-DKBJLJRDSA-N	inchikey_skeleton	
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03413e	Alanyl-Asparaginyl-Leucine	C13H24N4O5	0	EX_alaasnleu_e	-1000.0,1000.0			NXSFUECZFORGOG-CIUDSAMLSA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03603e	Glutaminyl-Tyrosyl-Leucine	C20H30N4O6	0	EX_glntyrleu_e	-1000.0,1000.0			JKDBRTNMYXYLHO-JYJNAYRXSA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03606e	Glutamyl-Arginyl-Leucine	C17H32N6O6	0	EX_gluargleu_e	-1000.0,1000.0			KKCUFHUTMKQQCF-SRVKXCTJSA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03607e	Glutamyl-Asparaginyl-Leucine	C15H25N4O7	-1	EX_gluasnleu_e	-1000.0,1000.0			ZOXBSICWUDAOHX-GUBZILKMSA-M		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03610e	Glutamyl-Leucine	C11H19N2O5	-1	EX_gluleu_e	-1000.0,1000.0			YBAFDPFAUTYYRW-YUMQZZPRSA-M		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03738e	Lysyl-Arginyl-Leucine	C18H39N7O4	2	EX_lysargleu_e	-1000.0,1000.0		CHEBI:159725	YNNPKXBBRZVIRX-IHRRRGAJSA-P		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03760e	Methionyl-Arginyl-Leucine	C17H35N6O4S	1	EX_metargleu_e	-1000.0,1000.0			WDTLNWHPIPCMMP-AVGNSLFASA-O		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03867e	Phenylalanyl-Leucine	C15H22N2O3	0	EX_pheleu_e	-1000.0,1000.0			RFCVXVPWSPOMFJ-STQMWFEESA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM03878e	Phenylalanyl-Tryptophanyl-Leucine	C26H32N4O4	0	EX_phetrpleu_e	-1000.0,1000.0			AOKZOUGUMLBPSS-PMVMPFDFSA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM04013e	Tryptophanyl-Glutamyl-Leucine	C22H29N4O6	-1	EX_trpgluleu_e	-1000.0,1000.0			YXONONCLMLHWJX-SZMVWBNQSA-M		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM04017e	Tryptophanyl-Glycyl-Leucine	C19H26N4O4	0	EX_trpglyleu_e	-1000.0,1000.0			RPVDDQYNBOVWLR-HOCLYGCPSA-N		name_token_overlap
+core_072	leucine	EX_leu__L_e	MAM02360e	leucine	MAM04029e	Tryptophanyl-Prolyl-Leucine	C22H30N4O4	0	EX_trpproleu_e	-1000.0,1000.0			XOLLWQIBBLBAHQ-WDSOQIARSA-N		name_token_overlap
+core_073	kynurenine	EX_Lkynr_e	MAM02319e	kynurenine	MAM00788e	3-hydroxy-L-kynurenine	C10H12N2O4	0	EX_hLkynr_e	-1000.0,1000.0	C03227	CHEBI:17380	VCKPUUFAIGNJHC-LURJTMIESA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM00204e	[protein]-L-lysine	C7H14N3O2R2	1	EX_peplys_e	-1000.0,1000.0	C02188				name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03401e	Acetyl-L-Lysine	C8H16N2O3	0	EX_aclys_e	-1000.0,1000.0	C12989	CHEBI:35704	VEYYWZRYIYDQJM-ZETCQYMHSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM02517e	N6,N6,N6-trimethyl-L-lysine	C9H20N2O2	0	EX_tmlys_e	-1000.0,1000.0	C03793	CHEBI:17311	MXNRLFUSFKVQSK-QMMMGPOBSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03414e	Alanyl-Glycyl-Lysine	C11H23N4O4	1	EX_alaglylys_e	-1000.0,1000.0		CHEBI:158190	BLIMFWGRQKRCGT-YUMQZZPRSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03416e	Alanyl-Lysine-Threonine	C13H27N4O5	1	EX_alalysthr_e	-1000.0,1000.0			OINVDEKBKBCPLX-JXUBOQSCSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03439e	Arginyl-Arginyl-Lysine	C18H41N10O4	3	EX_argarglys_e	-1000.0,1000.0			HJVGMOYJDDXLMI-AVGNSLFASA-Q		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03474e	Aspartyl-Prolyl-Lysine	C15H26N4O6	0	EX_aspprolys_e	-1000.0,1000.0			UAXIKORUDGGIGA-DCAQKATOSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03598e	Glutaminyl-Histidyl-Lysine	C17H30N7O5	1	EX_glnhislys_e	-1000.0,1000.0		CHEBI:162200	NNXIQPMZGZUFJJ-AVGNSLFASA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03599e	Glutaminyl-Lysyl-Lysine	C17H36N6O5	2	EX_glnlyslys_e	-1000.0,1000.0		CHEBI:162318	JRHPEMVLTRADLJ-AVGNSLFASA-P		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03609e	Glutamyl-Isoleucyl-Lysine	C17H32N4O6	0	EX_gluilelys_e	-1000.0,1000.0			XTZDZAXYPDISRR-MNXVOIDGSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03617e	Glutamyl-Threonyl-Lysine	C15H28N4O7	0	EX_gluthrlys_e	-1000.0,1000.0			DTLLNDVORUEOTM-WDCWCFNPSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03625e	Glycyl-Histidyl-Lysine	C14H25N6O4	1	EX_glyhislys_e	-1000.0,1000.0			MVORZMQFXBLMHM-QWRGUYRKSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03632e	Glycyl-Tyrosyl-Lysine	C17H27N4O5	1	EX_glytyrlys_e	-1000.0,1000.0			PNUFMLXHOLFRLD-KBPBESRZSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03669e	Histidyl-Glycyl-Lysine	C14H25N6O4	1	EX_hisglylys_e	-1000.0,1000.0		CHEBI:164491	NQKRILCJYCASDV-QWRGUYRKSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03670e	Histidyl-Histidyl-Lysine	C18H29N8O4	1	EX_hishislys_e	-1000.0,1000.0		CHEBI:164531	AKAPKBNIVNPIPO-KKUMJFAQSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03679e	Histidyl-Prolyl-Lysine	C17H29N6O4	1	EX_hisprolys_e	-1000.0,1000.0			PGXZHYYGOPKYKM-IHRRRGAJSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03698e	Isolecyl-Prolyl-Lysine	C17H33N4O4	1	EX_ileprolys_e	-1000.0,1000.0			NLZVTPYXYXMCIP-XUXIUFHCSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03713e	Leucyl-Aspartyl-Lysine	C16H30N4O6	0	EX_leuasplys_e	-1000.0,1000.0			MYGQXVYRZMKRDB-SRVKXCTJSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03742e	Lysyl-Lysyl-Lysine	C18H41N6O4	3	EX_lyslyslys_e	-1000.0,1000.0			WBSCNDJQPKSPII-KKUMJFAQSA-Q		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03764e	Methionyl-Histidyl-Lysine	C17H31N6O4S	1	EX_methislys_e	-1000.0,1000.0			DYTWOWJWJCBFLE-IHRRRGAJSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03877e	Phenylalanyl-Threonyl-Lysine	C19H31N4O5	1	EX_phethrlys_e	-1000.0,1000.0			PTDAGKJHZBGDKD-OEAJRASXSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03881e	Phenylalanyl-Tyrosinyl-Lysine	C24H33N4O5	1	EX_phetyrlys_e	-1000.0,1000.0			DBNGDEAQXGFGRA-ACRUOGEOSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03895e	Prolyl-Glutamatsyl-Lysine	C16H28N4O6	0	EX_proglulys_e	-1000.0,1000.0			VOZIBWWZSBIXQN-SRVKXCTJSA-N		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03904e	Prolyl-Tryptophanyl-Lysine	C22H32N5O4	1	EX_protrplys_e	-1000.0,1000.0			FYXCBXDAMPEHIQ-FHWLQOOXSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM03930e	Seryl-Phenylalanyl-Lysine	C18H29N4O5	1	EX_serphelys_e	-1000.0,1000.0			XVWDJUROVRQKAE-KKUMJFAQSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM04021e	Tryptophanyl-Isoleucyl-Lysine	C23H36N5O4	1	EX_trpilelys_e	-1000.0,1000.0			ILDJYIDXESUBOE-HSCHXYMDSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM04024e	Tryptophanyl-Lysine	C17H25N4O3	1	EX_trplys_e	-1000.0,1000.0			DZHDVYLBNKMLMB-ZFWWWQNUSA-O		name_token_overlap
+core_074	lysine	EX_lys__L_e	MAM02426e	lysine	MAM00232e	1,2-D-glucosyl-5-D-(galactosyloxy)-L-lysine-procollagen	C19H34N3O13R2	1	EX_MAR20196	-1000.0,1000.0	C04759				name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03450e	Arginyl-Prolyl-Methionine	C16H31N6O4S	1	EX_argpromet_e	-1000.0,1000.0			JJIBHAOBNIFUEL-SRVKXCTJSA-O		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03527e	Cystyl-Asparaginyl-Methionine	C12H22N4O5S2	0	EX_cysasnmet_e	-1000.0,1000.0			SQJSYLDKQBZQTG-FXQIFTODSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03530e	Cystyl-Glutaminyl-Methionine	C13H24N4O5S2	0	EX_cysglnmet_e	-1000.0,1000.0			LMXOUGMSGHFLRX-CIUDSAMLSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03534e	Cystyl-Seryl-Methionine	C11H21N3O5S2	0	EX_cyssermet_e	-1000.0,1000.0			VCPHQVQGVSKDHY-FXQIFTODSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03611e	Glutamyl-Methionine	C10H17N2O5S	-1	EX_glumet_e	-1000.0,1000.0			SXGAGTVDWKQYCX-BQBZGAKWSA-M		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03676e	Histidyl-Methionine	C11H18N4O3S	0	EX_hismet_e	-1000.0,1000.0		CHEBI:74053	AYIZHKDZYOSOGY-IUCAKERBSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03864e	Phenylalanyl-Asparaginyl-Methionine	C18H26N4O5S	0	EX_pheasnmet_e	-1000.0,1000.0			LNIIRLODKOWQIY-IHRRRGAJSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM03994e	Threonyl-Tyrosyl-Methionine	C18H27N3O6S	0	EX_thrtyrmet_e	-1000.0,1000.0			VMSSYINFMOFLJM-KJEVXHAQSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM04020e	Tryptophanyl-Histidyl-Methionine	C22H28N6O4S	0	EX_trphismet_e	-1000.0,1000.0			HJXWDGGIORSQQF-WDSOQIARSA-N		name_token_overlap
+core_076	methionine	EX_met__L_e	MAM02471e	methionine	MAM04056e	Tyrosyl-Valyl-Methionine	C19H29N3O5S	0	EX_tyrvalmet_e	-1000.0,1000.0			SMUWZUSWMWVOSL-JYJNAYRXSA-N		name_token_overlap
+core_077	niacin	EX_nac_e	MAM02586e	nicotinate	MAM02585e	nicotinate ribonucleotide	C11H12NO9P	-2	EX_nicrnt_e	-1000.0,1000.0	C01185	CHEBI:15763	JOUIQRNQJGXQDC-ZYUZMQFOSA-L		name_token_overlap
+core_079	nicotinic acid mononucleotide	EX_nicrnt_e	MAM02585e	nicotinate ribonucleotide	MAM02586e	nicotinate	C6H4NO2	-1	EX_nac_e	-1000.0,1000.0	C00253	CHEBI:15940	PVNIIMVLHYAWGP-UHFFFAOYSA-M		name_token_overlap
+core_080	ornithine	EX_orn_e	MAM02658e	ornithine	MAM01740e	D-ornithine	C5H13N2O2	1	EX_orn__D_e	-1000.0,1000.0	C00515	CHEBI:16176	AHLPHDHHMVZTML-SCSAIBSYSA-O	inchikey_skeleton;name_normalized;bigg_stem	
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03436e	Arginyl-Alanine-Phenylalanine	C18H29N6O4	1	EX_argalaphe_e	-1000.0,1000.0			SBVJJNJLFWSJOV-UBHSHLNASA-O		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03447e	Arginyl-Leucyl-Phenylalanine	C21H35N6O4	1	EX_argleuphe_e	-1000.0,1000.0			IIAXFBUTKIDDIP-ULQDDVLXSA-O		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03449e	Arginyl-Phenylalanine-Arginine	C21H37N9O4	2	EX_argphearg_e	-1000.0,1000.0			INXWADWANGLMPJ-JYJNAYRXSA-P		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03462e	Asparaginyl-Tyrosyl-Phenylalanine	C22H26N4O6	0	EX_asntyrphe_e	-1000.0,1000.0			QUCCLIXMVPIVOB-BZSNNMDCSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03528e	Cystyl-Aspartyl-Phenylalanine	C16H20N3O6S	-1	EX_cysaspphe_e	-1000.0,1000.0			IIGHQOPGMGKDMT-SRVKXCTJSA-M		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03628e	Glycyl-Lysyl-Phenylalanine	C17H27N4O4	1	EX_glylysphe_e	-1000.0,1000.0			MHZXESQPPXOING-KBPBESRZSA-O		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03740e	Lysyl-Glutaminyl-Phenylalanine	C20H32N5O5	1	EX_lysglnphe_e	-1000.0,1000.0			PGBPWPTUOSCNLE-JYJNAYRXSA-O		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03746e	Lysyl-Valyl-Phenylalanine	C20H33N4O4	1	EX_lysvalphe_e	-1000.0,1000.0		CHEBI:160438	TXTZMVNJIRZABH-ULQDDVLXSA-O		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03769e	Methionyl-Tryptophanyl-Phenylalanine	C25H30N4O4S	0	EX_mettrpphe_e	-1000.0,1000.0			HMEVNCOJHJTLNB-BVSLBCMMSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03866e	Phenylalanyl-Glutaminyl-Phenylalanine	C23H28N4O5	0	EX_pheglnphe_e	-1000.0,1000.0			GDBOREPXIRKSEQ-FHWLQOOXSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03872e	Phenylalanyl-Phenylalanine	C18H20N2O3	0	EX_phephe_e	-1000.0,1000.0			GKZIWHRNKRBEOH-HOTGVXAUSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03901e	Prolyl-Phenylalanine	C14H18N2O3	0	EX_prophe_e	-1000.0,1000.0		CHEBI:74795	IWIANZLCJVYEFX-RYUDHWBXSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04018e	Tryptophanyl-Glycyl-Phenylalanine	C22H24N4O4	0	EX_trpglyphe_e	-1000.0,1000.0			NOFFAYIYPAUNRM-HKUYNNGSSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04027e	Tryptophanyl-Phenylalanine	C20H21N3O3	0	EX_trpphe_e	-1000.0,1000.0			IMMPMHKLUUZKAZ-WMZOPIPTSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04044e	Tyrosyl-Alaninyl-Phenylalanine	C21H25N3O5	0	EX_tyralaphe_e	-1000.0,1000.0			XGEUYEOEZYFHRL-KKXDTOCCSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04054e	Tyrosyl-Tryptophanyl-Phenylalanine	C29H30N4O5	0	EX_tyrtrpphe_e	-1000.0,1000.0		CHEBI:166008	ABZWHLRQBSBPTO-RNXOBYDBSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04064e	Valyl-Leucyl-Phenylalanine	C20H31N3O4	0	EX_valleuphe_e	-1000.0,1000.0			ZZGPVSZDZQRJQY-ULQDDVLXSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM04069e	Valyl-Tryptophanyl-Phenylalanine	C25H30N4O4	0	EX_valtrpphe_e	-1000.0,1000.0			LZRWTJSPTJSWDN-FKBYEOEOSA-N		name_token_overlap
+core_085	phenylalanine	EX_phe__L_e	MAM02724e	phenylalanine	MAM03629e	Glycyl-Phenylalanine	C11H14N2O3	0	EX_glyphe_e	-1000.0,1000.0		CHEBI:73912	JBCLFWXMTIKCCB-VIFPVBQESA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM02551e	N-acetyl-seryl-aspartyl-lysyl-proline	C20H32N5O9	-1	EX_CE5867_e	-1000.0,1000.0			HJDRXEQUFWLOGJ-AJNGGQMLSA-M		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM02429e	lysyl-proline	C11H22N3O3	1	EX_CE5869_e	-1000.0,1000.0			AIXUQKMMBQJZCU-IUCAKERBSA-O		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03037e	trans-4-hydroxy-L-proline	C5H9NO3	0	EX_4hpro_LT_e	-1000.0,1000.0	C01157	CHEBI:18095	PMMYEEVYMWASQN-DMTCNVIQSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM01742e	D-proline	C5H9NO2	0	EX_pro__D_e	-1000.0,1000.0	C00763	CHEBI:16313	ONIBWKKTOPOVIA-SCSAIBSYSA-N	inchikey_skeleton;name_normalized;bigg_stem	
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03444e	Arginyl-Glutamyl-Proline	C16H28N6O6	0	EX_argglupro_e	-1000.0,1000.0			HPSVTWMFWCHKFN-DCAQKATOSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03458e	Asparaginyl-Methionyl-Proline	C14H24N4O5S	0	EX_asnmetpro_e	-1000.0,1000.0			WCRQQIPFSXFIRN-GUBZILKMSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03467e	Aspartyl-Glutamyl-Proline	C14H19N3O8	-2	EX_aspglupro_e	-1000.0,1000.0			ZEDBMCPXPIYJLW-CIUDSAMLSA-L		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03470e	Aspartyl-Histidyl-Proline	C15H20N5O6	-1	EX_asphispro_e	-1000.0,1000.0			UBPMOJLRVMGTOQ-DCAQKATOSA-M		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03717e	Leucyl-Proline	C11H20N2O3	0	EX_leupro_e	-1000.0,1000.0		CHEBI:181839	VTJUNIYRYIAIHF-IUCAKERBSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03871e	Phenylalanyl-Lysyl-Proline	C20H31N4O4	1	EX_phelyspro_e	-1000.0,1000.0			BNRFQGLWLQESBG-ULQDDVLXSA-O		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03894e	Prolyl-Glutaminyl-Proline	C15H24N4O5	0	EX_proglnpro_e	-1000.0,1000.0			SKICPQLTOXGWGO-DCAQKATOSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03900e	Prolyl-Lysyl-Proline	C16H29N4O4	1	EX_prolyspro_e	-1000.0,1000.0			ULWBBFKQBDNGOY-AVGNSLFASA-O		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM03903e	Prolyl-Prolyl-Proline	C15H23N3O4	0	EX_propropro_e	-1000.0,1000.0			SBVPYBFMIGDIDX-SRVKXCTJSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM04008e	Tryptophanyl-Alanyl-Proline	C19H24N4O4	0	EX_trpalapro_e	-1000.0,1000.0			VZBWRZGNEPBRDE-PJODQICGSA-N		name_token_overlap
+core_088	proline	EX_pro__L_e	MAM02770e	proline	MAM04014e	Tryptophanyl-Glutamyl-Proline	C21H25N4O6	-1	EX_trpglupro_e	-1000.0,1000.0			KDWZQYUTMJSYRJ-XIRDDKMYSA-M		name_token_overlap
+core_091	sorbitol	EX_sbt__D_e	MAM01682e	D-glucitol	MAM01909e	galactitol	C6H14O6	0	EX_galt_e	-1000.0,1000.0	C01697	CHEBI:16813	FBPFZTCFMRRESA-GUCUJZIJSA-N	inchikey_skeleton	
+core_092	serine	EX_ser__L_e	MAM02896e	serine	MAM01744e	D-serine	C3H7NO3	0	EX_ser__D_e	-1000.0,1000.0	C00740	CHEBI:16523	MTCFGRXMJLQNBG-UWTATZPHSA-N	inchikey_skeleton;name_normalized;bigg_stem	
+core_092	serine	EX_ser__L_e	MAM02896e	serine	MAM03442e	Arginyl-Cystinyl-Serine	C12H25N6O5S	1	EX_argcysser_e	-1000.0,1000.0			JVMKBJNSRZWDBO-FXQIFTODSA-O		name_token_overlap
+core_092	serine	EX_ser__L_e	MAM02896e	serine	MAM03452e	Arginyl-Seryl-Serine	C12H25N6O6	1	EX_argserser_e	-1000.0,1000.0			FRBAHXABMQXSJQ-FXQIFTODSA-O		name_token_overlap
+core_092	serine	EX_ser__L_e	MAM02896e	serine	MAM03663e	Histidyl-Arginyl-Serine	C15H27N8O5	1	EX_hisargser_e	-1000.0,1000.0			ZPVJJPAIUZLSNE-DCAQKATOSA-O		name_token_overlap
+core_092	serine	EX_ser__L_e	MAM02896e	serine	MAM04046e	Tyrosyl-Arginyl-Serine	C18H29N6O6	1	EX_tyrargser_e	-1000.0,1000.0			IIJWXEUNETVJPV-IHRRRGAJSA-O		name_token_overlap
+core_093	spermidine	EX_spmd_e	MAM02923e	spermidine	MAM02922e	spermidine monoaldehyde 2	C7H18N2O	2	EX_CE1940_e	-1000.0,1000.0		CHEBI:51824	JNZUMEMWAPJNLC-UHFFFAOYSA-P		name_token_overlap
+core_093	spermidine	EX_spmd_e	MAM02923e	spermidine	MAM02920e	spermidine dialdehyde	C7H14NO2	1	EX_CE1943_e	-1000.0,1000.0			IBZBSVBGQKDOOV-UHFFFAOYSA-O		name_token_overlap
+core_093	spermidine	EX_spmd_e	MAM02923e	spermidine	MAM02921e	spermidine monoaldehyde 1	C7H18N2O	2	EX_CE1939_e	-1000.0,1000.0		CHEBI:183796	MMMHAACFRAVQHI-UHFFFAOYSA-P		name_token_overlap
+core_094	spermine	EX_sprm_e	MAM02926e	spermine	MAM02925e	spermine monoaldehyde	C10H26N3O	3	EX_CE1935_e	-1000.0,1000.0		CHEBI:180903	ADZORAWYLNDBGZ-UHFFFAOYSA-Q		name_token_overlap
+core_094	spermine	EX_sprm_e	MAM02926e	spermine	MAM02924e	spermine dialdehyde	C10H22N2O2	2	EX_CE1936_e	-1000.0,1000.0		CHEBI:172441	WPBJCXUUUSDQJO-UHFFFAOYSA-P		name_token_overlap
+core_096	succinate	EX_succ_e	MAM02943e	succinate	MAM03765e	Methyl-Succinate	C5H6O4	-2	EX_methsucc_e	-1000.0,1000.0		CHEBI:91315	WXUAQHNMJWJLTG-UHFFFAOYSA-L		name_token_overlap
+core_096	succinate	EX_succ_e	MAM02943e	succinate	MAM02942e	succinate semialdehyde	C4H5O3	-1	EX_sucsal_e	-1000.0,1000.0	C00232	CHEBI:16265	UIUJIQZEACWQSV-UHFFFAOYSA-M		name_token_overlap
+core_098	taurine	EX_taur_e	MAM02961e	taurine	MAM03961e	taurine conjugate of S-ibuprofen	C15H22NO4S	-1	EX_tauribup__S_e	-1000.0,1000.0					name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03406e	Acetyl-Threonine	C6H10NO4	-1	EX_acthr__L_e	-1000.0,1000.0			PEDXUVCGOLSNLQ-UHFFFAOYSA-M		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03416e	Alanyl-Lysine-Threonine	C13H27N4O5	1	EX_alalysthr_e	-1000.0,1000.0			OINVDEKBKBCPLX-JXUBOQSCSA-O		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03437e	Arginyl-Alanyl-Threonine	C13H27N6O5	1	EX_argalathr_e	-1000.0,1000.0			OTOXOKCIIQLMFH-KZVJFYERSA-O		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03446e	Arginyl-Histidyl-Threonine	C16H29N8O5	1	EX_arghisthr_e	-1000.0,1000.0		CHEBI:159033	CVKOQHYVDVYJSI-QTKMDUPCSA-O		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03451e	Arginyl-Prolyl-Threonine	C15H29N6O5	1	EX_argprothr_e	-1000.0,1000.0			AWMAZIIEFPFHCP-RCWTZXSCSA-O		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03463e	Asparaginyl-Tyrosyl-Threonine	C17H24N4O7	0	EX_asntyrthr_e	-1000.0,1000.0			XEGZSHSPQNDNRH-JRQIVUDYSA-N		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03533e	Cystyl-Leucyl-Threonine	C13H25N3O5S	0	EX_cysleuthr_e	-1000.0,1000.0			XZKJEOMFLDVXJG-KATARQTJSA-N		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03616e	Glutamyl-Threonine	C9H15N2O6	-1	EX_gluthr_e	-1000.0,1000.0			JSIQVRIXMINMTA-ZDLURKLDSA-M		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03674e	Histidyl-Lysyl-Threonine	C16H29N6O5	1	EX_hislysthr_e	-1000.0,1000.0			BKOVCRUIXDIWFV-IXOXFDKPSA-O		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03874e	Phenylalanyl-Phenylalaninyl-Threonine	C22H27N3O5	0	EX_phephethr_e	-1000.0,1000.0			MGLBSROLWAWCKN-FCLVOEFKSA-N		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM03905e	Prolyl-Tryptophanyl-Threonine	C20H26N4O5	0	EX_protrpthr_e	-1000.0,1000.0		CHEBI:162729	VBZXFFYOBDLLFE-HSHDSVGOSA-N		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM04049e	Tyrosyl-Cysteinyl-Threonine	C16H23N3O6S	0	EX_tyrcysthr_e	-1000.0,1000.0			UMXSDHPSMROQRB-YJRXYDGGSA-N		name_token_overlap
+core_102	threonine	EX_thr__L_e	MAM02993e	threonine	MAM04053e	Tyrosyl-Threonine	C13H18N2O5	0	EX_tyrthr_e	-1000.0,1000.0			MFEVVAXTBZELLL-GGVZMXCHSA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM01107e	5-hydroxy-L-tryptophan	C11H12N2O3	0	EX_5htrp_e	-1000.0,1000.0	C01017	CHEBI:28171	LDCYZAJDBXYCGN-UHFFFAOYSA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03455e	Arginyl-Valyl-Tryptophan	C22H34N7O4	1	EX_argvaltrp_e	-1000.0,1000.0			UTSMXMABBPFVJP-SZMVWBNQSA-O		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03468e	Aspartyl-Glutamyl-Tryptophan	C20H22N4O8	-2	EX_aspglutrp_e	-1000.0,1000.0			GISFCCXBVJKGEO-QEJZJMRPSA-L		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03532e	Cystyl-Glutamyl-Tryptophan	C19H23N4O6S	-1	EX_cysglutrp_e	-1000.0,1000.0			GOKFTBDYUJCCSN-QEJZJMRPSA-M		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03600e	Glutaminyl-Lysyl-Tryptophan	C22H33N6O5	1	EX_glnlystrp_e	-1000.0,1000.0		CHEBI:162330	AMHIFFIUJOJEKJ-SZMVWBNQSA-O		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03716e	Leucyl-Leucyl-Tryptophan	C23H34N4O4	0	EX_leuleutrp_e	-1000.0,1000.0			FOBUGKUBUJOWAD-IHPCNDPISA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03719e	Leucyl-Seryl-Tryptophan	C20H28N4O5	0	EX_leusertrp_e	-1000.0,1000.0		CHEBI:159514	HWMQRQIFVGEAPH-XIRDDKMYSA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03720e	Leucyl-Tryptophan	C17H23N3O3	0	EX_leutrp_e	-1000.0,1000.0			BQVUABVGYYSDCJ-ZFWWWQNUSA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03747e	Lysyl-Valyl-Tryptophan	C22H34N5O4	1	EX_lysvaltrp_e	-1000.0,1000.0			XBAJINCXDBTJRH-WDSOQIARSA-O		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03876e	Phenylalanyl-Seryl-Tryptophan	C23H26N4O5	0	EX_phesertrp_e	-1000.0,1000.0			MRWOVVNKSXXLRP-IHPCNDPISA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM03926e	Seryl-Arginyl-Tryptophan	C20H30N7O5	1	EX_serargtrp_e	-1000.0,1000.0			HZWAHWQZPSXNCB-BPUTZDHNSA-O		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM04022e	Tryptophanyl-Isoleucyl-Tryptophan	C28H33N5O4	0	EX_trpiletrp_e	-1000.0,1000.0		CHEBI:164730	RIOVOFZXVOWCCX-SBCJRHGPSA-N		name_token_overlap
+core_107	tryptophan	EX_trp__L_e	MAM03089e	tryptophan	MAM04067e	Valyl-Prolyl-Tryptophan	C21H28N4O4	0	EX_valprotrp_e	-1000.0,1000.0		CHEBI:166350	NSUUANXHLKKHQB-BZSNNMDCSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03700e	Isolecyl-Tryptophanyl-Tyrosine	C26H32N4O5	0	EX_iletrptyr_e	-1000.0,1000.0			MITYXXNZSZLHGG-OBAATPRFSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03722e	Leucyl-Tyrosyl-Tyrosine	C24H31N3O6	0	EX_leutyrtyr_e	-1000.0,1000.0			YIRIDPUGZKHMHT-ACRUOGEOSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03761e	Methionyl-Asparaginyl-Tyrosine	C18H26N4O6S	0	EX_metasntyr_e	-1000.0,1000.0			HKRYNJSKVLZIFP-IHRRRGAJSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03762e	Methionyl-Glutaminyl-Tyrosine	C19H28N4O6S	0	EX_metglntyr_e	-1000.0,1000.0		CHEBI:160682	QMIXOTQHYHOUJP-KKUMJFAQSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03879e	Phenylalanyl-Tyrosine	C18H20N2O4	0	EX_phetyr_e	-1000.0,1000.0			FSXRLASFHBWESK-HOTGVXAUSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03898e	Prolyl-Histidyl-Tyrosine	C20H25N5O5	0	EX_prohistyr_e	-1000.0,1000.0		CHEBI:162373	XFFIGWGYMUFCCQ-ULQDDVLXSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03983e	Threonyl-Arginyl-Tyrosine	C19H31N6O6	1	EX_thrargtyr_e	-1000.0,1000.0			UNURFMVMXLENAZ-KJEVXHAQSA-O		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03984e	Threonyl-Asparaginyl-Tyrosine	C17H24N4O7	0	EX_thrasntyr_e	-1000.0,1000.0			JVTHIXKSVYEWNI-JRQIVUDYSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03987e	Threonyl-Glutaminyl-Tyrosine	C18H26N4O7	0	EX_thrglntyr_e	-1000.0,1000.0			RCEHMXVEMNXRIW-IRIUXVKKSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04015e	Tryptophanyl-Glutamyl-Tyrosine	C25H27N4O7	-1	EX_trpglutyr_e	-1000.0,1000.0			HXNVJPQADLRHGR-JBACZVJFSA-M		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04031e	Tryptophanyl-Seryl-Tyrosine	C23H26N4O6	0	EX_trpsertyr_e	-1000.0,1000.0			ABRICLFKFRFDKS-IHPCNDPISA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04034e	Tryptophanyl-Threonyl-Tyrosine	C24H28N4O6	0	EX_trpthrtyr_e	-1000.0,1000.0			WTRQBSSQBKRNKV-MNSWYVGCSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04036e	Tryptophanyl-Tyrosyl-Tyrosine	C29H30N4O6	0	EX_trptyrtyr_e	-1000.0,1000.0			GDPDVIBHJDFRFD-RNXOBYDBSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04052e	Tyrosyl-Phenylalanyl-Tyrosine	C27H29N3O6	0	EX_tyrphetyr_e	-1000.0,1000.0			PHKQVWWHRYUCJL-HJOGWXRNSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04055e	Tyrosyl-Tyrosine	C18H20N2O5	0	EX_tyrtyr_e	-1000.0,1000.0			JAQGKXUEKGKTKX-HOTGVXAUSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM04065e	Valyl-Lysyl-Tyrosine	C20H33N4O5	1	EX_vallystyr_e	-1000.0,1000.0			UOUIMEGEPSBZIV-ULQDDVLXSA-O		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM03407e	N-Acetyl-Tyrosine	C11H12NO4	-1	EX_actyr_e	-1000.0,1000.0		CHEBI:133591	CAHKINHBCWCHCF-JTQLQIEISA-M		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM00807e	3-iodo-L-tyrosine	C9H10INO3	0	EX_3ityr__L_e	-1000.0,1000.0	C02515	CHEBI:27847	UQTZMGFTRHFAAM-ZETCQYMHSA-N		name_token_overlap
+core_108	tyrosine	EX_tyr__L_e	MAM03101e	tyrosine	MAM00739e	3,5-diiodo-L-tyrosine	C9H9I2NO3	0	EX_35diotyr_e	-1000.0,1000.0	C01060	CHEBI:15768	NYPYHUZRZVSYKL-ZETCQYMHSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM03453e	Arginyl-Tyrosyl-Valine	C20H33N6O5	1	EX_argtyrval_e	-1000.0,1000.0			XMZZGVGKGXRIGJ-JYJNAYRXSA-O		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM03675e	Histidyl-Lysyl-Valine	C17H31N6O4	1	EX_hislysval_e	-1000.0,1000.0		CHEBI:164667	TVMNTHXFRSXZGR-IHRRRGAJSA-O		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM03723e	Leucyl-Valine	C11H22N2O3	0	EX_leuval_e	-1000.0,1000.0			MDSUKZSLOATHMH-IUCAKERBSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04019e	Tryptophanyl-Glycyl-Valine	C18H24N4O4	0	EX_trpglyval_e	-1000.0,1000.0			WSGPBCAGEGHKQJ-BBRMVZONSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04023e	Tryptophanyl-Leucyl-Valine	C22H32N4O4	0	EX_trpleuval_e	-1000.0,1000.0			WMBFONUKQXGLMU-WDSOQIARSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04026e	Tryptophanyl-Methionyl-Valine	C21H30N4O4S	0	EX_trpmetval_e	-1000.0,1000.0			NFVQCNMGJILYMI-SZMVWBNQSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04030e	Tryptophanyl-Prolyl-Valine	C21H28N4O4	0	EX_trpproval_e	-1000.0,1000.0			JEYRCNVVYHTZMY-SZMVWBNQSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04070e	Valyl-Tryptophanyl-Valine	C21H30N4O4	0	EX_valtrpval_e	-1000.0,1000.0			KJFBXCFOPAKPTM-BZSNNMDCSA-N		name_token_overlap
+core_114	valine	EX_val__L_e	MAM03135e	valine	MAM04071e	Valyl-Valine	C10H20N2O3	0	EX_valval_e	-1000.0,1000.0			KRNYOVHEKOBTEF-YUMQZZPRSA-N		name_token_overlap
+core_116	XMP	EX_xmp_e	MAM03150e	xanthosine-5-phosphate	MAM03149e	xanthosine	C10H12N4O6	0	EX_xtsn_e	-1000.0,1000.0	C01762	CHEBI:18107	UBORTCNDUKBEOP-UUOKFMHZSA-N		name_token_overlap
+core_117	xanthosine	EX_xtsn_e	MAM03149e	xanthosine	MAM03150e	xanthosine-5-phosphate	C10H11N4O9P	-2	EX_xmp_e	-1000.0,1000.0	C00655	CHEBI:15652	DCTLYFZHFGENCW-UUOKFMHZSA-L		name_token_overlap

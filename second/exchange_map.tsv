@@ -1,0 +1,1655 @@
+humangem_reaction	pipeline_id	basis	humangem_metabolite	metabolite_name	compartment	metBiGGID	metKEGGID	reversed	lower_bound	upper_bound
+MAR00564	EX_1glyc_hs_e	metBiGGID	MAM01893e	1-Acyl Phosphoglycerol	e	1glyc_hs		False	-1000.0	1000.0
+MAR00565	EX_9_cis_retfa_e	metBiGGID	MAM03315e	fatty acid 9-cis-retinol	e	9_cis_retfa		False	-1000.0	1000.0
+MAR00566	EX_adrn_e	metBiGGID	MAM01291e	adrenic acid	e	adrn	C16527	False	-1000.0	1000.0
+MAR00567	EX_arach_e	metBiGGID	MAM01771e	eicosanoate	e	arach	C06425	False	-1000.0	1000.0
+MAR00568	EX_arachd_e	metBiGGID	MAM01362e	arachidonate	e	arachd	C00219	False	-1000.0	1000.0
+MAR00569	EX_atp_e	metBiGGID	MAM01371e	ATP	e	atp	C00002	False	-1000.0	1000.0
+MAR00570	EX_bvite_e	metBiGGID	MAM03484e	Beta-Tocopherol	e	bvite	C14152	False	-1000.0	1000.0
+MAR00571	EX_clpnd_e	metBiGGID	MAM01741e	DPA	e	clpnd	C16513	False	-1000.0	1000.0
+MAR00572	EX_crmp_hs_e	metBiGGID	MAM01431e	ceramide-1P pool	e	crmp_hs		False	-1000.0	1000.0
+MAR00573	EX_crvnc_e	metBiGGID	MAM01689e	DHA	e	crvnc	C06429	False	-1000.0	1000.0
+MAR00574	EX_dag_hs_e	metBiGGID	MAM00240e	1,2-diacylglycerol-LD-TAG pool	e	dag_hs	C00641	False	-1000.0	1000.0
+MAR00575	EX_dcsptn1_e	metBiGGID	MAM00094e	(4Z,7Z,10Z,13Z,16Z)-DPA	e	dcsptn1		False	-1000.0	1000.0
+MAR00576	EX_dlnlcg_e	metBiGGID	MAM01696e	dihomo-gamma-linolenate	e	dlnlcg	C03242	False	-1000.0	1000.0
+MAR00577	EX_eicostet_e	metBiGGID	MAM02648e	omega-3-arachidonic acid	e	eicostet		False	-1000.0	1000.0
+MAR00583	EX_elaid_e	metBiGGID	MAM01778e	elaidate	e	elaid	C00712	False	-1000.0	1000.0
+MAR00585	EX_fucfuc12gal14acglcgalgluside_hs_e	metBiGGID	MAM03577e	Ley Glycolipid	e	fucfuc12gal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR00603	EX_glyc__S_e	metBiGGID	MAM03620e	(S)-Glycerate	e	glyc__S		False	-1000.0	1000.0
+MAR00606	EX_glygn2_e	metBiGGID	MAM01992e	glycogenin G4G7	e	glygn2		False	-1000.0	1000.0
+MAR00608	EX_glygn4_e	metBiGGID	MAM03622e	Glycogen, Structure 4 (Glycogenin-1,6-{2[1,4-Glc], [1,4-Glc]})	e	glygn4		False	-1000.0	1000.0
+MAR00609	EX_glygn5_e	metBiGGID	MAM03623e	Glycogen, Structure 5 (Glycogenin-2[1,4-Glc])	e	glygn5		False	-1000.0	1000.0
+MAR00611	EX_hdca_e	metBiGGID	MAM02674e	palmitate	e	hdca	C00249	False	-1000.0	1000.0
+MAR00617	EX_hdcea_e	metBiGGID	MAM02675e	palmitolate	e	hdcea	C08362	False	-1000.0	1000.0
+MAR00618	EX_hexc_e	metBiGGID	MAM01432e	cerotic acid	e	hexc	C21931	False	-1000.0	1000.0
+MAR00619	EX_hista_e	metBiGGID	MAM02124e	histamine	e	hista	C00388	False	-1000.0	1000.0
+MAR00620	EX_hpdca_e	metBiGGID	MAM02456e	margaric acid	e	hpdca		False	-1000.0	1000.0
+MAR00621	EX_lgnc_e	metBiGGID	MAM02385e	lignocerate	e	lgnc	C08320	False	-1000.0	1000.0
+MAR00624	EX_lneldc_e	metBiGGID	MAM00104e	(6Z,9Z)-octadecadienoic acid	e	lneldc		False	-1000.0	1000.0
+MAR00626	EX_lnlncg_e	metBiGGID	MAM01932e	gamma-linolenate	e	lnlncg	C06426	False	-1000.0	1000.0
+MAR00628	EX_lpchol_hs_e	metBiGGID	MAM00656e	2-lysolecithin pool	e	lpchol_hs	C04230	False	-1000.0	1000.0
+MAR00631	EX_mag_hs_e	rxnBiGGID	MAM10006e	1-acylglycerol-3P pool	e		C00681	False	-1000.0	1000.0
+MAR00637	EX_nrvnc_e	metBiGGID	MAM02564e	nervonic acid	e	nrvnc	C08323	False	-1000.0	1000.0
+MAR00639	EX_ocdca_e	metBiGGID	MAM02938e	stearate	e	ocdca	C01530	False	-1000.0	1000.0
+MAR00650	EX_ocdcea_e	metBiGGID	MAM02646e	oleate	e	ocdcea	C00712	False	-1000.0	1000.0
+MAR00655	EX_pchol_hs_e	metBiGGID	MAM02684e	PC-LD pool	e	pchol_hs	C00157	False	-1000.0	1000.0
+MAR00656	EX_pe_hs_e	metBiGGID	MAM02685e	PE-LD pool	e	pe_hs	C00350	False	-1000.0	1000.0
+MAR00658	EX_pglyc_hs_e	metBiGGID	MAM02715e	PG-CL pool	e	pglyc_hs	C00344	False	-1000.0	1000.0
+MAR00659	EX_MAR00659	cross-reference not unique	MAM03884e	(3S)-phytanic acid	e	phyt	C01607	False	-1000.0	1000.0
+MAR00661	EX_ps_hs_e	metBiGGID	MAM02808e	PS-LD pool	e	ps_hs	C02737	False	-1000.0	1000.0
+MAR00662	EX_ptdca_e	metBiGGID	MAM02690e	pentadecylic acid	e	ptdca	C16537	False	-1000.0	1000.0
+MAR00666	EX_retfa_e	rxnBiGGID	MAM02838e	retinyl-ester	e		C02075	False	-1000.0	1000.0
+MAR00693	EX_retinol_9_cis_e	metBiGGID	MAM01232e	9-cis-retinol	e	retinol_9_cis	C16682	False	-1000.0	1000.0
+MAR00694	EX_retinol_cis_11_e	metBiGGID	MAM00291e	11-cis-retinol	e	retinol_cis_11	C00899	False	-1000.0	1000.0
+MAR00695	EX_strdnc_e	metBiGGID	MAM02939e	stearidonic acid	e	strdnc	C16300	False	-1000.0	1000.0
+MAR00696	EX_tag_hs_e	metBiGGID	MAM02959e	TAG-VLDL pool	e	tag_hs	C00422	False	-1000.0	1000.0
+MAR00697	EX_tethex3_e	metBiGGID	MAM00114e	(6Z,9Z,12Z,15Z,18Z,21Z)-THA	e	tethex3		False	-1000.0	1000.0
+MAR00698	EX_tetpent3_e	metBiGGID	MAM00135e	(9Z,12Z,15Z,18Z,21Z)-TPA	e	tetpent3		False	-1000.0	1000.0
+MAR00699	EX_tetpent6_e	metBiGGID	MAM00111e	(6Z,9Z,12Z,15Z,18Z)-TPA	e	tetpent6		False	-1000.0	1000.0
+MAR00700	EX_tettet6_e	metBiGGID	MAM00132e	(9Z,12Z,15Z,18Z)-TTA	e	tettet6		False	-1000.0	1000.0
+MAR00701	EX_tmndnc_e	metBiGGID	MAM01784e	EPA	e	tmndnc	C06428	False	-1000.0	1000.0
+MAR00702	EX_ttdca_e	metBiGGID	MAM02494e	myristic acid	e	ttdca	C06424	False	-1000.0	1000.0
+MAR00704	EX_vacc_e	metBiGGID	MAM01585e	cis-vaccenic acid	e	vacc	C21944	False	-1000.0	1000.0
+MAR00711	EX_xolest_hs_e	metBiGGID	MAM04081e	Cholesterol Ester	e	xolest_hs		False	-1000.0	1000.0
+MAR00714	EX_xolest2_hs_e	metBiGGID	MAM01451e	cholesterol-ester pool	e	xolest2_hs	C02530	False	-1000.0	1000.0
+MAR00720	EX_xoltri24_e	metBiGGID	MAM01446e	cholest-5-ene-3beta,7alpha,24(S)-triol	e	xoltri24	C15518	False	-1000.0	1000.0
+MAR00721	EX_xoltri25_e	metBiGGID	MAM01447e	cholest-5-ene-3beta,7alpha,25-triol	e	xoltri25	C15520	False	-1000.0	1000.0
+MAR00722	EX_xoltri27_e	metBiGGID	MAM01448e	cholest-5-ene-3beta,7alpha,27-triol	e	xoltri27	C06341	False	-1000.0	1000.0
+MAR01869	EX_4abutn_e	metBiGGID	MAM00969e	4-aminobutanal	e	4abutn	C00555	False	-1000.0	1000.0
+MAR01871	EX_ahdt_e	metBiGGID	MAM01155e	6-[(1S,2R)-1,2-dihydroxy-3-triphosphooxypropyl]-7,8-dihydropterin	e	ahdt	C04895	False	-1000.0	1000.0
+MAR01873	EX_ctp_e	metBiGGID	MAM01623e	CTP	e	ctp	C00063	False	-1000.0	1000.0
+MAR01912	EX_dgmp_e	metBiGGID	MAM01686e	dGMP	e	dgmp	C00362	False	-1000.0	1000.0
+MAR01918	EX_dgtp_e	metBiGGID	MAM01688e	dGTP	e	dgtp	C00286	False	-1000.0	1000.0
+MAR01921	EX_dha_e	metBiGGID	MAM01984e	glycerone	e	dha	C00184	False	-1000.0	1000.0
+MAR01922	EX_dhap_e	metBiGGID	MAM01690e	DHAP	e	dhap	C00111	False	-1000.0	1000.0
+MAR01923	EX_dtmp_e	metBiGGID	MAM01752e	dTMP	e	dtmp	C00364	False	-1000.0	1000.0
+MAR01938	EX_dttp_e	metBiGGID	MAM01753e	dTTP	e	dttp	C00459	False	-1000.0	1000.0
+MAR01939	EX_fad_e	metBiGGID	MAM01802e	FAD	e	fad	C00016	False	-1000.0	1000.0
+MAR01946	EX_fald_e	metBiGGID	MAM01831e	formaldehyde	e	fald	C00067	False	-1000.0	1000.0
+MAR01947	EX_g1p_e	metBiGGID	MAM01967e	glucose-1-phosphate	e	g1p	C00103	False	-1000.0	1000.0
+MAR01954	EX_HC00229_e	metBiGGID	MAM02185e	isomaltose	e	HC00229	C00252	False	-1000.0	1000.0
+MAR01955	EX_HC01440_e	metBiGGID	MAM00810e	3-keto-beta-D-galactose	e	HC01440	C05394	False	-1000.0	1000.0
+MAR01956	EX_HC01441_e	metBiGGID	MAM02333e	lactose-6-phosphate	e	HC01441	C05396	False	-1000.0	1000.0
+MAR01957	EX_HC01446_e	rxnBiGGID	MAM00812e	3-ketolactose	e		C05403	False	-1000.0	1000.0
+MAR01961	EX_HC01577_e	metBiGGID	MAM01926e	gamma-glutamyl-beta-cyanoalanine	e	HC01577	C05711	False	-1000.0	1000.0
+MAR01964	EX_HC01609_e	metBiGGID	MAM03127e	uroporphyrinogen I	e	HC01609	C05766	False	-1000.0	1000.0
+MAR01965	EX_cpppg1_e	metBiGGID	MAM01605e	coproporphyrinogen I	e	cpppg1	C05768	False	-1000.0	1000.0
+MAR01966	EX_HC01700_e	metBiGGID	MAM01925e	gamma-glutamyl-3-aminopropiononitrile	e	HC01700	C06114	False	-1000.0	1000.0
+MAR01972	EX_gm2_hs_e	metBiGGID	MAM02011e	GM2	e	gm2_hs	C04884	False	-1000.0	1000.0
+MAR01975	EX_HC02161_e	metBiGGID	MAM02008e	GM1	e	HC02161	C04911	False	-1000.0	1000.0
+MAR01984	EX_prpp_e	metBiGGID	MAM02806e	PRPP	e	prpp	C00119	False	-1000.0	1000.0
+MAR01986	EX_udpg_e	metBiGGID	MAM03108e	UDP-glucose	e	udpg	C00029	False	-1000.0	1000.0
+MAR04092	EX_prostgh2_e	metBiGGID	MAM02794e	prostaglandin H2	e	prostgh2	C00427	False	-1000.0	1000.0
+MAR04094	EX_prostgi2_e	metBiGGID	MAM02795e	prostaglandin I2	e	prostgi2	C01312	False	-1000.0	1000.0
+MAR04096	EX_cdp_e	metBiGGID	MAM01424e	CDP	e	cdp	C00112	False	-1000.0	1000.0
+MAR04098	EX_dtdp_e	metBiGGID	MAM01747e	dTDP	e	dtdp	C00363	False	-1000.0	1000.0
+MAR04100	EX_HC00955_e	metBiGGID	MAM02326e	L-3-cyanoalanine	e	HC00955	C02512	False	-1000.0	1000.0
+MAR04102	EX_MAR04102	no cross-reference	MAM01343e	antichymotrypsin	e			False	-1000.0	1000.0
+MAR04104	EX_MAR04104	no cross-reference	MAM01345e	antitrypsin	e			False	-1000.0	1000.0
+MAR04110	EX_HC00004_e	metBiGGID	MAM01350e	apoA1	e	HC00004		False	-1000.0	1000.0
+MAR04117	EX_MAR04117	no cross-reference	MAM01827e	fibrinogen	e		C00393	False	-1000.0	1000.0
+MAR04119	EX_MAR04119	no cross-reference	MAM02044e	haptoglobin	e			False	-1000.0	1000.0
+MAR04129	EX_MAR04129	no cross-reference	MAM02753e	plasminogen	e			False	-1000.0	1000.0
+MAR04138	EX_MAR04138	no cross-reference	MAM02802e	prothrombin	e			False	-1000.0	1000.0
+MAR04140	EX_MAR04140	no cross-reference	MAM00186e	[apotransferin]	e		C05780	False	-1000.0	1000.0
+MAR04142	EX_HC00822_e	metBiGGID	MAM01439e	chitobiose	e	HC00822	C01674	False	-1000.0	1000.0
+MAR04146	EX_HC02192_e	metBiGGID	MAM02965e	taurolithocholate	e	HC02192	C02592	False	-1000.0	1000.0
+MAR04148	EX_HC02193_e	metBiGGID	MAM02000e	glycolithocholate	e	HC02193	C15557	False	-1000.0	1000.0
+MAR04150	EX_HC02195_e	metBiGGID	MAM02966e	tauroursodeoxycholate	e	HC02195	C16868	False	-1000.0	1000.0
+MAR04151	EX_HC02196_e	metBiGGID	MAM02004e	glycoursodeoxycholate	e	HC02196		False	-1000.0	1000.0
+MAR04153	EX_HC02220_e	metBiGGID	MAM02950e	sulfochenodeoxycholate	e	HC02220		False	-1000.0	1000.0
+MAR04154	EX_HC02154_e	metBiGGID	MAM03393e	Gm4-Pool	e	HC02154		False	-1000.0	1000.0
+MAR04155	EX_MAR04155	no cross-reference	MAM01980e	glutathionyl-leukotriene C4	e			False	-1000.0	1000.0
+MAR04157	EX_HC02200_e	metBiGGID	MAM02900e	S-glutathionyl-2-4-dinitrobenzene	e	HC02200	C11175	False	-1000.0	1000.0
+MAR04161	EX_HC02201_e	metBiGGID	MAM02901e	S-glutathionyl-ethacrynic acid	e	HC02201		False	-1000.0	1000.0
+MAR04164	EX_HC02191_e	metBiGGID	MAM02402e	lithocholate	e	HC02191	C03990	False	-1000.0	1000.0
+MAR04173	EX_HC02194_e	metBiGGID	MAM03129e	ursodeoxycholate	e	HC02194	C07880	False	-1000.0	1000.0
+MAR04178	EX_HC02197_e	metBiGGID	MAM02951e	sulfoglycolithocholate	e	HC02197	C11301	False	-1000.0	1000.0
+MAR04181	EX_HC02198_e	metBiGGID	MAM02952e	sulfotaurolithocholate	e	HC02198	C03642	False	-1000.0	1000.0
+MAR04195	EX_HC02187_e	rxnBiGGID	MAM02839e	reverse triiodthyronine	e		C07639	False	-1000.0	1000.0
+MAR04203	EX_HC02202_e	metBiGGID	MAM02776e	prostaglandin A1	e	HC02202	C04685	False	-1000.0	1000.0
+MAR04213	EX_HC02203_e	metBiGGID	MAM02777e	prostaglandin A2	e	HC02203	C05953	False	-1000.0	1000.0
+MAR04215	EX_HC02204_e	metBiGGID	MAM02778e	prostaglandin B1	e	HC02204	C00959	False	-1000.0	1000.0
+MAR04217	EX_HC02205_e	metBiGGID	MAM02779e	prostaglandin B2	e	HC02205	C05954	False	-1000.0	1000.0
+MAR04221	EX_HC02206_e	metBiGGID	MAM02780e	prostaglandin C1	e	HC02206	C04686	False	-1000.0	1000.0
+MAR04223	EX_HC02207_e	metBiGGID	MAM02781e	prostaglandin C2	e	HC02207	C05955	False	-1000.0	1000.0
+MAR04226	EX_HC02208_e	metBiGGID	MAM02782e	prostaglandin D1	e	HC02208	C06438	False	-1000.0	1000.0
+MAR04229	EX_HC02210_e	metBiGGID	MAM02784e	prostaglandin D3	e	HC02210	C13802	False	-1000.0	1000.0
+MAR04230	EX_HC02213_e	rxnBiGGID	MAM02787e	prostaglandin E3	e		C06439	False	-1000.0	1000.0
+MAR04234	EX_HC02214_e	metBiGGID	MAM02788e	prostaglandin F1alpha	e	HC02214	C06475	False	-1000.0	1000.0
+MAR04236	EX_MAR04236	no cross-reference	MAM02790e	prostaglandin F2beta	e		C02314	False	-1000.0	1000.0
+MAR04238	EX_HC02217_e	metBiGGID	MAM02792e	prostaglandin G2	e	HC02217	C05956	False	-1000.0	1000.0
+MAR04240	EX_malcoa_e	metBiGGID	MAM02444e	malonyl-CoA	e	malcoa	C00083	False	-1000.0	1000.0
+MAR04247	EX_arachcoa_e	metBiGGID	MAM01773e	eicosanoyl-CoA	e	arachcoa	C02041	False	-1000.0	1000.0
+MAR04256	EX_coa_e	metBiGGID	MAM01597e	CoA	e	coa	C00010	False	-1000.0	1000.0
+MAR04258	EX_CE2250_e	metBiGGID	MAM00866e	3-oxodocosanoyl-CoA	e	CE2250		False	-1000.0	1000.0
+MAR04272	EX_CE1935_e	metBiGGID	MAM02925e	spermine monoaldehyde	e	CE1935		False	-1000.0	1000.0
+MAR04273	EX_CE1940_e	metBiGGID	MAM02922e	spermidine monoaldehyde 2	e	CE1940		False	-1000.0	1000.0
+MAR04286	EX_CE1943_e	metBiGGID	MAM02920e	spermidine dialdehyde	e	CE1943		False	-1000.0	1000.0
+MAR04289	EX_CE2011_e	metBiGGID	MAM02158e	hypothiocyanite	e	CE2011		False	-1000.0	1000.0
+MAR04292	EX_CE1939_e	metBiGGID	MAM02921e	spermidine monoaldehyde 1	e	CE1939		False	-1000.0	1000.0
+MAR04293	EX_maltpt_e	metBiGGID	MAM02449e	maltopentaose	e	maltpt		False	-1000.0	1000.0
+MAR04294	EX_CE2915_e	metBiGGID	MAM01387e	beta-casomorphin	e	CE2915		False	-1000.0	1000.0
+MAR04298	EX_CE4722_e	metBiGGID	MAM01386e	beta-casomorphin (1-6)	e	CE4722		False	-1000.0	1000.0
+MAR04305	EX_CE2916_e	metBiGGID	MAM02563e	neocasomorphin	e	CE2916		False	-1000.0	1000.0
+MAR04307	EX_CE4723_e	metBiGGID	MAM02562e	neocasomorphin (1-5)	e	CE4723		False	-1000.0	1000.0
+MAR04309	EX_CE2917_e	metBiGGID	MAM01348e	apelin-13	e	CE2917		False	-1000.0	1000.0
+MAR04311	EX_CE4724_e	metBiGGID	MAM01347e	apelin-(1-12)	e	CE4724		False	-1000.0	1000.0
+MAR04322	EX_M02446_e	metBiGGID	MAM02446e	maltoheptaose	e	M02446	G00689	False	-1000.0	1000.0
+MAR04325	EX_CE2838_e	rxnBiGGID	MAM02448e	maltononaose	e			False	-1000.0	1000.0
+MAR04327	EX_CE1950_e	metBiGGID	MAM03330e	cyanosulfurous acid anion	e	CE1950		False	-1000.0	1000.0
+MAR04334	EX_cynt_e	metBiGGID	MAM03525e	Cyanate	e	cynt	C01417	False	-1000.0	1000.0
+MAR04337	EX_23cump_e	metBiGGID	MAM00570e	2,3-cyclic-UMP	e	23cump	C02355	False	-1000.0	1000.0
+MAR04339	EX_3ump_e	metBiGGID	MAM00921e	3-UMP	e	3ump	C01368	False	-1000.0	1000.0
+MAR04341	EX_CE5786_e	metBiGGID	MAM02318e	kinetensin	e	CE5786	C15872	False	-1000.0	1000.0
+MAR04349	EX_CE5788_e	metBiGGID	MAM02315e	kinetensin 1-7	e	CE5788		False	-1000.0	1000.0
+MAR04353	EX_CE5789_e	rxnBiGGID	MAM02316e	kinetensin 1-8	e			False	-1000.0	1000.0
+MAR04357	EX_CE5797_e	metBiGGID	MAM02570e	neuromedin N	e	CE5797		False	-1000.0	1000.0
+MAR04359	EX_CE5798_e	metBiGGID	MAM02569e	neuromedin N(1-4)	e	CE5798		False	-1000.0	1000.0
+MAR04361	EX_CE5787_e	metBiGGID	MAM02314e	kinetensin 1-3	e	CE5787		False	-1000.0	1000.0
+MAR04362	EX_CE5791_e	metBiGGID	MAM02317e	kinetensin 4-8	e	CE5791		False	-1000.0	1000.0
+MAR04364	EX_CE5867_e	metBiGGID	MAM02551e	N-acetyl-seryl-aspartyl-lysyl-proline	e	CE5867		False	-1000.0	1000.0
+MAR04366	EX_CE5868_e	metBiGGID	MAM02550e	N-acetyl-seryl-aspartate	e	CE5868		False	-1000.0	1000.0
+MAR04369	EX_CE5869_e	metBiGGID	MAM02429e	lysyl-proline	e	CE5869		False	-1000.0	1000.0
+MAR04374	EX_CE4633_e	metBiGGID	MAM02156e	hypochlorite	e	CE4633	C19697	False	-1000.0	1000.0
+MAR04376	EX_CE4881_e	metBiGGID	MAM02591e	nitryl-chloride	e	CE4881		False	-1000.0	1000.0
+MAR04378	EX_CE5854_e	metBiGGID	MAM01924e	gamma-CEHC-glucuronide	e	CE5854		False	-1000.0	1000.0
+MAR04380	EX_CE1926_e	metBiGGID	MAM01923e	gamma-carboxyethyl-hydroxychroman	e	CE1926		False	-1000.0	1000.0
+MAR04382	EX_udpgal_e	metBiGGID	MAM03107e	UDP-galactose	e	udpgal	C00052	False	-1000.0	1000.0
+MAR04384	EX_crm_hs_e	metBiGGID	MAM01430e	ceramide pool	e	crm_hs	C00195	False	-1000.0	1000.0
+MAR04389	EX_galside_hs_e	metBiGGID	MAM01679e	D-galactosyl-N-acylsphingosine	e	galside_hs	C02686	False	-1000.0	1000.0
+MAR04392	EX_CE0074_e	rxnBiGGID	MAM01315e	alloxan	e			False	-1000.0	1000.0
+MAR04395	EX_cdpea_e	metBiGGID	MAM01428e	CDP-ethanolamine	e	cdpea	C00570	False	-1000.0	1000.0
+MAR04397	EX_12dgr120_e	metBiGGID	MAM00475e	1,2-Diacyl-Sn-Glycerol (Didodecanoyl, N-C12:0)	e	12dgr120		False	-1000.0	1000.0
+MAR04405	EX_CE5853_e	metBiGGID	MAM01321e	alpha-CEHC-glucuronide	e	CE5853		False	-1000.0	1000.0
+MAR04407	EX_CE1925_e	metBiGGID	MAM00766e	3-carboxy-alpha-chromanol	e	CE1925		False	-1000.0	1000.0
+MAR04409	EX_C04849_e	rxnBiGGID	MAM02096e	hepoxilin A3	e		C04849	False	-1000.0	1000.0
+MAR04815	EX_3bcrn_e	metBiGGID	MAM03201e	3-Hydroxy Butyryl Carnitine	e	3bcrn		False	-1000.0	1000.0
+MAR04820	EX_3ddcrn_e	metBiGGID	MAM03202e	3-Hydroxydodecanoylcarnitine	e	3ddcrn		False	-1000.0	1000.0
+MAR04821	EX_3deccrn_e	metBiGGID	MAM03204e	3-Hydroxydecanoylcarnitine	e	3deccrn		False	-1000.0	1000.0
+MAR04822	EX_3hdececrn_e	metBiGGID	MAM03217e	3-Hydroxyhexadecenoylcarnitine	e	3hdececrn		False	-1000.0	1000.0
+MAR04823	EX_3hexdcrn_e	metBiGGID	MAM03219e	3-Hydroxyhexadecanoylcarnitine	e	3hexdcrn		False	-1000.0	1000.0
+MAR04824	EX_3ivcrn_e	metBiGGID	MAM03243e	3-Hydroxy-Isovaleryl Carnitine	e	3ivcrn		False	-1000.0	1000.0
+MAR04825	EX_3octdec2crn_e	metBiGGID	MAM03250e	3-Hydroxyoctadecadienoylcarnitine	e	3octdec2crn		False	-1000.0	1000.0
+MAR04826	EX_3octdeccrn_e	metBiGGID	MAM03251e	3-Hydroxyoctadecanoyl Carnitine	e	3octdeccrn		False	-1000.0	1000.0
+MAR04827	EX_3octdece1crn_e	metBiGGID	MAM03253e	3-Hydroxy-Octadecenoyl Carnitine	e	3octdece1crn		False	-1000.0	1000.0
+MAR04828	EX_3tdcrn_e	metBiGGID	MAM03262e	3-Hydroxy-Tetradecanoyl Carnitine	e	3tdcrn		False	-1000.0	1000.0
+MAR04829	EX_3tetd7ecoacrn_e	metBiGGID	MAM03264e	3-Hydroxy Tetradecenoyl-7-Carnitine	e	3tetd7ecoacrn		False	-1000.0	1000.0
+MAR04830	EX_3thexddcoacrn_e	metBiGGID	MAM03266e	3-Hydroxy Trans7,10-Hexadecadienoyl Carnitine	e	3thexddcoacrn		False	-1000.0	1000.0
+MAR04853	EX_3ttetddcoacrn_e	metBiGGID	MAM03268e	3-Hydroxy Trans5,8Tetradecadienoyl Carnitine	e	3ttetddcoacrn		False	-1000.0	1000.0
+MAR04857	EX_c101crn_e	metBiGGID	MAM03487e	Decenoyl Carnitine	e	c101crn		False	-1000.0	1000.0
+MAR04859	EX_c10crn_e	metBiGGID	MAM03488e	Decanoyl Carnitine	e	c10crn		False	-1000.0	1000.0
+MAR04866	EX_c10dc_e	metBiGGID	MAM03489e	Sebacoyl Carnitine	e	c10dc		False	-1000.0	1000.0
+MAR04869	EX_c12dc_e	metBiGGID	MAM03490e	Dodecanedioyl Carnitine	e	c12dc		False	-1000.0	1000.0
+MAR04884	EX_c16dc_e	metBiGGID	MAM03493e	hexadecanedioic acid mono-L-carnitine ester	e	c16dc		False	-1000.0	1000.0
+MAR04886	EX_c3dc_e	metBiGGID	MAM02443e	malonyl-carnitine	e	c3dc		False	-1000.0	1000.0
+MAR04889	EX_c4crn_e	rxnBiGGID	MAM02635e	O-butanoylcarnitine	e		C02862	False	-1000.0	1000.0
+MAR04891	EX_c4dc_e	metBiGGID	MAM03495e	Succinyl Carnitine	e	c4dc		False	-1000.0	1000.0
+MAR04895	EX_c51crn_e	metBiGGID	MAM03496e	Tiglyl Carnitine	e	c51crn		False	-1000.0	1000.0
+MAR04897	EX_c5dc_e	metBiGGID	MAM03497e	Glutaryl Carnitine	e	c5dc		False	-1000.0	1000.0
+MAR04899	EX_c6crn_e	metBiGGID	MAM03498e	Hexanoyl Carnitine	e	c6crn		False	-1000.0	1000.0
+MAR04901	EX_c6dc_e	metBiGGID	MAM03499e	Adipoyl Carnitine	e	c6dc		False	-1000.0	1000.0
+MAR04909	EX_c81crn_e	metBiGGID	MAM03501e	Octenoyl Carnitine	e	c81crn		False	-1000.0	1000.0
+MAR04918	EX_c8crn_e	metBiGGID	MAM02409e	L-octanoylcarnitine	e	c8crn	C02838	False	-1000.0	1000.0
+MAR04920	EX_c8dc_e	metBiGGID	MAM03502e	Suberyl Carnitine	e	c8dc		False	-1000.0	1000.0
+MAR04921	EX_ddece1crn_e	metBiGGID	MAM03541e	Dodecenoyl Carnitine	e	ddece1crn		False	-1000.0	1000.0
+MAR04923	EX_M01729_e	metBiGGID	MAM01729e	dodecanoylcarnitine	e	M01729		False	-1000.0	1000.0
+MAR04925	EX_decdicrn_e	metBiGGID	MAM03544e	Decadienoyl Carnitine	e	decdicrn		False	-1000.0	1000.0
+MAR04927	EX_doco13ac_e	metBiGGID	MAM01583e	cis-erucic acid	e	doco13ac	C08316	False	-1000.0	1000.0
+MAR04929	EX_docosac_e	metBiGGID	MAM01373e	behenic acid	e	docosac	C08281	False	-1000.0	1000.0
+MAR04936	EX_docosdiac_e	metBiGGID	MAM03560e	docosanedioic acid	e	docosdiac	C19625	False	-1000.0	1000.0
+MAR04943	EX_ivcrn_e	metBiGGID	MAM03706e	Isovaleryl Carnitine	e	ivcrn		False	-1000.0	1000.0
+MAR04950	EX_tetdec2crn_e	metBiGGID	MAM03975e	Tetradecadienoyl Carnitine	e	tetdec2crn		False	-1000.0	1000.0
+MAR04965	EX_tetdece1crn_e	metBiGGID	MAM03980e	Tetradecenoyl Carnitine	e	tetdece1crn		False	-1000.0	1000.0
+MAR07108	EX_C07535_e	metBiGGID	MAM01374e	benzo[a]pyrene	e	C07535	C07535	False	-1000.0	1000.0
+MAR07110	EX_npthl_e	metBiGGID	MAM02556e	naphthalene	e	npthl	C00829	False	-1000.0	1000.0
+MAR07112	EX_aflatoxin_e	metBiGGID	MAM01296e	aflatoxin B1	e	aflatoxin	C06800	False	-1000.0	1000.0
+MAR07114	EX_MAR07114	no cross-reference	MAM03044e	trichloroethene	e		C06790	False	-1000.0	1000.0
+MAR07116	EX_MAR07116	no cross-reference	MAM01403e	bromobenzene	e		C11036	False	-1000.0	1000.0
+MAR07118	EX_CN0020_e	metBiGGID	MAM01174e	7,12-dimethylbenz[a]anthracene	e	CN0020	C19488	False	-1000.0	1000.0
+MAR07120	EX_MAR07120	no cross-reference	MAM00932e	4-(n-nitrosomethylamino)-1-(3-pyridyl)-1-butanone	e		C16453	False	-1000.0	1000.0
+MAR07122	EX_MAR07122	no cross-reference	MAM00545e	1-nitronaphthalene	e		C14040	False	-1000.0	1000.0
+MAR07124	EX_MAR07124	no cross-reference	MAM00228e	1,1-dichloroethylene	e		C14039	False	-1000.0	1000.0
+MAR07126	EX_MAR07126	no cross-reference	MAM00242e	1,2-dibromoethane	e		C11088	False	-1000.0	1000.0
+MAR08386	EX_4hpro_LT_e	metBiGGID	MAM03037e	trans-4-hydroxy-L-proline	e	4hpro_LT	C01157	False	-1000.0	1000.0
+MAR08400	EX_MAR08400	kept: the main medium treats vitamin B12 as unrepresented	MAM01600e	cobamide-coenzyme	e	adocbl	C00194	False	-1000.0	1000.0
+MAR08422	EX_alaala_e	metBiGGID	MAM03164e	D-alanyl-D-alanine	e	alaala	C00993	False	-1000.0	1000.0
+MAR08423	EX_bglc_e	metBiGGID	MAM03483e	Beta-Glucans	e	bglc		False	-1000.0	1000.0
+MAR08644	EX_carn_e	metBiGGID	MAM01423e	carnosine	e	carn	C00386	False	-1000.0	1000.0
+MAR08646	EX_dchac_e	metBiGGID	MAM00745e	3alpha,12alpha-dihydroxy-5beta-cholanate	e	dchac	C04483	False	-1000.0	1000.0
+MAR08647	EX_glgchlo_e	metBiGGID	MAM03595e	Beta Glucan-Glycocholate Complex	e	glgchlo		False	-1000.0	1000.0
+MAR08649	EX_gltcho_e	metBiGGID	MAM03604e	beta glucan-taurocholic acid complex	e	gltcho		False	-1000.0	1000.0
+MAR08650	EX_gltdechol_e	metBiGGID	MAM03605e	beta glucan-taurodeoxycholic acid complex	e	gltdechol		False	-1000.0	1000.0
+MAR08701	EX_glygly_e	metBiGGID	MAM03621e	Glycyl-Glycine	e	glygly	C02037	False	-1000.0	1000.0
+MAR08705	EX_glysar_e	metBiGGID	MAM03631e	Glycylsarcosine	e	glysar		False	-1000.0	1000.0
+MAR08707	EX_gum_e	metBiGGID	MAM03638e	Gums	e	gum		False	-1000.0	1000.0
+MAR08708	EX_gumdchac_e	metBiGGID	MAM03639e	guar gum-deoxyxholic acid complex	e	gumdchac		False	-1000.0	1000.0
+MAR08832	EX_gumgchol_e	metBiGGID	MAM03640e	Guar Gum-Glycocholate Complex	e	gumgchol		False	-1000.0	1000.0
+MAR08916	EX_gumtchol_e	metBiGGID	MAM03641e	guar gum-taurocholic acid complex	e	gumtchol		False	-1000.0	1000.0
+MAR08948	EX_leugly_e	metBiGGID	MAM03714e	Leucyl-Glycine	e	leugly		False	-1000.0	1000.0
+MAR08949	EX_leuleu_e	metBiGGID	MAM03715e	Leucylleucine	e	leuleu	C11332	False	-1000.0	1000.0
+MAR08950	EX_pect_e	metBiGGID	MAM03851e	Pectin	e	pect	C00714	False	-1000.0	1000.0
+MAR08951	EX_pectindchac_e	metBiGGID	MAM03852e	pectin-deoxycholic acid complex	e	pectindchac		False	-1000.0	1000.0
+MAR08952	EX_pectingchol_e	metBiGGID	MAM03853e	Pectin-Glycocholate Complex	e	pectingchol		False	-1000.0	1000.0
+MAR08953	EX_pectintchol_e	metBiGGID	MAM03854e	pectin-taurocholic acid complex	e	pectintchol		False	-1000.0	1000.0
+MAR08954	EX_psyl_e	metBiGGID	MAM03907e	Psyllium	e	psyl		False	-1000.0	1000.0
+MAR08955	EX_psylchol_e	metBiGGID	MAM03908e	psillium-glycocholic acid complex	e	psylchol		False	-1000.0	1000.0
+MAR08956	EX_psyltchol_e	metBiGGID	MAM03909e	psyllium-taurocholic acid complex	e	psyltchol		False	-1000.0	1000.0
+MAR08957	EX_psyltdechol_e	metBiGGID	MAM03910e	psyllium-taurodeoxycholic acid complex	e	psyltdechol		False	-1000.0	1000.0
+MAR08958	EX_slfcys_e	metBiGGID	MAM03933e	S-Sulfo-L-Cysteine	e	slfcys	C05824	False	-1000.0	1000.0
+MAR08959	EX_tdechola_e	metBiGGID	MAM02964e	taurodeoxycholate	e	tdechola	C05463	False	-1000.0	1000.0
+MAR08960	EX_cysam_e	metBiGGID	MAM01627e	cysteamine	e	cysam	C01678	False	-1000.0	1000.0
+MAR08961	EX_dpcoa_e	metBiGGID	MAM01674e	dephospho-CoA	e	dpcoa	C00882	False	-1000.0	1000.0
+MAR08962	EX_fmn_e	metBiGGID	MAM01828e	FMN	e	fmn	C00061	False	-1000.0	1000.0
+MAR08963	EX_hyptaur_e	metBiGGID	MAM02157e	hypotaurine	e	hyptaur	C00519	False	-1000.0	1000.0
+MAR08964	EX_pan4p_e	metBiGGID	MAM02741e	phosphopantetheine	e	pan4p	C01134	False	-1000.0	1000.0
+MAR08965	EX_ptth_e	metBiGGID	MAM02679e	pantetheine	e	ptth	C00831	False	-1000.0	1000.0
+MAR08966	EX_q10_e	metBiGGID	MAM03103e	ubiquinone	e	q10	C00399	False	-1000.0	1000.0
+MAR08967	EX_q10h2_e	metBiGGID	MAM03102e	ubiquinol	e	q10h2	C00390	False	-1000.0	1000.0
+MAR09010	EX_34hpp_e	metBiGGID	MAM01005e	4-hydroxyphenylpyruvate	e	34hpp	C01179	False	-1000.0	1000.0
+MAR09011	EX_3mob_e	metBiGGID	MAM00824e	3-methyl-2-oxobutyrate	e	3mob	C00141	False	-1000.0	1000.0
+MAR09012	EX_3mop_e	metBiGGID	MAM00669e	2-oxo-3-methylvalerate	e	3mop	C03465	False	-1000.0	1000.0
+MAR09013	EX_4mop_e	metBiGGID	MAM01013e	4-methyl-2-oxopentanoate	e	4mop	C00233	False	-1000.0	1000.0
+MAR09021	EX_5mta_e	metBiGGID	MAM01116e	5-methylthioadenosine	e	5mta	C00170	False	-1000.0	1000.0
+MAR09023	EX_MAR09023	no cross-reference	MAM02957e	TAG-extraction	e		C00422	False	-1000.0	1000.0
+MAR09024	EX_MAR09024	no cross-reference	MAM01570e	chylomicron	e			False	-1000.0	1000.0
+MAR09025	EX_5oxpro_e	metBiGGID	MAM01127e	5-oxoproline	e	5oxpro	C01879	False	-1000.0	1000.0
+MAR09026	EX_ahcys_e	metBiGGID	MAM02871e	SAH	e	ahcys	C00021	False	-1000.0	1000.0
+MAR09027	EX_aicar_e	metBiGGID	MAM01304e	AICAR	e	aicar	C04677	False	-1000.0	1000.0
+MAR09028	EX_anth_e	metBiGGID	MAM01342e	anthranilate	e	anth	C00108	False	-1000.0	1000.0
+MAR09029	EX_cbasp_e	metBiGGID	MAM02559e	N-carbamoyl-L-aspartate	e	cbasp	C00438	False	-1000.0	1000.0
+MAR09032	EX_MAR09032	no cross-reference	MAM02909e	SMCFA-blood-pool	e			False	-1000.0	1000.0
+MAR09033	EX_MAR09033	no cross-reference	MAM02560e	NEFA blood pool in	e			False	-1000.0	1000.0
+MAR09034	EX_glc__D_e	metBiGGID	MAM01965e	glucose	e	glc__D	C00031	False	-1000.0	1000.0
+MAR09035	EX_lnlc_e	metBiGGID	MAM02387e	linoleate	e	lnlc	C01595	False	-1000.0	1000.0
+MAR09036	EX_lnlnca_e	metBiGGID	MAM02389e	linolenate	e	lnlnca	C06427	False	-1000.0	1000.0
+MAR09037	EX_MAR09037	cross-reference not unique	MAM02746e	(3R)-phytanic acid	e	phyt	C01607	False	-1000.0	1000.0
+MAR09038	EX_his__L_e	metBiGGID	MAM02125e	histidine	e	his__L	C00135	False	-1000.0	1000.0
+MAR09039	EX_ile__L_e	metBiGGID	MAM02184e	isoleucine	e	ile__L	C00407	False	-1000.0	1000.0
+MAR09040	EX_leu__L_e	metBiGGID	MAM02360e	leucine	e	leu__L	C00123	False	-1000.0	1000.0
+MAR09041	EX_lys__L_e	metBiGGID	MAM02426e	lysine	e	lys__L	C00047	False	-1000.0	1000.0
+MAR09042	EX_met__L_e	metBiGGID	MAM02471e	methionine	e	met__L	C00073	False	-1000.0	1000.0
+MAR09043	EX_phe__L_e	metBiGGID	MAM02724e	phenylalanine	e	phe__L	C00079	False	-1000.0	1000.0
+MAR09044	EX_thr__L_e	metBiGGID	MAM02993e	threonine	e	thr__L	C00188	False	-1000.0	1000.0
+MAR09045	EX_trp__L_e	metBiGGID	MAM03089e	tryptophan	e	trp__L	C00078	False	-1000.0	1000.0
+MAR09046	EX_val__L_e	metBiGGID	MAM03135e	valine	e	val__L	C00183	False	-1000.0	1000.0
+MAR09047	EX_h2o_e	metBiGGID	MAM02040e	H2O	e	h2o	C00001	False	-1000.0	1000.0
+MAR09048	EX_o2_e	metBiGGID	MAM02630e	O2	e	o2	C00007	False	-1000.0	1000.0
+MAR09049	EX_MAR09049	no cross-reference	MAM03147e	VLDL	e			False	-1000.0	1000.0
+MAR09050	EX_MAR09050	no cross-reference	MAM02048e	HDL	e			False	-1000.0	1000.0
+MAR09051	EX_MAR09051	no cross-reference	MAM02353e	LDL	e			False	-1000.0	1000.0
+MAR09052	EX_MAR09052	no cross-reference	MAM01569e	chylomicron remnant	e			False	-1000.0	1000.0
+MAR09053	EX_MAR09053	no cross-reference	MAM03146e	VLDL remnant	e			False	-1000.0	1000.0
+MAR09054	EX_MAR09054	no cross-reference	MAM02047e	HDL remnant	e			False	-1000.0	1000.0
+MAR09055	EX_MAR09055	no cross-reference	MAM02352e	LDL remnant	e			False	-1000.0	1000.0
+MAR09056	EX_MAR09056	no cross-reference	MAM02561e	NEFA blood pool out	e			False	-1000.0	1000.0
+MAR09058	EX_co2_e	metBiGGID	MAM01596e	CO2	e	co2	C00011	False	-1000.0	1000.0
+MAR09061	EX_ala__L_e	metBiGGID	MAM01307e	alanine	e	ala__L	C00041	False	-1000.0	1000.0
+MAR09062	EX_asn__L_e	metBiGGID	MAM01369e	asparagine	e	asn__L	C00152	False	-1000.0	1000.0
+MAR09063	EX_gln__L_e	metBiGGID	MAM01975e	glutamine	e	gln__L	C00064	False	-1000.0	1000.0
+MAR09064	EX_tyr__L_e	metBiGGID	MAM03101e	tyrosine	e	tyr__L	C00082	False	-1000.0	1000.0
+MAR09065	EX_cys__L_e	metBiGGID	MAM01628e	cysteine	e	cys__L	C00097	False	-1000.0	1000.0
+MAR09066	EX_arg__L_e	metBiGGID	MAM01365e	arginine	e	arg__L	C00062	False	-1000.0	1000.0
+MAR09067	EX_gly_e	metBiGGID	MAM01986e	glycine	e	gly	C00037	False	-1000.0	1000.0
+MAR09068	EX_pro__L_e	metBiGGID	MAM02770e	proline	e	pro__L	C00148	False	-1000.0	1000.0
+MAR09069	EX_ser__L_e	metBiGGID	MAM02896e	serine	e	ser__L	C00065	False	-1000.0	1000.0
+MAR09070	EX_asp__L_e	metBiGGID	MAM01370e	aspartate	e	asp__L	C00049	False	-1000.0	1000.0
+MAR09071	EX_glu__L_e	metBiGGID	MAM01974e	glutamate	e	glu__L	C00025	False	-1000.0	1000.0
+MAR09072	EX_pi_e	metBiGGID	MAM02751e	Pi	e	pi	C00009	False	-1000.0	1000.0
+MAR09073	EX_nh3_e	metBiGGID	MAM02578e	NH3	e	nh3	C00014	False	-1000.0	1000.0
+MAR09074	EX_so4_e	metBiGGID	MAM02946e	sulfate	e	so4	C00059	False	-1000.0	1000.0
+MAR09075	EX_urate_e	metBiGGID	MAM03120e	urate	e	urate	C00366	False	-1000.0	1000.0
+MAR09076	EX_fe2_e	metBiGGID	MAM01821e	Fe2+	e	fe2	C14818	False	-1000.0	1000.0
+MAR09077	EX_na1_e	metBiGGID	MAM02519e	Na+	e	na1	C01330	False	-1000.0	1000.0
+MAR09078	EX_hco3_e	metBiGGID	MAM02046e	HCO3-	e	hco3	C00288	False	-1000.0	1000.0
+MAR09079	EX_h_e	metBiGGID	MAM02039e	H+	e	h	C00080	False	-1000.0	1000.0
+MAR09080	EX_HC02172_e	metBiGGID	MAM03157e	zinc	e	HC02172	C00038	False	-1000.0	1000.0
+MAR09081	EX_k_e	metBiGGID	MAM02200e	K+	e	k	C00238	False	-1000.0	1000.0
+MAR09082	EX_ca2_e	metBiGGID	MAM01413e	Ca2+	e	ca2	C00076	False	-1000.0	1000.0
+MAR09083	EX_chol_e	metBiGGID	MAM01513e	choline	e	chol	C00114	False	-1000.0	1000.0
+MAR09084	EX_etha_e	metBiGGID	MAM01797e	ethanolamine	e	etha	C00189	False	-1000.0	1000.0
+MAR09085	EX_glyc_e	metBiGGID	MAM01983e	glycerol	e	glyc	C00116	False	-1000.0	1000.0
+MAR09086	EX_ac_e	metBiGGID	MAM01252e	acetate	e	ac	C00033	False	-1000.0	1000.0
+MAR09087	EX_orn_e	metBiGGID	MAM02658e	ornithine	e	orn	C00077	False	-1000.0	1000.0
+MAR09088	EX_so3_e	metBiGGID	MAM02949e	sulfite	e	so3	C00094	False	-1000.0	1000.0
+MAR09089	EX_MAR09089	no cross-reference	MAM02740e	phospholipids extracellular pool	e		C00865	False	-1000.0	1000.0
+MAR09090	EX_3mlda_e	metBiGGID	MAM02477e	methylimidazoleacetic acid	e	3mlda	C05828	False	-1000.0	1000.0
+MAR09091	EX_4abut_e	metBiGGID	MAM00970e	4-aminobutyrate	e	4abut	C00334	False	-1000.0	1000.0
+MAR09092	EX_dopa_e	metBiGGID	MAM01736e	dopamine	e	dopa	C03758	False	-1000.0	1000.0
+MAR09093	EX_nrpphr_e	metBiGGID	MAM02617e	noradrenaline	e	nrpphr	C00547	False	-1000.0	1000.0
+MAR09094	EX_5htrp_e	metBiGGID	MAM01107e	5-hydroxy-L-tryptophan	e	5htrp	C01017	False	-1000.0	1000.0
+MAR09095	EX_adrnl_e	metBiGGID	MAM01290e	adrenaline	e	adrnl	C00788	False	-1000.0	1000.0
+MAR09096	EX_fe3_e	metBiGGID	MAM01822e	Fe3+	e	fe3	C14819	False	-1000.0	1000.0
+MAR09097	EX_asp__D_e	metBiGGID	MAM01641e	D-aspartate	e	asp__D	C00402	False	-1000.0	1000.0
+MAR09098	EX_ala__D_e	metBiGGID	MAM01638e	D-alanine	e	ala__D	C00133	False	-1000.0	1000.0
+MAR09099	EX_etoh_e	metBiGGID	MAM01796e	ethanol	e	etoh	C00469	False	-1000.0	1000.0
+MAR09100	EX_5fthf_e	metBiGGID	MAM01100e	5-formyl-THF	e	5fthf	C03479	False	-1000.0	1000.0
+MAR09101	EX_4nph_e	metBiGGID	MAM02754e	PNP	e	4nph	C00870	False	-1000.0	1000.0
+MAR09102	EX_lcts_e	metBiGGID	MAM02332e	lactose	e	lcts	C00243	False	-1000.0	1000.0
+MAR09103	EX_HC00250_e	metBiGGID	MAM02042e	H2S	e	HC00250	C00283	False	-1000.0	1000.0
+MAR09104	EX_1mncam_e	metBiGGID	MAM00536e	1-methylnicotinamide	e	1mncam	C02918	False	-1000.0	1000.0
+MAR09105	EX_thmmp_e	metBiGGID	MAM02983e	thiamin-P	e	thmmp	C01081	False	-1000.0	1000.0
+MAR09106	EX_thmtp_e	metBiGGID	MAM02985e	thiamin-PPP	e	thmtp	C03028	False	-1000.0	1000.0
+MAR09107	EX_pheme_e	metBiGGID	MAM02049e	heme	e	pheme	C00032	False	-1000.0	1000.0
+MAR09108	EX_HC01361_e	metBiGGID	MAM01704e	dihydroneopterin	e	HC01361	C04874	False	-1000.0	1000.0
+MAR09109	EX_btn_e	metBiGGID	MAM01401e	biotin	e	btn	C00120	False	-1000.0	1000.0
+MAR09110	EX_biocyt_e	metBiGGID	MAM01400e	biocytin	e	biocyt	C05552	False	-1000.0	1000.0
+MAR09111	EX_hspg_e	metBiGGID	MAM02054e	heparan sulfate proteoglycan	e	hspg		False	-1000.0	1000.0
+MAR09113	EX_ksi_e	metBiGGID	MAM02278e	keratan sulfate I	e	ksi		False	-1000.0	1000.0
+MAR09114	EX_ksi_deg1_e	metBiGGID	MAM02237e	keratan sulfate I, degradation product 1	e	ksi_deg1		False	-1000.0	1000.0
+MAR09115	EX_ksii_core2_e	metBiGGID	MAM02288e	keratan sulfate II (core 2-linked)	e	ksii_core2		False	-1000.0	1000.0
+MAR09116	EX_ksii_core4_e	metBiGGID	MAM02303e	keratan sulfate II (core 4-linked)	e	ksii_core4		False	-1000.0	1000.0
+MAR09117	EX_cspg_a_e	metBiGGID	MAM01517e	chondroitin sulfate A (GalNAc4S-GlcA) proteoglycan	e	cspg_a		False	-1000.0	1000.0
+MAR09118	EX_cspg_b_e	metBiGGID	MAM01525e	chondroitin sulfate B - dermatan sulfate (IdoA2S-GalNAc4S) proteoglycan	e	cspg_b		False	-1000.0	1000.0
+MAR09119	EX_cspg_c_e	metBiGGID	MAM01533e	chondroitin sulfate C (GalNAc6S-GlcA) proteoglycan	e	cspg_c		False	-1000.0	1000.0
+MAR09120	EX_cspg_d_e	metBiGGID	MAM01543e	chondroitin sulfate D (GlcNAc6S-GlcA2S) proteoglycan	e	cspg_d		False	-1000.0	1000.0
+MAR09121	EX_cspg_e_e	metBiGGID	MAM01554e	chondroitin sulfate E (GalNAc4,6diS-GlcA) proteoglycan	e	cspg_e		False	-1000.0	1000.0
+MAR09122	EX_ha_e	metBiGGID	MAM02141e	hyaluronate	e	ha	C00518	False	-1000.0	1000.0
+MAR09123	EX_ha_pre1_e	metBiGGID	MAM02139e	hyaluronan biosynthesis, precursor 1	e	ha_pre1	C04794	False	-1000.0	1000.0
+MAR09124	EX_s2l2n2m2masn_e	metBiGGID	MAM01652e	de-Fuc form of PA6	e	s2l2n2m2masn		False	-1000.0	1000.0
+MAR09125	EX_s2l2fn2m2masn_e	metBiGGID	MAM02672e	PA6	e	s2l2fn2m2masn	G00018	False	-1000.0	1000.0
+MAR09126	EX_n2m2nmasn_e	metBiGGID	MAM02510e	n2m2nmasn	e	n2m2nmasn	G00019	False	-1000.0	1000.0
+MAR09127	EX_sTn_antigen_e	metBiGGID	MAM02907e	sialyl-Tn antigen	e	sTn_antigen	G00035	False	-1000.0	1000.0
+MAR09128	EX_dsT_antigen_e	metBiGGID	MAM01712e	disialyl-T antigen	e	dsT_antigen	G00027	False	-1000.0	1000.0
+MAR09129	EX_estradiolglc_e	metBiGGID	MAM01786e	estradiol-17beta 3-glucuronide	e	estradiolglc	C05503	False	-1000.0	1000.0
+MAR09130	EX_MAR09130	no cross-reference	MAM02414e	LPL	e			False	-1000.0	1000.0
+MAR09131	EX_sarcs_e	metBiGGID	MAM02880e	sarcosine	e	sarcs	C00213	False	-1000.0	1000.0
+MAR09132	EX_acac_e	metBiGGID	MAM01253e	acetoacetate	e	acac	C00164	False	-1000.0	1000.0
+MAR09133	EX_pyr_e	metBiGGID	MAM02819e	pyruvate	e	pyr	C00022	False	-1000.0	1000.0
+MAR09134	EX_bhb_e	metBiGGID	MAM00157e	(R)-3-hydroxybutanoate	e	bhb	C01089	False	-1000.0	1000.0
+MAR09135	EX_lac__L_e	metBiGGID	MAM02403e	L-lactate	e	lac__L	C00186	False	-1000.0	1000.0
+MAR09136	EX_lac__D_e	metBiGGID	MAM01716e	D-lactate	e	lac__D	C00256	False	-1000.0	1000.0
+MAR09137	EX_man_e	metBiGGID	MAM02453e	mannose	e	man	C00159	False	-1000.0	1000.0
+MAR09138	EX_xylt_e	metBiGGID	MAM03155e	xylitol	e	xylt	C00379	False	-1000.0	1000.0
+MAR09139	EX_fru_e	metBiGGID	MAM01840e	fructose	e	fru	C02336	False	-1000.0	1000.0
+MAR09140	EX_gal_e	metBiGGID	MAM01910e	galactose	e	gal	C00984	False	-1000.0	1000.0
+MAR09141	EX_adprib_e	metBiGGID	MAM01288e	ADP-ribose	e	adprib	C00301	False	-1000.0	1000.0
+MAR09142	EX_nac_e	metBiGGID	MAM02586e	nicotinate	e	nac	C00253	False	-1000.0	1000.0
+MAR09143	EX_ribflv_e	metBiGGID	MAM02842e	riboflavin	e	ribflv	C00255	False	-1000.0	1000.0
+MAR09144	EX_pydxn_e	metBiGGID	MAM02817e	pyridoxine	e	pydxn	C00314	False	-1000.0	1000.0
+MAR09145	EX_pnto__R_e	metBiGGID	MAM02680e	pantothenate	e	pnto__R	C00864	False	-1000.0	1000.0
+MAR09146	EX_fol_e	metBiGGID	MAM01830e	folate	e	fol	C00504	False	-1000.0	1000.0
+MAR09147	EX_retinol_e	metBiGGID	MAM02834e	retinol	e	retinol	C00473	False	-1000.0	1000.0
+MAR09148	EX_i_e	metBiGGID	MAM02174e	iodide	e	i	C00708	False	-1000.0	1000.0
+MAR09149	EX_no2_e	metBiGGID	MAM02588e	nitrite	e	no2	C00088	False	-1000.0	1000.0
+MAR09150	EX_cl_e	metBiGGID	MAM01442e	chloride	e	cl	C00698	False	-1000.0	1000.0
+MAR09151	EX_avite1_e	metBiGGID	MAM01327e	alpha-tocopherol	e	avite1	C02477	False	-1000.0	1000.0
+MAR09152	EX_avite2_e	metBiGGID	MAM01330e	alpha-tocotrienol	e	avite2	C14153	False	-1000.0	1000.0
+MAR09153	EX_gtocophe_e	metBiGGID	MAM01935e	gamma-tocopherol	e	gtocophe	C02483	False	-1000.0	1000.0
+MAR09154	EX_MAR09154	no cross-reference	MAM01938e	gamma-tocotrienol	e		C14155	False	-1000.0	1000.0
+MAR09155	EX_itp_e	metBiGGID	MAM02193e	ITP	e	itp	C00081	False	-1000.0	1000.0
+MAR09156	EX_ditp_e	metBiGGID	MAM01714e	dITP	e	ditp	C01345	False	-1000.0	1000.0
+MAR09157	EX_MAR09157	no cross-reference	MAM02050e	hemoglobin	e		C01708	False	-1000.0	1000.0
+MAR09158	EX_ascb__L_e	metBiGGID	MAM01368e	ascorbate	e	ascb__L	C00072	False	-1000.0	1000.0
+MAR09159	EX_thm_e	metBiGGID	MAM02982e	thiamin	e	thm	C00378	False	-1000.0	1000.0
+MAR09160	EX_cyan_e	metBiGGID	MAM02145e	hydrogen-cyanide	e	cyan	C01326	False	-1000.0	1000.0
+MAR09161	EX_hom__L_e	metBiGGID	MAM02136e	homoserine	e	hom__L	C00263	False	-1000.0	1000.0
+MAR09162	EX_MAR09162	no cross-reference	MAM02357e	lepidimoide	e		C08241	False	-1000.0	1000.0
+MAR09163	EX_leuktrF4_e	metBiGGID	MAM02370e	leukotriene F4	e	leuktrF4	C06462	False	-1000.0	1000.0
+MAR09164	EX_HC00319_e	metBiGGID	MAM02440e	malonate	e	HC00319	C00383	False	-1000.0	1000.0
+MAR09165	EX_oxa_e	metBiGGID	MAM02661e	oxalate	e	oxa	C00209	False	-1000.0	1000.0
+MAR09166	EX_chtn_e	metBiGGID	MAM01438e	chitin-component	e	chtn	C00461	False	-1000.0	1000.0
+MAR09167	EX_lipoate_e	metBiGGID	MAM02394e	lipoic acid	e	lipoate	C00725	False	-1000.0	1000.0
+MAR09168	EX_gam_e	metBiGGID	MAM01962e	glucosamine	e	gam	C00329	False	-1000.0	1000.0
+MAR09169	EX_sel_e	metBiGGID	MAM02885e	selenate	e	sel	C05697	False	-1000.0	1000.0
+MAR09171	EX_paf_hs_e	metBiGGID	MAM00626e	2-acetyl-1-alkyl-sn-glycero-3-phosphocholine	e	paf_hs	C04598	False	-1000.0	1000.0
+MAR09172	EX_MAR09172	no cross-reference	MAM00549e	1-organyl-2-lyso-sn-glycero-3-phosphocholine	e		C04317	False	-1000.0	1000.0
+MAR09201	EX_citr__L_e	metBiGGID	MAM01588e	citrulline	e	citr__L	C00327	False	-1000.0	1000.0
+MAR09202	EX_apoC_Lys_e	metBiGGID	MAM01356e	apoC-lys	e	apoC_Lys		False	-1000.0	1000.0
+MAR09203	EX_xyl__D_e	metBiGGID	MAM01758e	D-xylose	e	xyl__D	C00181	False	-1000.0	1000.0
+MAR09204	EX_pre_prot_e	metBiGGID	MAM02001e	glycophosphatidylinositol-(GPI)-anchored-protein-precursor	e	pre_prot		False	-1000.0	1000.0
+MAR09205	EX_10fthf_e	metBiGGID	MAM00266e	10-formyl-THF	e	10fthf	C00234	False	-1000.0	1000.0
+MAR09206	EX_10fthf5glu_e	metBiGGID	MAM00267e	10-formyl-THF-glu(5)	e	10fthf5glu		False	-1000.0	1000.0
+MAR09207	EX_10fthf6glu_e	metBiGGID	MAM00268e	10-formyl-THF-glu(6)	e	10fthf6glu		False	-1000.0	1000.0
+MAR09208	EX_10fthf7glu_e	metBiGGID	MAM00269e	10-formyl-THF-glu(7)	e	10fthf7glu		False	-1000.0	1000.0
+MAR09209	EX_Rtotal_e	metBiGGID	MAM10005e	fatty acid pool	e	Rtotal	C00162	False	-1000.0	1000.0
+MAR09210	EX_13_cis_retnglc_e	metBiGGID	MAM00353e	13-cis-retinoyl-glucuronide	e	13_cis_retnglc	C11061	False	-1000.0	1000.0
+MAR09211	EX_2425dhvitd2_e	metBiGGID	MAM00613e	24R,25-dihyoxyvitamin D2	e	2425dhvitd2		False	-1000.0	1000.0
+MAR09212	EX_2425dhvitd3_e	metBiGGID	MAM00035e	(24R)-24,25-dihydroxycalciol	e	2425dhvitd3	C07712	False	-1000.0	1000.0
+MAR09213	EX_24nph_e	metBiGGID	MAM01019e	4-nitrocatechol	e	24nph	C02235	False	-1000.0	1000.0
+MAR09214	EX_25hvitd2_e	metBiGGID	MAM00620e	25-hydroxyvitamin D2	e	25hvitd2		False	-1000.0	1000.0
+MAR09215	EX_25hvitd3_e	metBiGGID	MAM01415e	calcidiol	e	25hvitd3	C01561	False	-1000.0	1000.0
+MAR09216	EX_2hb_e	metBiGGID	MAM00648e	2-hydroxybutyrate	e	2hb	C05984	False	-1000.0	1000.0
+MAR09217	EX_2mcit_e	metBiGGID	MAM00665e	2-methylcitrate	e	2mcit	C02225	False	-1000.0	1000.0
+MAR09218	EX_34dhoxpeg_e	metBiGGID	MAM00730e	3,4-dihydroxyphenylethyleneglycol	e	34dhoxpeg	C05576	False	-1000.0	1000.0
+MAR09219	EX_34dhphe_e	metBiGGID	MAM02354e	L-dopa	e	34dhphe	C00355	False	-1000.0	1000.0
+MAR09220	EX_35cgmp_e	metBiGGID	MAM01433e	cGMP	e	35cgmp	C00942	False	-1000.0	1000.0
+MAR09221	EX_3aib_e	metBiGGID	MAM02325e	L-3-amino-isobutanoate	e	3aib	C03284	False	-1000.0	1000.0
+MAR09222	EX_3aib__D_e	metBiGGID	MAM01633e	D-3-amino-isobutanoate	e	3aib__D	C01205	False	-1000.0	1000.0
+MAR09223	EX_4hdebrisoquine_e	metBiGGID	MAM00998e	4-hydroxy-debrisoquine	e	4hdebrisoquine		False	-1000.0	1000.0
+MAR09224	EX_4hphac_e	metBiGGID	MAM01003e	4-hydroxyphenylacetate	e	4hphac	C00642	False	-1000.0	1000.0
+MAR09225	EX_4mptnl_e	metBiGGID	MAM02182e	isocaproic-aldehyde	e	4mptnl	C02373	False	-1000.0	1000.0
+MAR09226	EX_4mtolbutamide_e	metBiGGID	MAM01007e	4-hydroxy-tolbutamide	e	4mtolbutamide		False	-1000.0	1000.0
+MAR09227	EX_4nphsf_e	metBiGGID	MAM01021e	4-nitrophenyl-sulfate	e	4nphsf		False	-1000.0	1000.0
+MAR09228	EX_4pyrdx_e	metBiGGID	MAM01033e	4-pyridoxate	e	4pyrdx	C00847	False	-1000.0	1000.0
+MAR09229	EX_5adtststerone_e	metBiGGID	MAM01069e	5-alpha-dihydrotestosterone	e	5adtststerone	C03917	False	-1000.0	1000.0
+MAR09230	EX_5adtststeroneglc_e	metBiGGID	MAM01070e	5alpha-dihydrotestosterone-glucuronide	e	5adtststeroneglc		False	-1000.0	1000.0
+MAR09231	EX_5adtststerones_e	metBiGGID	MAM01071e	5alpha-dihydrotestosterone-sulfate	e	5adtststerones		False	-1000.0	1000.0
+MAR09232	EX_5dhf_e	metBiGGID	MAM02691e	pentaglutamyl-folate(DHF)	e	5dhf		False	-1000.0	1000.0
+MAR09233	EX_5homeprazole_e	metBiGGID	MAM01109e	5-hydroxy-omeprazole	e	5homeprazole		False	-1000.0	1000.0
+MAR09234	EX_5mthf_e	metBiGGID	MAM01115e	5-methyl-THF	e	5mthf	C00440	False	-1000.0	1000.0
+MAR09235	EX_5thf_e	metBiGGID	MAM02692e	pentaglutamyl-folate(THF)	e	5thf		False	-1000.0	1000.0
+MAR09236	EX_6dhf_e	metBiGGID	MAM02118e	hexaglutamyl-folate(DHF)	e	6dhf		False	-1000.0	1000.0
+MAR09237	EX_6htststerone_e	metBiGGID	MAM01158e	6beta-hydroxytestosterone	e	6htststerone	C14497	False	-1000.0	1000.0
+MAR09238	EX_6thf_e	metBiGGID	MAM02119e	hexaglutamyl-folate(THF)	e	6thf		False	-1000.0	1000.0
+MAR09239	EX_7dhf_e	metBiGGID	MAM02104e	heptaglutamyl-folate(DHF)	e	7dhf		False	-1000.0	1000.0
+MAR09240	EX_7thf_e	metBiGGID	MAM02105e	heptaglutamyl-folate(THF)	e	7thf		False	-1000.0	1000.0
+MAR09241	EX_abt_e	metBiGGID	MAM02338e	L-arabitol	e	abt	C00532	False	-1000.0	1000.0
+MAR09242	EX_acald_e	metBiGGID	MAM01249e	acetaldehyde	e	acald	C00084	False	-1000.0	1000.0
+MAR09243	EX_acetone_e	metBiGGID	MAM01256e	acetone	e	acetone	C00207	False	-1000.0	1000.0
+MAR09244	EX_acgalfucgalacgalfuc12gal14acglcgalgluside_hs_e	metBiGGID	MAM03096e	type III A glycolipid	e	acgalfucgalacgalfuc12gal14acglcgalgluside_hs	G00059	False	-1000.0	1000.0
+MAR09245	EX_acgalfucgalacgalfucgalacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM03098e	type IIIAb	e	acgalfucgalacgalfucgalacglcgal14acglcgalgluside_hs	G00075	False	-1000.0	1000.0
+MAR09246	EX_acgam_e	metBiGGID	MAM02527e	N-acetylglucosamine	e	acgam	C00140	False	-1000.0	1000.0
+MAR09247	EX_ach_e	metBiGGID	MAM01260e	acetylcholine	e	ach	C01996	False	-1000.0	1000.0
+MAR09248	EX_acn13acngalgbside_hs_e	metBiGGID	MAM02902e	sialyl(1,3)-sialyl(2,6)-galactosylgloboside	e	acn13acngalgbside_hs		False	-1000.0	1000.0
+MAR09249	EX_acn23acngalgbside_hs_e	metBiGGID	MAM02903e	sialyl(2,3)-sialyl(2,6)-galactosylgloboside	e	acn23acngalgbside_hs		False	-1000.0	1000.0
+MAR09250	EX_acnacngal14acglcgalgluside_hs_e	metBiGGID	MAM00744e	3,8-LD1	e	acnacngal14acglcgalgluside_hs	G00064	False	-1000.0	1000.0
+MAR09251	EX_acnacngalgbside_hs_e	metBiGGID	MAM01711e	disialylgalactosylgloboside	e	acnacngalgbside_hs		False	-1000.0	1000.0
+MAR09252	EX_acngalacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM03138e	VI3NeuAc-nLc6Cer	e	acngalacglcgal14acglcgalgluside_hs	G00088	False	-1000.0	1000.0
+MAR09253	EX_ade_e	metBiGGID	MAM01279e	adenine	e	ade	C00147	False	-1000.0	1000.0
+MAR09254	EX_adn_e	metBiGGID	MAM01280e	adenosine	e	adn	C00212	False	-1000.0	1000.0
+MAR09255	EX_adp_e	metBiGGID	MAM01285e	ADP	e	adp	C00008	False	-1000.0	1000.0
+MAR09256	EX_adprbp_e	metBiGGID	MAM01289e	ADP-ribose-2-phosphate	e	adprbp	C03246	False	-1000.0	1000.0
+MAR09257	EX_ahandrostanglc_e	metBiGGID	MAM01799e	etiocholan-3alpha-ol-17-one 3-glucuronide	e	ahandrostanglc	C11136	False	-1000.0	1000.0
+MAR09258	EX_ak2lgchol_hs_e	metBiGGID	MAM00516e	1-alkyl-2-lysoglycerol-3-phosphocholine	e	ak2lgchol_hs	C04317	False	-1000.0	1000.0
+MAR09259	EX_akg_e	metBiGGID	MAM01306e	AKG	e	akg	C00026	False	-1000.0	1000.0
+MAR09260	EX_ala_B_e	metBiGGID	MAM01383e	beta-alanine	e	ala_B	C00099	False	-1000.0	1000.0
+MAR09261	EX_aldstrn_e	metBiGGID	MAM01309e	aldosterone	e	aldstrn	C01780	False	-1000.0	1000.0
+MAR09262	EX_amp_e	metBiGGID	MAM01334e	AMP	e	amp	C00020	False	-1000.0	1000.0
+MAR09263	EX_andrstrn_e	metBiGGID	MAM01338e	androsterone	e	andrstrn	C00523	False	-1000.0	1000.0
+MAR09264	EX_andrstrnglc_e	metBiGGID	MAM01339e	androsterone-glucuronide	e	andrstrnglc	C11135	False	-1000.0	1000.0
+MAR09265	EX_antipyrene_e	metBiGGID	MAM01344e	antipyrine	e	antipyrene	C13244	False	-1000.0	1000.0
+MAR09266	EX_apnnox_e	metBiGGID	MAM01326e	alpha-pinene-oxide	e	apnnox	C02759	False	-1000.0	1000.0
+MAR09267	EX_appnn_e	metBiGGID	MAM00002e	(+)-alpha-pinene	e	appnn	C09880	False	-1000.0	1000.0
+MAR09268	EX_aprgstrn_e	metBiGGID	MAM00580e	20alpha-hydroxy-4-pregnen-3-one	e	aprgstrn	C04042	False	-1000.0	1000.0
+MAR09269	EX_aqcobal_e	metBiGGID	MAM01361e	aquacob(III)alamin	e	aqcobal	C00992	False	-1000.0	1000.0
+MAR09270	EX_arab__L_e	metBiGGID	MAM02337e	L-arabinose	e	arab__L	C00259	False	-1000.0	1000.0
+MAR09271	EX_bildglcur_e	metBiGGID	MAM01397e	bilirubin-bisglucuronoside	e	bildglcur	C05787	False	-1000.0	1000.0
+MAR09272	EX_bilglcur_e	metBiGGID	MAM01398e	bilirubin-monoglucuronoside	e	bilglcur	C03374	False	-1000.0	1000.0
+MAR09273	EX_bilirub_e	metBiGGID	MAM01396e	bilirubin	e	bilirub	C00486	False	-1000.0	1000.0
+MAR09275	EX_camp_e	metBiGGID	MAM01419e	cAMP	e	camp	C00575	False	-1000.0	1000.0
+MAR09276	EX_caro_e	metBiGGID	MAM01385e	beta-carotene	e	caro	C02094	False	-1000.0	1000.0
+MAR09277	EX_carveol_e	metBiGGID	MAM00001e	(-)-trans-carveol	e	carveol	C00964	False	-1000.0	1000.0
+MAR09278	EX_cca_d3_e	metBiGGID	MAM01418e	calcitroic acid	e	cca_d3	C18230	False	-1000.0	1000.0
+MAR09279	EX_cgly_e	metBiGGID	MAM01626e	cys-gly	e	cgly	C01419	False	-1000.0	1000.0
+MAR09280	EX_cholate_e	metBiGGID	MAM01445e	cholate	e	cholate	C00695	False	-1000.0	1000.0
+MAR09281	EX_gchola_e	metBiGGID	MAM01988e	glycocholate	e	gchola	C01921	False	-1000.0	1000.0
+MAR09282	EX_tchola_e	metBiGGID	MAM02963e	taurocholate	e	tchola	C05122	False	-1000.0	1000.0
+MAR09283	EX_dgchol_e	metBiGGID	MAM01987e	glycochenodeoxycholate	e	dgchol	C05466	False	-1000.0	1000.0
+MAR09284	EX_tdchola_e	metBiGGID	MAM02962e	taurochenodeoxycholate	e	tdchola	C05465	False	-1000.0	1000.0
+MAR09285	EX_chsterol_e	metBiGGID	MAM01450e	cholesterol	e	chsterol	C00187	False	-1000.0	1000.0
+MAR09286	EX_cit_e	metBiGGID	MAM01587e	citrate	e	cit	C00158	False	-1000.0	1000.0
+MAR09287	EX_cmp_e	metBiGGID	MAM01590e	CMP	e	cmp	C00055	False	-1000.0	1000.0
+MAR09288	EX_co_e	metBiGGID	MAM01595e	CO	e	co	C00237	False	-1000.0	1000.0
+MAR09289	EX_coumarin_e	metBiGGID	MAM01617e	coumarin	e	coumarin	C05851	False	-1000.0	1000.0
+MAR09290	EX_creat_e	metBiGGID	MAM01619e	creatine	e	creat	C00300	False	-1000.0	1000.0
+MAR09291	EX_csn_e	metBiGGID	MAM01632e	cytosine	e	csn	C00380	False	-1000.0	1000.0
+MAR09292	EX_crn_e	metBiGGID	MAM02348e	L-carnitine	e	crn	C00318	False	-1000.0	1000.0
+MAR09293	EX_crtsl_e	metBiGGID	MAM01615e	cortisol	e	crtsl	C00735	False	-1000.0	1000.0
+MAR09294	EX_crtstrn_e	metBiGGID	MAM01614e	corticosterone	e	crtstrn	C02140	False	-1000.0	1000.0
+MAR09295	EX_cytd_e	metBiGGID	MAM01630e	cytidine	e	cytd	C00475	False	-1000.0	1000.0
+MAR09296	EX_dcyt_e	metBiGGID	MAM01668e	deoxycytidine	e	dcyt	C00881	False	-1000.0	1000.0
+MAR09297	EX_dad_2_e	metBiGGID	MAM01666e	deoxyadenosine	e	dad_2	C00559	False	-1000.0	1000.0
+MAR09298	EX_dad_5_e	metBiGGID	MAM01098e	5-deoxyadenosine	e	dad_5	C05198	False	-1000.0	1000.0
+MAR09299	EX_debrisoquine_e	metBiGGID	MAM01647e	debrisoquin	e	debrisoquine	C13650	False	-1000.0	1000.0
+MAR09300	EX_dgsn_e	metBiGGID	MAM01669e	deoxyguanosine	e	dgsn	C00330	False	-1000.0	1000.0
+MAR09301	EX_dhdascb_e	metBiGGID	MAM01655e	dehydroascorbic acid	e	dhdascb	C05422	False	-1000.0	1000.0
+MAR09302	EX_dheas_e	metBiGGID	MAM01659e	dehydroepiandrosterone sulfate	e	dheas	C04555	False	-1000.0	1000.0
+MAR09303	EX_dhf_e	metBiGGID	MAM01700e	dihydrofolate	e	dhf	C00415	False	-1000.0	1000.0
+MAR09304	EX_digalsgalside_hs_e	metBiGGID	MAM01695e	digalactosylceramidesulfate	e	digalsgalside_hs	C06127	False	-1000.0	1000.0
+MAR09305	EX_din_e	metBiGGID	MAM01671e	deoxyinosine	e	din	C05512	False	-1000.0	1000.0
+MAR09306	EX_dmantipyrine_e	metBiGGID	MAM01768e	edaravone	e	dmantipyrine	C13008	False	-1000.0	1000.0
+MAR09307	EX_dmhptcrn_e	metBiGGID	MAM00577e	2,6-dimethylheptanoyl-carnitine	e	dmhptcrn		False	-1000.0	1000.0
+MAR09308	EX_dopasf_e	metBiGGID	MAM01737e	dopamine-3-O-sulfate	e	dopasf	C13690	False	-1000.0	1000.0
+MAR09309	EX_drib_e	metBiGGID	MAM01672e	deoxyribose	e	drib	C01801	False	-1000.0	1000.0
+MAR09310	EX_duri_e	metBiGGID	MAM01673e	deoxyuridine	e	duri	C00526	False	-1000.0	1000.0
+MAR09311	EX_eaflatoxin_e	metBiGGID	MAM01298e	aflatoxin B1-exo-8,9-epoxide	e	eaflatoxin	C19586	False	-1000.0	1000.0
+MAR09312	EX_ebastine_e	metBiGGID	MAM01765e	ebastine	e	ebastine	D01478	False	-1000.0	1000.0
+MAR09313	EX_ebastineoh_e	metBiGGID	MAM02150e	hydroxylated-ebastine	e	ebastineoh		False	-1000.0	1000.0
+MAR09314	EX_estradiol_e	metBiGGID	MAM01787e	estradiol-17beta	e	estradiol	C00951	False	-1000.0	1000.0
+MAR09315	EX_estriolglc_e	metBiGGID	MAM00402e	16-glucuronide-estriol	e	estriolglc	C05504	False	-1000.0	1000.0
+MAR09316	EX_estroneglc_e	metBiGGID	MAM01795e	estrone-glucuronide	e	estroneglc	C11133	False	-1000.0	1000.0
+MAR09317	EX_estrones_e	metBiGGID	MAM01789e	estrone 3-sulfate	e	estrones	C02538	False	-1000.0	1000.0
+MAR09318	EX_for_e	metBiGGID	MAM01833e	formate	e	for	C00058	False	-1000.0	1000.0
+MAR09319	EX_fuc13galacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM02164e	III3Fuc-nLc6Cer	e	fuc13galacglcgal14acglcgalgluside_hs	G00076	False	-1000.0	1000.0
+MAR09320	EX_fucfucgalacglcgalgluside_hs_e	metBiGGID	MAM03578e	Leb Glycolipid	e	fucfucgalacglcgalgluside_hs		False	-1000.0	1000.0
+MAR09321	EX_fucacgalfucgalacglcgalgluside_hs_e	metBiGGID	MAM01850e	fucacgalfucgalacglcgalgluside heparan sulfate	e	fucacgalfucgalacglcgalgluside_hs	G00043	False	-1000.0	1000.0
+MAR09322	EX_fucacngal14acglcgalgluside_hs_e	metBiGGID	MAM02199e	IV3NeuAc,III3Fuc-nLc4Cer	e	fucacngal14acglcgalgluside_hs	G00063	False	-1000.0	1000.0
+MAR09323	EX_fucacngalacglcgalgluside_hs_e	metBiGGID	MAM02198e	IV3Neu5Ac,III4Fuc-Lc4Cer	e	fucacngalacglcgalgluside_hs		False	-1000.0	1000.0
+MAR09324	EX_fucfuc132galacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM01851e	fucfuc132galacglcgal14acglcgalgluside heparan sulfate	e	fucfuc132galacglcgal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09325	EX_fucfucfucgalacglc13galacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM01852e	fucfucfucgalacglc13galacglcgal14acglcgalgluside heparan sulfate	e	fucfucfucgalacglc13galacglcgal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09326	EX_fucfucfucgalacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM01853e	fucfucfucgalacglcgal14acglcgalgluside heparan sulfate	e	fucfucfucgalacglcgal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09327	EX_fucgal14acglcgalgluside_hs_e	metBiGGID	MAM02331e	lacto-N-fucopentaosyl-III-ceramide	e	fucgal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09328	EX_fucgalfucgalacglcgalgluside_hs_e	metBiGGID	MAM01859e	fucgalfucgalacglcgalgluside heparan sulfate	e	fucgalfucgalacglcgalgluside_hs		False	-1000.0	1000.0
+MAR09329	EX_fucgalgbside_hs_e	metBiGGID	MAM01861e	fucosyl-galactosylgloboside	e	fucgalgbside_hs		False	-1000.0	1000.0
+MAR09330	EX_fuc__L_e	metBiGGID	MAM01159e	6-deoxy-L-galactose	e	fuc__L	C01019	False	-1000.0	1000.0
+MAR09331	EX_galacglcgalgbside_hs_e	metBiGGID	MAM01919e	gal-glcnac-gal-globoside	e	galacglcgalgbside_hs		False	-1000.0	1000.0
+MAR09332	EX_galfuc12gal14acglcgalgluside_hs_e	metBiGGID	MAM01914e	galfuc12gal14acglcgalgluside heparan sulfate	e	galfuc12gal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09334	EX_galgalfucfucgalacglcgalacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM01916e	galgalfucfucgalacglcgalacglcgal14acglcgalgluside heparan sulfate	e	galgalfucfucgalacglcgalacglcgal14acglcgalgluside_hs		False	-1000.0	1000.0
+MAR09335	EX_galgalgalthcrm_hs_e	metBiGGID	MAM01917e	galgalgalthcrm heparan sulfate	e	galgalgalthcrm_hs		False	-1000.0	1000.0
+MAR09336	EX_gbside_hs_e	metBiGGID	MAM01959e	globoside	e	gbside_hs	C03272	False	-1000.0	1000.0
+MAR09337	EX_gd1b2_hs_e	metBiGGID	MAM01944e	GD1beta	e	gd1b2_hs		False	-1000.0	1000.0
+MAR09338	EX_gluala_e	metBiGGID	MAM00097e	(5-L-glutamyl)-L-amino acid	e	gluala		False	-1000.0	1000.0
+MAR09339	EX_gd1c_hs_e	metBiGGID	MAM01945e	GD1c	e	gd1c_hs	G00126	False	-1000.0	1000.0
+MAR09340	EX_gdp_e	metBiGGID	MAM01948e	GDP	e	gdp	C00035	False	-1000.0	1000.0
+MAR09341	EX_glyb_e	metBiGGID	MAM01393e	betaine	e	glyb	C00719	False	-1000.0	1000.0
+MAR09342	EX_glyc__R_e	metBiGGID	MAM01982e	glycerate	e	glyc__R	C00258	False	-1000.0	1000.0
+MAR09343	EX_gmp_e	metBiGGID	MAM02016e	GMP	e	gmp	C00144	False	-1000.0	1000.0
+MAR09344	EX_gp1c_hs_e	metBiGGID	MAM02018e	GP1c	e	gp1c_hs		False	-1000.0	1000.0
+MAR09345	EX_gp1calpha_hs_e	metBiGGID	MAM02019e	GP1calpha	e	gp1calpha_hs		False	-1000.0	1000.0
+MAR09346	EX_gq1b_hs_e	metBiGGID	MAM02023e	GQ1b	e	gq1b_hs	C06139	False	-1000.0	1000.0
+MAR09347	EX_gq1balpha_hs_e	metBiGGID	MAM02024e	GQ1balpha	e	gq1balpha_hs	G00129	False	-1000.0	1000.0
+MAR09348	EX_gsn_e	metBiGGID	MAM02038e	guanosine	e	gsn	C00387	False	-1000.0	1000.0
+MAR09349	EX_gt1a_hs_e	metBiGGID	MAM02028e	GT1a	e	gt1a_hs	C06138	False	-1000.0	1000.0
+MAR09350	EX_gthox_e	metBiGGID	MAM02027e	GSSG	e	gthox	C00127	False	-1000.0	1000.0
+MAR09351	EX_gthrd_e	metBiGGID	MAM02026e	GSH	e	gthrd	C00051	False	-1000.0	1000.0
+MAR09352	EX_gtp_e	metBiGGID	MAM02034e	GTP	e	gtp	C00044	False	-1000.0	1000.0
+MAR09353	EX_gua_e	metBiGGID	MAM02037e	guanine	e	gua	C00242	False	-1000.0	1000.0
+MAR09354	EX_h2o2_e	metBiGGID	MAM02041e	H2O2	e	h2o2	C00027	False	-1000.0	1000.0
+MAR09355	EX_hestratriol_e	metBiGGID	MAM00986e	4-hydroxy-17beta-estradiol	e	hestratriol	C14209	False	-1000.0	1000.0
+MAR09356	EX_hcoumarin_e	metBiGGID	MAM03113e	umbelliferone	e	hcoumarin	C09315	False	-1000.0	1000.0
+MAR09357	EX_htaxol_e	metBiGGID	MAM01163e	6-hydroxypaclitaxel	e	htaxol		False	-1000.0	1000.0
+MAR09358	EX_hxan_e	metBiGGID	MAM02159e	hypoxanthine	e	hxan	C00262	False	-1000.0	1000.0
+MAR09359	EX_idp_e	metBiGGID	MAM02161e	IDP	e	idp	C00104	False	-1000.0	1000.0
+MAR09360	EX_imp_e	metBiGGID	MAM02167e	IMP	e	imp	C00130	False	-1000.0	1000.0
+MAR09361	EX_inost_e	metBiGGID	MAM02171e	inositol	e	inost	C00137	False	-1000.0	1000.0
+MAR09362	EX_ins_e	metBiGGID	MAM02170e	inosine	e	ins	C00294	False	-1000.0	1000.0
+MAR09363	EX_cysi__L_e	metBiGGID	MAM01629e	cystine	e	cysi__L	C00491	False	-1000.0	1000.0
+MAR09364	EX_leuktrA4_e	metBiGGID	MAM02362e	leukotriene A4	e	leuktrA4	C00909	False	-1000.0	1000.0
+MAR09365	EX_leuktrB4_e	metBiGGID	MAM02364e	leukotriene B4	e	leuktrB4	C02165	False	-1000.0	1000.0
+MAR09366	EX_leuktrC4_e	metBiGGID	MAM02366e	leukotriene C4	e	leuktrC4	C02166	False	-1000.0	1000.0
+MAR09367	EX_leuktrD4_e	metBiGGID	MAM02418e	LTD4	e	leuktrD4	C05951	False	-1000.0	1000.0
+MAR09368	EX_leuktrE4_e	metBiGGID	MAM02369e	leukotriene E4	e	leuktrE4	C05952	False	-1000.0	1000.0
+MAR09369	EX_limnen_e	metBiGGID	MAM02386e	limonene	e	limnen	C00521	False	-1000.0	1000.0
+MAR09370	EX_malt_e	metBiGGID	MAM02450e	maltose	e	malt	C00208	False	-1000.0	1000.0
+MAR09371	EX_malttr_e	metBiGGID	MAM02452e	maltotriose	e	malttr	C01835	False	-1000.0	1000.0
+MAR09372	EX_meoh_e	metBiGGID	MAM02470e	methanol	e	meoh	C00132	False	-1000.0	1000.0
+MAR09373	EX_mepi_e	metBiGGID	MAM02407e	L-metanephrine	e	mepi	C05588	False	-1000.0	1000.0
+MAR09374	EX_mercplaccys_e	metBiGGID	MAM00816e	3-mercaptolactate-cysteine-disulfide	e	mercplaccys		False	-1000.0	1000.0
+MAR09375	EX_mthgxl_e	metBiGGID	MAM02475e	methylglyoxal	e	mthgxl	C00546	False	-1000.0	1000.0
+MAR09376	EX_nad_e	metBiGGID	MAM02552e	NAD+	e	nad	C00003	False	-1000.0	1000.0
+MAR09377	EX_nadp_e	metBiGGID	MAM02554e	NADP+	e	nadp	C00006	False	-1000.0	1000.0
+MAR09378	EX_ncam_e	metBiGGID	MAM02583e	nicotinamide	e	ncam	C00153	False	-1000.0	1000.0
+MAR09379	EX_nifedipine;nfd_e	metBiGGID	MAM02587e	nifedipine	e	nifedipine;nfd	C07266	False	-1000.0	1000.0
+MAR09380	EX_hnifedipine_e	metBiGGID	MAM02153e	hydroxy-nifedipine	e	hnifedipine		False	-1000.0	1000.0
+MAR09381	EX_no_e	metBiGGID	MAM02609e	NO	e	no	C00533	False	-1000.0	1000.0
+MAR09382	EX_nrpphrsf_e	metBiGGID	MAM02620e	norepinephrine sulfate	e	nrpphrsf		False	-1000.0	1000.0
+MAR09383	EX_o2s_e	metBiGGID	MAM02631e	O2-	e	o2s	C00704	False	-1000.0	1000.0
+MAR09384	EX_oagd3_hs_e	metBiGGID	MAM01244e	9-O-acetylated-GD3	e	oagd3_hs		False	-1000.0	1000.0
+MAR09385	EX_oagt3_hs_e	metBiGGID	MAM01245e	9-O-acetylated-GT3	e	oagt3_hs		False	-1000.0	1000.0
+MAR09386	EX_oh1_e	metBiGGID	MAM02147e	hydroxide	e	oh1	C01328	False	-1000.0	1000.0
+MAR09387	EX_omeprazole_e	metBiGGID	MAM02653e	omeprazole	e	omeprazole	C07324	False	-1000.0	1000.0
+MAR09388	EX_onpthl_e	metBiGGID	MAM00032e	(1R,2S)-naphthalene 1,2-oxide	e	onpthl	C14786	False	-1000.0	1000.0
+MAR09389	EX_peplys_e	metBiGGID	MAM00204e	[protein]-L-lysine	e	peplys	C02188	False	-1000.0	1000.0
+MAR09390	EX_perillyl_e	metBiGGID	MAM02712e	perillyl alcohol	e	perillyl	C02452	False	-1000.0	1000.0
+MAR09391	EX_pheacgln_e	metBiGGID	MAM02722e	phenylacetylglutamine	e	pheacgln	C04148	False	-1000.0	1000.0
+MAR09392	EX_phllqne_e	metBiGGID	MAM02744e	phylloquinone	e	phllqne	C02059	False	-1000.0	1000.0
+MAR09393	EX_prgstrn_e	metBiGGID	MAM02769e	progesterone	e	prgstrn	C00410	False	-1000.0	1000.0
+MAR09394	EX_pro__D_e	metBiGGID	MAM01742e	D-proline	e	pro__D	C00763	False	-1000.0	1000.0
+MAR09395	EX_prostgd2_e	metBiGGID	MAM02783e	prostaglandin D2	e	prostgd2	C00696	False	-1000.0	1000.0
+MAR09396	EX_prostge1_e	metBiGGID	MAM02785e	prostaglandin E1	e	prostge1	C04741	False	-1000.0	1000.0
+MAR09397	EX_prostge2_e	metBiGGID	MAM02786e	prostaglandin E2	e	prostge2	C00584	False	-1000.0	1000.0
+MAR09398	EX_prostgf2_e	metBiGGID	MAM02789e	prostaglandin F2alpha	e	prostgf2	C00639	False	-1000.0	1000.0
+MAR09399	EX_pydam_e	metBiGGID	MAM02815e	pyridoxamine	e	pydam	C00534	False	-1000.0	1000.0
+MAR09400	EX_pydx_e	metBiGGID	MAM02813e	pyridoxal	e	pydx	C00250	False	-1000.0	1000.0
+MAR09401	EX_rbt_e	metBiGGID	MAM02841e	ribitol	e	rbt	C00474	False	-1000.0	1000.0
+MAR09404	EX_retn_e	metBiGGID	MAM02833e	retinoate	e	retn	C00777	False	-1000.0	1000.0
+MAR09405	EX_retnglc_e	metBiGGID	MAM02836e	retinoyl-glucuronide	e	retnglc	C11061	False	-1000.0	1000.0
+MAR09406	EX_rib__D_e	metBiGGID	MAM02843e	ribose	e	rib__D	C00121	False	-1000.0	1000.0
+MAR09407	EX_ser__D_e	metBiGGID	MAM01744e	D-serine	e	ser__D	C00740	False	-1000.0	1000.0
+MAR09408	EX_sl__L_e	metBiGGID	MAM00179e	(S)-3-sulfolactate	e	sl__L	C11499	False	-1000.0	1000.0
+MAR09409	EX_spc_hs_e	metBiGGID	MAM02931e	sphingosylphosphorylcholine	e	spc_hs		False	-1000.0	1000.0
+MAR09410	EX_sph1p_e	metBiGGID	MAM02928e	sphinganine-1-phosphate	e	sph1p	C01120	False	-1000.0	1000.0
+MAR09411	EX_sphs1p_e	metBiGGID	MAM02930e	sphingosine-1-phosphate	e	sphs1p	C06124	False	-1000.0	1000.0
+MAR09412	EX_srtn_e	metBiGGID	MAM02897e	serotonin	e	srtn	C00780	False	-1000.0	1000.0
+MAR09413	EX_strch1_e	metBiGGID	MAM02936e	starch structure 1	e	strch1		False	-1000.0	1000.0
+MAR09414	EX_strch2_e	metBiGGID	MAM02937e	starch structure 2	e	strch2		False	-1000.0	1000.0
+MAR09415	EX_succ_e	metBiGGID	MAM02943e	succinate	e	succ	C00042	False	-1000.0	1000.0
+MAR09416	EX_sucr_e	metBiGGID	MAM02945e	sucrose	e	sucr	C00089	False	-1000.0	1000.0
+MAR09417	EX_tag__D_e	metBiGGID	MAM01745e	D-tagatose	e	tag__D	D09007	False	-1000.0	1000.0
+MAR09418	EX_taur_e	metBiGGID	MAM02961e	taurine	e	taur	C00245	False	-1000.0	1000.0
+MAR09419	EX_taxol_e	metBiGGID	MAM02673e	paclitaxel	e	taxol	C07394	False	-1000.0	1000.0
+MAR09420	EX_tcynt_e	metBiGGID	MAM02986e	thiocyanate	e	tcynt	C01755	False	-1000.0	1000.0
+MAR09421	EX_thf_e	metBiGGID	MAM02980e	THF	e	thf	C00101	False	-1000.0	1000.0
+MAR09422	EX_thym_e	metBiGGID	MAM02997e	thymine	e	thym	C00178	False	-1000.0	1000.0
+MAR09423	EX_thymd_e	metBiGGID	MAM02996e	thymidine	e	thymd	C00214	False	-1000.0	1000.0
+MAR09424	EX_thyox__L_e	metBiGGID	MAM02998e	thyroxine	e	thyox__L	C01829	False	-1000.0	1000.0
+MAR09425	EX_tolbutamide_e	metBiGGID	MAM03001e	tolbutamide	e	tolbutamide	C07148	False	-1000.0	1000.0
+MAR09426	EX_tre_e	metBiGGID	MAM03039e	trehalose	e	tre	C01083	False	-1000.0	1000.0
+MAR09427	EX_triodthy_e	metBiGGID	MAM03052e	triiodothyronine	e	triodthy	C02465	False	-1000.0	1000.0
+MAR09428	EX_triodthysuf_e	metBiGGID	MAM00734e	3,5,3-triiodothyronine-4-sulfate	e	triodthysuf		False	-1000.0	1000.0
+MAR09429	EX_tststerone_e	metBiGGID	MAM02969e	testosterone	e	tststerone	C00535	False	-1000.0	1000.0
+MAR09430	EX_tststeroneglc_e	metBiGGID	MAM02967e	testosterone glucuronide	e	tststeroneglc	C11134	False	-1000.0	1000.0
+MAR09431	EX_tststerones_e	metBiGGID	MAM02968e	testosterone sulfate	e	tststerones		False	-1000.0	1000.0
+MAR09432	EX_tsul_e	metBiGGID	MAM02991e	thiosulfate	e	tsul	C00320	False	-1000.0	1000.0
+MAR09433	EX_txa2_e	metBiGGID	MAM02994e	thromboxane A2	e	txa2	C02198	False	-1000.0	1000.0
+MAR09434	EX_tymsf_e	metBiGGID	MAM03100e	tyramine-O-sulfate	e	tymsf		False	-1000.0	1000.0
+MAR09435	EX_udp_e	metBiGGID	MAM03106e	UDP	e	udp	C00015	False	-1000.0	1000.0
+MAR09436	EX_ump_e	metBiGGID	MAM03114e	UMP	e	ump	C00105	False	-1000.0	1000.0
+MAR09437	EX_ura_e	metBiGGID	MAM03118e	uracil	e	ura	C00106	False	-1000.0	1000.0
+MAR09438	EX_urea_e	metBiGGID	MAM03121e	urea	e	urea	C00086	False	-1000.0	1000.0
+MAR09439	EX_uri_e	metBiGGID	MAM03123e	uridine	e	uri	C00299	False	-1000.0	1000.0
+MAR09440	EX_utp_e	metBiGGID	MAM03130e	UTP	e	utp	C00075	False	-1000.0	1000.0
+MAR09441	EX_vitd2_e	metBiGGID	MAM03141e	vitamin D2	e	vitd2	C05441	False	-1000.0	1000.0
+MAR09442	EX_vitd3_e	metBiGGID	MAM03142e	vitamin D3	e	vitd3	C05443	False	-1000.0	1000.0
+MAR09443	EX_whddca_e	metBiGGID	MAM00325e	12-hydroxydodecanoic acid	e	whddca	C08317	False	-1000.0	1000.0
+MAR09444	EX_whttdca_e	metBiGGID	MAM00371e	14-hydroxytetradecanoic acid	e	whttdca		False	-1000.0	1000.0
+MAR09445	EX_whhdca_e	metBiGGID	MAM00403e	16-hydroxyhexadecanoic acid	e	whhdca	C18218	False	-1000.0	1000.0
+MAR09446	EX_whtststerone_e	metBiGGID	MAM00432e	19-hydroxytestosterone	e	whtststerone		False	-1000.0	1000.0
+MAR09447	EX_HC01444_e	metBiGGID	MAM01913e	galactosylglycerol	e	HC01444	C05401	False	-1000.0	1000.0
+MAR09448	EX_CE2839_e	metBiGGID	MAM02445e	maltodecaose	e	CE2839		False	-1000.0	1000.0
+MAR09449	EX_pheacgly_e	metBiGGID	MAM02723e	phenylacetylglycine	e	pheacgly	C05598	False	-1000.0	1000.0
+MAR09450	EX_xtp_e	metBiGGID	MAM03154e	XTP	e	xtp	C00700	False	-1000.0	1000.0
+MAR09451	EX_itacon_e	metBiGGID	MAM02191e	itaconate	e	itacon	C00490	False	-1000.0	1000.0
+MAR09452	EX_estriol_e	metBiGGID	MAM01788e	estriol	e	estriol	C05141	False	-1000.0	1000.0
+MAR09453	EX_ahandrostan_e	metBiGGID	MAM01800e	etiocholanolone	e	ahandrostan	C04373	False	-1000.0	1000.0
+MAR09454	EX_orn__D_e	metBiGGID	MAM01740e	D-ornithine	e	orn__D	C00515	False	-1000.0	1000.0
+MAR09455	EX_arg__D_e	metBiGGID	MAM01640e	D-arginine	e	arg__D	C00792	False	-1000.0	1000.0
+MAR09456	EX_adpglc_e	metBiGGID	MAM01286e	ADP-glucose	e	adpglc	C00498	False	-1000.0	1000.0
+MAR09457	EX_adpman_e	metBiGGID	MAM01287e	ADP-mannose	e	adpman	C06192	False	-1000.0	1000.0
+MAR09458	EX_rbl__D_e	metBiGGID	MAM01743e	D-ribulose	e	rbl__D	C05052	False	-1000.0	1000.0
+MAR09460	EX_crtn_e	metBiGGID	MAM01621e	creatinine	e	crtn	C00791	False	-1000.0	1000.0
+MAR09461	EX_M01966_e	metBiGGID	MAM01966e	glucose-1,6-bisphosphate	e	M01966	C01231	False	-1000.0	1000.0
+MAR09462	EX_M02155_e	metBiGGID	MAM02155e	hyodeoxycholate	e	M02155	C15517	False	-1000.0	1000.0
+MAR09463	EX_MAR09463	no cross-reference	MAM01989e	glycodeoxycholate	e		C05464	False	-1000.0	1000.0
+MAR09681	EX_idour_e	metBiGGID	MAM02384e	L-iduronic acid	e	idour	C06472	False	-1000.0	1000.0
+MAR09682	EX_HC01104_e	metBiGGID	MAM01020e	4-nitrophenyl-phosphate	e	HC01104	C03360	False	-1000.0	1000.0
+MAR09683	EX_MAR09683	no cross-reference	MAM01111e	5-L-gamma-glutamyl	e			False	-1000.0	1000.0
+MAR09684	EX_agm_e	metBiGGID	MAM01303e	agmatine	e	agm	C00179	False	-1000.0	1000.0
+MAR09685	EX_sbt__D_e	metBiGGID	MAM01682e	D-glucitol	e	sbt__D	C00794	False	-1000.0	1000.0
+MAR09686	EX_MAR09686	no cross-reference	MAM01870e	G00022	e		G00022	False	-1000.0	1000.0
+MAR09687	EX_MAR09687	no cross-reference	MAM01872e	G00032	e		G00032	False	-1000.0	1000.0
+MAR09688	EX_MAR09688	no cross-reference	MAM01887e	G00086	e		G00086	False	-1000.0	1000.0
+MAR09689	EX_acmana_e	metBiGGID	MAM02524e	N-acetyl-D-mannosamine	e	acmana	C00645	False	-1000.0	1000.0
+MAR09690	EX_orot_e	metBiGGID	MAM02659e	orotate	e	orot	C00295	False	-1000.0	1000.0
+MAR09691	EX_pydx5p_e	metBiGGID	MAM02814e	pyridoxal-phosphate	e	pydx5p	C00018	False	-1000.0	1000.0
+MAR09692	EX_CE1936_e	metBiGGID	MAM02924e	spermine dialdehyde	e	CE1936		False	-1000.0	1000.0
+MAR09693	EX_C02470_e	metBiGGID	MAM03151e	xanthurenate	e	C02470	C02470	False	-1000.0	1000.0
+MAR09694	EX_homoval_e	metBiGGID	MAM02137e	homovanillate	e	homoval	C05582	False	-1000.0	1000.0
+MAR09695	EX_MAR09695	no cross-reference	MAM01874e	G00040	e		G00040	False	-1000.0	1000.0
+MAR09696	EX_MAR09696	no cross-reference	MAM01881e	G00079	e		G00079	False	-1000.0	1000.0
+MAR09697	EX_MAR09697	no cross-reference	MAM01883e	G00082	e		G00082	False	-1000.0	1000.0
+MAR09698	EX_galfucgalacglcgal14acglcgalgluside_hs_e	metBiGGID	MAM01884e	G00083	e	galfucgalacglcgal14acglcgalgluside_hs	G00083	False	-1000.0	1000.0
+MAR09699	EX_MAR09699	no cross-reference	MAM03131e	V3(NeuAc)2-Gb5Cer	e		G00100	False	-1000.0	1000.0
+MAR09700	EX_n5m2masn_e	metBiGGID	MAM02516e	n5m2masn	e	n5m2masn		False	-1000.0	1000.0
+MAR09701	EX_MAR09701	no cross-reference	MAM01603e	coproporphyrin I	e		C05769	False	-1000.0	1000.0
+MAR09702	EX_C05770_e	metBiGGID	MAM01604e	coproporphyrin III	e	C05770	C05770	False	-1000.0	1000.0
+MAR09703	EX_gpi_sig_e	metBiGGID	MAM02022e	gpi_sig	e	gpi_sig		False	-1000.0	1000.0
+MAR09704	EX_dgpi_prot_hs_e	metBiGGID	MAM01687e	dgpi_prot heparan sulfate	e	dgpi_prot_hs		False	-1000.0	1000.0
+MAR09705	EX_dem2emgacpail_prot_hs_e	metBiGGID	MAM01665e	dem2emgacpail_prot heparan sulfate	e	dem2emgacpail_prot_hs		False	-1000.0	1000.0
+MAR09706	EX_gncore2_e	metBiGGID	MAM01955e	glcnac-alpha-1,4-core 2	e	gncore2		False	-1000.0	1000.0
+MAR09707	EX_kdn_e	metBiGGID	MAM00771e	3-deoxy-D-glycero-D-galacto-2-nonulosonic acid	e	kdn		False	-1000.0	1000.0
+MAR09708	EX_MAR09708	no cross-reference	MAM02458e	eumelanin	e		C17937	False	-1000.0	1000.0
+MAR09709	EX_core5_e	metBiGGID	MAM01610e	core 5	e	core5		False	-1000.0	1000.0
+MAR09710	EX_core7_e	metBiGGID	MAM01612e	core 7	e	core7		False	-1000.0	1000.0
+MAR09711	EX_core8_e	metBiGGID	MAM01613e	core 8	e	core8		False	-1000.0	1000.0
+MAR09712	EX_mem2emgacpail_prot_hs_e	metBiGGID	MAM02462e	mem2emgacpail_prot heparan sulfate	e	mem2emgacpail_prot_hs		False	-1000.0	1000.0
+MAR09713	EX_hretn_e	metBiGGID	MAM00993e	4-hydroxy-all-trans-retinoate	e	hretn	C16677	False	-1000.0	1000.0
+MAR09714	EX_m3gacpail_prot_hs_e	metBiGGID	MAM02434e	m3gacpail_prot heparan sulfate	e	m3gacpail_prot_hs		False	-1000.0	1000.0
+MAR09715	EX_sprm_e	metBiGGID	MAM02926e	spermine	e	sprm	C00750	False	-1000.0	1000.0
+MAR09721	EX_dolichol__L_e	metBiGGID	MAM01730e	dolichol	e	dolichol__L	C00381	False	-1000.0	1000.0
+MAR09729	EX_MAR09729	no cross-reference	MAM03161e	glycogen	e		C00182	False	-1000.0	1000.0
+MAR09730	EX_MAR09730	no cross-reference	MAM01308e	albumin	e			False	-1000.0	1000.0
+MAR09808	EX_ppa_e	metBiGGID	MAM02772e	propanoate	e	ppa	C00163	False	-1000.0	1000.0
+MAR09809	EX_but_e	metBiGGID	MAM01410e	butyrate	e	but	C00246	False	-1000.0	1000.0
+MAR09810	EX_M03134_e	metBiGGID	MAM03134e	valeric acid	e	M03134	C00803	False	-1000.0	1000.0
+MAR09811	EX_hxa_e	metBiGGID	MAM02120e	hexanoic acid	e	hxa	C01585	False	-1000.0	1000.0
+MAR09812	EX_M02108_e	metBiGGID	MAM02108e	heptylic acid	e	M02108	C17714	False	-1000.0	1000.0
+MAR09813	EX_octa_e	metBiGGID	MAM02642e	octanoic acid	e	octa	C06423	False	-1000.0	1000.0
+MAR09814	EX_C01601_e	metBiGGID	MAM02614e	nonanoic acid	e	C01601	C01601	False	-1000.0	1000.0
+MAR09815	EX_dca_e	metBiGGID	MAM01648e	decanoic acid	e	dca	C01571	False	-1000.0	1000.0
+MAR09816	EX_M03117_e	metBiGGID	MAM03117e	undecylic acid	e	M03117	C17715	False	-1000.0	1000.0
+MAR09842	EX_2pg_e	metBiGGID	MAM00674e	2-phospho-D-glycerate	e	2pg	C00631	False	-1000.0	1000.0
+MAR09843	EX_5hoxindoa_e	metBiGGID	MAM01103e	5-hydroxyindoleacetate	e	5hoxindoa	C05635	False	-1000.0	1000.0
+MAR09844	EX_cala_e	metBiGGID	MAM00923e	3-ureidopropionate	e	cala	C02642	False	-1000.0	1000.0
+MAR09845	EX_cholp_e	metBiGGID	MAM02738e	phosphocholine	e	cholp	C00588	False	-1000.0	1000.0
+MAR09846	EX_cyst__L_e	metBiGGID	MAM02349e	L-cystathionine	e	cyst__L	C02291	False	-1000.0	1000.0
+MAR09847	EX_dcmp_e	metBiGGID	MAM01644e	dCMP	e	dcmp	C00239	False	-1000.0	1000.0
+MAR09848	EX_dmgly_e	metBiGGID	MAM01708e	dimethylglycine	e	dmgly	C01026	False	-1000.0	1000.0
+MAR09849	EX_ethamp_e	metBiGGID	MAM01798e	ethanolamine-phosphate	e	ethamp	C00346	False	-1000.0	1000.0
+MAR09850	EX_g3pc_e	metBiGGID	MAM02912e	sn-glycerol-3-PC	e	g3pc	C00670	False	-1000.0	1000.0
+MAR09851	EX_glyald_e	metBiGGID	MAM01981e	glyceraldehyde	e	glyald	C02154	False	-1000.0	1000.0
+MAR09852	EX_gudac_e	metBiGGID	MAM02036e	guanidinoacetate	e	gudac	C00581	False	-1000.0	1000.0
+MAR09853	EX_hcys__L_e	metBiGGID	MAM02133e	homocysteine	e	hcys__L	C00155	False	-1000.0	1000.0
+MAR09854	EX_icit_e	metBiGGID	MAM02183e	isocitrate	e	icit	C00311	False	-1000.0	1000.0
+MAR09855	EX_kynate_e	metBiGGID	MAM00990e	4-hydroxy-2-quinolinecarboxylic acid	e	kynate	C01717	False	-1000.0	1000.0
+MAR09856	EX_L2aadp_e	metBiGGID	MAM02322e	L-2-aminoadipate	e	L2aadp	C00956	False	-1000.0	1000.0
+MAR09857	EX_Lkynr_e	metBiGGID	MAM02319e	kynurenine	e	Lkynr	C00328	False	-1000.0	1000.0
+MAR09858	EX_pep_e	metBiGGID	MAM02696e	PEP	e	pep	C00074	False	-1000.0	1000.0
+MAR09859	EX_quln_e	metBiGGID	MAM02822e	quinolinate	e	quln	C03722	False	-1000.0	1000.0
+MAR09860	EX_xmp_e	metBiGGID	MAM03150e	xanthosine-5-phosphate	e	xmp	C00655	False	-1000.0	1000.0
+MAR09861	EX_xtsn_e	metBiGGID	MAM03149e	xanthosine	e	xtsn	C01762	False	-1000.0	1000.0
+MAR09862	EX_3pg_e	metBiGGID	MAM00913e	3-phospho-D-glycerate	e	3pg	C00197	False	-1000.0	1000.0
+MAR09863	EX_3hanthrn_e	metBiGGID	MAM00775e	3-hydroxyanthranilate	e	3hanthrn	C00632	False	-1000.0	1000.0
+MAR09864	EX_udpglcur_e	metBiGGID	MAM03109e	UDP-glucuronate	e	udpglcur	C00167	False	-1000.0	1000.0
+MAR09865	EX_hLkynr_e	metBiGGID	MAM00788e	3-hydroxy-L-kynurenine	e	hLkynr	C03227	False	-1000.0	1000.0
+MAR09866	EX_nicrnt_e	metBiGGID	MAM02585e	nicotinate ribonucleotide	e	nicrnt	C01185	False	-1000.0	1000.0
+MAR09867	EX_orot5p_e	metBiGGID	MAM02660e	orotidine-5-phosphate	e	orot5p	C01103	False	-1000.0	1000.0
+MAR09868	EX_glyc3p_e	metBiGGID	MAM02914e	sn-glycerol-3-phosphate	e	glyc3p	C00093	False	-1000.0	1000.0
+MAR09919	EX_argsuc_e	metBiGGID	MAM01366e	argininosuccinate	e	argsuc	C03406	False	-1000.0	1000.0
+MAR09920	EX_acrn_e	metBiGGID	MAM02634e	O-acetylcarnitine	e	acrn	C02571	False	-1000.0	1000.0
+MAR09921	EX_pcrn_e	metBiGGID	MAM02657e	O-propanoylcarnitine	e	pcrn	C03017	False	-1000.0	1000.0
+MAR09922	EX_lneldccrn_e	metBiGGID	MAM00105e	(6Z,9Z)-octadecadienoylcarnitine	e	lneldccrn		False	-1000.0	1000.0
+MAR09923	EX_odecrn_e	metBiGGID	MAM02639e	octadecenoylcarnitine(5)	e	odecrn		False	-1000.0	1000.0
+MAR09924	EX_stcrn_e	metBiGGID	MAM02940e	stearoylcarnitine	e	stcrn		False	-1000.0	1000.0
+MAR09925	EX_pmtcrn_e	metBiGGID	MAM02411e	L-palmitoylcarnitine	e	pmtcrn	C02990	False	-1000.0	1000.0
+MAR09926	EX_hdcecrn_e	metBiGGID	MAM02676e	palmitoleoyl-carnitine	e	hdcecrn		False	-1000.0	1000.0
+MAR09956	EX_3mtp_e	metBiGGID	MAM03248e	3-Methyl-Thio-Propionate	e	3mtp		False	-1000.0	1000.0
+MAR10024	EX_MAR10024	no cross-reference	MAM03970e	biomass	e			False	-1000.0	1000.0
+MAR10026	EX_C02528_e	metBiGGID	MAM01435e	chenodiol	e	C02528	C02528	False	-1000.0	1000.0
+MAR10027	EX_galgluside_hs_e	metBiGGID	MAM02328e	LacCer pool	e	galgluside_hs	C01290	False	-1000.0	1000.0
+MAR10028	EX_MAR10028	no cross-reference	MAM03511e	Chylomicron Lipoprotein	e			False	-1000.0	1000.0
+MAR10029	EX_MAR10029	no cross-reference	MAM10001e	steroids	e			False	-1000.0	1000.0
+MAR10030	EX_MAR10030	no cross-reference	MAM10002e	xenobiotics	e			False	-1000.0	1000.0
+MAR10031	EX_MAR10031	no cross-reference	MAM10003e	arachidonate derivatives	e			False	-1000.0	1000.0
+MAR10047	EX_MAR10047	no cross-reference	MAM00235e	1,2-diacylglycerol-LD-PC pool	e		C00641	False	-1000.0	1000.0
+MAR10060	EX_Nforglu_e	metBiGGID	MAM10011e	N-formyl-L-glutamate	e	Nforglu	C01045	False	-1000.0	1000.0
+MAR10074	EX_MAR10074	no cross-reference	MAM10021e	alpha-muricholic acid	e		C17647	False	-1000.0	1000.0
+MAR10076	EX_MAR10076	no cross-reference	MAM10022e	beta-muricholic acid	e		C17726	False	-1000.0	1000.0
+MAR10077	EX_MAR10077	no cross-reference	MAM10023e	dehydrocholic acid	e		C13154	False	-1000.0	1000.0
+MAR10078	EX_MAR10078	no cross-reference	MAM10024e	tauro-alpha-muricholic acid	e			False	-1000.0	1000.0
+MAR10081	EX_MAR10081	no cross-reference	MAM10025e	omega-muricholic acid	e		C17727	False	-1000.0	1000.0
+MAR10083	EX_thyochol_e	metBiGGID	MAM03996e	taurohyocholic acid	e	thyochol	C15516	False	-1000.0	1000.0
+MAR10084	EX_MAR10084	no cross-reference	MAM10027e	glycohyocholic acid	e			False	-1000.0	1000.0
+MAR10085	EX_MAR10085	no cross-reference	MAM10028e	glycohyodeoxycholic acid	e			False	-1000.0	1000.0
+MAR10086	EX_MAR10086	no cross-reference	MAM10029e	glycodehydrocholic acid	e			False	-1000.0	1000.0
+MAR10087	EX_hyochol_e	metBiGGID	MAM03685e	hyocholic acid	e	hyochol	C17649	False	-1000.0	1000.0
+MAR10088	EX_MAR10088	no cross-reference	MAM10031e	tauro-omega-muricholic acid	e			False	-1000.0	1000.0
+MAR10089	EX_MAR10089	no cross-reference	MAM10032e	tauro-beta-muricholic acid	e			False	-1000.0	1000.0
+MAR10090	EX_MAR10090	no cross-reference	MAM10033e	murideoxycholic acid	e		C15515	False	-1000.0	1000.0
+MAR10091	EX_MAR10091	no cross-reference	MAM10034e	taurodehydrocholic acid	e			False	-1000.0	1000.0
+MAR10132	EX_MAR10132	no cross-reference	MAM10041e	tauro-hyodeoxycholic acid	e			False	-1000.0	1000.0
+MAR10145	EX_C14769_e	metBiGGID	MAM01209e	8,9-EET	e	C14769	C14769	False	-1000.0	1000.0
+MAR10179	EX_12HPET_e	metBiGGID	MAM00309e	12(S)-HPETE	e	12HPET	C05965	False	-1000.0	1000.0
+MAR10180	EX_15HPET_e	metBiGGID	MAM00380e	15(S)-HPETE	e	15HPET	C05966	False	-1000.0	1000.0
+MAR10181	EX_15kprostgf2_e	metBiGGID	MAM01892e	15-keto-prostaglandin F2alpha	e	15kprostgf2	C05960	False	-1000.0	1000.0
+MAR10182	EX_21hprgnlone_e	metBiGGID	MAM00605e	21-hydroxypregnenolone	e	21hprgnlone	C05485	False	-1000.0	1000.0
+MAR10183	EX_2oxoadp_e	metBiGGID	MAM00670e	2-oxoadipate	e	2oxoadp	C00322	False	-1000.0	1000.0
+MAR10184	EX_34hpl_e	metBiGGID	MAM01004e	4-hydroxyphenyllactate	e	34hpl	C03672	False	-1000.0	1000.0
+MAR10185	EX_3hmp_e	metBiGGID	MAM00784e	3-hydroxyisobutyrate	e	3hmp	C06001	False	-1000.0	1000.0
+MAR10186	EX_3hpp_e	metBiGGID	MAM02142e	hydracrylate	e	3hpp	C01013	False	-1000.0	1000.0
+MAR10187	EX_3hpppnohgluc_e	metBiGGID	MAM03234e	3-(3-Hydroxy-Phenyl)Propionate Hydroxy Derivative Glucuronide	e	3hpppnohgluc		False	-1000.0	1000.0
+MAR10188	EX_3mhis_e	metBiGGID	MAM03247e	3-Methylhistidine	e	3mhis		False	-1000.0	1000.0
+MAR10189	EX_3uib_e	metBiGGID	MAM00922e	3-ureidoisobutyrate	e	3uib	C05100	False	-1000.0	1000.0
+MAR10190	EX_4aabutn_e	metBiGGID	MAM00952e	4-acetamidobutanoate	e	4aabutn	C02946	False	-1000.0	1000.0
+MAR10191	EX_4tmeabutn_e	metBiGGID	MAM01922e	gamma-butyrobetaine	e	4tmeabutn	C01181	False	-1000.0	1000.0
+MAR10192	EX_56dthm_e	metBiGGID	MAM01705e	dihydrothymine	e	56dthm	C00906	False	-1000.0	1000.0
+MAR10193	EX_56dura_e	metBiGGID	MAM01052e	5,6-Dihydrouracil	e	56dura	C00429	False	-1000.0	1000.0
+MAR10194	EX_5HPET_e	metBiGGID	MAM01042e	5(S)-HPETE	e	5HPET	C05356	False	-1000.0	1000.0
+MAR10195	EX_7dhchsterol_e	metBiGGID	MAM02805e	provitamin D3	e	7dhchsterol	C01164	False	-1000.0	1000.0
+MAR10196	EX_acgly_e	metBiGGID	MAM03397e	Acetyl-Glycine	e	acgly		False	-1000.0	1000.0
+MAR10197	EX_aclys_e	metBiGGID	MAM03401e	Acetyl-L-Lysine	e	aclys	C12989	False	-1000.0	1000.0
+MAR10198	EX_acorn_e	metBiGGID	MAM02546e	N-acetylornithine	e	acorn	C00437	False	-1000.0	1000.0
+MAR10199	EX_acthr__L_e	rxnBiGGID	MAM03406e	Acetyl-Threonine	e			False	-1000.0	1000.0
+MAR10200	EX_adpac_e	metBiGGID	MAM03408e	adipic acid	e	adpac	C06104	False	-1000.0	1000.0
+MAR10201	EX_adpoh_e	metBiGGID	MAM03410e	2-hydroxyadipic acid	e	adpoh	C02360	False	-1000.0	1000.0
+MAR10202	EX_amet_e	metBiGGID	MAM02877e	SAM	e	amet	C00019	False	-1000.0	1000.0
+MAR10203	EX_and19one_e	metBiGGID	MAM03433e	19-Hydroxyandrost-4-Ene-3,17-Dione	e	and19one		False	-1000.0	1000.0
+MAR10204	EX_aracheth_e	metBiGGID	MAM03434e	O-Arachidonoyl Ethanolamine	e	aracheth		False	-1000.0	1000.0
+MAR10205	EX_biliverd_e	metBiGGID	MAM01399e	biliverdin	e	biliverd	C00500	False	-1000.0	1000.0
+MAR10206	EX_C02356_e	metBiGGID	MAM00169e	(S)-2-aminobutanoate	e	C02356	C02356	False	-1000.0	1000.0
+MAR10207	EX_C02712_e	metBiGGID	MAM02540e	N-acetylmethionine	e	C02712	C02712	False	-1000.0	1000.0
+MAR10208	EX_C04717_e	metBiGGID	MAM00337e	13(S)-HPODE	e	C04717	C04717	False	-1000.0	1000.0
+MAR10209	EX_C04805_e	metBiGGID	MAM01040e	5(S)-HETE	e	C04805	C04805	False	-1000.0	1000.0
+MAR10210	EX_C05957_e	metBiGGID	MAM02796e	prostaglandin J2	e	C05957	C05957	False	-1000.0	1000.0
+MAR10211	EX_C06314_e	metBiGGID	MAM02395e	lipoxin A4	e	C06314	C06314	False	-1000.0	1000.0
+MAR10212	EX_C06315_e	metBiGGID	MAM02396e	lipoxin B4	e	C06315	C06315	False	-1000.0	1000.0
+MAR10213	EX_C11695_e	metBiGGID	MAM01335e	anandamide	e	C11695	C11695	False	-1000.0	1000.0
+MAR10214	EX_C14768_e	metBiGGID	MAM01054e	5,6-EET	e	C14768	C14768	False	-1000.0	1000.0
+MAR10215	EX_C14770_e	rxnBiGGID	MAM00279e	11,12-EET	e		C14770	False	-1000.0	1000.0
+MAR10216	EX_C14771_e	metBiGGID	MAM00366e	14,15-EET	e	C14771	C14771	False	-1000.0	1000.0
+MAR10217	EX_C14825_e	metBiGGID	MAM01216e	9(10)-EpOME	e	C14825	C14825	False	-1000.0	1000.0
+MAR10218	EX_C14826_e	rxnBiGGID	MAM00305e	12(13)-EpOME	e		C14826	False	-1000.0	1000.0
+MAR10219	EX_CE0955_e	metBiGGID	MAM01168e	6-oxo-prostaglandin F1alpha	e	CE0955	C05961	False	-1000.0	1000.0
+MAR10220	EX_CE1273_e	metBiGGID	MAM01087e	5beta-cholestane-3alpha,7alpha,12alpha,24s,25-pentol	e	CE1273		False	-1000.0	1000.0
+MAR10221	EX_CE1297_e	metBiGGID	MAM03329e	8-Dehydrocholesterol	e	CE1297		False	-1000.0	1000.0
+MAR10222	EX_MAR10222	no cross-reference	MAM02530e	N-acetyl-L-alanine	e			False	-1000.0	1000.0
+MAR10223	EX_CE1556_e	metBiGGID	MAM02531e	N-acetyl-L-asparagine	e	CE1556		False	-1000.0	1000.0
+MAR10224	EX_3hivac_e	metBiGGID	MAM03227e	3-hydroxyisovaleric acid	e	3hivac	C20827	False	-1000.0	1000.0
+MAR10225	EX_CE2176_e	rxnBiGGID	MAM00830e	3-O-methyldopa	e			False	-1000.0	1000.0
+MAR10226	EX_CE2445_e	metBiGGID	MAM01172e	6-trans-LTB4	e	CE2445		False	-1000.0	1000.0
+MAR10227	EX_CE2537_e	metBiGGID	MAM00378e	15(S)-HETrE	e	CE2537		False	-1000.0	1000.0
+MAR10228	EX_M00008_e	metBiGGID	MAM00008e	(11Z,14Z)-eicosadienoic acid	e	M00008	C16525	False	-1000.0	1000.0
+MAR10229	EX_CE5304_e	metBiGGID	MAM00384e	15-deoxy-delta-12,14-PGD2	e	CE5304		False	-1000.0	1000.0
+MAR10230	EX_CE6031_e	metBiGGID	MAM01337e	androsterone sulfate	e	CE6031		False	-1000.0	1000.0
+MAR10231	EX_CE6247_e	rxnBiGGID	MAM01047e	5,12,20-TriHETE	e			False	-1000.0	1000.0
+MAR10232	EX_CE7082_e	metBiGGID	MAM00376e	15(S)-HEPE	e	CE7082		False	-1000.0	1000.0
+MAR10233	EX_CE7083_e	metBiGGID	MAM02365e	leukotriene B5	e	CE7083		False	-1000.0	1000.0
+MAR10234	EX_CE7172_e	metBiGGID	MAM00365e	14,15-DiHETE	e	CE7172		False	-1000.0	1000.0
+MAR10235	EX_cortsn_e	metBiGGID	MAM01616e	cortisone	e	cortsn	C00762	False	-1000.0	1000.0
+MAR10236	EX_didecaeth_e	metBiGGID	MAM03550e	C12:0-Ethanolamide, Didecanoyl Ethanolamide	e	didecaeth		False	-1000.0	1000.0
+MAR10237	EX_diholineth_e	metBiGGID	MAM03551e	Dihomo-Gamma-Linolenoyl Ethanolamide	e	diholineth		False	-1000.0	1000.0
+MAR10238	EX_docohxeth_e	metBiGGID	MAM03558e	Docosahexaenoyl Ethanolamide	e	docohxeth		False	-1000.0	1000.0
+MAR10239	EX_docteteth_e	metBiGGID	MAM03561e	Docosatetraenoyl Ethanolamide (22:4, Delta 7, 10, 13, 16)	e	docteteth		False	-1000.0	1000.0
+MAR10240	EX_dodecanac_e	metBiGGID	MAM03562e	dodecanedioic acid	e	dodecanac	C02678	False	-1000.0	1000.0
+MAR10241	EX_elaidcrn_e	metBiGGID	MAM00126e	(9E)-octadecenoylcarnitine	e	elaidcrn		False	-1000.0	1000.0
+MAR10242	EX_forglu_e	metBiGGID	MAM02574e	N-formimino-L-glutamate	e	forglu	C00439	False	-1000.0	1000.0
+MAR10243	EX_HC00900_e	metBiGGID	MAM02479e	methylmalonate	e	HC00900	C02170	False	-1000.0	1000.0
+MAR10244	EX_hepdeceth_e	metBiGGID	MAM03649e	Heptadecanoyl Thanolamide (C17:0)	e	hepdeceth		False	-1000.0	1000.0
+MAR10245	EX_hexdeceeth_e	metBiGGID	MAM03652e	Hexadecenoyl Ethanolamide, C16:1-Ethanolamide (Delta 9)	e	hexdeceeth		False	-1000.0	1000.0
+MAR10246	EX_hexdiac_e	metBiGGID	MAM03654e	Hexadecanediocacid	e	hexdiac	C19615	False	-1000.0	1000.0
+MAR10247	EX_hgentis_e	metBiGGID	MAM02135e	homogentisate	e	hgentis	C00544	False	-1000.0	1000.0
+MAR10248	EX_hmcarn_e	metBiGGID	MAM02132e	homocarnosine	e	hmcarn	C00884	False	-1000.0	1000.0
+MAR10249	EX_hmcr_e	metBiGGID	MAM03681e	Homocitrulline	e	hmcr	C02427	False	-1000.0	1000.0
+MAR10250	EX_hxcoa_e	metBiGGID	MAM02122e	hexanoyl-CoA	e	hxcoa	C05270	False	-1000.0	1000.0
+MAR10251	EX_leuktrB4wcooh_e	metBiGGID	MAM00585e	20-COOH-LTB4	e	leuktrB4wcooh	C05950	False	-1000.0	1000.0
+MAR10252	EX_leuktrB4woh_e	metBiGGID	MAM00599e	20-OH-LTB4	e	leuktrB4woh	C04853	False	-1000.0	1000.0
+MAR10253	EX_lineth_e	metBiGGID	MAM03724e	Linoleoyl Ethanolamide	e	lineth		False	-1000.0	1000.0
+MAR10254	EX_lnlccrn_e	metBiGGID	MAM02388e	linoleic-carnitine	e	lnlccrn		False	-1000.0	1000.0
+MAR10255	EX_Lpipecol_e	metBiGGID	MAM02413e	L-pipecolate	e	Lpipecol	C00408	False	-1000.0	1000.0
+MAR10256	EX_lthstrl_e	metBiGGID	MAM02343e	lathosterol	e	lthstrl	C01189	False	-1000.0	1000.0
+MAR10257	EX_magarachi_hs_e	metBiGGID	MAM03751e	1-Arachidonoyl Glycerol	e	magarachi_hs	C13857	False	-1000.0	1000.0
+MAR10258	EX_maglinl_hs_e	metBiGGID	MAM03752e	1-Linoleoylglycerol	e	maglinl_hs		False	-1000.0	1000.0
+MAR10259	EX_magole_hs_e	metBiGGID	MAM03753e	1-Oleoylglycerol	e	magole_hs		False	-1000.0	1000.0
+MAR10260	EX_magpalm_hs_e	metBiGGID	MAM03754e	1-Palmitoylglycerol	e	magpalm_hs		False	-1000.0	1000.0
+MAR10261	EX_magste_hs_e	metBiGGID	MAM03755e	1-Stearoylglycerol	e	magste_hs	D01947	False	-1000.0	1000.0
+MAR10262	EX_mev__R_e	metBiGGID	MAM00167e	(R)-mevalonate	e	mev__R	C00418	False	-1000.0	1000.0
+MAR10263	EX_mi1p__D_e	metBiGGID	MAM02173e	inositol-1-phosphate	e	mi1p__D	C01177	False	-1000.0	1000.0
+MAR10264	EX_Nacasp_e	metBiGGID	MAM02532e	N-acetyl-L-aspartate	e	Nacasp	C01042	False	-1000.0	1000.0
+MAR10265	EX_nwharg_e	metBiGGID	MAM02497e	N-(omega)-hydroxyarginine	e	nwharg	C05933	False	-1000.0	1000.0
+MAR10266	EX_oleth_e	metBiGGID	MAM03796e	Oleoyl Ethanolamide	e	oleth	C20792	False	-1000.0	1000.0
+MAR10267	EX_pailar_hs_e	metBiGGID	MAM03802e	1-Arachidonoylglycerophosphoinositol	e	pailar_hs		False	-1000.0	1000.0
+MAR10268	EX_pailpalm_hs_e	metBiGGID	MAM03803e	1-Palmitoylglycerophosphoinositol	e	pailpalm_hs		False	-1000.0	1000.0
+MAR10269	EX_pailste_hs_e	metBiGGID	MAM03804e	1-Stearoylglycerophosphoinositol	e	pailste_hs		False	-1000.0	1000.0
+MAR10270	EX_pchol2linl_hs_e	metBiGGID	MAM03805e	2-Linoleoylglycerophosphocholine	e	pchol2linl_hs		False	-1000.0	1000.0
+MAR10271	EX_pchol2ole_hs_e	metBiGGID	MAM03806e	2-Oleoylglycerophosphocholine	e	pchol2ole_hs		False	-1000.0	1000.0
+MAR10272	EX_pchol2palm_hs_e	metBiGGID	MAM03807e	2-Palmitoylglycerophosphocholine	e	pchol2palm_hs		False	-1000.0	1000.0
+MAR10273	EX_pchol2ste_hs_e	metBiGGID	MAM03808e	2-Stearoylglycerophosphocholine	e	pchol2ste_hs		False	-1000.0	1000.0
+MAR10274	EX_pcholar_hs_e	metBiGGID	MAM03809e	1-Arachidonoyl-Glycero-3-Phosphocholine	e	pcholar_hs		False	-1000.0	1000.0
+MAR10275	EX_pcholdoc_hs_e	metBiGGID	MAM03810e	1-Docosahexaenoylglycerophosphocholine	e	pcholdoc_hs		False	-1000.0	1000.0
+MAR10276	EX_pcholeic_hs_e	metBiGGID	MAM03811e	1-Eicosadienoylglycerophosphocholine (Delta 11,14)	e	pcholeic_hs		False	-1000.0	1000.0
+MAR10277	EX_pcholet_hs_e	metBiGGID	MAM03812e	1-Eicosatrienoylglycerophosphocholine (Delta 11, 14, 17)	e	pcholet_hs		False	-1000.0	1000.0
+MAR10278	EX_pcholhep_hs_e	metBiGGID	MAM03813e	1-Heptadecanoylglycerophosphocholine	e	pcholhep_hs	C04230	False	-1000.0	1000.0
+MAR10279	EX_pchollinl_hs_e	metBiGGID	MAM03814e	1-Linoleoylglycerophosphocholine (Delta 9,12)	e	pchollinl_hs		False	-1000.0	1000.0
+MAR10280	EX_pcholmyr_hs_e	metBiGGID	MAM03815e	1-Myristoylglycerophosphocholine	e	pcholmyr_hs	C04230	False	-1000.0	1000.0
+MAR10281	EX_pcholn15_hs_e	metBiGGID	MAM03816e	1-Pentadecanoylglycerophosphocholine, Sn1-Lpc (15:0)	e	pcholn15_hs		False	-1000.0	1000.0
+MAR10282	EX_pcholn183_hs_e	metBiGGID	MAM03818e	1-Octadeca-Trienoylglycerophosphocholine, Sn1-Lpc (18:3, Delta 9, 12, 15)	e	pcholn183_hs		False	-1000.0	1000.0
+MAR10283	EX_pcholn1836_hs_e	metBiGGID	MAM03817e	1-Octadeca-Trienoylglycerophosphocholine, Sn1-Lpc (18:3, Delta 6, 9, 12)	e	pcholn1836_hs		False	-1000.0	1000.0
+MAR10284	EX_pcholn19_hs_e	metBiGGID	MAM03819e	1-Nonadecanoylglycerophosphocholine, Sn1-Lpc (19:0)	e	pcholn19_hs		False	-1000.0	1000.0
+MAR10285	EX_pcholn201_hs_e	metBiGGID	MAM03820e	1-Eicosenoylglycerophosphocholine (Delta 11) ,Sn1-Lpc (20:1)	e	pcholn201_hs		False	-1000.0	1000.0
+MAR10286	EX_pcholn203_hs_e	metBiGGID	MAM03821e	1-Dihomo-Linolenoylglycerophosphocholine (20:3, Delta 8, 11, 14), Lysopc A C20:3	e	pcholn203_hs		False	-1000.0	1000.0
+MAR10287	EX_pcholn204_hs_e	metBiGGID	MAM03822e	1-Eicosatetraenoylglycerophosphocholine (Delta 8, 11, 14, 17), Sn1-Lpc (20:4)	e	pcholn204_hs	C04230	False	-1000.0	1000.0
+MAR10288	EX_pcholn205_hs_e	metBiGGID	MAM03823e	1-Eicosapentenoylglycerophosphocholine (Delta 5, 8, 11, 14, 17), Sn1-Lpc (20:5)	e	pcholn205_hs		False	-1000.0	1000.0
+MAR10289	EX_pcholn224_hs_e	metBiGGID	MAM03824e	1-Docosatetraenoylglycerophosphocholine (Delta 7, 10, 13, 16), Sn1-Lpc (22:4)	e	pcholn224_hs		False	-1000.0	1000.0
+MAR10290	EX_pcholn225_hs_e	metBiGGID	MAM03826e	1-Docosapentenoylglycerophosphocholine (Delta 7, 10, 13, 16, 19), Sn1-Lpc (22:5)-W3	e	pcholn225_hs		False	-1000.0	1000.0
+MAR10291	EX_pcholn2254_hs_e	metBiGGID	MAM03825e	1-Docosapentenoylglycerophosphocholine (Delta 4, 7, 10, 13, 16), Sn1-Lpc (22:5)-W6	e	pcholn2254_hs		False	-1000.0	1000.0
+MAR10292	EX_pcholn226_hs_e	metBiGGID	MAM03827e	1-Docosahexenoylglycerophosphocholine (Delta 4, 7, 10, 13, 16, 19), Sn1-Lpc (22:6)	e	pcholn226_hs		False	-1000.0	1000.0
+MAR10293	EX_pcholn24_hs_e	metBiGGID	MAM03828e	1-Lignocericylglycerophosphocholine (24:0), Lysopc A C24	e	pcholn24_hs	C04230	False	-1000.0	1000.0
+MAR10294	EX_pcholn261_hs_e	metBiGGID	MAM03829e	Lysopc A C26:1 (Delta 5)	e	pcholn261_hs		False	-1000.0	1000.0
+MAR10295	EX_pcholn28_hs_e	metBiGGID	MAM03831e	Lysopc A C28:0	e	pcholn28_hs		False	-1000.0	1000.0
+MAR10296	EX_pcholn281_hs_e	metBiGGID	MAM03830e	Lysopc A C28:1 (Delta 5)	e	pcholn281_hs		False	-1000.0	1000.0
+MAR10297	EX_pcholole_hs_e	metBiGGID	MAM03832e	1-Oleoylglycerophosphocholine (Delta 9)	e	pcholole_hs	C04230	False	-1000.0	1000.0
+MAR10298	EX_pcholpalm_hs_e	metBiGGID	MAM03833e	1-Palmitoylglycerophosphocholine	e	pcholpalm_hs		False	-1000.0	1000.0
+MAR10299	EX_pcholpalme_hs_e	metBiGGID	MAM03834e	1-Palmitoleoylglycerophosphocholine (Delta 9)	e	pcholpalme_hs		False	-1000.0	1000.0
+MAR10300	EX_pcholste_hs_e	metBiGGID	MAM03835e	1-Stearoylglycerophosphocholine	e	pcholste_hs	C04230	False	-1000.0	1000.0
+MAR10301	EX_pcollg5hlys_e	metBiGGID	MAM02381e	L-hydroxylysine	e	pcollg5hlys	C16741	False	-1000.0	1000.0
+MAR10302	EX_pe12_hs_e	metBiGGID	MAM03838e	1-Didecanoylglycerophosphoethanolamine (C12:0 Pe)	e	pe12_hs		False	-1000.0	1000.0
+MAR10303	EX_pe13_hs_e	metBiGGID	MAM03839e	1-Tridecanoylglycerophosphoethanolamine (C13:0 Pe)	e	pe13_hs		False	-1000.0	1000.0
+MAR10304	EX_pe14_hs_e	metBiGGID	MAM03840e	1-Myristoylglycerophosphoethanolamine (C14:0 Pe)	e	pe14_hs		False	-1000.0	1000.0
+MAR10305	EX_pe15_hs_e	metBiGGID	MAM03841e	1-Pentadecanoylglycerophosphoethanolamine (C15:0 Pe)	e	pe15_hs		False	-1000.0	1000.0
+MAR10306	EX_pe161_hs_e	metBiGGID	MAM03842e	1-Hexadecenoylglycerophosphoethanolamine (C16:1 Pe, Delta 9)	e	pe161_hs		False	-1000.0	1000.0
+MAR10307	EX_pe17_hs_e	metBiGGID	MAM03843e	1-Heptadecanoylglycerophosphoethanolamine (C17:0 Pe)	e	pe17_hs		False	-1000.0	1000.0
+MAR10308	EX_pe203_hs_e	metBiGGID	MAM03844e	1-Eicosatrienoylglycerophosphoethanolamine (Delta 11, 14, 17), Lpe (20:3)	e	pe203_hs		False	-1000.0	1000.0
+MAR10309	EX_pe224_hs_e	metBiGGID	MAM03845e	1-Docosatetraenoyglycerophosphoethanolamine (22:4, Delta 7, 10, 13, 16)	e	pe224_hs		False	-1000.0	1000.0
+MAR10310	EX_pe226_hs_e	metBiGGID	MAM03846e	1-Docosahexenoylglyceroethanolamine (Delta 4, 7, 10, 13, 16, 19), Lpe (22:6)	e	pe226_hs		False	-1000.0	1000.0
+MAR10311	EX_pe2linl_hs_e	metBiGGID	MAM03847e	2-Linoleoylglycerophosphoethanolamine	e	pe2linl_hs		False	-1000.0	1000.0
+MAR10312	EX_pear_hs_e	metBiGGID	MAM03848e	1-Arachidonoyl-Sn-Glycero-3-Phosphoethanolamine	e	pear_hs		False	-1000.0	1000.0
+MAR10313	EX_pedh203_hs_e	metBiGGID	MAM03855e	1-Dihomo-Linolenoylglycerophosphoethanolamine (20:3, Delta 8, 11, 14)	e	pedh203_hs		False	-1000.0	1000.0
+MAR10314	EX_pelinl_hs_e	metBiGGID	MAM03856e	1-Linoleoylglycerophosphoethanolamine (Delta 9,12)	e	pelinl_hs		False	-1000.0	1000.0
+MAR10315	EX_pendecaeth_e	metBiGGID	MAM03857e	Pentadecanoyl Thanolamide (C15:0)	e	pendecaeth		False	-1000.0	1000.0
+MAR10316	EX_peole_hs_e	metBiGGID	MAM03859e	1-Oleoylglycerophosphoethanolamine (Delta 9)	e	peole_hs		False	-1000.0	1000.0
+MAR10317	EX_pepalm_hs_e	metBiGGID	MAM03860e	1-Palmitoylglycerophosphoethanolamine	e	pepalm_hs		False	-1000.0	1000.0
+MAR10318	EX_peste_hs_e	metBiGGID	MAM03861e	1-Stearoylglycerophosphoethanolamine	e	peste_hs	C21484	False	-1000.0	1000.0
+MAR10319	EX_pmeth_e	metBiGGID	MAM03885e	Palmitoylethanolamide	e	pmeth	C16512	False	-1000.0	1000.0
+MAR10320	EX_saccrp__L_e	metBiGGID	MAM02868e	saccharopine	e	saccrp__L	C00449	False	-1000.0	1000.0
+MAR10321	EX_sebacid_e	metBiGGID	MAM03923e	sebacic acid	e	sebacid	C08277	False	-1000.0	1000.0
+MAR10322	EX_sphmyln180241_hs_e	metBiGGID	MAM03936e	Sm (D18:0/24:1), Sphingomyelin	e	sphmyln180241_hs		False	-1000.0	1000.0
+MAR10323	EX_sphmyln18114_hs_e	metBiGGID	MAM03937e	Sm (D18:1/14:0), Sphingomyelin	e	sphmyln18114_hs		False	-1000.0	1000.0
+MAR10324	EX_sphmyln18115_hs_e	metBiGGID	MAM03938e	Sm (D18:1/15:0), Sphingomyelin	e	sphmyln18115_hs		False	-1000.0	1000.0
+MAR10325	EX_sphmyln18116_hs_e	metBiGGID	MAM03940e	Sm (D18:1/16:0), Sphingomyelin	e	sphmyln18116_hs		False	-1000.0	1000.0
+MAR10326	EX_sphmyln181161_hs_e	metBiGGID	MAM03939e	Sm (D18:1/16:1), Sphingomyelin	e	sphmyln181161_hs		False	-1000.0	1000.0
+MAR10327	EX_sphmyln18117_hs_e	metBiGGID	MAM03941e	Sm (D18:1/17:0), Sphingomyelin	e	sphmyln18117_hs		False	-1000.0	1000.0
+MAR10328	EX_sphmyln18118_hs_e	metBiGGID	MAM03943e	Sm (D18:1/18:0), Sphingomyelin	e	sphmyln18118_hs		False	-1000.0	1000.0
+MAR10329	EX_sphmyln181181_hs_e	metBiGGID	MAM03942e	Sm (D18:1/18:1), Sphingomyelin	e	sphmyln181181_hs		False	-1000.0	1000.0
+MAR10330	EX_sphmyln18120_hs_e	metBiGGID	MAM03945e	Sm (D18:1/20:0), Sphingomyelin	e	sphmyln18120_hs		False	-1000.0	1000.0
+MAR10331	EX_sphmyln181201_hs_e	metBiGGID	MAM03944e	Sm (D18:1/20:1), Sphingomyelin	e	sphmyln181201_hs		False	-1000.0	1000.0
+MAR10332	EX_sphmyln18121_hs_e	metBiGGID	MAM03946e	Sm (D18:1/21:0), Sphingomyelin	e	sphmyln18121_hs		False	-1000.0	1000.0
+MAR10333	EX_sphmyln18122_hs_e	metBiGGID	MAM03948e	Sm (D18:1/22:0), Sphingomyelin	e	sphmyln18122_hs		False	-1000.0	1000.0
+MAR10334	EX_sphmyln181221_hs_e	metBiGGID	MAM03947e	Sm (D18:1/22:1), Sphingomyelin	e	sphmyln181221_hs		False	-1000.0	1000.0
+MAR10335	EX_sphmyln18123_hs_e	metBiGGID	MAM03949e	Sm (D18:1/23:0), Sphingomyelin	e	sphmyln18123_hs		False	-1000.0	1000.0
+MAR10336	EX_sphmyln1824_hs_e	metBiGGID	MAM03950e	Sm (D18:0/24:0), Sphingomyelin	e	sphmyln1824_hs		False	-1000.0	1000.0
+MAR10337	EX_sphmyln1825_hs_e	metBiGGID	MAM03951e	Sm (D18:0/25:0), Sphingomyelin	e	sphmyln1825_hs		False	-1000.0	1000.0
+MAR10338	EX_steeth_e	metBiGGID	MAM03953e	Stearoyl Ethanolamide	e	steeth		False	-1000.0	1000.0
+MAR10339	EX_subeac_e	metBiGGID	MAM03954e	suberic acid	e	subeac	C08278	False	-1000.0	1000.0
+MAR10340	EX_tetdeca511ac_e	metBiGGID	MAM03976e	cia-5,8, tetradecadienoic acid	e	tetdeca511ac		False	-1000.0	1000.0
+MAR10341	EX_tetdecaeth_e	metBiGGID	MAM03977e	C14:0-Ethanolamide, Tetradecanoyl Ethanolamide	e	tetdecaeth		False	-1000.0	1000.0
+MAR10342	EX_thrnt_e	metBiGGID	MAM02992e	threonate	e	thrnt	C01620	False	-1000.0	1000.0
+MAR10343	EX_tmlys_e	metBiGGID	MAM02517e	N6,N6,N6-trimethyl-L-lysine	e	tmlys	C03793	False	-1000.0	1000.0
+MAR10344	EX_trideceth_e	metBiGGID	MAM04006e	Tridecanoyl Thanolamide (C13:0)	e	trideceth		False	-1000.0	1000.0
+MAR10345	EX_MAR10345	no cross-reference	MAM02974e	tetradecenoylcarnitine(5)	e			False	-1000.0	1000.0
+MAR10346	EX_txb2_e	metBiGGID	MAM02995e	thromboxane B2	e	txb2	C05963	False	-1000.0	1000.0
+MAR10347	EX_urcan_e	metBiGGID	MAM03124e	urocanate	e	urcan	C00785	False	-1000.0	1000.0
+MAR10348	EX_wharachd_e	metBiGGID	MAM00270e	20-HETE	e	wharachd	C14748	False	-1000.0	1000.0
+MAR10349	EX_xolest181_hs_e	metBiGGID	MAM04075e	1-Vaccenoyl-Cholesterol, Cholesterol-Ester (18:1, Delta 11)	e	xolest181_hs		False	-1000.0	1000.0
+MAR10350	EX_xolest182_hs_e	metBiGGID	MAM04076e	1-Linoleoyl-Cholesterol, Cholesterol-Ester (18:2, Delta 9, 12)	e	xolest182_hs		False	-1000.0	1000.0
+MAR10351	EX_xolest183_hs_e	metBiGGID	MAM04077e	1-Gamma-Linolenoyl-Cholesterol, Cholesterol-Ester (18:3, Delta 6, 9, 12)	e	xolest183_hs		False	-1000.0	1000.0
+MAR10352	EX_xolest204_hs_e	metBiGGID	MAM04078e	Cholesteryl Arachidonate, Cholesterol-Ester (20:4, Delta 5,8,11,14)	e	xolest204_hs		False	-1000.0	1000.0
+MAR10353	EX_M01468_e	metBiGGID	MAM01468e	cholesteryl (5Z,8Z,11Z,14Z,17Z)-eicosapentaenoate	e	M01468		False	-1000.0	1000.0
+MAR10354	EX_xolest226_hs_e	metBiGGID	MAM04080e	Cholesteryl Docosahexanoate, Cholesterol-Ester (22:6, Delta 4,7,10,13,16,19)	e	xolest226_hs		False	-1000.0	1000.0
+MAR10415	EX_acile__L_e	rxnBiGGID	MAM03399e	Acetyl Isoleucine (Chemspider Id: 9964364)	e			False	-1000.0	1000.0
+MAR10419	EX_acleu__L_e	rxnBiGGID	MAM03400e	N-Acetylleucine	e		C02710	False	-1000.0	1000.0
+MAR10422	EX_achom__L_e	rxnBiGGID	MAM03398e	Acetylhomoserine	e			False	-1000.0	1000.0
+MAR10426	EX_3hpppn_e	metBiGGID	MAM03232e	3-(3-Hydroxy-Phenyl)Propionate	e	3hpppn	C11457	False	-1000.0	1000.0
+MAR10427	EX_3moxtyr_e	metBiGGID	MAM00821e	3-methoxytyramine	e	3moxtyr	C05587	False	-1000.0	1000.0
+MAR10428	EX_5aop_e	metBiGGID	MAM01074e	5-aminolevulinate	e	5aop	C00430	False	-1000.0	1000.0
+MAR10429	EX_abt__D_e	metBiGGID	MAM03396e	D-Arabitol	e	abt__D	C01904	False	-1000.0	1000.0
+MAR10430	EX_acglu_e	metBiGGID	MAM02536e	N-acetyl-L-glutamate	e	acglu	C00624	False	-1000.0	1000.0
+MAR10431	EX_alltn_e	metBiGGID	MAM01313e	allantoin	e	alltn	C01551	False	-1000.0	1000.0
+MAR10432	EX_CE2510_e	metBiGGID	MAM01584e	cis-gondoic acid	e	CE2510	C16526	False	-1000.0	1000.0
+MAR10434	EX_ddca_e	metBiGGID	MAM02344e	lauric acid	e	ddca	C02679	False	-1000.0	1000.0
+MAR10435	EX_glyc2p_e	metBiGGID	MAM03619e	Glycerol 2-Phosphate	e	glyc2p	C02979	False	-1000.0	1000.0
+MAR10436	EX_glyclt_e	metBiGGID	MAM01998e	glycolate	e	glyclt	C00160	False	-1000.0	1000.0
+MAR10437	EX_Lcyst_e	metBiGGID	MAM02350e	L-cysteate	e	Lcyst	C00506	False	-1000.0	1000.0
+MAR10438	EX_oaa_e	metBiGGID	MAM02633e	OAA	e	oaa	C00036	False	-1000.0	1000.0
+MAR10439	EX_pac_e	metBiGGID	MAM02720e	phenylacetate	e	pac	C07086	False	-1000.0	1000.0
+MAR10440	EX_phlac_e	metBiGGID	MAM03882e	Phenyllactate	e	phlac		False	-1000.0	1000.0
+MAR10441	EX_pser__L_e	metBiGGID	MAM00916e	3-phosphoserine	e	pser__L	C01005	False	-1000.0	1000.0
+MAR10442	EX_ttdcea_e	metBiGGID	MAM00128e	(9E)-tetradecenoic acid	e	ttdcea		False	-1000.0	1000.0
+MAR10472	EX_3hcinnm_e	metBiGGID	MAM03215e	3-hydroxycinnamic acid	e	3hcinnm	C12621	False	-1000.0	1000.0
+MAR10474	EX_bgly_e	metBiGGID	MAM02123e	hippurate	e	bgly	C01586	False	-1000.0	1000.0
+MAR10475	EX_bz_e	metBiGGID	MAM01380e	benzoate	e	bz	C00180	False	-1000.0	1000.0
+MAR10476	EX_pcresol_e	metBiGGID	MAM03836e	P-Cresol	e	pcresol	C01468	False	-1000.0	1000.0
+MAR10477	EX_pcs_e	metBiGGID	MAM03837e	P-Cresol Sulfate	e	pcs		False	-1000.0	1000.0
+MAR10478	EX_MAR10478	no cross-reference	MAM03703e	Indoxyl Sulfate	e			False	-1000.0	1000.0
+MAR10490	EX_normete__L_e	metBiGGID	MAM02622e	normetanephrine	e	normete__L	C05589	False	-1000.0	1000.0
+MAR10491	EX_C05300_e	metBiGGID	MAM00400e	16alpha-hydroxyestrone	e	C05300	C05300	False	-1000.0	1000.0
+MAR10492	EX_retinal_e	metBiGGID	MAM02832e	retinal	e	retinal	C00376	False	-1000.0	1000.0
+MAR10493	EX_maltttr_e	metBiGGID	MAM02451e	maltotetraose	e	maltttr	C02052	False	-1000.0	1000.0
+MAR10494	EX_progly_e	metBiGGID	MAM03896e	L-Prolinylglycine	e	progly		False	-1000.0	1000.0
+MAR10495	EX_dhbpt_e	metBiGGID	MAM01698e	dihydrobiopterin	e	dhbpt	C00268	False	-1000.0	1000.0
+MAR10496	EX_thbpt_e	metBiGGID	MAM02978e	tetrahydrobiopterin	e	thbpt	C00272	False	-1000.0	1000.0
+MAR10497	EX_alaargcys_e	metBiGGID	MAM03411e	Alanyl-Arginyl-Cysteine	e	alaargcys		False	-1000.0	1000.0
+MAR10498	EX_alaarggly_e	metBiGGID	MAM03412e	Alanyl-Arginyl-Glycine	e	alaarggly		False	-1000.0	1000.0
+MAR10499	EX_alaasnleu_e	metBiGGID	MAM03413e	Alanyl-Asparaginyl-Leucine	e	alaasnleu		False	-1000.0	1000.0
+MAR10500	EX_alaglylys_e	metBiGGID	MAM03414e	Alanyl-Glycyl-Lysine	e	alaglylys		False	-1000.0	1000.0
+MAR10501	EX_alahisala_e	metBiGGID	MAM03415e	Alanyl-Histidyl-Alanine	e	alahisala		False	-1000.0	1000.0
+MAR10502	EX_alalysthr_e	metBiGGID	MAM03416e	Alanyl-Lysine-Threonine	e	alalysthr		False	-1000.0	1000.0
+MAR10503	EX_argalaala_e	metBiGGID	MAM03435e	Arginyl-Alanyl-Alanine	e	argalaala		False	-1000.0	1000.0
+MAR10504	EX_argalaphe_e	metBiGGID	MAM03436e	Arginyl-Alanine-Phenylalanine	e	argalaphe		False	-1000.0	1000.0
+MAR10505	EX_argalathr_e	metBiGGID	MAM03437e	Arginyl-Alanyl-Threonine	e	argalathr		False	-1000.0	1000.0
+MAR10506	EX_argarg_e	metBiGGID	MAM03438e	Arginyl-Arginine	e	argarg		False	-1000.0	1000.0
+MAR10507	EX_argarglys_e	metBiGGID	MAM03439e	Arginyl-Arginyl-Lysine	e	argarglys		False	-1000.0	1000.0
+MAR10508	EX_argargmet_e	metBiGGID	MAM03440e	Arginyl-Arginyl-Metheonine	e	argargmet		False	-1000.0	1000.0
+MAR10509	EX_argcysgly_e	metBiGGID	MAM03441e	Arginyl-Cystinyl-Glycine	e	argcysgly		False	-1000.0	1000.0
+MAR10510	EX_argcysser_e	metBiGGID	MAM03442e	Arginyl-Cystinyl-Serine	e	argcysser		False	-1000.0	1000.0
+MAR10511	EX_arggluglu_e	metBiGGID	MAM03443e	Arginyl-Glutamyl-Glutamate	e	arggluglu		False	-1000.0	1000.0
+MAR10512	EX_argglupro_e	metBiGGID	MAM03444e	Arginyl-Glutamyl-Proline	e	argglupro		False	-1000.0	1000.0
+MAR10513	EX_argglygly_e	metBiGGID	MAM03445e	Arginyl-Glycyl-Glycine	e	argglygly		False	-1000.0	1000.0
+MAR10514	EX_arghisthr_e	metBiGGID	MAM03446e	Arginyl-Histidyl-Threonine	e	arghisthr		False	-1000.0	1000.0
+MAR10515	EX_argleuphe_e	metBiGGID	MAM03447e	Arginyl-Leucyl-Phenylalanine	e	argleuphe		False	-1000.0	1000.0
+MAR10516	EX_arglysasp_e	metBiGGID	MAM03448e	Arginyl-Lysyl-Aspartate	e	arglysasp		False	-1000.0	1000.0
+MAR10517	EX_argphearg_e	metBiGGID	MAM03449e	Arginyl-Phenylalanine-Arginine	e	argphearg		False	-1000.0	1000.0
+MAR10518	EX_argpromet_e	metBiGGID	MAM03450e	Arginyl-Prolyl-Methionine	e	argpromet		False	-1000.0	1000.0
+MAR10519	EX_argprothr_e	metBiGGID	MAM03451e	Arginyl-Prolyl-Threonine	e	argprothr		False	-1000.0	1000.0
+MAR10520	EX_argserser_e	metBiGGID	MAM03452e	Arginyl-Seryl-Serine	e	argserser		False	-1000.0	1000.0
+MAR10521	EX_argtyrval_e	metBiGGID	MAM03453e	Arginyl-Tyrosyl-Valine	e	argtyrval		False	-1000.0	1000.0
+MAR10522	EX_argvalcys_e	metBiGGID	MAM03454e	Arginyl-Valyl-Cysteine	e	argvalcys		False	-1000.0	1000.0
+MAR10523	EX_argvaltrp_e	metBiGGID	MAM03455e	Arginyl-Valyl-Tryptophan	e	argvaltrp		False	-1000.0	1000.0
+MAR10524	EX_asnasnarg_e	metBiGGID	MAM03456e	Asparaginyl-Asparaginyl-Arginine	e	asnasnarg		False	-1000.0	1000.0
+MAR10525	EX_asncyscys_e	metBiGGID	MAM03457e	Asparaginyl-Cysteinyl-Cysteine	e	asncyscys		False	-1000.0	1000.0
+MAR10526	EX_asnmetpro_e	metBiGGID	MAM03458e	Asparaginyl-Methionyl-Proline	e	asnmetpro		False	-1000.0	1000.0
+MAR10527	EX_asnpheasp_e	metBiGGID	MAM03459e	Asparaginyl-Phenylalanyl-Aspartate	e	asnpheasp		False	-1000.0	1000.0
+MAR10528	EX_asnphecys_e	metBiGGID	MAM03460e	Asparaginyl-Phenylalanyl-Cysteine	e	asnphecys		False	-1000.0	1000.0
+MAR10529	EX_asntyrgly_e	metBiGGID	MAM03461e	Asparaginyl-Tyrosyl-Glycine	e	asntyrgly		False	-1000.0	1000.0
+MAR10530	EX_asntyrphe_e	metBiGGID	MAM03462e	Asparaginyl-Tyrosyl-Phenylalanine	e	asntyrphe		False	-1000.0	1000.0
+MAR10531	EX_asntyrthr_e	metBiGGID	MAM03463e	Asparaginyl-Tyrosyl-Threonine	e	asntyrthr		False	-1000.0	1000.0
+MAR10532	EX_aspalaarg_e	metBiGGID	MAM03464e	Aspartyl-Alanyl-Arginine	e	aspalaarg		False	-1000.0	1000.0
+MAR10533	EX_aspasnglu_e	metBiGGID	MAM03465e	Aspartyl-Asparaginyl-Glutamate	e	aspasnglu		False	-1000.0	1000.0
+MAR10534	EX_aspglu_e	metBiGGID	MAM03466e	Aspartyl-Glutamate	e	aspglu		False	-1000.0	1000.0
+MAR10535	EX_aspglupro_e	metBiGGID	MAM03467e	Aspartyl-Glutamyl-Proline	e	aspglupro		False	-1000.0	1000.0
+MAR10536	EX_aspglutrp_e	metBiGGID	MAM03468e	Aspartyl-Glutamyl-Tryptophan	e	aspglutrp		False	-1000.0	1000.0
+MAR10537	EX_asphiscys_e	metBiGGID	MAM03469e	Aspartyl-Histidyl-Cysteine	e	asphiscys		False	-1000.0	1000.0
+MAR10538	EX_asphispro_e	metBiGGID	MAM03470e	Aspartyl-Histidyl-Proline	e	asphispro		False	-1000.0	1000.0
+MAR10539	EX_asplysglu_e	metBiGGID	MAM03471e	Aspartyl-Lysyl-Glutamate	e	asplysglu		False	-1000.0	1000.0
+MAR10540	EX_asplyshis_e	metBiGGID	MAM03472e	Aspartyl-Lysyl-Histidine	e	asplyshis		False	-1000.0	1000.0
+MAR10541	EX_aspmetasp_e	metBiGGID	MAM03473e	Aspartyl-Methionyl-Aspartate	e	aspmetasp		False	-1000.0	1000.0
+MAR10542	EX_aspprolys_e	metBiGGID	MAM03474e	Aspartyl-Prolyl-Lysine	e	aspprolys		False	-1000.0	1000.0
+MAR10543	EX_aspvalasn_e	metBiGGID	MAM03475e	Aspartyl-Valyl-Asparagine	e	aspvalasn		False	-1000.0	1000.0
+MAR10544	EX_cysasnmet_e	metBiGGID	MAM03527e	Cystyl-Asparaginyl-Methionine	e	cysasnmet		False	-1000.0	1000.0
+MAR10545	EX_cysaspphe_e	metBiGGID	MAM03528e	Cystyl-Aspartyl-Phenylalanine	e	cysaspphe		False	-1000.0	1000.0
+MAR10546	EX_cyscys_e	metBiGGID	MAM03529e	Cystyl-Cysteine	e	cyscys		False	-1000.0	1000.0
+MAR10547	EX_cysglnmet_e	metBiGGID	MAM03530e	Cystyl-Glutaminyl-Methionine	e	cysglnmet		False	-1000.0	1000.0
+MAR10548	EX_cysgluhis_e	metBiGGID	MAM03531e	Cystyl-Glutamyl-Histidine	e	cysgluhis		False	-1000.0	1000.0
+MAR10549	EX_cysglutrp_e	metBiGGID	MAM03532e	Cystyl-Glutamyl-Tryptophan	e	cysglutrp		False	-1000.0	1000.0
+MAR10550	EX_cysleuthr_e	metBiGGID	MAM03533e	Cystyl-Leucyl-Threonine	e	cysleuthr		False	-1000.0	1000.0
+MAR10551	EX_cyssermet_e	metBiGGID	MAM03534e	Cystyl-Seryl-Methionine	e	cyssermet		False	-1000.0	1000.0
+MAR10552	EX_cystyrasn_e	metBiGGID	MAM03535e	Cystyl-Tyrosyl-Asparagine	e	cystyrasn		False	-1000.0	1000.0
+MAR10553	EX_glnasngln_e	metBiGGID	MAM03596e	Glutaminyl-Asparaginyl-Glutamine	e	glnasngln		False	-1000.0	1000.0
+MAR10554	EX_glnhishis_e	metBiGGID	MAM03597e	Glutaminyl-Histidyl-Histidine	e	glnhishis		False	-1000.0	1000.0
+MAR10555	EX_glnhislys_e	metBiGGID	MAM03598e	Glutaminyl-Histidyl-Lysine	e	glnhislys		False	-1000.0	1000.0
+MAR10556	EX_glnlyslys_e	metBiGGID	MAM03599e	Glutaminyl-Lysyl-Lysine	e	glnlyslys		False	-1000.0	1000.0
+MAR10557	EX_glnlystrp_e	metBiGGID	MAM03600e	Glutaminyl-Lysyl-Tryptophan	e	glnlystrp		False	-1000.0	1000.0
+MAR10558	EX_glnproglu_e	metBiGGID	MAM03601e	Glutaminyl-Prolyl-Glutamate	e	glnproglu		False	-1000.0	1000.0
+MAR10559	EX_glntrpglu_e	metBiGGID	MAM03602e	Glutaminyl-Tryptophanyl-Glutamate	e	glntrpglu		False	-1000.0	1000.0
+MAR10560	EX_glntyrleu_e	metBiGGID	MAM03603e	Glutaminyl-Tyrosyl-Leucine	e	glntyrleu		False	-1000.0	1000.0
+MAR10561	EX_gluargleu_e	metBiGGID	MAM03606e	Glutamyl-Arginyl-Leucine	e	gluargleu		False	-1000.0	1000.0
+MAR10562	EX_gluasnleu_e	metBiGGID	MAM03607e	Glutamyl-Asparaginyl-Leucine	e	gluasnleu		False	-1000.0	1000.0
+MAR10563	EX_gluglu_e	metBiGGID	MAM03608e	Glutamyl-Glutamate	e	gluglu		False	-1000.0	1000.0
+MAR10564	EX_gluilelys_e	metBiGGID	MAM03609e	Glutamyl-Isoleucyl-Lysine	e	gluilelys		False	-1000.0	1000.0
+MAR10565	EX_gluleu_e	metBiGGID	MAM03610e	Glutamyl-Leucine	e	gluleu		False	-1000.0	1000.0
+MAR10566	EX_glumet_e	metBiGGID	MAM03611e	Glutamyl-Methionine	e	glumet		False	-1000.0	1000.0
+MAR10567	EX_glumethis_e	metBiGGID	MAM03612e	Glutamyl-Methioninyl-Histidine	e	glumethis		False	-1000.0	1000.0
+MAR10568	EX_gluthr_e	metBiGGID	MAM03616e	Glutamyl-Threonine	e	gluthr		False	-1000.0	1000.0
+MAR10569	EX_gluthrlys_e	metBiGGID	MAM03617e	Glutamyl-Threonyl-Lysine	e	gluthrlys		False	-1000.0	1000.0
+MAR10570	EX_glutrpala_e	metBiGGID	MAM03618e	Glutamyl-Tryptophanyl-Alanine	e	glutrpala		False	-1000.0	1000.0
+MAR10571	EX_glyhisasn_e	metBiGGID	MAM03624e	Glycyl-Histidyl-Asparagine	e	glyhisasn		False	-1000.0	1000.0
+MAR10572	EX_glyhislys_e	metBiGGID	MAM03625e	Glycyl-Histidyl-Lysine	e	glyhislys		False	-1000.0	1000.0
+MAR10573	EX_glylyscys_e	metBiGGID	MAM03627e	Glycyl-Lysyl-Cysteine	e	glylyscys		False	-1000.0	1000.0
+MAR10574	EX_glylysphe_e	metBiGGID	MAM03628e	Glycyl-Lysyl-Phenylalanine	e	glylysphe		False	-1000.0	1000.0
+MAR10575	EX_glytyrlys_e	metBiGGID	MAM03632e	Glycyl-Tyrosyl-Lysine	e	glytyrlys		False	-1000.0	1000.0
+MAR10576	EX_glyvalhis_e	metBiGGID	MAM03633e	Glycyl-Valyl-Histidine	e	glyvalhis		False	-1000.0	1000.0
+MAR10577	EX_hisargcys_e	metBiGGID	MAM03662e	Histidyl-Arginyl-Cysteine	e	hisargcys		False	-1000.0	1000.0
+MAR10578	EX_hisargser_e	metBiGGID	MAM03663e	Histidyl-Arginyl-Serine	e	hisargser		False	-1000.0	1000.0
+MAR10579	EX_hisasp_e	metBiGGID	MAM03664e	Histidyl-Aspartate	e	hisasp		False	-1000.0	1000.0
+MAR10580	EX_hiscyscys_e	metBiGGID	MAM03665e	Histidyl-Cystyl-Cysteine	e	hiscyscys		False	-1000.0	1000.0
+MAR10581	EX_hisglnala_e	metBiGGID	MAM03666e	Histidyl-Glutaminyl-Alanine	e	hisglnala		False	-1000.0	1000.0
+MAR10582	EX_hisglu_e	metBiGGID	MAM03667e	Histidyl-Glutamate	e	hisglu		False	-1000.0	1000.0
+MAR10583	EX_hisglugln_e	metBiGGID	MAM03668e	Histidyl-Glutamyl-Glutamine	e	hisglugln		False	-1000.0	1000.0
+MAR10584	EX_hisglylys_e	metBiGGID	MAM03669e	Histidyl-Glycyl-Lysine	e	hisglylys		False	-1000.0	1000.0
+MAR10585	EX_hishislys_e	metBiGGID	MAM03670e	Histidyl-Histidyl-Lysine	e	hishislys		False	-1000.0	1000.0
+MAR10586	EX_hislysala_e	metBiGGID	MAM03671e	Histidyl-Lysyl-Alanine	e	hislysala		False	-1000.0	1000.0
+MAR10587	EX_hislysglu_e	metBiGGID	MAM03672e	Histidyl-Lysyl-Glutamate	e	hislysglu		False	-1000.0	1000.0
+MAR10588	EX_hislysile_e	metBiGGID	MAM03673e	Histidyl-Lysyl-Isoleucine	e	hislysile		False	-1000.0	1000.0
+MAR10589	EX_hislysthr_e	metBiGGID	MAM03674e	Histidyl-Lysyl-Threonine	e	hislysthr		False	-1000.0	1000.0
+MAR10590	EX_hislysval_e	metBiGGID	MAM03675e	Histidyl-Lysyl-Valine	e	hislysval		False	-1000.0	1000.0
+MAR10591	EX_hismet_e	metBiGGID	MAM03676e	Histidyl-Methionine	e	hismet		False	-1000.0	1000.0
+MAR10592	EX_hismetgln_e	metBiGGID	MAM03677e	Histidyl-Methionyl-Glutamine	e	hismetgln		False	-1000.0	1000.0
+MAR10593	EX_hisphearg_e	metBiGGID	MAM03678e	Histidyl-Phenylalanyl-Arginine	e	hisphearg		False	-1000.0	1000.0
+MAR10594	EX_hisprolys_e	metBiGGID	MAM03679e	Histidyl-Prolyl-Lysine	e	hisprolys		False	-1000.0	1000.0
+MAR10595	EX_histrphis_e	metBiGGID	MAM03680e	Histidyl-Tryptophanyl-Histidine	e	histrphis		False	-1000.0	1000.0
+MAR10596	EX_ileargile_e	metBiGGID	MAM03693e	Isoleucyl-Arginyl-Isoleucine	e	ileargile		False	-1000.0	1000.0
+MAR10597	EX_ileasnhis_e	metBiGGID	MAM03694e	Isoleucyl-Asparaginyl-Histidine	e	ileasnhis		False	-1000.0	1000.0
+MAR10598	EX_ileasp_e	metBiGGID	MAM03695e	Isolecyl-Aspartate	e	ileasp		False	-1000.0	1000.0
+MAR10599	EX_ileglnglu_e	metBiGGID	MAM03696e	Isolecyl-Glutaminyl-Glutamate	e	ileglnglu		False	-1000.0	1000.0
+MAR10600	EX_ileglyarg_e	metBiGGID	MAM03697e	Isolecyl-Glycyl-Arginine	e	ileglyarg		False	-1000.0	1000.0
+MAR10601	EX_ileprolys_e	metBiGGID	MAM03698e	Isolecyl-Prolyl-Lysine	e	ileprolys		False	-1000.0	1000.0
+MAR10602	EX_ileserarg_e	metBiGGID	MAM03699e	Isolecyl-Seryl-Arginine	e	ileserarg		False	-1000.0	1000.0
+MAR10603	EX_iletrptyr_e	metBiGGID	MAM03700e	Isolecyl-Tryptophanyl-Tyrosine	e	iletrptyr		False	-1000.0	1000.0
+MAR10604	EX_leualaarg_e	metBiGGID	MAM03711e	Leucyl-Alanyl-Arginine	e	leualaarg		False	-1000.0	1000.0
+MAR10605	EX_leuasnasp_e	metBiGGID	MAM03712e	Leucyl-Asparaginyl-Aspartate	e	leuasnasp		False	-1000.0	1000.0
+MAR10606	EX_leuasplys_e	metBiGGID	MAM03713e	Leucyl-Aspartyl-Lysine	e	leuasplys		False	-1000.0	1000.0
+MAR10607	EX_leuleutrp_e	metBiGGID	MAM03716e	Leucyl-Leucyl-Tryptophan	e	leuleutrp		False	-1000.0	1000.0
+MAR10608	EX_leupro_e	metBiGGID	MAM03717e	Leucyl-Proline	e	leupro		False	-1000.0	1000.0
+MAR10609	EX_leuproarg_e	metBiGGID	MAM03718e	Leucyl-Prolyl-Arginine	e	leuproarg		False	-1000.0	1000.0
+MAR10610	EX_leusertrp_e	metBiGGID	MAM03719e	Leucyl-Seryl-Tryptophan	e	leusertrp		False	-1000.0	1000.0
+MAR10611	EX_leutrp_e	metBiGGID	MAM03720e	Leucyl-Tryptophan	e	leutrp		False	-1000.0	1000.0
+MAR10612	EX_leutrparg_e	metBiGGID	MAM03721e	Leucyl-Tryptophanyl-Arginine	e	leutrparg		False	-1000.0	1000.0
+MAR10613	EX_leutyrtyr_e	metBiGGID	MAM03722e	Leucyl-Tyrosyl-Tyrosine	e	leutyrtyr		False	-1000.0	1000.0
+MAR10614	EX_leuval_e	metBiGGID	MAM03723e	Leucyl-Valine	e	leuval		False	-1000.0	1000.0
+MAR10615	EX_lysargleu_e	metBiGGID	MAM03738e	Lysyl-Arginyl-Leucine	e	lysargleu		False	-1000.0	1000.0
+MAR10616	EX_lyscyshis_e	metBiGGID	MAM03739e	Lysyl-Cysteinyl-Histidine	e	lyscyshis		False	-1000.0	1000.0
+MAR10617	EX_lysglnphe_e	metBiGGID	MAM03740e	Lysyl-Glutaminyl-Phenylalanine	e	lysglnphe		False	-1000.0	1000.0
+MAR10618	EX_lysgluglu_e	metBiGGID	MAM03741e	Lysyl-Glutamyl-Glutamate	e	lysgluglu		False	-1000.0	1000.0
+MAR10619	EX_lyslyslys_e	metBiGGID	MAM03742e	Lysyl-Lysyl-Lysine	e	lyslyslys		False	-1000.0	1000.0
+MAR10620	EX_lyspheile_e	metBiGGID	MAM03743e	Lysyl-Phenylalanyl-Isoleucine	e	lyspheile		False	-1000.0	1000.0
+MAR10621	EX_lystrparg_e	metBiGGID	MAM03744e	Lysyl-Tryptophanyl-Arginine	e	lystrparg		False	-1000.0	1000.0
+MAR10622	EX_lystyrile_e	metBiGGID	MAM03745e	Lysyl-Tyrosyl-Isoleucine	e	lystyrile		False	-1000.0	1000.0
+MAR10623	EX_lysvalphe_e	metBiGGID	MAM03746e	Lysyl-Valyl-Phenylalanine	e	lysvalphe		False	-1000.0	1000.0
+MAR10624	EX_lysvaltrp_e	metBiGGID	MAM03747e	Lysyl-Valyl-Tryptophan	e	lysvaltrp		False	-1000.0	1000.0
+MAR10625	EX_metargleu_e	metBiGGID	MAM03760e	Methionyl-Arginyl-Leucine	e	metargleu		False	-1000.0	1000.0
+MAR10626	EX_metasntyr_e	metBiGGID	MAM03761e	Methionyl-Asparaginyl-Tyrosine	e	metasntyr		False	-1000.0	1000.0
+MAR10627	EX_metglntyr_e	metBiGGID	MAM03762e	Methionyl-Glutaminyl-Tyrosine	e	metglntyr		False	-1000.0	1000.0
+MAR10628	EX_metglyarg_e	metBiGGID	MAM03763e	Methionyl-Glycyl-Arginine	e	metglyarg		False	-1000.0	1000.0
+MAR10629	EX_methislys_e	metBiGGID	MAM03764e	Methionyl-Histidyl-Lysine	e	methislys		False	-1000.0	1000.0
+MAR10630	EX_metmetile_e	metBiGGID	MAM03767e	Methionyl-Methionyl-Isoleucine	e	metmetile		False	-1000.0	1000.0
+MAR10631	EX_metphearg_e	metBiGGID	MAM03768e	Methionyl-Phenylalanyl-Arginine	e	metphearg		False	-1000.0	1000.0
+MAR10632	EX_mettrpphe_e	metBiGGID	MAM03769e	Methionyl-Tryptophanyl-Phenylalanine	e	mettrpphe		False	-1000.0	1000.0
+MAR10633	EX_pheasnmet_e	metBiGGID	MAM03864e	Phenylalanyl-Asparaginyl-Methionine	e	pheasnmet		False	-1000.0	1000.0
+MAR10634	EX_pheasp_e	metBiGGID	MAM03865e	Phenylalanyl-Aspartate	e	pheasp		False	-1000.0	1000.0
+MAR10635	EX_pheglnphe_e	metBiGGID	MAM03866e	Phenylalanyl-Glutaminyl-Phenylalanine	e	pheglnphe		False	-1000.0	1000.0
+MAR10636	EX_pheleu_e	metBiGGID	MAM03867e	Phenylalanyl-Leucine	e	pheleu		False	-1000.0	1000.0
+MAR10637	EX_pheleuasp_e	metBiGGID	MAM03868e	Phenylalanyl-Leucyl-Aspartate	e	pheleuasp		False	-1000.0	1000.0
+MAR10638	EX_pheleuhis_e	metBiGGID	MAM03869e	Phenylalanyl-Leucyl-Histidine	e	pheleuhis		False	-1000.0	1000.0
+MAR10639	EX_phelysala_e	metBiGGID	MAM03870e	Phenylalanyl-Lysyl-Alanine	e	phelysala		False	-1000.0	1000.0
+MAR10640	EX_phelyspro_e	metBiGGID	MAM03871e	Phenylalanyl-Lysyl-Proline	e	phelyspro		False	-1000.0	1000.0
+MAR10641	EX_phephe_e	metBiGGID	MAM03872e	Phenylalanyl-Phenylalanine	e	phephe		False	-1000.0	1000.0
+MAR10642	EX_phepheasn_e	metBiGGID	MAM03873e	Phenylalanyl-Phenylalaninyl-Asparagine	e	phepheasn		False	-1000.0	1000.0
+MAR10643	EX_phephethr_e	metBiGGID	MAM03874e	Phenylalanyl-Phenylalaninyl-Threonine	e	phephethr		False	-1000.0	1000.0
+MAR10644	EX_pheproarg_e	metBiGGID	MAM03875e	Phenylalanyl-Prolyl-Arginine	e	pheproarg		False	-1000.0	1000.0
+MAR10645	EX_phesertrp_e	metBiGGID	MAM03876e	Phenylalanyl-Seryl-Tryptophan	e	phesertrp		False	-1000.0	1000.0
+MAR10646	EX_phethrlys_e	metBiGGID	MAM03877e	Phenylalanyl-Threonyl-Lysine	e	phethrlys		False	-1000.0	1000.0
+MAR10647	EX_phetrpleu_e	metBiGGID	MAM03878e	Phenylalanyl-Tryptophanyl-Leucine	e	phetrpleu		False	-1000.0	1000.0
+MAR10648	EX_phetyr_e	metBiGGID	MAM03879e	Phenylalanyl-Tyrosine	e	phetyr		False	-1000.0	1000.0
+MAR10649	EX_phetyrgln_e	metBiGGID	MAM03880e	Phenylalanyl-Tyrosinyl-Glutamine	e	phetyrgln		False	-1000.0	1000.0
+MAR10650	EX_phetyrlys_e	metBiGGID	MAM03881e	Phenylalanyl-Tyrosinyl-Lysine	e	phetyrlys		False	-1000.0	1000.0
+MAR10651	EX_proargasp_e	metBiGGID	MAM03888e	Prolyl-Arginyl-Aspartate	e	proargasp		False	-1000.0	1000.0
+MAR10652	EX_proargcys_e	metBiGGID	MAM03889e	Prolyl-Arginyl-Cysteine	e	proargcys		False	-1000.0	1000.0
+MAR10653	EX_proasncys_e	metBiGGID	MAM03890e	Prolyl-Asparaginyl-Cysteine	e	proasncys		False	-1000.0	1000.0
+MAR10654	EX_procys_e	metBiGGID	MAM03891e	Prolyl-Cysteine	e	procys		False	-1000.0	1000.0
+MAR10655	EX_proglnpro_e	metBiGGID	MAM03894e	Prolyl-Glutaminyl-Proline	e	proglnpro		False	-1000.0	1000.0
+MAR10656	EX_proglulys_e	metBiGGID	MAM03895e	Prolyl-Glutamatsyl-Lysine	e	proglulys		False	-1000.0	1000.0
+MAR10657	EX_prohis_e	metBiGGID	MAM03897e	Prolyl-Histidine	e	prohis		False	-1000.0	1000.0
+MAR10658	EX_prohistyr_e	metBiGGID	MAM03898e	Prolyl-Histidyl-Tyrosine	e	prohistyr		False	-1000.0	1000.0
+MAR10659	EX_proleuarg_e	metBiGGID	MAM03899e	Prolyl-Leucyl-Arginine	e	proleuarg		False	-1000.0	1000.0
+MAR10660	EX_prolyspro_e	metBiGGID	MAM03900e	Prolyl-Lysyl-Proline	e	prolyspro		False	-1000.0	1000.0
+MAR10661	EX_prophe_e	metBiGGID	MAM03901e	Prolyl-Phenylalanine	e	prophe		False	-1000.0	1000.0
+MAR10662	EX_proproarg_e	metBiGGID	MAM03902e	Prolyl-Prolyl-Arginine	e	proproarg		False	-1000.0	1000.0
+MAR10663	EX_propropro_e	metBiGGID	MAM03903e	Prolyl-Prolyl-Proline	e	propropro		False	-1000.0	1000.0
+MAR10664	EX_protrplys_e	metBiGGID	MAM03904e	Prolyl-Tryptophanyl-Lysine	e	protrplys		False	-1000.0	1000.0
+MAR10665	EX_protrpthr_e	metBiGGID	MAM03905e	Prolyl-Tryptophanyl-Threonine	e	protrpthr		False	-1000.0	1000.0
+MAR10666	EX_provalgln_e	metBiGGID	MAM03906e	Prolyl-Valyl-Glutamine	e	provalgln		False	-1000.0	1000.0
+MAR10667	EX_serargala_e	metBiGGID	MAM03925e	Seryl-Arginyl-Alanine	e	serargala		False	-1000.0	1000.0
+MAR10668	EX_serargtrp_e	metBiGGID	MAM03926e	Seryl-Arginyl-Tryptophan	e	serargtrp		False	-1000.0	1000.0
+MAR10669	EX_sercysarg_e	metBiGGID	MAM03927e	Seryl-Cysteinyl-Arginine	e	sercysarg		False	-1000.0	1000.0
+MAR10670	EX_serglyglu_e	metBiGGID	MAM03928e	Seryl-Glycyl-Glutamate	e	serglyglu		False	-1000.0	1000.0
+MAR10671	EX_serlyshis_e	metBiGGID	MAM03929e	Seryl-Lysyl-Histidine	e	serlyshis		False	-1000.0	1000.0
+MAR10672	EX_serphelys_e	metBiGGID	MAM03930e	Seryl-Phenylalanyl-Lysine	e	serphelys		False	-1000.0	1000.0
+MAR10673	EX_sertrphis_e	metBiGGID	MAM03931e	Seryl-Tryptophanyl-Histidine	e	sertrphis		False	-1000.0	1000.0
+MAR10674	EX_thrargtyr_e	metBiGGID	MAM03983e	Threonyl-Arginyl-Tyrosine	e	thrargtyr		False	-1000.0	1000.0
+MAR10675	EX_thrasntyr_e	metBiGGID	MAM03984e	Threonyl-Asparaginyl-Tyrosine	e	thrasntyr		False	-1000.0	1000.0
+MAR10676	EX_thrglnglu_e	metBiGGID	MAM03986e	Threonyl-Glutaminyl-Glutamate	e	thrglnglu		False	-1000.0	1000.0
+MAR10677	EX_thrglntyr_e	metBiGGID	MAM03987e	Threonyl-Glutaminyl-Tyrosine	e	thrglntyr		False	-1000.0	1000.0
+MAR10678	EX_thrhishis_e	metBiGGID	MAM03988e	Threonyl-Histidinyl-Histidine	e	thrhishis		False	-1000.0	1000.0
+MAR10679	EX_thrilearg_e	metBiGGID	MAM03989e	Threonyl-Isoleucyl-Arginine	e	thrilearg		False	-1000.0	1000.0
+MAR10680	EX_thrmetarg_e	metBiGGID	MAM03990e	Threonyl-Methionyl-Arginine	e	thrmetarg		False	-1000.0	1000.0
+MAR10681	EX_thrphearg_e	metBiGGID	MAM03991e	Threonyl-Phenylalanyl-Arginine	e	thrphearg		False	-1000.0	1000.0
+MAR10682	EX_thrserarg_e	metBiGGID	MAM03992e	Threonyl-Seryl-Arginine	e	thrserarg		False	-1000.0	1000.0
+MAR10683	EX_thrthrarg_e	metBiGGID	MAM03993e	Threonyl-Threonyl-Arginine	e	thrthrarg		False	-1000.0	1000.0
+MAR10684	EX_thrtyrmet_e	metBiGGID	MAM03994e	Threonyl-Tyrosyl-Methionine	e	thrtyrmet		False	-1000.0	1000.0
+MAR10685	EX_trpalapro_e	metBiGGID	MAM04008e	Tryptophanyl-Alanyl-Proline	e	trpalapro		False	-1000.0	1000.0
+MAR10686	EX_trpargala_e	metBiGGID	MAM04009e	Tryptophanyl-Arginyl-Alanine	e	trpargala		False	-1000.0	1000.0
+MAR10687	EX_trpaspasp_e	metBiGGID	MAM04010e	Tryptophanyl-Aspartyl-Aspartate	e	trpaspasp		False	-1000.0	1000.0
+MAR10688	EX_trpglngln_e	metBiGGID	MAM04011e	Tryptophanyl-Glutaminyl-Glutamine	e	trpglngln		False	-1000.0	1000.0
+MAR10689	EX_trpglugly_e	metBiGGID	MAM04012e	Tryptophanyl-Glutamyl-Glycine	e	trpglugly		False	-1000.0	1000.0
+MAR10690	EX_trpgluleu_e	metBiGGID	MAM04013e	Tryptophanyl-Glutamyl-Leucine	e	trpgluleu		False	-1000.0	1000.0
+MAR10691	EX_trpglupro_e	metBiGGID	MAM04014e	Tryptophanyl-Glutamyl-Proline	e	trpglupro		False	-1000.0	1000.0
+MAR10692	EX_trpglutyr_e	metBiGGID	MAM04015e	Tryptophanyl-Glutamyl-Tyrosine	e	trpglutyr		False	-1000.0	1000.0
+MAR10693	EX_trpglyleu_e	metBiGGID	MAM04017e	Tryptophanyl-Glycyl-Leucine	e	trpglyleu		False	-1000.0	1000.0
+MAR10694	EX_trpglyphe_e	metBiGGID	MAM04018e	Tryptophanyl-Glycyl-Phenylalanine	e	trpglyphe		False	-1000.0	1000.0
+MAR10695	EX_trpglyval_e	metBiGGID	MAM04019e	Tryptophanyl-Glycyl-Valine	e	trpglyval		False	-1000.0	1000.0
+MAR10696	EX_trphismet_e	metBiGGID	MAM04020e	Tryptophanyl-Histidyl-Methionine	e	trphismet		False	-1000.0	1000.0
+MAR10697	EX_trpilelys_e	metBiGGID	MAM04021e	Tryptophanyl-Isoleucyl-Lysine	e	trpilelys		False	-1000.0	1000.0
+MAR10698	EX_trpiletrp_e	metBiGGID	MAM04022e	Tryptophanyl-Isoleucyl-Tryptophan	e	trpiletrp		False	-1000.0	1000.0
+MAR10699	EX_trpleuval_e	metBiGGID	MAM04023e	Tryptophanyl-Leucyl-Valine	e	trpleuval		False	-1000.0	1000.0
+MAR10700	EX_trplys_e	metBiGGID	MAM04024e	Tryptophanyl-Lysine	e	trplys		False	-1000.0	1000.0
+MAR10701	EX_trpmetarg_e	metBiGGID	MAM04025e	Tryptophanyl-Methionyl-Arginine	e	trpmetarg		False	-1000.0	1000.0
+MAR10702	EX_trpmetval_e	metBiGGID	MAM04026e	Tryptophanyl-Methionyl-Valine	e	trpmetval		False	-1000.0	1000.0
+MAR10703	EX_trpphe_e	metBiGGID	MAM04027e	Tryptophanyl-Phenylalanine	e	trpphe		False	-1000.0	1000.0
+MAR10704	EX_trpprogly_e	metBiGGID	MAM04028e	Tryptophanyl-Prolyl-Glycine	e	trpprogly		False	-1000.0	1000.0
+MAR10705	EX_trpproleu_e	metBiGGID	MAM04029e	Tryptophanyl-Prolyl-Leucine	e	trpproleu		False	-1000.0	1000.0
+MAR10706	EX_trpproval_e	metBiGGID	MAM04030e	Tryptophanyl-Prolyl-Valine	e	trpproval		False	-1000.0	1000.0
+MAR10707	EX_trpsertyr_e	metBiGGID	MAM04031e	Tryptophanyl-Seryl-Tyrosine	e	trpsertyr		False	-1000.0	1000.0
+MAR10708	EX_trpthrglu_e	metBiGGID	MAM04032e	Tryptophanyl-Threonyl-Glutamate	e	trpthrglu		False	-1000.0	1000.0
+MAR10709	EX_trpthrile_e	metBiGGID	MAM04033e	Tryptophanyl-Threonyl-Isoleucine	e	trpthrile		False	-1000.0	1000.0
+MAR10710	EX_trpthrtyr_e	metBiGGID	MAM04034e	Tryptophanyl-Threonyl-Tyrosine	e	trpthrtyr		False	-1000.0	1000.0
+MAR10711	EX_trptyrgln_e	metBiGGID	MAM04035e	Tryptophanyl-Tyrosyl-Glutamine	e	trptyrgln		False	-1000.0	1000.0
+MAR10712	EX_trptyrtyr_e	metBiGGID	MAM04036e	Tryptophanyl-Tyrosyl-Tyrosine	e	trptyrtyr		False	-1000.0	1000.0
+MAR10713	EX_trpvalasp_e	metBiGGID	MAM04037e	Tryptophanyl-Valyl-Aspartate	e	trpvalasp		False	-1000.0	1000.0
+MAR10714	EX_tyrala_e	metBiGGID	MAM04043e	Tyrosyl-Alanine	e	tyrala		False	-1000.0	1000.0
+MAR10715	EX_tyralaphe_e	metBiGGID	MAM04044e	Tyrosyl-Alaninyl-Phenylalanine	e	tyralaphe		False	-1000.0	1000.0
+MAR10716	EX_tyrargglu_e	metBiGGID	MAM04045e	Tyrosyl-Arginyl-Glutamate	e	tyrargglu		False	-1000.0	1000.0
+MAR10717	EX_tyrargser_e	metBiGGID	MAM04046e	Tyrosyl-Arginyl-Serine	e	tyrargser		False	-1000.0	1000.0
+MAR10718	EX_tyrasparg_e	metBiGGID	MAM04047e	Tyrosyl-Aspartyl-Arginine	e	tyrasparg		False	-1000.0	1000.0
+MAR10719	EX_tyrcysgly_e	metBiGGID	MAM04048e	Tyrosyl-Cysteinyl-Glycine	e	tyrcysgly		False	-1000.0	1000.0
+MAR10720	EX_tyrcysthr_e	metBiGGID	MAM04049e	Tyrosyl-Cysteinyl-Threonine	e	tyrcysthr		False	-1000.0	1000.0
+MAR10721	EX_tyrglu_e	metBiGGID	MAM04050e	Tyrosyl-Glutamate	e	tyrglu		False	-1000.0	1000.0
+MAR10722	EX_tyrleuarg_e	metBiGGID	MAM04051e	Tyrosyl-Leucyl-Arginine	e	tyrleuarg		False	-1000.0	1000.0
+MAR10723	EX_tyrphetyr_e	metBiGGID	MAM04052e	Tyrosyl-Phenylalanyl-Tyrosine	e	tyrphetyr		False	-1000.0	1000.0
+MAR10724	EX_tyrthr_e	metBiGGID	MAM04053e	Tyrosyl-Threonine	e	tyrthr		False	-1000.0	1000.0
+MAR10725	EX_tyrtrpphe_e	metBiGGID	MAM04054e	Tyrosyl-Tryptophanyl-Phenylalanine	e	tyrtrpphe		False	-1000.0	1000.0
+MAR10726	EX_tyrtyr_e	metBiGGID	MAM04055e	Tyrosyl-Tyrosine	e	tyrtyr		False	-1000.0	1000.0
+MAR10727	EX_tyrvalmet_e	metBiGGID	MAM04056e	Tyrosyl-Valyl-Methionine	e	tyrvalmet		False	-1000.0	1000.0
+MAR10728	EX_valarggly_e	metBiGGID	MAM04062e	Valyl-Arginyl-Glycine	e	valarggly		False	-1000.0	1000.0
+MAR10729	EX_valhisasn_e	metBiGGID	MAM04063e	Valyl-Histidyl-Asparagine	e	valhisasn		False	-1000.0	1000.0
+MAR10730	EX_valleuphe_e	metBiGGID	MAM04064e	Valyl-Leucyl-Phenylalanine	e	valleuphe		False	-1000.0	1000.0
+MAR10731	EX_vallystyr_e	metBiGGID	MAM04065e	Valyl-Lysyl-Tyrosine	e	vallystyr		False	-1000.0	1000.0
+MAR10732	EX_valphearg_e	metBiGGID	MAM04066e	Valyl-Phenylalanyl-Arginine	e	valphearg		False	-1000.0	1000.0
+MAR10733	EX_valprotrp_e	metBiGGID	MAM04067e	Valyl-Prolyl-Tryptophan	e	valprotrp		False	-1000.0	1000.0
+MAR10734	EX_valserarg_e	metBiGGID	MAM04068e	Valyl-Seryl-Arginine	e	valserarg		False	-1000.0	1000.0
+MAR10735	EX_valtrpphe_e	metBiGGID	MAM04069e	Valyl-Tryptophanyl-Phenylalanine	e	valtrpphe		False	-1000.0	1000.0
+MAR10736	EX_valtrpval_e	metBiGGID	MAM04070e	Valyl-Tryptophanyl-Valine	e	valtrpval		False	-1000.0	1000.0
+MAR10737	EX_valval_e	metBiGGID	MAM04071e	Valyl-Valine	e	valval		False	-1000.0	1000.0
+MAR10738	EX_trpglyasp_e	metBiGGID	MAM04016e	Tryptophanyl-Glycyl-Aspartate	e	trpglyasp		False	-1000.0	1000.0
+MAR11281	EX_sphmyln_hs_e	metBiGGID	MAM02908e	SM pool	e	sphmyln_hs	C00550	False	-1000.0	1000.0
+MAR11301	EX_Lhcystin_e	metBiGGID	MAM03394e	L-Homocystine	e	Lhcystin		False	-1000.0	1000.0
+MAR11336	EX_core4_e	metBiGGID	MAM01609e	core 4	e	core4	C04917	False	-1000.0	1000.0
+MAR11337	EX_f1a_e	metBiGGID	MAM01801e	F1alpha	e	f1a		False	-1000.0	1000.0
+MAR11338	EX_galam_e	metBiGGID	MAM03585e	D-Galactosamine	e	galam	C02262	False	-1000.0	1000.0
+MAR11339	EX_gncore1_e	metBiGGID	MAM01954e	glcnac-alpha-1,4-core 1	e	gncore1		False	-1000.0	1000.0
+MAR11340	EX_mqn10_e	metBiGGID	MAM03772e	Menaquinone-10	e	mqn10		False	-1000.0	1000.0
+MAR11341	EX_mqn11_e	metBiGGID	MAM03773e	Menaquinone-11	e	mqn11		False	-1000.0	1000.0
+MAR11342	EX_mqn7_e	metBiGGID	MAM03774e	Menaquinone-7	e	mqn7		False	-1000.0	1000.0
+MAR11343	EX_mqn9_e	metBiGGID	MAM03776e	Menaquinone-9	e	mqn9	C21526	False	-1000.0	1000.0
+MAR11344	EX_s2l2n2m2m_e	metBiGGID	MAM01651e	de-Fuc form of PA6 (wo peptide linkage)	e	s2l2n2m2m		False	-1000.0	1000.0
+MAR11345	EX_lpam_e	metBiGGID	MAM02393e	lipoamide	e	lpam	C00248	False	-1000.0	1000.0
+MAR11347	EX_acgal_e	metBiGGID	MAM02525e	N-acetylgalactosamine	e	acgal	C01074	False	-1000.0	1000.0
+MAR11348	EX_acnam_e	metBiGGID	MAM02543e	N-acetylneuraminate	e	acnam	C19910	False	-1000.0	1000.0
+MAR11349	EX_pcreat_e	metBiGGID	MAM01620e	creatine-phosphate	e	pcreat	C02305	False	-1000.0	1000.0
+MAR11350	EX_HC00342_e	metBiGGID	MAM01580e	cis-aconitate	e	HC00342	C00417	False	-1000.0	1000.0
+MAR11351	EX_C08261_e	metBiGGID	MAM01372e	azelaic acid	e	C08261	C08261	False	-1000.0	1000.0
+MAR11352	EX_pa_hs_e	metBiGGID	MAM02733e	phosphatidate-LD-TAG pool	e	pa_hs	C00416	False	-1000.0	1000.0
+MAR11353	EX_CE2934_e	metBiGGID	MAM02654e	O-methylhippurate	e	CE2934		False	-1000.0	1000.0
+MAR11373	EX_dxtrn_e	metBiGGID	MAM01991e	glycogenin G4G4	e	dxtrn		False	-1000.0	1000.0
+MAR11376	EX_dhcholestanate_e	metBiGGID	MAM00758e	3alpha,7alpha-dihydroxy-5beta-cholestanate	e	dhcholestanate	C04554	False	-1000.0	1000.0
+MAR11379	EX_thcholstoic_e	metBiGGID	MAM00752e	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate	e	thcholstoic	C04722	False	-1000.0	1000.0
+MAR11382	EX_xol7ah3_e	metBiGGID	MAM01093e	5beta-cholestane-3alpha,7alpha,26-triol	e	xol7ah3	C05444	False	-1000.0	1000.0
+MAR11385	EX_xol7aone_e	metBiGGID	MAM01182e	7alpha-hydroxycholest-4-en-3-one	e	xol7aone	C05455	False	-1000.0	1000.0
+MAR11387	EX_xoldiolone_e	metBiGGID	MAM01178e	7alpha,12alpha-dihydroxycholest-4-en-3-one	e	xoldiolone	C17339	False	-1000.0	1000.0
+MAR11390	EX_7klitchol_e	metBiGGID	MAM03313e	7-Ketolithocholate	e	7klitchol		False	-1000.0	1000.0
+MAR11391	EX_2obut_e	metBiGGID	MAM00671e	2-oxobutyrate	e	2obut	C00109	False	-1000.0	1000.0
+MAR11392	EX_glutar_e	metBiGGID	MAM03614e	Glutarate	e	glutar	C00489	False	-1000.0	1000.0
+MAR11393	EX_glcn_e	metBiGGID	MAM01683e	D-gluconic acid	e	glcn	C00257	False	-1000.0	1000.0
+MAR11400	EX_fum_e	metBiGGID	MAM01862e	fumarate	e	fum	C00122	False	-1000.0	1000.0
+MAR11401	EX_glyleu_e	metBiGGID	MAM03626e	Glycylleucine	e	glyleu	C02155	False	-1000.0	1000.0
+MAR11402	EX_glyphe_e	metBiGGID	MAM03629e	Glycyl-Phenylalanine	e	glyphe		False	-1000.0	1000.0
+MAR11403	EX_glypro_e	metBiGGID	MAM03630e	Glycylproline	e	glypro		False	-1000.0	1000.0
+MAR11404	EX_mal__L_e	metBiGGID	MAM02439e	malate	e	mal__L	C00149	False	-1000.0	1000.0
+MAR11405	EX_ppi_e	metBiGGID	MAM02759e	PPi	e	ppi	C00013	False	-1000.0	1000.0
+MAR11419	EX_ind3ac_e	metBiGGID	MAM02169e	indoleacetate	e	ind3ac	C00954	False	-1000.0	1000.0
+MAR11420	EX_nh4_e	metBiGGID	MAM02579e	NH4+	e	nh4	C01342	False	-1000.0	1000.0
+MAR11422	EX_galt_e	metBiGGID	MAM01909e	galactitol	e	galt	C01697	False	-1000.0	1000.0
+MAR11423	EX_glcr_e	metBiGGID	MAM01681e	D-glucarate	e	glcr	C00818	False	-1000.0	1000.0
+MAR11424	EX_glcur_e	metBiGGID	MAM01973e	glucuronate	e	glcur	C00191	False	-1000.0	1000.0
+MAR11425	EX_malthx_e	metBiGGID	MAM02447e	maltohexaose	e	malthx	C01936	False	-1000.0	1000.0
+MAR11426	EX_ptrc_e	metBiGGID	MAM02812e	putrescine	e	ptrc	C00134	False	-1000.0	1000.0
+MAR11427	EX_spmd_e	metBiGGID	MAM02923e	spermidine	e	spmd	C00315	False	-1000.0	1000.0
+MAR11428	EX_xan_e	metBiGGID	MAM03148e	xanthine	e	xan	C00385	False	-1000.0	1000.0
+MAR11431	EX_4hbz_e	metBiGGID	MAM00995e	4-hydroxybenzoate	e	4hbz	C00156	False	-1000.0	1000.0
+MAR11432	EX_34dhpha_e	metBiGGID	MAM00729e	3,4-dihydroxyphenylacetate	e	34dhpha	C01161	False	-1000.0	1000.0
+MAR11434	EX_mqn8_e	metBiGGID	MAM03775e	Menaquinone-8	e	mqn8		False	-1000.0	1000.0
+MAR11436	EX_indole_e	metBiGGID	MAM03701e	Indole	e	indole	C00463	False	-1000.0	1000.0
+MAR11437	EX_ch4s_e	metBiGGID	MAM03510e	Methanethiol	e	ch4s	C00409	False	-1000.0	1000.0
+MAR11438	EX_phpyr_e	metBiGGID	MAM02725e	phenylpyruvate	e	phpyr	C00166	False	-1000.0	1000.0
+MAR11439	EX_tym_e	metBiGGID	MAM03099e	tyramine	e	tym	C00483	False	-1000.0	1000.0
+MAR11440	EX_2hyoxplac_e	metBiGGID	MAM00654e	2-hydroxyphenylacetate	e	2hyoxplac	C05852	False	-1000.0	1000.0
+MAR11441	EX_lanost_e	metBiGGID	MAM02336e	lanosterol	e	lanost	C01724	False	-1000.0	1000.0
+MAR11446	EX_3mox4hoxm_e	metBiGGID	MAM03136e	vanillylmandelate	e	3mox4hoxm	C05584	False	-1000.0	1000.0
+MAR11448	EX_glx_e	metBiGGID	MAM02007e	glyoxalate	e	glx	C00048	False	-1000.0	1000.0
+MAR11451	EX_CE4970_e	metBiGGID	MAM00664e	2-methylbutyrylglycine	e	CE4970		False	-1000.0	1000.0
+MAR11454	EX_CE2026_e	metBiGGID	MAM00825e	3-methylcrotonoylglycine	e	CE2026	C20828	False	-1000.0	1000.0
+MAR11457	EX_CE4968_e	metBiGGID	MAM02190e	isovalerylglycine	e	CE4968		False	-1000.0	1000.0
+MAR11461	EX_actyr_e	metBiGGID	MAM03407e	N-Acetyl-Tyrosine	e	actyr		False	-1000.0	1000.0
+MAR11466	EX_sucaceto_e	metBiGGID	MAM03957e	Succinylacetone	e	sucaceto		False	-1000.0	1000.0
+MAR11474	EX_vanillac_e	metBiGGID	MAM04072e	Vanil-Lactate	e	vanillac		False	-1000.0	1000.0
+MAR11475	EX_nacvanala_e	metBiGGID	MAM03778e	N-Acetylvanilalanine	e	nacvanala		False	-1000.0	1000.0
+MAR11478	EX_2h3mv_e	metBiGGID	MAM03176e	2-Hydroxy-3-Methyl-Valerate	e	2h3mv		False	-1000.0	1000.0
+MAR11481	EX_2hiv_e	metBiGGID	MAM03186e	2-Hydroxy-Isovalerate	e	2hiv		False	-1000.0	1000.0
+MAR11485	EX_2m3hbu_e	metBiGGID	MAM03189e	2-Methyl-3-Hydroxy-Butyrate	e	2m3hbu		False	-1000.0	1000.0
+MAR11491	EX_2m3hvac_e	metBiGGID	MAM03190e	2-Methyl-3-Hydroxy-Valerate	e	2m3hvac		False	-1000.0	1000.0
+MAR11494	EX_3h3mglt_e	metBiGGID	MAM03212e	3-Hydroxy-3-Methyl-Glutarate	e	3h3mglt	C03761	False	-1000.0	1000.0
+MAR11498	EX_3mglutac_e	metBiGGID	MAM03245e	3-Methyl-Glutaconate	e	3mglutac		False	-1000.0	1000.0
+MAR11501	EX_3mglutr_e	metBiGGID	MAM03246e	3-Methyl-Glutarate	e	3mglutr		False	-1000.0	1000.0
+MAR11505	EX_ppiogly_e	metBiGGID	MAM03886e	Propionyl-Glycine	e	ppiogly		False	-1000.0	1000.0
+MAR11508	EX_mvlac_e	metBiGGID	MAM03777e	Mevalonate-Lactone	e	mvlac		False	-1000.0	1000.0
+MAR11512	EX_tiggly_e	metBiGGID	MAM03997e	Tiglyl Glycine	e	tiggly		False	-1000.0	1000.0
+MAR11519	EX_3ohglutac_e	metBiGGID	MAM03257e	3-Hydroxy-Glutarate	e	3ohglutac		False	-1000.0	1000.0
+MAR11524	EX_glutcon_e	metBiGGID	MAM03615e	Glutaconate	e	glutcon	C02214	False	-1000.0	1000.0
+MAR11533	EX_3hadpac_e	metBiGGID	MAM03214e	3-Hydroxy-Adipate	e	3hadpac		False	-1000.0	1000.0
+MAR11538	EX_3ohsebac_e	metBiGGID	MAM03258e	3-hydroxy-sebacic acid	e	3ohsebac		False	-1000.0	1000.0
+MAR11543	EX_3ohsubac_e	metBiGGID	MAM03260e	3-hydoxy-suberic acid	e	3ohsubac		False	-1000.0	1000.0
+MAR11547	EX_5ohhexa_e	metBiGGID	MAM03287e	5-hydroxyhexanoic acid	e	5ohhexa		False	-1000.0	1000.0
+MAR11550	EX_7ohocata_e	metBiGGID	MAM03314e	7-Hydroxy-Octanoate	e	7ohocata		False	-1000.0	1000.0
+MAR11554	EX_ethmalac_e	metBiGGID	MAM03575e	ethylmalonic acid	e	ethmalac		False	-1000.0	1000.0
+MAR11557	EX_hexgly_e	metBiGGID	MAM03660e	Hexanoyl-Glycine	e	hexgly		False	-1000.0	1000.0
+MAR11561	EX_methsucc_e	metBiGGID	MAM03765e	Methyl-Succinate	e	methsucc		False	-1000.0	1000.0
+MAR11564	EX_subgly_e	metBiGGID	MAM03955e	Suberyl-Glycine	e	subgly		False	-1000.0	1000.0
+MAR11568	EX_4ohbut_e	metBiGGID	MAM03277e	4-Hydroxy-Butyrate	e	4ohbut	C00989	False	-1000.0	1000.0
+MAR11730	EX_2hxic__L_e	metBiGGID	MAM03187e	2-Hydroxy-Isocaproate	e	2hxic__L		False	-1000.0	1000.0
+MAR11732	EX_S2hglut_e	metBiGGID	MAM03188e	(S)-2-hydroxyglutarate	e	S2hglut	C03196	False	-1000.0	1000.0
+MAR11739	EX_thexdd_e	metBiGGID	MAM03981e	7Z,10Z-hexadecadienoic acid	e	thexdd		False	-1000.0	1000.0
+MAR11743	EX_hexdtr_e	metBiGGID	MAM03657e	(Z,Z,Z)-7,10,13-hexadecatrienoic acid	e	hexdtr		False	-1000.0	1000.0
+MAR11748	EX_hpdece_e	metBiGGID	MAM03682e	trans-delta-2-heptadecanoic acid	e	hpdece		False	-1000.0	1000.0
+MAR11751	EX_eic21114tr_e	metBiGGID	MAM03568e	trans,cis,cis-2,11,14-eicosatrienoic acid	e	eic21114tr		False	-1000.0	1000.0
+MAR11755	EX_5eipenc_e	metBiGGID	MAM03283e	5,8,11,14,17-eicosapentenoic acid	e	5eipenc		False	-1000.0	1000.0
+MAR11818	EX_CE4969_e	metBiGGID	MAM02181e	isobutyrylglycine	e	CE4969		False	-1000.0	1000.0
+MAR11821	EX_CE1310_e	metBiGGID	MAM02534e	N-acetyl-L-cysteine	e	CE1310	C06809	False	-1000.0	1000.0
+MAR11823	EX_T4hcinnm_e	metBiGGID	MAM00981e	4-coumarate	e	T4hcinnm	C00811	False	-1000.0	1000.0
+MAR11827	EX_sucsal_e	metBiGGID	MAM02942e	succinate semialdehyde	e	sucsal	C00232	False	-1000.0	1000.0
+MAR11830	EX_CE7081_e	rxnBiGGID	MAM00373e	15(R)-HEPE	e			False	-1000.0	1000.0
+MAR11833	EX_egme_e	metBiGGID	MAM01767e	ecgonine-methyl ester	e	egme	C12448	False	-1000.0	1000.0
+MAR11836	EX_12harachd_e	metBiGGID	MAM00324e	12-hydroxy-arachidonate	e	12harachd		False	-1000.0	1000.0
+MAR11839	EX_18harachd_e	metBiGGID	MAM00428e	18-hydroxy-arachidonate	e	18harachd		False	-1000.0	1000.0
+MAR11842	EX_sql_e	metBiGGID	MAM02933e	squalene	e	sql	C00751	False	-1000.0	1000.0
+MAR11847	EX_5g2oxpt_e	metBiGGID	MAM01101e	5-guanidino-2-oxopentanoate	e	5g2oxpt	C03771	False	-1000.0	1000.0
+MAR11848	EX_andrstndn_e	metBiGGID	MAM00971e	4-androstene-3,17-dione	e	andrstndn	C00280	False	-1000.0	1000.0
+MAR11850	EX_dhea_e	metBiGGID	MAM01660e	dehydroepiandrosterone	e	dhea	C01227	False	-1000.0	1000.0
+MAR11852	EX_eandrstrn_e	metBiGGID	MAM00399e	16alpha-hydroxydehydroepiandrosterone	e	eandrstrn	C05139	False	-1000.0	1000.0
+MAR11855	EX_andrstandn_e	metBiGGID	MAM01064e	5alpha-androstane-3,17-dione	e	andrstandn	C00674	False	-1000.0	1000.0
+MAR11856	EX_CE2209_e	metBiGGID	MAM01065e	5alpha-androstane-3alpha,17beta-diol	e	CE2209	C03852	False	-1000.0	1000.0
+MAR11858	EX_estrone_e	metBiGGID	MAM01790e	estrone	e	estrone	C00468	False	-1000.0	1000.0
+MAR11860	EX_C05298_e	metBiGGID	MAM00650e	2-hydroxyestrone	e	C05298	C05298	False	-1000.0	1000.0
+MAR11861	EX_C05301_e	metBiGGID	MAM00649e	2-hydroxyestradiol-17beta	e	C05301	C05301	False	-1000.0	1000.0
+MAR11862	EX_C05299_e	metBiGGID	MAM00660e	2-methoxyestrone	e	C05299	C05299	False	-1000.0	1000.0
+MAR11863	EX_C05302_e	metBiGGID	MAM00659e	2-methoxyestradiol-17beta	e	C05302	C05302	False	-1000.0	1000.0
+MAR11864	EX_CE5072_e	metBiGGID	MAM00604e	21-hydroxyallopregnanolone	e	CE5072	C13713	False	-1000.0	1000.0
+MAR11865	EX_11docrtsl_e	metBiGGID	MAM00295e	11-deoxycortisol	e	11docrtsl	C05488	False	-1000.0	1000.0
+MAR11866	EX_11docrtstrn_e	metBiGGID	MAM00294e	11-deoxycorticosterone	e	11docrtstrn	C03205	False	-1000.0	1000.0
+MAR11867	EX_prgnlone_e	metBiGGID	MAM02763e	pregnenolone	e	prgnlone	C01953	False	-1000.0	1000.0
+MAR11868	EX_CE2211_e	metBiGGID	MAM01314e	allopregnanolone	e	CE2211	C13712	False	-1000.0	1000.0
+MAR11869	EX_17ahprgstrn_e	metBiGGID	MAM00409e	17alpha-hydroxyprogesterone	e	17ahprgstrn	C01176	False	-1000.0	1000.0
+MAR11870	EX_17ahprgnlone_e	metBiGGID	MAM00408e	17alpha-hydroxypregnenolone	e	17ahprgnlone	C05138	False	-1000.0	1000.0
+MAR11871	EX_C03681_e	metBiGGID	MAM01072e	5alpha-pregnane-3,20-dione	e	C03681	C03681	False	-1000.0	1000.0
+MAR11874	EX_HC02020_e	metBiGGID	MAM01504e	cholesterol-ester-palm	e	HC02020	C11251	False	-1000.0	1000.0
+MAR11875	EX_prgnlones_e	metBiGGID	MAM02762e	pregnenolone sulfate	e	prgnlones	C18044	False	-1000.0	1000.0
+MAR11876	EX_CE1352_e	metBiGGID	MAM00407e	17alpha-hydroxypregnenolone sulfate	e	CE1352		False	-1000.0	1000.0
+MAR11879	EX_xol24oh_e	metBiGGID	MAM00610e	24-hydroxycholesterol	e	xol24oh	C13550	False	-1000.0	1000.0
+MAR11881	EX_xol27oh_e	metBiGGID	MAM00623e	26-hydroxycholesterol	e	xol27oh	C15610	False	-1000.0	1000.0
+MAR11884	EX_xol25oh_e	metBiGGID	MAM00619e	25-hydroxycholesterol	e	xol25oh	C15519	False	-1000.0	1000.0
+MAR11887	EX_dsmsterol_e	metBiGGID	MAM01675e	desmosterol	e	dsmsterol	C01802	False	-1000.0	1000.0
+MAR11889	EX_chsterols_e	metBiGGID	MAM01512e	cholesterol-sulfate	e	chsterols	C18043	False	-1000.0	1000.0
+MAR11891	EX_3ityr__L_e	metBiGGID	MAM00807e	3-iodo-L-tyrosine	e	3ityr__L	C02515	False	-1000.0	1000.0
+MAR11893	EX_35diotyr_e	metBiGGID	MAM00739e	3,5-diiodo-L-tyrosine	e	35diotyr	C01060	False	-1000.0	1000.0
+MAR11895	EX_13_cis_retn_e	metBiGGID	MAM00350e	13-cis-retinoate	e	13_cis_retn	D00348	False	-1000.0	1000.0
+MAR11897	EX_CE1617_e	metBiGGID	MAM01231e	9-cis-retinoate	e	CE1617	C15493	False	-1000.0	1000.0
+MAR11901	EX_HC00460_e	metBiGGID	MAM00576e	2,5-dihydroxybenzoate	e	HC00460	C00628	False	-1000.0	1000.0
+MAR11902	EX_34dhoxmand_e	metBiGGID	MAM00727e	3,4-dihydroxymandelate	e	34dhoxmand	C05580	False	-1000.0	1000.0
+MAR11904	EX_fna5moxam_e	metBiGGID	MAM01839e	formyl-N-acetyl-5-methoxykynurenamine	e	fna5moxam	C05642	False	-1000.0	1000.0
+MAR11906	EX_CE5643_e	metBiGGID	MAM02714e	peroxynitrite	e	CE5643	C16845	False	-1000.0	1000.0
+MAR11907	EX_CE7090_e	metBiGGID	MAM00028e	(18R)-HEPE	e	CE7090	C18177	False	-1000.0	1000.0
+MAR11908	EX_CE7085_e	rxnBiGGID	MAM01039e	5(S)-HEPE	e			False	-1000.0	1000.0
+MAR11909	EX_CE7096_e	rxnBiGGID	MAM01050e	5,15-DiHETE	e			False	-1000.0	1000.0
+MAR11910	EX_CE4877_e	rxnBiGGID	MAM00385e	15-deoxy-prostaglandin J2	e			False	-1000.0	1000.0
+MAR11911	EX_CE1447_e	rxnBiGGID	MAM00293e	11-dehydro-thromboxane B2	e		C05964	False	-1000.0	1000.0
+MAR11912	EX_CE2006_e	rxnBiGGID	MAM00988e	4-hydroxy-2-nonenal	e		C21642	False	-1000.0	1000.0
+MAR11914	EX_CE1401_e	metBiGGID	MAM02134e	homocysteine-thiolactone	e	CE1401		False	-1000.0	1000.0
+MAR11916	EX_glucys_e	metBiGGID	MAM01927e	gamma-glutamyl-cysteine	e	glucys	C00669	False	-1000.0	1000.0
+MAR11917	EX_n8aspmd_e	metBiGGID	MAM02518e	N8-acetylspermidine	e	n8aspmd	C01029	False	-1000.0	1000.0
+MAR11918	EX_CE6205_e	metBiGGID	MAM01113e	5-methoxytryptophol	e	CE6205		False	-1000.0	1000.0
+MAR11920	EX_melatn_e	metBiGGID	MAM02460e	melatonin	e	melatn	C01598	False	-1000.0	1000.0
+MAR11922	EX_6hoxmelatn_e	metBiGGID	MAM01161e	6-hydroxymelatonin	e	6hoxmelatn	C05643	False	-1000.0	1000.0
+MAR11923	EX_trypta_e	metBiGGID	MAM03088e	tryptamine	e	trypta	C00398	False	-1000.0	1000.0
+MAR11925	EX_C10164_e	metBiGGID	MAM02752e	picolinic acid	e	C10164	C10164	False	-1000.0	1000.0
+MAR11926	EX_CE4890_e	metBiGGID	MAM02603e	N-methylsalsolinol	e	CE4890		False	-1000.0	1000.0
+MAR11927	EX_C09642_e	metBiGGID	MAM02875e	salsolinol	e	C09642	C09642	False	-1000.0	1000.0
+MAR11929	EX_C05767_e	rxnBiGGID	MAM03125e	uroporphyrin I	e		C05767	False	-1000.0	1000.0
+MAR11930	EX_mhista_e	metBiGGID	MAM02601e	N-methylhistamine	e	mhista	C05127	False	-1000.0	1000.0
+MAR11932	EX_ppbng_e	metBiGGID	MAM02756e	porphobilinogen	e	ppbng	C00931	False	-1000.0	1000.0
+MAR11933	EX_13dampp_e	metBiGGID	MAM00248e	1,3-diaminopropane	e	13dampp	C00986	False	-1000.0	1000.0
+MAR11934	EX_mma_e	metBiGGID	MAM02473e	methylamine	e	mma	C00218	False	-1000.0	1000.0
+MAR11936	EX_12ppd__R_e	metBiGGID	MAM02771e	propane-1,2-diol	e	12ppd__R	C00583	False	-1000.0	1000.0
+MAR11938	EX_ametam_e	metBiGGID	MAM02870e	S-adenosylmethioninamine	e	ametam	C01137	False	-1000.0	1000.0
+MAR11940	EX_xylu__L_e	metBiGGID	MAM02425e	L-xylulose	e	xylu__L	C00312	False	-1000.0	1000.0
+MAR11942	EX_xylu__D_e	metBiGGID	MAM01759e	D-xylulose	e	xylu__D	C00310	False	-1000.0	1000.0
+MAR11945	EX_CE0737_e	rxnBiGGID	MAM02441e	malonic-dialdehyde	e		C19440	False	-1000.0	1000.0
+MAR11947	EX_sphings_e	metBiGGID	MAM02929e	sphingosine	e	sphings	C00319	False	-1000.0	1000.0
+MAR11949	EX_hdd2crn_e	metBiGGID	MAM02117e	hexadecenoylcarnitine(9)	e	hdd2crn		False	-1000.0	1000.0
+MAR11951	EX_im4ac_e	metBiGGID	MAM02166e	imidazole-4-acetate	e	im4ac	C02835	False	-1000.0	1000.0
+MAR11952	EX_CE1918_e	metBiGGID	MAM01110e	5-hydroxytryptophol	e	CE1918		False	-1000.0	1000.0
+MAR11953	EX_mlthf_e	metBiGGID	MAM01045e	5,10-methylene-THF	e	mlthf	C00143	False	-1000.0	1000.0
+MAR11954	EX_ppp9_e	metBiGGID	MAM02803e	protoporphyrin	e	ppp9	C02191	False	-1000.0	1000.0
+MAR11956	EX_aact_e	metBiGGID	MAM01332e	aminoacetone	e	aact	C01888	False	-1000.0	1000.0
+MAR11957	EX_CE2705_e	rxnBiGGID	MAM02823e	quinonoid dihydrobiopterin	e		C02953	False	-1000.0	1000.0
+MAR11959	EX_sphgn_e	metBiGGID	MAM02927e	sphinganine	e	sphgn	C00836	False	-1000.0	1000.0
+MAR11961	EX_selmeth_e	metBiGGID	MAM02891e	selenomethionine	e	selmeth	C05335	False	-1000.0	1000.0
+MAR11962	EX_N1aspmd_e	metBiGGID	MAM02503e	N1-acetylspermidine	e	N1aspmd	C00612	False	-1000.0	1000.0
+MAR11965	EX_1a25dhvitd3_e	metBiGGID	MAM01417e	calcitriol	e	1a25dhvitd3	C01673	False	-1000.0	1000.0
+MAR11967	EX_prist_e	metBiGGID	MAM02766e	(2S)-pristanic acid	e	prist		False	-1000.0	1000.0
+MAR11969	EX_CE2049_e	metBiGGID	MAM00314e	12,13-hydroxyoctadec-9(z)-enoate	e	CE2049	C14829	False	-1000.0	1000.0
+MAR11971	EX_CE2047_e	metBiGGID	MAM01220e	9,10-hydroxyoctadec-12(Z)-enoate	e	CE2047	C14828	False	-1000.0	1000.0
+MAR11974	EX_fdp_e	metBiGGID	MAM01841e	fructose-1,6-bisphosphate	e	fdp	C00354	False	-1000.0	1000.0
+MAR11975	EX_coke_e	metBiGGID	MAM01601e	cocaine	e	coke	C01416	False	-1000.0	1000.0
+MAR11978	EX_5a2opntn_e	metBiGGID	MAM01073e	5-amino-2-oxopentanoic acid	e	5a2opntn	C01110	False	-1000.0	1000.0
+MAR11982	EX_MAR11982	no cross-reference	MAM04074e	Very Low Density Lipoprotein	e			False	-1000.0	1000.0
+MAR11983	EX_idl_hs_e	metBiGGID	MAM03692e	Intermediate Density Lipoprotein	e	idl_hs		False	-1000.0	1000.0
+MAR11984	EX_ldl_hs_e	metBiGGID	MAM03710e	Low Density Lipoprotein	e	ldl_hs		False	-1000.0	1000.0
+MAR11985	EX_hdl_hs_e	metBiGGID	MAM03647e	High Density Lipoprotein	e	hdl_hs		False	-1000.0	1000.0
+MAR11987	EX_HC00005_e	rxnBiGGID	MAM01351e	apoB100	e			False	-1000.0	1000.0
+MAR11990	EX_HC00006_e	rxnBiGGID	MAM01353e	apoC1	e			False	-1000.0	1000.0
+MAR11993	EX_HC00007_e	rxnBiGGID	MAM01354e	apoC2	e			False	-1000.0	1000.0
+MAR11996	EX_HC00008_e	rxnBiGGID	MAM01355e	apoC3	e			False	-1000.0	1000.0
+MAR11999	EX_HC00009_e	rxnBiGGID	MAM01359e	apoE	e			False	-1000.0	1000.0
+MAR12007	EX_dopa4sf_e	metBiGGID	MAM03565e	Dopamine 4-O-Sulphate	e	dopa4sf	C13691	False	-1000.0	1000.0
+MAR12009	EX_dopa4glcur_e	metBiGGID	MAM03564e	Dopamine-4-O-Glucuronide	e	dopa4glcur		False	-1000.0	1000.0
+MAR12011	EX_dopa3glcur_e	metBiGGID	MAM03563e	Dopamine-3-O-Glucuronide	e	dopa3glcur		False	-1000.0	1000.0
+MAR12026	EX_CE5545_e	metBiGGID	MAM01136e	5-S-glutathionyl-aminochrome reduced	e	CE5545		False	-1000.0	1000.0
+MAR12028	EX_5cysdopa_e	metBiGGID	MAM03281e	5-S-Cysteinyldopamine	e	5cysdopa		False	-1000.0	1000.0
+MAR12030	EX_CE5025_e	metBiGGID	MAM01138e	5-S-glutathionyl-dopamine	e	CE5025		False	-1000.0	1000.0
+MAR12032	EX_CE2172_e	metBiGGID	MAM01154e	6,7-dihydroxy-1,2,3,4-tetrahydroisoquinoline	e	CE2172		False	-1000.0	1000.0
+MAR12034	EX_CE5629_e	metBiGGID	MAM00231e	1,2-dehydrosalsolinol	e	CE5629		False	-1000.0	1000.0
+MAR12042	EX_gd3_hs_e	metBiGGID	MAM01947e	GD3	e	gd3_hs	C06133	False	-1000.0	1000.0
+MAR12043	EX_gluside_hs_e	metBiGGID	MAM01972e	glucosylceramide pool	e	gluside_hs	C01190	False	-1000.0	1000.0
+MAR12044	EX_gm3_hs_e	metBiGGID	MAM02015e	GM3	e	gm3_hs	C04730	False	-1000.0	1000.0
+MAR12104	EX_cmpacna_e	metBiGGID	MAM01592e	CMP-N-acetylneuraminate	e	cmpacna	C00128	False	-1000.0	1000.0
+MAR12105	EX_gd2_hs_e	metBiGGID	MAM01946e	GD2	e	gd2_hs	C06134	False	-1000.0	1000.0
+MAR12106	EX_gd1a_hs_e	metBiGGID	MAM01941e	GD1a	e	gd1a_hs	C04927	False	-1000.0	1000.0
+MAR12114	EX_34dhpe_e	metBiGGID	MAM03197e	3,4-Dihydroxyphenylethanol	e	34dhpe		False	-1000.0	1000.0
+MAR12127	EX_pail_hs_e	metBiGGID	MAM02750e	PI pool	e	pail_hs	C01194	False	-1000.0	1000.0
+MAR12128	EX_CE1243_e	rxnBiGGID	MAM00308e	12(S)-HHT	e			False	-1000.0	1000.0
+MAR12129	EX_CE5026_e	metBiGGID	MAM01139e	5-S-glutathionyl-L-dopa	e	CE5026		False	-1000.0	1000.0
+MAR12130	EX_5cysgly34dhphe_e	metBiGGID	MAM03282e	5-S-Cysteinylglycine Dopa	e	5cysgly34dhphe		False	-1000.0	1000.0
+MAR12131	EX_CE1261_e	rxnBiGGID	MAM01134e	5-S-cysteinyldopa	e		C17935	False	-1000.0	1000.0
+MAR12133	EX_ga1_hs_e	metBiGGID	MAM01904e	GA1	e	ga1_hs	C06136;G00124	False	-1000.0	1000.0
+MAR12134	EX_gm1a_hs_e	metBiGGID	MAM02009e	GM1alpha	e	gm1a_hs		False	-1000.0	1000.0
+MAR12135	EX_gm2a_hs_e	metBiGGID	MAM02014e	GM2alpha	e	gm2a_hs		False	-1000.0	1000.0
+MAR12136	EX_gm1_hs_e	metBiGGID	MAM03635e	Ganglioside Gm1	e	gm1_hs	C04911	False	-1000.0	1000.0
+MAR12137	EX_gm1b_hs_e	metBiGGID	MAM02010e	GM1b	e	gm1b_hs	G00125	False	-1000.0	1000.0
+MAR12138	EX_gd1b_hs_e	metBiGGID	MAM01943e	GD1b	e	gd1b_hs	C06141	False	-1000.0	1000.0
+MAR12139	EX_gt1b_hs_e	metBiGGID	MAM02030e	GT1b	e	gt1b_hs	C06140	False	-1000.0	1000.0
+MAR12141	EX_nadh_e	metBiGGID	MAM02553e	NADH	e	nadh	C00004	False	-1000.0	1000.0
+MAR12198	EX_12dhchol_e	metBiGGID	MAM00517e	12-dehydrocholic acid	e	12dhchol		False	-1000.0	1000.0
+MAR12199	EX_3dhcdchol_e	metBiGGID	MAM03206e	3-dehydrochenodeoxycholic acid	e	3dhcdchol		False	-1000.0	1000.0
+MAR12200	EX_3dhchol_e	metBiGGID	MAM03207e	3-dehydrocholic acid	e	3dhchol		False	-1000.0	1000.0
+MAR12201	EX_3dhdchol_e	metBiGGID	MAM03208e	3-dehydro-Deoxycholate	e	3dhdchol		False	-1000.0	1000.0
+MAR12202	EX_3dhlchol_e	metBiGGID	MAM03209e	3-dehydro-Lithocholate	e	3dhlchol		False	-1000.0	1000.0
+MAR12203	EX_7dhcdchol_e	metBiGGID	MAM03310e	7-dehydrochenodeoxycholic acid	e	7dhcdchol		False	-1000.0	1000.0
+MAR12204	EX_7dhchol_e	metBiGGID	MAM03311e	7-dehydrocholic acid	e	7dhchol		False	-1000.0	1000.0
+MAR12205	EX_ca24g_e	metBiGGID	MAM03503e	Cholic acid-24glucuronide, CA-24G	e	ca24g		False	-1000.0	1000.0
+MAR12206	EX_ca3s_e	metBiGGID	MAM03504e	Cholic acid 3-sulfate	e	ca3s		False	-1000.0	1000.0
+MAR12207	EX_cdca24g_e	metBiGGID	MAM03508e	Chenodeoxycholic acid-24glucuronide, CDCA-24G	e	cdca24g		False	-1000.0	1000.0
+MAR12208	EX_cdca3g_e	metBiGGID	MAM03509e	Chenodeoxycholic acid-3glucuronide, CDCA-3G	e	cdca3g		False	-1000.0	1000.0
+MAR12209	EX_coprost_e	metBiGGID	MAM03512e	Coprostanol	e	coprost		False	-1000.0	1000.0
+MAR12210	EX_dca24g_e	metBiGGID	MAM03536e	Deoxycholic acid-24glucuronide, CDA-24G	e	dca24g		False	-1000.0	1000.0
+MAR12211	EX_dca3g_e	metBiGGID	MAM03537e	Deoxycholic acid-3glucuronide, CDA-3G	e	dca3g		False	-1000.0	1000.0
+MAR12212	EX_dca3s_e	metBiGGID	MAM03538e	Deoxycholic acid 3-sulfate	e	dca3s		False	-1000.0	1000.0
+MAR12213	EX_gca3s_e	metBiGGID	MAM03587e	Glycocholic acid 3-sulfate	e	gca3s		False	-1000.0	1000.0
+MAR12214	EX_gcdca3s_e	metBiGGID	MAM03588e	Glycochenodeoxycholic acid 3-sulfate	e	gcdca3s		False	-1000.0	1000.0
+MAR12215	EX_gdca3s_e	metBiGGID	MAM03589e	Glycodeoxycholic acid 3-sulfate	e	gdca3s		False	-1000.0	1000.0
+MAR12216	EX_gudca3s_e	metBiGGID	MAM03637e	Glycoursodeoxycholic acid 3-sulfate	e	gudca3s		False	-1000.0	1000.0
+MAR12217	EX_hca24g_e	metBiGGID	MAM03642e	Hyocholic acid-24glucuronide, HCA-24G	e	hca24g		False	-1000.0	1000.0
+MAR12218	EX_hca6g_e	metBiGGID	MAM03643e	Hyocholic acid-6glucuronide, HCA-6G	e	hca6g		False	-1000.0	1000.0
+MAR12219	EX_hdca24g_e	metBiGGID	MAM03644e	Hyodeoxycholic acid-24glucuronide, HDCA-24G	e	hdca24g		False	-1000.0	1000.0
+MAR12220	EX_hdca6g_e	metBiGGID	MAM03645e	Hyodeoxycholic acid-6glucuronide, HDCA-6G	e	hdca6g		False	-1000.0	1000.0
+MAR12222	EX_icdchol_e	metBiGGID	MAM03691e	isochenodeoxycholic acid	e	icdchol		False	-1000.0	1000.0
+MAR12223	EX_isochol_e	metBiGGID	MAM03704e	isocholic acid	e	isochol		False	-1000.0	1000.0
+MAR12224	EX_lca24g_e	metBiGGID	MAM03707e	Lithocholic acid-24glucuronide, CDCA-24G	e	lca24g		False	-1000.0	1000.0
+MAR12225	EX_lca3g_e	metBiGGID	MAM03708e	Lithocholic acid-3glucuronide, CDCA-3G	e	lca3g		False	-1000.0	1000.0
+MAR12226	EX_lca3s_e	metBiGGID	MAM03709e	Lithocholic acid 3-sulfate	e	lca3s		False	-1000.0	1000.0
+MAR12227	EX_tca3s_e	metBiGGID	MAM03962e	Taurocholic acid 3-sulfate	e	tca3s		False	-1000.0	1000.0
+MAR12228	EX_tcdca3s_e	metBiGGID	MAM03963e	Taurochenodeoxycholic acid 3-sulfate	e	tcdca3s		False	-1000.0	1000.0
+MAR12229	EX_tdca3s_e	metBiGGID	MAM03965e	Taurodeoxycholic acid 3-sulfate	e	tdca3s		False	-1000.0	1000.0
+MAR12231	EX_tudca3s_e	metBiGGID	MAM04042e	Tauroursodeoxycholic acid 3-sulfate	e	tudca3s		False	-1000.0	1000.0
+MAR12232	EX_uchol_e	metBiGGID	MAM04057e	ursocholic acid	e	uchol		False	-1000.0	1000.0
+MAR12233	EX_udca3s_e	metBiGGID	MAM04058e	Ursodeoxycholic acid 3-sulfate	e	udca3s		False	-1000.0	1000.0
+MAR12575	EX_12htacr_e	metBiGGID	MAM01817e	12-HT or M-VI, 12-hydroxy tacrolimus	e	12htacr		False	-1000.0	1000.0
+MAR12576	EX_1331tacr_e	metBiGGID	MAM01818e	13,31-O-Didesmethyl-tacrolimus	e	1331tacr		False	-1000.0	1000.0
+MAR12577	EX_13dmt_e	metBiGGID	MAM01875e	13-O-desmethyl tacrolimus, 13-DMT or M-I	e	13dmt		False	-1000.0	1000.0
+MAR12578	EX_14hmdz_e	metBiGGID	MAM01888e	1,4-Dihydroxy-midazolam	e	14hmdz		False	-1000.0	1000.0
+MAR12579	EX_1513tacr_e	metBiGGID	MAM01889e	13,15-O-didesmethyl tacrolimus	e	1513tacr		False	-1000.0	1000.0
+MAR12580	EX_1531tacr_e	metBiGGID	MAM01890e	15,31-O-Didesmethyl-tacrolimus	e	1531tacr		False	-1000.0	1000.0
+MAR12581	EX_15dmt_e	metBiGGID	MAM01891e	15-DMT or M-III, 15-O-desmethyl tacrolimus	e	15dmt		False	-1000.0	1000.0
+MAR12582	EX_1hibup__S_e	rxnBiGGID	MAM01894e	1-hydroxy S-ibuprofen	e			False	-1000.0	1000.0
+MAR12583	EX_1hibupglu__S_e	rxnBiGGID	MAM01901e	1-hydroxy S-ibuprofen-glucuronide	e			False	-1000.0	1000.0
+MAR12584	EX_1hmdgluc_e	metBiGGID	MAM01902e	1'-OH-midazolam-glucuronide	e	1hmdgluc		False	-1000.0	1000.0
+MAR12585	EX_1ohmdz_e	metBiGGID	MAM01903e	1'-OH-midazolam	e	1ohmdz		False	-1000.0	1000.0
+MAR12586	EX_2hatvacid_e	metBiGGID	MAM03177e	2-hydroxy-atorvastatin-acid / ortho-hydroxy-atorvastatin acid	e	2hatvacid		False	-1000.0	1000.0
+MAR12587	EX_2hatvacidgluc_e	metBiGGID	MAM03178e	2-hydroxy-atorvastatin-acyl-glucuronide	e	2hatvacidgluc		False	-1000.0	1000.0
+MAR12588	EX_2hatvlac_e	metBiGGID	MAM03179e	2-hydroxy-atorvastatin-lactone / ortho-hydroxy-atorvastatin lactone	e	2hatvlac		False	-1000.0	1000.0
+MAR12589	EX_2hatvlacgluc_e	metBiGGID	MAM03180e	2-hydroxy-atorvastatin-lactone-glucuronide	e	2hatvlacgluc		False	-1000.0	1000.0
+MAR12590	EX_2hibup__R_e	rxnBiGGID	MAM03183e	2-hydroxy-R-ibuprofen	e			False	-1000.0	1000.0
+MAR12591	EX_2hibup__S_e	rxnBiGGID	MAM03184e	2-hydroxy-S-ibuprofen	e			False	-1000.0	1000.0
+MAR12592	EX_2hibupglu__S_e	rxnBiGGID	MAM03185e	2-hydroxy S-ibuprofen-glucuronide	e			False	-1000.0	1000.0
+MAR12593	EX_31dmt_e	metBiGGID	MAM03196e	31-DMT or M-II, 31-O-desmethyl tacrolimus	e	31dmt		False	-1000.0	1000.0
+MAR12594	EX_35dhpvs_e	metBiGGID	MAM03198e	3'-alpha,5'beta-dihydroxy-pravastatin / 3'-alpha5'beta6'beta-trihydroxy pravastatin	e	35dhpvs		False	-1000.0	1000.0
+MAR12595	EX_35dsmv_e	metBiGGID	MAM03199e	3',5'-dihydrodiol-simvastatin-lactone form	e	35dsmv		False	-1000.0	1000.0
+MAR12596	EX_3hibup__R_e	rxnBiGGID	MAM03223e	3-hydroxy R-ibuprofen	e			False	-1000.0	1000.0
+MAR12597	EX_3hibup__S_e	rxnBiGGID	MAM03224e	3-hydroxy S-ibuprofen	e			False	-1000.0	1000.0
+MAR12598	EX_3hibupglu__S_e	rxnBiGGID	MAM03225e	3-hydroxy S-ibuprofen-glucuronide	e			False	-1000.0	1000.0
+MAR12599	EX_3hlvstacid_e	metBiGGID	MAM03229e	3''-hydroxy-lovastatin acid form	e	3hlvstacid		False	-1000.0	1000.0
+MAR12600	EX_3hpvs_e	metBiGGID	MAM03235e	3'-S-hydroxy-pravastatin	e	3hpvs		False	-1000.0	1000.0
+MAR12601	EX_3hpvstet_e	metBiGGID	MAM03237e	3'-S-hydroxy-pravastatin-tetranor	e	3hpvstet		False	-1000.0	1000.0
+MAR12602	EX_3hsmvacid_e	metBiGGID	MAM03240e	3'-hydroxy-simvastatin-acid form	e	3hsmvacid		False	-1000.0	1000.0
+MAR12603	EX_3ispvs_e	metBiGGID	MAM03241e	3-alpha-iso-pravastatin	e	3ispvs		False	-1000.0	1000.0
+MAR12604	EX_3ohacmp_e	metBiGGID	MAM03256e	3-hydroxy-acetaminophen	e	3ohacmp		False	-1000.0	1000.0
+MAR12605	EX_4bhglz_e	metBiGGID	MAM03269e	4-beta-OH-gliclazide	e	4bhglz		False	-1000.0	1000.0
+MAR12606	EX_4hatvacid_e	metBiGGID	MAM03271e	4-hydroxy-atorvastatin-acid / para-hydroxy-atorvastatin acid	e	4hatvacid		False	-1000.0	1000.0
+MAR12607	EX_4hatvlac_e	metBiGGID	MAM03272e	4-hydroxy-atorvastatin-lactone / para-hydroxy-atorvastatin lactone	e	4hatvlac		False	-1000.0	1000.0
+MAR12608	EX_4hmdgluc_e	metBiGGID	MAM03275e	4-OH-midazolam-glucuronide	e	4hmdgluc		False	-1000.0	1000.0
+MAR12609	EX_4ohmdz_e	metBiGGID	MAM03278e	4-OH-midazolam	e	4ohmdz		False	-1000.0	1000.0
+MAR12610	EX_56dhpvs_e	metBiGGID	MAM03279e	3-keto-5,6,-dihydroxy-pravastatin	e	56dhpvs		False	-1000.0	1000.0
+MAR12611	EX_56eppvs_e	metBiGGID	MAM03280e	5,6-epoxy-3-alpha-iso-pravastatin	e	56eppvs		False	-1000.0	1000.0
+MAR12612	EX_5ohfvs_e	metBiGGID	MAM03285e	5-hydroxy-fluvastatin	e	5ohfvs		False	-1000.0	1000.0
+MAR12613	EX_5ohfvsglu_e	metBiGGID	MAM03286e	5-hydroxy-fluvastatin-glucuronide	e	5ohfvsglu		False	-1000.0	1000.0
+MAR12614	EX_6ahglz_e	metBiGGID	MAM03289e	6-alpha-OH-gliclazide	e	6ahglz		False	-1000.0	1000.0
+MAR12615	EX_6bhglz_e	metBiGGID	MAM03290e	6-beta-OH-gliclazide	e	6bhglz		False	-1000.0	1000.0
+MAR12616	EX_6bhglzglc_e	metBiGGID	MAM03291e	6-beta-OH-gliclazide-glucuronide	e	6bhglzglc		False	-1000.0	1000.0
+MAR12617	EX_6csmvacid_e	metBiGGID	MAM03293e	6'-beta-carboxy-simvastatin-acid form	e	6csmvacid		False	-1000.0	1000.0
+MAR12618	EX_6epvs_e	metBiGGID	MAM03294e	6-epipravastatin	e	6epvs		False	-1000.0	1000.0
+MAR12619	EX_6hlvst_e	metBiGGID	MAM03296e	6'-beta-hydroxy-lovastatin lactone form	e	6hlvst		False	-1000.0	1000.0
+MAR12620	EX_6hmsmvacid_e	metBiGGID	MAM03299e	6'-beta-hydroxy-methyl-simvastatin-acid form	e	6hmsmvacid		False	-1000.0	1000.0
+MAR12621	EX_6hsmvacid_e	metBiGGID	MAM03301e	6'-beta-hydroxy simvastatin acid	e	6hsmvacid		False	-1000.0	1000.0
+MAR12622	EX_6melvacid_e	metBiGGID	MAM03302e	6'-exomethylene-lovastatin-acid form	e	6melvacid		False	-1000.0	1000.0
+MAR12623	EX_6melvst_e	metBiGGID	MAM03303e	6'-exomethylene-lovastatin lactone form	e	6melvst		False	-1000.0	1000.0
+MAR12624	EX_6ohfvs_e	metBiGGID	MAM03305e	6-hydroxy-fluvastatin	e	6ohfvs		False	-1000.0	1000.0
+MAR12625	EX_6ohfvsglu_e	metBiGGID	MAM03306e	6-hydroxy-fluvastatin-glucuronide	e	6ohfvsglu		False	-1000.0	1000.0
+MAR12626	EX_7ahglz_e	metBiGGID	MAM03307e	7-alpha-OH-gliclazide	e	7ahglz		False	-1000.0	1000.0
+MAR12627	EX_7bhglz_e	metBiGGID	MAM03308e	7-beta-OH-gliclazide	e	7bhglz		False	-1000.0	1000.0
+MAR12628	EX_7bhglzglc_e	metBiGGID	MAM03309e	7-beta-OH-gliclazide-glucuronide	e	7bhglzglc		False	-1000.0	1000.0
+MAR12629	EX_7hpvs_e	metBiGGID	MAM03312e	7-hydroxy-3-alpha-iso-pravastatin	e	7hpvs		False	-1000.0	1000.0
+MAR12630	EX_acmp_e	metBiGGID	MAM03402e	acetaminophen/paracetamol	e	acmp	C06804	False	-1000.0	1000.0
+MAR12631	EX_acmpglu_e	metBiGGID	MAM03403e	Acetaminophen glucuronide	e	acmpglu		False	-1000.0	1000.0
+MAR12632	EX_acmpglut_e	metBiGGID	MAM03404e	acetaminophen-glutathione-conjugate	e	acmpglut		False	-1000.0	1000.0
+MAR12633	EX_allop_e	metBiGGID	MAM03418e	allopurinol	e	allop		False	-1000.0	1000.0
+MAR12634	EX_am19cs_e	metBiGGID	MAM03420e	AM19 (cyclosporine)	e	am19cs		False	-1000.0	1000.0
+MAR12635	EX_am1a4ncs_e	metBiGGID	MAM03421e	AM1A4N (cyclosporine)	e	am1a4ncs		False	-1000.0	1000.0
+MAR12636	EX_am1accs_e	metBiGGID	MAM03422e	AM1Ac (cyclosporine)	e	am1accs		False	-1000.0	1000.0
+MAR12637	EX_am1acs_e	metBiGGID	MAM03423e	AM1A (cyclosporine)	e	am1acs		False	-1000.0	1000.0
+MAR12638	EX_am1alcs_e	metBiGGID	MAM03424e	AM1AL (cyclosporine)	e	am1alcs		False	-1000.0	1000.0
+MAR12639	EX_am1c4n9cs_e	metBiGGID	MAM03425e	AM1c4N9 (cyclosporine)	e	am1c4n9cs		False	-1000.0	1000.0
+MAR12640	EX_am1c9cs_e	metBiGGID	MAM03426e	AM1c9 (cyclosporine)	e	am1c9cs		False	-1000.0	1000.0
+MAR12641	EX_am1ccs_e	metBiGGID	MAM03427e	AM1c (cyclosporine)	e	am1ccs		False	-1000.0	1000.0
+MAR12642	EX_am1cglc_e	metBiGGID	MAM03428e	AM1c-glucuronide (cyclosporine)	e	am1cglc		False	-1000.0	1000.0
+MAR12643	EX_am1csa_e	metBiGGID	MAM03429e	AM1 (cyclosporine)	e	am1csa		False	-1000.0	1000.0
+MAR12644	EX_am4n9cs_e	metBiGGID	MAM03430e	AM4N9 (cyclosporine)	e	am4n9cs		False	-1000.0	1000.0
+MAR12645	EX_am4ncs_e	metBiGGID	MAM03431e	AM4N (cyclosporine)	e	am4ncs		False	-1000.0	1000.0
+MAR12646	EX_am9csa_e	metBiGGID	MAM03432e	AM9 (cyclosporine)	e	am9csa		False	-1000.0	1000.0
+MAR12647	EX_atvacid_e	metBiGGID	MAM03476e	atorvastatin-acid	e	atvacid		False	-1000.0	1000.0
+MAR12648	EX_atvlac_e	metBiGGID	MAM03479e	atorvastatin-lactone	e	atvlac		False	-1000.0	1000.0
+MAR12649	EX_caribup__R_e	rxnBiGGID	MAM03505e	R-carboxy ibuprofen	e			False	-1000.0	1000.0
+MAR12650	EX_caribup_s_e	metBiGGID	MAM03506e	S-carboxy ibuprofen	e	caribup_s		False	-1000.0	1000.0
+MAR12651	EX_caribupglu__S_e	rxnBiGGID	MAM03507e	S-carboxy ibuprofen glucuronide	e			False	-1000.0	1000.0
+MAR12652	EX_crglz_e	metBiGGID	MAM03513e	carboxy-gliclazide	e	crglz		False	-1000.0	1000.0
+MAR12653	EX_crvs_e	metBiGGID	MAM03514e	cerivastatin	e	crvs		False	-1000.0	1000.0
+MAR12654	EX_crvsm1_e	metBiGGID	MAM03515e	cerivastatin-M1	e	crvsm1		False	-1000.0	1000.0
+MAR12655	EX_crvsm23_e	metBiGGID	MAM03517e	cerivastatin-M23	e	crvsm23		False	-1000.0	1000.0
+MAR12656	EX_crvsm24_e	metBiGGID	MAM03518e	cerivastatin-M24	e	crvsm24		False	-1000.0	1000.0
+MAR12657	EX_csa_e	metBiGGID	MAM03520e	cyclosporine	e	csa		False	-1000.0	1000.0
+MAR12658	EX_csasulp_e	metBiGGID	MAM03521e	cyclosporine-sulphate	e	csasulp		False	-1000.0	1000.0
+MAR12659	EX_cysacmp_e	metBiGGID	MAM03526e	cysteine-conjugate-acetaminophen	e	cysacmp		False	-1000.0	1000.0
+MAR12660	EX_deoxfvs_e	metBiGGID	MAM03546e	deoxy-fluvastatin-dinor	e	deoxfvs		False	-1000.0	1000.0
+MAR12661	EX_desfvs_e	metBiGGID	MAM03547e	N-desisopropyl-fluvastatin	e	desfvs		False	-1000.0	1000.0
+MAR12662	EX_dhglz_e	metBiGGID	MAM03549e	dehydro-gliclazide	e	dhglz		False	-1000.0	1000.0
+MAR12663	EX_dspvs_e	metBiGGID	MAM03566e	desacyl dehydro-pravastatin	e	dspvs		False	-1000.0	1000.0
+MAR12664	EX_epoxtac_e	metBiGGID	MAM03572e	31-O-Desmethyl,19-Hydroxy,37, 39-Epoxy-tacrolimus	e	epoxtac		False	-1000.0	1000.0
+MAR12665	EX_fvs_e	metBiGGID	MAM03579e	fluvastatin	e	fvs		False	-1000.0	1000.0
+MAR12666	EX_fvstet_e	metBiGGID	MAM03582e	des-isopropyl-dihydro-fluvastatin-tetranor	e	fvstet		False	-1000.0	1000.0
+MAR12667	EX_fvstetglu_e	metBiGGID	MAM03583e	des-isopropyl-dihydro-fluvastatin-tetranor-glucuronide	e	fvstetglu		False	-1000.0	1000.0
+MAR12668	EX_glc3meacp_e	metBiGGID	MAM03594e	glucuronide-conjugate of 3-methoxy-acetaminophen	e	glc3meacp		False	-1000.0	1000.0
+MAR12669	EX_glz_e	metBiGGID	MAM03634e	Gliclazide	e	glz		False	-1000.0	1000.0
+MAR12670	EX_gtacmp_e	metBiGGID	MAM03636e	glucuronide-thiomethyl-acetaminophen conjugate	e	gtacmp		False	-1000.0	1000.0
+MAR12671	EX_ibup__R_e	rxnBiGGID	MAM03686e	ibuprofen-R	e			False	-1000.0	1000.0
+MAR12672	EX_ibup__S_e	rxnBiGGID	MAM03687e	ibuprofen-S	e			False	-1000.0	1000.0
+MAR12673	EX_ibupgluc_e	metBiGGID	MAM03690e	ibuprofen acyl glucuronide	e	ibupgluc		False	-1000.0	1000.0
+MAR12674	EX_isolvstacid_e	metBiGGID	MAM03705e	3'-hydroxy-iso-delta-4',5'-hydroxy acid form of lovastatin	e	isolvstacid		False	-1000.0	1000.0
+MAR12675	EX_lst4exp_e	metBiGGID	MAM03728e	Losartan-E3174/ losartan-M6	e	lst4exp		False	-1000.0	1000.0
+MAR12676	EX_lstn_e	metBiGGID	MAM03729e	Losartan	e	lstn		False	-1000.0	1000.0
+MAR12677	EX_lstn1gluc_e	metBiGGID	MAM03730e	Losartan-N1-glucuronide	e	lstn1gluc		False	-1000.0	1000.0
+MAR12678	EX_lstnm1_e	metBiGGID	MAM03731e	Losartan-M1	e	lstnm1		False	-1000.0	1000.0
+MAR12679	EX_lstnm2_e	metBiGGID	MAM03732e	Losartan-M2	e	lstnm2		False	-1000.0	1000.0
+MAR12680	EX_lstnm4_e	metBiGGID	MAM03733e	Losartan-M4 (glucuronide derivative)	e	lstnm4		False	-1000.0	1000.0
+MAR12681	EX_lstnm5_e	metBiGGID	MAM03734e	Losartan-M5	e	lstnm5		False	-1000.0	1000.0
+MAR12682	EX_lstnm7_e	metBiGGID	MAM03735e	Losartan-N2-glucuronide / Losartan-M7	e	lstnm7		False	-1000.0	1000.0
+MAR12683	EX_lvst_e	metBiGGID	MAM03736e	lovastatin lactone form	e	lvst		False	-1000.0	1000.0
+MAR12684	EX_mdz_e	metBiGGID	MAM03756e	Midazolam	e	mdz		False	-1000.0	1000.0
+MAR12685	EX_mdzglc_e	metBiGGID	MAM03757e	Midazolam-glucuronide	e	mdzglc		False	-1000.0	1000.0
+MAR12686	EX_meracmp_e	metBiGGID	MAM03759e	acetaminophen-mercapturate-conjugate/N-acetyl-cysteine-acetaminophen	e	meracmp		False	-1000.0	1000.0
+MAR12687	EX_mhglz_e	metBiGGID	MAM03770e	Methyl-hydroxy-gliclazide	e	mhglz		False	-1000.0	1000.0
+MAR12688	EX_ndersv_e	metBiGGID	MAM03780e	N-desmethyl-rosuvastatin	e	ndersv		False	-1000.0	1000.0
+MAR12689	EX_nfdac_e	metBiGGID	MAM03781e	acid metabolite of nifedipine	e	nfdac		False	-1000.0	1000.0
+MAR12690	EX_nfdlac_e	metBiGGID	MAM03782e	lactone form of nifedipine	e	nfdlac		False	-1000.0	1000.0
+MAR12691	EX_nfdnpy_e	metBiGGID	MAM03783e	Nitropyridine metabolite of nifedipine	e	nfdnpy		False	-1000.0	1000.0
+MAR12692	EX_nfdoh_e	metBiGGID	MAM03784e	hydroxy metabolite of nifedipine	e	nfdoh		False	-1000.0	1000.0
+MAR12693	EX_oxyp_e	metBiGGID	MAM03801e	oxypurinol	e	oxyp		False	-1000.0	1000.0
+MAR12694	EX_oxy1rb_e	metBiGGID	MAM03799e	oxypurinol-1-riboside	e	oxy1rb		False	-1000.0	1000.0
+MAR12695	EX_oxy7rb_e	metBiGGID	MAM03800e	oxypurinol-7-riboside	e	oxy7rb		False	-1000.0	1000.0
+MAR12696	EX_profvs_e	metBiGGID	MAM03892e	des-isoproylpropionic-acid-fluvastatin	e	profvs		False	-1000.0	1000.0
+MAR12697	EX_ptvst_e	metBiGGID	MAM03911e	pitavastatin	e	ptvst		False	-1000.0	1000.0
+MAR12698	EX_ptvstlac_e	metBiGGID	MAM03913e	pitavastatin-lactone	e	ptvstlac		False	-1000.0	1000.0
+MAR12699	EX_ptvstm3_e	metBiGGID	MAM03915e	pitavastatin-M3	e	ptvstm3		False	-1000.0	1000.0
+MAR12700	EX_pvs_e	metBiGGID	MAM03916e	pravastatin	e	pvs		False	-1000.0	1000.0
+MAR12701	EX_pvsgluc_e	metBiGGID	MAM03917e	pravastatin glucuronide	e	pvsgluc		False	-1000.0	1000.0
+MAR12702	EX_rsv_e	metBiGGID	MAM03918e	rosuvastatin	e	rsv		False	-1000.0	1000.0
+MAR12703	EX_rsvlac_e	metBiGGID	MAM03920e	rosuvastatin-5S-lactone	e	rsvlac		False	-1000.0	1000.0
+MAR12704	EX_s3meacmp_e	metBiGGID	MAM03921e	sulphate-conjugate-3-methoxy-acetaminophen	e	s3meacmp		False	-1000.0	1000.0
+MAR12705	EX_smv_e	metBiGGID	MAM03934e	simvastatin lactone form	e	smv		False	-1000.0	1000.0
+MAR12706	EX_smvacid_e	metBiGGID	MAM03935e	simvastatin dihydroxy acid form	e	smvacid		False	-1000.0	1000.0
+MAR12707	EX_stacmp_e	metBiGGID	MAM03952e	sulphate-conjugate of thiomethyl-acetaminophen	e	stacmp		False	-1000.0	1000.0
+MAR12708	EX_sulpacmp_e	metBiGGID	MAM03958e	sulphate-conjugate-acetaminophen	e	sulpacmp		False	-1000.0	1000.0
+MAR12709	EX_tacr_e	metBiGGID	MAM03959e	Tacrolimus	e	tacr		False	-1000.0	1000.0
+MAR12710	EX_tauribup__S_e	rxnBiGGID	MAM03961e	taurine conjugate of S-ibuprofen	e			False	-1000.0	1000.0
+MAR12711	EX_thrfvs_e	metBiGGID	MAM03985e	threo-isomer of fluvastain	e	thrfvs		False	-1000.0	1000.0
+MAR12712	EX_tlacfvs_e	metBiGGID	MAM03998e	trans-lactone-fluvastatin	e	tlacfvs		False	-1000.0	1000.0
+MAR12713	EX_tmd_e	metBiGGID	MAM04000e	Torasemide	e	tmd		False	-1000.0	1000.0
+MAR12714	EX_tmdm1_e	metBiGGID	MAM04001e	Torasemide-M1	e	tmdm1		False	-1000.0	1000.0
+MAR12715	EX_tmdm3_e	metBiGGID	MAM04002e	Torasemide-M3	e	tmdm3		False	-1000.0	1000.0
+MAR12716	EX_tmdm5_e	metBiGGID	MAM04003e	Torasemide-M5	e	tmdm5		False	-1000.0	1000.0
+MAR12717	EX_tripvs_e	metBiGGID	MAM04007e	triol metabolite of pravastatin	e	tripvs		False	-1000.0	1000.0
+MAR12718	EX_tsacmgluc_e	metBiGGID	MAM04038e	thiomethyl-sulphoxide-acetaminophen-glucuronide	e	tsacmgluc		False	-1000.0	1000.0
+MAR12719	EX_tsacmsul_e	metBiGGID	MAM04039e	thiomethyl-sulphoxide-acetaminophen-sulphate	e	tsacmsul		False	-1000.0	1000.0
+MAR12966	EX_lvstacid_e	metBiGGID	MAM03737e	lovastatin-hydroxyacid form	e	lvstacid		False	-1000.0	1000.0
+MAR12977	EX_ptvstm13_e	metBiGGID	MAM03914e	pitavastatin-M13	e	ptvstm13		False	-1000.0	1000.0
+MAR13030	EX_1a25dhvitd2_e	metBiGGID	MAM00519e	1-alpha,25-dihydroxyvitamin D2	e	1a25dhvitd2		False	-1000.0	1000.0
+MAR13031	EX_C13856_e	metBiGGID	MAM00635e	2-arachidonoylglycerol	e	C13856	C13856	False	-1000.0	1000.0
+MAR13032	EX_M02956_e	rxnBiGGID	MAM02956e	TAG-chylomicron pool	e		C00422	False	-1000.0	1000.0
+MAR13033	EX_M00234_e	rxnBiGGID	MAM00234e	1,2-diacylglycerol-chylomicron pool	e		C00641	False	-1000.0	1000.0
+MAR13034	EX_M01807_e	rxnBiGGID	MAM01807e	fatty acid-chylomicron pool	e			False	-1000.0	1000.0
+MAR13035	EX_M00503_e	rxnBiGGID	MAM00503e	1-acylglycerol-chylomicron pool	e		C01885	False	-1000.0	1000.0
+MAR13036	EX_M00241_e	rxnBiGGID	MAM00241e	1,2-diacylglycerol-VLDL pool	e		C00641	False	-1000.0	1000.0
+MAR13037	EX_M01820_e	rxnBiGGID	MAM01820e	fatty acid-VLDL pool	e		C00162	False	-1000.0	1000.0
+MAR13038	EX_M00510_e	rxnBiGGID	MAM00510e	1-acylglycerol-VLDL pool	e		C01885	False	-1000.0	1000.0
+MAR13039	EX_MAR13039	no cross-reference	MAM01819e	fatty acid-uptake pool	e		C00162	False	-1000.0	1000.0
+MAR13040	EX_M00003_e	metBiGGID	MAM00003e	(10Z)-heptadecenoic acid	e	M00003		False	-1000.0	1000.0
+MAR13042	EX_M00010_e	metBiGGID	MAM00010e	(11Z,14Z,17Z)-eicosatrienoic acid	e	M00010	C16522	False	-1000.0	1000.0
+MAR13043	EX_M00017_e	metBiGGID	MAM00017e	(13Z)-eicosenoic acid	e	M00017	C21946	False	-1000.0	1000.0
+MAR13044	EX_M00019_e	metBiGGID	MAM00019e	(13Z)-octadecenoic acid	e	M00019		False	-1000.0	1000.0
+MAR13045	EX_M00021_e	metBiGGID	MAM00021e	(13Z,16Z)-docosadienoic acid	e	M00021	C16533	False	-1000.0	1000.0
+MAR13046	EX_M00115_e	metBiGGID	MAM00115e	(7Z)-octadecenoic acid	e	M00115		False	-1000.0	1000.0
+MAR13047	EX_M00117_e	metBiGGID	MAM00117e	(7Z)-tetradecenoic acid	e	M00117		False	-1000.0	1000.0
+MAR13048	EX_M00260_e	metBiGGID	MAM00260e	10,13,16,19-docosatetraenoic acid	e	M00260		False	-1000.0	1000.0
+MAR13049	EX_M00265_e	rxnBiGGID	MAM00265e	(10Z,13Z,16Z)-docosatrienoic acid	e			False	-1000.0	1000.0
+MAR13050	EX_M00315_e	metBiGGID	MAM00315e	12,15,18,21-tetracosatetraenoic acid	e	M00315		False	-1000.0	1000.0
+MAR13051	EX_M00341_e	metBiGGID	MAM00341e	13,16,19-docosatrienoic acid	e	M00341	C16534	False	-1000.0	1000.0
+MAR13052	EX_M01197_e	rxnBiGGID	MAM01197e	7-palmitoleic acid	e			False	-1000.0	1000.0
+MAR13053	EX_M01207_e	metBiGGID	MAM01207e	8,11-eicosadienoic acid	e	M01207		False	-1000.0	1000.0
+MAR13054	EX_M01235_e	metBiGGID	MAM01235e	9-eicosenoic acid	e	M01235		False	-1000.0	1000.0
+MAR13055	EX_M01238_e	rxnBiGGID	MAM01238e	9-heptadecylenic acid	e		C16536	False	-1000.0	1000.0
+MAR13056	EX_M01582_e	metBiGGID	MAM01582e	cis-cetoleic acid	e	M01582		False	-1000.0	1000.0
+MAR13057	EX_M02053_e	metBiGGID	MAM02053e	heneicosanoic acid	e	M02053		False	-1000.0	1000.0
+MAR13058	EX_M02457_e	rxnBiGGID	MAM02457e	mead acid	e		C21938	False	-1000.0	1000.0
+MAR13059	EX_M02613_e	metBiGGID	MAM02613e	nonadecylic acid	e	M02613	C16535	False	-1000.0	1000.0
+MAR13060	EX_M02745_e	metBiGGID	MAM02745e	physeteric acid	e	M02745		False	-1000.0	1000.0
+MAR13061	EX_M03045_e	metBiGGID	MAM03045e	tricosanoic acid	e	M03045		False	-1000.0	1000.0
+MAR13062	EX_M03051_e	metBiGGID	MAM03051e	tridecylic acid	e	M03051	C17076	False	-1000.0	1000.0
+MAR13063	EX_M03153_e	metBiGGID	MAM03153e	ximenic acid	e	M03153	C17278	False	-1000.0	1000.0
+MAR13065	EX_MAR13065	no cross-reference	MAM01395e	bile-PC pool	e			False	-1000.0	1000.0
+MAR13067	EX_M02837_e	rxnBiGGID	MAM02837e	retinyl palmitate	e			False	-1000.0	1000.0
+MAR13068	EX_MAR13068	no cross-reference	MAM02382e	Li+	e			False	-1000.0	1000.0
+MAR13069	EX_M02035_e	metBiGGID	MAM02035e	guanidine	e	M02035	C17349	False	-1000.0	1000.0
+MAR13070	EX_M02467_e	metBiGGID	MAM02467e	metformin	e	M02467	C07151	False	-1000.0	1000.0
+MAR13071	EX_MAR13071	no cross-reference	MAM02821e	quinidine	e		C06527	False	-1000.0	1000.0
+MAR13072	EX_mg2_e	metBiGGID	MAM02482e	Mg2+	e	mg2	C00305	False	-1000.0	1000.0
+MAR13073	EX_cu2_e	metBiGGID	MAM01624e	Cu2+	e	cu2	C22424	False	-1000.0	1000.0
+MAR13074	EX_MAR13074	no cross-reference	MAM01571e	cimetidine	e		C06952	False	-1000.0	1000.0
+MAR20180	EX_MAR20180	no cross-reference	MAM00077e	(2R)-pristanic acid	e			False	-1000.0	1000.0
+MAR20196	EX_MAR20196	no cross-reference	MAM00232e	1,2-D-glucosyl-5-D-(galactosyloxy)-L-lysine-procollagen	e		C04759	False	-1000.0	1000.0
+MAR20202	EX_dhor__S_e	metBiGGID	MAM00180e	(S)-dihydroorotate	e	dhor__S	C00337	False	-1000.0	1000.0
+MAR20207	EX_r2hglut_e	metBiGGID	MAM20012e	(R)-2-hydroxyglutarate	e	r2hglut	C01087	False	-1000.0	1000.0

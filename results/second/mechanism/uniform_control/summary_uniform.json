@@ -1,0 +1,19 @@
+{
+  "status": "complete_verified",
+  "arm": "uniform_pfba",
+  "scenario": "primary",
+  "targets": 52,
+  "context_independent": true,
+  "counts": {
+    "already_fixed_B0": 2,
+    "first_fixed_B1": 45,
+    "first_fixed_B2": 5,
+    "still_variable_B2": 0
+  },
+  "free_targets_after_B0": 50,
+  "share_of_free_first_fixed_by_B1": 0.9,
+  "validation_issues": [],
+  "seconds": 272.39236033300404,
+  "completed_at_utc": "2026-11-14T17:41:12.603883+00:00",
+  "interpretation": "A uniform cost cap carries no transcript information. Its fixed-coordinate share is the reference against which the transcript-weighted arms' share must be read."
+}

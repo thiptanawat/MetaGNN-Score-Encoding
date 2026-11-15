@@ -1,10 +1,17 @@
 # Release manifest
 
-Release tag: `v1.2.1`
-Archived record: https://doi.org/10.5281/zenodo.24136182 (release v1.2.1, tag object `991af7f2`, commit `46675ed8c5a0733c33a0084858de8b97a9415843`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
+Release tag: `v1.3.0`
+Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
 
-Release v1.2.1 is release v1.2.0 with the figure script for figures 4 to 6 and two rendered figures
-replaced (section 8); every other file, and both release assets, are those of v1.2.0.
+Release v1.3.0 is release v1.2.1 with the second reconstruction added (section 9): the directory
+`second/` (the locked plan, the code and driver of the analysis, the build records, the identifier
+audit and five tests) and the directory `results/second/` (the lock of the second root and its
+outputs), one new release asset, and edits to eleven existing files. Section 9 lists them. No
+locked file, lock, result or output of the main analysis changed, and the two release assets of
+v1.2.1 are those of v1.2.0.
+
+Release v1.2.1 was release v1.2.0 with the figure script for figures 4 to 6 and two rendered
+figures replaced (section 8).
 
 This file states what the release carries, how it relates to the locked study directory the
 analyses ran in, what regenerates from what, and what was changed when the working tree was
@@ -42,8 +49,11 @@ analyses; those analyses record their own input digests in their run manifests.
 | Per-arm records of the two runs (`results/*/arms/`, 1,698 and 402 files) and the two `run_summary.json` files | release assets (table below), not in the tree | the same two commands | each JSON record names the digest of its NPZ array; `verify/check_release.py` checks every pair when the assets are unpacked; `reports/fresh_arm_reproduction_v3/comparison.json` records a fresh arm that matched its saved record with zero difference in every flux |
 | Validation evidence named in the lock (`reports/`, `results/production_controls.json`) | yes, byte for byte | `reproduce.sh --stage controls`, `--stage tests`; the fresh-arm and clean-directory reproductions were one-off records | lock reconciliation |
 | Post-lock analyses: code and outputs (`coverage/`, `mechanism/`, `closure/`, `copeland/`, `endpoint/`, `figures/` and their `results/` directories) | yes | `reproduce_extensions.sh <stage>` into `results_repeat/<timestamp>/`; needs the release assets for the mechanism and closure stages, the packages in `environment_extensions.txt` for three stages, and `copeland/fetch_inputs.sh` for the independent evaluation | `CHECKSUMS.sha256`; the run manifests record the digests of their inputs; `verify/verify_manuscript_numbers.py` traces every reported number to these files |
+| Second reconstruction: plan, code, driver, build records, identifier audit, tests (`second/`) | yes, byte for byte for the plan, the four Python scripts, `run_ranges.sh` and the build records | `second/reproduce_second.sh` stage by stage from a Human-GEM 2.1.1 checkout, which is not redistributed; its `build` stage prints `identical` or `DIFFERS` for each of the four build records | `CHECKSUMS.sha256`; the plan's SHA-256 `0de8cbf4a737829b4c005b33122568d1abb342166162917f5d5481d4b7cd9a81` is written in the lock of the second root and checked by the driver; `python -m pytest -q second/tests` (5 tests; the locked study's 74 stay under `tests/`) |
+| Second reconstruction: outputs (`results/second/`) | yes (the lock and its plan copy, predictions, evaluations, the ledgers, summaries and run manifests of the range stages and of their partial development pilot, the cap sweep and the solver check); the per-arm records and the two `run_summary.json` files are a release asset, not in the tree | the same driver, stages `development` to `evaluate` | `CHECKSUMS.sha256`; `results/second/protocol/PROTOCOL_LOCK.json` names the plan digest; `verify/verify_manuscript_numbers.py` traces every reported number of the second reconstruction to these files; `verify/check_release.py` checks every record of the asset against its flux array when the asset is unpacked |
 | Third-party raw inputs (Recon3D, CellMiner archive, the Jain et al. workbook and supplementary PDF) | no | retrieved once as `data/raw/README.md` describes | `python -m src.verify_inputs --root . --check raw` |
 | Independent-evaluation inputs (two public git repositories) | no | `copeland/fetch_inputs.sh` clones them and refuses any commit other than the pinned ones | digests of the two `.rda` files checked by that script |
+| Human-GEM 2.1.1 (the second reconstruction; public repository, CC BY 4.0) | no | `second/build_root.py` rebuilds the second root from the pinned commit; `second/reproduce_second.sh build` refuses any other commit and checks the five file digests of `second/build_report.json` | the same five digests, listed in `SOURCES.md` |
 
 ### Release assets
 
@@ -51,10 +61,14 @@ analyses; those analyses record their own input digests in their run manifests.
 |---|---:|---|---|
 | `reserved_v3_arms.tar.gz` | 108149951 | `083524997b82bb2e459c2ca078a2c72000566f9ad960b108f11fce23ca91a210` | `arms/` (849 JSON records and 849 NPZ flux arrays of the reserved run: 47 profiles, 6 encodings and 3 scenarios, plus the 3 context-independent uniform-cost records) and `run_summary.json`; unpack into `results/reserved_v3/` |
 | `development_v3_arms.tar.gz` | 25567045 | `94709ee80f65a81fed390845c7626622a080ac4c1d3a3634e2ac31dfbc17f351` | `arms/` (201 JSON records and 201 NPZ arrays of the development run) and `run_summary.json`; unpack into `results/development_v3/` |
+| `second_reconstruction_arms.tar.gz` | 28732431 | `de9dc74000a43b274afb91694efd1935490daafc3c32890e8c4da694f7bac401` | The per-arm records of the second reconstruction: `results/second/reserved_v3/arms/` (283 JSON records and 283 NPZ flux arrays of the reserved run: 47 profiles under 6 encodings in the primary scenario, plus the uniform-cost record), `results/second/development_v3/arms/` (67 JSON records and 67 NPZ arrays of the development run) and the two `run_summary.json` files; the paths in the archive start at `results/`, so unpack it at the repository root |
 
-`bash verify/fetch_release_assets.sh` downloads both from the release that matches this checkout,
-verifies these digests and unpacks them. The two archives attached to release v1.2.1 are the
-archives of release v1.2.0, unchanged.
+`bash verify/fetch_release_assets.sh` downloads the three from the release that matches this
+checkout, verifies these digests and unpacks them (`reserved`, `development` or `second` as its
+argument fetches one). The first two archives, attached to releases v1.2.1 and v1.3.0, are the
+archives of release v1.2.0, unchanged. The third archive is new in v1.3.0. No stage of
+`reproduce_extensions.sh` and no check of the reported numbers needs it; when it is unpacked,
+`verify/check_release.py` compares each of its flux arrays with the digest in its record.
 
 ## 3. Path map from release v1.1.0
 
@@ -165,7 +179,8 @@ written while the study was assembled are not deposited; the machine records the
 The record of the clean-checkout verification is `verify/clean_checkout_log_v1.2.0.md`. It was
 performed on release v1.2.0. Release v1.2.1 differs from it only in the four files of section 8,
 none of which is an input to an analysis or to the number checker; the checks repeated on a fresh
-clone of v1.2.1 are listed in that section.
+clone of v1.2.1 are listed in that section. Release v1.3.0 adds files and edits the files listed in
+section 9, which also lists the checks repeated on a fresh clone of v1.3.0.
 
 ## 8. Changes in v1.2.1
 
@@ -189,3 +204,74 @@ Checks repeated on a fresh clone of v1.2.1 before the tag was pushed: `python ve
 1), `FIGURE_OUT=<new directory> python figures/make_figures.py` (figures 4 to 6 render from the
 deposited outputs), and `python verify/verify_manuscript_numbers.py` against the manuscript and
 its supplementary article (284 checks, 0 problems).
+
+## 9. Changes in v1.3.0
+
+Release v1.3.0 adds the second reconstruction and edits eleven existing files. No analysis of the
+main study was rerun. No locked file, no lock, no result and no output of the main analysis
+changed: `protocol/PROTOCOL_LOCK.json` and every file it names are as in v1.2.1, and the lock
+reconciliation of section 1 is unchanged. The lock of the second root
+(`results/second/protocol/PROTOCOL_LOCK.json`) is a separate record in a separate directory, and
+the main lock was not rewritten.
+
+Files added (155):
+
+| Directory | Files | Contents |
+|---|---:|---|
+| `second/` | 13 | `README.md`, the locked plan `SECOND_RECONSTRUCTION_PLAN_2026-11-14.md` (SHA-256 `0de8cbf4a737829b4c005b33122568d1abb342166162917f5d5481d4b7cd9a81`), `build_root.py`, `run_arms.py`, `in_second_root.py`, `run_ranges.sh`, `summarize.py`, `reproduce_second.sh`, `build_report.json`, `exchange_map.tsv`, `target_map.tsv`, `medium_additions.tsv`, `environment_second.txt` |
+| `second/audit/` | 12 | `README.md`, `target_audit.tsv`, `medium_audit.tsv`, `alternatives.tsv`, `medium_alternatives.tsv`, `medium_missing_candidates.tsv`, `yml_crosscheck.txt`, and five scripts under `scripts/` |
+| `second/tests/` | 1 | `test_second_summarize.py` (5 tests; kept outside `tests/` so that the locked study's 74 tests stay 74) |
+| `results/second/` | 129 | `protocol/` (the lock of the second root and the plan copy it names), `second_summary.json`, `reserved_v3/` (7 files), `development_v3/` (3), `mechanism/` (16: the four files of the interval-position analysis, `reserved_range/` with 3, `uniform_control/` with 4 and `bottleneck_pilot/` with 5), `closure/cap_sweep/` (3 files and 95 job records) and `closure/solver_check_96/` (2) |
+
+Not carried, as for the main runs (section 6): the per-arm records and flux arrays of the second
+root and its two `run_summary.json` files, which are the release asset named in section 2; the
+per-job records and extrema arrays of the range stages (171 MB for the reserved stage; the ledgers
+built from them are deposited); and the logs of the runs. The development pilot of the range
+stages on the second root is partial, as the plan states (8 of 22 calculations inside the time
+budget fixed in the script); its ledger, summary, run manifest and network-only record are
+deposited under `results/second/mechanism/bottleneck_pilot/` because the interval-position analysis
+reads the ledger, and its per-job records are not. The plan copy under `results/second/protocol/`
+has the SHA-256 of the plan above. The second root's input digests are in its lock, and the
+Human-GEM digests are in `second/build_report.json`.
+
+Two run manifests of the second root stored absolute workstation paths and were normalized as in
+section 5: the prefix of the second root was removed from the names of the inputs and the prefix
+of the interpreter from its path. No digest value inside either record was changed.
+
+| File | Original SHA-256 | Deposited SHA-256 |
+|---|---|---|
+| `results/second/mechanism/reserved_range/run_manifest.json` | `0df0c6b1b1f2fc066c17c2a77d5694c6539d75ed7f1abf998f93735641d0ccf2` | `6272876193e6d770f975a92d7a4bc58f6d1bf34b347dfaddaa6ce011a1b202df` |
+| `results/second/mechanism/bottleneck_pilot/run_manifest.json` | `ce8b1a9dc3509f45401309163c5c001099daca16897d2458b1aaf3a15ba222e1` | `6befeb8805bffe42c7acf5a36b87d679ea8e2bd5380f83a9e2742cce1d426675` |
+
+Files changed (11). The digests before are those of the main branch at commit `cbfa9bb`, that is,
+release v1.2.1 followed by the commit that recorded its archived identifier in `CITATION.cff`,
+`SOURCES.md` and this file; for the other eight files they are also the digests in release v1.2.1.
+
+| File | Digest before | Digest in v1.3.0 | Change |
+|---|---|---|---|
+| `README.md` | `a32d889128e7b206d690f73768f5cd873013fb5ba8047299442117a18a7c771a` | `d928d9e0a209e996de07a3c28e9f99663a8d6958152f3162e7ac0e899b2a14d3` | a section on the second reconstruction, one Layout row each for `second/` and `results/second/`, and the driver `second/reproduce_second.sh` under Reproducing; no statement about the main analysis changed |
+| `RELEASE_MANIFEST.md` | `639796e7ca0d133389b2d4c5d3645bcc435e091c37ab18ea9db80c40cf02540e` | see `CHECKSUMS.sha256` | this file: tag, opening paragraph, section 2 rows, the third release asset, section 7 and this section |
+| `.gitignore` | `ea17fe4a7f6ec2a23be201593767f24423a64dd15d5624314582f33d61c9eabc` | `dacf876115a967aca4e10967d0f929f550806b9b03273b3abe283514b174851b` | four lines: the `arms/` directories and the `run_summary.json` files of `results/second/reserved_v3/` and `results/second/development_v3/`, which the third release asset unpacks |
+| `verify/write_checksums.py` | `386bb28e33464ded186a2743be0fa99f0713096c0a7184219de4d4e4e280b8b8` | `a95091b49640de12aa4c8e36be019f422b9d763402c55eda1ca687a8a3e089c9` | the exclusion of the per-arm records and run summaries also covers those under `results/second/` |
+| `verify/check_release.py` | `03eb39d92e9b24ab6079fadd4f6060f37afd50be7923adf9d1cab7c930ca905d` | `259315a18bb38180961739c13dc0a7a9129a44f8902daccace7147f57b28cae9` | the same exclusion, and the comparison of each per-arm record with its flux array also runs over the two runs of the second reconstruction when the third asset is unpacked; the checks of the main analysis are unchanged |
+| `verify/fetch_release_assets.sh` | `2156caf23db55678e6d54e4ec0701176ca3f85ecb9566017e1cce8c193499fa7` | see `CHECKSUMS.sha256` | fetches, verifies and unpacks the third asset (`second`, and as part of `all`); the first two are handled as before |
+| `CITATION.cff` | `ec08e9d7bcc24689cea5264b0500d6f1f6da846dd50097347356c171461ff298` | `4958775ed452b80c5985c2f8793637b8698419964419985411b27b1aff744303` | `version` 1.3.0 and `date-released` 2026-11-15; no new identifier, because the identifier of this release does not exist before it is archived |
+| `PROVENANCE_NOTE.md` | `2de0084f376b087415b493ceaa3fa2a2d803717a1e4927719b92054f4b4b18a0` | `b68687ed539cd08df5eb8b776f4bfb3ff3f1b220cb8ad6e7a3e3e1639ecdb53a` | a "Version 1.3.0" paragraph: two run manifests of the second root were normalized (digests above); four added files were edited, with digests before and after |
+| `SOURCES.md` | `e44ab0d594c5a51c9006cf6f301ece6886ef0e090f66c7845e49d1257f4560fe` | `7a9b63a43e0bd012a1f84d33cb6efe78cdd06a5e564b9b5c2c649872ea7bda72` | the entry for Human-GEM 2.1.1 (commit, license, five digests, citation, not redistributed) and a sentence on `results/second/`; the archived-record section still names v1.2.1 and earlier |
+| `reproduce_extensions.sh` | `4c6e8eddeb0fa3506612b262cbbcf1e242e27cb243423a60611856302ae0a6de` | `155e5581933e0b741626351bd445ee86c93a7d70943b6f341f5f2978d9c26b4e` | the `tests` stage also runs `pytest -q second/tests`; two header lines name `second/reproduce_second.sh`; the usage text prints one more line |
+| `verify/verify_manuscript_numbers.py` | `a13bd3279685a597873615cde48b99f7f8c604fd3e11ece066aa4b2738cde6ae` | `0259da88311cda53e2f48256fe950e04b58e69b42f37a20185d62d55e8a862d3` | the 45 checks of Supplementary Methods S22 are added before the report, reading `second/` and `results/second/` and, for the Recon3D values beside them, the cap-sweep files the script already reads; the earlier 284 checks are unchanged |
+
+`CHECKSUMS.sha256` is regenerated and lists the 155 added files.
+
+Checks repeated on a fresh clone of v1.3.0 before the tag was pushed: `python verify/check_release.py`
+(every file listed in `CHECKSUMS.sha256` matches, and the lock reconciliation is that of section
+1; with the third asset unpacked, the 283 and 67 flux arrays of the second reconstruction match the
+digests in their records), `python verify/verify_manuscript_numbers.py` against the manuscript and
+its supplementary article (329 checks, 0 problems), `python -m pytest -q second/tests` (5 tests),
+`bash second/reproduce_second.sh build` from a Human-GEM checkout at the pinned commit (the four
+build records it writes are identical to the deposited copies), `bash second/reproduce_second.sh
+evaluate` in the second root that the build wrote, after the lock, the plan copy and the deposited
+predictions, ledgers and cap-sweep records were placed in it (the lock accepts the rebuilt inputs,
+and the ten files the stage writes are identical to the deposited copies), and the scripts of
+`second/audit/scripts/` (the six tables and the report they write are identical to the deposited
+copies). The arm runs and the range stages were not repeated for this check.

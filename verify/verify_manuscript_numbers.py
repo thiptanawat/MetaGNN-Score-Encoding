@@ -449,6 +449,115 @@ check("lactate to growth ratio", "26.1 to 26.3 times the imposed growth rate", T
 ratio_o = [float(r["predicted_lactate_midrank"]) / float(r["growth_per_h"]) for r in ct]
 check("lactate to growth ratio midrank", "26.3 to 26.8 times under the midrank", True, round(min(ratio_o), 1) == 26.3 and round(max(ratio_o), 1) == 26.8)
 
+# ---------------------------------------------------------------- second reconstruction (Human-GEM), Supplementary Methods S22
+R2 = "results/second/"
+h_eval = load_json(R2 + "reserved_v3/evaluation_primary.json")["primary_fixed_panel"]
+h_tr = load_json(R2 + "reserved_v3/transform_primary.json")["primary_fixed_panel"]
+h_pass = load_json(R2 + "reserved_v3/second_solver_arms.json")
+h_build = load_json("second/build_report.json")
+h_lock = load_json(R2 + "protocol/PROTOCOL_LOCK.json")
+h_sum = load_json(R2 + "second_summary.json")
+h_uni = load_json(R2 + "mechanism/uniform_control/summary_uniform.json")
+h_rng = load_json(R2 + "mechanism/reserved_range/summary.json")
+h_cs = load_json(R2 + "closure/cap_sweep/summary.json"); h_cc = load_json(R2 + "closure/cap_sweep/cap_concordance.json")
+m_cs = load_json("closure_2026-09-16/results/cap_sweep/summary.json"); m_cc = load_json("closure_2026-09-16/results/cap_sweep/cap_concordance.json")
+import hashlib as _hl
+check("second reconstruction, plan hash equals the lock", h_lock["second_reconstruction_plan_sha256"], h_lock["second_reconstruction_plan_sha256"],
+      _hl.sha256(open(ROOT / "second/SECOND_RECONSTRUCTION_PLAN_2026-11-14.md", "rb").read()).hexdigest())
+check("second, changed predictions", "249 of 2,444 predictions (10.19 percent)", 249, h_tr["changed_cells"])
+check("second, changed share", "(10.19 percent)", 10.19, round(100 * h_tr["changed_fraction"], 2))
+check("second, reversals", "2,092 of 56,056 between-origin orderings (3.73 percent)", 2092, h_tr["strict_order_reversals_across_grid"])
+check("second, reversal share", "(3.73 percent)", 3.73, round(100 * h_tr["strict_order_reversal_fraction"], 2))
+check("second, tie transitions", "1,907 transitions to or from a tie", 1907, h_tr["tie_transition_without_strict_reversal_pairs"])
+_hc = h_eval["primary"]["absolute_macro_C"]; _pow = [k for k in _hc if k.startswith("magnitude")]
+check("second, eligible pairs", "46,447 eligible pairs", 46447, h_eval["observed_eligible_pairs"])
+check("second, power concordance range", "0.4973 to 0.5018", "0.4973 to 0.5018", "%.4f to %.4f" % (min(_hc[k] for k in _pow), max(_hc[k] for k in _pow)))
+check("second, midrank concordance", "0.5013 for the midrank encoding", 0.5013, round(_hc["ordinal"], 4))
+_hb = h_eval["bootstrap"]
+check("second, grid contrast", "0.0017 (95 percent interval -0.0031 to 0.0063)", "0.0017 -0.0031 0.0063",
+      "%.4f %.4f %.4f" % (h_eval["primary"]["delta_grid"], _hb["delta_grid_interval"][0], _hb["delta_grid_interval"][1]))
+check("second, identity contrast", "0.0005 (-0.0054 to 0.0059)", "0.0005 -0.0054 0.0059",
+      "%.4f %.4f %.4f" % (h_eval["primary"]["delta_identity"], _hb["delta_identity_interval"][0], _hb["delta_identity_interval"][1]))
+check("second, valid resamples", "2,000 valid origin resamples", 2000, _hb["valid_draws"])
+check("second, arms", "All 283 arms", 283, h_pass["arms"])
+check("second, GLPK failures", "failed in 4 of them", 4, len(h_pass["failed_in_pass1"]))
+check("second, solved in the second pass", "HiGHS solved those 4", 4, len(h_pass["solved_in_pass2"]))
+check("second, none failed twice", "no arm failed on both passes", 0, len(h_pass["still_failed"]))
+_arm = defaultdict(lambda: [0, 0, 0])
+for r in h_rng["summary_by_profile_arm"]:
+    _arm[r["arm"]][0] += r["targets"] - r["B0_fixed"]; _arm[r["arm"]][1] += r["first_fixed_B1"]; _arm[r["arm"]][2] += r["B0_fixed"]
+_enc = [a for a in _arm if a != "uniform_pfba"]
+check("second, network-fixed targets", "The network alone fixed 2 of the 52 targets", True, all(_arm[a][2] == 2 * 47 for a in _enc))
+check("second, open cells", "Of the 2,350 coordinate cells per encoding", True, all(_arm[a][0] == 2350 for a in _enc))
+check("second, cap first-fixed range", "2,153 to 2,223 (91.6 to 94.6 percent)", "2153 2223 91.6 94.6",
+      "%d %d %.1f %.1f" % (min(_arm[a][1] for a in _enc), max(_arm[a][1] for a in _enc), 100 * min(_arm[a][1] for a in _enc) / 2350, 100 * max(_arm[a][1] for a in _enc) / 2350))
+check("second, cap share in the Conclusions", "91.6 to 94.6 percent of the free coordinates", True, True)
+check("second, range calculations", "All 282 range calculations completed", True,
+      h_rng["B1_completed"] == 282 and h_rng["B1_failed_or_incomplete"] == 0 and h_rng["validation_issues"] == [] and h_rng["all_input_hashes_unchanged"])
+check("second, uniform cost", "45 of the 50 free targets (90.0 percent", "45 50 90.0",
+      "%d %d %.1f" % (h_uni["counts"]["first_fixed_B1"], h_uni["free_targets_after_B0"], 100 * h_uni["share_of_free_first_fixed_by_B1"]))
+check("second, constant targets", "46 of the 52 targets were constant across the 47 profiles", 46, h_sum["constant_under_every_encoding"])
+check("second, constant targets at the uniform value", "all 46 took the uniform solution's value", 46, h_sum["constant_under_every_encoding_and_at_uniform_value"])
+_mv = h_sum["targets_moved_from_uniform_value_per_profile"]
+check("second, moved targets", "5 or 6 of the 52 targets differed from the uniform values (median over profiles; range 4 to 6)", "5 6 4 6",
+      "%d %d %d %d" % (min(v["median"] for v in _mv.values()), max(v["median"] for v in _mv.values()), min(v["min"] for v in _mv.values()), max(v["max"] for v in _mv.values())))
+check("second, fixed at the near-exact cap", "48.2 of the 52 coordinates was fixed under the identity encoding and 49.3 under the midrank", "48.2 49.3",
+      "%.1f %.1f" % (h_cs["magnitude_g1.00"]["exact"]["mean_fixed_of_52"], h_cs["ordinal"]["exact"]["mean_fixed_of_52"]))
+check("second, certified orderings", "3,906 and 3,506 of the 46,447 orderings (8.41 and 7.55 percent)", "3906 3506 8.41 7.55",
+      "%d %d %.2f %.2f" % (h_cc["magnitude_g1.00"]["exact"]["resolved_pairs"], h_cc["ordinal"]["exact"]["resolved_pairs"],
+                           100 * h_cc["magnitude_g1.00"]["exact"]["resolved_share"], 100 * h_cc["ordinal"]["exact"]["resolved_share"]))
+check("second, looser caps", "only the 2 coordinates that the network fixes stayed fixed and no ordering was certified", True,
+      all(h_cs[a][k]["mean_fixed_of_52"] == 2.0 and h_cc[a][k]["resolved_pairs"] == 0 for a in ("magnitude_g1.00", "ordinal") for k in ("rel_1pct", "rel_5pct", "rel_20pct")))
+check("Recon3D beside it, cap sweep", "47.9 and 47.2 coordinates and 10.2 and 13.8 percent of orderings", "47.9 47.2 10.2 13.8",
+      "%.1f %.1f %.1f %.1f" % (m_cs["magnitude_g1.00"]["exact"]["mean_fixed_of_52"], m_cs["ordinal"]["exact"]["mean_fixed_of_52"],
+                               100 * m_cc["magnitude_g1.00"]["exact"]["resolved_share"], 100 * m_cc["ordinal"]["exact"]["resolved_share"]))
+# the solver check, restricted to the arms that GLPK had solved (the saved point of the other arm is itself from the second solver)
+_rows = load_tsv(R2 + "closure/solver_check_96/solver_check_rows.tsv"); _p2 = {(x["context_id"], x["arm"]) for x in h_pass["solved_in_pass2"]}
+_rb = [r for r in _rows if (r["context"], r["arm"]) not in _p2]
+check("second, solver check coordinates", "all 1,440 coordinates", True, len(_rb) == 1440 and all(r["fixed_glpk"] == r["fixed_second"] for r in _rb))
+check("second, solver check largest difference", "\\(1.0 \\times 10^{-6}\\)", 1.0, round(1e6 * max(abs(float(r["abs_diff"])) for r in _rb), 1))
+_pt = {(r["context"], r["arm"], r["exchange_id"]): (float(r["point_glpk"]), float(r["point_second"])) for r in _rows}
+_ctx = sorted({r["context"] for r in _rows}); _exs = sorted({r["exchange_id"] for r in _rows}); _sg = lambda v: 0 if abs(v) <= 1e-5 else (1 if v > 0 else -1)
+_n = _ok = 0
+for _a in sorted({r["arm"] for r in _rows}):
+    for _i in range(len(_ctx)):
+        for _j in range(_i + 1, len(_ctx)):
+            if (_ctx[_i], _a) in _p2 or (_ctx[_j], _a) in _p2: continue
+            for _e in _exs:
+                _n += 1; _ok += _sg(_pt[(_ctx[_i], _a, _e)][0] - _pt[(_ctx[_j], _a, _e)][0]) == _sg(_pt[(_ctx[_i], _a, _e)][1] - _pt[(_ctx[_j], _a, _e)][1])
+check("second, solver check signs", "all 4,704 between-profile signs agreed", "4704 4704", "%d %d" % (_ok, _n))
+# the build of the second root
+check("second, model size", "12,748 reactions, 8,374 metabolites and 2,870 genes", "12748 8374 2870", "%d %d %d" % (h_build["model"]["reactions"], h_build["model"]["metabolites"], h_build["model"]["genes"]))
+check("second, boundary reactions", "Of the 1,654 boundary reactions of Human-GEM, 1,516", "1654 1516 59 79",
+      "%d %d %d %d" % (h_build["boundary"]["n"], h_build["boundary"]["by_metBiGGID"], h_build["boundary"]["by_rxnBiGGID"], h_build["boundary"]["own_identifier"]))
+check("second, targets found", "All 96 chemistry exchanges and all 52 primary targets were found", "96 52", "%d %d" % (h_build["targets"]["panel_present"], h_build["targets"]["primary_present"]))
+check("second, medium", "It opened 58 exchanges on Human-GEM", 58, h_build["medium"]["opened_by_main_list"])
+check("second, final medium", "The resulting medium opens 64 exchanges", 64, h_build["pipeline_model"]["opened"])
+check("second, growth", "the maximum of the biomass reaction is 2.1713 and the primary task fixes it at 1.9542", "2.1713 1.9542",
+      "%.4f %.4f" % (h_build["pipeline_model"]["g_max"], h_build["pipeline_model"]["task_flux"]))
+check("second, evidence", "Of 2,870 genes, 2,187 are measured, and 7,107 of the 7,746 internal reactions with a rule are supported", "2187 7107 7746",
+      "%d %d %d" % (h_build["evidence"]["genes_measured"], h_build["evidence"]["supported_reactions"], h_build["evidence"]["internal_reactions_with_rule"]))
+check("second, scale constant", "is 5.712 on this reconstruction", 5.712, load_json(R2 + "reserved_v3/run_summary_scalars.json")["k"])
+check("second, abstract statement", "On Human-GEM the encoding, attribution and allowance findings held under rules fixed in advance.", True,
+      _hb["delta_grid_interval"][0] < 0 < _hb["delta_grid_interval"][1] and _hb["delta_identity_interval"][0] < 0 < _hb["delta_identity_interval"][1]
+      and all(_arm[a][1] > 0.5 * _arm[a][0] for a in _enc) and h_sum["constant_under_every_encoding_and_at_uniform_value"] > 0.5 * h_sum["constant_under_every_encoding"]
+      and all(h_cc[a]["rel_1pct"]["resolved_share"] < h_cc[a]["exact"]["resolved_share"] and h_cs[a]["rel_1pct"]["mean_fixed_of_52"] < h_cs[a]["exact"]["mean_fixed_of_52"]
+              for a in ("magnitude_g1.00", "ordinal")))
+
+
+# what was looked at before the plan was fixed: the development arms and the partial pilot of the range stages
+h_dpass = load_json(R2 + "development_v3/second_solver_arms.json")
+check("second, development arms GLPK did not solve", "infeasible problem in 2 of the 67 development arms", "2 67",
+      "%d %d" % (len(h_dpass["failed_in_pass1"]), h_dpass["arms"]))
+h_pil = load_json(R2 + "mechanism/bottleneck_pilot/summary.json"); _pr = h_pil["summary_by_profile_arm"]
+check("second, pilot calculations completed", "it allowed 8 of its 22 calculations (4 development profiles under two encodings)", "8 22 4 2",
+      "%d %d %d %d" % (h_pil["B1_completed"], h_pil["B1_completed"] + h_pil["B1_failed_or_incomplete"] + h_pil["B1_unstarted"],
+                       len({r["context"] for r in _pr}), len({r["arm"] for r in _pr})))
+check("second, pilot targets fixed by the network", "the network alone fixed 2 of the 52 targets", True,
+      len(_pr) == h_pil["B1_completed"] and all(r["B0_fixed"] == 2 and r["targets"] == 52 for r in _pr))
+check("second, pilot open cells fixed by the cap", "the cost cap fixed 377 of the 400 coordinate cells", "377 400",
+      "%d %d" % (sum(r["first_fixed_B1"] for r in _pr), sum(r["targets"] - r["B0_fixed"] for r in _pr)))
+
 # ---------------------------------------------------------------- report
 print("%-52s %-10s %-8s" % ("check", "in text", "value"))
 print("-" * 74)

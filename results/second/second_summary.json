@@ -1,0 +1,67 @@
+{
+ "note": "second reconstruction: targets constant across profiles and their relation to the uniform solution; no measurement read",
+ "partition": "test",
+ "scenario": "primary",
+ "profiles": 47,
+ "targets": 52,
+ "tolerance": 1e-05,
+ "constant_across_profiles": {
+  "magnitude_g0.50": 46,
+  "magnitude_g0.80": 46,
+  "magnitude_g1.00": 46,
+  "magnitude_g1.25": 46,
+  "magnitude_g2.00": 46,
+  "ordinal": 46
+ },
+ "constant_under_every_encoding": 46,
+ "constant_and_at_uniform_value": {
+  "magnitude_g0.50": 46,
+  "magnitude_g0.80": 46,
+  "magnitude_g1.00": 46,
+  "magnitude_g1.25": 46,
+  "magnitude_g2.00": 46,
+  "ordinal": 46
+ },
+ "constant_under_every_encoding_and_at_uniform_value": 46,
+ "constant_under_every_encoding_not_at_uniform_value": [],
+ "targets_moved_from_uniform_value_per_profile": {
+  "magnitude_g0.50": {
+   "median": 6,
+   "min": 5,
+   "max": 6
+  },
+  "magnitude_g0.80": {
+   "median": 6,
+   "min": 5,
+   "max": 6
+  },
+  "magnitude_g1.00": {
+   "median": 6,
+   "min": 5,
+   "max": 6
+  },
+  "magnitude_g1.25": {
+   "median": 6,
+   "min": 5,
+   "max": 6
+  },
+  "magnitude_g2.00": {
+   "median": 5,
+   "min": 4,
+   "max": 6
+  },
+  "ordinal": {
+   "median": 6,
+   "min": 5,
+   "max": 6
+  }
+ },
+ "varying_targets_under_every_encoding": [
+  "EX_ala__L_e",
+  "EX_gln__L_e",
+  "EX_gly_e",
+  "EX_orn_e",
+  "EX_succ_e",
+  "EX_thr__L_e"
+ ]
+}

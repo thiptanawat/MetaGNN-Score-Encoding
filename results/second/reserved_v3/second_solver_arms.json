@@ -1,0 +1,52 @@
+{
+ "pass1_solver": "glpk",
+ "pass1_exit": 1,
+ "arms": 283,
+ "failed_in_pass1": [
+  {
+   "context_id": "OV:OVCAR-4",
+   "arm": "magnitude_g1.00",
+   "error": "RuntimeError('coordinate_min EX_phe__L_e: infeasible, nan; identical-LP retry exhausted')"
+  },
+  {
+   "context_id": "CO:HCT-15",
+   "arm": "magnitude_g1.25",
+   "error": "RuntimeError('coordinate_min EX_phe__L_e: infeasible, nan; identical-LP retry exhausted')"
+  },
+  {
+   "context_id": "ME:MDA-MB-435",
+   "arm": "ordinal",
+   "error": "RuntimeError('coordinate_min EX_gly_e: infeasible, nan; identical-LP retry exhausted')"
+  },
+  {
+   "context_id": "OV:IGROV1",
+   "arm": "magnitude_g1.25",
+   "error": "RuntimeError('coordinate_min EX_phe__L_e: infeasible, nan; identical-LP retry exhausted')"
+  }
+ ],
+ "pass2_solver": "hybrid (HiGHS)",
+ "pass2_exit": 0,
+ "solved_in_pass2": [
+  {
+   "context_id": "OV:OVCAR-4",
+   "arm": "magnitude_g1.00",
+   "seconds": 596.4282283278881
+  },
+  {
+   "context_id": "CO:HCT-15",
+   "arm": "magnitude_g1.25",
+   "seconds": 583.4578131219605
+  },
+  {
+   "context_id": "ME:MDA-MB-435",
+   "arm": "ordinal",
+   "seconds": 647.2324452120811
+  },
+  {
+   "context_id": "OV:IGROV1",
+   "arm": "magnitude_g1.25",
+   "seconds": 672.9286424369784
+  }
+ ],
+ "still_failed": []
+}

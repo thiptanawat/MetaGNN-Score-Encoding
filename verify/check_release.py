@@ -12,7 +12,8 @@ Three checks, none of which run any analysis:
    read-only comparison: it creates no lock and rewrites nothing.
 3. The per-arm records, when present, are checked against the digests in RELEASE_MANIFEST.md's
    asset table via the flux_sha256 field of each record (each JSON record names the digest of its
-   own NPZ array).
+   own NPZ array). This covers the two runs of the main analysis and the two runs of the second
+   reconstruction (results/second/).
 
 Usage: python verify/check_release.py [--root DIR] [--strict]
   --strict   exit nonzero if the raw inputs are absent (for a fully provisioned checkout)
@@ -56,8 +57,8 @@ def main():
     for rel in absent:
         print(f"  absent: {rel}")
     untracked = []
-    ignore = re.compile(r"^(\.git/|\.venv/|\.pytest_cache/|work/|logs/|results_repeat/|data/raw/|results/(reserved|development)_v3/arms(/|$)|"
-                        r"results/(reserved|development)_v3/run_summary\.json$|.*__pycache__/|.*\.pyc$|(.*/)?\.DS_Store$|CHECKSUMS\.sha256$)")
+    ignore = re.compile(r"^(\.git/|\.venv/|\.pytest_cache/|work/|logs/|results_repeat/|data/raw/|results/(second/)?(reserved|development)_v3/arms(/|$)|"
+                        r"results/(second/)?(reserved|development)_v3/run_summary\.json$|.*__pycache__/|.*\.pyc$|(.*/)?\.DS_Store$|CHECKSUMS\.sha256$)")
     listed_set = {line.split("  ", 1)[1] for line in (root / "CHECKSUMS.sha256").read_text().splitlines() if line.strip()}
     for p in root.rglob("*"):
         if p.is_file() and not p.is_symlink():
@@ -96,7 +97,7 @@ def main():
         problems.append("strict: raw inputs absent")
 
     # 3. per-arm records, if fetched
-    for part in ("reserved_v3", "development_v3"):
+    for part in ("reserved_v3", "development_v3", "second/reserved_v3", "second/development_v3"):
         arms = root / "results" / part / "arms"
         if not arms.is_dir():
             print(f"results/{part}/arms: not present (release asset; see verify/fetch_release_assets.sh)")

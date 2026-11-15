@@ -36,6 +36,34 @@ The article of record is Copeland et al. 2023, eLife 12:e82597, DOI `10.7554/eLi
 underlying sequencing is deposited under BioProject `PRJNA721596`. Reading the `.rda` files needs
 the `rdata` package (`environment_extensions.txt`).
 
+## Second reconstruction input, retrieved by the reader
+
+The second reconstruction (`second/`) reads one public model repository. It is not redistributed.
+`second/build_root.py` rebuilds the second root from the pinned commit, and `second/reproduce_second.sh
+build` refuses a checkout at any other commit and checks the digests below before anything is built.
+
+| Input | Route | Pinned commit | License |
+|---|---|---|---|
+| Human-GEM 2.1.1, `SysBioChalmers/Human-GEM`, tag `v2.1.1` | `https://github.com/SysBioChalmers/Human-GEM` | `6812be2a5c1504a89ea9e84d770786a84f5f3ce2` | CC BY 4.0 |
+
+The five files read, with the digests recorded in `second/build_report.json`:
+
+| File | SHA-256 |
+|---|---|
+| `model/Human-GEM.xml` | `dc0efd8009a8b680bde7040440f2e3592027dd118833445092ebd8d7bc425ddf` |
+| `model/reactions.tsv` | `fc24110e552538a88a0c40fbdcae4be4adc00485824b0d6c8773a08a3420405e` |
+| `model/metabolites.tsv` | `0b7509a37fe4e92bea3d1cbf2d0e7f87183ecf7bda81173770fa4a1a1ee32a96` |
+| `model/genes.tsv` | `3d56ce634b26f7d327702e0bee2b309533e9e4b75435b9d2b063af8238ccf0e4` |
+| `data/metabolicTasks/metabolicTasks_Essential.txt` | `d0c58503fc44d1eb49ea1b89f4cc90930a06bcd2c3972083c0986cfb126a0f18` |
+
+Citation: Luo J, Wang H, Moyer D, Guo Z, Robinson JL, Gustafsson J, Anton M, Chen Y, Kerkhoven EJ,
+Nielsen J, Li F. 2026. Reconstruction of human metabolic models with large language models.
+Proceedings of the National Academy of Sciences of the United States of America 123(15):e2516511123.
+doi:10.1073/pnas.2516511123
+
+The second reconstruction also reads the derived inputs of this repository and, in its `evaluate`
+stage only, the two measurement tables of the main analysis; it reads nothing under `data/raw/`.
+
 ## Culture medium formulations
 
 The historical environment follows a representative current formulation of RPMI-1640; the
@@ -50,7 +78,8 @@ The derived inputs the lock names (`data/`), the completed run outputs (`results
 `results/reserved_v3/`), and the outputs of the post-lock analyses under `results/` are released
 under CC-BY-4.0 together with the result tables, and are covered by the same archived record as
 the code. The per-arm records of the two study runs are release assets whose digests are in
-`RELEASE_MANIFEST.md`.
+`RELEASE_MANIFEST.md`. The outputs of the second reconstruction (`results/second/`) are covered in
+the same way, and its per-arm records are a third release asset listed there.
 
 ## Archived record
 

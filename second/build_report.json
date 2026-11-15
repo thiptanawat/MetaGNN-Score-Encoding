@@ -1,0 +1,120 @@
+{
+ "humangem": {
+  "version": "2.1.1",
+  "files": {
+   "model/Human-GEM.xml": "dc0efd8009a8b680bde7040440f2e3592027dd118833445092ebd8d7bc425ddf",
+   "model/reactions.tsv": "fc24110e552538a88a0c40fbdcae4be4adc00485824b0d6c8773a08a3420405e",
+   "model/metabolites.tsv": "0b7509a37fe4e92bea3d1cbf2d0e7f87183ecf7bda81173770fa4a1a1ee32a96",
+   "model/genes.tsv": "3d56ce634b26f7d327702e0bee2b309533e9e4b75435b9d2b063af8238ccf0e4",
+   "data/metabolicTasks/metabolicTasks_Essential.txt": "d0c58503fc44d1eb49ea1b89f4cc90930a06bcd2c3972083c0986cfb126a0f18"
+  }
+ },
+ "model": {
+  "reactions": 12748,
+  "metabolites": 8374,
+  "genes": 2870
+ },
+ "boundary": {
+  "n": 1654,
+  "by_rxnBiGGID": 59,
+  "by_metBiGGID": 1516,
+  "own_identifier": 79,
+  "reversed": 0,
+  "compartments": [
+   "e"
+  ]
+ },
+ "targets": {
+  "panel": 96,
+  "panel_present": 96,
+  "primary": 52,
+  "primary_present": 52,
+  "primary_absent": [],
+  "panel_absent": [],
+  "primary_kegg_not_concordant": [
+   "EX_glyald_e"
+  ],
+  "panel_not_same_by_rxnBiGGID": [
+   "EX_orn_e"
+  ]
+ },
+ "medium": {
+  "opened_by_main_list": 58,
+  "missing_from_main_list": [
+   "EX_adocbl_e",
+   "EX_4abz_e",
+   "EX_no3_e",
+   "EX_zn2_e",
+   "EX_mn2_e"
+  ],
+  "growth_main_list_only": 0.0,
+  "task_inputs": 44,
+  "task_inputs_unresolved": [],
+  "candidates": [
+   "EX_ala__L_e",
+   "EX_cys__L_e",
+   "EX_hxan_e",
+   "EX_thymd_e",
+   "EX_aqcobal_e",
+   "EX_lipoate_e",
+   "EX_lnlnca_e",
+   "EX_retn_e",
+   "EX_avite1_e",
+   "EX_gtocophe_e"
+  ],
+  "growth_all_candidates": 2.2289523477159228,
+  "added": [
+   "EX_aqcobal_e",
+   "EX_lipoate_e",
+   "EX_lnlnca_e",
+   "EX_retn_e",
+   "EX_avite1_e",
+   "EX_gtocophe_e"
+  ],
+  "growth_final": 2.1712836935943844
+ },
+ "evidence": {
+  "model_genes": 2870,
+  "genes_measured": 2187,
+  "genes_with_several_measured_entrez": 1,
+  "internal_reactions_with_rule": 7746,
+  "supported_reactions": 7107,
+  "contexts": 59,
+  "evidence_min": 1.392,
+  "evidence_max": 15.113
+ },
+ "pipeline_model": {
+  "g_max": 2.17128369359438,
+  "task_flux": 1.954155324234942,
+  "objective": "MAR13082",
+  "objective_name": "Generic human cell biomass reaction",
+  "opened": 64,
+  "missing": [
+   "EX_adocbl_e",
+   "EX_4abz_e",
+   "EX_no3_e",
+   "EX_zn2_e",
+   "EX_mn2_e"
+  ]
+ },
+ "root_files": {
+  "data/raw/Recon3D.json": "6f1073b3879235d4c204de210b49a0bb3ae50faf27b6270c9a86880890498f7b",
+  "data/scores_conservative.npz": "9ead47e29d112c3f76a2e0fad491c6f0a032d16a70bf8b73bbda01833ff3fb59",
+  "configs/study.json": "3ca5e029d0212d9fe2142491b82c11256c1d14f1a98c30974d02c64929f0310a",
+  "src/medium_v2.py": "b8cfd920c35aecbfbb09c35277617dec9c7da80a22eb4dd659718f604339f5a8",
+  "src/cpu_model.py": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+  "src/cpu_readout.py": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+  "src/run_study.py": "261fd4fed2d303ea18faddcb6647bc2a61be05da4cce3f87f39cb16090496dde",
+  "src/gpr.py": "7d70a0262a04ebf59211d7152cefa763c289e75149abb2472abfed93555b25f5"
+ },
+ "unchanged_from_main": {
+  "src/cpu_model.py": true,
+  "src/cpu_readout.py": true,
+  "src/run_study.py": true,
+  "src/gpr.py": true,
+  "src/evaluation.py": true,
+  "manifests/contexts.tsv": true,
+  "manifests/metabolite_map.tsv": true,
+  "protocol/analysis_plan.json": true
+ }
+}

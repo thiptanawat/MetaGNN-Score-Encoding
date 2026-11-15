@@ -56,6 +56,25 @@ the ranges and reduced certified orderings; and on independent data the predicti
 imposed growth task. Objective allowances, admissible ranges, discriminatory coverage and measured
 agreement should be reported together with selected exchange predictions.
 
+## A second reconstruction
+
+Three of the analyses were repeated on a second human reconstruction, Human-GEM 2.1.1, under a plan
+that was hash-locked before the reserved runs and that was not public before them (`second/`,
+`results/second/`; the lock and the plan copy are in `results/second/protocol/`). The profiles,
+measurements, targets, readout and tolerances are those of the main analysis. On Human-GEM the
+power encodings changed 249 of 2,444 predictions, and the two concordance contrasts of the midrank
+encoding were 0.0017 (-0.0031 to 0.0063) and 0.0005 (-0.0054 to 0.0059), both intervals including
+zero. The network fixed 2 of 52 targets, the near-exact cost cap then first fixed 91.6 to 94.6
+percent of the open coordinates under every encoding, and all 46 targets that were constant across
+profiles took the uniform solution's value. At the near-exact cap 48.23 and 49.30 of 52
+coordinates were fixed under the identity and midrank encodings and 3,906 and 3,506 orderings were
+certified; at a cap of 1 percent only the 2 network-fixed coordinates stayed fixed and no ordering
+was certified. The three statements held under the rules fixed in the plan. An interval that
+includes zero is not evidence of equivalence. The bound-based interface, the sampling workflow, the
+sensitivity scenarios and the independent evaluation were not repeated. Human-GEM is not
+redistributed; `second/README.md` gives the inputs, the commands, the run times and the files
+behind each number.
+
 ## Layout
 
 The repository is the study root: `reproduce.sh`, `configs/`, `data/`, `manifests/`, `protocol/`,
@@ -80,6 +99,8 @@ reconciliation). The directories added after the lock sit beside them.
 | `closure/`, `results/closure/` | The objective-allowance sweeps (single cap, fine grid, complete two-cap readout) and their interval scoring, the supporting statistical analyses, the bound-based interface with its common-task controls, the RIPTiDe run, the second-solver checks and the sensitivity-scenario ladders |
 | `copeland/`, `results/copeland/` | The independent condition-response evaluation: the frozen plan and its amendment record, the input acquisition script, the culture medium, the preprocessing interface, the runner, the crossed control, the condition-independent mean task and the reporting rule under both of its versions, with tests |
 | `endpoint/`, `results/endpoint/` | A reconstruction attempt of a published depletion screen, reported as unresolved |
+| `second/` | The second reconstruction (Human-GEM 2.1.1): the locked plan, the build, run and summary code, the driver `reproduce_second.sh`, the build records, the identifier audit (`audit/`) and five known-answer tests (`tests/`) |
+| `results/second/` | The outputs of the second reconstruction: the lock of the second root and its plan copy, predictions, evaluations, range stages, the cap sweep and the solver check (the per-arm records are a release asset) |
 | `figures/`, `results/figures/` | The figure script for figures 4 to 6 and the rendered figures 1 to 6 |
 | `verify/` | The release checker, the release-asset fetcher and the checker that traces every reported number to its artefact |
 | `RELEASE_MANIFEST.md` | What this release carries, what regenerates, what was normalized, and the digests of the release assets |
@@ -97,6 +118,11 @@ bash reproduce.sh --stage tests              # the locked study's 74 tests
 bash reproduce_extensions.sh tests           # the post-lock analyses' tests
 python verify/verify_manuscript_numbers.py   # every reported number against the deposited artefacts
 ```
+
+The second reconstruction has its own driver, `bash second/reproduce_second.sh` (it prints its stages when
+called without one; `second/README.md` gives the order, the inputs and the run times). Its
+known-answer tests run with `bash reproduce_extensions.sh tests`; the locked study's 74 tests stay
+under `tests/`.
 
 To go beyond the deposited outputs, place the four raw inputs as `data/raw/README.md` describes
 and run `bash reproduce.sh --stage preflight`; `python -m src.verify_inputs --root . --check lock`

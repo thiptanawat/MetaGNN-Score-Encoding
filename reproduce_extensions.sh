@@ -7,6 +7,9 @@
 #
 #   STAGE   tests | coverage | mechanism | closure | independent | endpoint | figures | verify | all
 #
+# The analysis on a second reconstruction (Human-GEM 2.1.1) has its own driver, second/reproduce_second.sh;
+# only its known-answer tests (second/tests) run from the "tests" stage here.
+#
 # The locked study itself (data preparation, panel selection, controls, the encoding arms and their
 # evaluation) is driven by reproduce.sh, which is the byte-identical driver named in
 # protocol/PROTOCOL_LOCK.json; run it first if the per-arm records are to be regenerated rather
@@ -33,7 +36,7 @@ while [ $# -gt 0 ]; do
   esac
 done
 case "$STAGE" in tests|coverage|mechanism|closure|independent|endpoint|figures|verify|all) ;;
-  *) sed -n '2,20p' "$0"; exit 2;; esac
+  *) sed -n '2,21p' "$0"; exit 2;; esac
 [ -x "$PYTHON_BIN" ] || { echo "Python is not executable: $PYTHON_BIN (create .venv from environment.lock or set PYTHON)" >&2; exit 2; }
 case "$OUT" in /*) ;; *) OUT="$HERE/$OUT";; esac
 mkdir -p "$OUT"
@@ -51,6 +54,7 @@ say "known-answer checks of the post-lock analyses (the locked study's own suite
 "$PYTHON_BIN" -m unittest discover -s copeland  -p 'test_*.py'
 "$PYTHON_BIN" -m unittest discover -s coverage  -p 'test_*.py'
 "$PYTHON_BIN" -m pytest -q reports/validation_scripts/test_cross_encoding_ranges.py
+"$PYTHON_BIN" -m pytest -q second/tests
 fi
 
 # ----------------------------------------------------------------- encoding-unanimity coverage

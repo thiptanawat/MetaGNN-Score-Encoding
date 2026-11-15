@@ -1,0 +1,106 @@
+{
+ "magnitude_g1.00": {
+  "exact": {
+   "macro_interval_C": 0.5009238658404965,
+   "targets": 52,
+   "resolved_pairs": 3906,
+   "resolved_share": 0.08409585118522186,
+   "accuracy_among_resolved": 0.511520737327189
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "ordinal": {
+  "exact": {
+   "macro_interval_C": 0.5013045680417739,
+   "targets": 52,
+   "resolved_pairs": 3506,
+   "resolved_share": 0.0754838848580102,
+   "accuracy_among_resolved": 0.5154021677124929
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "uniform_pfba": {
+  "exact": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_1pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_5pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  },
+  "rel_20pct": {
+   "macro_interval_C": 0.5,
+   "targets": 52,
+   "resolved_pairs": 0,
+   "resolved_share": 0.0,
+   "accuracy_among_resolved": null
+  }
+ },
+ "_contrast": {
+  "exact": {
+   "delta_grid_interval": 0.0003807022012773942
+  },
+  "rel_1pct": {
+   "delta_grid_interval": 0.0
+  },
+  "rel_5pct": {
+   "delta_grid_interval": 0.0
+  },
+  "rel_20pct": {
+   "delta_grid_interval": 0.0
+  }
+ }
+}

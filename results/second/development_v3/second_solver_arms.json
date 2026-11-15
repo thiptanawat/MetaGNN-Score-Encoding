@@ -1,0 +1,32 @@
+{
+ "pass1_solver": "glpk",
+ "pass1_exit": 1,
+ "arms": 67,
+ "failed_in_pass1": [
+  {
+   "context_id": "CO:HT29",
+   "arm": "magnitude_g0.50",
+   "error": "RuntimeError('coordinate_min EX_phe__L_e: infeasible, nan; identical-LP retry exhausted')"
+  },
+  {
+   "context_id": "BR:HS 578T",
+   "arm": "magnitude_g0.50",
+   "error": "RuntimeError('coordinate_min EX_phe__L_e: infeasible, nan; identical-LP retry exhausted')"
+  }
+ ],
+ "pass2_solver": "hybrid (HiGHS)",
+ "pass2_exit": 0,
+ "solved_in_pass2": [
+  {
+   "context_id": "CO:HT29",
+   "arm": "magnitude_g0.50",
+   "seconds": 624.2820145350415
+  },
+  {
+   "context_id": "BR:HS 578T",
+   "arm": "magnitude_g0.50",
+   "seconds": 651.4151671689469
+  }
+ ],
+ "still_failed": []
+}

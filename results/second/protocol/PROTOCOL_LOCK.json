@@ -1,0 +1,24 @@
+{
+ "status": "locked",
+ "reserved_evaluation_authorized": true,
+ "scope": "second reconstruction (Human-GEM); this lock replaces, in this root only, the lock of the main analysis",
+ "locked_at_utc": "2026-11-14T16:07:03Z",
+ "plan": "protocol/SECOND_RECONSTRUCTION_PLAN.md",
+ "plan_source": "SECOND_RECONSTRUCTION_PLAN_2026-11-14.md",
+ "second_reconstruction_plan_sha256": "0de8cbf4a737829b4c005b33122568d1abb342166162917f5d5481d4b7cd9a81",
+ "input_sha256": {
+  "data/raw/Recon3D.json": "6f1073b3879235d4c204de210b49a0bb3ae50faf27b6270c9a86880890498f7b",
+  "configs/study.json": "3ca5e029d0212d9fe2142491b82c11256c1d14f1a98c30974d02c64929f0310a",
+  "environment.lock": "6bdb8429b1bb2c63c258e67dd49449a6565b993409e8e9e950bbe59c6d463607",
+  "data/scores_conservative.npz": "9ead47e29d112c3f76a2e0fad491c6f0a032d16a70bf8b73bbda01833ff3fb59",
+  "manifests/contexts.tsv": "d266ea76168dd9eb18927510ce0ce5cb089786842a2cd10e3322be7d394a76bd",
+  "manifests/metabolite_map.tsv": "c0df71ebce0fc619f49c165a82ae0721f341edb9b4c15b11bb695b7c6f518bdb",
+  "protocol/analysis_plan.json": "e344c8c05900efa3fec4d78d90e1b19bb53dcc566e35051b34b64aa5093522ea",
+  "src/cpu_model.py": "e3cc5ee8166806c1bd2ce456d03900a72957287a483d52873bbd1d6c13a69ec3",
+  "src/cpu_readout.py": "f2e050150306fb437ec4c7e30d26d50194bfc5d16e3a711cf0a5f103e518cc67",
+  "src/medium_v2.py": "b8cfd920c35aecbfbb09c35277617dec9c7da80a22eb4dd659718f604339f5a8",
+  "src/run_study.py": "261fd4fed2d303ea18faddcb6647bc2a61be05da4cce3f87f39cb16090496dde",
+  "src/gpr.py": "7d70a0262a04ebf59211d7152cefa763c289e75149abb2472abfed93555b25f5",
+  "src/evaluation.py": "365bc6a08987ea1c3d0f8d042313fc10066d1f0d95de33d12f5373581e13ca11"
+ }
+}

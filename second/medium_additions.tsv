@@ -1,0 +1,11 @@
+exchange_id	metabolite_name	humangem_reaction	added	growth_without_it	uptake_capacity	basis
+EX_ala__L_e	alanine	MAR09061	False	2.2263315924569995		input of Human-GEM's growth task; not needed for biomass on this medium, left closed
+EX_cys__L_e	cysteine	MAR09065	False	2.2254580073706873		input of Human-GEM's growth task; not needed for biomass on this medium, left closed
+EX_hxan_e	hypoxanthine	MAR09358	False	2.2115035306138364		input of Human-GEM's growth task; not needed for biomass on this medium, left closed
+EX_thymd_e	thymidine	MAR09423	False	2.1712836935943844		input of Human-GEM's growth task; not needed for biomass on this medium, left closed
+EX_aqcobal_e	aquacob(III)alamin	MAR09269	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
+EX_lipoate_e	lipoic acid	MAR09167	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
+EX_lnlnca_e	linolenate	MAR09036	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
+EX_retn_e	retinoate	MAR09404	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
+EX_avite1_e	alpha-tocopherol	MAR09151	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
+EX_gtocophe_e	gamma-tocopherol	MAR09153	True	0.0	1.0	input of Human-GEM's growth task; biomass cannot be produced without it
