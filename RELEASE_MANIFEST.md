@@ -1,7 +1,7 @@
 # Release manifest
 
 Release tag: `v1.3.1`
-Archived record: see `SOURCES.md` (the identifier of this release is minted when the release is archived, so the copy of that file inside the release names the identifiers of the releases before it; the repository's `main` branch records the new identifier in the commit that follows the tag).
+Archived record: https://doi.org/10.5281/zenodo.24242513 (release v1.3.1, tag object `a68c1686`, commit `115226bccce9836638f3f8efd758e2936231bf38`). The identifier is minted when the release is archived, so the copy of this file inside the tagged tree names only the earlier releases; `main` records the identifier in the commit that follows the tag.
 
 Release v1.3.1 is release v1.3.0 with one recomputation added (section 10): the reported
 quantities of the second reconstruction without the four profiles in which a second solver
